@@ -8,6 +8,8 @@ pub fn build(b: *Builder) void {
 
     exe.linkFramework("CoreFoundation");
     exe.linkFramework("AudioToolbox");
+    exe.linkFramework("CoreAudio");
+    exe.linkFramework("CoreMIDI");
 
     const run_cmd = exe.run();
     run_cmd.step.dependOn(b.getInstallStep());
