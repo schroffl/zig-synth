@@ -1464,486 +1464,6 @@ const enum_unnamed_25 = extern enum(c_int) {
     AVAudioSessionErrorInsufficientPriority = 561017449,
     _,
 };
-pub const AudioObjectID = UInt32;
-pub const AudioClassID = UInt32;
-pub const AudioObjectPropertySelector = UInt32;
-pub const AudioObjectPropertyScope = UInt32;
-pub const AudioObjectPropertyElement = UInt32;
-pub const struct_AudioObjectPropertyAddress = extern struct {
-    mSelector: AudioObjectPropertySelector,
-    mScope: AudioObjectPropertyScope,
-    mElement: AudioObjectPropertyElement,
-};
-pub const AudioObjectPropertyAddress = struct_AudioObjectPropertyAddress;
-pub const kAudioHardwareNoError = @enumToInt(enum_unnamed_26.kAudioHardwareNoError);
-pub const kAudioHardwareNotRunningError = @enumToInt(enum_unnamed_26.kAudioHardwareNotRunningError);
-pub const kAudioHardwareUnspecifiedError = @enumToInt(enum_unnamed_26.kAudioHardwareUnspecifiedError);
-pub const kAudioHardwareUnknownPropertyError = @enumToInt(enum_unnamed_26.kAudioHardwareUnknownPropertyError);
-pub const kAudioHardwareBadPropertySizeError = @enumToInt(enum_unnamed_26.kAudioHardwareBadPropertySizeError);
-pub const kAudioHardwareIllegalOperationError = @enumToInt(enum_unnamed_26.kAudioHardwareIllegalOperationError);
-pub const kAudioHardwareBadObjectError = @enumToInt(enum_unnamed_26.kAudioHardwareBadObjectError);
-pub const kAudioHardwareBadDeviceError = @enumToInt(enum_unnamed_26.kAudioHardwareBadDeviceError);
-pub const kAudioHardwareBadStreamError = @enumToInt(enum_unnamed_26.kAudioHardwareBadStreamError);
-pub const kAudioHardwareUnsupportedOperationError = @enumToInt(enum_unnamed_26.kAudioHardwareUnsupportedOperationError);
-pub const kAudioDeviceUnsupportedFormatError = @enumToInt(enum_unnamed_26.kAudioDeviceUnsupportedFormatError);
-pub const kAudioDevicePermissionsError = @enumToInt(enum_unnamed_26.kAudioDevicePermissionsError);
-const enum_unnamed_26 = extern enum(c_int) {
-    kAudioHardwareNoError = 0,
-    kAudioHardwareNotRunningError = 1937010544,
-    kAudioHardwareUnspecifiedError = 2003329396,
-    kAudioHardwareUnknownPropertyError = 2003332927,
-    kAudioHardwareBadPropertySizeError = 561211770,
-    kAudioHardwareIllegalOperationError = 1852797029,
-    kAudioHardwareBadObjectError = 560947818,
-    kAudioHardwareBadDeviceError = 560227702,
-    kAudioHardwareBadStreamError = 561214578,
-    kAudioHardwareUnsupportedOperationError = 1970171760,
-    kAudioDeviceUnsupportedFormatError = 560226676,
-    kAudioDevicePermissionsError = 560492391,
-    _,
-};
-pub const kAudioObjectUnknown = @enumToInt(enum_unnamed_27.kAudioObjectUnknown);
-const enum_unnamed_27 = extern enum(c_int) {
-    kAudioObjectUnknown = 0,
-    _,
-};
-pub const kAudioObjectPropertyScopeGlobal = @enumToInt(enum_unnamed_28.kAudioObjectPropertyScopeGlobal);
-pub const kAudioObjectPropertyScopeInput = @enumToInt(enum_unnamed_28.kAudioObjectPropertyScopeInput);
-pub const kAudioObjectPropertyScopeOutput = @enumToInt(enum_unnamed_28.kAudioObjectPropertyScopeOutput);
-pub const kAudioObjectPropertyScopePlayThrough = @enumToInt(enum_unnamed_28.kAudioObjectPropertyScopePlayThrough);
-pub const kAudioObjectPropertyElementMaster = @enumToInt(enum_unnamed_28.kAudioObjectPropertyElementMaster);
-const enum_unnamed_28 = extern enum(c_int) {
-    kAudioObjectPropertyScopeGlobal = 1735159650,
-    kAudioObjectPropertyScopeInput = 1768845428,
-    kAudioObjectPropertyScopeOutput = 1869968496,
-    kAudioObjectPropertyScopePlayThrough = 1886679669,
-    kAudioObjectPropertyElementMaster = 0,
-    _,
-};
-pub const kAudioObjectPropertySelectorWildcard = @enumToInt(enum_unnamed_29.kAudioObjectPropertySelectorWildcard);
-const enum_unnamed_29 = extern enum(c_int) {
-    kAudioObjectPropertySelectorWildcard = 707406378,
-    _,
-};
-pub const kAudioObjectPropertyScopeWildcard = @enumToInt(enum_unnamed_30.kAudioObjectPropertyScopeWildcard);
-const enum_unnamed_30 = extern enum(c_int) {
-    kAudioObjectPropertyScopeWildcard = 707406378,
-    _,
-};
-pub const kAudioObjectPropertyElementWildcard = @enumToInt(enum_unnamed_31.kAudioObjectPropertyElementWildcard);
-const enum_unnamed_31 = extern enum(c_int) {
-    kAudioObjectPropertyElementWildcard = 4294967295,
-    _,
-};
-pub const kAudioObjectClassIDWildcard = @enumToInt(enum_unnamed_32.kAudioObjectClassIDWildcard);
-const enum_unnamed_32 = extern enum(c_int) {
-    kAudioObjectClassIDWildcard = 707406378,
-    _,
-};
-pub const kAudioObjectClassID = @enumToInt(enum_unnamed_33.kAudioObjectClassID);
-const enum_unnamed_33 = extern enum(c_int) {
-    kAudioObjectClassID = 1634689642,
-    _,
-};
-pub const kAudioObjectPropertyBaseClass = @enumToInt(enum_unnamed_34.kAudioObjectPropertyBaseClass);
-pub const kAudioObjectPropertyClass = @enumToInt(enum_unnamed_34.kAudioObjectPropertyClass);
-pub const kAudioObjectPropertyOwner = @enumToInt(enum_unnamed_34.kAudioObjectPropertyOwner);
-pub const kAudioObjectPropertyName = @enumToInt(enum_unnamed_34.kAudioObjectPropertyName);
-pub const kAudioObjectPropertyModelName = @enumToInt(enum_unnamed_34.kAudioObjectPropertyModelName);
-pub const kAudioObjectPropertyManufacturer = @enumToInt(enum_unnamed_34.kAudioObjectPropertyManufacturer);
-pub const kAudioObjectPropertyElementName = @enumToInt(enum_unnamed_34.kAudioObjectPropertyElementName);
-pub const kAudioObjectPropertyElementCategoryName = @enumToInt(enum_unnamed_34.kAudioObjectPropertyElementCategoryName);
-pub const kAudioObjectPropertyElementNumberName = @enumToInt(enum_unnamed_34.kAudioObjectPropertyElementNumberName);
-pub const kAudioObjectPropertyOwnedObjects = @enumToInt(enum_unnamed_34.kAudioObjectPropertyOwnedObjects);
-pub const kAudioObjectPropertyIdentify = @enumToInt(enum_unnamed_34.kAudioObjectPropertyIdentify);
-pub const kAudioObjectPropertySerialNumber = @enumToInt(enum_unnamed_34.kAudioObjectPropertySerialNumber);
-pub const kAudioObjectPropertyFirmwareVersion = @enumToInt(enum_unnamed_34.kAudioObjectPropertyFirmwareVersion);
-const enum_unnamed_34 = extern enum(c_int) {
-    kAudioObjectPropertyBaseClass = 1650682995,
-    kAudioObjectPropertyClass = 1668047219,
-    kAudioObjectPropertyOwner = 1937007734,
-    kAudioObjectPropertyName = 1819173229,
-    kAudioObjectPropertyModelName = 1819111268,
-    kAudioObjectPropertyManufacturer = 1819107691,
-    kAudioObjectPropertyElementName = 1818454126,
-    kAudioObjectPropertyElementCategoryName = 1818452846,
-    kAudioObjectPropertyElementNumberName = 1818455662,
-    kAudioObjectPropertyOwnedObjects = 1870098020,
-    kAudioObjectPropertyIdentify = 1768187246,
-    kAudioObjectPropertySerialNumber = 1936618861,
-    kAudioObjectPropertyFirmwareVersion = 1719105134,
-    _,
-};
-pub const kAudioPlugInClassID = @enumToInt(enum_unnamed_35.kAudioPlugInClassID);
-const enum_unnamed_35 = extern enum(c_int) {
-    kAudioPlugInClassID = 1634757735,
-    _,
-};
-pub const kAudioPlugInPropertyBundleID = @enumToInt(enum_unnamed_36.kAudioPlugInPropertyBundleID);
-pub const kAudioPlugInPropertyDeviceList = @enumToInt(enum_unnamed_36.kAudioPlugInPropertyDeviceList);
-pub const kAudioPlugInPropertyTranslateUIDToDevice = @enumToInt(enum_unnamed_36.kAudioPlugInPropertyTranslateUIDToDevice);
-pub const kAudioPlugInPropertyBoxList = @enumToInt(enum_unnamed_36.kAudioPlugInPropertyBoxList);
-pub const kAudioPlugInPropertyTranslateUIDToBox = @enumToInt(enum_unnamed_36.kAudioPlugInPropertyTranslateUIDToBox);
-pub const kAudioPlugInPropertyClockDeviceList = @enumToInt(enum_unnamed_36.kAudioPlugInPropertyClockDeviceList);
-pub const kAudioPlugInPropertyTranslateUIDToClockDevice = @enumToInt(enum_unnamed_36.kAudioPlugInPropertyTranslateUIDToClockDevice);
-const enum_unnamed_36 = extern enum(c_int) {
-    kAudioPlugInPropertyBundleID = 1885956452,
-    kAudioPlugInPropertyDeviceList = 1684370979,
-    kAudioPlugInPropertyTranslateUIDToDevice = 1969841252,
-    kAudioPlugInPropertyBoxList = 1651472419,
-    kAudioPlugInPropertyTranslateUIDToBox = 1969841250,
-    kAudioPlugInPropertyClockDeviceList = 1668049699,
-    kAudioPlugInPropertyTranslateUIDToClockDevice = 1969841251,
-    _,
-};
-pub const kAudioTransportManagerClassID = @enumToInt(enum_unnamed_37.kAudioTransportManagerClassID);
-const enum_unnamed_37 = extern enum(c_int) {
-    kAudioTransportManagerClassID = 1953656941,
-    _,
-};
-pub const kAudioTransportManagerPropertyEndPointList = @enumToInt(enum_unnamed_38.kAudioTransportManagerPropertyEndPointList);
-pub const kAudioTransportManagerPropertyTranslateUIDToEndPoint = @enumToInt(enum_unnamed_38.kAudioTransportManagerPropertyTranslateUIDToEndPoint);
-pub const kAudioTransportManagerPropertyTransportType = @enumToInt(enum_unnamed_38.kAudioTransportManagerPropertyTransportType);
-const enum_unnamed_38 = extern enum(c_int) {
-    kAudioTransportManagerPropertyEndPointList = 1701733411,
-    kAudioTransportManagerPropertyTranslateUIDToEndPoint = 1969841253,
-    kAudioTransportManagerPropertyTransportType = 1953653102,
-    _,
-};
-pub const kAudioBoxClassID = @enumToInt(enum_unnamed_39.kAudioBoxClassID);
-const enum_unnamed_39 = extern enum(c_int) {
-    kAudioBoxClassID = 1633841016,
-    _,
-};
-pub const kAudioBoxPropertyBoxUID = @enumToInt(enum_unnamed_40.kAudioBoxPropertyBoxUID);
-pub const kAudioBoxPropertyTransportType = @enumToInt(enum_unnamed_40.kAudioBoxPropertyTransportType);
-pub const kAudioBoxPropertyHasAudio = @enumToInt(enum_unnamed_40.kAudioBoxPropertyHasAudio);
-pub const kAudioBoxPropertyHasVideo = @enumToInt(enum_unnamed_40.kAudioBoxPropertyHasVideo);
-pub const kAudioBoxPropertyHasMIDI = @enumToInt(enum_unnamed_40.kAudioBoxPropertyHasMIDI);
-pub const kAudioBoxPropertyIsProtected = @enumToInt(enum_unnamed_40.kAudioBoxPropertyIsProtected);
-pub const kAudioBoxPropertyAcquired = @enumToInt(enum_unnamed_40.kAudioBoxPropertyAcquired);
-pub const kAudioBoxPropertyAcquisitionFailed = @enumToInt(enum_unnamed_40.kAudioBoxPropertyAcquisitionFailed);
-pub const kAudioBoxPropertyDeviceList = @enumToInt(enum_unnamed_40.kAudioBoxPropertyDeviceList);
-pub const kAudioBoxPropertyClockDeviceList = @enumToInt(enum_unnamed_40.kAudioBoxPropertyClockDeviceList);
-const enum_unnamed_40 = extern enum(c_int) {
-    kAudioBoxPropertyBoxUID = 1651861860,
-    kAudioBoxPropertyTransportType = 1953653102,
-    kAudioBoxPropertyHasAudio = 1651007861,
-    kAudioBoxPropertyHasVideo = 1651013225,
-    kAudioBoxPropertyHasMIDI = 1651010921,
-    kAudioBoxPropertyIsProtected = 1651536495,
-    kAudioBoxPropertyAcquired = 1652060014,
-    kAudioBoxPropertyAcquisitionFailed = 1652060006,
-    kAudioBoxPropertyDeviceList = 1650751011,
-    kAudioBoxPropertyClockDeviceList = 1650682915,
-    _,
-};
-pub const kAudioDeviceClassID = @enumToInt(enum_unnamed_41.kAudioDeviceClassID);
-const enum_unnamed_41 = extern enum(c_int) {
-    kAudioDeviceClassID = 1633969526,
-    _,
-};
-pub const kAudioDeviceTransportTypeUnknown = @enumToInt(enum_unnamed_42.kAudioDeviceTransportTypeUnknown);
-pub const kAudioDeviceTransportTypeBuiltIn = @enumToInt(enum_unnamed_42.kAudioDeviceTransportTypeBuiltIn);
-pub const kAudioDeviceTransportTypeAggregate = @enumToInt(enum_unnamed_42.kAudioDeviceTransportTypeAggregate);
-pub const kAudioDeviceTransportTypeVirtual = @enumToInt(enum_unnamed_42.kAudioDeviceTransportTypeVirtual);
-pub const kAudioDeviceTransportTypePCI = @enumToInt(enum_unnamed_42.kAudioDeviceTransportTypePCI);
-pub const kAudioDeviceTransportTypeUSB = @enumToInt(enum_unnamed_42.kAudioDeviceTransportTypeUSB);
-pub const kAudioDeviceTransportTypeFireWire = @enumToInt(enum_unnamed_42.kAudioDeviceTransportTypeFireWire);
-pub const kAudioDeviceTransportTypeBluetooth = @enumToInt(enum_unnamed_42.kAudioDeviceTransportTypeBluetooth);
-pub const kAudioDeviceTransportTypeBluetoothLE = @enumToInt(enum_unnamed_42.kAudioDeviceTransportTypeBluetoothLE);
-pub const kAudioDeviceTransportTypeHDMI = @enumToInt(enum_unnamed_42.kAudioDeviceTransportTypeHDMI);
-pub const kAudioDeviceTransportTypeDisplayPort = @enumToInt(enum_unnamed_42.kAudioDeviceTransportTypeDisplayPort);
-pub const kAudioDeviceTransportTypeAirPlay = @enumToInt(enum_unnamed_42.kAudioDeviceTransportTypeAirPlay);
-pub const kAudioDeviceTransportTypeAVB = @enumToInt(enum_unnamed_42.kAudioDeviceTransportTypeAVB);
-pub const kAudioDeviceTransportTypeThunderbolt = @enumToInt(enum_unnamed_42.kAudioDeviceTransportTypeThunderbolt);
-const enum_unnamed_42 = extern enum(c_int) {
-    kAudioDeviceTransportTypeUnknown = 0,
-    kAudioDeviceTransportTypeBuiltIn = 1651274862,
-    kAudioDeviceTransportTypeAggregate = 1735554416,
-    kAudioDeviceTransportTypeVirtual = 1986622068,
-    kAudioDeviceTransportTypePCI = 1885563168,
-    kAudioDeviceTransportTypeUSB = 1970496032,
-    kAudioDeviceTransportTypeFireWire = 825440564,
-    kAudioDeviceTransportTypeBluetooth = 1651275109,
-    kAudioDeviceTransportTypeBluetoothLE = 1651271009,
-    kAudioDeviceTransportTypeHDMI = 1751412073,
-    kAudioDeviceTransportTypeDisplayPort = 1685090932,
-    kAudioDeviceTransportTypeAirPlay = 1634300528,
-    kAudioDeviceTransportTypeAVB = 1700886114,
-    kAudioDeviceTransportTypeThunderbolt = 1953002862,
-    _,
-};
-pub const kAudioDevicePropertyConfigurationApplication = @enumToInt(enum_unnamed_43.kAudioDevicePropertyConfigurationApplication);
-pub const kAudioDevicePropertyDeviceUID = @enumToInt(enum_unnamed_43.kAudioDevicePropertyDeviceUID);
-pub const kAudioDevicePropertyModelUID = @enumToInt(enum_unnamed_43.kAudioDevicePropertyModelUID);
-pub const kAudioDevicePropertyTransportType = @enumToInt(enum_unnamed_43.kAudioDevicePropertyTransportType);
-pub const kAudioDevicePropertyRelatedDevices = @enumToInt(enum_unnamed_43.kAudioDevicePropertyRelatedDevices);
-pub const kAudioDevicePropertyClockDomain = @enumToInt(enum_unnamed_43.kAudioDevicePropertyClockDomain);
-pub const kAudioDevicePropertyDeviceIsAlive = @enumToInt(enum_unnamed_43.kAudioDevicePropertyDeviceIsAlive);
-pub const kAudioDevicePropertyDeviceIsRunning = @enumToInt(enum_unnamed_43.kAudioDevicePropertyDeviceIsRunning);
-pub const kAudioDevicePropertyDeviceCanBeDefaultDevice = @enumToInt(enum_unnamed_43.kAudioDevicePropertyDeviceCanBeDefaultDevice);
-pub const kAudioDevicePropertyDeviceCanBeDefaultSystemDevice = @enumToInt(enum_unnamed_43.kAudioDevicePropertyDeviceCanBeDefaultSystemDevice);
-pub const kAudioDevicePropertyLatency = @enumToInt(enum_unnamed_43.kAudioDevicePropertyLatency);
-pub const kAudioDevicePropertyStreams = @enumToInt(enum_unnamed_43.kAudioDevicePropertyStreams);
-pub const kAudioObjectPropertyControlList = @enumToInt(enum_unnamed_43.kAudioObjectPropertyControlList);
-pub const kAudioDevicePropertySafetyOffset = @enumToInt(enum_unnamed_43.kAudioDevicePropertySafetyOffset);
-pub const kAudioDevicePropertyNominalSampleRate = @enumToInt(enum_unnamed_43.kAudioDevicePropertyNominalSampleRate);
-pub const kAudioDevicePropertyAvailableNominalSampleRates = @enumToInt(enum_unnamed_43.kAudioDevicePropertyAvailableNominalSampleRates);
-pub const kAudioDevicePropertyIcon = @enumToInt(enum_unnamed_43.kAudioDevicePropertyIcon);
-pub const kAudioDevicePropertyIsHidden = @enumToInt(enum_unnamed_43.kAudioDevicePropertyIsHidden);
-pub const kAudioDevicePropertyPreferredChannelsForStereo = @enumToInt(enum_unnamed_43.kAudioDevicePropertyPreferredChannelsForStereo);
-pub const kAudioDevicePropertyPreferredChannelLayout = @enumToInt(enum_unnamed_43.kAudioDevicePropertyPreferredChannelLayout);
-const enum_unnamed_43 = extern enum(c_int) {
-    kAudioDevicePropertyConfigurationApplication = 1667330160,
-    kAudioDevicePropertyDeviceUID = 1969841184,
-    kAudioDevicePropertyModelUID = 1836411236,
-    kAudioDevicePropertyTransportType = 1953653102,
-    kAudioDevicePropertyRelatedDevices = 1634429294,
-    kAudioDevicePropertyClockDomain = 1668049764,
-    kAudioDevicePropertyDeviceIsAlive = 1818850926,
-    kAudioDevicePropertyDeviceIsRunning = 1735354734,
-    kAudioDevicePropertyDeviceCanBeDefaultDevice = 1684434036,
-    kAudioDevicePropertyDeviceCanBeDefaultSystemDevice = 1936092276,
-    kAudioDevicePropertyLatency = 1819569763,
-    kAudioDevicePropertyStreams = 1937009955,
-    kAudioObjectPropertyControlList = 1668575852,
-    kAudioDevicePropertySafetyOffset = 1935763060,
-    kAudioDevicePropertyNominalSampleRate = 1853059700,
-    kAudioDevicePropertyAvailableNominalSampleRates = 1853059619,
-    kAudioDevicePropertyIcon = 1768124270,
-    kAudioDevicePropertyIsHidden = 1751737454,
-    kAudioDevicePropertyPreferredChannelsForStereo = 1684236338,
-    kAudioDevicePropertyPreferredChannelLayout = 1936879204,
-    _,
-};
-pub const kAudioClockDeviceClassID = @enumToInt(enum_unnamed_44.kAudioClockDeviceClassID);
-const enum_unnamed_44 = extern enum(c_int) {
-    kAudioClockDeviceClassID = 1633905771,
-    _,
-};
-pub const kAudioClockDevicePropertyDeviceUID = @enumToInt(enum_unnamed_45.kAudioClockDevicePropertyDeviceUID);
-pub const kAudioClockDevicePropertyTransportType = @enumToInt(enum_unnamed_45.kAudioClockDevicePropertyTransportType);
-pub const kAudioClockDevicePropertyClockDomain = @enumToInt(enum_unnamed_45.kAudioClockDevicePropertyClockDomain);
-pub const kAudioClockDevicePropertyDeviceIsAlive = @enumToInt(enum_unnamed_45.kAudioClockDevicePropertyDeviceIsAlive);
-pub const kAudioClockDevicePropertyDeviceIsRunning = @enumToInt(enum_unnamed_45.kAudioClockDevicePropertyDeviceIsRunning);
-pub const kAudioClockDevicePropertyLatency = @enumToInt(enum_unnamed_45.kAudioClockDevicePropertyLatency);
-pub const kAudioClockDevicePropertyControlList = @enumToInt(enum_unnamed_45.kAudioClockDevicePropertyControlList);
-pub const kAudioClockDevicePropertyNominalSampleRate = @enumToInt(enum_unnamed_45.kAudioClockDevicePropertyNominalSampleRate);
-pub const kAudioClockDevicePropertyAvailableNominalSampleRates = @enumToInt(enum_unnamed_45.kAudioClockDevicePropertyAvailableNominalSampleRates);
-const enum_unnamed_45 = extern enum(c_int) {
-    kAudioClockDevicePropertyDeviceUID = 1668639076,
-    kAudioClockDevicePropertyTransportType = 1953653102,
-    kAudioClockDevicePropertyClockDomain = 1668049764,
-    kAudioClockDevicePropertyDeviceIsAlive = 1818850926,
-    kAudioClockDevicePropertyDeviceIsRunning = 1735354734,
-    kAudioClockDevicePropertyLatency = 1819569763,
-    kAudioClockDevicePropertyControlList = 1668575852,
-    kAudioClockDevicePropertyNominalSampleRate = 1853059700,
-    kAudioClockDevicePropertyAvailableNominalSampleRates = 1853059619,
-    _,
-};
-pub const kAudioEndPointDeviceClassID = @enumToInt(enum_unnamed_46.kAudioEndPointDeviceClassID);
-const enum_unnamed_46 = extern enum(c_int) {
-    kAudioEndPointDeviceClassID = 1701078390,
-    _,
-};
-pub const kAudioEndPointDevicePropertyComposition = @enumToInt(enum_unnamed_47.kAudioEndPointDevicePropertyComposition);
-pub const kAudioEndPointDevicePropertyEndPointList = @enumToInt(enum_unnamed_47.kAudioEndPointDevicePropertyEndPointList);
-pub const kAudioEndPointDevicePropertyIsPrivate = @enumToInt(enum_unnamed_47.kAudioEndPointDevicePropertyIsPrivate);
-const enum_unnamed_47 = extern enum(c_int) {
-    kAudioEndPointDevicePropertyComposition = 1633906541,
-    kAudioEndPointDevicePropertyEndPointList = 1634169456,
-    kAudioEndPointDevicePropertyIsPrivate = 1886546294,
-    _,
-};
-pub const kAudioEndPointClassID = @enumToInt(enum_unnamed_48.kAudioEndPointClassID);
-const enum_unnamed_48 = extern enum(c_int) {
-    kAudioEndPointClassID = 1701733488,
-    _,
-};
-pub const struct_AudioStreamRangedDescription = extern struct {
-    mFormat: AudioStreamBasicDescription,
-    mSampleRateRange: AudioValueRange,
-};
-pub const AudioStreamRangedDescription = struct_AudioStreamRangedDescription;
-pub const kAudioStreamClassID = @enumToInt(enum_unnamed_49.kAudioStreamClassID);
-const enum_unnamed_49 = extern enum(c_int) {
-    kAudioStreamClassID = 1634956402,
-    _,
-};
-pub const kAudioStreamTerminalTypeUnknown = @enumToInt(enum_unnamed_50.kAudioStreamTerminalTypeUnknown);
-pub const kAudioStreamTerminalTypeLine = @enumToInt(enum_unnamed_50.kAudioStreamTerminalTypeLine);
-pub const kAudioStreamTerminalTypeDigitalAudioInterface = @enumToInt(enum_unnamed_50.kAudioStreamTerminalTypeDigitalAudioInterface);
-pub const kAudioStreamTerminalTypeSpeaker = @enumToInt(enum_unnamed_50.kAudioStreamTerminalTypeSpeaker);
-pub const kAudioStreamTerminalTypeHeadphones = @enumToInt(enum_unnamed_50.kAudioStreamTerminalTypeHeadphones);
-pub const kAudioStreamTerminalTypeLFESpeaker = @enumToInt(enum_unnamed_50.kAudioStreamTerminalTypeLFESpeaker);
-pub const kAudioStreamTerminalTypeReceiverSpeaker = @enumToInt(enum_unnamed_50.kAudioStreamTerminalTypeReceiverSpeaker);
-pub const kAudioStreamTerminalTypeMicrophone = @enumToInt(enum_unnamed_50.kAudioStreamTerminalTypeMicrophone);
-pub const kAudioStreamTerminalTypeHeadsetMicrophone = @enumToInt(enum_unnamed_50.kAudioStreamTerminalTypeHeadsetMicrophone);
-pub const kAudioStreamTerminalTypeReceiverMicrophone = @enumToInt(enum_unnamed_50.kAudioStreamTerminalTypeReceiverMicrophone);
-pub const kAudioStreamTerminalTypeTTY = @enumToInt(enum_unnamed_50.kAudioStreamTerminalTypeTTY);
-pub const kAudioStreamTerminalTypeHDMI = @enumToInt(enum_unnamed_50.kAudioStreamTerminalTypeHDMI);
-pub const kAudioStreamTerminalTypeDisplayPort = @enumToInt(enum_unnamed_50.kAudioStreamTerminalTypeDisplayPort);
-const enum_unnamed_50 = extern enum(c_int) {
-    kAudioStreamTerminalTypeUnknown = 0,
-    kAudioStreamTerminalTypeLine = 1818848869,
-    kAudioStreamTerminalTypeDigitalAudioInterface = 1936745574,
-    kAudioStreamTerminalTypeSpeaker = 1936747378,
-    kAudioStreamTerminalTypeHeadphones = 1751412840,
-    kAudioStreamTerminalTypeLFESpeaker = 1818649971,
-    kAudioStreamTerminalTypeReceiverSpeaker = 1920168043,
-    kAudioStreamTerminalTypeMicrophone = 1835623282,
-    kAudioStreamTerminalTypeHeadsetMicrophone = 1752000867,
-    kAudioStreamTerminalTypeReceiverMicrophone = 1919773027,
-    kAudioStreamTerminalTypeTTY = 1953790303,
-    kAudioStreamTerminalTypeHDMI = 1751412073,
-    kAudioStreamTerminalTypeDisplayPort = 1685090932,
-    _,
-};
-pub const kAudioStreamPropertyIsActive = @enumToInt(enum_unnamed_51.kAudioStreamPropertyIsActive);
-pub const kAudioStreamPropertyDirection = @enumToInt(enum_unnamed_51.kAudioStreamPropertyDirection);
-pub const kAudioStreamPropertyTerminalType = @enumToInt(enum_unnamed_51.kAudioStreamPropertyTerminalType);
-pub const kAudioStreamPropertyStartingChannel = @enumToInt(enum_unnamed_51.kAudioStreamPropertyStartingChannel);
-pub const kAudioStreamPropertyLatency = @enumToInt(enum_unnamed_51.kAudioStreamPropertyLatency);
-pub const kAudioStreamPropertyVirtualFormat = @enumToInt(enum_unnamed_51.kAudioStreamPropertyVirtualFormat);
-pub const kAudioStreamPropertyAvailableVirtualFormats = @enumToInt(enum_unnamed_51.kAudioStreamPropertyAvailableVirtualFormats);
-pub const kAudioStreamPropertyPhysicalFormat = @enumToInt(enum_unnamed_51.kAudioStreamPropertyPhysicalFormat);
-pub const kAudioStreamPropertyAvailablePhysicalFormats = @enumToInt(enum_unnamed_51.kAudioStreamPropertyAvailablePhysicalFormats);
-const enum_unnamed_51 = extern enum(c_int) {
-    kAudioStreamPropertyIsActive = 1935762292,
-    kAudioStreamPropertyDirection = 1935960434,
-    kAudioStreamPropertyTerminalType = 1952805485,
-    kAudioStreamPropertyStartingChannel = 1935894638,
-    kAudioStreamPropertyLatency = 1819569763,
-    kAudioStreamPropertyVirtualFormat = 1936092532,
-    kAudioStreamPropertyAvailableVirtualFormats = 1936092513,
-    kAudioStreamPropertyPhysicalFormat = 1885762592,
-    kAudioStreamPropertyAvailablePhysicalFormats = 1885762657,
-    _,
-};
-pub const kAudioControlClassID = @enumToInt(enum_unnamed_52.kAudioControlClassID);
-const enum_unnamed_52 = extern enum(c_int) {
-    kAudioControlClassID = 1633907820,
-    _,
-};
-pub const kAudioControlPropertyScope = @enumToInt(enum_unnamed_53.kAudioControlPropertyScope);
-pub const kAudioControlPropertyElement = @enumToInt(enum_unnamed_53.kAudioControlPropertyElement);
-const enum_unnamed_53 = extern enum(c_int) {
-    kAudioControlPropertyScope = 1668506480,
-    kAudioControlPropertyElement = 1667591277,
-    _,
-};
-pub const kAudioSliderControlClassID = @enumToInt(enum_unnamed_54.kAudioSliderControlClassID);
-const enum_unnamed_54 = extern enum(c_int) {
-    kAudioSliderControlClassID = 1936483442,
-    _,
-};
-pub const kAudioSliderControlPropertyValue = @enumToInt(enum_unnamed_55.kAudioSliderControlPropertyValue);
-pub const kAudioSliderControlPropertyRange = @enumToInt(enum_unnamed_55.kAudioSliderControlPropertyRange);
-const enum_unnamed_55 = extern enum(c_int) {
-    kAudioSliderControlPropertyValue = 1935962742,
-    kAudioSliderControlPropertyRange = 1935962738,
-    _,
-};
-pub const kAudioLevelControlClassID = @enumToInt(enum_unnamed_56.kAudioLevelControlClassID);
-pub const kAudioVolumeControlClassID = @enumToInt(enum_unnamed_56.kAudioVolumeControlClassID);
-pub const kAudioLFEVolumeControlClassID = @enumToInt(enum_unnamed_56.kAudioLFEVolumeControlClassID);
-const enum_unnamed_56 = extern enum(c_int) {
-    kAudioLevelControlClassID = 1818588780,
-    kAudioVolumeControlClassID = 1986817381,
-    kAudioLFEVolumeControlClassID = 1937072758,
-    _,
-};
-pub const kAudioLevelControlPropertyScalarValue = @enumToInt(enum_unnamed_57.kAudioLevelControlPropertyScalarValue);
-pub const kAudioLevelControlPropertyDecibelValue = @enumToInt(enum_unnamed_57.kAudioLevelControlPropertyDecibelValue);
-pub const kAudioLevelControlPropertyDecibelRange = @enumToInt(enum_unnamed_57.kAudioLevelControlPropertyDecibelRange);
-pub const kAudioLevelControlPropertyConvertScalarToDecibels = @enumToInt(enum_unnamed_57.kAudioLevelControlPropertyConvertScalarToDecibels);
-pub const kAudioLevelControlPropertyConvertDecibelsToScalar = @enumToInt(enum_unnamed_57.kAudioLevelControlPropertyConvertDecibelsToScalar);
-const enum_unnamed_57 = extern enum(c_int) {
-    kAudioLevelControlPropertyScalarValue = 1818456950,
-    kAudioLevelControlPropertyDecibelValue = 1818453110,
-    kAudioLevelControlPropertyDecibelRange = 1818453106,
-    kAudioLevelControlPropertyConvertScalarToDecibels = 1818456932,
-    kAudioLevelControlPropertyConvertDecibelsToScalar = 1818453107,
-    _,
-};
-pub const kAudioBooleanControlClassID = @enumToInt(enum_unnamed_58.kAudioBooleanControlClassID);
-pub const kAudioMuteControlClassID = @enumToInt(enum_unnamed_58.kAudioMuteControlClassID);
-pub const kAudioSoloControlClassID = @enumToInt(enum_unnamed_58.kAudioSoloControlClassID);
-pub const kAudioJackControlClassID = @enumToInt(enum_unnamed_58.kAudioJackControlClassID);
-pub const kAudioLFEMuteControlClassID = @enumToInt(enum_unnamed_58.kAudioLFEMuteControlClassID);
-pub const kAudioPhantomPowerControlClassID = @enumToInt(enum_unnamed_58.kAudioPhantomPowerControlClassID);
-pub const kAudioPhaseInvertControlClassID = @enumToInt(enum_unnamed_58.kAudioPhaseInvertControlClassID);
-pub const kAudioClipLightControlClassID = @enumToInt(enum_unnamed_58.kAudioClipLightControlClassID);
-pub const kAudioTalkbackControlClassID = @enumToInt(enum_unnamed_58.kAudioTalkbackControlClassID);
-pub const kAudioListenbackControlClassID = @enumToInt(enum_unnamed_58.kAudioListenbackControlClassID);
-const enum_unnamed_58 = extern enum(c_int) {
-    kAudioBooleanControlClassID = 1953458028,
-    kAudioMuteControlClassID = 1836414053,
-    kAudioSoloControlClassID = 1936682095,
-    kAudioJackControlClassID = 1784767339,
-    kAudioLFEMuteControlClassID = 1937072749,
-    kAudioPhantomPowerControlClassID = 1885888878,
-    kAudioPhaseInvertControlClassID = 1885893481,
-    kAudioClipLightControlClassID = 1668049264,
-    kAudioTalkbackControlClassID = 1952541794,
-    kAudioListenbackControlClassID = 1819504226,
-    _,
-};
-pub const kAudioBooleanControlPropertyValue = @enumToInt(enum_unnamed_59.kAudioBooleanControlPropertyValue);
-const enum_unnamed_59 = extern enum(c_int) {
-    kAudioBooleanControlPropertyValue = 1650685548,
-    _,
-};
-pub const kAudioSelectorControlClassID = @enumToInt(enum_unnamed_60.kAudioSelectorControlClassID);
-pub const kAudioDataSourceControlClassID = @enumToInt(enum_unnamed_60.kAudioDataSourceControlClassID);
-pub const kAudioDataDestinationControlClassID = @enumToInt(enum_unnamed_60.kAudioDataDestinationControlClassID);
-pub const kAudioClockSourceControlClassID = @enumToInt(enum_unnamed_60.kAudioClockSourceControlClassID);
-pub const kAudioLineLevelControlClassID = @enumToInt(enum_unnamed_60.kAudioLineLevelControlClassID);
-pub const kAudioHighPassFilterControlClassID = @enumToInt(enum_unnamed_60.kAudioHighPassFilterControlClassID);
-const enum_unnamed_60 = extern enum(c_int) {
-    kAudioSelectorControlClassID = 1936483188,
-    kAudioDataSourceControlClassID = 1685287523,
-    kAudioDataDestinationControlClassID = 1684370292,
-    kAudioClockSourceControlClassID = 1668047723,
-    kAudioLineLevelControlClassID = 1852601964,
-    kAudioHighPassFilterControlClassID = 1751740518,
-    _,
-};
-pub const kAudioSelectorControlPropertyCurrentItem = @enumToInt(enum_unnamed_61.kAudioSelectorControlPropertyCurrentItem);
-pub const kAudioSelectorControlPropertyAvailableItems = @enumToInt(enum_unnamed_61.kAudioSelectorControlPropertyAvailableItems);
-pub const kAudioSelectorControlPropertyItemName = @enumToInt(enum_unnamed_61.kAudioSelectorControlPropertyItemName);
-pub const kAudioSelectorControlPropertyItemKind = @enumToInt(enum_unnamed_61.kAudioSelectorControlPropertyItemKind);
-const enum_unnamed_61 = extern enum(c_int) {
-    kAudioSelectorControlPropertyCurrentItem = 1935893353,
-    kAudioSelectorControlPropertyAvailableItems = 1935892841,
-    kAudioSelectorControlPropertyItemName = 1935894894,
-    kAudioSelectorControlPropertyItemKind = 1668049771,
-    _,
-};
-pub const kAudioSelectorControlItemKindSpacer = @enumToInt(enum_unnamed_62.kAudioSelectorControlItemKindSpacer);
-const enum_unnamed_62 = extern enum(c_int) {
-    kAudioSelectorControlItemKindSpacer = 1936745330,
-    _,
-};
-pub const kAudioClockSourceItemKindInternal = @enumToInt(enum_unnamed_63.kAudioClockSourceItemKindInternal);
-const enum_unnamed_63 = extern enum(c_int) {
-    kAudioClockSourceItemKindInternal = 1768846368,
-    _,
-};
-pub const kAudioStereoPanControlClassID = @enumToInt(enum_unnamed_64.kAudioStereoPanControlClassID);
-const enum_unnamed_64 = extern enum(c_int) {
-    kAudioStereoPanControlClassID = 1936744814,
-    _,
-};
-pub const kAudioStereoPanControlPropertyValue = @enumToInt(enum_unnamed_65.kAudioStereoPanControlPropertyValue);
-pub const kAudioStereoPanControlPropertyPanningChannels = @enumToInt(enum_unnamed_65.kAudioStereoPanControlPropertyPanningChannels);
-const enum_unnamed_65 = extern enum(c_int) {
-    kAudioStereoPanControlPropertyValue = 1936745334,
-    kAudioStereoPanControlPropertyPanningChannels = 1936745315,
-    _,
-};
 pub const va_list = __builtin_va_list;
 pub const __gnuc_va_list = __builtin_va_list;
 pub extern fn __assert_rtn([*c]const u8, [*c]const u8, c_int, [*c]const u8) noreturn;
@@ -1954,24 +1474,24 @@ pub const ct_rune_t = __darwin_ct_rune_t;
 pub const rune_t = __darwin_rune_t;
 pub const wchar_t = __darwin_wchar_t;
 pub const wint_t = __darwin_wint_t;
-const struct_unnamed_66 = extern struct {
+const struct_unnamed_26 = extern struct {
     __min: __darwin_rune_t,
     __max: __darwin_rune_t,
     __map: __darwin_rune_t,
     __types: [*c]__uint32_t,
 };
-pub const _RuneEntry = struct_unnamed_66;
-const struct_unnamed_67 = extern struct {
+pub const _RuneEntry = struct_unnamed_26;
+const struct_unnamed_27 = extern struct {
     __nranges: c_int,
     __ranges: [*c]_RuneEntry,
 };
-pub const _RuneRange = struct_unnamed_67;
-const struct_unnamed_68 = extern struct {
+pub const _RuneRange = struct_unnamed_27;
+const struct_unnamed_28 = extern struct {
     __name: [14]u8,
     __mask: __uint32_t,
 };
-pub const _RuneCharClass = struct_unnamed_68;
-const struct_unnamed_69 = extern struct {
+pub const _RuneCharClass = struct_unnamed_28;
+const struct_unnamed_29 = extern struct {
     __magic: [8]u8,
     __encoding: [32]u8,
     __sgetrune: ?fn ([*c]const u8, __darwin_size_t, [*c][*c]const u8) callconv(.C) __darwin_rune_t,
@@ -1988,7 +1508,7 @@ const struct_unnamed_69 = extern struct {
     __ncharclasses: c_int,
     __charclasses: [*c]_RuneCharClass,
 };
-pub const _RuneLocale = struct_unnamed_69;
+pub const _RuneLocale = struct_unnamed_29;
 pub extern var _DefaultRuneLocale: _RuneLocale;
 pub extern var _CurrentRuneLocale: [*c]_RuneLocale;
 pub extern fn ___runetype(__darwin_ct_rune_t) c_ulong;
@@ -3163,16 +2683,16 @@ pub extern fn __sprintf_chk(noalias [*c]u8, c_int, usize, noalias [*c]const u8, 
 pub extern fn __snprintf_chk(noalias [*c]u8, usize, c_int, usize, noalias [*c]const u8, ...) c_int;
 pub extern fn __vsprintf_chk(noalias [*c]u8, c_int, usize, noalias [*c]const u8, [*c]struct___va_list_tag) c_int;
 pub extern fn __vsnprintf_chk(noalias [*c]u8, usize, c_int, usize, noalias [*c]const u8, [*c]struct___va_list_tag) c_int;
-pub const P_ALL = @enumToInt(enum_unnamed_70.P_ALL);
-pub const P_PID = @enumToInt(enum_unnamed_70.P_PID);
-pub const P_PGID = @enumToInt(enum_unnamed_70.P_PGID);
-const enum_unnamed_70 = extern enum(c_int) {
+pub const P_ALL = @enumToInt(enum_unnamed_30.P_ALL);
+pub const P_PID = @enumToInt(enum_unnamed_30.P_PID);
+pub const P_PGID = @enumToInt(enum_unnamed_30.P_PGID);
+const enum_unnamed_30 = extern enum(c_int) {
     P_ALL,
     P_PID,
     P_PGID,
     _,
 };
-pub const idtype_t = enum_unnamed_70;
+pub const idtype_t = enum_unnamed_30;
 pub const struct_timeval = extern struct {
     tv_sec: __darwin_time_t,
     tv_usec: __darwin_suseconds_t,
@@ -3334,12 +2854,12 @@ pub extern fn getrusage(c_int, [*c]struct_rusage) c_int;
 pub extern fn setpriority(c_int, id_t, c_int) c_int;
 pub extern fn setiopolicy_np(c_int, c_int, c_int) c_int;
 pub extern fn setrlimit(c_int, [*c]const struct_rlimit) c_int;
-const struct_unnamed_71 = @OpaqueType(); // /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/wait.h:201:19: warning: struct demoted to opaque type - has bitfield
-const struct_unnamed_72 = @OpaqueType(); // /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/wait.h:220:19: warning: struct demoted to opaque type - has bitfield
+const struct_unnamed_31 = @OpaqueType(); // /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/wait.h:201:19: warning: struct demoted to opaque type - has bitfield
+const struct_unnamed_32 = @OpaqueType(); // /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/wait.h:220:19: warning: struct demoted to opaque type - has bitfield
 pub const union_wait = extern union {
     w_status: c_int,
-    w_T: struct_unnamed_71,
-    w_S: struct_unnamed_72,
+    w_T: struct_unnamed_31,
+    w_S: struct_unnamed_32,
 };
 pub extern fn wait([*c]c_int) pid_t;
 pub extern fn waitpid(pid_t, [*c]c_int, c_int) pid_t;
@@ -3347,21 +2867,21 @@ pub extern fn waitid(idtype_t, id_t, [*c]siginfo_t, c_int) c_int;
 pub extern fn wait3([*c]c_int, c_int, [*c]struct_rusage) pid_t;
 pub extern fn wait4(pid_t, [*c]c_int, c_int, [*c]struct_rusage) pid_t;
 pub extern fn alloca(c_ulong) ?*c_void;
-const struct_unnamed_73 = extern struct {
+const struct_unnamed_33 = extern struct {
     quot: c_int,
     rem: c_int,
 };
-pub const div_t = struct_unnamed_73;
-const struct_unnamed_74 = extern struct {
+pub const div_t = struct_unnamed_33;
+const struct_unnamed_34 = extern struct {
     quot: c_long,
     rem: c_long,
 };
-pub const ldiv_t = struct_unnamed_74;
-const struct_unnamed_75 = extern struct {
+pub const ldiv_t = struct_unnamed_34;
+const struct_unnamed_35 = extern struct {
     quot: c_longlong,
     rem: c_longlong,
 };
-pub const lldiv_t = struct_unnamed_75;
+pub const lldiv_t = struct_unnamed_35;
 pub extern var __mb_cur_max: c_int;
 pub extern fn malloc(__size: c_ulong) ?*c_void;
 pub extern fn calloc(__count: c_ulong, __size: c_ulong) ?*c_void;
@@ -3576,15 +3096,15 @@ pub extern fn time2posix(time_t) time_t;
 pub extern fn timelocal([*c]struct_tm) time_t;
 pub extern fn timegm([*c]struct_tm) time_t;
 pub extern fn nanosleep(__rqtp: [*c]const struct_timespec, __rmtp: [*c]struct_timespec) c_int;
-pub const _CLOCK_REALTIME = @enumToInt(enum_unnamed_76._CLOCK_REALTIME);
-pub const _CLOCK_MONOTONIC = @enumToInt(enum_unnamed_76._CLOCK_MONOTONIC);
-pub const _CLOCK_MONOTONIC_RAW = @enumToInt(enum_unnamed_76._CLOCK_MONOTONIC_RAW);
-pub const _CLOCK_MONOTONIC_RAW_APPROX = @enumToInt(enum_unnamed_76._CLOCK_MONOTONIC_RAW_APPROX);
-pub const _CLOCK_UPTIME_RAW = @enumToInt(enum_unnamed_76._CLOCK_UPTIME_RAW);
-pub const _CLOCK_UPTIME_RAW_APPROX = @enumToInt(enum_unnamed_76._CLOCK_UPTIME_RAW_APPROX);
-pub const _CLOCK_PROCESS_CPUTIME_ID = @enumToInt(enum_unnamed_76._CLOCK_PROCESS_CPUTIME_ID);
-pub const _CLOCK_THREAD_CPUTIME_ID = @enumToInt(enum_unnamed_76._CLOCK_THREAD_CPUTIME_ID);
-const enum_unnamed_76 = extern enum(c_int) {
+pub const _CLOCK_REALTIME = @enumToInt(enum_unnamed_36._CLOCK_REALTIME);
+pub const _CLOCK_MONOTONIC = @enumToInt(enum_unnamed_36._CLOCK_MONOTONIC);
+pub const _CLOCK_MONOTONIC_RAW = @enumToInt(enum_unnamed_36._CLOCK_MONOTONIC_RAW);
+pub const _CLOCK_MONOTONIC_RAW_APPROX = @enumToInt(enum_unnamed_36._CLOCK_MONOTONIC_RAW_APPROX);
+pub const _CLOCK_UPTIME_RAW = @enumToInt(enum_unnamed_36._CLOCK_UPTIME_RAW);
+pub const _CLOCK_UPTIME_RAW_APPROX = @enumToInt(enum_unnamed_36._CLOCK_UPTIME_RAW_APPROX);
+pub const _CLOCK_PROCESS_CPUTIME_ID = @enumToInt(enum_unnamed_36._CLOCK_PROCESS_CPUTIME_ID);
+pub const _CLOCK_THREAD_CPUTIME_ID = @enumToInt(enum_unnamed_36._CLOCK_THREAD_CPUTIME_ID);
+const enum_unnamed_36 = extern enum(c_int) {
     _CLOCK_REALTIME = 0,
     _CLOCK_MONOTONIC = 6,
     _CLOCK_MONOTONIC_RAW = 4,
@@ -3595,18 +3115,18 @@ const enum_unnamed_76 = extern enum(c_int) {
     _CLOCK_THREAD_CPUTIME_ID = 16,
     _,
 };
-pub const clockid_t = enum_unnamed_76;
+pub const clockid_t = enum_unnamed_36;
 pub extern fn clock_getres(__clock_id: clockid_t, __res: [*c]struct_timespec) c_int;
 pub extern fn clock_gettime(__clock_id: clockid_t, __tp: [*c]struct_timespec) c_int;
 pub extern fn clock_gettime_nsec_np(__clock_id: clockid_t) __uint64_t;
 pub extern fn clock_settime(__clock_id: clockid_t, __tp: [*c]const struct_timespec) c_int;
 pub extern fn timespec_get(ts: [*c]struct_timespec, base: c_int) c_int;
 pub extern fn imaxabs(j: intmax_t) intmax_t;
-const struct_unnamed_77 = extern struct {
+const struct_unnamed_37 = extern struct {
     quot: intmax_t,
     rem: intmax_t,
 };
-pub const imaxdiv_t = struct_unnamed_77;
+pub const imaxdiv_t = struct_unnamed_37;
 pub extern fn imaxdiv(__numer: intmax_t, __denom: intmax_t) imaxdiv_t;
 pub extern fn strtoimax(noalias __nptr: [*c]const u8, noalias __endptr: [*c][*c]u8, __base: c_int) intmax_t;
 pub extern fn strtoumax(noalias __nptr: [*c]const u8, noalias __endptr: [*c][*c]u8, __base: c_int) uintmax_t;
@@ -3616,14 +3136,14 @@ pub const CFArrayRetainCallBack = ?fn (CFAllocatorRef, ?*const c_void) callconv(
 pub const CFArrayReleaseCallBack = ?fn (CFAllocatorRef, ?*const c_void) callconv(.C) void;
 pub const CFArrayCopyDescriptionCallBack = ?fn (?*const c_void) callconv(.C) CFStringRef;
 pub const CFArrayEqualCallBack = ?fn (?*const c_void, ?*const c_void) callconv(.C) Boolean;
-const struct_unnamed_78 = extern struct {
+const struct_unnamed_38 = extern struct {
     version: CFIndex,
     retain: CFArrayRetainCallBack,
     release: CFArrayReleaseCallBack,
     copyDescription: CFArrayCopyDescriptionCallBack,
     equal: CFArrayEqualCallBack,
 };
-pub const CFArrayCallBacks = struct_unnamed_78;
+pub const CFArrayCallBacks = struct_unnamed_38;
 pub extern const kCFTypeArrayCallBacks: CFArrayCallBacks;
 pub const CFArrayApplierFunction = ?fn (?*const c_void, ?*c_void) callconv(.C) void;
 pub const struct___CFArray = @OpaqueType();
@@ -3657,7 +3177,7 @@ pub const CFBagReleaseCallBack = ?fn (CFAllocatorRef, ?*const c_void) callconv(.
 pub const CFBagCopyDescriptionCallBack = ?fn (?*const c_void) callconv(.C) CFStringRef;
 pub const CFBagEqualCallBack = ?fn (?*const c_void, ?*const c_void) callconv(.C) Boolean;
 pub const CFBagHashCallBack = ?fn (?*const c_void) callconv(.C) CFHashCode;
-const struct_unnamed_79 = extern struct {
+const struct_unnamed_39 = extern struct {
     version: CFIndex,
     retain: CFBagRetainCallBack,
     release: CFBagReleaseCallBack,
@@ -3665,7 +3185,7 @@ const struct_unnamed_79 = extern struct {
     equal: CFBagEqualCallBack,
     hash: CFBagHashCallBack,
 };
-pub const CFBagCallBacks = struct_unnamed_79;
+pub const CFBagCallBacks = struct_unnamed_39;
 pub extern const kCFTypeBagCallBacks: CFBagCallBacks;
 pub extern const kCFCopyStringBagCallBacks: CFBagCallBacks;
 pub const CFBagApplierFunction = ?fn (?*const c_void, ?*c_void) callconv(.C) void;
@@ -3689,22 +3209,22 @@ pub extern fn CFBagReplaceValue(theBag: CFMutableBagRef, value: ?*const c_void) 
 pub extern fn CFBagSetValue(theBag: CFMutableBagRef, value: ?*const c_void) void;
 pub extern fn CFBagRemoveValue(theBag: CFMutableBagRef, value: ?*const c_void) void;
 pub extern fn CFBagRemoveAllValues(theBag: CFMutableBagRef) void;
-const struct_unnamed_80 = extern struct {
+const struct_unnamed_40 = extern struct {
     version: CFIndex,
     info: ?*c_void,
     retain: ?fn (?*const c_void) callconv(.C) ?*const c_void,
     release: ?fn (?*const c_void) callconv(.C) void,
     copyDescription: ?fn (?*const c_void) callconv(.C) CFStringRef,
 };
-pub const CFBinaryHeapCompareContext = struct_unnamed_80;
-const struct_unnamed_81 = extern struct {
+pub const CFBinaryHeapCompareContext = struct_unnamed_40;
+const struct_unnamed_41 = extern struct {
     version: CFIndex,
     retain: ?fn (CFAllocatorRef, ?*const c_void) callconv(.C) ?*const c_void,
     release: ?fn (CFAllocatorRef, ?*const c_void) callconv(.C) void,
     copyDescription: ?fn (?*const c_void) callconv(.C) CFStringRef,
     compare: ?fn (?*const c_void, ?*const c_void, ?*c_void) callconv(.C) CFComparisonResult,
 };
-pub const CFBinaryHeapCallBacks = struct_unnamed_81;
+pub const CFBinaryHeapCallBacks = struct_unnamed_41;
 pub extern const kCFStringBinaryHeapCallBacks: CFBinaryHeapCallBacks;
 pub const CFBinaryHeapApplierFunction = ?fn (?*const c_void, ?*c_void) callconv(.C) void;
 pub const struct___CFBinaryHeap = @OpaqueType();
@@ -3783,10 +3303,10 @@ pub fn OSWriteSwapInt64(arg_base: ?*volatile c_void, arg_byteOffset: usize, arg_
     var data = arg_data;
     @intToPtr([*c]volatile u64, (@intCast(usize, @ptrToInt(base)) +% byteOffset)).?.* = _OSSwapInt64(data);
 }
-pub const OSUnknownByteOrder = @enumToInt(enum_unnamed_82.OSUnknownByteOrder);
-pub const OSLittleEndian = @enumToInt(enum_unnamed_82.OSLittleEndian);
-pub const OSBigEndian = @enumToInt(enum_unnamed_82.OSBigEndian);
-const enum_unnamed_82 = extern enum(c_int) {
+pub const OSUnknownByteOrder = @enumToInt(enum_unnamed_42.OSUnknownByteOrder);
+pub const OSLittleEndian = @enumToInt(enum_unnamed_42.OSLittleEndian);
+pub const OSBigEndian = @enumToInt(enum_unnamed_42.OSBigEndian);
+const enum_unnamed_42 = extern enum(c_int) {
     OSUnknownByteOrder,
     OSLittleEndian,
     OSBigEndian,
@@ -3891,14 +3411,14 @@ pub fn CFSwapInt64HostToLittle(arg_arg: u64) callconv(.C) u64 {
     var arg = arg_arg;
     return (arg);
 }
-const struct_unnamed_83 = extern struct {
+const struct_unnamed_43 = extern struct {
     v: u32,
 };
-pub const CFSwappedFloat32 = struct_unnamed_83;
-const struct_unnamed_84 = extern struct {
+pub const CFSwappedFloat32 = struct_unnamed_43;
+const struct_unnamed_44 = extern struct {
     v: u64,
 };
-pub const CFSwappedFloat64 = struct_unnamed_84;
+pub const CFSwappedFloat64 = struct_unnamed_44;
 pub const CFConvertFloat32HostToSwapped = @compileError("unable to translate function"); // /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFByteOrder.h:219:5: warning: TODO implement translation of DeclStmt kind Record
 pub const CFConvertFloat32SwappedToHost = @compileError("unable to translate function"); // /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFByteOrder.h:231:5: warning: TODO implement translation of DeclStmt kind Record
 pub const CFConvertFloat64HostToSwapped = @compileError("unable to translate function"); // /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFByteOrder.h:243:5: warning: TODO implement translation of DeclStmt kind Record
@@ -3912,7 +3432,7 @@ pub const CFDictionaryReleaseCallBack = ?fn (CFAllocatorRef, ?*const c_void) cal
 pub const CFDictionaryCopyDescriptionCallBack = ?fn (?*const c_void) callconv(.C) CFStringRef;
 pub const CFDictionaryEqualCallBack = ?fn (?*const c_void, ?*const c_void) callconv(.C) Boolean;
 pub const CFDictionaryHashCallBack = ?fn (?*const c_void) callconv(.C) CFHashCode;
-const struct_unnamed_85 = extern struct {
+const struct_unnamed_45 = extern struct {
     version: CFIndex,
     retain: CFDictionaryRetainCallBack,
     release: CFDictionaryReleaseCallBack,
@@ -3920,17 +3440,17 @@ const struct_unnamed_85 = extern struct {
     equal: CFDictionaryEqualCallBack,
     hash: CFDictionaryHashCallBack,
 };
-pub const CFDictionaryKeyCallBacks = struct_unnamed_85;
+pub const CFDictionaryKeyCallBacks = struct_unnamed_45;
 pub extern const kCFTypeDictionaryKeyCallBacks: CFDictionaryKeyCallBacks;
 pub extern const kCFCopyStringDictionaryKeyCallBacks: CFDictionaryKeyCallBacks;
-const struct_unnamed_86 = extern struct {
+const struct_unnamed_46 = extern struct {
     version: CFIndex,
     retain: CFDictionaryRetainCallBack,
     release: CFDictionaryReleaseCallBack,
     copyDescription: CFDictionaryCopyDescriptionCallBack,
     equal: CFDictionaryEqualCallBack,
 };
-pub const CFDictionaryValueCallBacks = struct_unnamed_86;
+pub const CFDictionaryValueCallBacks = struct_unnamed_46;
 pub extern const kCFTypeDictionaryValueCallBacks: CFDictionaryValueCallBacks;
 pub const CFDictionaryApplierFunction = ?fn (?*const c_void, ?*const c_void, ?*c_void) callconv(.C) void;
 pub const struct___CFDictionary = @OpaqueType();
@@ -3960,11 +3480,11 @@ pub const struct___CFNotificationCenter = @OpaqueType();
 pub const CFNotificationCenterRef = ?*struct___CFNotificationCenter;
 pub const CFNotificationCallback = ?fn (CFNotificationCenterRef, ?*c_void, CFNotificationName, ?*const c_void, CFDictionaryRef) callconv(.C) void;
 pub const CFNotificationSuspensionBehavior = CFIndex;
-pub const CFNotificationSuspensionBehaviorDrop = @enumToInt(enum_unnamed_87.CFNotificationSuspensionBehaviorDrop);
-pub const CFNotificationSuspensionBehaviorCoalesce = @enumToInt(enum_unnamed_87.CFNotificationSuspensionBehaviorCoalesce);
-pub const CFNotificationSuspensionBehaviorHold = @enumToInt(enum_unnamed_87.CFNotificationSuspensionBehaviorHold);
-pub const CFNotificationSuspensionBehaviorDeliverImmediately = @enumToInt(enum_unnamed_87.CFNotificationSuspensionBehaviorDeliverImmediately);
-const enum_unnamed_87 = extern enum(c_int) {
+pub const CFNotificationSuspensionBehaviorDrop = @enumToInt(enum_unnamed_47.CFNotificationSuspensionBehaviorDrop);
+pub const CFNotificationSuspensionBehaviorCoalesce = @enumToInt(enum_unnamed_47.CFNotificationSuspensionBehaviorCoalesce);
+pub const CFNotificationSuspensionBehaviorHold = @enumToInt(enum_unnamed_47.CFNotificationSuspensionBehaviorHold);
+pub const CFNotificationSuspensionBehaviorDeliverImmediately = @enumToInt(enum_unnamed_47.CFNotificationSuspensionBehaviorDeliverImmediately);
+const enum_unnamed_47 = extern enum(c_int) {
     CFNotificationSuspensionBehaviorDrop = 1,
     CFNotificationSuspensionBehaviorCoalesce = 2,
     CFNotificationSuspensionBehaviorHold = 3,
@@ -3979,9 +3499,9 @@ pub extern fn CFNotificationCenterAddObserver(center: CFNotificationCenterRef, o
 pub extern fn CFNotificationCenterRemoveObserver(center: CFNotificationCenterRef, observer: ?*const c_void, name: CFNotificationName, object: ?*const c_void) void;
 pub extern fn CFNotificationCenterRemoveEveryObserver(center: CFNotificationCenterRef, observer: ?*const c_void) void;
 pub extern fn CFNotificationCenterPostNotification(center: CFNotificationCenterRef, name: CFNotificationName, object: ?*const c_void, userInfo: CFDictionaryRef, deliverImmediately: Boolean) void;
-pub const kCFNotificationDeliverImmediately = @enumToInt(enum_unnamed_88.kCFNotificationDeliverImmediately);
-pub const kCFNotificationPostToAllSessions = @enumToInt(enum_unnamed_88.kCFNotificationPostToAllSessions);
-const enum_unnamed_88 = extern enum(c_int) {
+pub const kCFNotificationDeliverImmediately = @enumToInt(enum_unnamed_48.kCFNotificationDeliverImmediately);
+pub const kCFNotificationPostToAllSessions = @enumToInt(enum_unnamed_48.kCFNotificationPostToAllSessions);
+const enum_unnamed_48 = extern enum(c_int) {
     kCFNotificationDeliverImmediately = 1,
     kCFNotificationPostToAllSessions = 2,
     _,
@@ -4006,12 +3526,12 @@ pub extern fn CFLocaleCreateCanonicalLocaleIdentifierFromScriptManagerCodes(allo
 pub extern fn CFLocaleCreateLocaleIdentifierFromWindowsLocaleCode(allocator: CFAllocatorRef, lcid: u32) CFLocaleIdentifier;
 pub extern fn CFLocaleGetWindowsLocaleCodeFromLocaleIdentifier(localeIdentifier: CFLocaleIdentifier) u32;
 pub const CFLocaleLanguageDirection = CFIndex;
-pub const kCFLocaleLanguageDirectionUnknown = @enumToInt(enum_unnamed_89.kCFLocaleLanguageDirectionUnknown);
-pub const kCFLocaleLanguageDirectionLeftToRight = @enumToInt(enum_unnamed_89.kCFLocaleLanguageDirectionLeftToRight);
-pub const kCFLocaleLanguageDirectionRightToLeft = @enumToInt(enum_unnamed_89.kCFLocaleLanguageDirectionRightToLeft);
-pub const kCFLocaleLanguageDirectionTopToBottom = @enumToInt(enum_unnamed_89.kCFLocaleLanguageDirectionTopToBottom);
-pub const kCFLocaleLanguageDirectionBottomToTop = @enumToInt(enum_unnamed_89.kCFLocaleLanguageDirectionBottomToTop);
-const enum_unnamed_89 = extern enum(c_int) {
+pub const kCFLocaleLanguageDirectionUnknown = @enumToInt(enum_unnamed_49.kCFLocaleLanguageDirectionUnknown);
+pub const kCFLocaleLanguageDirectionLeftToRight = @enumToInt(enum_unnamed_49.kCFLocaleLanguageDirectionLeftToRight);
+pub const kCFLocaleLanguageDirectionRightToLeft = @enumToInt(enum_unnamed_49.kCFLocaleLanguageDirectionRightToLeft);
+pub const kCFLocaleLanguageDirectionTopToBottom = @enumToInt(enum_unnamed_49.kCFLocaleLanguageDirectionTopToBottom);
+pub const kCFLocaleLanguageDirectionBottomToTop = @enumToInt(enum_unnamed_49.kCFLocaleLanguageDirectionBottomToTop);
+const enum_unnamed_49 = extern enum(c_int) {
     kCFLocaleLanguageDirectionUnknown = 0,
     kCFLocaleLanguageDirectionLeftToRight = 1,
     kCFLocaleLanguageDirectionRightToLeft = 2,
@@ -4077,7 +3597,7 @@ pub extern fn CFDateGetTimeIntervalSinceDate(theDate: CFDateRef, otherDate: CFDa
 pub extern fn CFDateCompare(theDate: CFDateRef, otherDate: CFDateRef, context: ?*c_void) CFComparisonResult;
 pub const struct___CFTimeZone = @OpaqueType();
 pub const CFTimeZoneRef = ?*const struct___CFTimeZone;
-const struct_unnamed_90 = extern struct {
+const struct_unnamed_50 = extern struct {
     year: SInt32,
     month: SInt8,
     day: SInt8,
@@ -4085,8 +3605,8 @@ const struct_unnamed_90 = extern struct {
     minute: SInt8,
     second: f64,
 };
-pub const CFGregorianDate = struct_unnamed_90;
-const struct_unnamed_91 = extern struct {
+pub const CFGregorianDate = struct_unnamed_50;
+const struct_unnamed_51 = extern struct {
     years: SInt32,
     months: SInt32,
     days: SInt32,
@@ -4094,16 +3614,16 @@ const struct_unnamed_91 = extern struct {
     minutes: SInt32,
     seconds: f64,
 };
-pub const CFGregorianUnits = struct_unnamed_91;
+pub const CFGregorianUnits = struct_unnamed_51;
 pub const CFGregorianUnitFlags = CFOptionFlags;
-pub const kCFGregorianUnitsYears = @enumToInt(enum_unnamed_92.kCFGregorianUnitsYears);
-pub const kCFGregorianUnitsMonths = @enumToInt(enum_unnamed_92.kCFGregorianUnitsMonths);
-pub const kCFGregorianUnitsDays = @enumToInt(enum_unnamed_92.kCFGregorianUnitsDays);
-pub const kCFGregorianUnitsHours = @enumToInt(enum_unnamed_92.kCFGregorianUnitsHours);
-pub const kCFGregorianUnitsMinutes = @enumToInt(enum_unnamed_92.kCFGregorianUnitsMinutes);
-pub const kCFGregorianUnitsSeconds = @enumToInt(enum_unnamed_92.kCFGregorianUnitsSeconds);
-pub const kCFGregorianAllUnits = @enumToInt(enum_unnamed_92.kCFGregorianAllUnits);
-const enum_unnamed_92 = extern enum(c_int) {
+pub const kCFGregorianUnitsYears = @enumToInt(enum_unnamed_52.kCFGregorianUnitsYears);
+pub const kCFGregorianUnitsMonths = @enumToInt(enum_unnamed_52.kCFGregorianUnitsMonths);
+pub const kCFGregorianUnitsDays = @enumToInt(enum_unnamed_52.kCFGregorianUnitsDays);
+pub const kCFGregorianUnitsHours = @enumToInt(enum_unnamed_52.kCFGregorianUnitsHours);
+pub const kCFGregorianUnitsMinutes = @enumToInt(enum_unnamed_52.kCFGregorianUnitsMinutes);
+pub const kCFGregorianUnitsSeconds = @enumToInt(enum_unnamed_52.kCFGregorianUnitsSeconds);
+pub const kCFGregorianAllUnits = @enumToInt(enum_unnamed_52.kCFGregorianAllUnits);
+const enum_unnamed_52 = extern enum(c_int) {
     kCFGregorianUnitsYears = 1,
     kCFGregorianUnitsMonths = 2,
     kCFGregorianUnitsDays = 4,
@@ -4140,9 +3660,9 @@ pub extern fn CFDataAppendBytes(theData: CFMutableDataRef, bytes: [*c]const UInt
 pub extern fn CFDataReplaceBytes(theData: CFMutableDataRef, range: CFRange, newBytes: [*c]const UInt8, newLength: CFIndex) void;
 pub extern fn CFDataDeleteBytes(theData: CFMutableDataRef, range: CFRange) void;
 pub const CFDataSearchFlags = CFOptionFlags;
-pub const kCFDataSearchBackwards = @enumToInt(enum_unnamed_93.kCFDataSearchBackwards);
-pub const kCFDataSearchAnchored = @enumToInt(enum_unnamed_93.kCFDataSearchAnchored);
-const enum_unnamed_93 = extern enum(c_int) {
+pub const kCFDataSearchBackwards = @enumToInt(enum_unnamed_53.kCFDataSearchBackwards);
+pub const kCFDataSearchAnchored = @enumToInt(enum_unnamed_53.kCFDataSearchAnchored);
+const enum_unnamed_53 = extern enum(c_int) {
     kCFDataSearchBackwards = 1,
     kCFDataSearchAnchored = 2,
     _,
@@ -4152,22 +3672,22 @@ pub const struct___CFCharacterSet = @OpaqueType();
 pub const CFCharacterSetRef = ?*const struct___CFCharacterSet;
 pub const CFMutableCharacterSetRef = ?*struct___CFCharacterSet;
 pub const CFCharacterSetPredefinedSet = CFIndex;
-pub const kCFCharacterSetControl = @enumToInt(enum_unnamed_94.kCFCharacterSetControl);
-pub const kCFCharacterSetWhitespace = @enumToInt(enum_unnamed_94.kCFCharacterSetWhitespace);
-pub const kCFCharacterSetWhitespaceAndNewline = @enumToInt(enum_unnamed_94.kCFCharacterSetWhitespaceAndNewline);
-pub const kCFCharacterSetDecimalDigit = @enumToInt(enum_unnamed_94.kCFCharacterSetDecimalDigit);
-pub const kCFCharacterSetLetter = @enumToInt(enum_unnamed_94.kCFCharacterSetLetter);
-pub const kCFCharacterSetLowercaseLetter = @enumToInt(enum_unnamed_94.kCFCharacterSetLowercaseLetter);
-pub const kCFCharacterSetUppercaseLetter = @enumToInt(enum_unnamed_94.kCFCharacterSetUppercaseLetter);
-pub const kCFCharacterSetNonBase = @enumToInt(enum_unnamed_94.kCFCharacterSetNonBase);
-pub const kCFCharacterSetDecomposable = @enumToInt(enum_unnamed_94.kCFCharacterSetDecomposable);
-pub const kCFCharacterSetAlphaNumeric = @enumToInt(enum_unnamed_94.kCFCharacterSetAlphaNumeric);
-pub const kCFCharacterSetPunctuation = @enumToInt(enum_unnamed_94.kCFCharacterSetPunctuation);
-pub const kCFCharacterSetCapitalizedLetter = @enumToInt(enum_unnamed_94.kCFCharacterSetCapitalizedLetter);
-pub const kCFCharacterSetSymbol = @enumToInt(enum_unnamed_94.kCFCharacterSetSymbol);
-pub const kCFCharacterSetNewline = @enumToInt(enum_unnamed_94.kCFCharacterSetNewline);
-pub const kCFCharacterSetIllegal = @enumToInt(enum_unnamed_94.kCFCharacterSetIllegal);
-const enum_unnamed_94 = extern enum(c_int) {
+pub const kCFCharacterSetControl = @enumToInt(enum_unnamed_54.kCFCharacterSetControl);
+pub const kCFCharacterSetWhitespace = @enumToInt(enum_unnamed_54.kCFCharacterSetWhitespace);
+pub const kCFCharacterSetWhitespaceAndNewline = @enumToInt(enum_unnamed_54.kCFCharacterSetWhitespaceAndNewline);
+pub const kCFCharacterSetDecimalDigit = @enumToInt(enum_unnamed_54.kCFCharacterSetDecimalDigit);
+pub const kCFCharacterSetLetter = @enumToInt(enum_unnamed_54.kCFCharacterSetLetter);
+pub const kCFCharacterSetLowercaseLetter = @enumToInt(enum_unnamed_54.kCFCharacterSetLowercaseLetter);
+pub const kCFCharacterSetUppercaseLetter = @enumToInt(enum_unnamed_54.kCFCharacterSetUppercaseLetter);
+pub const kCFCharacterSetNonBase = @enumToInt(enum_unnamed_54.kCFCharacterSetNonBase);
+pub const kCFCharacterSetDecomposable = @enumToInt(enum_unnamed_54.kCFCharacterSetDecomposable);
+pub const kCFCharacterSetAlphaNumeric = @enumToInt(enum_unnamed_54.kCFCharacterSetAlphaNumeric);
+pub const kCFCharacterSetPunctuation = @enumToInt(enum_unnamed_54.kCFCharacterSetPunctuation);
+pub const kCFCharacterSetCapitalizedLetter = @enumToInt(enum_unnamed_54.kCFCharacterSetCapitalizedLetter);
+pub const kCFCharacterSetSymbol = @enumToInt(enum_unnamed_54.kCFCharacterSetSymbol);
+pub const kCFCharacterSetNewline = @enumToInt(enum_unnamed_54.kCFCharacterSetNewline);
+pub const kCFCharacterSetIllegal = @enumToInt(enum_unnamed_54.kCFCharacterSetIllegal);
+const enum_unnamed_54 = extern enum(c_int) {
     kCFCharacterSetControl = 1,
     kCFCharacterSetWhitespace = 2,
     kCFCharacterSetWhitespaceAndNewline = 3,
@@ -4208,21 +3728,21 @@ pub extern fn CFCharacterSetIntersect(theSet: CFMutableCharacterSetRef, theOther
 pub extern fn CFCharacterSetInvert(theSet: CFMutableCharacterSetRef) void;
 pub const CFStringEncoding = UInt32;
 pub const CFStringBuiltInEncodings = CFStringEncoding;
-pub const kCFStringEncodingMacRoman = @enumToInt(enum_unnamed_95.kCFStringEncodingMacRoman);
-pub const kCFStringEncodingWindowsLatin1 = @enumToInt(enum_unnamed_95.kCFStringEncodingWindowsLatin1);
-pub const kCFStringEncodingISOLatin1 = @enumToInt(enum_unnamed_95.kCFStringEncodingISOLatin1);
-pub const kCFStringEncodingNextStepLatin = @enumToInt(enum_unnamed_95.kCFStringEncodingNextStepLatin);
-pub const kCFStringEncodingASCII = @enumToInt(enum_unnamed_95.kCFStringEncodingASCII);
-pub const kCFStringEncodingUnicode = @enumToInt(enum_unnamed_95.kCFStringEncodingUnicode);
-pub const kCFStringEncodingUTF8 = @enumToInt(enum_unnamed_95.kCFStringEncodingUTF8);
-pub const kCFStringEncodingNonLossyASCII = @enumToInt(enum_unnamed_95.kCFStringEncodingNonLossyASCII);
-pub const kCFStringEncodingUTF16 = @enumToInt(enum_unnamed_95.kCFStringEncodingUTF16);
-pub const kCFStringEncodingUTF16BE = @enumToInt(enum_unnamed_95.kCFStringEncodingUTF16BE);
-pub const kCFStringEncodingUTF16LE = @enumToInt(enum_unnamed_95.kCFStringEncodingUTF16LE);
-pub const kCFStringEncodingUTF32 = @enumToInt(enum_unnamed_95.kCFStringEncodingUTF32);
-pub const kCFStringEncodingUTF32BE = @enumToInt(enum_unnamed_95.kCFStringEncodingUTF32BE);
-pub const kCFStringEncodingUTF32LE = @enumToInt(enum_unnamed_95.kCFStringEncodingUTF32LE);
-const enum_unnamed_95 = extern enum(c_int) {
+pub const kCFStringEncodingMacRoman = @enumToInt(enum_unnamed_55.kCFStringEncodingMacRoman);
+pub const kCFStringEncodingWindowsLatin1 = @enumToInt(enum_unnamed_55.kCFStringEncodingWindowsLatin1);
+pub const kCFStringEncodingISOLatin1 = @enumToInt(enum_unnamed_55.kCFStringEncodingISOLatin1);
+pub const kCFStringEncodingNextStepLatin = @enumToInt(enum_unnamed_55.kCFStringEncodingNextStepLatin);
+pub const kCFStringEncodingASCII = @enumToInt(enum_unnamed_55.kCFStringEncodingASCII);
+pub const kCFStringEncodingUnicode = @enumToInt(enum_unnamed_55.kCFStringEncodingUnicode);
+pub const kCFStringEncodingUTF8 = @enumToInt(enum_unnamed_55.kCFStringEncodingUTF8);
+pub const kCFStringEncodingNonLossyASCII = @enumToInt(enum_unnamed_55.kCFStringEncodingNonLossyASCII);
+pub const kCFStringEncodingUTF16 = @enumToInt(enum_unnamed_55.kCFStringEncodingUTF16);
+pub const kCFStringEncodingUTF16BE = @enumToInt(enum_unnamed_55.kCFStringEncodingUTF16BE);
+pub const kCFStringEncodingUTF16LE = @enumToInt(enum_unnamed_55.kCFStringEncodingUTF16LE);
+pub const kCFStringEncodingUTF32 = @enumToInt(enum_unnamed_55.kCFStringEncodingUTF32);
+pub const kCFStringEncodingUTF32BE = @enumToInt(enum_unnamed_55.kCFStringEncodingUTF32BE);
+pub const kCFStringEncodingUTF32LE = @enumToInt(enum_unnamed_55.kCFStringEncodingUTF32LE);
+const enum_unnamed_55 = extern enum(c_int) {
     kCFStringEncodingMacRoman = 0,
     kCFStringEncodingWindowsLatin1 = 1280,
     kCFStringEncodingISOLatin1 = 513,
@@ -4274,16 +3794,16 @@ pub extern fn CFStringGetFileSystemRepresentation(string: CFStringRef, buffer: [
 pub extern fn CFStringGetMaximumSizeOfFileSystemRepresentation(string: CFStringRef) CFIndex;
 pub extern fn CFStringCreateWithFileSystemRepresentation(alloc: CFAllocatorRef, buffer: [*c]const u8) CFStringRef;
 pub const CFStringCompareFlags = CFOptionFlags;
-pub const kCFCompareCaseInsensitive = @enumToInt(enum_unnamed_96.kCFCompareCaseInsensitive);
-pub const kCFCompareBackwards = @enumToInt(enum_unnamed_96.kCFCompareBackwards);
-pub const kCFCompareAnchored = @enumToInt(enum_unnamed_96.kCFCompareAnchored);
-pub const kCFCompareNonliteral = @enumToInt(enum_unnamed_96.kCFCompareNonliteral);
-pub const kCFCompareLocalized = @enumToInt(enum_unnamed_96.kCFCompareLocalized);
-pub const kCFCompareNumerically = @enumToInt(enum_unnamed_96.kCFCompareNumerically);
-pub const kCFCompareDiacriticInsensitive = @enumToInt(enum_unnamed_96.kCFCompareDiacriticInsensitive);
-pub const kCFCompareWidthInsensitive = @enumToInt(enum_unnamed_96.kCFCompareWidthInsensitive);
-pub const kCFCompareForcedOrdering = @enumToInt(enum_unnamed_96.kCFCompareForcedOrdering);
-const enum_unnamed_96 = extern enum(c_int) {
+pub const kCFCompareCaseInsensitive = @enumToInt(enum_unnamed_56.kCFCompareCaseInsensitive);
+pub const kCFCompareBackwards = @enumToInt(enum_unnamed_56.kCFCompareBackwards);
+pub const kCFCompareAnchored = @enumToInt(enum_unnamed_56.kCFCompareAnchored);
+pub const kCFCompareNonliteral = @enumToInt(enum_unnamed_56.kCFCompareNonliteral);
+pub const kCFCompareLocalized = @enumToInt(enum_unnamed_56.kCFCompareLocalized);
+pub const kCFCompareNumerically = @enumToInt(enum_unnamed_56.kCFCompareNumerically);
+pub const kCFCompareDiacriticInsensitive = @enumToInt(enum_unnamed_56.kCFCompareDiacriticInsensitive);
+pub const kCFCompareWidthInsensitive = @enumToInt(enum_unnamed_56.kCFCompareWidthInsensitive);
+pub const kCFCompareForcedOrdering = @enumToInt(enum_unnamed_56.kCFCompareForcedOrdering);
+const enum_unnamed_56 = extern enum(c_int) {
     kCFCompareCaseInsensitive = 1,
     kCFCompareBackwards = 4,
     kCFCompareAnchored = 8,
@@ -4333,11 +3853,11 @@ pub extern fn CFStringLowercase(theString: CFMutableStringRef, locale: CFLocaleR
 pub extern fn CFStringUppercase(theString: CFMutableStringRef, locale: CFLocaleRef) void;
 pub extern fn CFStringCapitalize(theString: CFMutableStringRef, locale: CFLocaleRef) void;
 pub const CFStringNormalizationForm = CFIndex;
-pub const kCFStringNormalizationFormD = @enumToInt(enum_unnamed_97.kCFStringNormalizationFormD);
-pub const kCFStringNormalizationFormKD = @enumToInt(enum_unnamed_97.kCFStringNormalizationFormKD);
-pub const kCFStringNormalizationFormC = @enumToInt(enum_unnamed_97.kCFStringNormalizationFormC);
-pub const kCFStringNormalizationFormKC = @enumToInt(enum_unnamed_97.kCFStringNormalizationFormKC);
-const enum_unnamed_97 = extern enum(c_int) {
+pub const kCFStringNormalizationFormD = @enumToInt(enum_unnamed_57.kCFStringNormalizationFormD);
+pub const kCFStringNormalizationFormKD = @enumToInt(enum_unnamed_57.kCFStringNormalizationFormKD);
+pub const kCFStringNormalizationFormC = @enumToInt(enum_unnamed_57.kCFStringNormalizationFormC);
+pub const kCFStringNormalizationFormKC = @enumToInt(enum_unnamed_57.kCFStringNormalizationFormKC);
+const enum_unnamed_57 = extern enum(c_int) {
     kCFStringNormalizationFormD = 0,
     kCFStringNormalizationFormKD = 1,
     kCFStringNormalizationFormC = 2,
@@ -4373,7 +3893,7 @@ pub extern fn CFStringConvertWindowsCodepageToEncoding(codepage: UInt32) CFStrin
 pub extern fn CFStringConvertIANACharSetNameToEncoding(theString: CFStringRef) CFStringEncoding;
 pub extern fn CFStringConvertEncodingToIANACharSetName(encoding: CFStringEncoding) CFStringRef;
 pub extern fn CFStringGetMostCompatibleMacStringEncoding(encoding: CFStringEncoding) CFStringEncoding;
-const struct_unnamed_98 = extern struct {
+const struct_unnamed_58 = extern struct {
     buffer: [64]UniChar,
     theString: CFStringRef,
     directUniCharBuffer: [*c]const UniChar,
@@ -4382,7 +3902,7 @@ const struct_unnamed_98 = extern struct {
     bufferedRangeStart: CFIndex,
     bufferedRangeEnd: CFIndex,
 };
-pub const CFStringInlineBuffer = struct_unnamed_98;
+pub const CFStringInlineBuffer = struct_unnamed_58;
 pub fn CFStringInitInlineBuffer(arg_str: CFStringRef, arg_buf: [*c]CFStringInlineBuffer, arg_range: CFRange) callconv(.C) void {
     var str = arg_str;
     var buf = arg_buf;
@@ -4468,13 +3988,13 @@ pub extern fn CFTimeZoneIsDaylightSavingTime(tz: CFTimeZoneRef, at: CFAbsoluteTi
 pub extern fn CFTimeZoneGetDaylightSavingTimeOffset(tz: CFTimeZoneRef, at: CFAbsoluteTime) CFTimeInterval;
 pub extern fn CFTimeZoneGetNextDaylightSavingTimeTransition(tz: CFTimeZoneRef, at: CFAbsoluteTime) CFAbsoluteTime;
 pub const CFTimeZoneNameStyle = CFIndex;
-pub const kCFTimeZoneNameStyleStandard = @enumToInt(enum_unnamed_99.kCFTimeZoneNameStyleStandard);
-pub const kCFTimeZoneNameStyleShortStandard = @enumToInt(enum_unnamed_99.kCFTimeZoneNameStyleShortStandard);
-pub const kCFTimeZoneNameStyleDaylightSaving = @enumToInt(enum_unnamed_99.kCFTimeZoneNameStyleDaylightSaving);
-pub const kCFTimeZoneNameStyleShortDaylightSaving = @enumToInt(enum_unnamed_99.kCFTimeZoneNameStyleShortDaylightSaving);
-pub const kCFTimeZoneNameStyleGeneric = @enumToInt(enum_unnamed_99.kCFTimeZoneNameStyleGeneric);
-pub const kCFTimeZoneNameStyleShortGeneric = @enumToInt(enum_unnamed_99.kCFTimeZoneNameStyleShortGeneric);
-const enum_unnamed_99 = extern enum(c_int) {
+pub const kCFTimeZoneNameStyleStandard = @enumToInt(enum_unnamed_59.kCFTimeZoneNameStyleStandard);
+pub const kCFTimeZoneNameStyleShortStandard = @enumToInt(enum_unnamed_59.kCFTimeZoneNameStyleShortStandard);
+pub const kCFTimeZoneNameStyleDaylightSaving = @enumToInt(enum_unnamed_59.kCFTimeZoneNameStyleDaylightSaving);
+pub const kCFTimeZoneNameStyleShortDaylightSaving = @enumToInt(enum_unnamed_59.kCFTimeZoneNameStyleShortDaylightSaving);
+pub const kCFTimeZoneNameStyleGeneric = @enumToInt(enum_unnamed_59.kCFTimeZoneNameStyleGeneric);
+pub const kCFTimeZoneNameStyleShortGeneric = @enumToInt(enum_unnamed_59.kCFTimeZoneNameStyleShortGeneric);
+const enum_unnamed_59 = extern enum(c_int) {
     kCFTimeZoneNameStyleStandard,
     kCFTimeZoneNameStyleShortStandard,
     kCFTimeZoneNameStyleDaylightSaving,
@@ -4500,21 +4020,21 @@ pub extern fn CFCalendarSetFirstWeekday(calendar: CFCalendarRef, wkdy: CFIndex) 
 pub extern fn CFCalendarGetMinimumDaysInFirstWeek(calendar: CFCalendarRef) CFIndex;
 pub extern fn CFCalendarSetMinimumDaysInFirstWeek(calendar: CFCalendarRef, mwd: CFIndex) void;
 pub const CFCalendarUnit = CFOptionFlags;
-pub const kCFCalendarUnitEra = @enumToInt(enum_unnamed_100.kCFCalendarUnitEra);
-pub const kCFCalendarUnitYear = @enumToInt(enum_unnamed_100.kCFCalendarUnitYear);
-pub const kCFCalendarUnitMonth = @enumToInt(enum_unnamed_100.kCFCalendarUnitMonth);
-pub const kCFCalendarUnitDay = @enumToInt(enum_unnamed_100.kCFCalendarUnitDay);
-pub const kCFCalendarUnitHour = @enumToInt(enum_unnamed_100.kCFCalendarUnitHour);
-pub const kCFCalendarUnitMinute = @enumToInt(enum_unnamed_100.kCFCalendarUnitMinute);
-pub const kCFCalendarUnitSecond = @enumToInt(enum_unnamed_100.kCFCalendarUnitSecond);
-pub const kCFCalendarUnitWeek = @enumToInt(enum_unnamed_100.kCFCalendarUnitWeek);
-pub const kCFCalendarUnitWeekday = @enumToInt(enum_unnamed_100.kCFCalendarUnitWeekday);
-pub const kCFCalendarUnitWeekdayOrdinal = @enumToInt(enum_unnamed_100.kCFCalendarUnitWeekdayOrdinal);
-pub const kCFCalendarUnitQuarter = @enumToInt(enum_unnamed_100.kCFCalendarUnitQuarter);
-pub const kCFCalendarUnitWeekOfMonth = @enumToInt(enum_unnamed_100.kCFCalendarUnitWeekOfMonth);
-pub const kCFCalendarUnitWeekOfYear = @enumToInt(enum_unnamed_100.kCFCalendarUnitWeekOfYear);
-pub const kCFCalendarUnitYearForWeekOfYear = @enumToInt(enum_unnamed_100.kCFCalendarUnitYearForWeekOfYear);
-const enum_unnamed_100 = extern enum(c_int) {
+pub const kCFCalendarUnitEra = @enumToInt(enum_unnamed_60.kCFCalendarUnitEra);
+pub const kCFCalendarUnitYear = @enumToInt(enum_unnamed_60.kCFCalendarUnitYear);
+pub const kCFCalendarUnitMonth = @enumToInt(enum_unnamed_60.kCFCalendarUnitMonth);
+pub const kCFCalendarUnitDay = @enumToInt(enum_unnamed_60.kCFCalendarUnitDay);
+pub const kCFCalendarUnitHour = @enumToInt(enum_unnamed_60.kCFCalendarUnitHour);
+pub const kCFCalendarUnitMinute = @enumToInt(enum_unnamed_60.kCFCalendarUnitMinute);
+pub const kCFCalendarUnitSecond = @enumToInt(enum_unnamed_60.kCFCalendarUnitSecond);
+pub const kCFCalendarUnitWeek = @enumToInt(enum_unnamed_60.kCFCalendarUnitWeek);
+pub const kCFCalendarUnitWeekday = @enumToInt(enum_unnamed_60.kCFCalendarUnitWeekday);
+pub const kCFCalendarUnitWeekdayOrdinal = @enumToInt(enum_unnamed_60.kCFCalendarUnitWeekdayOrdinal);
+pub const kCFCalendarUnitQuarter = @enumToInt(enum_unnamed_60.kCFCalendarUnitQuarter);
+pub const kCFCalendarUnitWeekOfMonth = @enumToInt(enum_unnamed_60.kCFCalendarUnitWeekOfMonth);
+pub const kCFCalendarUnitWeekOfYear = @enumToInt(enum_unnamed_60.kCFCalendarUnitWeekOfYear);
+pub const kCFCalendarUnitYearForWeekOfYear = @enumToInt(enum_unnamed_60.kCFCalendarUnitYearForWeekOfYear);
+const enum_unnamed_60 = extern enum(c_int) {
     kCFCalendarUnitEra = 2,
     kCFCalendarUnitYear = 4,
     kCFCalendarUnitMonth = 8,
@@ -4538,8 +4058,8 @@ pub extern fn CFCalendarGetOrdinalityOfUnit(calendar: CFCalendarRef, smallerUnit
 pub extern fn CFCalendarGetTimeRangeOfUnit(calendar: CFCalendarRef, unit: CFCalendarUnit, at: CFAbsoluteTime, startp: [*c]CFAbsoluteTime, tip: [*c]CFTimeInterval) Boolean;
 pub extern fn CFCalendarComposeAbsoluteTime(calendar: CFCalendarRef, at: [*c]CFAbsoluteTime, componentDesc: [*c]const u8, ...) Boolean;
 pub extern fn CFCalendarDecomposeAbsoluteTime(calendar: CFCalendarRef, at: CFAbsoluteTime, componentDesc: [*c]const u8, ...) Boolean;
-pub const kCFCalendarComponentsWrap = @enumToInt(enum_unnamed_101.kCFCalendarComponentsWrap);
-const enum_unnamed_101 = extern enum(c_int) {
+pub const kCFCalendarComponentsWrap = @enumToInt(enum_unnamed_61.kCFCalendarComponentsWrap);
+const enum_unnamed_61 = extern enum(c_int) {
     kCFCalendarComponentsWrap = 1,
     _,
 };
@@ -4551,12 +4071,12 @@ pub const CFDateFormatterRef = ?*struct___CFDateFormatter;
 pub extern fn CFDateFormatterCreateDateFormatFromTemplate(allocator: CFAllocatorRef, tmplate: CFStringRef, options: CFOptionFlags, locale: CFLocaleRef) CFStringRef;
 pub extern fn CFDateFormatterGetTypeID() CFTypeID;
 pub const CFDateFormatterStyle = CFIndex;
-pub const kCFDateFormatterNoStyle = @enumToInt(enum_unnamed_102.kCFDateFormatterNoStyle);
-pub const kCFDateFormatterShortStyle = @enumToInt(enum_unnamed_102.kCFDateFormatterShortStyle);
-pub const kCFDateFormatterMediumStyle = @enumToInt(enum_unnamed_102.kCFDateFormatterMediumStyle);
-pub const kCFDateFormatterLongStyle = @enumToInt(enum_unnamed_102.kCFDateFormatterLongStyle);
-pub const kCFDateFormatterFullStyle = @enumToInt(enum_unnamed_102.kCFDateFormatterFullStyle);
-const enum_unnamed_102 = extern enum(c_int) {
+pub const kCFDateFormatterNoStyle = @enumToInt(enum_unnamed_62.kCFDateFormatterNoStyle);
+pub const kCFDateFormatterShortStyle = @enumToInt(enum_unnamed_62.kCFDateFormatterShortStyle);
+pub const kCFDateFormatterMediumStyle = @enumToInt(enum_unnamed_62.kCFDateFormatterMediumStyle);
+pub const kCFDateFormatterLongStyle = @enumToInt(enum_unnamed_62.kCFDateFormatterLongStyle);
+pub const kCFDateFormatterFullStyle = @enumToInt(enum_unnamed_62.kCFDateFormatterFullStyle);
+const enum_unnamed_62 = extern enum(c_int) {
     kCFDateFormatterNoStyle = 0,
     kCFDateFormatterShortStyle = 1,
     kCFDateFormatterMediumStyle = 2,
@@ -4565,21 +4085,21 @@ const enum_unnamed_102 = extern enum(c_int) {
     _,
 };
 pub const CFISO8601DateFormatOptions = CFOptionFlags;
-pub const kCFISO8601DateFormatWithYear = @enumToInt(enum_unnamed_103.kCFISO8601DateFormatWithYear);
-pub const kCFISO8601DateFormatWithMonth = @enumToInt(enum_unnamed_103.kCFISO8601DateFormatWithMonth);
-pub const kCFISO8601DateFormatWithWeekOfYear = @enumToInt(enum_unnamed_103.kCFISO8601DateFormatWithWeekOfYear);
-pub const kCFISO8601DateFormatWithDay = @enumToInt(enum_unnamed_103.kCFISO8601DateFormatWithDay);
-pub const kCFISO8601DateFormatWithTime = @enumToInt(enum_unnamed_103.kCFISO8601DateFormatWithTime);
-pub const kCFISO8601DateFormatWithTimeZone = @enumToInt(enum_unnamed_103.kCFISO8601DateFormatWithTimeZone);
-pub const kCFISO8601DateFormatWithSpaceBetweenDateAndTime = @enumToInt(enum_unnamed_103.kCFISO8601DateFormatWithSpaceBetweenDateAndTime);
-pub const kCFISO8601DateFormatWithDashSeparatorInDate = @enumToInt(enum_unnamed_103.kCFISO8601DateFormatWithDashSeparatorInDate);
-pub const kCFISO8601DateFormatWithColonSeparatorInTime = @enumToInt(enum_unnamed_103.kCFISO8601DateFormatWithColonSeparatorInTime);
-pub const kCFISO8601DateFormatWithColonSeparatorInTimeZone = @enumToInt(enum_unnamed_103.kCFISO8601DateFormatWithColonSeparatorInTimeZone);
-pub const kCFISO8601DateFormatWithFractionalSeconds = @enumToInt(enum_unnamed_103.kCFISO8601DateFormatWithFractionalSeconds);
-pub const kCFISO8601DateFormatWithFullDate = @enumToInt(enum_unnamed_103.kCFISO8601DateFormatWithFullDate);
-pub const kCFISO8601DateFormatWithFullTime = @enumToInt(enum_unnamed_103.kCFISO8601DateFormatWithFullTime);
-pub const kCFISO8601DateFormatWithInternetDateTime = @enumToInt(enum_unnamed_103.kCFISO8601DateFormatWithInternetDateTime);
-const enum_unnamed_103 = extern enum(c_int) {
+pub const kCFISO8601DateFormatWithYear = @enumToInt(enum_unnamed_63.kCFISO8601DateFormatWithYear);
+pub const kCFISO8601DateFormatWithMonth = @enumToInt(enum_unnamed_63.kCFISO8601DateFormatWithMonth);
+pub const kCFISO8601DateFormatWithWeekOfYear = @enumToInt(enum_unnamed_63.kCFISO8601DateFormatWithWeekOfYear);
+pub const kCFISO8601DateFormatWithDay = @enumToInt(enum_unnamed_63.kCFISO8601DateFormatWithDay);
+pub const kCFISO8601DateFormatWithTime = @enumToInt(enum_unnamed_63.kCFISO8601DateFormatWithTime);
+pub const kCFISO8601DateFormatWithTimeZone = @enumToInt(enum_unnamed_63.kCFISO8601DateFormatWithTimeZone);
+pub const kCFISO8601DateFormatWithSpaceBetweenDateAndTime = @enumToInt(enum_unnamed_63.kCFISO8601DateFormatWithSpaceBetweenDateAndTime);
+pub const kCFISO8601DateFormatWithDashSeparatorInDate = @enumToInt(enum_unnamed_63.kCFISO8601DateFormatWithDashSeparatorInDate);
+pub const kCFISO8601DateFormatWithColonSeparatorInTime = @enumToInt(enum_unnamed_63.kCFISO8601DateFormatWithColonSeparatorInTime);
+pub const kCFISO8601DateFormatWithColonSeparatorInTimeZone = @enumToInt(enum_unnamed_63.kCFISO8601DateFormatWithColonSeparatorInTimeZone);
+pub const kCFISO8601DateFormatWithFractionalSeconds = @enumToInt(enum_unnamed_63.kCFISO8601DateFormatWithFractionalSeconds);
+pub const kCFISO8601DateFormatWithFullDate = @enumToInt(enum_unnamed_63.kCFISO8601DateFormatWithFullDate);
+pub const kCFISO8601DateFormatWithFullTime = @enumToInt(enum_unnamed_63.kCFISO8601DateFormatWithFullTime);
+pub const kCFISO8601DateFormatWithInternetDateTime = @enumToInt(enum_unnamed_63.kCFISO8601DateFormatWithInternetDateTime);
+const enum_unnamed_63 = extern enum(c_int) {
     kCFISO8601DateFormatWithYear = 1,
     kCFISO8601DateFormatWithMonth = 2,
     kCFISO8601DateFormatWithWeekOfYear = 4,
@@ -4669,24 +4189,24 @@ pub extern const kCFBooleanFalse: CFBooleanRef;
 pub extern fn CFBooleanGetTypeID() CFTypeID;
 pub extern fn CFBooleanGetValue(boolean: CFBooleanRef) Boolean;
 pub const CFNumberType = CFIndex;
-pub const kCFNumberSInt8Type = @enumToInt(enum_unnamed_104.kCFNumberSInt8Type);
-pub const kCFNumberSInt16Type = @enumToInt(enum_unnamed_104.kCFNumberSInt16Type);
-pub const kCFNumberSInt32Type = @enumToInt(enum_unnamed_104.kCFNumberSInt32Type);
-pub const kCFNumberSInt64Type = @enumToInt(enum_unnamed_104.kCFNumberSInt64Type);
-pub const kCFNumberFloat32Type = @enumToInt(enum_unnamed_104.kCFNumberFloat32Type);
-pub const kCFNumberFloat64Type = @enumToInt(enum_unnamed_104.kCFNumberFloat64Type);
-pub const kCFNumberCharType = @enumToInt(enum_unnamed_104.kCFNumberCharType);
-pub const kCFNumberShortType = @enumToInt(enum_unnamed_104.kCFNumberShortType);
-pub const kCFNumberIntType = @enumToInt(enum_unnamed_104.kCFNumberIntType);
-pub const kCFNumberLongType = @enumToInt(enum_unnamed_104.kCFNumberLongType);
-pub const kCFNumberLongLongType = @enumToInt(enum_unnamed_104.kCFNumberLongLongType);
-pub const kCFNumberFloatType = @enumToInt(enum_unnamed_104.kCFNumberFloatType);
-pub const kCFNumberDoubleType = @enumToInt(enum_unnamed_104.kCFNumberDoubleType);
-pub const kCFNumberCFIndexType = @enumToInt(enum_unnamed_104.kCFNumberCFIndexType);
-pub const kCFNumberNSIntegerType = @enumToInt(enum_unnamed_104.kCFNumberNSIntegerType);
-pub const kCFNumberCGFloatType = @enumToInt(enum_unnamed_104.kCFNumberCGFloatType);
-pub const kCFNumberMaxType = @enumToInt(enum_unnamed_104.kCFNumberMaxType);
-const enum_unnamed_104 = extern enum(c_int) {
+pub const kCFNumberSInt8Type = @enumToInt(enum_unnamed_64.kCFNumberSInt8Type);
+pub const kCFNumberSInt16Type = @enumToInt(enum_unnamed_64.kCFNumberSInt16Type);
+pub const kCFNumberSInt32Type = @enumToInt(enum_unnamed_64.kCFNumberSInt32Type);
+pub const kCFNumberSInt64Type = @enumToInt(enum_unnamed_64.kCFNumberSInt64Type);
+pub const kCFNumberFloat32Type = @enumToInt(enum_unnamed_64.kCFNumberFloat32Type);
+pub const kCFNumberFloat64Type = @enumToInt(enum_unnamed_64.kCFNumberFloat64Type);
+pub const kCFNumberCharType = @enumToInt(enum_unnamed_64.kCFNumberCharType);
+pub const kCFNumberShortType = @enumToInt(enum_unnamed_64.kCFNumberShortType);
+pub const kCFNumberIntType = @enumToInt(enum_unnamed_64.kCFNumberIntType);
+pub const kCFNumberLongType = @enumToInt(enum_unnamed_64.kCFNumberLongType);
+pub const kCFNumberLongLongType = @enumToInt(enum_unnamed_64.kCFNumberLongLongType);
+pub const kCFNumberFloatType = @enumToInt(enum_unnamed_64.kCFNumberFloatType);
+pub const kCFNumberDoubleType = @enumToInt(enum_unnamed_64.kCFNumberDoubleType);
+pub const kCFNumberCFIndexType = @enumToInt(enum_unnamed_64.kCFNumberCFIndexType);
+pub const kCFNumberNSIntegerType = @enumToInt(enum_unnamed_64.kCFNumberNSIntegerType);
+pub const kCFNumberCGFloatType = @enumToInt(enum_unnamed_64.kCFNumberCGFloatType);
+pub const kCFNumberMaxType = @enumToInt(enum_unnamed_64.kCFNumberMaxType);
+const enum_unnamed_64 = extern enum(c_int) {
     kCFNumberSInt8Type = 1,
     kCFNumberSInt16Type = 2,
     kCFNumberSInt32Type = 3,
@@ -4723,17 +4243,17 @@ pub const struct___CFNumberFormatter = @OpaqueType();
 pub const CFNumberFormatterRef = ?*struct___CFNumberFormatter;
 pub extern fn CFNumberFormatterGetTypeID() CFTypeID;
 pub const CFNumberFormatterStyle = CFIndex;
-pub const kCFNumberFormatterNoStyle = @enumToInt(enum_unnamed_105.kCFNumberFormatterNoStyle);
-pub const kCFNumberFormatterDecimalStyle = @enumToInt(enum_unnamed_105.kCFNumberFormatterDecimalStyle);
-pub const kCFNumberFormatterCurrencyStyle = @enumToInt(enum_unnamed_105.kCFNumberFormatterCurrencyStyle);
-pub const kCFNumberFormatterPercentStyle = @enumToInt(enum_unnamed_105.kCFNumberFormatterPercentStyle);
-pub const kCFNumberFormatterScientificStyle = @enumToInt(enum_unnamed_105.kCFNumberFormatterScientificStyle);
-pub const kCFNumberFormatterSpellOutStyle = @enumToInt(enum_unnamed_105.kCFNumberFormatterSpellOutStyle);
-pub const kCFNumberFormatterOrdinalStyle = @enumToInt(enum_unnamed_105.kCFNumberFormatterOrdinalStyle);
-pub const kCFNumberFormatterCurrencyISOCodeStyle = @enumToInt(enum_unnamed_105.kCFNumberFormatterCurrencyISOCodeStyle);
-pub const kCFNumberFormatterCurrencyPluralStyle = @enumToInt(enum_unnamed_105.kCFNumberFormatterCurrencyPluralStyle);
-pub const kCFNumberFormatterCurrencyAccountingStyle = @enumToInt(enum_unnamed_105.kCFNumberFormatterCurrencyAccountingStyle);
-const enum_unnamed_105 = extern enum(c_int) {
+pub const kCFNumberFormatterNoStyle = @enumToInt(enum_unnamed_65.kCFNumberFormatterNoStyle);
+pub const kCFNumberFormatterDecimalStyle = @enumToInt(enum_unnamed_65.kCFNumberFormatterDecimalStyle);
+pub const kCFNumberFormatterCurrencyStyle = @enumToInt(enum_unnamed_65.kCFNumberFormatterCurrencyStyle);
+pub const kCFNumberFormatterPercentStyle = @enumToInt(enum_unnamed_65.kCFNumberFormatterPercentStyle);
+pub const kCFNumberFormatterScientificStyle = @enumToInt(enum_unnamed_65.kCFNumberFormatterScientificStyle);
+pub const kCFNumberFormatterSpellOutStyle = @enumToInt(enum_unnamed_65.kCFNumberFormatterSpellOutStyle);
+pub const kCFNumberFormatterOrdinalStyle = @enumToInt(enum_unnamed_65.kCFNumberFormatterOrdinalStyle);
+pub const kCFNumberFormatterCurrencyISOCodeStyle = @enumToInt(enum_unnamed_65.kCFNumberFormatterCurrencyISOCodeStyle);
+pub const kCFNumberFormatterCurrencyPluralStyle = @enumToInt(enum_unnamed_65.kCFNumberFormatterCurrencyPluralStyle);
+pub const kCFNumberFormatterCurrencyAccountingStyle = @enumToInt(enum_unnamed_65.kCFNumberFormatterCurrencyAccountingStyle);
+const enum_unnamed_65 = extern enum(c_int) {
     kCFNumberFormatterNoStyle = 0,
     kCFNumberFormatterDecimalStyle = 1,
     kCFNumberFormatterCurrencyStyle = 2,
@@ -4754,8 +4274,8 @@ pub extern fn CFNumberFormatterSetFormat(formatter: CFNumberFormatterRef, format
 pub extern fn CFNumberFormatterCreateStringWithNumber(allocator: CFAllocatorRef, formatter: CFNumberFormatterRef, number: CFNumberRef) CFStringRef;
 pub extern fn CFNumberFormatterCreateStringWithValue(allocator: CFAllocatorRef, formatter: CFNumberFormatterRef, numberType: CFNumberType, valuePtr: ?*const c_void) CFStringRef;
 pub const CFNumberFormatterOptionFlags = CFOptionFlags;
-pub const kCFNumberFormatterParseIntegersOnly = @enumToInt(enum_unnamed_106.kCFNumberFormatterParseIntegersOnly);
-const enum_unnamed_106 = extern enum(c_int) {
+pub const kCFNumberFormatterParseIntegersOnly = @enumToInt(enum_unnamed_66.kCFNumberFormatterParseIntegersOnly);
+const enum_unnamed_66 = extern enum(c_int) {
     kCFNumberFormatterParseIntegersOnly = 1,
     _,
 };
@@ -4802,14 +4322,14 @@ pub extern const kCFNumberFormatterUseSignificantDigits: CFNumberFormatterKey;
 pub extern const kCFNumberFormatterMinSignificantDigits: CFNumberFormatterKey;
 pub extern const kCFNumberFormatterMaxSignificantDigits: CFNumberFormatterKey;
 pub const CFNumberFormatterRoundingMode = CFIndex;
-pub const kCFNumberFormatterRoundCeiling = @enumToInt(enum_unnamed_107.kCFNumberFormatterRoundCeiling);
-pub const kCFNumberFormatterRoundFloor = @enumToInt(enum_unnamed_107.kCFNumberFormatterRoundFloor);
-pub const kCFNumberFormatterRoundDown = @enumToInt(enum_unnamed_107.kCFNumberFormatterRoundDown);
-pub const kCFNumberFormatterRoundUp = @enumToInt(enum_unnamed_107.kCFNumberFormatterRoundUp);
-pub const kCFNumberFormatterRoundHalfEven = @enumToInt(enum_unnamed_107.kCFNumberFormatterRoundHalfEven);
-pub const kCFNumberFormatterRoundHalfDown = @enumToInt(enum_unnamed_107.kCFNumberFormatterRoundHalfDown);
-pub const kCFNumberFormatterRoundHalfUp = @enumToInt(enum_unnamed_107.kCFNumberFormatterRoundHalfUp);
-const enum_unnamed_107 = extern enum(c_int) {
+pub const kCFNumberFormatterRoundCeiling = @enumToInt(enum_unnamed_67.kCFNumberFormatterRoundCeiling);
+pub const kCFNumberFormatterRoundFloor = @enumToInt(enum_unnamed_67.kCFNumberFormatterRoundFloor);
+pub const kCFNumberFormatterRoundDown = @enumToInt(enum_unnamed_67.kCFNumberFormatterRoundDown);
+pub const kCFNumberFormatterRoundUp = @enumToInt(enum_unnamed_67.kCFNumberFormatterRoundUp);
+pub const kCFNumberFormatterRoundHalfEven = @enumToInt(enum_unnamed_67.kCFNumberFormatterRoundHalfEven);
+pub const kCFNumberFormatterRoundHalfDown = @enumToInt(enum_unnamed_67.kCFNumberFormatterRoundHalfDown);
+pub const kCFNumberFormatterRoundHalfUp = @enumToInt(enum_unnamed_67.kCFNumberFormatterRoundHalfUp);
+const enum_unnamed_67 = extern enum(c_int) {
     kCFNumberFormatterRoundCeiling = 0,
     kCFNumberFormatterRoundFloor = 1,
     kCFNumberFormatterRoundDown = 2,
@@ -4820,11 +4340,11 @@ const enum_unnamed_107 = extern enum(c_int) {
     _,
 };
 pub const CFNumberFormatterPadPosition = CFIndex;
-pub const kCFNumberFormatterPadBeforePrefix = @enumToInt(enum_unnamed_108.kCFNumberFormatterPadBeforePrefix);
-pub const kCFNumberFormatterPadAfterPrefix = @enumToInt(enum_unnamed_108.kCFNumberFormatterPadAfterPrefix);
-pub const kCFNumberFormatterPadBeforeSuffix = @enumToInt(enum_unnamed_108.kCFNumberFormatterPadBeforeSuffix);
-pub const kCFNumberFormatterPadAfterSuffix = @enumToInt(enum_unnamed_108.kCFNumberFormatterPadAfterSuffix);
-const enum_unnamed_108 = extern enum(c_int) {
+pub const kCFNumberFormatterPadBeforePrefix = @enumToInt(enum_unnamed_68.kCFNumberFormatterPadBeforePrefix);
+pub const kCFNumberFormatterPadAfterPrefix = @enumToInt(enum_unnamed_68.kCFNumberFormatterPadAfterPrefix);
+pub const kCFNumberFormatterPadBeforeSuffix = @enumToInt(enum_unnamed_68.kCFNumberFormatterPadBeforeSuffix);
+pub const kCFNumberFormatterPadAfterSuffix = @enumToInt(enum_unnamed_68.kCFNumberFormatterPadAfterSuffix);
+const enum_unnamed_68 = extern enum(c_int) {
     kCFNumberFormatterPadBeforePrefix = 0,
     kCFNumberFormatterPadAfterPrefix = 1,
     kCFNumberFormatterPadBeforeSuffix = 2,
@@ -4854,10 +4374,10 @@ pub extern fn CFPreferencesCopyApplicationList(userName: CFStringRef, hostName: 
 pub extern fn CFPreferencesCopyKeyList(applicationID: CFStringRef, userName: CFStringRef, hostName: CFStringRef) CFArrayRef;
 pub extern fn CFPreferencesAppValueIsForced(key: CFStringRef, applicationID: CFStringRef) Boolean;
 pub const CFURLPathStyle = CFIndex;
-pub const kCFURLPOSIXPathStyle = @enumToInt(enum_unnamed_109.kCFURLPOSIXPathStyle);
-pub const kCFURLHFSPathStyle = @enumToInt(enum_unnamed_109.kCFURLHFSPathStyle);
-pub const kCFURLWindowsPathStyle = @enumToInt(enum_unnamed_109.kCFURLWindowsPathStyle);
-const enum_unnamed_109 = extern enum(c_int) {
+pub const kCFURLPOSIXPathStyle = @enumToInt(enum_unnamed_69.kCFURLPOSIXPathStyle);
+pub const kCFURLHFSPathStyle = @enumToInt(enum_unnamed_69.kCFURLHFSPathStyle);
+pub const kCFURLWindowsPathStyle = @enumToInt(enum_unnamed_69.kCFURLWindowsPathStyle);
+const enum_unnamed_69 = extern enum(c_int) {
     kCFURLPOSIXPathStyle = 0,
     kCFURLHFSPathStyle = 1,
     kCFURLWindowsPathStyle = 2,
@@ -4901,19 +4421,19 @@ pub extern fn CFURLCreateCopyAppendingPathExtension(allocator: CFAllocatorRef, u
 pub extern fn CFURLCreateCopyDeletingPathExtension(allocator: CFAllocatorRef, url: CFURLRef) CFURLRef;
 pub extern fn CFURLGetBytes(url: CFURLRef, buffer: [*c]UInt8, bufferLength: CFIndex) CFIndex;
 pub const CFURLComponentType = CFIndex;
-pub const kCFURLComponentScheme = @enumToInt(enum_unnamed_110.kCFURLComponentScheme);
-pub const kCFURLComponentNetLocation = @enumToInt(enum_unnamed_110.kCFURLComponentNetLocation);
-pub const kCFURLComponentPath = @enumToInt(enum_unnamed_110.kCFURLComponentPath);
-pub const kCFURLComponentResourceSpecifier = @enumToInt(enum_unnamed_110.kCFURLComponentResourceSpecifier);
-pub const kCFURLComponentUser = @enumToInt(enum_unnamed_110.kCFURLComponentUser);
-pub const kCFURLComponentPassword = @enumToInt(enum_unnamed_110.kCFURLComponentPassword);
-pub const kCFURLComponentUserInfo = @enumToInt(enum_unnamed_110.kCFURLComponentUserInfo);
-pub const kCFURLComponentHost = @enumToInt(enum_unnamed_110.kCFURLComponentHost);
-pub const kCFURLComponentPort = @enumToInt(enum_unnamed_110.kCFURLComponentPort);
-pub const kCFURLComponentParameterString = @enumToInt(enum_unnamed_110.kCFURLComponentParameterString);
-pub const kCFURLComponentQuery = @enumToInt(enum_unnamed_110.kCFURLComponentQuery);
-pub const kCFURLComponentFragment = @enumToInt(enum_unnamed_110.kCFURLComponentFragment);
-const enum_unnamed_110 = extern enum(c_int) {
+pub const kCFURLComponentScheme = @enumToInt(enum_unnamed_70.kCFURLComponentScheme);
+pub const kCFURLComponentNetLocation = @enumToInt(enum_unnamed_70.kCFURLComponentNetLocation);
+pub const kCFURLComponentPath = @enumToInt(enum_unnamed_70.kCFURLComponentPath);
+pub const kCFURLComponentResourceSpecifier = @enumToInt(enum_unnamed_70.kCFURLComponentResourceSpecifier);
+pub const kCFURLComponentUser = @enumToInt(enum_unnamed_70.kCFURLComponentUser);
+pub const kCFURLComponentPassword = @enumToInt(enum_unnamed_70.kCFURLComponentPassword);
+pub const kCFURLComponentUserInfo = @enumToInt(enum_unnamed_70.kCFURLComponentUserInfo);
+pub const kCFURLComponentHost = @enumToInt(enum_unnamed_70.kCFURLComponentHost);
+pub const kCFURLComponentPort = @enumToInt(enum_unnamed_70.kCFURLComponentPort);
+pub const kCFURLComponentParameterString = @enumToInt(enum_unnamed_70.kCFURLComponentParameterString);
+pub const kCFURLComponentQuery = @enumToInt(enum_unnamed_70.kCFURLComponentQuery);
+pub const kCFURLComponentFragment = @enumToInt(enum_unnamed_70.kCFURLComponentFragment);
+const enum_unnamed_70 = extern enum(c_int) {
     kCFURLComponentScheme = 1,
     kCFURLComponentNetLocation = 2,
     kCFURLComponentPath = 3,
@@ -5065,12 +4585,12 @@ pub extern const kCFURLUbiquitousItemDownloadingStatusNotDownloaded: CFStringRef
 pub extern const kCFURLUbiquitousItemDownloadingStatusDownloaded: CFStringRef;
 pub extern const kCFURLUbiquitousItemDownloadingStatusCurrent: CFStringRef;
 pub const CFURLBookmarkCreationOptions = CFOptionFlags;
-pub const kCFURLBookmarkCreationMinimalBookmarkMask = @enumToInt(enum_unnamed_111.kCFURLBookmarkCreationMinimalBookmarkMask);
-pub const kCFURLBookmarkCreationSuitableForBookmarkFile = @enumToInt(enum_unnamed_111.kCFURLBookmarkCreationSuitableForBookmarkFile);
-pub const kCFURLBookmarkCreationWithSecurityScope = @enumToInt(enum_unnamed_111.kCFURLBookmarkCreationWithSecurityScope);
-pub const kCFURLBookmarkCreationSecurityScopeAllowOnlyReadAccess = @enumToInt(enum_unnamed_111.kCFURLBookmarkCreationSecurityScopeAllowOnlyReadAccess);
-pub const kCFURLBookmarkCreationPreferFileIDResolutionMask = @enumToInt(enum_unnamed_111.kCFURLBookmarkCreationPreferFileIDResolutionMask);
-const enum_unnamed_111 = extern enum(c_int) {
+pub const kCFURLBookmarkCreationMinimalBookmarkMask = @enumToInt(enum_unnamed_71.kCFURLBookmarkCreationMinimalBookmarkMask);
+pub const kCFURLBookmarkCreationSuitableForBookmarkFile = @enumToInt(enum_unnamed_71.kCFURLBookmarkCreationSuitableForBookmarkFile);
+pub const kCFURLBookmarkCreationWithSecurityScope = @enumToInt(enum_unnamed_71.kCFURLBookmarkCreationWithSecurityScope);
+pub const kCFURLBookmarkCreationSecurityScopeAllowOnlyReadAccess = @enumToInt(enum_unnamed_71.kCFURLBookmarkCreationSecurityScopeAllowOnlyReadAccess);
+pub const kCFURLBookmarkCreationPreferFileIDResolutionMask = @enumToInt(enum_unnamed_71.kCFURLBookmarkCreationPreferFileIDResolutionMask);
+const enum_unnamed_71 = extern enum(c_int) {
     kCFURLBookmarkCreationMinimalBookmarkMask = 512,
     kCFURLBookmarkCreationSuitableForBookmarkFile = 1024,
     kCFURLBookmarkCreationWithSecurityScope = 2048,
@@ -5079,12 +4599,12 @@ const enum_unnamed_111 = extern enum(c_int) {
     _,
 };
 pub const CFURLBookmarkResolutionOptions = CFOptionFlags;
-pub const kCFURLBookmarkResolutionWithoutUIMask = @enumToInt(enum_unnamed_112.kCFURLBookmarkResolutionWithoutUIMask);
-pub const kCFURLBookmarkResolutionWithoutMountingMask = @enumToInt(enum_unnamed_112.kCFURLBookmarkResolutionWithoutMountingMask);
-pub const kCFURLBookmarkResolutionWithSecurityScope = @enumToInt(enum_unnamed_112.kCFURLBookmarkResolutionWithSecurityScope);
-pub const kCFBookmarkResolutionWithoutUIMask = @enumToInt(enum_unnamed_112.kCFBookmarkResolutionWithoutUIMask);
-pub const kCFBookmarkResolutionWithoutMountingMask = @enumToInt(enum_unnamed_112.kCFBookmarkResolutionWithoutMountingMask);
-const enum_unnamed_112 = extern enum(c_int) {
+pub const kCFURLBookmarkResolutionWithoutUIMask = @enumToInt(enum_unnamed_72.kCFURLBookmarkResolutionWithoutUIMask);
+pub const kCFURLBookmarkResolutionWithoutMountingMask = @enumToInt(enum_unnamed_72.kCFURLBookmarkResolutionWithoutMountingMask);
+pub const kCFURLBookmarkResolutionWithSecurityScope = @enumToInt(enum_unnamed_72.kCFURLBookmarkResolutionWithSecurityScope);
+pub const kCFBookmarkResolutionWithoutUIMask = @enumToInt(enum_unnamed_72.kCFBookmarkResolutionWithoutUIMask);
+pub const kCFBookmarkResolutionWithoutMountingMask = @enumToInt(enum_unnamed_72.kCFBookmarkResolutionWithoutMountingMask);
+const enum_unnamed_72 = extern enum(c_int) {
     kCFURLBookmarkResolutionWithoutUIMask = 256,
     kCFURLBookmarkResolutionWithoutMountingMask = 512,
     kCFURLBookmarkResolutionWithSecurityScope = 1024,
@@ -5215,11 +4735,11 @@ pub const CFRunLoopObserverRef = ?*struct___CFRunLoopObserver;
 pub const struct___CFRunLoopTimer = @OpaqueType();
 pub const CFRunLoopTimerRef = ?*struct___CFRunLoopTimer;
 pub const CFRunLoopRunResult = SInt32;
-pub const kCFRunLoopRunFinished = @enumToInt(enum_unnamed_113.kCFRunLoopRunFinished);
-pub const kCFRunLoopRunStopped = @enumToInt(enum_unnamed_113.kCFRunLoopRunStopped);
-pub const kCFRunLoopRunTimedOut = @enumToInt(enum_unnamed_113.kCFRunLoopRunTimedOut);
-pub const kCFRunLoopRunHandledSource = @enumToInt(enum_unnamed_113.kCFRunLoopRunHandledSource);
-const enum_unnamed_113 = extern enum(c_int) {
+pub const kCFRunLoopRunFinished = @enumToInt(enum_unnamed_73.kCFRunLoopRunFinished);
+pub const kCFRunLoopRunStopped = @enumToInt(enum_unnamed_73.kCFRunLoopRunStopped);
+pub const kCFRunLoopRunTimedOut = @enumToInt(enum_unnamed_73.kCFRunLoopRunTimedOut);
+pub const kCFRunLoopRunHandledSource = @enumToInt(enum_unnamed_73.kCFRunLoopRunHandledSource);
+const enum_unnamed_73 = extern enum(c_int) {
     kCFRunLoopRunFinished = 1,
     kCFRunLoopRunStopped = 2,
     kCFRunLoopRunTimedOut = 3,
@@ -5227,14 +4747,14 @@ const enum_unnamed_113 = extern enum(c_int) {
     _,
 };
 pub const CFRunLoopActivity = CFOptionFlags;
-pub const kCFRunLoopEntry = @enumToInt(enum_unnamed_114.kCFRunLoopEntry);
-pub const kCFRunLoopBeforeTimers = @enumToInt(enum_unnamed_114.kCFRunLoopBeforeTimers);
-pub const kCFRunLoopBeforeSources = @enumToInt(enum_unnamed_114.kCFRunLoopBeforeSources);
-pub const kCFRunLoopBeforeWaiting = @enumToInt(enum_unnamed_114.kCFRunLoopBeforeWaiting);
-pub const kCFRunLoopAfterWaiting = @enumToInt(enum_unnamed_114.kCFRunLoopAfterWaiting);
-pub const kCFRunLoopExit = @enumToInt(enum_unnamed_114.kCFRunLoopExit);
-pub const kCFRunLoopAllActivities = @enumToInt(enum_unnamed_114.kCFRunLoopAllActivities);
-const enum_unnamed_114 = extern enum(c_int) {
+pub const kCFRunLoopEntry = @enumToInt(enum_unnamed_74.kCFRunLoopEntry);
+pub const kCFRunLoopBeforeTimers = @enumToInt(enum_unnamed_74.kCFRunLoopBeforeTimers);
+pub const kCFRunLoopBeforeSources = @enumToInt(enum_unnamed_74.kCFRunLoopBeforeSources);
+pub const kCFRunLoopBeforeWaiting = @enumToInt(enum_unnamed_74.kCFRunLoopBeforeWaiting);
+pub const kCFRunLoopAfterWaiting = @enumToInt(enum_unnamed_74.kCFRunLoopAfterWaiting);
+pub const kCFRunLoopExit = @enumToInt(enum_unnamed_74.kCFRunLoopExit);
+pub const kCFRunLoopAllActivities = @enumToInt(enum_unnamed_74.kCFRunLoopAllActivities);
+const enum_unnamed_74 = extern enum(c_int) {
     kCFRunLoopEntry = 1,
     kCFRunLoopBeforeTimers = 2,
     kCFRunLoopBeforeSources = 4,
@@ -5268,7 +4788,7 @@ pub extern fn CFRunLoopRemoveObserver(rl: CFRunLoopRef, observer: CFRunLoopObser
 pub extern fn CFRunLoopContainsTimer(rl: CFRunLoopRef, timer: CFRunLoopTimerRef, mode: CFRunLoopMode) Boolean;
 pub extern fn CFRunLoopAddTimer(rl: CFRunLoopRef, timer: CFRunLoopTimerRef, mode: CFRunLoopMode) void;
 pub extern fn CFRunLoopRemoveTimer(rl: CFRunLoopRef, timer: CFRunLoopTimerRef, mode: CFRunLoopMode) void;
-const struct_unnamed_115 = extern struct {
+const struct_unnamed_75 = extern struct {
     version: CFIndex,
     info: ?*c_void,
     retain: ?fn (?*const c_void) callconv(.C) ?*const c_void,
@@ -5280,8 +4800,8 @@ const struct_unnamed_115 = extern struct {
     cancel: ?fn (?*c_void, CFRunLoopRef, CFRunLoopMode) callconv(.C) void,
     perform: ?fn (?*c_void) callconv(.C) void,
 };
-pub const CFRunLoopSourceContext = struct_unnamed_115;
-const struct_unnamed_116 = extern struct {
+pub const CFRunLoopSourceContext = struct_unnamed_75;
+const struct_unnamed_76 = extern struct {
     version: CFIndex,
     info: ?*c_void,
     retain: ?fn (?*const c_void) callconv(.C) ?*const c_void,
@@ -5292,7 +4812,7 @@ const struct_unnamed_116 = extern struct {
     getPort: ?fn (?*c_void) callconv(.C) mach_port_t,
     perform: ?fn (?*c_void, CFIndex, CFAllocatorRef, ?*c_void) callconv(.C) ?*c_void,
 };
-pub const CFRunLoopSourceContext1 = struct_unnamed_116;
+pub const CFRunLoopSourceContext1 = struct_unnamed_76;
 pub extern fn CFRunLoopSourceGetTypeID() CFTypeID;
 pub extern fn CFRunLoopSourceCreate(allocator: CFAllocatorRef, order: CFIndex, context: [*c]CFRunLoopSourceContext) CFRunLoopSourceRef;
 pub extern fn CFRunLoopSourceGetOrder(source: CFRunLoopSourceRef) CFIndex;
@@ -5300,14 +4820,14 @@ pub extern fn CFRunLoopSourceInvalidate(source: CFRunLoopSourceRef) void;
 pub extern fn CFRunLoopSourceIsValid(source: CFRunLoopSourceRef) Boolean;
 pub extern fn CFRunLoopSourceGetContext(source: CFRunLoopSourceRef, context: [*c]CFRunLoopSourceContext) void;
 pub extern fn CFRunLoopSourceSignal(source: CFRunLoopSourceRef) void;
-const struct_unnamed_117 = extern struct {
+const struct_unnamed_77 = extern struct {
     version: CFIndex,
     info: ?*c_void,
     retain: ?fn (?*const c_void) callconv(.C) ?*const c_void,
     release: ?fn (?*const c_void) callconv(.C) void,
     copyDescription: ?fn (?*const c_void) callconv(.C) CFStringRef,
 };
-pub const CFRunLoopObserverContext = struct_unnamed_117;
+pub const CFRunLoopObserverContext = struct_unnamed_77;
 pub const CFRunLoopObserverCallBack = ?fn (CFRunLoopObserverRef, CFRunLoopActivity, ?*c_void) callconv(.C) void;
 pub extern fn CFRunLoopObserverGetTypeID() CFTypeID;
 pub extern fn CFRunLoopObserverCreate(allocator: CFAllocatorRef, activities: CFOptionFlags, repeats: Boolean, order: CFIndex, callout: CFRunLoopObserverCallBack, context: [*c]CFRunLoopObserverContext) CFRunLoopObserverRef; // /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFRunLoop.h:145:32: warning: unsupported type: 'BlockPointer'
@@ -5318,14 +4838,14 @@ pub extern fn CFRunLoopObserverGetOrder(observer: CFRunLoopObserverRef) CFIndex;
 pub extern fn CFRunLoopObserverInvalidate(observer: CFRunLoopObserverRef) void;
 pub extern fn CFRunLoopObserverIsValid(observer: CFRunLoopObserverRef) Boolean;
 pub extern fn CFRunLoopObserverGetContext(observer: CFRunLoopObserverRef, context: [*c]CFRunLoopObserverContext) void;
-const struct_unnamed_118 = extern struct {
+const struct_unnamed_78 = extern struct {
     version: CFIndex,
     info: ?*c_void,
     retain: ?fn (?*const c_void) callconv(.C) ?*const c_void,
     release: ?fn (?*const c_void) callconv(.C) void,
     copyDescription: ?fn (?*const c_void) callconv(.C) CFStringRef,
 };
-pub const CFRunLoopTimerContext = struct_unnamed_118;
+pub const CFRunLoopTimerContext = struct_unnamed_78;
 pub const CFRunLoopTimerCallBack = ?fn (CFRunLoopTimerRef, ?*c_void) callconv(.C) void;
 pub extern fn CFRunLoopTimerGetTypeID() CFTypeID;
 pub extern fn CFRunLoopTimerCreate(allocator: CFAllocatorRef, fireDate: CFAbsoluteTime, interval: CFTimeInterval, flags: CFOptionFlags, order: CFIndex, callout: CFRunLoopTimerCallBack, context: [*c]CFRunLoopTimerContext) CFRunLoopTimerRef; // /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFRunLoop.h:169:29: warning: unsupported type: 'BlockPointer'
@@ -5343,30 +4863,30 @@ pub extern fn CFRunLoopTimerSetTolerance(timer: CFRunLoopTimerRef, tolerance: CF
 pub const struct___CFSocket = @OpaqueType();
 pub const CFSocketRef = ?*struct___CFSocket;
 pub const CFSocketError = CFIndex;
-pub const kCFSocketSuccess = @enumToInt(enum_unnamed_119.kCFSocketSuccess);
-pub const kCFSocketError = @enumToInt(enum_unnamed_119.kCFSocketError);
-pub const kCFSocketTimeout = @enumToInt(enum_unnamed_119.kCFSocketTimeout);
-const enum_unnamed_119 = extern enum(c_int) {
+pub const kCFSocketSuccess = @enumToInt(enum_unnamed_79.kCFSocketSuccess);
+pub const kCFSocketError = @enumToInt(enum_unnamed_79.kCFSocketError);
+pub const kCFSocketTimeout = @enumToInt(enum_unnamed_79.kCFSocketTimeout);
+const enum_unnamed_79 = extern enum(c_int) {
     kCFSocketSuccess = 0,
     kCFSocketError = -1,
     kCFSocketTimeout = -2,
     _,
 };
-const struct_unnamed_120 = extern struct {
+const struct_unnamed_80 = extern struct {
     protocolFamily: SInt32,
     socketType: SInt32,
     protocol: SInt32,
     address: CFDataRef,
 };
-pub const CFSocketSignature = struct_unnamed_120;
+pub const CFSocketSignature = struct_unnamed_80;
 pub const CFSocketCallBackType = CFOptionFlags;
-pub const kCFSocketNoCallBack = @enumToInt(enum_unnamed_121.kCFSocketNoCallBack);
-pub const kCFSocketReadCallBack = @enumToInt(enum_unnamed_121.kCFSocketReadCallBack);
-pub const kCFSocketAcceptCallBack = @enumToInt(enum_unnamed_121.kCFSocketAcceptCallBack);
-pub const kCFSocketDataCallBack = @enumToInt(enum_unnamed_121.kCFSocketDataCallBack);
-pub const kCFSocketConnectCallBack = @enumToInt(enum_unnamed_121.kCFSocketConnectCallBack);
-pub const kCFSocketWriteCallBack = @enumToInt(enum_unnamed_121.kCFSocketWriteCallBack);
-const enum_unnamed_121 = extern enum(c_int) {
+pub const kCFSocketNoCallBack = @enumToInt(enum_unnamed_81.kCFSocketNoCallBack);
+pub const kCFSocketReadCallBack = @enumToInt(enum_unnamed_81.kCFSocketReadCallBack);
+pub const kCFSocketAcceptCallBack = @enumToInt(enum_unnamed_81.kCFSocketAcceptCallBack);
+pub const kCFSocketDataCallBack = @enumToInt(enum_unnamed_81.kCFSocketDataCallBack);
+pub const kCFSocketConnectCallBack = @enumToInt(enum_unnamed_81.kCFSocketConnectCallBack);
+pub const kCFSocketWriteCallBack = @enumToInt(enum_unnamed_81.kCFSocketWriteCallBack);
+const enum_unnamed_81 = extern enum(c_int) {
     kCFSocketNoCallBack = 0,
     kCFSocketReadCallBack = 1,
     kCFSocketAcceptCallBack = 2,
@@ -5375,13 +4895,13 @@ const enum_unnamed_121 = extern enum(c_int) {
     kCFSocketWriteCallBack = 8,
     _,
 };
-pub const kCFSocketAutomaticallyReenableReadCallBack = @enumToInt(enum_unnamed_122.kCFSocketAutomaticallyReenableReadCallBack);
-pub const kCFSocketAutomaticallyReenableAcceptCallBack = @enumToInt(enum_unnamed_122.kCFSocketAutomaticallyReenableAcceptCallBack);
-pub const kCFSocketAutomaticallyReenableDataCallBack = @enumToInt(enum_unnamed_122.kCFSocketAutomaticallyReenableDataCallBack);
-pub const kCFSocketAutomaticallyReenableWriteCallBack = @enumToInt(enum_unnamed_122.kCFSocketAutomaticallyReenableWriteCallBack);
-pub const kCFSocketLeaveErrors = @enumToInt(enum_unnamed_122.kCFSocketLeaveErrors);
-pub const kCFSocketCloseOnInvalidate = @enumToInt(enum_unnamed_122.kCFSocketCloseOnInvalidate);
-const enum_unnamed_122 = extern enum(c_int) {
+pub const kCFSocketAutomaticallyReenableReadCallBack = @enumToInt(enum_unnamed_82.kCFSocketAutomaticallyReenableReadCallBack);
+pub const kCFSocketAutomaticallyReenableAcceptCallBack = @enumToInt(enum_unnamed_82.kCFSocketAutomaticallyReenableAcceptCallBack);
+pub const kCFSocketAutomaticallyReenableDataCallBack = @enumToInt(enum_unnamed_82.kCFSocketAutomaticallyReenableDataCallBack);
+pub const kCFSocketAutomaticallyReenableWriteCallBack = @enumToInt(enum_unnamed_82.kCFSocketAutomaticallyReenableWriteCallBack);
+pub const kCFSocketLeaveErrors = @enumToInt(enum_unnamed_82.kCFSocketLeaveErrors);
+pub const kCFSocketCloseOnInvalidate = @enumToInt(enum_unnamed_82.kCFSocketCloseOnInvalidate);
+const enum_unnamed_82 = extern enum(c_int) {
     kCFSocketAutomaticallyReenableReadCallBack = 1,
     kCFSocketAutomaticallyReenableAcceptCallBack = 2,
     kCFSocketAutomaticallyReenableDataCallBack = 3,
@@ -5391,14 +4911,14 @@ const enum_unnamed_122 = extern enum(c_int) {
     _,
 };
 pub const CFSocketCallBack = ?fn (CFSocketRef, CFSocketCallBackType, CFDataRef, ?*const c_void, ?*c_void) callconv(.C) void;
-const struct_unnamed_123 = extern struct {
+const struct_unnamed_83 = extern struct {
     version: CFIndex,
     info: ?*c_void,
     retain: ?fn (?*const c_void) callconv(.C) ?*const c_void,
     release: ?fn (?*const c_void) callconv(.C) void,
     copyDescription: ?fn (?*const c_void) callconv(.C) CFStringRef,
 };
-pub const CFSocketContext = struct_unnamed_123;
+pub const CFSocketContext = struct_unnamed_83;
 pub const CFSocketNativeHandle = c_int;
 pub extern fn CFSocketGetTypeID() CFTypeID;
 pub extern fn CFSocketCreate(allocator: CFAllocatorRef, protocolFamily: SInt32, socketType: SInt32, protocol: SInt32, callBackTypes: CFOptionFlags, callout: CFSocketCallBack, context: [*c]const CFSocketContext) CFSocketRef;
@@ -5687,15 +5207,15 @@ pub const struct_log2phys = extern struct {
 };
 pub const struct__filesec = @OpaqueType();
 pub const filesec_t = ?*struct__filesec;
-pub const FILESEC_OWNER = @enumToInt(enum_unnamed_124.FILESEC_OWNER);
-pub const FILESEC_GROUP = @enumToInt(enum_unnamed_124.FILESEC_GROUP);
-pub const FILESEC_UUID = @enumToInt(enum_unnamed_124.FILESEC_UUID);
-pub const FILESEC_MODE = @enumToInt(enum_unnamed_124.FILESEC_MODE);
-pub const FILESEC_ACL = @enumToInt(enum_unnamed_124.FILESEC_ACL);
-pub const FILESEC_GRPUUID = @enumToInt(enum_unnamed_124.FILESEC_GRPUUID);
-pub const FILESEC_ACL_RAW = @enumToInt(enum_unnamed_124.FILESEC_ACL_RAW);
-pub const FILESEC_ACL_ALLOCSIZE = @enumToInt(enum_unnamed_124.FILESEC_ACL_ALLOCSIZE);
-const enum_unnamed_124 = extern enum(c_int) {
+pub const FILESEC_OWNER = @enumToInt(enum_unnamed_84.FILESEC_OWNER);
+pub const FILESEC_GROUP = @enumToInt(enum_unnamed_84.FILESEC_GROUP);
+pub const FILESEC_UUID = @enumToInt(enum_unnamed_84.FILESEC_UUID);
+pub const FILESEC_MODE = @enumToInt(enum_unnamed_84.FILESEC_MODE);
+pub const FILESEC_ACL = @enumToInt(enum_unnamed_84.FILESEC_ACL);
+pub const FILESEC_GRPUUID = @enumToInt(enum_unnamed_84.FILESEC_GRPUUID);
+pub const FILESEC_ACL_RAW = @enumToInt(enum_unnamed_84.FILESEC_ACL_RAW);
+pub const FILESEC_ACL_ALLOCSIZE = @enumToInt(enum_unnamed_84.FILESEC_ACL_ALLOCSIZE);
+const enum_unnamed_84 = extern enum(c_int) {
     FILESEC_OWNER = 1,
     FILESEC_GROUP = 2,
     FILESEC_UUID = 3,
@@ -5706,7 +5226,7 @@ const enum_unnamed_124 = extern enum(c_int) {
     FILESEC_ACL_ALLOCSIZE = 101,
     _,
 };
-pub const filesec_property_t = enum_unnamed_124;
+pub const filesec_property_t = enum_unnamed_84;
 pub extern fn open([*c]const u8, c_int, ...) c_int;
 pub extern fn openat(c_int, [*c]const u8, c_int, ...) c_int;
 pub extern fn creat([*c]const u8, mode_t) c_int;
@@ -5741,20 +5261,20 @@ pub const struct_mach_timespec = extern struct {
 };
 pub const mach_timespec_t = struct_mach_timespec;
 pub const dispatch_time_t = u64;
-pub const DISPATCH_WALLTIME_NOW = @enumToInt(enum_unnamed_125.DISPATCH_WALLTIME_NOW);
-const enum_unnamed_125 = extern enum(c_ulong) {
+pub const DISPATCH_WALLTIME_NOW = @enumToInt(enum_unnamed_85.DISPATCH_WALLTIME_NOW);
+const enum_unnamed_85 = extern enum(c_ulong) {
     DISPATCH_WALLTIME_NOW = 18446744073709551614,
     _,
 };
 pub extern fn dispatch_time(when: dispatch_time_t, delta: i64) dispatch_time_t;
 pub extern fn dispatch_walltime(when: [*c]const struct_timespec, delta: i64) dispatch_time_t;
-pub const QOS_CLASS_USER_INTERACTIVE = @enumToInt(enum_unnamed_126.QOS_CLASS_USER_INTERACTIVE);
-pub const QOS_CLASS_USER_INITIATED = @enumToInt(enum_unnamed_126.QOS_CLASS_USER_INITIATED);
-pub const QOS_CLASS_DEFAULT = @enumToInt(enum_unnamed_126.QOS_CLASS_DEFAULT);
-pub const QOS_CLASS_UTILITY = @enumToInt(enum_unnamed_126.QOS_CLASS_UTILITY);
-pub const QOS_CLASS_BACKGROUND = @enumToInt(enum_unnamed_126.QOS_CLASS_BACKGROUND);
-pub const QOS_CLASS_UNSPECIFIED = @enumToInt(enum_unnamed_126.QOS_CLASS_UNSPECIFIED);
-const enum_unnamed_126 = extern enum(c_int) {
+pub const QOS_CLASS_USER_INTERACTIVE = @enumToInt(enum_unnamed_86.QOS_CLASS_USER_INTERACTIVE);
+pub const QOS_CLASS_USER_INITIATED = @enumToInt(enum_unnamed_86.QOS_CLASS_USER_INITIATED);
+pub const QOS_CLASS_DEFAULT = @enumToInt(enum_unnamed_86.QOS_CLASS_DEFAULT);
+pub const QOS_CLASS_UTILITY = @enumToInt(enum_unnamed_86.QOS_CLASS_UTILITY);
+pub const QOS_CLASS_BACKGROUND = @enumToInt(enum_unnamed_86.QOS_CLASS_BACKGROUND);
+pub const QOS_CLASS_UNSPECIFIED = @enumToInt(enum_unnamed_86.QOS_CLASS_UNSPECIFIED);
+const enum_unnamed_86 = extern enum(c_int) {
     QOS_CLASS_USER_INTERACTIVE = 33,
     QOS_CLASS_USER_INITIATED = 25,
     QOS_CLASS_DEFAULT = 21,
@@ -5778,7 +5298,7 @@ pub const struct_dispatch_mach_msg_s = @OpaqueType();
 pub const struct_dispatch_semaphore_s = @OpaqueType();
 pub const struct_dispatch_data_s = @OpaqueType();
 pub const struct_dispatch_io_s = @OpaqueType();
-const union_unnamed_127 = extern union {
+const union_unnamed_87 = extern union {
     _os_obj: ?*struct__os_object_s,
     _do: ?*struct_dispatch_object_s,
     _dq: ?*struct_dispatch_queue_s,
@@ -5792,7 +5312,7 @@ const union_unnamed_127 = extern union {
     _ddata: ?*struct_dispatch_data_s,
     _dchannel: ?*struct_dispatch_io_s,
 };
-pub const dispatch_object_t = union_unnamed_127;
+pub const dispatch_object_t = union_unnamed_87;
 pub const dispatch_block_t = @compileError("unable to resolve typedef child type");
 pub const dispatch_qos_class_t = qos_class_t;
 pub extern fn dispatch_retain(object: dispatch_object_t) void;
@@ -5833,16 +5353,16 @@ pub extern fn dispatch_get_global_queue(identifier: c_long, flags: c_ulong) disp
 pub const dispatch_queue_attr_t = ?*struct_dispatch_queue_attr_s;
 pub extern var _dispatch_queue_attr_concurrent: struct_dispatch_queue_attr_s;
 pub extern fn dispatch_queue_attr_make_initially_inactive(attr: dispatch_queue_attr_t) dispatch_queue_attr_t;
-pub const DISPATCH_AUTORELEASE_FREQUENCY_INHERIT = @enumToInt(enum_unnamed_128.DISPATCH_AUTORELEASE_FREQUENCY_INHERIT);
-pub const DISPATCH_AUTORELEASE_FREQUENCY_WORK_ITEM = @enumToInt(enum_unnamed_128.DISPATCH_AUTORELEASE_FREQUENCY_WORK_ITEM);
-pub const DISPATCH_AUTORELEASE_FREQUENCY_NEVER = @enumToInt(enum_unnamed_128.DISPATCH_AUTORELEASE_FREQUENCY_NEVER);
-const enum_unnamed_128 = extern enum(c_ulong) {
+pub const DISPATCH_AUTORELEASE_FREQUENCY_INHERIT = @enumToInt(enum_unnamed_88.DISPATCH_AUTORELEASE_FREQUENCY_INHERIT);
+pub const DISPATCH_AUTORELEASE_FREQUENCY_WORK_ITEM = @enumToInt(enum_unnamed_88.DISPATCH_AUTORELEASE_FREQUENCY_WORK_ITEM);
+pub const DISPATCH_AUTORELEASE_FREQUENCY_NEVER = @enumToInt(enum_unnamed_88.DISPATCH_AUTORELEASE_FREQUENCY_NEVER);
+const enum_unnamed_88 = extern enum(c_ulong) {
     DISPATCH_AUTORELEASE_FREQUENCY_INHERIT = 0,
     DISPATCH_AUTORELEASE_FREQUENCY_WORK_ITEM = 1,
     DISPATCH_AUTORELEASE_FREQUENCY_NEVER = 2,
     _,
 };
-pub const dispatch_autorelease_frequency_t = enum_unnamed_128;
+pub const dispatch_autorelease_frequency_t = enum_unnamed_88;
 pub extern fn dispatch_queue_attr_make_with_autorelease_frequency(attr: dispatch_queue_attr_t, frequency: dispatch_autorelease_frequency_t) dispatch_queue_attr_t;
 pub extern fn dispatch_queue_attr_make_with_qos_class(attr: dispatch_queue_attr_t, qos_class: dispatch_qos_class_t, relative_priority: c_int) dispatch_queue_attr_t;
 pub extern fn dispatch_queue_create_with_target(label: [*c]const u8, attr: dispatch_queue_attr_t, target: dispatch_queue_t) dispatch_queue_t;
@@ -5865,13 +5385,13 @@ pub extern fn dispatch_get_specific(key: ?*const c_void) ?*c_void;
 pub extern fn dispatch_assert_queue(queue: dispatch_queue_t) void;
 pub extern fn dispatch_assert_queue_barrier(queue: dispatch_queue_t) void;
 pub extern fn dispatch_assert_queue_not(queue: dispatch_queue_t) void;
-pub const DISPATCH_BLOCK_BARRIER = @enumToInt(enum_unnamed_129.DISPATCH_BLOCK_BARRIER);
-pub const DISPATCH_BLOCK_DETACHED = @enumToInt(enum_unnamed_129.DISPATCH_BLOCK_DETACHED);
-pub const DISPATCH_BLOCK_ASSIGN_CURRENT = @enumToInt(enum_unnamed_129.DISPATCH_BLOCK_ASSIGN_CURRENT);
-pub const DISPATCH_BLOCK_NO_QOS_CLASS = @enumToInt(enum_unnamed_129.DISPATCH_BLOCK_NO_QOS_CLASS);
-pub const DISPATCH_BLOCK_INHERIT_QOS_CLASS = @enumToInt(enum_unnamed_129.DISPATCH_BLOCK_INHERIT_QOS_CLASS);
-pub const DISPATCH_BLOCK_ENFORCE_QOS_CLASS = @enumToInt(enum_unnamed_129.DISPATCH_BLOCK_ENFORCE_QOS_CLASS);
-const enum_unnamed_129 = extern enum(c_ulong) {
+pub const DISPATCH_BLOCK_BARRIER = @enumToInt(enum_unnamed_89.DISPATCH_BLOCK_BARRIER);
+pub const DISPATCH_BLOCK_DETACHED = @enumToInt(enum_unnamed_89.DISPATCH_BLOCK_DETACHED);
+pub const DISPATCH_BLOCK_ASSIGN_CURRENT = @enumToInt(enum_unnamed_89.DISPATCH_BLOCK_ASSIGN_CURRENT);
+pub const DISPATCH_BLOCK_NO_QOS_CLASS = @enumToInt(enum_unnamed_89.DISPATCH_BLOCK_NO_QOS_CLASS);
+pub const DISPATCH_BLOCK_INHERIT_QOS_CLASS = @enumToInt(enum_unnamed_89.DISPATCH_BLOCK_INHERIT_QOS_CLASS);
+pub const DISPATCH_BLOCK_ENFORCE_QOS_CLASS = @enumToInt(enum_unnamed_89.DISPATCH_BLOCK_ENFORCE_QOS_CLASS);
+const enum_unnamed_89 = extern enum(c_ulong) {
     DISPATCH_BLOCK_BARRIER = 1,
     DISPATCH_BLOCK_DETACHED = 2,
     DISPATCH_BLOCK_ASSIGN_CURRENT = 4,
@@ -5880,7 +5400,7 @@ const enum_unnamed_129 = extern enum(c_ulong) {
     DISPATCH_BLOCK_ENFORCE_QOS_CLASS = 32,
     _,
 };
-pub const dispatch_block_flags_t = enum_unnamed_129;
+pub const dispatch_block_flags_t = enum_unnamed_89;
 pub const dispatch_block_create = @compileError("unable to resolve function type ZigClangTypeClass.MacroQualified");
 pub const dispatch_block_create_with_qos_class = @compileError("unable to resolve function type ZigClangTypeClass.MacroQualified");
 pub extern fn dispatch_block_perform(flags: dispatch_block_flags_t, block: dispatch_block_t) void;
@@ -5898,41 +5418,41 @@ pub const mach_msg_type_name_t = c_uint;
 pub const mach_msg_copy_options_t = c_uint;
 pub const mach_msg_guard_flags_t = c_uint;
 pub const mach_msg_descriptor_type_t = c_uint;
-const struct_unnamed_130 = @OpaqueType(); // /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/mach/message.h:285:32: warning: struct demoted to opaque type - has bitfield
-pub const mach_msg_type_descriptor_t = struct_unnamed_130;
-const struct_unnamed_131 = @OpaqueType(); // /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/mach/message.h:293:32: warning: struct demoted to opaque type - has bitfield
-pub const mach_msg_port_descriptor_t = struct_unnamed_131;
-const struct_unnamed_132 = @OpaqueType(); // /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/mach/message.h:301:32: warning: struct demoted to opaque type - has bitfield
-pub const mach_msg_ool_descriptor32_t = struct_unnamed_132;
-const struct_unnamed_133 = @OpaqueType(); // /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/mach/message.h:309:32: warning: struct demoted to opaque type - has bitfield
-pub const mach_msg_ool_descriptor64_t = struct_unnamed_133;
-const struct_unnamed_134 = @OpaqueType(); // /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/mach/message.h:321:32: warning: struct demoted to opaque type - has bitfield
-pub const mach_msg_ool_descriptor_t = struct_unnamed_134;
-const struct_unnamed_135 = @OpaqueType(); // /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/mach/message.h:333:32: warning: struct demoted to opaque type - has bitfield
-pub const mach_msg_ool_ports_descriptor32_t = struct_unnamed_135;
-const struct_unnamed_136 = @OpaqueType(); // /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/mach/message.h:341:32: warning: struct demoted to opaque type - has bitfield
-pub const mach_msg_ool_ports_descriptor64_t = struct_unnamed_136;
-const struct_unnamed_137 = @OpaqueType(); // /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/mach/message.h:353:32: warning: struct demoted to opaque type - has bitfield
-pub const mach_msg_ool_ports_descriptor_t = struct_unnamed_137;
-const struct_unnamed_138 = @OpaqueType(); // /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/mach/message.h:365:32: warning: struct demoted to opaque type - has bitfield
-pub const mach_msg_guarded_port_descriptor32_t = struct_unnamed_138;
-const struct_unnamed_139 = @OpaqueType(); // /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/mach/message.h:372:32: warning: struct demoted to opaque type - has bitfield
-pub const mach_msg_guarded_port_descriptor64_t = struct_unnamed_139;
-const struct_unnamed_140 = @OpaqueType(); // /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/mach/message.h:383:32: warning: struct demoted to opaque type - has bitfield
-pub const mach_msg_guarded_port_descriptor_t = struct_unnamed_140;
-const union_unnamed_141 = extern union {
+const struct_unnamed_90 = @OpaqueType(); // /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/mach/message.h:285:32: warning: struct demoted to opaque type - has bitfield
+pub const mach_msg_type_descriptor_t = struct_unnamed_90;
+const struct_unnamed_91 = @OpaqueType(); // /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/mach/message.h:293:32: warning: struct demoted to opaque type - has bitfield
+pub const mach_msg_port_descriptor_t = struct_unnamed_91;
+const struct_unnamed_92 = @OpaqueType(); // /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/mach/message.h:301:32: warning: struct demoted to opaque type - has bitfield
+pub const mach_msg_ool_descriptor32_t = struct_unnamed_92;
+const struct_unnamed_93 = @OpaqueType(); // /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/mach/message.h:309:32: warning: struct demoted to opaque type - has bitfield
+pub const mach_msg_ool_descriptor64_t = struct_unnamed_93;
+const struct_unnamed_94 = @OpaqueType(); // /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/mach/message.h:321:32: warning: struct demoted to opaque type - has bitfield
+pub const mach_msg_ool_descriptor_t = struct_unnamed_94;
+const struct_unnamed_95 = @OpaqueType(); // /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/mach/message.h:333:32: warning: struct demoted to opaque type - has bitfield
+pub const mach_msg_ool_ports_descriptor32_t = struct_unnamed_95;
+const struct_unnamed_96 = @OpaqueType(); // /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/mach/message.h:341:32: warning: struct demoted to opaque type - has bitfield
+pub const mach_msg_ool_ports_descriptor64_t = struct_unnamed_96;
+const struct_unnamed_97 = @OpaqueType(); // /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/mach/message.h:353:32: warning: struct demoted to opaque type - has bitfield
+pub const mach_msg_ool_ports_descriptor_t = struct_unnamed_97;
+const struct_unnamed_98 = @OpaqueType(); // /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/mach/message.h:365:32: warning: struct demoted to opaque type - has bitfield
+pub const mach_msg_guarded_port_descriptor32_t = struct_unnamed_98;
+const struct_unnamed_99 = @OpaqueType(); // /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/mach/message.h:372:32: warning: struct demoted to opaque type - has bitfield
+pub const mach_msg_guarded_port_descriptor64_t = struct_unnamed_99;
+const struct_unnamed_100 = @OpaqueType(); // /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/mach/message.h:383:32: warning: struct demoted to opaque type - has bitfield
+pub const mach_msg_guarded_port_descriptor_t = struct_unnamed_100;
+const union_unnamed_101 = extern union {
     port: mach_msg_port_descriptor_t,
     out_of_line: mach_msg_ool_descriptor_t,
     ool_ports: mach_msg_ool_ports_descriptor_t,
     type: mach_msg_type_descriptor_t,
     guarded_port: mach_msg_guarded_port_descriptor_t,
 };
-pub const mach_msg_descriptor_t = union_unnamed_141;
-const struct_unnamed_142 = extern struct {
+pub const mach_msg_descriptor_t = union_unnamed_101;
+const struct_unnamed_102 = extern struct {
     msgh_descriptor_count: mach_msg_size_t,
 };
-pub const mach_msg_body_t = struct_unnamed_142;
-const struct_unnamed_143 = extern struct {
+pub const mach_msg_body_t = struct_unnamed_102;
+const struct_unnamed_103 = extern struct {
     msgh_bits: mach_msg_bits_t,
     msgh_size: mach_msg_size_t,
     msgh_remote_port: mach_port_t,
@@ -5940,50 +5460,50 @@ const struct_unnamed_143 = extern struct {
     msgh_voucher_port: mach_port_name_t,
     msgh_id: mach_msg_id_t,
 };
-pub const mach_msg_header_t = struct_unnamed_143;
-const struct_unnamed_144 = extern struct {
+pub const mach_msg_header_t = struct_unnamed_103;
+const struct_unnamed_104 = extern struct {
     header: mach_msg_header_t,
     body: mach_msg_body_t,
 };
-pub const mach_msg_base_t = struct_unnamed_144;
+pub const mach_msg_base_t = struct_unnamed_104;
 pub const mach_msg_trailer_type_t = c_uint;
 pub const mach_msg_trailer_size_t = c_uint;
 pub const mach_msg_trailer_info_t = [*c]u8;
-const struct_unnamed_145 = extern struct {
+const struct_unnamed_105 = extern struct {
     msgh_trailer_type: mach_msg_trailer_type_t,
     msgh_trailer_size: mach_msg_trailer_size_t,
 };
-pub const mach_msg_trailer_t = struct_unnamed_145;
-const struct_unnamed_146 = extern struct {
+pub const mach_msg_trailer_t = struct_unnamed_105;
+const struct_unnamed_106 = extern struct {
     msgh_trailer_type: mach_msg_trailer_type_t,
     msgh_trailer_size: mach_msg_trailer_size_t,
     msgh_seqno: mach_port_seqno_t,
 };
-pub const mach_msg_seqno_trailer_t = struct_unnamed_146;
-const struct_unnamed_147 = extern struct {
+pub const mach_msg_seqno_trailer_t = struct_unnamed_106;
+const struct_unnamed_107 = extern struct {
     val: [2]c_uint,
 };
-pub const security_token_t = struct_unnamed_147;
-const struct_unnamed_148 = extern struct {
+pub const security_token_t = struct_unnamed_107;
+const struct_unnamed_108 = extern struct {
     msgh_trailer_type: mach_msg_trailer_type_t,
     msgh_trailer_size: mach_msg_trailer_size_t,
     msgh_seqno: mach_port_seqno_t,
     msgh_sender: security_token_t,
 };
-pub const mach_msg_security_trailer_t = struct_unnamed_148;
-const struct_unnamed_149 = extern struct {
+pub const mach_msg_security_trailer_t = struct_unnamed_108;
+const struct_unnamed_109 = extern struct {
     val: [8]c_uint,
 };
-pub const audit_token_t = struct_unnamed_149;
-const struct_unnamed_150 = extern struct {
+pub const audit_token_t = struct_unnamed_109;
+const struct_unnamed_110 = extern struct {
     msgh_trailer_type: mach_msg_trailer_type_t,
     msgh_trailer_size: mach_msg_trailer_size_t,
     msgh_seqno: mach_port_seqno_t,
     msgh_sender: security_token_t,
     msgh_audit: audit_token_t,
 };
-pub const mach_msg_audit_trailer_t = struct_unnamed_150;
-const struct_unnamed_151 = extern struct {
+pub const mach_msg_audit_trailer_t = struct_unnamed_110;
+const struct_unnamed_111 = extern struct {
     msgh_trailer_type: mach_msg_trailer_type_t,
     msgh_trailer_size: mach_msg_trailer_size_t,
     msgh_seqno: mach_port_seqno_t,
@@ -5991,12 +5511,12 @@ const struct_unnamed_151 = extern struct {
     msgh_audit: audit_token_t,
     msgh_context: mach_port_context_t,
 };
-pub const mach_msg_context_trailer_t = struct_unnamed_151;
-const struct_unnamed_152 = extern struct {
+pub const mach_msg_context_trailer_t = struct_unnamed_111;
+const struct_unnamed_112 = extern struct {
     sender: mach_port_name_t,
 };
-pub const msg_labels_t = struct_unnamed_152;
-const struct_unnamed_153 = extern struct {
+pub const msg_labels_t = struct_unnamed_112;
+const struct_unnamed_113 = extern struct {
     msgh_trailer_type: mach_msg_trailer_type_t,
     msgh_trailer_size: mach_msg_trailer_size_t,
     msgh_seqno: mach_port_seqno_t,
@@ -6006,26 +5526,26 @@ const struct_unnamed_153 = extern struct {
     msgh_ad: c_int,
     msgh_labels: msg_labels_t,
 };
-pub const mach_msg_mac_trailer_t = struct_unnamed_153;
+pub const mach_msg_mac_trailer_t = struct_unnamed_113;
 pub const mach_msg_max_trailer_t = mach_msg_mac_trailer_t;
 pub const mach_msg_format_0_trailer_t = mach_msg_security_trailer_t;
 pub extern const KERNEL_SECURITY_TOKEN: security_token_t;
 pub extern const KERNEL_AUDIT_TOKEN: audit_token_t;
 pub const mach_msg_options_t = integer_t;
-const struct_unnamed_154 = extern struct {
+const struct_unnamed_114 = extern struct {
     header: mach_msg_header_t,
 };
-pub const mach_msg_empty_send_t = struct_unnamed_154;
-const struct_unnamed_155 = extern struct {
+pub const mach_msg_empty_send_t = struct_unnamed_114;
+const struct_unnamed_115 = extern struct {
     header: mach_msg_header_t,
     trailer: mach_msg_trailer_t,
 };
-pub const mach_msg_empty_rcv_t = struct_unnamed_155;
-const union_unnamed_156 = extern union {
+pub const mach_msg_empty_rcv_t = struct_unnamed_115;
+const union_unnamed_116 = extern union {
     send: mach_msg_empty_send_t,
     rcv: mach_msg_empty_rcv_t,
 };
-pub const mach_msg_empty_t = union_unnamed_156;
+pub const mach_msg_empty_t = union_unnamed_116;
 pub const mach_msg_type_size_t = natural_t;
 pub const mach_msg_type_number_t = natural_t;
 pub const mach_msg_option_t = integer_t;
@@ -6121,22 +5641,22 @@ pub const dispatch_workloop_t = dispatch_queue_t;
 pub extern fn dispatch_workloop_create(label: [*c]const u8) dispatch_workloop_t;
 pub extern fn dispatch_workloop_create_inactive(label: [*c]const u8) dispatch_workloop_t;
 pub extern fn dispatch_workloop_set_autorelease_frequency(workloop: dispatch_workloop_t, frequency: dispatch_autorelease_frequency_t) void;
-const struct_unnamed_157 = extern struct {
+const struct_unnamed_117 = extern struct {
     domain: CFIndex,
     @"error": SInt32,
 };
-pub const CFStreamError = struct_unnamed_157;
+pub const CFStreamError = struct_unnamed_117;
 pub const CFStreamPropertyKey = CFStringRef;
 pub const CFStreamStatus = CFIndex;
-pub const kCFStreamStatusNotOpen = @enumToInt(enum_unnamed_158.kCFStreamStatusNotOpen);
-pub const kCFStreamStatusOpening = @enumToInt(enum_unnamed_158.kCFStreamStatusOpening);
-pub const kCFStreamStatusOpen = @enumToInt(enum_unnamed_158.kCFStreamStatusOpen);
-pub const kCFStreamStatusReading = @enumToInt(enum_unnamed_158.kCFStreamStatusReading);
-pub const kCFStreamStatusWriting = @enumToInt(enum_unnamed_158.kCFStreamStatusWriting);
-pub const kCFStreamStatusAtEnd = @enumToInt(enum_unnamed_158.kCFStreamStatusAtEnd);
-pub const kCFStreamStatusClosed = @enumToInt(enum_unnamed_158.kCFStreamStatusClosed);
-pub const kCFStreamStatusError = @enumToInt(enum_unnamed_158.kCFStreamStatusError);
-const enum_unnamed_158 = extern enum(c_int) {
+pub const kCFStreamStatusNotOpen = @enumToInt(enum_unnamed_118.kCFStreamStatusNotOpen);
+pub const kCFStreamStatusOpening = @enumToInt(enum_unnamed_118.kCFStreamStatusOpening);
+pub const kCFStreamStatusOpen = @enumToInt(enum_unnamed_118.kCFStreamStatusOpen);
+pub const kCFStreamStatusReading = @enumToInt(enum_unnamed_118.kCFStreamStatusReading);
+pub const kCFStreamStatusWriting = @enumToInt(enum_unnamed_118.kCFStreamStatusWriting);
+pub const kCFStreamStatusAtEnd = @enumToInt(enum_unnamed_118.kCFStreamStatusAtEnd);
+pub const kCFStreamStatusClosed = @enumToInt(enum_unnamed_118.kCFStreamStatusClosed);
+pub const kCFStreamStatusError = @enumToInt(enum_unnamed_118.kCFStreamStatusError);
+const enum_unnamed_118 = extern enum(c_int) {
     kCFStreamStatusNotOpen = 0,
     kCFStreamStatusOpening = 1,
     kCFStreamStatusOpen = 2,
@@ -6148,13 +5668,13 @@ const enum_unnamed_158 = extern enum(c_int) {
     _,
 };
 pub const CFStreamEventType = CFOptionFlags;
-pub const kCFStreamEventNone = @enumToInt(enum_unnamed_159.kCFStreamEventNone);
-pub const kCFStreamEventOpenCompleted = @enumToInt(enum_unnamed_159.kCFStreamEventOpenCompleted);
-pub const kCFStreamEventHasBytesAvailable = @enumToInt(enum_unnamed_159.kCFStreamEventHasBytesAvailable);
-pub const kCFStreamEventCanAcceptBytes = @enumToInt(enum_unnamed_159.kCFStreamEventCanAcceptBytes);
-pub const kCFStreamEventErrorOccurred = @enumToInt(enum_unnamed_159.kCFStreamEventErrorOccurred);
-pub const kCFStreamEventEndEncountered = @enumToInt(enum_unnamed_159.kCFStreamEventEndEncountered);
-const enum_unnamed_159 = extern enum(c_int) {
+pub const kCFStreamEventNone = @enumToInt(enum_unnamed_119.kCFStreamEventNone);
+pub const kCFStreamEventOpenCompleted = @enumToInt(enum_unnamed_119.kCFStreamEventOpenCompleted);
+pub const kCFStreamEventHasBytesAvailable = @enumToInt(enum_unnamed_119.kCFStreamEventHasBytesAvailable);
+pub const kCFStreamEventCanAcceptBytes = @enumToInt(enum_unnamed_119.kCFStreamEventCanAcceptBytes);
+pub const kCFStreamEventErrorOccurred = @enumToInt(enum_unnamed_119.kCFStreamEventErrorOccurred);
+pub const kCFStreamEventEndEncountered = @enumToInt(enum_unnamed_119.kCFStreamEventEndEncountered);
+const enum_unnamed_119 = extern enum(c_int) {
     kCFStreamEventNone = 0,
     kCFStreamEventOpenCompleted = 1,
     kCFStreamEventHasBytesAvailable = 2,
@@ -6163,14 +5683,14 @@ const enum_unnamed_159 = extern enum(c_int) {
     kCFStreamEventEndEncountered = 16,
     _,
 };
-const struct_unnamed_160 = extern struct {
+const struct_unnamed_120 = extern struct {
     version: CFIndex,
     info: ?*c_void,
     retain: ?fn (?*c_void) callconv(.C) ?*c_void,
     release: ?fn (?*c_void) callconv(.C) void,
     copyDescription: ?fn (?*c_void) callconv(.C) CFStringRef,
 };
-pub const CFStreamClientContext = struct_unnamed_160;
+pub const CFStreamClientContext = struct_unnamed_120;
 pub const struct___CFReadStream = @OpaqueType();
 pub const CFReadStreamRef = ?*struct___CFReadStream;
 pub const struct___CFWriteStream = @OpaqueType();
@@ -6239,10 +5759,10 @@ pub extern fn CFWriteStreamSetDispatchQueue(stream: CFWriteStreamRef, q: dispatc
 pub extern fn CFReadStreamCopyDispatchQueue(stream: CFReadStreamRef) dispatch_queue_t;
 pub extern fn CFWriteStreamCopyDispatchQueue(stream: CFWriteStreamRef) dispatch_queue_t;
 pub const CFStreamErrorDomain = CFIndex;
-pub const kCFStreamErrorDomainCustom = @enumToInt(enum_unnamed_161.kCFStreamErrorDomainCustom);
-pub const kCFStreamErrorDomainPOSIX = @enumToInt(enum_unnamed_161.kCFStreamErrorDomainPOSIX);
-pub const kCFStreamErrorDomainMacOSStatus = @enumToInt(enum_unnamed_161.kCFStreamErrorDomainMacOSStatus);
-const enum_unnamed_161 = extern enum(c_int) {
+pub const kCFStreamErrorDomainCustom = @enumToInt(enum_unnamed_121.kCFStreamErrorDomainCustom);
+pub const kCFStreamErrorDomainPOSIX = @enumToInt(enum_unnamed_121.kCFStreamErrorDomainPOSIX);
+pub const kCFStreamErrorDomainMacOSStatus = @enumToInt(enum_unnamed_121.kCFStreamErrorDomainMacOSStatus);
+const enum_unnamed_121 = extern enum(c_int) {
     kCFStreamErrorDomainCustom = -1,
     kCFStreamErrorDomainPOSIX = 1,
     kCFStreamErrorDomainMacOSStatus = 2,
@@ -6251,10 +5771,10 @@ const enum_unnamed_161 = extern enum(c_int) {
 pub extern fn CFReadStreamGetError(stream: CFReadStreamRef) CFStreamError;
 pub extern fn CFWriteStreamGetError(stream: CFWriteStreamRef) CFStreamError;
 pub const CFPropertyListMutabilityOptions = CFOptionFlags;
-pub const kCFPropertyListImmutable = @enumToInt(enum_unnamed_162.kCFPropertyListImmutable);
-pub const kCFPropertyListMutableContainers = @enumToInt(enum_unnamed_162.kCFPropertyListMutableContainers);
-pub const kCFPropertyListMutableContainersAndLeaves = @enumToInt(enum_unnamed_162.kCFPropertyListMutableContainersAndLeaves);
-const enum_unnamed_162 = extern enum(c_int) {
+pub const kCFPropertyListImmutable = @enumToInt(enum_unnamed_122.kCFPropertyListImmutable);
+pub const kCFPropertyListMutableContainers = @enumToInt(enum_unnamed_122.kCFPropertyListMutableContainers);
+pub const kCFPropertyListMutableContainersAndLeaves = @enumToInt(enum_unnamed_122.kCFPropertyListMutableContainersAndLeaves);
+const enum_unnamed_122 = extern enum(c_int) {
     kCFPropertyListImmutable = 0,
     kCFPropertyListMutableContainers = 1,
     kCFPropertyListMutableContainersAndLeaves = 2,
@@ -6264,10 +5784,10 @@ pub extern fn CFPropertyListCreateFromXMLData(allocator: CFAllocatorRef, xmlData
 pub extern fn CFPropertyListCreateXMLData(allocator: CFAllocatorRef, propertyList: CFPropertyListRef) CFDataRef;
 pub extern fn CFPropertyListCreateDeepCopy(allocator: CFAllocatorRef, propertyList: CFPropertyListRef, mutabilityOption: CFOptionFlags) CFPropertyListRef;
 pub const CFPropertyListFormat = CFIndex;
-pub const kCFPropertyListOpenStepFormat = @enumToInt(enum_unnamed_163.kCFPropertyListOpenStepFormat);
-pub const kCFPropertyListXMLFormat_v1_0 = @enumToInt(enum_unnamed_163.kCFPropertyListXMLFormat_v1_0);
-pub const kCFPropertyListBinaryFormat_v1_0 = @enumToInt(enum_unnamed_163.kCFPropertyListBinaryFormat_v1_0);
-const enum_unnamed_163 = extern enum(c_int) {
+pub const kCFPropertyListOpenStepFormat = @enumToInt(enum_unnamed_123.kCFPropertyListOpenStepFormat);
+pub const kCFPropertyListXMLFormat_v1_0 = @enumToInt(enum_unnamed_123.kCFPropertyListXMLFormat_v1_0);
+pub const kCFPropertyListBinaryFormat_v1_0 = @enumToInt(enum_unnamed_123.kCFPropertyListBinaryFormat_v1_0);
+const enum_unnamed_123 = extern enum(c_int) {
     kCFPropertyListOpenStepFormat = 1,
     kCFPropertyListXMLFormat_v1_0 = 100,
     kCFPropertyListBinaryFormat_v1_0 = 200,
@@ -6276,11 +5796,11 @@ const enum_unnamed_163 = extern enum(c_int) {
 pub extern fn CFPropertyListIsValid(plist: CFPropertyListRef, format: CFPropertyListFormat) Boolean;
 pub extern fn CFPropertyListWriteToStream(propertyList: CFPropertyListRef, stream: CFWriteStreamRef, format: CFPropertyListFormat, errorString: [*c]CFStringRef) CFIndex;
 pub extern fn CFPropertyListCreateFromStream(allocator: CFAllocatorRef, stream: CFReadStreamRef, streamLength: CFIndex, mutabilityOption: CFOptionFlags, format: [*c]CFPropertyListFormat, errorString: [*c]CFStringRef) CFPropertyListRef;
-pub const kCFPropertyListReadCorruptError = @enumToInt(enum_unnamed_164.kCFPropertyListReadCorruptError);
-pub const kCFPropertyListReadUnknownVersionError = @enumToInt(enum_unnamed_164.kCFPropertyListReadUnknownVersionError);
-pub const kCFPropertyListReadStreamError = @enumToInt(enum_unnamed_164.kCFPropertyListReadStreamError);
-pub const kCFPropertyListWriteStreamError = @enumToInt(enum_unnamed_164.kCFPropertyListWriteStreamError);
-const enum_unnamed_164 = extern enum(c_int) {
+pub const kCFPropertyListReadCorruptError = @enumToInt(enum_unnamed_124.kCFPropertyListReadCorruptError);
+pub const kCFPropertyListReadUnknownVersionError = @enumToInt(enum_unnamed_124.kCFPropertyListReadUnknownVersionError);
+pub const kCFPropertyListReadStreamError = @enumToInt(enum_unnamed_124.kCFPropertyListReadStreamError);
+pub const kCFPropertyListWriteStreamError = @enumToInt(enum_unnamed_124.kCFPropertyListWriteStreamError);
+const enum_unnamed_124 = extern enum(c_int) {
     kCFPropertyListReadCorruptError = 3840,
     kCFPropertyListReadUnknownVersionError = 3841,
     kCFPropertyListReadStreamError = 3842,
@@ -6296,7 +5816,7 @@ pub const CFSetReleaseCallBack = ?fn (CFAllocatorRef, ?*const c_void) callconv(.
 pub const CFSetCopyDescriptionCallBack = ?fn (?*const c_void) callconv(.C) CFStringRef;
 pub const CFSetEqualCallBack = ?fn (?*const c_void, ?*const c_void) callconv(.C) Boolean;
 pub const CFSetHashCallBack = ?fn (?*const c_void) callconv(.C) CFHashCode;
-const struct_unnamed_165 = extern struct {
+const struct_unnamed_125 = extern struct {
     version: CFIndex,
     retain: CFSetRetainCallBack,
     release: CFSetReleaseCallBack,
@@ -6304,7 +5824,7 @@ const struct_unnamed_165 = extern struct {
     equal: CFSetEqualCallBack,
     hash: CFSetHashCallBack,
 };
-pub const CFSetCallBacks = struct_unnamed_165;
+pub const CFSetCallBacks = struct_unnamed_125;
 pub extern const kCFTypeSetCallBacks: CFSetCallBacks;
 pub extern const kCFCopyStringSetCallBacks: CFSetCallBacks;
 pub const CFSetApplierFunction = ?fn (?*const c_void, ?*c_void) callconv(.C) void;
@@ -6329,136 +5849,136 @@ pub extern fn CFSetSetValue(theSet: CFMutableSetRef, value: ?*const c_void) void
 pub extern fn CFSetRemoveValue(theSet: CFMutableSetRef, value: ?*const c_void) void;
 pub extern fn CFSetRemoveAllValues(theSet: CFMutableSetRef) void;
 pub const CFStringEncodings = CFIndex;
-pub const kCFStringEncodingMacJapanese = @enumToInt(enum_unnamed_166.kCFStringEncodingMacJapanese);
-pub const kCFStringEncodingMacChineseTrad = @enumToInt(enum_unnamed_166.kCFStringEncodingMacChineseTrad);
-pub const kCFStringEncodingMacKorean = @enumToInt(enum_unnamed_166.kCFStringEncodingMacKorean);
-pub const kCFStringEncodingMacArabic = @enumToInt(enum_unnamed_166.kCFStringEncodingMacArabic);
-pub const kCFStringEncodingMacHebrew = @enumToInt(enum_unnamed_166.kCFStringEncodingMacHebrew);
-pub const kCFStringEncodingMacGreek = @enumToInt(enum_unnamed_166.kCFStringEncodingMacGreek);
-pub const kCFStringEncodingMacCyrillic = @enumToInt(enum_unnamed_166.kCFStringEncodingMacCyrillic);
-pub const kCFStringEncodingMacDevanagari = @enumToInt(enum_unnamed_166.kCFStringEncodingMacDevanagari);
-pub const kCFStringEncodingMacGurmukhi = @enumToInt(enum_unnamed_166.kCFStringEncodingMacGurmukhi);
-pub const kCFStringEncodingMacGujarati = @enumToInt(enum_unnamed_166.kCFStringEncodingMacGujarati);
-pub const kCFStringEncodingMacOriya = @enumToInt(enum_unnamed_166.kCFStringEncodingMacOriya);
-pub const kCFStringEncodingMacBengali = @enumToInt(enum_unnamed_166.kCFStringEncodingMacBengali);
-pub const kCFStringEncodingMacTamil = @enumToInt(enum_unnamed_166.kCFStringEncodingMacTamil);
-pub const kCFStringEncodingMacTelugu = @enumToInt(enum_unnamed_166.kCFStringEncodingMacTelugu);
-pub const kCFStringEncodingMacKannada = @enumToInt(enum_unnamed_166.kCFStringEncodingMacKannada);
-pub const kCFStringEncodingMacMalayalam = @enumToInt(enum_unnamed_166.kCFStringEncodingMacMalayalam);
-pub const kCFStringEncodingMacSinhalese = @enumToInt(enum_unnamed_166.kCFStringEncodingMacSinhalese);
-pub const kCFStringEncodingMacBurmese = @enumToInt(enum_unnamed_166.kCFStringEncodingMacBurmese);
-pub const kCFStringEncodingMacKhmer = @enumToInt(enum_unnamed_166.kCFStringEncodingMacKhmer);
-pub const kCFStringEncodingMacThai = @enumToInt(enum_unnamed_166.kCFStringEncodingMacThai);
-pub const kCFStringEncodingMacLaotian = @enumToInt(enum_unnamed_166.kCFStringEncodingMacLaotian);
-pub const kCFStringEncodingMacGeorgian = @enumToInt(enum_unnamed_166.kCFStringEncodingMacGeorgian);
-pub const kCFStringEncodingMacArmenian = @enumToInt(enum_unnamed_166.kCFStringEncodingMacArmenian);
-pub const kCFStringEncodingMacChineseSimp = @enumToInt(enum_unnamed_166.kCFStringEncodingMacChineseSimp);
-pub const kCFStringEncodingMacTibetan = @enumToInt(enum_unnamed_166.kCFStringEncodingMacTibetan);
-pub const kCFStringEncodingMacMongolian = @enumToInt(enum_unnamed_166.kCFStringEncodingMacMongolian);
-pub const kCFStringEncodingMacEthiopic = @enumToInt(enum_unnamed_166.kCFStringEncodingMacEthiopic);
-pub const kCFStringEncodingMacCentralEurRoman = @enumToInt(enum_unnamed_166.kCFStringEncodingMacCentralEurRoman);
-pub const kCFStringEncodingMacVietnamese = @enumToInt(enum_unnamed_166.kCFStringEncodingMacVietnamese);
-pub const kCFStringEncodingMacExtArabic = @enumToInt(enum_unnamed_166.kCFStringEncodingMacExtArabic);
-pub const kCFStringEncodingMacSymbol = @enumToInt(enum_unnamed_166.kCFStringEncodingMacSymbol);
-pub const kCFStringEncodingMacDingbats = @enumToInt(enum_unnamed_166.kCFStringEncodingMacDingbats);
-pub const kCFStringEncodingMacTurkish = @enumToInt(enum_unnamed_166.kCFStringEncodingMacTurkish);
-pub const kCFStringEncodingMacCroatian = @enumToInt(enum_unnamed_166.kCFStringEncodingMacCroatian);
-pub const kCFStringEncodingMacIcelandic = @enumToInt(enum_unnamed_166.kCFStringEncodingMacIcelandic);
-pub const kCFStringEncodingMacRomanian = @enumToInt(enum_unnamed_166.kCFStringEncodingMacRomanian);
-pub const kCFStringEncodingMacCeltic = @enumToInt(enum_unnamed_166.kCFStringEncodingMacCeltic);
-pub const kCFStringEncodingMacGaelic = @enumToInt(enum_unnamed_166.kCFStringEncodingMacGaelic);
-pub const kCFStringEncodingMacFarsi = @enumToInt(enum_unnamed_166.kCFStringEncodingMacFarsi);
-pub const kCFStringEncodingMacUkrainian = @enumToInt(enum_unnamed_166.kCFStringEncodingMacUkrainian);
-pub const kCFStringEncodingMacInuit = @enumToInt(enum_unnamed_166.kCFStringEncodingMacInuit);
-pub const kCFStringEncodingMacVT100 = @enumToInt(enum_unnamed_166.kCFStringEncodingMacVT100);
-pub const kCFStringEncodingMacHFS = @enumToInt(enum_unnamed_166.kCFStringEncodingMacHFS);
-pub const kCFStringEncodingISOLatin2 = @enumToInt(enum_unnamed_166.kCFStringEncodingISOLatin2);
-pub const kCFStringEncodingISOLatin3 = @enumToInt(enum_unnamed_166.kCFStringEncodingISOLatin3);
-pub const kCFStringEncodingISOLatin4 = @enumToInt(enum_unnamed_166.kCFStringEncodingISOLatin4);
-pub const kCFStringEncodingISOLatinCyrillic = @enumToInt(enum_unnamed_166.kCFStringEncodingISOLatinCyrillic);
-pub const kCFStringEncodingISOLatinArabic = @enumToInt(enum_unnamed_166.kCFStringEncodingISOLatinArabic);
-pub const kCFStringEncodingISOLatinGreek = @enumToInt(enum_unnamed_166.kCFStringEncodingISOLatinGreek);
-pub const kCFStringEncodingISOLatinHebrew = @enumToInt(enum_unnamed_166.kCFStringEncodingISOLatinHebrew);
-pub const kCFStringEncodingISOLatin5 = @enumToInt(enum_unnamed_166.kCFStringEncodingISOLatin5);
-pub const kCFStringEncodingISOLatin6 = @enumToInt(enum_unnamed_166.kCFStringEncodingISOLatin6);
-pub const kCFStringEncodingISOLatinThai = @enumToInt(enum_unnamed_166.kCFStringEncodingISOLatinThai);
-pub const kCFStringEncodingISOLatin7 = @enumToInt(enum_unnamed_166.kCFStringEncodingISOLatin7);
-pub const kCFStringEncodingISOLatin8 = @enumToInt(enum_unnamed_166.kCFStringEncodingISOLatin8);
-pub const kCFStringEncodingISOLatin9 = @enumToInt(enum_unnamed_166.kCFStringEncodingISOLatin9);
-pub const kCFStringEncodingISOLatin10 = @enumToInt(enum_unnamed_166.kCFStringEncodingISOLatin10);
-pub const kCFStringEncodingDOSLatinUS = @enumToInt(enum_unnamed_166.kCFStringEncodingDOSLatinUS);
-pub const kCFStringEncodingDOSGreek = @enumToInt(enum_unnamed_166.kCFStringEncodingDOSGreek);
-pub const kCFStringEncodingDOSBalticRim = @enumToInt(enum_unnamed_166.kCFStringEncodingDOSBalticRim);
-pub const kCFStringEncodingDOSLatin1 = @enumToInt(enum_unnamed_166.kCFStringEncodingDOSLatin1);
-pub const kCFStringEncodingDOSGreek1 = @enumToInt(enum_unnamed_166.kCFStringEncodingDOSGreek1);
-pub const kCFStringEncodingDOSLatin2 = @enumToInt(enum_unnamed_166.kCFStringEncodingDOSLatin2);
-pub const kCFStringEncodingDOSCyrillic = @enumToInt(enum_unnamed_166.kCFStringEncodingDOSCyrillic);
-pub const kCFStringEncodingDOSTurkish = @enumToInt(enum_unnamed_166.kCFStringEncodingDOSTurkish);
-pub const kCFStringEncodingDOSPortuguese = @enumToInt(enum_unnamed_166.kCFStringEncodingDOSPortuguese);
-pub const kCFStringEncodingDOSIcelandic = @enumToInt(enum_unnamed_166.kCFStringEncodingDOSIcelandic);
-pub const kCFStringEncodingDOSHebrew = @enumToInt(enum_unnamed_166.kCFStringEncodingDOSHebrew);
-pub const kCFStringEncodingDOSCanadianFrench = @enumToInt(enum_unnamed_166.kCFStringEncodingDOSCanadianFrench);
-pub const kCFStringEncodingDOSArabic = @enumToInt(enum_unnamed_166.kCFStringEncodingDOSArabic);
-pub const kCFStringEncodingDOSNordic = @enumToInt(enum_unnamed_166.kCFStringEncodingDOSNordic);
-pub const kCFStringEncodingDOSRussian = @enumToInt(enum_unnamed_166.kCFStringEncodingDOSRussian);
-pub const kCFStringEncodingDOSGreek2 = @enumToInt(enum_unnamed_166.kCFStringEncodingDOSGreek2);
-pub const kCFStringEncodingDOSThai = @enumToInt(enum_unnamed_166.kCFStringEncodingDOSThai);
-pub const kCFStringEncodingDOSJapanese = @enumToInt(enum_unnamed_166.kCFStringEncodingDOSJapanese);
-pub const kCFStringEncodingDOSChineseSimplif = @enumToInt(enum_unnamed_166.kCFStringEncodingDOSChineseSimplif);
-pub const kCFStringEncodingDOSKorean = @enumToInt(enum_unnamed_166.kCFStringEncodingDOSKorean);
-pub const kCFStringEncodingDOSChineseTrad = @enumToInt(enum_unnamed_166.kCFStringEncodingDOSChineseTrad);
-pub const kCFStringEncodingWindowsLatin2 = @enumToInt(enum_unnamed_166.kCFStringEncodingWindowsLatin2);
-pub const kCFStringEncodingWindowsCyrillic = @enumToInt(enum_unnamed_166.kCFStringEncodingWindowsCyrillic);
-pub const kCFStringEncodingWindowsGreek = @enumToInt(enum_unnamed_166.kCFStringEncodingWindowsGreek);
-pub const kCFStringEncodingWindowsLatin5 = @enumToInt(enum_unnamed_166.kCFStringEncodingWindowsLatin5);
-pub const kCFStringEncodingWindowsHebrew = @enumToInt(enum_unnamed_166.kCFStringEncodingWindowsHebrew);
-pub const kCFStringEncodingWindowsArabic = @enumToInt(enum_unnamed_166.kCFStringEncodingWindowsArabic);
-pub const kCFStringEncodingWindowsBalticRim = @enumToInt(enum_unnamed_166.kCFStringEncodingWindowsBalticRim);
-pub const kCFStringEncodingWindowsVietnamese = @enumToInt(enum_unnamed_166.kCFStringEncodingWindowsVietnamese);
-pub const kCFStringEncodingWindowsKoreanJohab = @enumToInt(enum_unnamed_166.kCFStringEncodingWindowsKoreanJohab);
-pub const kCFStringEncodingANSEL = @enumToInt(enum_unnamed_166.kCFStringEncodingANSEL);
-pub const kCFStringEncodingJIS_X0201_76 = @enumToInt(enum_unnamed_166.kCFStringEncodingJIS_X0201_76);
-pub const kCFStringEncodingJIS_X0208_83 = @enumToInt(enum_unnamed_166.kCFStringEncodingJIS_X0208_83);
-pub const kCFStringEncodingJIS_X0208_90 = @enumToInt(enum_unnamed_166.kCFStringEncodingJIS_X0208_90);
-pub const kCFStringEncodingJIS_X0212_90 = @enumToInt(enum_unnamed_166.kCFStringEncodingJIS_X0212_90);
-pub const kCFStringEncodingJIS_C6226_78 = @enumToInt(enum_unnamed_166.kCFStringEncodingJIS_C6226_78);
-pub const kCFStringEncodingShiftJIS_X0213 = @enumToInt(enum_unnamed_166.kCFStringEncodingShiftJIS_X0213);
-pub const kCFStringEncodingShiftJIS_X0213_MenKuTen = @enumToInt(enum_unnamed_166.kCFStringEncodingShiftJIS_X0213_MenKuTen);
-pub const kCFStringEncodingGB_2312_80 = @enumToInt(enum_unnamed_166.kCFStringEncodingGB_2312_80);
-pub const kCFStringEncodingGBK_95 = @enumToInt(enum_unnamed_166.kCFStringEncodingGBK_95);
-pub const kCFStringEncodingGB_18030_2000 = @enumToInt(enum_unnamed_166.kCFStringEncodingGB_18030_2000);
-pub const kCFStringEncodingKSC_5601_87 = @enumToInt(enum_unnamed_166.kCFStringEncodingKSC_5601_87);
-pub const kCFStringEncodingKSC_5601_92_Johab = @enumToInt(enum_unnamed_166.kCFStringEncodingKSC_5601_92_Johab);
-pub const kCFStringEncodingCNS_11643_92_P1 = @enumToInt(enum_unnamed_166.kCFStringEncodingCNS_11643_92_P1);
-pub const kCFStringEncodingCNS_11643_92_P2 = @enumToInt(enum_unnamed_166.kCFStringEncodingCNS_11643_92_P2);
-pub const kCFStringEncodingCNS_11643_92_P3 = @enumToInt(enum_unnamed_166.kCFStringEncodingCNS_11643_92_P3);
-pub const kCFStringEncodingISO_2022_JP = @enumToInt(enum_unnamed_166.kCFStringEncodingISO_2022_JP);
-pub const kCFStringEncodingISO_2022_JP_2 = @enumToInt(enum_unnamed_166.kCFStringEncodingISO_2022_JP_2);
-pub const kCFStringEncodingISO_2022_JP_1 = @enumToInt(enum_unnamed_166.kCFStringEncodingISO_2022_JP_1);
-pub const kCFStringEncodingISO_2022_JP_3 = @enumToInt(enum_unnamed_166.kCFStringEncodingISO_2022_JP_3);
-pub const kCFStringEncodingISO_2022_CN = @enumToInt(enum_unnamed_166.kCFStringEncodingISO_2022_CN);
-pub const kCFStringEncodingISO_2022_CN_EXT = @enumToInt(enum_unnamed_166.kCFStringEncodingISO_2022_CN_EXT);
-pub const kCFStringEncodingISO_2022_KR = @enumToInt(enum_unnamed_166.kCFStringEncodingISO_2022_KR);
-pub const kCFStringEncodingEUC_JP = @enumToInt(enum_unnamed_166.kCFStringEncodingEUC_JP);
-pub const kCFStringEncodingEUC_CN = @enumToInt(enum_unnamed_166.kCFStringEncodingEUC_CN);
-pub const kCFStringEncodingEUC_TW = @enumToInt(enum_unnamed_166.kCFStringEncodingEUC_TW);
-pub const kCFStringEncodingEUC_KR = @enumToInt(enum_unnamed_166.kCFStringEncodingEUC_KR);
-pub const kCFStringEncodingShiftJIS = @enumToInt(enum_unnamed_166.kCFStringEncodingShiftJIS);
-pub const kCFStringEncodingKOI8_R = @enumToInt(enum_unnamed_166.kCFStringEncodingKOI8_R);
-pub const kCFStringEncodingBig5 = @enumToInt(enum_unnamed_166.kCFStringEncodingBig5);
-pub const kCFStringEncodingMacRomanLatin1 = @enumToInt(enum_unnamed_166.kCFStringEncodingMacRomanLatin1);
-pub const kCFStringEncodingHZ_GB_2312 = @enumToInt(enum_unnamed_166.kCFStringEncodingHZ_GB_2312);
-pub const kCFStringEncodingBig5_HKSCS_1999 = @enumToInt(enum_unnamed_166.kCFStringEncodingBig5_HKSCS_1999);
-pub const kCFStringEncodingVISCII = @enumToInt(enum_unnamed_166.kCFStringEncodingVISCII);
-pub const kCFStringEncodingKOI8_U = @enumToInt(enum_unnamed_166.kCFStringEncodingKOI8_U);
-pub const kCFStringEncodingBig5_E = @enumToInt(enum_unnamed_166.kCFStringEncodingBig5_E);
-pub const kCFStringEncodingNextStepJapanese = @enumToInt(enum_unnamed_166.kCFStringEncodingNextStepJapanese);
-pub const kCFStringEncodingEBCDIC_US = @enumToInt(enum_unnamed_166.kCFStringEncodingEBCDIC_US);
-pub const kCFStringEncodingEBCDIC_CP037 = @enumToInt(enum_unnamed_166.kCFStringEncodingEBCDIC_CP037);
-pub const kCFStringEncodingUTF7 = @enumToInt(enum_unnamed_166.kCFStringEncodingUTF7);
-pub const kCFStringEncodingUTF7_IMAP = @enumToInt(enum_unnamed_166.kCFStringEncodingUTF7_IMAP);
-pub const kCFStringEncodingShiftJIS_X0213_00 = @enumToInt(enum_unnamed_166.kCFStringEncodingShiftJIS_X0213_00);
-const enum_unnamed_166 = extern enum(c_int) {
+pub const kCFStringEncodingMacJapanese = @enumToInt(enum_unnamed_126.kCFStringEncodingMacJapanese);
+pub const kCFStringEncodingMacChineseTrad = @enumToInt(enum_unnamed_126.kCFStringEncodingMacChineseTrad);
+pub const kCFStringEncodingMacKorean = @enumToInt(enum_unnamed_126.kCFStringEncodingMacKorean);
+pub const kCFStringEncodingMacArabic = @enumToInt(enum_unnamed_126.kCFStringEncodingMacArabic);
+pub const kCFStringEncodingMacHebrew = @enumToInt(enum_unnamed_126.kCFStringEncodingMacHebrew);
+pub const kCFStringEncodingMacGreek = @enumToInt(enum_unnamed_126.kCFStringEncodingMacGreek);
+pub const kCFStringEncodingMacCyrillic = @enumToInt(enum_unnamed_126.kCFStringEncodingMacCyrillic);
+pub const kCFStringEncodingMacDevanagari = @enumToInt(enum_unnamed_126.kCFStringEncodingMacDevanagari);
+pub const kCFStringEncodingMacGurmukhi = @enumToInt(enum_unnamed_126.kCFStringEncodingMacGurmukhi);
+pub const kCFStringEncodingMacGujarati = @enumToInt(enum_unnamed_126.kCFStringEncodingMacGujarati);
+pub const kCFStringEncodingMacOriya = @enumToInt(enum_unnamed_126.kCFStringEncodingMacOriya);
+pub const kCFStringEncodingMacBengali = @enumToInt(enum_unnamed_126.kCFStringEncodingMacBengali);
+pub const kCFStringEncodingMacTamil = @enumToInt(enum_unnamed_126.kCFStringEncodingMacTamil);
+pub const kCFStringEncodingMacTelugu = @enumToInt(enum_unnamed_126.kCFStringEncodingMacTelugu);
+pub const kCFStringEncodingMacKannada = @enumToInt(enum_unnamed_126.kCFStringEncodingMacKannada);
+pub const kCFStringEncodingMacMalayalam = @enumToInt(enum_unnamed_126.kCFStringEncodingMacMalayalam);
+pub const kCFStringEncodingMacSinhalese = @enumToInt(enum_unnamed_126.kCFStringEncodingMacSinhalese);
+pub const kCFStringEncodingMacBurmese = @enumToInt(enum_unnamed_126.kCFStringEncodingMacBurmese);
+pub const kCFStringEncodingMacKhmer = @enumToInt(enum_unnamed_126.kCFStringEncodingMacKhmer);
+pub const kCFStringEncodingMacThai = @enumToInt(enum_unnamed_126.kCFStringEncodingMacThai);
+pub const kCFStringEncodingMacLaotian = @enumToInt(enum_unnamed_126.kCFStringEncodingMacLaotian);
+pub const kCFStringEncodingMacGeorgian = @enumToInt(enum_unnamed_126.kCFStringEncodingMacGeorgian);
+pub const kCFStringEncodingMacArmenian = @enumToInt(enum_unnamed_126.kCFStringEncodingMacArmenian);
+pub const kCFStringEncodingMacChineseSimp = @enumToInt(enum_unnamed_126.kCFStringEncodingMacChineseSimp);
+pub const kCFStringEncodingMacTibetan = @enumToInt(enum_unnamed_126.kCFStringEncodingMacTibetan);
+pub const kCFStringEncodingMacMongolian = @enumToInt(enum_unnamed_126.kCFStringEncodingMacMongolian);
+pub const kCFStringEncodingMacEthiopic = @enumToInt(enum_unnamed_126.kCFStringEncodingMacEthiopic);
+pub const kCFStringEncodingMacCentralEurRoman = @enumToInt(enum_unnamed_126.kCFStringEncodingMacCentralEurRoman);
+pub const kCFStringEncodingMacVietnamese = @enumToInt(enum_unnamed_126.kCFStringEncodingMacVietnamese);
+pub const kCFStringEncodingMacExtArabic = @enumToInt(enum_unnamed_126.kCFStringEncodingMacExtArabic);
+pub const kCFStringEncodingMacSymbol = @enumToInt(enum_unnamed_126.kCFStringEncodingMacSymbol);
+pub const kCFStringEncodingMacDingbats = @enumToInt(enum_unnamed_126.kCFStringEncodingMacDingbats);
+pub const kCFStringEncodingMacTurkish = @enumToInt(enum_unnamed_126.kCFStringEncodingMacTurkish);
+pub const kCFStringEncodingMacCroatian = @enumToInt(enum_unnamed_126.kCFStringEncodingMacCroatian);
+pub const kCFStringEncodingMacIcelandic = @enumToInt(enum_unnamed_126.kCFStringEncodingMacIcelandic);
+pub const kCFStringEncodingMacRomanian = @enumToInt(enum_unnamed_126.kCFStringEncodingMacRomanian);
+pub const kCFStringEncodingMacCeltic = @enumToInt(enum_unnamed_126.kCFStringEncodingMacCeltic);
+pub const kCFStringEncodingMacGaelic = @enumToInt(enum_unnamed_126.kCFStringEncodingMacGaelic);
+pub const kCFStringEncodingMacFarsi = @enumToInt(enum_unnamed_126.kCFStringEncodingMacFarsi);
+pub const kCFStringEncodingMacUkrainian = @enumToInt(enum_unnamed_126.kCFStringEncodingMacUkrainian);
+pub const kCFStringEncodingMacInuit = @enumToInt(enum_unnamed_126.kCFStringEncodingMacInuit);
+pub const kCFStringEncodingMacVT100 = @enumToInt(enum_unnamed_126.kCFStringEncodingMacVT100);
+pub const kCFStringEncodingMacHFS = @enumToInt(enum_unnamed_126.kCFStringEncodingMacHFS);
+pub const kCFStringEncodingISOLatin2 = @enumToInt(enum_unnamed_126.kCFStringEncodingISOLatin2);
+pub const kCFStringEncodingISOLatin3 = @enumToInt(enum_unnamed_126.kCFStringEncodingISOLatin3);
+pub const kCFStringEncodingISOLatin4 = @enumToInt(enum_unnamed_126.kCFStringEncodingISOLatin4);
+pub const kCFStringEncodingISOLatinCyrillic = @enumToInt(enum_unnamed_126.kCFStringEncodingISOLatinCyrillic);
+pub const kCFStringEncodingISOLatinArabic = @enumToInt(enum_unnamed_126.kCFStringEncodingISOLatinArabic);
+pub const kCFStringEncodingISOLatinGreek = @enumToInt(enum_unnamed_126.kCFStringEncodingISOLatinGreek);
+pub const kCFStringEncodingISOLatinHebrew = @enumToInt(enum_unnamed_126.kCFStringEncodingISOLatinHebrew);
+pub const kCFStringEncodingISOLatin5 = @enumToInt(enum_unnamed_126.kCFStringEncodingISOLatin5);
+pub const kCFStringEncodingISOLatin6 = @enumToInt(enum_unnamed_126.kCFStringEncodingISOLatin6);
+pub const kCFStringEncodingISOLatinThai = @enumToInt(enum_unnamed_126.kCFStringEncodingISOLatinThai);
+pub const kCFStringEncodingISOLatin7 = @enumToInt(enum_unnamed_126.kCFStringEncodingISOLatin7);
+pub const kCFStringEncodingISOLatin8 = @enumToInt(enum_unnamed_126.kCFStringEncodingISOLatin8);
+pub const kCFStringEncodingISOLatin9 = @enumToInt(enum_unnamed_126.kCFStringEncodingISOLatin9);
+pub const kCFStringEncodingISOLatin10 = @enumToInt(enum_unnamed_126.kCFStringEncodingISOLatin10);
+pub const kCFStringEncodingDOSLatinUS = @enumToInt(enum_unnamed_126.kCFStringEncodingDOSLatinUS);
+pub const kCFStringEncodingDOSGreek = @enumToInt(enum_unnamed_126.kCFStringEncodingDOSGreek);
+pub const kCFStringEncodingDOSBalticRim = @enumToInt(enum_unnamed_126.kCFStringEncodingDOSBalticRim);
+pub const kCFStringEncodingDOSLatin1 = @enumToInt(enum_unnamed_126.kCFStringEncodingDOSLatin1);
+pub const kCFStringEncodingDOSGreek1 = @enumToInt(enum_unnamed_126.kCFStringEncodingDOSGreek1);
+pub const kCFStringEncodingDOSLatin2 = @enumToInt(enum_unnamed_126.kCFStringEncodingDOSLatin2);
+pub const kCFStringEncodingDOSCyrillic = @enumToInt(enum_unnamed_126.kCFStringEncodingDOSCyrillic);
+pub const kCFStringEncodingDOSTurkish = @enumToInt(enum_unnamed_126.kCFStringEncodingDOSTurkish);
+pub const kCFStringEncodingDOSPortuguese = @enumToInt(enum_unnamed_126.kCFStringEncodingDOSPortuguese);
+pub const kCFStringEncodingDOSIcelandic = @enumToInt(enum_unnamed_126.kCFStringEncodingDOSIcelandic);
+pub const kCFStringEncodingDOSHebrew = @enumToInt(enum_unnamed_126.kCFStringEncodingDOSHebrew);
+pub const kCFStringEncodingDOSCanadianFrench = @enumToInt(enum_unnamed_126.kCFStringEncodingDOSCanadianFrench);
+pub const kCFStringEncodingDOSArabic = @enumToInt(enum_unnamed_126.kCFStringEncodingDOSArabic);
+pub const kCFStringEncodingDOSNordic = @enumToInt(enum_unnamed_126.kCFStringEncodingDOSNordic);
+pub const kCFStringEncodingDOSRussian = @enumToInt(enum_unnamed_126.kCFStringEncodingDOSRussian);
+pub const kCFStringEncodingDOSGreek2 = @enumToInt(enum_unnamed_126.kCFStringEncodingDOSGreek2);
+pub const kCFStringEncodingDOSThai = @enumToInt(enum_unnamed_126.kCFStringEncodingDOSThai);
+pub const kCFStringEncodingDOSJapanese = @enumToInt(enum_unnamed_126.kCFStringEncodingDOSJapanese);
+pub const kCFStringEncodingDOSChineseSimplif = @enumToInt(enum_unnamed_126.kCFStringEncodingDOSChineseSimplif);
+pub const kCFStringEncodingDOSKorean = @enumToInt(enum_unnamed_126.kCFStringEncodingDOSKorean);
+pub const kCFStringEncodingDOSChineseTrad = @enumToInt(enum_unnamed_126.kCFStringEncodingDOSChineseTrad);
+pub const kCFStringEncodingWindowsLatin2 = @enumToInt(enum_unnamed_126.kCFStringEncodingWindowsLatin2);
+pub const kCFStringEncodingWindowsCyrillic = @enumToInt(enum_unnamed_126.kCFStringEncodingWindowsCyrillic);
+pub const kCFStringEncodingWindowsGreek = @enumToInt(enum_unnamed_126.kCFStringEncodingWindowsGreek);
+pub const kCFStringEncodingWindowsLatin5 = @enumToInt(enum_unnamed_126.kCFStringEncodingWindowsLatin5);
+pub const kCFStringEncodingWindowsHebrew = @enumToInt(enum_unnamed_126.kCFStringEncodingWindowsHebrew);
+pub const kCFStringEncodingWindowsArabic = @enumToInt(enum_unnamed_126.kCFStringEncodingWindowsArabic);
+pub const kCFStringEncodingWindowsBalticRim = @enumToInt(enum_unnamed_126.kCFStringEncodingWindowsBalticRim);
+pub const kCFStringEncodingWindowsVietnamese = @enumToInt(enum_unnamed_126.kCFStringEncodingWindowsVietnamese);
+pub const kCFStringEncodingWindowsKoreanJohab = @enumToInt(enum_unnamed_126.kCFStringEncodingWindowsKoreanJohab);
+pub const kCFStringEncodingANSEL = @enumToInt(enum_unnamed_126.kCFStringEncodingANSEL);
+pub const kCFStringEncodingJIS_X0201_76 = @enumToInt(enum_unnamed_126.kCFStringEncodingJIS_X0201_76);
+pub const kCFStringEncodingJIS_X0208_83 = @enumToInt(enum_unnamed_126.kCFStringEncodingJIS_X0208_83);
+pub const kCFStringEncodingJIS_X0208_90 = @enumToInt(enum_unnamed_126.kCFStringEncodingJIS_X0208_90);
+pub const kCFStringEncodingJIS_X0212_90 = @enumToInt(enum_unnamed_126.kCFStringEncodingJIS_X0212_90);
+pub const kCFStringEncodingJIS_C6226_78 = @enumToInt(enum_unnamed_126.kCFStringEncodingJIS_C6226_78);
+pub const kCFStringEncodingShiftJIS_X0213 = @enumToInt(enum_unnamed_126.kCFStringEncodingShiftJIS_X0213);
+pub const kCFStringEncodingShiftJIS_X0213_MenKuTen = @enumToInt(enum_unnamed_126.kCFStringEncodingShiftJIS_X0213_MenKuTen);
+pub const kCFStringEncodingGB_2312_80 = @enumToInt(enum_unnamed_126.kCFStringEncodingGB_2312_80);
+pub const kCFStringEncodingGBK_95 = @enumToInt(enum_unnamed_126.kCFStringEncodingGBK_95);
+pub const kCFStringEncodingGB_18030_2000 = @enumToInt(enum_unnamed_126.kCFStringEncodingGB_18030_2000);
+pub const kCFStringEncodingKSC_5601_87 = @enumToInt(enum_unnamed_126.kCFStringEncodingKSC_5601_87);
+pub const kCFStringEncodingKSC_5601_92_Johab = @enumToInt(enum_unnamed_126.kCFStringEncodingKSC_5601_92_Johab);
+pub const kCFStringEncodingCNS_11643_92_P1 = @enumToInt(enum_unnamed_126.kCFStringEncodingCNS_11643_92_P1);
+pub const kCFStringEncodingCNS_11643_92_P2 = @enumToInt(enum_unnamed_126.kCFStringEncodingCNS_11643_92_P2);
+pub const kCFStringEncodingCNS_11643_92_P3 = @enumToInt(enum_unnamed_126.kCFStringEncodingCNS_11643_92_P3);
+pub const kCFStringEncodingISO_2022_JP = @enumToInt(enum_unnamed_126.kCFStringEncodingISO_2022_JP);
+pub const kCFStringEncodingISO_2022_JP_2 = @enumToInt(enum_unnamed_126.kCFStringEncodingISO_2022_JP_2);
+pub const kCFStringEncodingISO_2022_JP_1 = @enumToInt(enum_unnamed_126.kCFStringEncodingISO_2022_JP_1);
+pub const kCFStringEncodingISO_2022_JP_3 = @enumToInt(enum_unnamed_126.kCFStringEncodingISO_2022_JP_3);
+pub const kCFStringEncodingISO_2022_CN = @enumToInt(enum_unnamed_126.kCFStringEncodingISO_2022_CN);
+pub const kCFStringEncodingISO_2022_CN_EXT = @enumToInt(enum_unnamed_126.kCFStringEncodingISO_2022_CN_EXT);
+pub const kCFStringEncodingISO_2022_KR = @enumToInt(enum_unnamed_126.kCFStringEncodingISO_2022_KR);
+pub const kCFStringEncodingEUC_JP = @enumToInt(enum_unnamed_126.kCFStringEncodingEUC_JP);
+pub const kCFStringEncodingEUC_CN = @enumToInt(enum_unnamed_126.kCFStringEncodingEUC_CN);
+pub const kCFStringEncodingEUC_TW = @enumToInt(enum_unnamed_126.kCFStringEncodingEUC_TW);
+pub const kCFStringEncodingEUC_KR = @enumToInt(enum_unnamed_126.kCFStringEncodingEUC_KR);
+pub const kCFStringEncodingShiftJIS = @enumToInt(enum_unnamed_126.kCFStringEncodingShiftJIS);
+pub const kCFStringEncodingKOI8_R = @enumToInt(enum_unnamed_126.kCFStringEncodingKOI8_R);
+pub const kCFStringEncodingBig5 = @enumToInt(enum_unnamed_126.kCFStringEncodingBig5);
+pub const kCFStringEncodingMacRomanLatin1 = @enumToInt(enum_unnamed_126.kCFStringEncodingMacRomanLatin1);
+pub const kCFStringEncodingHZ_GB_2312 = @enumToInt(enum_unnamed_126.kCFStringEncodingHZ_GB_2312);
+pub const kCFStringEncodingBig5_HKSCS_1999 = @enumToInt(enum_unnamed_126.kCFStringEncodingBig5_HKSCS_1999);
+pub const kCFStringEncodingVISCII = @enumToInt(enum_unnamed_126.kCFStringEncodingVISCII);
+pub const kCFStringEncodingKOI8_U = @enumToInt(enum_unnamed_126.kCFStringEncodingKOI8_U);
+pub const kCFStringEncodingBig5_E = @enumToInt(enum_unnamed_126.kCFStringEncodingBig5_E);
+pub const kCFStringEncodingNextStepJapanese = @enumToInt(enum_unnamed_126.kCFStringEncodingNextStepJapanese);
+pub const kCFStringEncodingEBCDIC_US = @enumToInt(enum_unnamed_126.kCFStringEncodingEBCDIC_US);
+pub const kCFStringEncodingEBCDIC_CP037 = @enumToInt(enum_unnamed_126.kCFStringEncodingEBCDIC_CP037);
+pub const kCFStringEncodingUTF7 = @enumToInt(enum_unnamed_126.kCFStringEncodingUTF7);
+pub const kCFStringEncodingUTF7_IMAP = @enumToInt(enum_unnamed_126.kCFStringEncodingUTF7_IMAP);
+pub const kCFStringEncodingShiftJIS_X0213_00 = @enumToInt(enum_unnamed_126.kCFStringEncodingShiftJIS_X0213_00);
+const enum_unnamed_126 = extern enum(c_int) {
     kCFStringEncodingMacJapanese = 1,
     kCFStringEncodingMacChineseTrad = 2,
     kCFStringEncodingMacKorean = 3,
@@ -6593,14 +6113,14 @@ const enum_unnamed_166 = extern enum(c_int) {
 pub const CFTreeRetainCallBack = ?fn (?*const c_void) callconv(.C) ?*const c_void;
 pub const CFTreeReleaseCallBack = ?fn (?*const c_void) callconv(.C) void;
 pub const CFTreeCopyDescriptionCallBack = ?fn (?*const c_void) callconv(.C) CFStringRef;
-const struct_unnamed_167 = extern struct {
+const struct_unnamed_127 = extern struct {
     version: CFIndex,
     info: ?*c_void,
     retain: CFTreeRetainCallBack,
     release: CFTreeReleaseCallBack,
     copyDescription: CFTreeCopyDescriptionCallBack,
 };
-pub const CFTreeContext = struct_unnamed_167;
+pub const CFTreeContext = struct_unnamed_127;
 pub const CFTreeApplierFunction = ?fn (?*const c_void, ?*c_void) callconv(.C) void;
 pub const struct___CFTree = @OpaqueType();
 pub const CFTreeRef = ?*struct___CFTree;
@@ -6627,16 +6147,16 @@ pub extern fn CFURLWriteDataAndPropertiesToResource(url: CFURLRef, dataToWrite: 
 pub extern fn CFURLDestroyResource(url: CFURLRef, errorCode: [*c]SInt32) Boolean;
 pub extern fn CFURLCreatePropertyFromResource(alloc: CFAllocatorRef, url: CFURLRef, property: CFStringRef, errorCode: [*c]SInt32) CFTypeRef;
 pub const CFURLError = CFIndex;
-pub const kCFURLUnknownError = @enumToInt(enum_unnamed_168.kCFURLUnknownError);
-pub const kCFURLUnknownSchemeError = @enumToInt(enum_unnamed_168.kCFURLUnknownSchemeError);
-pub const kCFURLResourceNotFoundError = @enumToInt(enum_unnamed_168.kCFURLResourceNotFoundError);
-pub const kCFURLResourceAccessViolationError = @enumToInt(enum_unnamed_168.kCFURLResourceAccessViolationError);
-pub const kCFURLRemoteHostUnavailableError = @enumToInt(enum_unnamed_168.kCFURLRemoteHostUnavailableError);
-pub const kCFURLImproperArgumentsError = @enumToInt(enum_unnamed_168.kCFURLImproperArgumentsError);
-pub const kCFURLUnknownPropertyKeyError = @enumToInt(enum_unnamed_168.kCFURLUnknownPropertyKeyError);
-pub const kCFURLPropertyKeyUnavailableError = @enumToInt(enum_unnamed_168.kCFURLPropertyKeyUnavailableError);
-pub const kCFURLTimeoutError = @enumToInt(enum_unnamed_168.kCFURLTimeoutError);
-const enum_unnamed_168 = extern enum(c_int) {
+pub const kCFURLUnknownError = @enumToInt(enum_unnamed_128.kCFURLUnknownError);
+pub const kCFURLUnknownSchemeError = @enumToInt(enum_unnamed_128.kCFURLUnknownSchemeError);
+pub const kCFURLResourceNotFoundError = @enumToInt(enum_unnamed_128.kCFURLResourceNotFoundError);
+pub const kCFURLResourceAccessViolationError = @enumToInt(enum_unnamed_128.kCFURLResourceAccessViolationError);
+pub const kCFURLRemoteHostUnavailableError = @enumToInt(enum_unnamed_128.kCFURLRemoteHostUnavailableError);
+pub const kCFURLImproperArgumentsError = @enumToInt(enum_unnamed_128.kCFURLImproperArgumentsError);
+pub const kCFURLUnknownPropertyKeyError = @enumToInt(enum_unnamed_128.kCFURLUnknownPropertyKeyError);
+pub const kCFURLPropertyKeyUnavailableError = @enumToInt(enum_unnamed_128.kCFURLPropertyKeyUnavailableError);
+pub const kCFURLTimeoutError = @enumToInt(enum_unnamed_128.kCFURLTimeoutError);
+const enum_unnamed_128 = extern enum(c_int) {
     kCFURLUnknownError = -10,
     kCFURLUnknownSchemeError = -11,
     kCFURLResourceNotFoundError = -12,
@@ -6658,7 +6178,7 @@ pub extern const kCFURLHTTPStatusCode: CFStringRef;
 pub extern const kCFURLHTTPStatusLine: CFStringRef;
 pub const struct___CFUUID = @OpaqueType();
 pub const CFUUIDRef = ?*const struct___CFUUID;
-const struct_unnamed_169 = extern struct {
+const struct_unnamed_129 = extern struct {
     byte0: UInt8,
     byte1: UInt8,
     byte2: UInt8,
@@ -6676,7 +6196,7 @@ const struct_unnamed_169 = extern struct {
     byte14: UInt8,
     byte15: UInt8,
 };
-pub const CFUUIDBytes = struct_unnamed_169;
+pub const CFUUIDBytes = struct_unnamed_129;
 pub extern fn CFUUIDGetTypeID() CFTypeID;
 pub extern fn CFUUIDCreate(alloc: CFAllocatorRef) CFUUIDRef;
 pub extern fn CFUUIDCreateWithBytes(alloc: CFAllocatorRef, byte0: UInt8, byte1: UInt8, byte2: UInt8, byte3: UInt8, byte4: UInt8, byte5: UInt8, byte6: UInt8, byte7: UInt8, byte8: UInt8, byte9: UInt8, byte10: UInt8, byte11: UInt8, byte12: UInt8, byte13: UInt8, byte14: UInt8, byte15: UInt8) CFUUIDRef;
@@ -6732,11 +6252,11 @@ pub extern fn CFBundleCopyInfoDictionaryForURL(url: CFURLRef) CFDictionaryRef;
 pub extern fn CFBundleCopyLocalizationsForURL(url: CFURLRef) CFArrayRef;
 pub extern fn CFBundleCopyExecutableArchitecturesForURL(url: CFURLRef) CFArrayRef;
 pub extern fn CFBundleCopyExecutableURL(bundle: CFBundleRef) CFURLRef;
-pub const kCFBundleExecutableArchitectureI386 = @enumToInt(enum_unnamed_170.kCFBundleExecutableArchitectureI386);
-pub const kCFBundleExecutableArchitecturePPC = @enumToInt(enum_unnamed_170.kCFBundleExecutableArchitecturePPC);
-pub const kCFBundleExecutableArchitectureX86_64 = @enumToInt(enum_unnamed_170.kCFBundleExecutableArchitectureX86_64);
-pub const kCFBundleExecutableArchitecturePPC64 = @enumToInt(enum_unnamed_170.kCFBundleExecutableArchitecturePPC64);
-const enum_unnamed_170 = extern enum(c_int) {
+pub const kCFBundleExecutableArchitectureI386 = @enumToInt(enum_unnamed_130.kCFBundleExecutableArchitectureI386);
+pub const kCFBundleExecutableArchitecturePPC = @enumToInt(enum_unnamed_130.kCFBundleExecutableArchitecturePPC);
+pub const kCFBundleExecutableArchitectureX86_64 = @enumToInt(enum_unnamed_130.kCFBundleExecutableArchitectureX86_64);
+pub const kCFBundleExecutableArchitecturePPC64 = @enumToInt(enum_unnamed_130.kCFBundleExecutableArchitecturePPC64);
+const enum_unnamed_130 = extern enum(c_int) {
     kCFBundleExecutableArchitectureI386 = 7,
     kCFBundleExecutableArchitecturePPC = 18,
     kCFBundleExecutableArchitectureX86_64 = 16777223,
@@ -6761,13 +6281,13 @@ pub extern fn CFBundleOpenBundleResourceFiles(bundle: CFBundleRef, refNum: [*c]C
 pub extern fn CFBundleCloseBundleResourceMap(bundle: CFBundleRef, refNum: CFBundleRefNum) void;
 pub const struct___CFMessagePort = @OpaqueType();
 pub const CFMessagePortRef = ?*struct___CFMessagePort;
-pub const kCFMessagePortSuccess = @enumToInt(enum_unnamed_171.kCFMessagePortSuccess);
-pub const kCFMessagePortSendTimeout = @enumToInt(enum_unnamed_171.kCFMessagePortSendTimeout);
-pub const kCFMessagePortReceiveTimeout = @enumToInt(enum_unnamed_171.kCFMessagePortReceiveTimeout);
-pub const kCFMessagePortIsInvalid = @enumToInt(enum_unnamed_171.kCFMessagePortIsInvalid);
-pub const kCFMessagePortTransportError = @enumToInt(enum_unnamed_171.kCFMessagePortTransportError);
-pub const kCFMessagePortBecameInvalidError = @enumToInt(enum_unnamed_171.kCFMessagePortBecameInvalidError);
-const enum_unnamed_171 = extern enum(c_int) {
+pub const kCFMessagePortSuccess = @enumToInt(enum_unnamed_131.kCFMessagePortSuccess);
+pub const kCFMessagePortSendTimeout = @enumToInt(enum_unnamed_131.kCFMessagePortSendTimeout);
+pub const kCFMessagePortReceiveTimeout = @enumToInt(enum_unnamed_131.kCFMessagePortReceiveTimeout);
+pub const kCFMessagePortIsInvalid = @enumToInt(enum_unnamed_131.kCFMessagePortIsInvalid);
+pub const kCFMessagePortTransportError = @enumToInt(enum_unnamed_131.kCFMessagePortTransportError);
+pub const kCFMessagePortBecameInvalidError = @enumToInt(enum_unnamed_131.kCFMessagePortBecameInvalidError);
+const enum_unnamed_131 = extern enum(c_int) {
     kCFMessagePortSuccess = 0,
     kCFMessagePortSendTimeout = -1,
     kCFMessagePortReceiveTimeout = -2,
@@ -6776,14 +6296,14 @@ const enum_unnamed_171 = extern enum(c_int) {
     kCFMessagePortBecameInvalidError = -5,
     _,
 };
-const struct_unnamed_172 = extern struct {
+const struct_unnamed_132 = extern struct {
     version: CFIndex,
     info: ?*c_void,
     retain: ?fn (?*const c_void) callconv(.C) ?*const c_void,
     release: ?fn (?*const c_void) callconv(.C) void,
     copyDescription: ?fn (?*const c_void) callconv(.C) CFStringRef,
 };
-pub const CFMessagePortContext = struct_unnamed_172;
+pub const CFMessagePortContext = struct_unnamed_132;
 pub const CFMessagePortCallBack = ?fn (CFMessagePortRef, SInt32, CFDataRef, ?*c_void) callconv(.C) CFDataRef;
 pub const CFMessagePortInvalidationCallBack = ?fn (CFMessagePortRef, ?*c_void) callconv(.C) void;
 pub extern fn CFMessagePortGetTypeID() CFTypeID;
@@ -6834,14 +6354,14 @@ pub extern fn CFPlugInInstanceGetTypeID() CFTypeID;
 pub extern fn CFPlugInInstanceCreateWithInstanceDataSize(allocator: CFAllocatorRef, instanceDataSize: CFIndex, deallocateInstanceFunction: CFPlugInInstanceDeallocateInstanceDataFunction, factoryName: CFStringRef, getInterfaceFunction: CFPlugInInstanceGetInterfaceFunction) CFPlugInInstanceRef;
 pub const struct___CFMachPort = @OpaqueType();
 pub const CFMachPortRef = ?*struct___CFMachPort;
-const struct_unnamed_173 = extern struct {
+const struct_unnamed_133 = extern struct {
     version: CFIndex,
     info: ?*c_void,
     retain: ?fn (?*const c_void) callconv(.C) ?*const c_void,
     release: ?fn (?*const c_void) callconv(.C) void,
     copyDescription: ?fn (?*const c_void) callconv(.C) CFStringRef,
 };
-pub const CFMachPortContext = struct_unnamed_173;
+pub const CFMachPortContext = struct_unnamed_133;
 pub const CFMachPortCallBack = ?fn (CFMachPortRef, ?*c_void, CFIndex, ?*c_void) callconv(.C) void;
 pub const CFMachPortInvalidationCallBack = ?fn (CFMachPortRef, ?*c_void) callconv(.C) void;
 pub extern fn CFMachPortGetTypeID() CFTypeID;
@@ -6881,15 +6401,15 @@ pub const struct___CFURLEnumerator = @OpaqueType();
 pub const CFURLEnumeratorRef = ?*const struct___CFURLEnumerator;
 pub extern fn CFURLEnumeratorGetTypeID() CFTypeID;
 pub const CFURLEnumeratorOptions = CFOptionFlags;
-pub const kCFURLEnumeratorDefaultBehavior = @enumToInt(enum_unnamed_174.kCFURLEnumeratorDefaultBehavior);
-pub const kCFURLEnumeratorDescendRecursively = @enumToInt(enum_unnamed_174.kCFURLEnumeratorDescendRecursively);
-pub const kCFURLEnumeratorSkipInvisibles = @enumToInt(enum_unnamed_174.kCFURLEnumeratorSkipInvisibles);
-pub const kCFURLEnumeratorGenerateFileReferenceURLs = @enumToInt(enum_unnamed_174.kCFURLEnumeratorGenerateFileReferenceURLs);
-pub const kCFURLEnumeratorSkipPackageContents = @enumToInt(enum_unnamed_174.kCFURLEnumeratorSkipPackageContents);
-pub const kCFURLEnumeratorIncludeDirectoriesPreOrder = @enumToInt(enum_unnamed_174.kCFURLEnumeratorIncludeDirectoriesPreOrder);
-pub const kCFURLEnumeratorIncludeDirectoriesPostOrder = @enumToInt(enum_unnamed_174.kCFURLEnumeratorIncludeDirectoriesPostOrder);
-pub const kCFURLEnumeratorGenerateRelativePathURLs = @enumToInt(enum_unnamed_174.kCFURLEnumeratorGenerateRelativePathURLs);
-const enum_unnamed_174 = extern enum(c_int) {
+pub const kCFURLEnumeratorDefaultBehavior = @enumToInt(enum_unnamed_134.kCFURLEnumeratorDefaultBehavior);
+pub const kCFURLEnumeratorDescendRecursively = @enumToInt(enum_unnamed_134.kCFURLEnumeratorDescendRecursively);
+pub const kCFURLEnumeratorSkipInvisibles = @enumToInt(enum_unnamed_134.kCFURLEnumeratorSkipInvisibles);
+pub const kCFURLEnumeratorGenerateFileReferenceURLs = @enumToInt(enum_unnamed_134.kCFURLEnumeratorGenerateFileReferenceURLs);
+pub const kCFURLEnumeratorSkipPackageContents = @enumToInt(enum_unnamed_134.kCFURLEnumeratorSkipPackageContents);
+pub const kCFURLEnumeratorIncludeDirectoriesPreOrder = @enumToInt(enum_unnamed_134.kCFURLEnumeratorIncludeDirectoriesPreOrder);
+pub const kCFURLEnumeratorIncludeDirectoriesPostOrder = @enumToInt(enum_unnamed_134.kCFURLEnumeratorIncludeDirectoriesPostOrder);
+pub const kCFURLEnumeratorGenerateRelativePathURLs = @enumToInt(enum_unnamed_134.kCFURLEnumeratorGenerateRelativePathURLs);
+const enum_unnamed_134 = extern enum(c_int) {
     kCFURLEnumeratorDefaultBehavior = 0,
     kCFURLEnumeratorDescendRecursively = 1,
     kCFURLEnumeratorSkipInvisibles = 2,
@@ -6903,11 +6423,11 @@ const enum_unnamed_174 = extern enum(c_int) {
 pub extern fn CFURLEnumeratorCreateForDirectoryURL(alloc: CFAllocatorRef, directoryURL: CFURLRef, option: CFURLEnumeratorOptions, propertyKeys: CFArrayRef) CFURLEnumeratorRef;
 pub extern fn CFURLEnumeratorCreateForMountedVolumes(alloc: CFAllocatorRef, option: CFURLEnumeratorOptions, propertyKeys: CFArrayRef) CFURLEnumeratorRef;
 pub const CFURLEnumeratorResult = CFIndex;
-pub const kCFURLEnumeratorSuccess = @enumToInt(enum_unnamed_175.kCFURLEnumeratorSuccess);
-pub const kCFURLEnumeratorEnd = @enumToInt(enum_unnamed_175.kCFURLEnumeratorEnd);
-pub const kCFURLEnumeratorError = @enumToInt(enum_unnamed_175.kCFURLEnumeratorError);
-pub const kCFURLEnumeratorDirectoryPostOrderSuccess = @enumToInt(enum_unnamed_175.kCFURLEnumeratorDirectoryPostOrderSuccess);
-const enum_unnamed_175 = extern enum(c_int) {
+pub const kCFURLEnumeratorSuccess = @enumToInt(enum_unnamed_135.kCFURLEnumeratorSuccess);
+pub const kCFURLEnumeratorEnd = @enumToInt(enum_unnamed_135.kCFURLEnumeratorEnd);
+pub const kCFURLEnumeratorError = @enumToInt(enum_unnamed_135.kCFURLEnumeratorError);
+pub const kCFURLEnumeratorDirectoryPostOrderSuccess = @enumToInt(enum_unnamed_135.kCFURLEnumeratorDirectoryPostOrderSuccess);
+const enum_unnamed_135 = extern enum(c_int) {
     kCFURLEnumeratorSuccess = 1,
     kCFURLEnumeratorEnd = 2,
     kCFURLEnumeratorError = 3,
@@ -6918,18 +6438,18 @@ pub extern fn CFURLEnumeratorGetNextURL(enumerator: CFURLEnumeratorRef, url: [*c
 pub extern fn CFURLEnumeratorSkipDescendents(enumerator: CFURLEnumeratorRef) void;
 pub extern fn CFURLEnumeratorGetDescendentLevel(enumerator: CFURLEnumeratorRef) CFIndex;
 pub extern fn CFURLEnumeratorGetSourceDidChange(enumerator: CFURLEnumeratorRef) Boolean;
-const union_unnamed_176 = extern union {
+const union_unnamed_136 = extern union {
     g_guid: [16]u8,
     g_guid_asint: [4]c_uint,
 };
-pub const guid_t = union_unnamed_176;
-const struct_unnamed_177 = extern struct {
+pub const guid_t = union_unnamed_136;
+const struct_unnamed_137 = extern struct {
     sid_kind: u_int8_t,
     sid_authcount: u_int8_t,
     sid_authority: [6]u_int8_t,
     sid_authorities: [16]u_int32_t,
 };
-pub const ntsid_t = struct_unnamed_177;
+pub const ntsid_t = struct_unnamed_137;
 pub const struct_kauth_identity_extlookup = extern struct {
     el_seqno: u_int32_t,
     el_result: u_int32_t,
@@ -6975,25 +6495,25 @@ pub const struct_kauth_filesec = extern struct {
     fsec_acl: struct_kauth_acl,
 };
 pub const kauth_filesec_t = [*c]struct_kauth_filesec;
-pub const ACL_READ_DATA = @enumToInt(enum_unnamed_178.ACL_READ_DATA);
-pub const ACL_LIST_DIRECTORY = @enumToInt(enum_unnamed_178.ACL_LIST_DIRECTORY);
-pub const ACL_WRITE_DATA = @enumToInt(enum_unnamed_178.ACL_WRITE_DATA);
-pub const ACL_ADD_FILE = @enumToInt(enum_unnamed_178.ACL_ADD_FILE);
-pub const ACL_EXECUTE = @enumToInt(enum_unnamed_178.ACL_EXECUTE);
-pub const ACL_SEARCH = @enumToInt(enum_unnamed_178.ACL_SEARCH);
-pub const ACL_DELETE = @enumToInt(enum_unnamed_178.ACL_DELETE);
-pub const ACL_APPEND_DATA = @enumToInt(enum_unnamed_178.ACL_APPEND_DATA);
-pub const ACL_ADD_SUBDIRECTORY = @enumToInt(enum_unnamed_178.ACL_ADD_SUBDIRECTORY);
-pub const ACL_DELETE_CHILD = @enumToInt(enum_unnamed_178.ACL_DELETE_CHILD);
-pub const ACL_READ_ATTRIBUTES = @enumToInt(enum_unnamed_178.ACL_READ_ATTRIBUTES);
-pub const ACL_WRITE_ATTRIBUTES = @enumToInt(enum_unnamed_178.ACL_WRITE_ATTRIBUTES);
-pub const ACL_READ_EXTATTRIBUTES = @enumToInt(enum_unnamed_178.ACL_READ_EXTATTRIBUTES);
-pub const ACL_WRITE_EXTATTRIBUTES = @enumToInt(enum_unnamed_178.ACL_WRITE_EXTATTRIBUTES);
-pub const ACL_READ_SECURITY = @enumToInt(enum_unnamed_178.ACL_READ_SECURITY);
-pub const ACL_WRITE_SECURITY = @enumToInt(enum_unnamed_178.ACL_WRITE_SECURITY);
-pub const ACL_CHANGE_OWNER = @enumToInt(enum_unnamed_178.ACL_CHANGE_OWNER);
-pub const ACL_SYNCHRONIZE = @enumToInt(enum_unnamed_178.ACL_SYNCHRONIZE);
-const enum_unnamed_178 = extern enum(c_int) {
+pub const ACL_READ_DATA = @enumToInt(enum_unnamed_138.ACL_READ_DATA);
+pub const ACL_LIST_DIRECTORY = @enumToInt(enum_unnamed_138.ACL_LIST_DIRECTORY);
+pub const ACL_WRITE_DATA = @enumToInt(enum_unnamed_138.ACL_WRITE_DATA);
+pub const ACL_ADD_FILE = @enumToInt(enum_unnamed_138.ACL_ADD_FILE);
+pub const ACL_EXECUTE = @enumToInt(enum_unnamed_138.ACL_EXECUTE);
+pub const ACL_SEARCH = @enumToInt(enum_unnamed_138.ACL_SEARCH);
+pub const ACL_DELETE = @enumToInt(enum_unnamed_138.ACL_DELETE);
+pub const ACL_APPEND_DATA = @enumToInt(enum_unnamed_138.ACL_APPEND_DATA);
+pub const ACL_ADD_SUBDIRECTORY = @enumToInt(enum_unnamed_138.ACL_ADD_SUBDIRECTORY);
+pub const ACL_DELETE_CHILD = @enumToInt(enum_unnamed_138.ACL_DELETE_CHILD);
+pub const ACL_READ_ATTRIBUTES = @enumToInt(enum_unnamed_138.ACL_READ_ATTRIBUTES);
+pub const ACL_WRITE_ATTRIBUTES = @enumToInt(enum_unnamed_138.ACL_WRITE_ATTRIBUTES);
+pub const ACL_READ_EXTATTRIBUTES = @enumToInt(enum_unnamed_138.ACL_READ_EXTATTRIBUTES);
+pub const ACL_WRITE_EXTATTRIBUTES = @enumToInt(enum_unnamed_138.ACL_WRITE_EXTATTRIBUTES);
+pub const ACL_READ_SECURITY = @enumToInt(enum_unnamed_138.ACL_READ_SECURITY);
+pub const ACL_WRITE_SECURITY = @enumToInt(enum_unnamed_138.ACL_WRITE_SECURITY);
+pub const ACL_CHANGE_OWNER = @enumToInt(enum_unnamed_138.ACL_CHANGE_OWNER);
+pub const ACL_SYNCHRONIZE = @enumToInt(enum_unnamed_138.ACL_SYNCHRONIZE);
+const enum_unnamed_138 = extern enum(c_int) {
     ACL_READ_DATA = 2,
     ACL_LIST_DIRECTORY = 2,
     ACL_WRITE_DATA = 4,
@@ -7014,25 +6534,25 @@ const enum_unnamed_178 = extern enum(c_int) {
     ACL_SYNCHRONIZE = 1048576,
     _,
 };
-pub const acl_perm_t = enum_unnamed_178;
-pub const ACL_UNDEFINED_TAG = @enumToInt(enum_unnamed_179.ACL_UNDEFINED_TAG);
-pub const ACL_EXTENDED_ALLOW = @enumToInt(enum_unnamed_179.ACL_EXTENDED_ALLOW);
-pub const ACL_EXTENDED_DENY = @enumToInt(enum_unnamed_179.ACL_EXTENDED_DENY);
-const enum_unnamed_179 = extern enum(c_int) {
+pub const acl_perm_t = enum_unnamed_138;
+pub const ACL_UNDEFINED_TAG = @enumToInt(enum_unnamed_139.ACL_UNDEFINED_TAG);
+pub const ACL_EXTENDED_ALLOW = @enumToInt(enum_unnamed_139.ACL_EXTENDED_ALLOW);
+pub const ACL_EXTENDED_DENY = @enumToInt(enum_unnamed_139.ACL_EXTENDED_DENY);
+const enum_unnamed_139 = extern enum(c_int) {
     ACL_UNDEFINED_TAG = 0,
     ACL_EXTENDED_ALLOW = 1,
     ACL_EXTENDED_DENY = 2,
     _,
 };
-pub const acl_tag_t = enum_unnamed_179;
-pub const ACL_TYPE_EXTENDED = @enumToInt(enum_unnamed_180.ACL_TYPE_EXTENDED);
-pub const ACL_TYPE_ACCESS = @enumToInt(enum_unnamed_180.ACL_TYPE_ACCESS);
-pub const ACL_TYPE_DEFAULT = @enumToInt(enum_unnamed_180.ACL_TYPE_DEFAULT);
-pub const ACL_TYPE_AFS = @enumToInt(enum_unnamed_180.ACL_TYPE_AFS);
-pub const ACL_TYPE_CODA = @enumToInt(enum_unnamed_180.ACL_TYPE_CODA);
-pub const ACL_TYPE_NTFS = @enumToInt(enum_unnamed_180.ACL_TYPE_NTFS);
-pub const ACL_TYPE_NWFS = @enumToInt(enum_unnamed_180.ACL_TYPE_NWFS);
-const enum_unnamed_180 = extern enum(c_int) {
+pub const acl_tag_t = enum_unnamed_139;
+pub const ACL_TYPE_EXTENDED = @enumToInt(enum_unnamed_140.ACL_TYPE_EXTENDED);
+pub const ACL_TYPE_ACCESS = @enumToInt(enum_unnamed_140.ACL_TYPE_ACCESS);
+pub const ACL_TYPE_DEFAULT = @enumToInt(enum_unnamed_140.ACL_TYPE_DEFAULT);
+pub const ACL_TYPE_AFS = @enumToInt(enum_unnamed_140.ACL_TYPE_AFS);
+pub const ACL_TYPE_CODA = @enumToInt(enum_unnamed_140.ACL_TYPE_CODA);
+pub const ACL_TYPE_NTFS = @enumToInt(enum_unnamed_140.ACL_TYPE_NTFS);
+pub const ACL_TYPE_NWFS = @enumToInt(enum_unnamed_140.ACL_TYPE_NWFS);
+const enum_unnamed_140 = extern enum(c_int) {
     ACL_TYPE_EXTENDED = 256,
     ACL_TYPE_ACCESS = 0,
     ACL_TYPE_DEFAULT = 1,
@@ -7042,25 +6562,25 @@ const enum_unnamed_180 = extern enum(c_int) {
     ACL_TYPE_NWFS = 5,
     _,
 };
-pub const acl_type_t = enum_unnamed_180;
-pub const ACL_FIRST_ENTRY = @enumToInt(enum_unnamed_181.ACL_FIRST_ENTRY);
-pub const ACL_NEXT_ENTRY = @enumToInt(enum_unnamed_181.ACL_NEXT_ENTRY);
-pub const ACL_LAST_ENTRY = @enumToInt(enum_unnamed_181.ACL_LAST_ENTRY);
-const enum_unnamed_181 = extern enum(c_int) {
+pub const acl_type_t = enum_unnamed_140;
+pub const ACL_FIRST_ENTRY = @enumToInt(enum_unnamed_141.ACL_FIRST_ENTRY);
+pub const ACL_NEXT_ENTRY = @enumToInt(enum_unnamed_141.ACL_NEXT_ENTRY);
+pub const ACL_LAST_ENTRY = @enumToInt(enum_unnamed_141.ACL_LAST_ENTRY);
+const enum_unnamed_141 = extern enum(c_int) {
     ACL_FIRST_ENTRY = 0,
     ACL_NEXT_ENTRY = -1,
     ACL_LAST_ENTRY = -2,
     _,
 };
-pub const acl_entry_id_t = enum_unnamed_181;
-pub const ACL_FLAG_DEFER_INHERIT = @enumToInt(enum_unnamed_182.ACL_FLAG_DEFER_INHERIT);
-pub const ACL_FLAG_NO_INHERIT = @enumToInt(enum_unnamed_182.ACL_FLAG_NO_INHERIT);
-pub const ACL_ENTRY_INHERITED = @enumToInt(enum_unnamed_182.ACL_ENTRY_INHERITED);
-pub const ACL_ENTRY_FILE_INHERIT = @enumToInt(enum_unnamed_182.ACL_ENTRY_FILE_INHERIT);
-pub const ACL_ENTRY_DIRECTORY_INHERIT = @enumToInt(enum_unnamed_182.ACL_ENTRY_DIRECTORY_INHERIT);
-pub const ACL_ENTRY_LIMIT_INHERIT = @enumToInt(enum_unnamed_182.ACL_ENTRY_LIMIT_INHERIT);
-pub const ACL_ENTRY_ONLY_INHERIT = @enumToInt(enum_unnamed_182.ACL_ENTRY_ONLY_INHERIT);
-const enum_unnamed_182 = extern enum(c_int) {
+pub const acl_entry_id_t = enum_unnamed_141;
+pub const ACL_FLAG_DEFER_INHERIT = @enumToInt(enum_unnamed_142.ACL_FLAG_DEFER_INHERIT);
+pub const ACL_FLAG_NO_INHERIT = @enumToInt(enum_unnamed_142.ACL_FLAG_NO_INHERIT);
+pub const ACL_ENTRY_INHERITED = @enumToInt(enum_unnamed_142.ACL_ENTRY_INHERITED);
+pub const ACL_ENTRY_FILE_INHERIT = @enumToInt(enum_unnamed_142.ACL_ENTRY_FILE_INHERIT);
+pub const ACL_ENTRY_DIRECTORY_INHERIT = @enumToInt(enum_unnamed_142.ACL_ENTRY_DIRECTORY_INHERIT);
+pub const ACL_ENTRY_LIMIT_INHERIT = @enumToInt(enum_unnamed_142.ACL_ENTRY_LIMIT_INHERIT);
+pub const ACL_ENTRY_ONLY_INHERIT = @enumToInt(enum_unnamed_142.ACL_ENTRY_ONLY_INHERIT);
+const enum_unnamed_142 = extern enum(c_int) {
     ACL_FLAG_DEFER_INHERIT = 1,
     ACL_FLAG_NO_INHERIT = 131072,
     ACL_ENTRY_INHERITED = 16,
@@ -7070,7 +6590,7 @@ const enum_unnamed_182 = extern enum(c_int) {
     ACL_ENTRY_ONLY_INHERIT = 256,
     _,
 };
-pub const acl_flag_t = enum_unnamed_182;
+pub const acl_flag_t = enum_unnamed_142;
 pub const struct__acl = @OpaqueType();
 pub const struct__acl_entry = @OpaqueType();
 pub const struct__acl_permset = @OpaqueType();
@@ -7146,13 +6666,13 @@ pub extern fn CFFileSecuritySetGroup(fileSec: CFFileSecurityRef, group: gid_t) B
 pub extern fn CFFileSecurityGetMode(fileSec: CFFileSecurityRef, mode: [*c]mode_t) Boolean;
 pub extern fn CFFileSecuritySetMode(fileSec: CFFileSecurityRef, mode: mode_t) Boolean;
 pub const CFFileSecurityClearOptions = CFOptionFlags;
-pub const kCFFileSecurityClearOwner = @enumToInt(enum_unnamed_183.kCFFileSecurityClearOwner);
-pub const kCFFileSecurityClearGroup = @enumToInt(enum_unnamed_183.kCFFileSecurityClearGroup);
-pub const kCFFileSecurityClearMode = @enumToInt(enum_unnamed_183.kCFFileSecurityClearMode);
-pub const kCFFileSecurityClearOwnerUUID = @enumToInt(enum_unnamed_183.kCFFileSecurityClearOwnerUUID);
-pub const kCFFileSecurityClearGroupUUID = @enumToInt(enum_unnamed_183.kCFFileSecurityClearGroupUUID);
-pub const kCFFileSecurityClearAccessControlList = @enumToInt(enum_unnamed_183.kCFFileSecurityClearAccessControlList);
-const enum_unnamed_183 = extern enum(c_int) {
+pub const kCFFileSecurityClearOwner = @enumToInt(enum_unnamed_143.kCFFileSecurityClearOwner);
+pub const kCFFileSecurityClearGroup = @enumToInt(enum_unnamed_143.kCFFileSecurityClearGroup);
+pub const kCFFileSecurityClearMode = @enumToInt(enum_unnamed_143.kCFFileSecurityClearMode);
+pub const kCFFileSecurityClearOwnerUUID = @enumToInt(enum_unnamed_143.kCFFileSecurityClearOwnerUUID);
+pub const kCFFileSecurityClearGroupUUID = @enumToInt(enum_unnamed_143.kCFFileSecurityClearGroupUUID);
+pub const kCFFileSecurityClearAccessControlList = @enumToInt(enum_unnamed_143.kCFFileSecurityClearAccessControlList);
+const enum_unnamed_143 = extern enum(c_int) {
     kCFFileSecurityClearOwner = 1,
     kCFFileSecurityClearGroup = 2,
     kCFFileSecurityClearMode = 4,
@@ -7165,14 +6685,14 @@ pub extern fn CFFileSecurityClearProperties(fileSec: CFFileSecurityRef, clearPro
 pub extern fn CFStringTokenizerCopyBestStringLanguage(string: CFStringRef, range: CFRange) CFStringRef;
 pub const struct___CFStringTokenizer = @OpaqueType();
 pub const CFStringTokenizerRef = ?*struct___CFStringTokenizer;
-pub const kCFStringTokenizerUnitWord = @enumToInt(enum_unnamed_184.kCFStringTokenizerUnitWord);
-pub const kCFStringTokenizerUnitSentence = @enumToInt(enum_unnamed_184.kCFStringTokenizerUnitSentence);
-pub const kCFStringTokenizerUnitParagraph = @enumToInt(enum_unnamed_184.kCFStringTokenizerUnitParagraph);
-pub const kCFStringTokenizerUnitLineBreak = @enumToInt(enum_unnamed_184.kCFStringTokenizerUnitLineBreak);
-pub const kCFStringTokenizerUnitWordBoundary = @enumToInt(enum_unnamed_184.kCFStringTokenizerUnitWordBoundary);
-pub const kCFStringTokenizerAttributeLatinTranscription = @enumToInt(enum_unnamed_184.kCFStringTokenizerAttributeLatinTranscription);
-pub const kCFStringTokenizerAttributeLanguage = @enumToInt(enum_unnamed_184.kCFStringTokenizerAttributeLanguage);
-const enum_unnamed_184 = extern enum(c_int) {
+pub const kCFStringTokenizerUnitWord = @enumToInt(enum_unnamed_144.kCFStringTokenizerUnitWord);
+pub const kCFStringTokenizerUnitSentence = @enumToInt(enum_unnamed_144.kCFStringTokenizerUnitSentence);
+pub const kCFStringTokenizerUnitParagraph = @enumToInt(enum_unnamed_144.kCFStringTokenizerUnitParagraph);
+pub const kCFStringTokenizerUnitLineBreak = @enumToInt(enum_unnamed_144.kCFStringTokenizerUnitLineBreak);
+pub const kCFStringTokenizerUnitWordBoundary = @enumToInt(enum_unnamed_144.kCFStringTokenizerUnitWordBoundary);
+pub const kCFStringTokenizerAttributeLatinTranscription = @enumToInt(enum_unnamed_144.kCFStringTokenizerAttributeLatinTranscription);
+pub const kCFStringTokenizerAttributeLanguage = @enumToInt(enum_unnamed_144.kCFStringTokenizerAttributeLanguage);
+const enum_unnamed_144 = extern enum(c_int) {
     kCFStringTokenizerUnitWord = 0,
     kCFStringTokenizerUnitSentence = 1,
     kCFStringTokenizerUnitParagraph = 2,
@@ -7183,14 +6703,14 @@ const enum_unnamed_184 = extern enum(c_int) {
     _,
 };
 pub const CFStringTokenizerTokenType = CFOptionFlags;
-pub const kCFStringTokenizerTokenNone = @enumToInt(enum_unnamed_185.kCFStringTokenizerTokenNone);
-pub const kCFStringTokenizerTokenNormal = @enumToInt(enum_unnamed_185.kCFStringTokenizerTokenNormal);
-pub const kCFStringTokenizerTokenHasSubTokensMask = @enumToInt(enum_unnamed_185.kCFStringTokenizerTokenHasSubTokensMask);
-pub const kCFStringTokenizerTokenHasDerivedSubTokensMask = @enumToInt(enum_unnamed_185.kCFStringTokenizerTokenHasDerivedSubTokensMask);
-pub const kCFStringTokenizerTokenHasHasNumbersMask = @enumToInt(enum_unnamed_185.kCFStringTokenizerTokenHasHasNumbersMask);
-pub const kCFStringTokenizerTokenHasNonLettersMask = @enumToInt(enum_unnamed_185.kCFStringTokenizerTokenHasNonLettersMask);
-pub const kCFStringTokenizerTokenIsCJWordMask = @enumToInt(enum_unnamed_185.kCFStringTokenizerTokenIsCJWordMask);
-const enum_unnamed_185 = extern enum(c_int) {
+pub const kCFStringTokenizerTokenNone = @enumToInt(enum_unnamed_145.kCFStringTokenizerTokenNone);
+pub const kCFStringTokenizerTokenNormal = @enumToInt(enum_unnamed_145.kCFStringTokenizerTokenNormal);
+pub const kCFStringTokenizerTokenHasSubTokensMask = @enumToInt(enum_unnamed_145.kCFStringTokenizerTokenHasSubTokensMask);
+pub const kCFStringTokenizerTokenHasDerivedSubTokensMask = @enumToInt(enum_unnamed_145.kCFStringTokenizerTokenHasDerivedSubTokensMask);
+pub const kCFStringTokenizerTokenHasHasNumbersMask = @enumToInt(enum_unnamed_145.kCFStringTokenizerTokenHasHasNumbersMask);
+pub const kCFStringTokenizerTokenHasNonLettersMask = @enumToInt(enum_unnamed_145.kCFStringTokenizerTokenHasNonLettersMask);
+pub const kCFStringTokenizerTokenIsCJWordMask = @enumToInt(enum_unnamed_145.kCFStringTokenizerTokenIsCJWordMask);
+const enum_unnamed_145 = extern enum(c_int) {
     kCFStringTokenizerTokenNone = 0,
     kCFStringTokenizerTokenNormal = 1,
     kCFStringTokenizerTokenHasSubTokensMask = 2,
@@ -7211,22 +6731,22 @@ pub extern fn CFStringTokenizerGetCurrentSubTokens(tokenizer: CFStringTokenizerR
 pub const CFFileDescriptorNativeDescriptor = c_int;
 pub const struct___CFFileDescriptor = @OpaqueType();
 pub const CFFileDescriptorRef = ?*struct___CFFileDescriptor;
-pub const kCFFileDescriptorReadCallBack = @enumToInt(enum_unnamed_186.kCFFileDescriptorReadCallBack);
-pub const kCFFileDescriptorWriteCallBack = @enumToInt(enum_unnamed_186.kCFFileDescriptorWriteCallBack);
-const enum_unnamed_186 = extern enum(c_int) {
+pub const kCFFileDescriptorReadCallBack = @enumToInt(enum_unnamed_146.kCFFileDescriptorReadCallBack);
+pub const kCFFileDescriptorWriteCallBack = @enumToInt(enum_unnamed_146.kCFFileDescriptorWriteCallBack);
+const enum_unnamed_146 = extern enum(c_int) {
     kCFFileDescriptorReadCallBack = 1,
     kCFFileDescriptorWriteCallBack = 2,
     _,
 };
 pub const CFFileDescriptorCallBack = ?fn (CFFileDescriptorRef, CFOptionFlags, ?*c_void) callconv(.C) void;
-const struct_unnamed_187 = extern struct {
+const struct_unnamed_147 = extern struct {
     version: CFIndex,
     info: ?*c_void,
     retain: ?fn (?*c_void) callconv(.C) ?*c_void,
     release: ?fn (?*c_void) callconv(.C) void,
     copyDescription: ?fn (?*c_void) callconv(.C) CFStringRef,
 };
-pub const CFFileDescriptorContext = struct_unnamed_187;
+pub const CFFileDescriptorContext = struct_unnamed_147;
 pub extern fn CFFileDescriptorGetTypeID() CFTypeID;
 pub extern fn CFFileDescriptorCreate(allocator: CFAllocatorRef, fd: CFFileDescriptorNativeDescriptor, closeOnInvalidate: Boolean, callout: CFFileDescriptorCallBack, context: [*c]const CFFileDescriptorContext) CFFileDescriptorRef;
 pub extern fn CFFileDescriptorGetNativeDescriptor(f: CFFileDescriptorRef) CFFileDescriptorNativeDescriptor;
@@ -7249,31 +6769,31 @@ pub extern fn CFUserNotificationCancel(userNotification: CFUserNotificationRef) 
 pub extern fn CFUserNotificationCreateRunLoopSource(allocator: CFAllocatorRef, userNotification: CFUserNotificationRef, callout: CFUserNotificationCallBack, order: CFIndex) CFRunLoopSourceRef;
 pub extern fn CFUserNotificationDisplayNotice(timeout: CFTimeInterval, flags: CFOptionFlags, iconURL: CFURLRef, soundURL: CFURLRef, localizationURL: CFURLRef, alertHeader: CFStringRef, alertMessage: CFStringRef, defaultButtonTitle: CFStringRef) SInt32;
 pub extern fn CFUserNotificationDisplayAlert(timeout: CFTimeInterval, flags: CFOptionFlags, iconURL: CFURLRef, soundURL: CFURLRef, localizationURL: CFURLRef, alertHeader: CFStringRef, alertMessage: CFStringRef, defaultButtonTitle: CFStringRef, alternateButtonTitle: CFStringRef, otherButtonTitle: CFStringRef, responseFlags: [*c]CFOptionFlags) SInt32;
-pub const kCFUserNotificationStopAlertLevel = @enumToInt(enum_unnamed_188.kCFUserNotificationStopAlertLevel);
-pub const kCFUserNotificationNoteAlertLevel = @enumToInt(enum_unnamed_188.kCFUserNotificationNoteAlertLevel);
-pub const kCFUserNotificationCautionAlertLevel = @enumToInt(enum_unnamed_188.kCFUserNotificationCautionAlertLevel);
-pub const kCFUserNotificationPlainAlertLevel = @enumToInt(enum_unnamed_188.kCFUserNotificationPlainAlertLevel);
-const enum_unnamed_188 = extern enum(c_int) {
+pub const kCFUserNotificationStopAlertLevel = @enumToInt(enum_unnamed_148.kCFUserNotificationStopAlertLevel);
+pub const kCFUserNotificationNoteAlertLevel = @enumToInt(enum_unnamed_148.kCFUserNotificationNoteAlertLevel);
+pub const kCFUserNotificationCautionAlertLevel = @enumToInt(enum_unnamed_148.kCFUserNotificationCautionAlertLevel);
+pub const kCFUserNotificationPlainAlertLevel = @enumToInt(enum_unnamed_148.kCFUserNotificationPlainAlertLevel);
+const enum_unnamed_148 = extern enum(c_int) {
     kCFUserNotificationStopAlertLevel = 0,
     kCFUserNotificationNoteAlertLevel = 1,
     kCFUserNotificationCautionAlertLevel = 2,
     kCFUserNotificationPlainAlertLevel = 3,
     _,
 };
-pub const kCFUserNotificationDefaultResponse = @enumToInt(enum_unnamed_189.kCFUserNotificationDefaultResponse);
-pub const kCFUserNotificationAlternateResponse = @enumToInt(enum_unnamed_189.kCFUserNotificationAlternateResponse);
-pub const kCFUserNotificationOtherResponse = @enumToInt(enum_unnamed_189.kCFUserNotificationOtherResponse);
-pub const kCFUserNotificationCancelResponse = @enumToInt(enum_unnamed_189.kCFUserNotificationCancelResponse);
-const enum_unnamed_189 = extern enum(c_int) {
+pub const kCFUserNotificationDefaultResponse = @enumToInt(enum_unnamed_149.kCFUserNotificationDefaultResponse);
+pub const kCFUserNotificationAlternateResponse = @enumToInt(enum_unnamed_149.kCFUserNotificationAlternateResponse);
+pub const kCFUserNotificationOtherResponse = @enumToInt(enum_unnamed_149.kCFUserNotificationOtherResponse);
+pub const kCFUserNotificationCancelResponse = @enumToInt(enum_unnamed_149.kCFUserNotificationCancelResponse);
+const enum_unnamed_149 = extern enum(c_int) {
     kCFUserNotificationDefaultResponse = 0,
     kCFUserNotificationAlternateResponse = 1,
     kCFUserNotificationOtherResponse = 2,
     kCFUserNotificationCancelResponse = 3,
     _,
 };
-pub const kCFUserNotificationNoDefaultButtonFlag = @enumToInt(enum_unnamed_190.kCFUserNotificationNoDefaultButtonFlag);
-pub const kCFUserNotificationUseRadioButtonsFlag = @enumToInt(enum_unnamed_190.kCFUserNotificationUseRadioButtonsFlag);
-const enum_unnamed_190 = extern enum(c_int) {
+pub const kCFUserNotificationNoDefaultButtonFlag = @enumToInt(enum_unnamed_150.kCFUserNotificationNoDefaultButtonFlag);
+pub const kCFUserNotificationUseRadioButtonsFlag = @enumToInt(enum_unnamed_150.kCFUserNotificationUseRadioButtonsFlag);
+const enum_unnamed_150 = extern enum(c_int) {
     kCFUserNotificationNoDefaultButtonFlag = 32,
     kCFUserNotificationUseRadioButtonsFlag = 64,
     _,
@@ -7306,8 +6826,8 @@ pub extern const kCFUserNotificationTextFieldValuesKey: CFStringRef;
 pub extern const kCFUserNotificationPopUpSelectionKey: CFStringRef;
 pub extern const kCFUserNotificationAlertTopMostKey: CFStringRef;
 pub extern const kCFUserNotificationKeyboardTypesKey: CFStringRef;
-pub const kCFXMLNodeCurrentVersion = @enumToInt(enum_unnamed_191.kCFXMLNodeCurrentVersion);
-const enum_unnamed_191 = extern enum(c_int) {
+pub const kCFXMLNodeCurrentVersion = @enumToInt(enum_unnamed_151.kCFXMLNodeCurrentVersion);
+const enum_unnamed_151 = extern enum(c_int) {
     kCFXMLNodeCurrentVersion = 1,
     _,
 };
@@ -7315,22 +6835,22 @@ pub const struct___CFXMLNode = @OpaqueType();
 pub const CFXMLNodeRef = ?*const struct___CFXMLNode;
 pub const CFXMLTreeRef = CFTreeRef;
 pub const CFXMLNodeTypeCode = CFIndex;
-pub const kCFXMLNodeTypeDocument = @enumToInt(enum_unnamed_192.kCFXMLNodeTypeDocument);
-pub const kCFXMLNodeTypeElement = @enumToInt(enum_unnamed_192.kCFXMLNodeTypeElement);
-pub const kCFXMLNodeTypeAttribute = @enumToInt(enum_unnamed_192.kCFXMLNodeTypeAttribute);
-pub const kCFXMLNodeTypeProcessingInstruction = @enumToInt(enum_unnamed_192.kCFXMLNodeTypeProcessingInstruction);
-pub const kCFXMLNodeTypeComment = @enumToInt(enum_unnamed_192.kCFXMLNodeTypeComment);
-pub const kCFXMLNodeTypeText = @enumToInt(enum_unnamed_192.kCFXMLNodeTypeText);
-pub const kCFXMLNodeTypeCDATASection = @enumToInt(enum_unnamed_192.kCFXMLNodeTypeCDATASection);
-pub const kCFXMLNodeTypeDocumentFragment = @enumToInt(enum_unnamed_192.kCFXMLNodeTypeDocumentFragment);
-pub const kCFXMLNodeTypeEntity = @enumToInt(enum_unnamed_192.kCFXMLNodeTypeEntity);
-pub const kCFXMLNodeTypeEntityReference = @enumToInt(enum_unnamed_192.kCFXMLNodeTypeEntityReference);
-pub const kCFXMLNodeTypeDocumentType = @enumToInt(enum_unnamed_192.kCFXMLNodeTypeDocumentType);
-pub const kCFXMLNodeTypeWhitespace = @enumToInt(enum_unnamed_192.kCFXMLNodeTypeWhitespace);
-pub const kCFXMLNodeTypeNotation = @enumToInt(enum_unnamed_192.kCFXMLNodeTypeNotation);
-pub const kCFXMLNodeTypeElementTypeDeclaration = @enumToInt(enum_unnamed_192.kCFXMLNodeTypeElementTypeDeclaration);
-pub const kCFXMLNodeTypeAttributeListDeclaration = @enumToInt(enum_unnamed_192.kCFXMLNodeTypeAttributeListDeclaration);
-const enum_unnamed_192 = extern enum(c_int) {
+pub const kCFXMLNodeTypeDocument = @enumToInt(enum_unnamed_152.kCFXMLNodeTypeDocument);
+pub const kCFXMLNodeTypeElement = @enumToInt(enum_unnamed_152.kCFXMLNodeTypeElement);
+pub const kCFXMLNodeTypeAttribute = @enumToInt(enum_unnamed_152.kCFXMLNodeTypeAttribute);
+pub const kCFXMLNodeTypeProcessingInstruction = @enumToInt(enum_unnamed_152.kCFXMLNodeTypeProcessingInstruction);
+pub const kCFXMLNodeTypeComment = @enumToInt(enum_unnamed_152.kCFXMLNodeTypeComment);
+pub const kCFXMLNodeTypeText = @enumToInt(enum_unnamed_152.kCFXMLNodeTypeText);
+pub const kCFXMLNodeTypeCDATASection = @enumToInt(enum_unnamed_152.kCFXMLNodeTypeCDATASection);
+pub const kCFXMLNodeTypeDocumentFragment = @enumToInt(enum_unnamed_152.kCFXMLNodeTypeDocumentFragment);
+pub const kCFXMLNodeTypeEntity = @enumToInt(enum_unnamed_152.kCFXMLNodeTypeEntity);
+pub const kCFXMLNodeTypeEntityReference = @enumToInt(enum_unnamed_152.kCFXMLNodeTypeEntityReference);
+pub const kCFXMLNodeTypeDocumentType = @enumToInt(enum_unnamed_152.kCFXMLNodeTypeDocumentType);
+pub const kCFXMLNodeTypeWhitespace = @enumToInt(enum_unnamed_152.kCFXMLNodeTypeWhitespace);
+pub const kCFXMLNodeTypeNotation = @enumToInt(enum_unnamed_152.kCFXMLNodeTypeNotation);
+pub const kCFXMLNodeTypeElementTypeDeclaration = @enumToInt(enum_unnamed_152.kCFXMLNodeTypeElementTypeDeclaration);
+pub const kCFXMLNodeTypeAttributeListDeclaration = @enumToInt(enum_unnamed_152.kCFXMLNodeTypeAttributeListDeclaration);
+const enum_unnamed_152 = extern enum(c_int) {
     kCFXMLNodeTypeDocument = 1,
     kCFXMLNodeTypeElement = 2,
     kCFXMLNodeTypeAttribute = 3,
@@ -7348,57 +6868,57 @@ const enum_unnamed_192 = extern enum(c_int) {
     kCFXMLNodeTypeAttributeListDeclaration = 15,
     _,
 };
-const struct_unnamed_193 = extern struct {
+const struct_unnamed_153 = extern struct {
     attributes: CFDictionaryRef,
     attributeOrder: CFArrayRef,
     isEmpty: Boolean,
     _reserved: [3]u8,
 };
-pub const CFXMLElementInfo = struct_unnamed_193;
-const struct_unnamed_194 = extern struct {
+pub const CFXMLElementInfo = struct_unnamed_153;
+const struct_unnamed_154 = extern struct {
     dataString: CFStringRef,
 };
-pub const CFXMLProcessingInstructionInfo = struct_unnamed_194;
-const struct_unnamed_195 = extern struct {
+pub const CFXMLProcessingInstructionInfo = struct_unnamed_154;
+const struct_unnamed_155 = extern struct {
     sourceURL: CFURLRef,
     encoding: CFStringEncoding,
 };
-pub const CFXMLDocumentInfo = struct_unnamed_195;
-const struct_unnamed_196 = extern struct {
+pub const CFXMLDocumentInfo = struct_unnamed_155;
+const struct_unnamed_156 = extern struct {
     systemID: CFURLRef,
     publicID: CFStringRef,
 };
-pub const CFXMLExternalID = struct_unnamed_196;
-const struct_unnamed_197 = extern struct {
+pub const CFXMLExternalID = struct_unnamed_156;
+const struct_unnamed_157 = extern struct {
     externalID: CFXMLExternalID,
 };
-pub const CFXMLDocumentTypeInfo = struct_unnamed_197;
-const struct_unnamed_198 = extern struct {
+pub const CFXMLDocumentTypeInfo = struct_unnamed_157;
+const struct_unnamed_158 = extern struct {
     externalID: CFXMLExternalID,
 };
-pub const CFXMLNotationInfo = struct_unnamed_198;
-const struct_unnamed_199 = extern struct {
+pub const CFXMLNotationInfo = struct_unnamed_158;
+const struct_unnamed_159 = extern struct {
     contentDescription: CFStringRef,
 };
-pub const CFXMLElementTypeDeclarationInfo = struct_unnamed_199;
-const struct_unnamed_200 = extern struct {
+pub const CFXMLElementTypeDeclarationInfo = struct_unnamed_159;
+const struct_unnamed_160 = extern struct {
     attributeName: CFStringRef,
     typeString: CFStringRef,
     defaultString: CFStringRef,
 };
-pub const CFXMLAttributeDeclarationInfo = struct_unnamed_200;
-const struct_unnamed_201 = extern struct {
+pub const CFXMLAttributeDeclarationInfo = struct_unnamed_160;
+const struct_unnamed_161 = extern struct {
     numberOfAttributes: CFIndex,
     attributes: [*c]CFXMLAttributeDeclarationInfo,
 };
-pub const CFXMLAttributeListDeclarationInfo = struct_unnamed_201;
+pub const CFXMLAttributeListDeclarationInfo = struct_unnamed_161;
 pub const CFXMLEntityTypeCode = CFIndex;
-pub const kCFXMLEntityTypeParameter = @enumToInt(enum_unnamed_202.kCFXMLEntityTypeParameter);
-pub const kCFXMLEntityTypeParsedInternal = @enumToInt(enum_unnamed_202.kCFXMLEntityTypeParsedInternal);
-pub const kCFXMLEntityTypeParsedExternal = @enumToInt(enum_unnamed_202.kCFXMLEntityTypeParsedExternal);
-pub const kCFXMLEntityTypeUnparsed = @enumToInt(enum_unnamed_202.kCFXMLEntityTypeUnparsed);
-pub const kCFXMLEntityTypeCharacter = @enumToInt(enum_unnamed_202.kCFXMLEntityTypeCharacter);
-const enum_unnamed_202 = extern enum(c_int) {
+pub const kCFXMLEntityTypeParameter = @enumToInt(enum_unnamed_162.kCFXMLEntityTypeParameter);
+pub const kCFXMLEntityTypeParsedInternal = @enumToInt(enum_unnamed_162.kCFXMLEntityTypeParsedInternal);
+pub const kCFXMLEntityTypeParsedExternal = @enumToInt(enum_unnamed_162.kCFXMLEntityTypeParsedExternal);
+pub const kCFXMLEntityTypeUnparsed = @enumToInt(enum_unnamed_162.kCFXMLEntityTypeUnparsed);
+pub const kCFXMLEntityTypeCharacter = @enumToInt(enum_unnamed_162.kCFXMLEntityTypeCharacter);
+const enum_unnamed_162 = extern enum(c_int) {
     kCFXMLEntityTypeParameter,
     kCFXMLEntityTypeParsedInternal,
     kCFXMLEntityTypeParsedExternal,
@@ -7406,17 +6926,17 @@ const enum_unnamed_202 = extern enum(c_int) {
     kCFXMLEntityTypeCharacter,
     _,
 };
-const struct_unnamed_203 = extern struct {
+const struct_unnamed_163 = extern struct {
     entityType: CFXMLEntityTypeCode,
     replacementText: CFStringRef,
     entityID: CFXMLExternalID,
     notationName: CFStringRef,
 };
-pub const CFXMLEntityInfo = struct_unnamed_203;
-const struct_unnamed_204 = extern struct {
+pub const CFXMLEntityInfo = struct_unnamed_163;
+const struct_unnamed_164 = extern struct {
     entityType: CFXMLEntityTypeCode,
 };
-pub const CFXMLEntityReferenceInfo = struct_unnamed_204;
+pub const CFXMLEntityReferenceInfo = struct_unnamed_164;
 pub extern fn CFXMLNodeGetTypeID() CFTypeID;
 pub extern fn CFXMLNodeCreate(alloc: CFAllocatorRef, xmlType: CFXMLNodeTypeCode, dataString: CFStringRef, additionalInfoPtr: ?*const c_void, version: CFIndex) CFXMLNodeRef;
 pub extern fn CFXMLNodeCreateCopy(alloc: CFAllocatorRef, origNode: CFXMLNodeRef) CFXMLNodeRef;
@@ -7429,15 +6949,15 @@ pub extern fn CFXMLTreeGetNode(xmlTree: CFXMLTreeRef) CFXMLNodeRef;
 pub const struct___CFXMLParser = @OpaqueType();
 pub const CFXMLParserRef = ?*struct___CFXMLParser;
 pub const CFXMLParserOptions = CFOptionFlags;
-pub const kCFXMLParserValidateDocument = @enumToInt(enum_unnamed_205.kCFXMLParserValidateDocument);
-pub const kCFXMLParserSkipMetaData = @enumToInt(enum_unnamed_205.kCFXMLParserSkipMetaData);
-pub const kCFXMLParserReplacePhysicalEntities = @enumToInt(enum_unnamed_205.kCFXMLParserReplacePhysicalEntities);
-pub const kCFXMLParserSkipWhitespace = @enumToInt(enum_unnamed_205.kCFXMLParserSkipWhitespace);
-pub const kCFXMLParserResolveExternalEntities = @enumToInt(enum_unnamed_205.kCFXMLParserResolveExternalEntities);
-pub const kCFXMLParserAddImpliedAttributes = @enumToInt(enum_unnamed_205.kCFXMLParserAddImpliedAttributes);
-pub const kCFXMLParserAllOptions = @enumToInt(enum_unnamed_205.kCFXMLParserAllOptions);
-pub const kCFXMLParserNoOptions = @enumToInt(enum_unnamed_205.kCFXMLParserNoOptions);
-const enum_unnamed_205 = extern enum(c_int) {
+pub const kCFXMLParserValidateDocument = @enumToInt(enum_unnamed_165.kCFXMLParserValidateDocument);
+pub const kCFXMLParserSkipMetaData = @enumToInt(enum_unnamed_165.kCFXMLParserSkipMetaData);
+pub const kCFXMLParserReplacePhysicalEntities = @enumToInt(enum_unnamed_165.kCFXMLParserReplacePhysicalEntities);
+pub const kCFXMLParserSkipWhitespace = @enumToInt(enum_unnamed_165.kCFXMLParserSkipWhitespace);
+pub const kCFXMLParserResolveExternalEntities = @enumToInt(enum_unnamed_165.kCFXMLParserResolveExternalEntities);
+pub const kCFXMLParserAddImpliedAttributes = @enumToInt(enum_unnamed_165.kCFXMLParserAddImpliedAttributes);
+pub const kCFXMLParserAllOptions = @enumToInt(enum_unnamed_165.kCFXMLParserAllOptions);
+pub const kCFXMLParserNoOptions = @enumToInt(enum_unnamed_165.kCFXMLParserNoOptions);
+const enum_unnamed_165 = extern enum(c_int) {
     kCFXMLParserValidateDocument = 1,
     kCFXMLParserSkipMetaData = 2,
     kCFXMLParserReplacePhysicalEntities = 4,
@@ -7449,25 +6969,25 @@ const enum_unnamed_205 = extern enum(c_int) {
     _,
 };
 pub const CFXMLParserStatusCode = CFIndex;
-pub const kCFXMLStatusParseNotBegun = @enumToInt(enum_unnamed_206.kCFXMLStatusParseNotBegun);
-pub const kCFXMLStatusParseInProgress = @enumToInt(enum_unnamed_206.kCFXMLStatusParseInProgress);
-pub const kCFXMLStatusParseSuccessful = @enumToInt(enum_unnamed_206.kCFXMLStatusParseSuccessful);
-pub const kCFXMLErrorUnexpectedEOF = @enumToInt(enum_unnamed_206.kCFXMLErrorUnexpectedEOF);
-pub const kCFXMLErrorUnknownEncoding = @enumToInt(enum_unnamed_206.kCFXMLErrorUnknownEncoding);
-pub const kCFXMLErrorEncodingConversionFailure = @enumToInt(enum_unnamed_206.kCFXMLErrorEncodingConversionFailure);
-pub const kCFXMLErrorMalformedProcessingInstruction = @enumToInt(enum_unnamed_206.kCFXMLErrorMalformedProcessingInstruction);
-pub const kCFXMLErrorMalformedDTD = @enumToInt(enum_unnamed_206.kCFXMLErrorMalformedDTD);
-pub const kCFXMLErrorMalformedName = @enumToInt(enum_unnamed_206.kCFXMLErrorMalformedName);
-pub const kCFXMLErrorMalformedCDSect = @enumToInt(enum_unnamed_206.kCFXMLErrorMalformedCDSect);
-pub const kCFXMLErrorMalformedCloseTag = @enumToInt(enum_unnamed_206.kCFXMLErrorMalformedCloseTag);
-pub const kCFXMLErrorMalformedStartTag = @enumToInt(enum_unnamed_206.kCFXMLErrorMalformedStartTag);
-pub const kCFXMLErrorMalformedDocument = @enumToInt(enum_unnamed_206.kCFXMLErrorMalformedDocument);
-pub const kCFXMLErrorElementlessDocument = @enumToInt(enum_unnamed_206.kCFXMLErrorElementlessDocument);
-pub const kCFXMLErrorMalformedComment = @enumToInt(enum_unnamed_206.kCFXMLErrorMalformedComment);
-pub const kCFXMLErrorMalformedCharacterReference = @enumToInt(enum_unnamed_206.kCFXMLErrorMalformedCharacterReference);
-pub const kCFXMLErrorMalformedParsedCharacterData = @enumToInt(enum_unnamed_206.kCFXMLErrorMalformedParsedCharacterData);
-pub const kCFXMLErrorNoData = @enumToInt(enum_unnamed_206.kCFXMLErrorNoData);
-const enum_unnamed_206 = extern enum(c_int) {
+pub const kCFXMLStatusParseNotBegun = @enumToInt(enum_unnamed_166.kCFXMLStatusParseNotBegun);
+pub const kCFXMLStatusParseInProgress = @enumToInt(enum_unnamed_166.kCFXMLStatusParseInProgress);
+pub const kCFXMLStatusParseSuccessful = @enumToInt(enum_unnamed_166.kCFXMLStatusParseSuccessful);
+pub const kCFXMLErrorUnexpectedEOF = @enumToInt(enum_unnamed_166.kCFXMLErrorUnexpectedEOF);
+pub const kCFXMLErrorUnknownEncoding = @enumToInt(enum_unnamed_166.kCFXMLErrorUnknownEncoding);
+pub const kCFXMLErrorEncodingConversionFailure = @enumToInt(enum_unnamed_166.kCFXMLErrorEncodingConversionFailure);
+pub const kCFXMLErrorMalformedProcessingInstruction = @enumToInt(enum_unnamed_166.kCFXMLErrorMalformedProcessingInstruction);
+pub const kCFXMLErrorMalformedDTD = @enumToInt(enum_unnamed_166.kCFXMLErrorMalformedDTD);
+pub const kCFXMLErrorMalformedName = @enumToInt(enum_unnamed_166.kCFXMLErrorMalformedName);
+pub const kCFXMLErrorMalformedCDSect = @enumToInt(enum_unnamed_166.kCFXMLErrorMalformedCDSect);
+pub const kCFXMLErrorMalformedCloseTag = @enumToInt(enum_unnamed_166.kCFXMLErrorMalformedCloseTag);
+pub const kCFXMLErrorMalformedStartTag = @enumToInt(enum_unnamed_166.kCFXMLErrorMalformedStartTag);
+pub const kCFXMLErrorMalformedDocument = @enumToInt(enum_unnamed_166.kCFXMLErrorMalformedDocument);
+pub const kCFXMLErrorElementlessDocument = @enumToInt(enum_unnamed_166.kCFXMLErrorElementlessDocument);
+pub const kCFXMLErrorMalformedComment = @enumToInt(enum_unnamed_166.kCFXMLErrorMalformedComment);
+pub const kCFXMLErrorMalformedCharacterReference = @enumToInt(enum_unnamed_166.kCFXMLErrorMalformedCharacterReference);
+pub const kCFXMLErrorMalformedParsedCharacterData = @enumToInt(enum_unnamed_166.kCFXMLErrorMalformedParsedCharacterData);
+pub const kCFXMLErrorNoData = @enumToInt(enum_unnamed_166.kCFXMLErrorNoData);
+const enum_unnamed_166 = extern enum(c_int) {
     kCFXMLStatusParseNotBegun = -2,
     kCFXMLStatusParseInProgress = -1,
     kCFXMLStatusParseSuccessful = 0,
@@ -7493,7 +7013,7 @@ pub const CFXMLParserAddChildCallBack = ?fn (CFXMLParserRef, ?*c_void, ?*c_void,
 pub const CFXMLParserEndXMLStructureCallBack = ?fn (CFXMLParserRef, ?*c_void, ?*c_void) callconv(.C) void;
 pub const CFXMLParserResolveExternalEntityCallBack = ?fn (CFXMLParserRef, [*c]CFXMLExternalID, ?*c_void) callconv(.C) CFDataRef;
 pub const CFXMLParserHandleErrorCallBack = ?fn (CFXMLParserRef, CFXMLParserStatusCode, ?*c_void) callconv(.C) Boolean;
-const struct_unnamed_207 = extern struct {
+const struct_unnamed_167 = extern struct {
     version: CFIndex,
     createXMLStructure: CFXMLParserCreateXMLStructureCallBack,
     addChild: CFXMLParserAddChildCallBack,
@@ -7501,18 +7021,18 @@ const struct_unnamed_207 = extern struct {
     resolveExternalEntity: CFXMLParserResolveExternalEntityCallBack,
     handleError: CFXMLParserHandleErrorCallBack,
 };
-pub const CFXMLParserCallBacks = struct_unnamed_207;
+pub const CFXMLParserCallBacks = struct_unnamed_167;
 pub const CFXMLParserRetainCallBack = ?fn (?*const c_void) callconv(.C) ?*const c_void;
 pub const CFXMLParserReleaseCallBack = ?fn (?*const c_void) callconv(.C) void;
 pub const CFXMLParserCopyDescriptionCallBack = ?fn (?*const c_void) callconv(.C) CFStringRef;
-const struct_unnamed_208 = extern struct {
+const struct_unnamed_168 = extern struct {
     version: CFIndex,
     info: ?*c_void,
     retain: CFXMLParserRetainCallBack,
     release: CFXMLParserReleaseCallBack,
     copyDescription: CFXMLParserCopyDescriptionCallBack,
 };
-pub const CFXMLParserContext = struct_unnamed_208;
+pub const CFXMLParserContext = struct_unnamed_168;
 pub extern fn CFXMLParserGetTypeID() CFTypeID;
 pub extern fn CFXMLParserCreate(allocator: CFAllocatorRef, xmlData: CFDataRef, dataSource: CFURLRef, parseOptions: CFOptionFlags, versionOfNodes: CFIndex, callBacks: [*c]CFXMLParserCallBacks, context: [*c]CFXMLParserContext) CFXMLParserRef;
 pub extern fn CFXMLParserCreateWithDataFromURL(allocator: CFAllocatorRef, dataSource: CFURLRef, parseOptions: CFOptionFlags, versionOfNodes: CFIndex, callBacks: [*c]CFXMLParserCallBacks, context: [*c]CFXMLParserContext) CFXMLParserRef;
@@ -7536,547 +7056,13 @@ pub extern const kCFXMLTreeErrorDescription: CFStringRef;
 pub extern const kCFXMLTreeErrorLineNumber: CFStringRef;
 pub extern const kCFXMLTreeErrorLocation: CFStringRef;
 pub extern const kCFXMLTreeErrorStatusCode: CFStringRef;
-pub const kAudioObjectSystemObject = @enumToInt(enum_unnamed_209.kAudioObjectSystemObject);
-const enum_unnamed_209 = extern enum(c_int) {
-    kAudioObjectSystemObject = 1,
-    _,
-};
-pub const AudioObjectPropertyListenerProc = ?fn (AudioObjectID, UInt32, [*c]const AudioObjectPropertyAddress, ?*c_void) callconv(.C) OSStatus;
-pub const AudioObjectPropertyListenerBlock = @compileError("unable to resolve typedef child type");
-pub const kAudioObjectPropertyCreator = @enumToInt(enum_unnamed_210.kAudioObjectPropertyCreator);
-pub const kAudioObjectPropertyListenerAdded = @enumToInt(enum_unnamed_210.kAudioObjectPropertyListenerAdded);
-pub const kAudioObjectPropertyListenerRemoved = @enumToInt(enum_unnamed_210.kAudioObjectPropertyListenerRemoved);
-const enum_unnamed_210 = extern enum(c_int) {
-    kAudioObjectPropertyCreator = 1869638759,
-    kAudioObjectPropertyListenerAdded = 1818850145,
-    kAudioObjectPropertyListenerRemoved = 1818850162,
-    _,
-};
-pub extern fn AudioObjectShow(inObjectID: AudioObjectID) void;
-pub extern fn AudioObjectHasProperty(inObjectID: AudioObjectID, inAddress: [*c]const AudioObjectPropertyAddress) Boolean;
-pub extern fn AudioObjectIsPropertySettable(inObjectID: AudioObjectID, inAddress: [*c]const AudioObjectPropertyAddress, outIsSettable: [*c]Boolean) OSStatus;
-pub extern fn AudioObjectGetPropertyDataSize(inObjectID: AudioObjectID, inAddress: [*c]const AudioObjectPropertyAddress, inQualifierDataSize: UInt32, inQualifierData: ?*const c_void, outDataSize: [*c]UInt32) OSStatus;
-pub extern fn AudioObjectGetPropertyData(inObjectID: AudioObjectID, inAddress: [*c]const AudioObjectPropertyAddress, inQualifierDataSize: UInt32, inQualifierData: ?*const c_void, ioDataSize: [*c]UInt32, outData: ?*c_void) OSStatus;
-pub extern fn AudioObjectSetPropertyData(inObjectID: AudioObjectID, inAddress: [*c]const AudioObjectPropertyAddress, inQualifierDataSize: UInt32, inQualifierData: ?*const c_void, inDataSize: UInt32, inData: ?*const c_void) OSStatus;
-pub extern fn AudioObjectAddPropertyListener(inObjectID: AudioObjectID, inAddress: [*c]const AudioObjectPropertyAddress, inListener: AudioObjectPropertyListenerProc, inClientData: ?*c_void) OSStatus;
-pub extern fn AudioObjectRemovePropertyListener(inObjectID: AudioObjectID, inAddress: [*c]const AudioObjectPropertyAddress, inListener: AudioObjectPropertyListenerProc, inClientData: ?*c_void) OSStatus;
-pub extern fn AudioObjectAddPropertyListenerBlock(inObjectID: AudioObjectID, inAddress: [*c]const AudioObjectPropertyAddress, inDispatchQueue: dispatch_queue_t, inListener: AudioObjectPropertyListenerBlock) OSStatus;
-pub extern fn AudioObjectRemovePropertyListenerBlock(inObjectID: AudioObjectID, inAddress: [*c]const AudioObjectPropertyAddress, inDispatchQueue: dispatch_queue_t, inListener: AudioObjectPropertyListenerBlock) OSStatus;
-pub const kAudioSystemObjectClassID = @enumToInt(enum_unnamed_211.kAudioSystemObjectClassID);
-const enum_unnamed_211 = extern enum(c_int) {
-    kAudioSystemObjectClassID = 1634957683,
-    _,
-};
-pub const AudioHardwarePowerHint = UInt32;
-pub const kAudioHardwarePowerHintNone = @enumToInt(enum_unnamed_212.kAudioHardwarePowerHintNone);
-pub const kAudioHardwarePowerHintFavorSavingPower = @enumToInt(enum_unnamed_212.kAudioHardwarePowerHintFavorSavingPower);
-const enum_unnamed_212 = extern enum(c_int) {
-    kAudioHardwarePowerHintNone = 0,
-    kAudioHardwarePowerHintFavorSavingPower = 1,
-    _,
-};
-pub const kAudioHardwarePropertyDevices = @enumToInt(enum_unnamed_213.kAudioHardwarePropertyDevices);
-pub const kAudioHardwarePropertyDefaultInputDevice = @enumToInt(enum_unnamed_213.kAudioHardwarePropertyDefaultInputDevice);
-pub const kAudioHardwarePropertyDefaultOutputDevice = @enumToInt(enum_unnamed_213.kAudioHardwarePropertyDefaultOutputDevice);
-pub const kAudioHardwarePropertyDefaultSystemOutputDevice = @enumToInt(enum_unnamed_213.kAudioHardwarePropertyDefaultSystemOutputDevice);
-pub const kAudioHardwarePropertyTranslateUIDToDevice = @enumToInt(enum_unnamed_213.kAudioHardwarePropertyTranslateUIDToDevice);
-pub const kAudioHardwarePropertyMixStereoToMono = @enumToInt(enum_unnamed_213.kAudioHardwarePropertyMixStereoToMono);
-pub const kAudioHardwarePropertyPlugInList = @enumToInt(enum_unnamed_213.kAudioHardwarePropertyPlugInList);
-pub const kAudioHardwarePropertyTranslateBundleIDToPlugIn = @enumToInt(enum_unnamed_213.kAudioHardwarePropertyTranslateBundleIDToPlugIn);
-pub const kAudioHardwarePropertyTransportManagerList = @enumToInt(enum_unnamed_213.kAudioHardwarePropertyTransportManagerList);
-pub const kAudioHardwarePropertyTranslateBundleIDToTransportManager = @enumToInt(enum_unnamed_213.kAudioHardwarePropertyTranslateBundleIDToTransportManager);
-pub const kAudioHardwarePropertyBoxList = @enumToInt(enum_unnamed_213.kAudioHardwarePropertyBoxList);
-pub const kAudioHardwarePropertyTranslateUIDToBox = @enumToInt(enum_unnamed_213.kAudioHardwarePropertyTranslateUIDToBox);
-pub const kAudioHardwarePropertyClockDeviceList = @enumToInt(enum_unnamed_213.kAudioHardwarePropertyClockDeviceList);
-pub const kAudioHardwarePropertyTranslateUIDToClockDevice = @enumToInt(enum_unnamed_213.kAudioHardwarePropertyTranslateUIDToClockDevice);
-pub const kAudioHardwarePropertyProcessIsMaster = @enumToInt(enum_unnamed_213.kAudioHardwarePropertyProcessIsMaster);
-pub const kAudioHardwarePropertyIsInitingOrExiting = @enumToInt(enum_unnamed_213.kAudioHardwarePropertyIsInitingOrExiting);
-pub const kAudioHardwarePropertyUserIDChanged = @enumToInt(enum_unnamed_213.kAudioHardwarePropertyUserIDChanged);
-pub const kAudioHardwarePropertyProcessIsAudible = @enumToInt(enum_unnamed_213.kAudioHardwarePropertyProcessIsAudible);
-pub const kAudioHardwarePropertySleepingIsAllowed = @enumToInt(enum_unnamed_213.kAudioHardwarePropertySleepingIsAllowed);
-pub const kAudioHardwarePropertyUnloadingIsAllowed = @enumToInt(enum_unnamed_213.kAudioHardwarePropertyUnloadingIsAllowed);
-pub const kAudioHardwarePropertyHogModeIsAllowed = @enumToInt(enum_unnamed_213.kAudioHardwarePropertyHogModeIsAllowed);
-pub const kAudioHardwarePropertyUserSessionIsActiveOrHeadless = @enumToInt(enum_unnamed_213.kAudioHardwarePropertyUserSessionIsActiveOrHeadless);
-pub const kAudioHardwarePropertyServiceRestarted = @enumToInt(enum_unnamed_213.kAudioHardwarePropertyServiceRestarted);
-pub const kAudioHardwarePropertyPowerHint = @enumToInt(enum_unnamed_213.kAudioHardwarePropertyPowerHint);
-const enum_unnamed_213 = extern enum(c_int) {
-    kAudioHardwarePropertyDevices = 1684370979,
-    kAudioHardwarePropertyDefaultInputDevice = 1682533920,
-    kAudioHardwarePropertyDefaultOutputDevice = 1682929012,
-    kAudioHardwarePropertyDefaultSystemOutputDevice = 1934587252,
-    kAudioHardwarePropertyTranslateUIDToDevice = 1969841252,
-    kAudioHardwarePropertyMixStereoToMono = 1937010031,
-    kAudioHardwarePropertyPlugInList = 1886152483,
-    kAudioHardwarePropertyTranslateBundleIDToPlugIn = 1651074160,
-    kAudioHardwarePropertyTransportManagerList = 1953326883,
-    kAudioHardwarePropertyTranslateBundleIDToTransportManager = 1953325673,
-    kAudioHardwarePropertyBoxList = 1651472419,
-    kAudioHardwarePropertyTranslateUIDToBox = 1969841250,
-    kAudioHardwarePropertyClockDeviceList = 1668049699,
-    kAudioHardwarePropertyTranslateUIDToClockDevice = 1969841251,
-    kAudioHardwarePropertyProcessIsMaster = 1835103092,
-    kAudioHardwarePropertyIsInitingOrExiting = 1768845172,
-    kAudioHardwarePropertyUserIDChanged = 1702193508,
-    kAudioHardwarePropertyProcessIsAudible = 1886221684,
-    kAudioHardwarePropertySleepingIsAllowed = 1936483696,
-    kAudioHardwarePropertyUnloadingIsAllowed = 1970170980,
-    kAudioHardwarePropertyHogModeIsAllowed = 1752131442,
-    kAudioHardwarePropertyUserSessionIsActiveOrHeadless = 1970496882,
-    kAudioHardwarePropertyServiceRestarted = 1936880500,
-    kAudioHardwarePropertyPowerHint = 1886353256,
-    _,
-};
-pub extern fn AudioHardwareUnload() OSStatus;
-pub extern fn AudioHardwareCreateAggregateDevice(inDescription: CFDictionaryRef, outDeviceID: [*c]AudioObjectID) OSStatus;
-pub extern fn AudioHardwareDestroyAggregateDevice(inDeviceID: AudioObjectID) OSStatus;
-pub const kAudioPlugInCreateAggregateDevice = @enumToInt(enum_unnamed_214.kAudioPlugInCreateAggregateDevice);
-pub const kAudioPlugInDestroyAggregateDevice = @enumToInt(enum_unnamed_214.kAudioPlugInDestroyAggregateDevice);
-const enum_unnamed_214 = extern enum(c_int) {
-    kAudioPlugInCreateAggregateDevice = 1667327847,
-    kAudioPlugInDestroyAggregateDevice = 1684105063,
-    _,
-};
-pub const kAudioTransportManagerCreateEndPointDevice = @enumToInt(enum_unnamed_215.kAudioTransportManagerCreateEndPointDevice);
-pub const kAudioTransportManagerDestroyEndPointDevice = @enumToInt(enum_unnamed_215.kAudioTransportManagerDestroyEndPointDevice);
-const enum_unnamed_215 = extern enum(c_int) {
-    kAudioTransportManagerCreateEndPointDevice = 1667523958,
-    kAudioTransportManagerDestroyEndPointDevice = 1684301174,
-    _,
-};
-pub const AudioDeviceIOProc = ?fn (AudioObjectID, [*c]const AudioTimeStamp, [*c]const AudioBufferList, [*c]const AudioTimeStamp, [*c]AudioBufferList, [*c]const AudioTimeStamp, ?*c_void) callconv(.C) OSStatus;
-pub const AudioDeviceIOBlock = @compileError("unable to resolve typedef child type");
-pub const AudioDeviceIOProcID = AudioDeviceIOProc;
-pub const struct_AudioHardwareIOProcStreamUsage = extern struct {
-    mIOProc: ?*c_void,
-    mNumberStreams: UInt32,
-    mStreamIsOn: [1]UInt32,
-};
-pub const AudioHardwareIOProcStreamUsage = struct_AudioHardwareIOProcStreamUsage;
-pub const kAudioDeviceStartTimeIsInputFlag = @enumToInt(enum_unnamed_216.kAudioDeviceStartTimeIsInputFlag);
-pub const kAudioDeviceStartTimeDontConsultDeviceFlag = @enumToInt(enum_unnamed_216.kAudioDeviceStartTimeDontConsultDeviceFlag);
-pub const kAudioDeviceStartTimeDontConsultHALFlag = @enumToInt(enum_unnamed_216.kAudioDeviceStartTimeDontConsultHALFlag);
-const enum_unnamed_216 = extern enum(c_int) {
-    kAudioDeviceStartTimeIsInputFlag = 1,
-    kAudioDeviceStartTimeDontConsultDeviceFlag = 2,
-    kAudioDeviceStartTimeDontConsultHALFlag = 4,
-    _,
-};
-pub const kAudioDevicePropertyPlugIn = @enumToInt(enum_unnamed_217.kAudioDevicePropertyPlugIn);
-pub const kAudioDevicePropertyDeviceHasChanged = @enumToInt(enum_unnamed_217.kAudioDevicePropertyDeviceHasChanged);
-pub const kAudioDevicePropertyDeviceIsRunningSomewhere = @enumToInt(enum_unnamed_217.kAudioDevicePropertyDeviceIsRunningSomewhere);
-pub const kAudioDeviceProcessorOverload = @enumToInt(enum_unnamed_217.kAudioDeviceProcessorOverload);
-pub const kAudioDevicePropertyIOStoppedAbnormally = @enumToInt(enum_unnamed_217.kAudioDevicePropertyIOStoppedAbnormally);
-pub const kAudioDevicePropertyHogMode = @enumToInt(enum_unnamed_217.kAudioDevicePropertyHogMode);
-pub const kAudioDevicePropertyBufferFrameSize = @enumToInt(enum_unnamed_217.kAudioDevicePropertyBufferFrameSize);
-pub const kAudioDevicePropertyBufferFrameSizeRange = @enumToInt(enum_unnamed_217.kAudioDevicePropertyBufferFrameSizeRange);
-pub const kAudioDevicePropertyUsesVariableBufferFrameSizes = @enumToInt(enum_unnamed_217.kAudioDevicePropertyUsesVariableBufferFrameSizes);
-pub const kAudioDevicePropertyIOCycleUsage = @enumToInt(enum_unnamed_217.kAudioDevicePropertyIOCycleUsage);
-pub const kAudioDevicePropertyStreamConfiguration = @enumToInt(enum_unnamed_217.kAudioDevicePropertyStreamConfiguration);
-pub const kAudioDevicePropertyIOProcStreamUsage = @enumToInt(enum_unnamed_217.kAudioDevicePropertyIOProcStreamUsage);
-pub const kAudioDevicePropertyActualSampleRate = @enumToInt(enum_unnamed_217.kAudioDevicePropertyActualSampleRate);
-pub const kAudioDevicePropertyClockDevice = @enumToInt(enum_unnamed_217.kAudioDevicePropertyClockDevice);
-const enum_unnamed_217 = extern enum(c_int) {
-    kAudioDevicePropertyPlugIn = 1886156135,
-    kAudioDevicePropertyDeviceHasChanged = 1684629094,
-    kAudioDevicePropertyDeviceIsRunningSomewhere = 1735356005,
-    kAudioDeviceProcessorOverload = 1870030194,
-    kAudioDevicePropertyIOStoppedAbnormally = 1937010788,
-    kAudioDevicePropertyHogMode = 1869180523,
-    kAudioDevicePropertyBufferFrameSize = 1718839674,
-    kAudioDevicePropertyBufferFrameSizeRange = 1718843939,
-    kAudioDevicePropertyUsesVariableBufferFrameSizes = 1986425722,
-    kAudioDevicePropertyIOCycleUsage = 1852012899,
-    kAudioDevicePropertyStreamConfiguration = 1936482681,
-    kAudioDevicePropertyIOProcStreamUsage = 1937077093,
-    kAudioDevicePropertyActualSampleRate = 1634955892,
-    kAudioDevicePropertyClockDevice = 1634755428,
-    _,
-};
-pub const kAudioDevicePropertyJackIsConnected = @enumToInt(enum_unnamed_218.kAudioDevicePropertyJackIsConnected);
-pub const kAudioDevicePropertyVolumeScalar = @enumToInt(enum_unnamed_218.kAudioDevicePropertyVolumeScalar);
-pub const kAudioDevicePropertyVolumeDecibels = @enumToInt(enum_unnamed_218.kAudioDevicePropertyVolumeDecibels);
-pub const kAudioDevicePropertyVolumeRangeDecibels = @enumToInt(enum_unnamed_218.kAudioDevicePropertyVolumeRangeDecibels);
-pub const kAudioDevicePropertyVolumeScalarToDecibels = @enumToInt(enum_unnamed_218.kAudioDevicePropertyVolumeScalarToDecibels);
-pub const kAudioDevicePropertyVolumeDecibelsToScalar = @enumToInt(enum_unnamed_218.kAudioDevicePropertyVolumeDecibelsToScalar);
-pub const kAudioDevicePropertyStereoPan = @enumToInt(enum_unnamed_218.kAudioDevicePropertyStereoPan);
-pub const kAudioDevicePropertyStereoPanChannels = @enumToInt(enum_unnamed_218.kAudioDevicePropertyStereoPanChannels);
-pub const kAudioDevicePropertyMute = @enumToInt(enum_unnamed_218.kAudioDevicePropertyMute);
-pub const kAudioDevicePropertySolo = @enumToInt(enum_unnamed_218.kAudioDevicePropertySolo);
-pub const kAudioDevicePropertyPhantomPower = @enumToInt(enum_unnamed_218.kAudioDevicePropertyPhantomPower);
-pub const kAudioDevicePropertyPhaseInvert = @enumToInt(enum_unnamed_218.kAudioDevicePropertyPhaseInvert);
-pub const kAudioDevicePropertyClipLight = @enumToInt(enum_unnamed_218.kAudioDevicePropertyClipLight);
-pub const kAudioDevicePropertyTalkback = @enumToInt(enum_unnamed_218.kAudioDevicePropertyTalkback);
-pub const kAudioDevicePropertyListenback = @enumToInt(enum_unnamed_218.kAudioDevicePropertyListenback);
-pub const kAudioDevicePropertyDataSource = @enumToInt(enum_unnamed_218.kAudioDevicePropertyDataSource);
-pub const kAudioDevicePropertyDataSources = @enumToInt(enum_unnamed_218.kAudioDevicePropertyDataSources);
-pub const kAudioDevicePropertyDataSourceNameForIDCFString = @enumToInt(enum_unnamed_218.kAudioDevicePropertyDataSourceNameForIDCFString);
-pub const kAudioDevicePropertyDataSourceKindForID = @enumToInt(enum_unnamed_218.kAudioDevicePropertyDataSourceKindForID);
-pub const kAudioDevicePropertyClockSource = @enumToInt(enum_unnamed_218.kAudioDevicePropertyClockSource);
-pub const kAudioDevicePropertyClockSources = @enumToInt(enum_unnamed_218.kAudioDevicePropertyClockSources);
-pub const kAudioDevicePropertyClockSourceNameForIDCFString = @enumToInt(enum_unnamed_218.kAudioDevicePropertyClockSourceNameForIDCFString);
-pub const kAudioDevicePropertyClockSourceKindForID = @enumToInt(enum_unnamed_218.kAudioDevicePropertyClockSourceKindForID);
-pub const kAudioDevicePropertyPlayThru = @enumToInt(enum_unnamed_218.kAudioDevicePropertyPlayThru);
-pub const kAudioDevicePropertyPlayThruSolo = @enumToInt(enum_unnamed_218.kAudioDevicePropertyPlayThruSolo);
-pub const kAudioDevicePropertyPlayThruVolumeScalar = @enumToInt(enum_unnamed_218.kAudioDevicePropertyPlayThruVolumeScalar);
-pub const kAudioDevicePropertyPlayThruVolumeDecibels = @enumToInt(enum_unnamed_218.kAudioDevicePropertyPlayThruVolumeDecibels);
-pub const kAudioDevicePropertyPlayThruVolumeRangeDecibels = @enumToInt(enum_unnamed_218.kAudioDevicePropertyPlayThruVolumeRangeDecibels);
-pub const kAudioDevicePropertyPlayThruVolumeScalarToDecibels = @enumToInt(enum_unnamed_218.kAudioDevicePropertyPlayThruVolumeScalarToDecibels);
-pub const kAudioDevicePropertyPlayThruVolumeDecibelsToScalar = @enumToInt(enum_unnamed_218.kAudioDevicePropertyPlayThruVolumeDecibelsToScalar);
-pub const kAudioDevicePropertyPlayThruStereoPan = @enumToInt(enum_unnamed_218.kAudioDevicePropertyPlayThruStereoPan);
-pub const kAudioDevicePropertyPlayThruStereoPanChannels = @enumToInt(enum_unnamed_218.kAudioDevicePropertyPlayThruStereoPanChannels);
-pub const kAudioDevicePropertyPlayThruDestination = @enumToInt(enum_unnamed_218.kAudioDevicePropertyPlayThruDestination);
-pub const kAudioDevicePropertyPlayThruDestinations = @enumToInt(enum_unnamed_218.kAudioDevicePropertyPlayThruDestinations);
-pub const kAudioDevicePropertyPlayThruDestinationNameForIDCFString = @enumToInt(enum_unnamed_218.kAudioDevicePropertyPlayThruDestinationNameForIDCFString);
-pub const kAudioDevicePropertyChannelNominalLineLevel = @enumToInt(enum_unnamed_218.kAudioDevicePropertyChannelNominalLineLevel);
-pub const kAudioDevicePropertyChannelNominalLineLevels = @enumToInt(enum_unnamed_218.kAudioDevicePropertyChannelNominalLineLevels);
-pub const kAudioDevicePropertyChannelNominalLineLevelNameForIDCFString = @enumToInt(enum_unnamed_218.kAudioDevicePropertyChannelNominalLineLevelNameForIDCFString);
-pub const kAudioDevicePropertyHighPassFilterSetting = @enumToInt(enum_unnamed_218.kAudioDevicePropertyHighPassFilterSetting);
-pub const kAudioDevicePropertyHighPassFilterSettings = @enumToInt(enum_unnamed_218.kAudioDevicePropertyHighPassFilterSettings);
-pub const kAudioDevicePropertyHighPassFilterSettingNameForIDCFString = @enumToInt(enum_unnamed_218.kAudioDevicePropertyHighPassFilterSettingNameForIDCFString);
-pub const kAudioDevicePropertySubVolumeScalar = @enumToInt(enum_unnamed_218.kAudioDevicePropertySubVolumeScalar);
-pub const kAudioDevicePropertySubVolumeDecibels = @enumToInt(enum_unnamed_218.kAudioDevicePropertySubVolumeDecibels);
-pub const kAudioDevicePropertySubVolumeRangeDecibels = @enumToInt(enum_unnamed_218.kAudioDevicePropertySubVolumeRangeDecibels);
-pub const kAudioDevicePropertySubVolumeScalarToDecibels = @enumToInt(enum_unnamed_218.kAudioDevicePropertySubVolumeScalarToDecibels);
-pub const kAudioDevicePropertySubVolumeDecibelsToScalar = @enumToInt(enum_unnamed_218.kAudioDevicePropertySubVolumeDecibelsToScalar);
-pub const kAudioDevicePropertySubMute = @enumToInt(enum_unnamed_218.kAudioDevicePropertySubMute);
-const enum_unnamed_218 = extern enum(c_int) {
-    kAudioDevicePropertyJackIsConnected = 1784767339,
-    kAudioDevicePropertyVolumeScalar = 1987013741,
-    kAudioDevicePropertyVolumeDecibels = 1987013732,
-    kAudioDevicePropertyVolumeRangeDecibels = 1986290211,
-    kAudioDevicePropertyVolumeScalarToDecibels = 1983013986,
-    kAudioDevicePropertyVolumeDecibelsToScalar = 1684157046,
-    kAudioDevicePropertyStereoPan = 1936744814,
-    kAudioDevicePropertyStereoPanChannels = 1936748067,
-    kAudioDevicePropertyMute = 1836414053,
-    kAudioDevicePropertySolo = 1936682095,
-    kAudioDevicePropertyPhantomPower = 1885888878,
-    kAudioDevicePropertyPhaseInvert = 1885893481,
-    kAudioDevicePropertyClipLight = 1668049264,
-    kAudioDevicePropertyTalkback = 1952541794,
-    kAudioDevicePropertyListenback = 1819504226,
-    kAudioDevicePropertyDataSource = 1936945763,
-    kAudioDevicePropertyDataSources = 1936941859,
-    kAudioDevicePropertyDataSourceNameForIDCFString = 1819501422,
-    kAudioDevicePropertyDataSourceKindForID = 1936941931,
-    kAudioDevicePropertyClockSource = 1668510307,
-    kAudioDevicePropertyClockSources = 1668506403,
-    kAudioDevicePropertyClockSourceNameForIDCFString = 1818456942,
-    kAudioDevicePropertyClockSourceKindForID = 1668506475,
-    kAudioDevicePropertyPlayThru = 1953002101,
-    kAudioDevicePropertyPlayThruSolo = 1953002099,
-    kAudioDevicePropertyPlayThruVolumeScalar = 1836479331,
-    kAudioDevicePropertyPlayThruVolumeDecibels = 1836475490,
-    kAudioDevicePropertyPlayThruVolumeRangeDecibels = 1836475427,
-    kAudioDevicePropertyPlayThruVolumeScalarToDecibels = 1836462692,
-    kAudioDevicePropertyPlayThruVolumeDecibelsToScalar = 1836462707,
-    kAudioDevicePropertyPlayThruStereoPan = 1836281966,
-    kAudioDevicePropertyPlayThruStereoPanChannels = 1836281891,
-    kAudioDevicePropertyPlayThruDestination = 1835295859,
-    kAudioDevicePropertyPlayThruDestinations = 1835295779,
-    kAudioDevicePropertyPlayThruDestinationNameForIDCFString = 1835295843,
-    kAudioDevicePropertyChannelNominalLineLevel = 1852601964,
-    kAudioDevicePropertyChannelNominalLineLevels = 1852601891,
-    kAudioDevicePropertyChannelNominalLineLevelNameForIDCFString = 1818455660,
-    kAudioDevicePropertyHighPassFilterSetting = 1751740518,
-    kAudioDevicePropertyHighPassFilterSettings = 1751740451,
-    kAudioDevicePropertyHighPassFilterSettingNameForIDCFString = 1751740524,
-    kAudioDevicePropertySubVolumeScalar = 1937140845,
-    kAudioDevicePropertySubVolumeDecibels = 1937140836,
-    kAudioDevicePropertySubVolumeRangeDecibels = 1937138723,
-    kAudioDevicePropertySubVolumeScalarToDecibels = 1937125988,
-    kAudioDevicePropertySubVolumeDecibelsToScalar = 1935946358,
-    kAudioDevicePropertySubMute = 1936553332,
-    _,
-};
-pub extern fn AudioDeviceCreateIOProcID(inDevice: AudioObjectID, inProc: AudioDeviceIOProc, inClientData: ?*c_void, outIOProcID: [*c]AudioDeviceIOProcID) OSStatus;
-pub extern fn AudioDeviceCreateIOProcIDWithBlock(outIOProcID: [*c]AudioDeviceIOProcID, inDevice: AudioObjectID, inDispatchQueue: dispatch_queue_t, inIOBlock: AudioDeviceIOBlock) OSStatus;
-pub extern fn AudioDeviceDestroyIOProcID(inDevice: AudioObjectID, inIOProcID: AudioDeviceIOProcID) OSStatus;
-pub extern fn AudioDeviceStart(inDevice: AudioObjectID, inProcID: AudioDeviceIOProcID) OSStatus;
-pub extern fn AudioDeviceStartAtTime(inDevice: AudioObjectID, inProcID: AudioDeviceIOProcID, ioRequestedStartTime: [*c]AudioTimeStamp, inFlags: UInt32) OSStatus;
-pub extern fn AudioDeviceStop(inDevice: AudioObjectID, inProcID: AudioDeviceIOProcID) OSStatus;
-pub extern fn AudioDeviceGetCurrentTime(inDevice: AudioObjectID, outTime: [*c]AudioTimeStamp) OSStatus;
-pub extern fn AudioDeviceTranslateTime(inDevice: AudioObjectID, inTime: [*c]const AudioTimeStamp, outTime: [*c]AudioTimeStamp) OSStatus;
-pub extern fn AudioDeviceGetNearestStartTime(inDevice: AudioObjectID, ioRequestedStartTime: [*c]AudioTimeStamp, inFlags: UInt32) OSStatus;
-pub const kAudioAggregateDeviceClassID = @enumToInt(enum_unnamed_219.kAudioAggregateDeviceClassID);
-const enum_unnamed_219 = extern enum(c_int) {
-    kAudioAggregateDeviceClassID = 1633773415,
-    _,
-};
-pub const kAudioAggregateDevicePropertyFullSubDeviceList = @enumToInt(enum_unnamed_220.kAudioAggregateDevicePropertyFullSubDeviceList);
-pub const kAudioAggregateDevicePropertyActiveSubDeviceList = @enumToInt(enum_unnamed_220.kAudioAggregateDevicePropertyActiveSubDeviceList);
-pub const kAudioAggregateDevicePropertyComposition = @enumToInt(enum_unnamed_220.kAudioAggregateDevicePropertyComposition);
-pub const kAudioAggregateDevicePropertyMasterSubDevice = @enumToInt(enum_unnamed_220.kAudioAggregateDevicePropertyMasterSubDevice);
-pub const kAudioAggregateDevicePropertyClockDevice = @enumToInt(enum_unnamed_220.kAudioAggregateDevicePropertyClockDevice);
-const enum_unnamed_220 = extern enum(c_int) {
-    kAudioAggregateDevicePropertyFullSubDeviceList = 1735554416,
-    kAudioAggregateDevicePropertyActiveSubDeviceList = 1634169456,
-    kAudioAggregateDevicePropertyComposition = 1633906541,
-    kAudioAggregateDevicePropertyMasterSubDevice = 1634562932,
-    kAudioAggregateDevicePropertyClockDevice = 1634755428,
-    _,
-};
-pub const kAudioSubDeviceClassID = @enumToInt(enum_unnamed_221.kAudioSubDeviceClassID);
-const enum_unnamed_221 = extern enum(c_int) {
-    kAudioSubDeviceClassID = 1634956642,
-    _,
-};
-pub const kAudioSubDeviceDriftCompensationMinQuality = @enumToInt(enum_unnamed_222.kAudioSubDeviceDriftCompensationMinQuality);
-pub const kAudioSubDeviceDriftCompensationLowQuality = @enumToInt(enum_unnamed_222.kAudioSubDeviceDriftCompensationLowQuality);
-pub const kAudioSubDeviceDriftCompensationMediumQuality = @enumToInt(enum_unnamed_222.kAudioSubDeviceDriftCompensationMediumQuality);
-pub const kAudioSubDeviceDriftCompensationHighQuality = @enumToInt(enum_unnamed_222.kAudioSubDeviceDriftCompensationHighQuality);
-pub const kAudioSubDeviceDriftCompensationMaxQuality = @enumToInt(enum_unnamed_222.kAudioSubDeviceDriftCompensationMaxQuality);
-const enum_unnamed_222 = extern enum(c_int) {
-    kAudioSubDeviceDriftCompensationMinQuality = 0,
-    kAudioSubDeviceDriftCompensationLowQuality = 32,
-    kAudioSubDeviceDriftCompensationMediumQuality = 64,
-    kAudioSubDeviceDriftCompensationHighQuality = 96,
-    kAudioSubDeviceDriftCompensationMaxQuality = 127,
-    _,
-};
-pub const kAudioSubDevicePropertyExtraLatency = @enumToInt(enum_unnamed_223.kAudioSubDevicePropertyExtraLatency);
-pub const kAudioSubDevicePropertyDriftCompensation = @enumToInt(enum_unnamed_223.kAudioSubDevicePropertyDriftCompensation);
-pub const kAudioSubDevicePropertyDriftCompensationQuality = @enumToInt(enum_unnamed_223.kAudioSubDevicePropertyDriftCompensationQuality);
-const enum_unnamed_223 = extern enum(c_int) {
-    kAudioSubDevicePropertyExtraLatency = 2020373603,
-    kAudioSubDevicePropertyDriftCompensation = 1685218932,
-    kAudioSubDevicePropertyDriftCompensationQuality = 1685218929,
-    _,
-};
-pub const kAudioDevicePropertyScopeInput = @enumToInt(enum_unnamed_224.kAudioDevicePropertyScopeInput);
-pub const kAudioDevicePropertyScopeOutput = @enumToInt(enum_unnamed_224.kAudioDevicePropertyScopeOutput);
-pub const kAudioDevicePropertyScopePlayThrough = @enumToInt(enum_unnamed_224.kAudioDevicePropertyScopePlayThrough);
-const enum_unnamed_224 = extern enum(c_int) {
-    kAudioDevicePropertyScopeInput = 1768845428,
-    kAudioDevicePropertyScopeOutput = 1869968496,
-    kAudioDevicePropertyScopePlayThrough = 1886679669,
-    _,
-};
-pub const kAudioPropertyWildcardPropertyID = @enumToInt(enum_unnamed_225.kAudioPropertyWildcardPropertyID);
-const enum_unnamed_225 = extern enum(c_int) {
-    kAudioPropertyWildcardPropertyID = 707406378,
-    _,
-};
-pub const kAudioPropertyWildcardSection = @enumToInt(enum_unnamed_226.kAudioPropertyWildcardSection);
-const enum_unnamed_226 = extern enum(c_int) {
-    kAudioPropertyWildcardSection = 255,
-    _,
-};
-pub const kAudioPropertyWildcardChannel = @enumToInt(enum_unnamed_227.kAudioPropertyWildcardChannel);
-const enum_unnamed_227 = extern enum(c_int) {
-    kAudioPropertyWildcardChannel = 4294967295,
-    _,
-};
-pub const kAudioISubOwnerControlClassID = @enumToInt(enum_unnamed_228.kAudioISubOwnerControlClassID);
-const enum_unnamed_228 = extern enum(c_int) {
-    kAudioISubOwnerControlClassID = 1635017576,
-    _,
-};
-pub const kAudioLevelControlPropertyDecibelsToScalarTransferFunction = @enumToInt(enum_unnamed_229.kAudioLevelControlPropertyDecibelsToScalarTransferFunction);
-const enum_unnamed_229 = extern enum(c_int) {
-    kAudioLevelControlPropertyDecibelsToScalarTransferFunction = 1818457190,
-    _,
-};
-pub const AudioLevelControlTransferFunction = UInt32;
-pub const kAudioLevelControlTranferFunctionLinear = @enumToInt(enum_unnamed_230.kAudioLevelControlTranferFunctionLinear);
-pub const kAudioLevelControlTranferFunction1Over3 = @enumToInt(enum_unnamed_230.kAudioLevelControlTranferFunction1Over3);
-pub const kAudioLevelControlTranferFunction1Over2 = @enumToInt(enum_unnamed_230.kAudioLevelControlTranferFunction1Over2);
-pub const kAudioLevelControlTranferFunction3Over4 = @enumToInt(enum_unnamed_230.kAudioLevelControlTranferFunction3Over4);
-pub const kAudioLevelControlTranferFunction3Over2 = @enumToInt(enum_unnamed_230.kAudioLevelControlTranferFunction3Over2);
-pub const kAudioLevelControlTranferFunction2Over1 = @enumToInt(enum_unnamed_230.kAudioLevelControlTranferFunction2Over1);
-pub const kAudioLevelControlTranferFunction3Over1 = @enumToInt(enum_unnamed_230.kAudioLevelControlTranferFunction3Over1);
-pub const kAudioLevelControlTranferFunction4Over1 = @enumToInt(enum_unnamed_230.kAudioLevelControlTranferFunction4Over1);
-pub const kAudioLevelControlTranferFunction5Over1 = @enumToInt(enum_unnamed_230.kAudioLevelControlTranferFunction5Over1);
-pub const kAudioLevelControlTranferFunction6Over1 = @enumToInt(enum_unnamed_230.kAudioLevelControlTranferFunction6Over1);
-pub const kAudioLevelControlTranferFunction7Over1 = @enumToInt(enum_unnamed_230.kAudioLevelControlTranferFunction7Over1);
-pub const kAudioLevelControlTranferFunction8Over1 = @enumToInt(enum_unnamed_230.kAudioLevelControlTranferFunction8Over1);
-pub const kAudioLevelControlTranferFunction9Over1 = @enumToInt(enum_unnamed_230.kAudioLevelControlTranferFunction9Over1);
-pub const kAudioLevelControlTranferFunction10Over1 = @enumToInt(enum_unnamed_230.kAudioLevelControlTranferFunction10Over1);
-pub const kAudioLevelControlTranferFunction11Over1 = @enumToInt(enum_unnamed_230.kAudioLevelControlTranferFunction11Over1);
-pub const kAudioLevelControlTranferFunction12Over1 = @enumToInt(enum_unnamed_230.kAudioLevelControlTranferFunction12Over1);
-const enum_unnamed_230 = extern enum(c_int) {
-    kAudioLevelControlTranferFunctionLinear = 0,
-    kAudioLevelControlTranferFunction1Over3 = 1,
-    kAudioLevelControlTranferFunction1Over2 = 2,
-    kAudioLevelControlTranferFunction3Over4 = 3,
-    kAudioLevelControlTranferFunction3Over2 = 4,
-    kAudioLevelControlTranferFunction2Over1 = 5,
-    kAudioLevelControlTranferFunction3Over1 = 6,
-    kAudioLevelControlTranferFunction4Over1 = 7,
-    kAudioLevelControlTranferFunction5Over1 = 8,
-    kAudioLevelControlTranferFunction6Over1 = 9,
-    kAudioLevelControlTranferFunction7Over1 = 10,
-    kAudioLevelControlTranferFunction8Over1 = 11,
-    kAudioLevelControlTranferFunction9Over1 = 12,
-    kAudioLevelControlTranferFunction10Over1 = 13,
-    kAudioLevelControlTranferFunction11Over1 = 14,
-    kAudioLevelControlTranferFunction12Over1 = 15,
-    _,
-};
-pub const AudioHardwarePropertyID = AudioObjectPropertySelector;
-pub const AudioHardwarePropertyListenerProc = ?fn (AudioHardwarePropertyID, ?*c_void) callconv(.C) OSStatus;
-pub const kAudioHardwarePropertyRunLoop = @enumToInt(enum_unnamed_231.kAudioHardwarePropertyRunLoop);
-pub const kAudioHardwarePropertyDeviceForUID = @enumToInt(enum_unnamed_231.kAudioHardwarePropertyDeviceForUID);
-pub const kAudioHardwarePropertyPlugInForBundleID = @enumToInt(enum_unnamed_231.kAudioHardwarePropertyPlugInForBundleID);
-const enum_unnamed_231 = extern enum(c_int) {
-    kAudioHardwarePropertyRunLoop = 1919839344,
-    kAudioHardwarePropertyDeviceForUID = 1685416292,
-    kAudioHardwarePropertyPlugInForBundleID = 1885954665,
-    _,
-};
-pub const kAudioHardwarePropertyBootChimeVolumeScalar = @enumToInt(enum_unnamed_232.kAudioHardwarePropertyBootChimeVolumeScalar);
-pub const kAudioHardwarePropertyBootChimeVolumeDecibels = @enumToInt(enum_unnamed_232.kAudioHardwarePropertyBootChimeVolumeDecibels);
-pub const kAudioHardwarePropertyBootChimeVolumeRangeDecibels = @enumToInt(enum_unnamed_232.kAudioHardwarePropertyBootChimeVolumeRangeDecibels);
-pub const kAudioHardwarePropertyBootChimeVolumeScalarToDecibels = @enumToInt(enum_unnamed_232.kAudioHardwarePropertyBootChimeVolumeScalarToDecibels);
-pub const kAudioHardwarePropertyBootChimeVolumeDecibelsToScalar = @enumToInt(enum_unnamed_232.kAudioHardwarePropertyBootChimeVolumeDecibelsToScalar);
-pub const kAudioHardwarePropertyBootChimeVolumeDecibelsToScalarTransferFunction = @enumToInt(enum_unnamed_232.kAudioHardwarePropertyBootChimeVolumeDecibelsToScalarTransferFunction);
-const enum_unnamed_232 = extern enum(c_int) {
-    kAudioHardwarePropertyBootChimeVolumeScalar = 1650620019,
-    kAudioHardwarePropertyBootChimeVolumeDecibels = 1650620004,
-    kAudioHardwarePropertyBootChimeVolumeRangeDecibels = 1650615331,
-    kAudioHardwarePropertyBootChimeVolumeScalarToDecibels = 1651913316,
-    kAudioHardwarePropertyBootChimeVolumeDecibelsToScalar = 1650733686,
-    kAudioHardwarePropertyBootChimeVolumeDecibelsToScalarTransferFunction = 1651930214,
-    _,
-};
-pub extern fn AudioHardwareAddRunLoopSource(inRunLoopSource: CFRunLoopSourceRef) OSStatus;
-pub extern fn AudioHardwareRemoveRunLoopSource(inRunLoopSource: CFRunLoopSourceRef) OSStatus;
-pub extern fn AudioHardwareGetPropertyInfo(inPropertyID: AudioHardwarePropertyID, outSize: [*c]UInt32, outWritable: [*c]Boolean) OSStatus;
-pub extern fn AudioHardwareGetProperty(inPropertyID: AudioHardwarePropertyID, ioPropertyDataSize: [*c]UInt32, outPropertyData: ?*c_void) OSStatus;
-pub extern fn AudioHardwareSetProperty(inPropertyID: AudioHardwarePropertyID, inPropertyDataSize: UInt32, inPropertyData: ?*const c_void) OSStatus;
-pub extern fn AudioHardwareAddPropertyListener(inPropertyID: AudioHardwarePropertyID, inProc: AudioHardwarePropertyListenerProc, inClientData: ?*c_void) OSStatus;
-pub extern fn AudioHardwareRemovePropertyListener(inPropertyID: AudioHardwarePropertyID, inProc: AudioHardwarePropertyListenerProc) OSStatus;
-pub const AudioDeviceID = AudioObjectID;
-pub const AudioDevicePropertyID = AudioObjectPropertySelector;
-pub const AudioDevicePropertyListenerProc = ?fn (AudioDeviceID, UInt32, Boolean, AudioDevicePropertyID, ?*c_void) callconv(.C) OSStatus;
-pub const kAudioDeviceUnknown = @enumToInt(enum_unnamed_233.kAudioDeviceUnknown);
-const enum_unnamed_233 = extern enum(c_int) {
-    kAudioDeviceUnknown = 0,
-    _,
-};
-pub const kAudioDeviceTransportTypeAutoAggregate = @enumToInt(enum_unnamed_234.kAudioDeviceTransportTypeAutoAggregate);
-const enum_unnamed_234 = extern enum(c_int) {
-    kAudioDeviceTransportTypeAutoAggregate = 1718055536,
-    _,
-};
-pub const kAudioDevicePropertyVolumeDecibelsToScalarTransferFunction = @enumToInt(enum_unnamed_235.kAudioDevicePropertyVolumeDecibelsToScalarTransferFunction);
-pub const kAudioDevicePropertyPlayThruVolumeDecibelsToScalarTransferFunction = @enumToInt(enum_unnamed_235.kAudioDevicePropertyPlayThruVolumeDecibelsToScalarTransferFunction);
-pub const kAudioDevicePropertyDriverShouldOwniSub = @enumToInt(enum_unnamed_235.kAudioDevicePropertyDriverShouldOwniSub);
-pub const kAudioDevicePropertySubVolumeDecibelsToScalarTransferFunction = @enumToInt(enum_unnamed_235.kAudioDevicePropertySubVolumeDecibelsToScalarTransferFunction);
-const enum_unnamed_235 = extern enum(c_int) {
-    kAudioDevicePropertyVolumeDecibelsToScalarTransferFunction = 1986229350,
-    kAudioDevicePropertyPlayThruVolumeDecibelsToScalarTransferFunction = 1836479590,
-    kAudioDevicePropertyDriverShouldOwniSub = 1769174370,
-    kAudioDevicePropertySubVolumeDecibelsToScalarTransferFunction = 1937142886,
-    _,
-};
-pub const kAudioDevicePropertyDeviceName = @enumToInt(enum_unnamed_236.kAudioDevicePropertyDeviceName);
-pub const kAudioDevicePropertyDeviceNameCFString = @enumToInt(enum_unnamed_236.kAudioDevicePropertyDeviceNameCFString);
-pub const kAudioDevicePropertyDeviceManufacturer = @enumToInt(enum_unnamed_236.kAudioDevicePropertyDeviceManufacturer);
-pub const kAudioDevicePropertyDeviceManufacturerCFString = @enumToInt(enum_unnamed_236.kAudioDevicePropertyDeviceManufacturerCFString);
-pub const kAudioDevicePropertyRegisterBufferList = @enumToInt(enum_unnamed_236.kAudioDevicePropertyRegisterBufferList);
-pub const kAudioDevicePropertyBufferSize = @enumToInt(enum_unnamed_236.kAudioDevicePropertyBufferSize);
-pub const kAudioDevicePropertyBufferSizeRange = @enumToInt(enum_unnamed_236.kAudioDevicePropertyBufferSizeRange);
-pub const kAudioDevicePropertyChannelName = @enumToInt(enum_unnamed_236.kAudioDevicePropertyChannelName);
-pub const kAudioDevicePropertyChannelNameCFString = @enumToInt(enum_unnamed_236.kAudioDevicePropertyChannelNameCFString);
-pub const kAudioDevicePropertyChannelCategoryName = @enumToInt(enum_unnamed_236.kAudioDevicePropertyChannelCategoryName);
-pub const kAudioDevicePropertyChannelCategoryNameCFString = @enumToInt(enum_unnamed_236.kAudioDevicePropertyChannelCategoryNameCFString);
-pub const kAudioDevicePropertyChannelNumberName = @enumToInt(enum_unnamed_236.kAudioDevicePropertyChannelNumberName);
-pub const kAudioDevicePropertyChannelNumberNameCFString = @enumToInt(enum_unnamed_236.kAudioDevicePropertyChannelNumberNameCFString);
-pub const kAudioDevicePropertySupportsMixing = @enumToInt(enum_unnamed_236.kAudioDevicePropertySupportsMixing);
-pub const kAudioDevicePropertyStreamFormat = @enumToInt(enum_unnamed_236.kAudioDevicePropertyStreamFormat);
-pub const kAudioDevicePropertyStreamFormats = @enumToInt(enum_unnamed_236.kAudioDevicePropertyStreamFormats);
-pub const kAudioDevicePropertyStreamFormatSupported = @enumToInt(enum_unnamed_236.kAudioDevicePropertyStreamFormatSupported);
-pub const kAudioDevicePropertyStreamFormatMatch = @enumToInt(enum_unnamed_236.kAudioDevicePropertyStreamFormatMatch);
-pub const kAudioDevicePropertyDataSourceNameForID = @enumToInt(enum_unnamed_236.kAudioDevicePropertyDataSourceNameForID);
-pub const kAudioDevicePropertyClockSourceNameForID = @enumToInt(enum_unnamed_236.kAudioDevicePropertyClockSourceNameForID);
-pub const kAudioDevicePropertyPlayThruDestinationNameForID = @enumToInt(enum_unnamed_236.kAudioDevicePropertyPlayThruDestinationNameForID);
-pub const kAudioDevicePropertyChannelNominalLineLevelNameForID = @enumToInt(enum_unnamed_236.kAudioDevicePropertyChannelNominalLineLevelNameForID);
-pub const kAudioDevicePropertyHighPassFilterSettingNameForID = @enumToInt(enum_unnamed_236.kAudioDevicePropertyHighPassFilterSettingNameForID);
-const enum_unnamed_236 = extern enum(c_int) {
-    kAudioDevicePropertyDeviceName = 1851878757,
-    kAudioDevicePropertyDeviceNameCFString = 1819173229,
-    kAudioDevicePropertyDeviceManufacturer = 1835101042,
-    kAudioDevicePropertyDeviceManufacturerCFString = 1819107691,
-    kAudioDevicePropertyRegisterBufferList = 1919055206,
-    kAudioDevicePropertyBufferSize = 1651730810,
-    kAudioDevicePropertyBufferSizeRange = 1651735075,
-    kAudioDevicePropertyChannelName = 1667788397,
-    kAudioDevicePropertyChannelNameCFString = 1818454126,
-    kAudioDevicePropertyChannelCategoryName = 1667460717,
-    kAudioDevicePropertyChannelCategoryNameCFString = 1818452846,
-    kAudioDevicePropertyChannelNumberName = 1668181613,
-    kAudioDevicePropertyChannelNumberNameCFString = 1818455662,
-    kAudioDevicePropertySupportsMixing = 1835628607,
-    kAudioDevicePropertyStreamFormat = 1936092532,
-    kAudioDevicePropertyStreamFormats = 1936092451,
-    kAudioDevicePropertyStreamFormatSupported = 1936092479,
-    kAudioDevicePropertyStreamFormatMatch = 1936092525,
-    kAudioDevicePropertyDataSourceNameForID = 1936941934,
-    kAudioDevicePropertyClockSourceNameForID = 1668506478,
-    kAudioDevicePropertyPlayThruDestinationNameForID = 1835295854,
-    kAudioDevicePropertyChannelNominalLineLevelNameForID = 1668181110,
-    kAudioDevicePropertyHighPassFilterSettingNameForID = 1667787120,
-    _,
-};
-pub extern fn AudioDeviceAddIOProc(inDevice: AudioDeviceID, inProc: AudioDeviceIOProc, inClientData: ?*c_void) OSStatus;
-pub extern fn AudioDeviceRemoveIOProc(inDevice: AudioDeviceID, inProc: AudioDeviceIOProc) OSStatus;
-pub extern fn AudioDeviceRead(inDevice: AudioDeviceID, inStartTime: [*c]const AudioTimeStamp, outData: [*c]AudioBufferList) OSStatus;
-pub extern fn AudioDeviceGetPropertyInfo(inDevice: AudioDeviceID, inChannel: UInt32, isInput: Boolean, inPropertyID: AudioDevicePropertyID, outSize: [*c]UInt32, outWritable: [*c]Boolean) OSStatus;
-pub extern fn AudioDeviceGetProperty(inDevice: AudioDeviceID, inChannel: UInt32, isInput: Boolean, inPropertyID: AudioDevicePropertyID, ioPropertyDataSize: [*c]UInt32, outPropertyData: ?*c_void) OSStatus;
-pub extern fn AudioDeviceSetProperty(inDevice: AudioDeviceID, inWhen: [*c]const AudioTimeStamp, inChannel: UInt32, isInput: Boolean, inPropertyID: AudioDevicePropertyID, inPropertyDataSize: UInt32, inPropertyData: ?*const c_void) OSStatus;
-pub extern fn AudioDeviceAddPropertyListener(inDevice: AudioDeviceID, inChannel: UInt32, isInput: Boolean, inPropertyID: AudioDevicePropertyID, inProc: AudioDevicePropertyListenerProc, inClientData: ?*c_void) OSStatus;
-pub extern fn AudioDeviceRemovePropertyListener(inDevice: AudioDeviceID, inChannel: UInt32, isInput: Boolean, inPropertyID: AudioDevicePropertyID, inProc: AudioDevicePropertyListenerProc) OSStatus;
-pub const AudioStreamID = AudioObjectID;
-pub const AudioStreamPropertyListenerProc = ?fn (AudioStreamID, UInt32, AudioDevicePropertyID, ?*c_void) callconv(.C) OSStatus;
-pub const kAudioStreamUnknown = @enumToInt(enum_unnamed_237.kAudioStreamUnknown);
-const enum_unnamed_237 = extern enum(c_int) {
-    kAudioStreamUnknown = 0,
-    _,
-};
-pub const kAudioStreamPropertyOwningDevice = @enumToInt(enum_unnamed_238.kAudioStreamPropertyOwningDevice);
-pub const kAudioStreamPropertyPhysicalFormats = @enumToInt(enum_unnamed_238.kAudioStreamPropertyPhysicalFormats);
-pub const kAudioStreamPropertyPhysicalFormatSupported = @enumToInt(enum_unnamed_238.kAudioStreamPropertyPhysicalFormatSupported);
-pub const kAudioStreamPropertyPhysicalFormatMatch = @enumToInt(enum_unnamed_238.kAudioStreamPropertyPhysicalFormatMatch);
-const enum_unnamed_238 = extern enum(c_int) {
-    kAudioStreamPropertyOwningDevice = 1937007734,
-    kAudioStreamPropertyPhysicalFormats = 1885762595,
-    kAudioStreamPropertyPhysicalFormatSupported = 1885762623,
-    kAudioStreamPropertyPhysicalFormatMatch = 1885762669,
-    _,
-};
-pub extern fn AudioStreamGetPropertyInfo(inStream: AudioStreamID, inChannel: UInt32, inPropertyID: AudioDevicePropertyID, outSize: [*c]UInt32, outWritable: [*c]Boolean) OSStatus;
-pub extern fn AudioStreamGetProperty(inStream: AudioStreamID, inChannel: UInt32, inPropertyID: AudioDevicePropertyID, ioPropertyDataSize: [*c]UInt32, outPropertyData: ?*c_void) OSStatus;
-pub extern fn AudioStreamSetProperty(inStream: AudioStreamID, inWhen: [*c]const AudioTimeStamp, inChannel: UInt32, inPropertyID: AudioDevicePropertyID, inPropertyDataSize: UInt32, inPropertyData: ?*const c_void) OSStatus;
-pub extern fn AudioStreamAddPropertyListener(inStream: AudioStreamID, inChannel: UInt32, inPropertyID: AudioDevicePropertyID, inProc: AudioStreamPropertyListenerProc, inClientData: ?*c_void) OSStatus;
-pub extern fn AudioStreamRemovePropertyListener(inStream: AudioStreamID, inChannel: UInt32, inPropertyID: AudioDevicePropertyID, inProc: AudioStreamPropertyListenerProc) OSStatus;
-pub const kAudioBootChimeVolumeControlClassID = @enumToInt(enum_unnamed_239.kAudioBootChimeVolumeControlClassID);
-const enum_unnamed_239 = extern enum(c_int) {
-    kAudioBootChimeVolumeControlClassID = 1886544237,
-    _,
-};
-pub const kAudioControlPropertyVariant = @enumToInt(enum_unnamed_240.kAudioControlPropertyVariant);
-const enum_unnamed_240 = extern enum(c_int) {
-    kAudioControlPropertyVariant = 1668702578,
-    _,
-};
-pub const kAudioClockSourceControlPropertyItemKind = @enumToInt(enum_unnamed_241.kAudioClockSourceControlPropertyItemKind);
-const enum_unnamed_241 = extern enum(c_int) {
-    kAudioClockSourceControlPropertyItemKind = 1668049771,
-    _,
-};
-pub extern fn AudioGetCurrentHostTime() UInt64;
-pub extern fn AudioGetHostClockFrequency() Float64;
-pub extern fn AudioGetHostClockMinimumTimeDelta() UInt32;
-pub extern fn AudioConvertHostTimeToNanos(inHostTime: UInt64) UInt64;
-pub extern fn AudioConvertNanosToHostTime(inNanos: UInt64) UInt64;
 pub const AudioComponentFlags = UInt32;
-pub const kAudioComponentFlag_Unsearchable = @enumToInt(enum_unnamed_242.kAudioComponentFlag_Unsearchable);
-pub const kAudioComponentFlag_SandboxSafe = @enumToInt(enum_unnamed_242.kAudioComponentFlag_SandboxSafe);
-pub const kAudioComponentFlag_IsV3AudioUnit = @enumToInt(enum_unnamed_242.kAudioComponentFlag_IsV3AudioUnit);
-pub const kAudioComponentFlag_RequiresAsyncInstantiation = @enumToInt(enum_unnamed_242.kAudioComponentFlag_RequiresAsyncInstantiation);
-pub const kAudioComponentFlag_CanLoadInProcess = @enumToInt(enum_unnamed_242.kAudioComponentFlag_CanLoadInProcess);
-const enum_unnamed_242 = extern enum(c_int) {
+pub const kAudioComponentFlag_Unsearchable = @enumToInt(enum_unnamed_169.kAudioComponentFlag_Unsearchable);
+pub const kAudioComponentFlag_SandboxSafe = @enumToInt(enum_unnamed_169.kAudioComponentFlag_SandboxSafe);
+pub const kAudioComponentFlag_IsV3AudioUnit = @enumToInt(enum_unnamed_169.kAudioComponentFlag_IsV3AudioUnit);
+pub const kAudioComponentFlag_RequiresAsyncInstantiation = @enumToInt(enum_unnamed_169.kAudioComponentFlag_RequiresAsyncInstantiation);
+pub const kAudioComponentFlag_CanLoadInProcess = @enumToInt(enum_unnamed_169.kAudioComponentFlag_CanLoadInProcess);
+const enum_unnamed_169 = extern enum(c_int) {
     kAudioComponentFlag_Unsearchable = 1,
     kAudioComponentFlag_SandboxSafe = 2,
     kAudioComponentFlag_IsV3AudioUnit = 4,
@@ -8085,9 +7071,9 @@ const enum_unnamed_242 = extern enum(c_int) {
     _,
 };
 pub const AudioComponentInstantiationOptions = UInt32;
-pub const kAudioComponentInstantiation_LoadOutOfProcess = @enumToInt(enum_unnamed_243.kAudioComponentInstantiation_LoadOutOfProcess);
-pub const kAudioComponentInstantiation_LoadInProcess = @enumToInt(enum_unnamed_243.kAudioComponentInstantiation_LoadInProcess);
-const enum_unnamed_243 = extern enum(c_int) {
+pub const kAudioComponentInstantiation_LoadOutOfProcess = @enumToInt(enum_unnamed_170.kAudioComponentInstantiation_LoadOutOfProcess);
+pub const kAudioComponentInstantiation_LoadInProcess = @enumToInt(enum_unnamed_170.kAudioComponentInstantiation_LoadInProcess);
+const enum_unnamed_170 = extern enum(c_int) {
     kAudioComponentInstantiation_LoadOutOfProcess = 1,
     kAudioComponentInstantiation_LoadInProcess = 2,
     _,
@@ -8126,13 +7112,13 @@ pub extern fn AudioComponentInstanceCanDo(inInstance: AudioComponentInstance, in
 pub extern fn AudioComponentRegister(inDesc: [*c]const AudioComponentDescription, inName: CFStringRef, inVersion: UInt32, inFactory: AudioComponentFactoryFunction) AudioComponent;
 pub extern fn AudioComponentCopyConfigurationInfo(inComponent: AudioComponent, outConfigurationInfo: [*c]CFDictionaryRef) OSStatus;
 pub const AudioComponentValidationResult = UInt32;
-pub const kAudioComponentValidationResult_Unknown = @enumToInt(enum_unnamed_244.kAudioComponentValidationResult_Unknown);
-pub const kAudioComponentValidationResult_Passed = @enumToInt(enum_unnamed_244.kAudioComponentValidationResult_Passed);
-pub const kAudioComponentValidationResult_Failed = @enumToInt(enum_unnamed_244.kAudioComponentValidationResult_Failed);
-pub const kAudioComponentValidationResult_TimedOut = @enumToInt(enum_unnamed_244.kAudioComponentValidationResult_TimedOut);
-pub const kAudioComponentValidationResult_UnauthorizedError_Open = @enumToInt(enum_unnamed_244.kAudioComponentValidationResult_UnauthorizedError_Open);
-pub const kAudioComponentValidationResult_UnauthorizedError_Init = @enumToInt(enum_unnamed_244.kAudioComponentValidationResult_UnauthorizedError_Init);
-const enum_unnamed_244 = extern enum(c_int) {
+pub const kAudioComponentValidationResult_Unknown = @enumToInt(enum_unnamed_171.kAudioComponentValidationResult_Unknown);
+pub const kAudioComponentValidationResult_Passed = @enumToInt(enum_unnamed_171.kAudioComponentValidationResult_Passed);
+pub const kAudioComponentValidationResult_Failed = @enumToInt(enum_unnamed_171.kAudioComponentValidationResult_Failed);
+pub const kAudioComponentValidationResult_TimedOut = @enumToInt(enum_unnamed_171.kAudioComponentValidationResult_TimedOut);
+pub const kAudioComponentValidationResult_UnauthorizedError_Open = @enumToInt(enum_unnamed_171.kAudioComponentValidationResult_UnauthorizedError_Open);
+pub const kAudioComponentValidationResult_UnauthorizedError_Init = @enumToInt(enum_unnamed_171.kAudioComponentValidationResult_UnauthorizedError_Init);
+const enum_unnamed_171 = extern enum(c_int) {
     kAudioComponentValidationResult_Unknown = 0,
     kAudioComponentValidationResult_Passed = 1,
     kAudioComponentValidationResult_Failed = 2,
@@ -8149,30 +7135,30 @@ pub const struct_AudioCodecMagicCookieInfo = extern struct {
     mMagicCookie: ?*const c_void,
 };
 pub const AudioCodecMagicCookieInfo = struct_AudioCodecMagicCookieInfo;
-pub const kAudioDecoderComponentType = @enumToInt(enum_unnamed_245.kAudioDecoderComponentType);
-pub const kAudioEncoderComponentType = @enumToInt(enum_unnamed_245.kAudioEncoderComponentType);
-pub const kAudioUnityCodecComponentType = @enumToInt(enum_unnamed_245.kAudioUnityCodecComponentType);
-const enum_unnamed_245 = extern enum(c_int) {
+pub const kAudioDecoderComponentType = @enumToInt(enum_unnamed_172.kAudioDecoderComponentType);
+pub const kAudioEncoderComponentType = @enumToInt(enum_unnamed_172.kAudioEncoderComponentType);
+pub const kAudioUnityCodecComponentType = @enumToInt(enum_unnamed_172.kAudioUnityCodecComponentType);
+const enum_unnamed_172 = extern enum(c_int) {
     kAudioDecoderComponentType = 1633969507,
     kAudioEncoderComponentType = 1634037347,
     kAudioUnityCodecComponentType = 1633903715,
     _,
 };
-pub const kAudioCodecPropertySupportedInputFormats = @enumToInt(enum_unnamed_246.kAudioCodecPropertySupportedInputFormats);
-pub const kAudioCodecPropertySupportedOutputFormats = @enumToInt(enum_unnamed_246.kAudioCodecPropertySupportedOutputFormats);
-pub const kAudioCodecPropertyAvailableInputSampleRates = @enumToInt(enum_unnamed_246.kAudioCodecPropertyAvailableInputSampleRates);
-pub const kAudioCodecPropertyAvailableOutputSampleRates = @enumToInt(enum_unnamed_246.kAudioCodecPropertyAvailableOutputSampleRates);
-pub const kAudioCodecPropertyAvailableBitRateRange = @enumToInt(enum_unnamed_246.kAudioCodecPropertyAvailableBitRateRange);
-pub const kAudioCodecPropertyMinimumNumberInputPackets = @enumToInt(enum_unnamed_246.kAudioCodecPropertyMinimumNumberInputPackets);
-pub const kAudioCodecPropertyMinimumNumberOutputPackets = @enumToInt(enum_unnamed_246.kAudioCodecPropertyMinimumNumberOutputPackets);
-pub const kAudioCodecPropertyAvailableNumberChannels = @enumToInt(enum_unnamed_246.kAudioCodecPropertyAvailableNumberChannels);
-pub const kAudioCodecPropertyDoesSampleRateConversion = @enumToInt(enum_unnamed_246.kAudioCodecPropertyDoesSampleRateConversion);
-pub const kAudioCodecPropertyAvailableInputChannelLayoutTags = @enumToInt(enum_unnamed_246.kAudioCodecPropertyAvailableInputChannelLayoutTags);
-pub const kAudioCodecPropertyAvailableOutputChannelLayoutTags = @enumToInt(enum_unnamed_246.kAudioCodecPropertyAvailableOutputChannelLayoutTags);
-pub const kAudioCodecPropertyInputFormatsForOutputFormat = @enumToInt(enum_unnamed_246.kAudioCodecPropertyInputFormatsForOutputFormat);
-pub const kAudioCodecPropertyOutputFormatsForInputFormat = @enumToInt(enum_unnamed_246.kAudioCodecPropertyOutputFormatsForInputFormat);
-pub const kAudioCodecPropertyFormatInfo = @enumToInt(enum_unnamed_246.kAudioCodecPropertyFormatInfo);
-const enum_unnamed_246 = extern enum(c_int) {
+pub const kAudioCodecPropertySupportedInputFormats = @enumToInt(enum_unnamed_173.kAudioCodecPropertySupportedInputFormats);
+pub const kAudioCodecPropertySupportedOutputFormats = @enumToInt(enum_unnamed_173.kAudioCodecPropertySupportedOutputFormats);
+pub const kAudioCodecPropertyAvailableInputSampleRates = @enumToInt(enum_unnamed_173.kAudioCodecPropertyAvailableInputSampleRates);
+pub const kAudioCodecPropertyAvailableOutputSampleRates = @enumToInt(enum_unnamed_173.kAudioCodecPropertyAvailableOutputSampleRates);
+pub const kAudioCodecPropertyAvailableBitRateRange = @enumToInt(enum_unnamed_173.kAudioCodecPropertyAvailableBitRateRange);
+pub const kAudioCodecPropertyMinimumNumberInputPackets = @enumToInt(enum_unnamed_173.kAudioCodecPropertyMinimumNumberInputPackets);
+pub const kAudioCodecPropertyMinimumNumberOutputPackets = @enumToInt(enum_unnamed_173.kAudioCodecPropertyMinimumNumberOutputPackets);
+pub const kAudioCodecPropertyAvailableNumberChannels = @enumToInt(enum_unnamed_173.kAudioCodecPropertyAvailableNumberChannels);
+pub const kAudioCodecPropertyDoesSampleRateConversion = @enumToInt(enum_unnamed_173.kAudioCodecPropertyDoesSampleRateConversion);
+pub const kAudioCodecPropertyAvailableInputChannelLayoutTags = @enumToInt(enum_unnamed_173.kAudioCodecPropertyAvailableInputChannelLayoutTags);
+pub const kAudioCodecPropertyAvailableOutputChannelLayoutTags = @enumToInt(enum_unnamed_173.kAudioCodecPropertyAvailableOutputChannelLayoutTags);
+pub const kAudioCodecPropertyInputFormatsForOutputFormat = @enumToInt(enum_unnamed_173.kAudioCodecPropertyInputFormatsForOutputFormat);
+pub const kAudioCodecPropertyOutputFormatsForInputFormat = @enumToInt(enum_unnamed_173.kAudioCodecPropertyOutputFormatsForInputFormat);
+pub const kAudioCodecPropertyFormatInfo = @enumToInt(enum_unnamed_173.kAudioCodecPropertyFormatInfo);
+const enum_unnamed_173 = extern enum(c_int) {
     kAudioCodecPropertySupportedInputFormats = 1768320291,
     kAudioCodecPropertySupportedOutputFormats = 1868983587,
     kAudioCodecPropertyAvailableInputSampleRates = 1634300786,
@@ -8189,41 +7175,41 @@ const enum_unnamed_246 = extern enum(c_int) {
     kAudioCodecPropertyFormatInfo = 1633904233,
     _,
 };
-pub const kAudioCodecPropertyInputBufferSize = @enumToInt(enum_unnamed_247.kAudioCodecPropertyInputBufferSize);
-pub const kAudioCodecPropertyPacketFrameSize = @enumToInt(enum_unnamed_247.kAudioCodecPropertyPacketFrameSize);
-pub const kAudioCodecPropertyHasVariablePacketByteSizes = @enumToInt(enum_unnamed_247.kAudioCodecPropertyHasVariablePacketByteSizes);
-pub const kAudioCodecPropertyEmploysDependentPackets = @enumToInt(enum_unnamed_247.kAudioCodecPropertyEmploysDependentPackets);
-pub const kAudioCodecPropertyMaximumPacketByteSize = @enumToInt(enum_unnamed_247.kAudioCodecPropertyMaximumPacketByteSize);
-pub const kAudioCodecPropertyPacketSizeLimitForVBR = @enumToInt(enum_unnamed_247.kAudioCodecPropertyPacketSizeLimitForVBR);
-pub const kAudioCodecPropertyCurrentInputFormat = @enumToInt(enum_unnamed_247.kAudioCodecPropertyCurrentInputFormat);
-pub const kAudioCodecPropertyCurrentOutputFormat = @enumToInt(enum_unnamed_247.kAudioCodecPropertyCurrentOutputFormat);
-pub const kAudioCodecPropertyMagicCookie = @enumToInt(enum_unnamed_247.kAudioCodecPropertyMagicCookie);
-pub const kAudioCodecPropertyUsedInputBufferSize = @enumToInt(enum_unnamed_247.kAudioCodecPropertyUsedInputBufferSize);
-pub const kAudioCodecPropertyIsInitialized = @enumToInt(enum_unnamed_247.kAudioCodecPropertyIsInitialized);
-pub const kAudioCodecPropertyCurrentTargetBitRate = @enumToInt(enum_unnamed_247.kAudioCodecPropertyCurrentTargetBitRate);
-pub const kAudioCodecPropertyCurrentInputSampleRate = @enumToInt(enum_unnamed_247.kAudioCodecPropertyCurrentInputSampleRate);
-pub const kAudioCodecPropertyCurrentOutputSampleRate = @enumToInt(enum_unnamed_247.kAudioCodecPropertyCurrentOutputSampleRate);
-pub const kAudioCodecPropertyQualitySetting = @enumToInt(enum_unnamed_247.kAudioCodecPropertyQualitySetting);
-pub const kAudioCodecPropertyApplicableBitRateRange = @enumToInt(enum_unnamed_247.kAudioCodecPropertyApplicableBitRateRange);
-pub const kAudioCodecPropertyRecommendedBitRateRange = @enumToInt(enum_unnamed_247.kAudioCodecPropertyRecommendedBitRateRange);
-pub const kAudioCodecPropertyApplicableInputSampleRates = @enumToInt(enum_unnamed_247.kAudioCodecPropertyApplicableInputSampleRates);
-pub const kAudioCodecPropertyApplicableOutputSampleRates = @enumToInt(enum_unnamed_247.kAudioCodecPropertyApplicableOutputSampleRates);
-pub const kAudioCodecPropertyPaddedZeros = @enumToInt(enum_unnamed_247.kAudioCodecPropertyPaddedZeros);
-pub const kAudioCodecPropertyPrimeMethod = @enumToInt(enum_unnamed_247.kAudioCodecPropertyPrimeMethod);
-pub const kAudioCodecPropertyPrimeInfo = @enumToInt(enum_unnamed_247.kAudioCodecPropertyPrimeInfo);
-pub const kAudioCodecPropertyCurrentInputChannelLayout = @enumToInt(enum_unnamed_247.kAudioCodecPropertyCurrentInputChannelLayout);
-pub const kAudioCodecPropertyCurrentOutputChannelLayout = @enumToInt(enum_unnamed_247.kAudioCodecPropertyCurrentOutputChannelLayout);
-pub const kAudioCodecPropertySettings = @enumToInt(enum_unnamed_247.kAudioCodecPropertySettings);
-pub const kAudioCodecPropertyFormatList = @enumToInt(enum_unnamed_247.kAudioCodecPropertyFormatList);
-pub const kAudioCodecPropertyBitRateControlMode = @enumToInt(enum_unnamed_247.kAudioCodecPropertyBitRateControlMode);
-pub const kAudioCodecPropertySoundQualityForVBR = @enumToInt(enum_unnamed_247.kAudioCodecPropertySoundQualityForVBR);
-pub const kAudioCodecPropertyBitRateForVBR = @enumToInt(enum_unnamed_247.kAudioCodecPropertyBitRateForVBR);
-pub const kAudioCodecPropertyDelayMode = @enumToInt(enum_unnamed_247.kAudioCodecPropertyDelayMode);
-pub const kAudioCodecPropertyAdjustLocalQuality = @enumToInt(enum_unnamed_247.kAudioCodecPropertyAdjustLocalQuality);
-pub const kAudioCodecPropertyProgramTargetLevel = @enumToInt(enum_unnamed_247.kAudioCodecPropertyProgramTargetLevel);
-pub const kAudioCodecPropertyDynamicRangeControlMode = @enumToInt(enum_unnamed_247.kAudioCodecPropertyDynamicRangeControlMode);
-pub const kAudioCodecPropertyProgramTargetLevelConstant = @enumToInt(enum_unnamed_247.kAudioCodecPropertyProgramTargetLevelConstant);
-const enum_unnamed_247 = extern enum(c_int) {
+pub const kAudioCodecPropertyInputBufferSize = @enumToInt(enum_unnamed_174.kAudioCodecPropertyInputBufferSize);
+pub const kAudioCodecPropertyPacketFrameSize = @enumToInt(enum_unnamed_174.kAudioCodecPropertyPacketFrameSize);
+pub const kAudioCodecPropertyHasVariablePacketByteSizes = @enumToInt(enum_unnamed_174.kAudioCodecPropertyHasVariablePacketByteSizes);
+pub const kAudioCodecPropertyEmploysDependentPackets = @enumToInt(enum_unnamed_174.kAudioCodecPropertyEmploysDependentPackets);
+pub const kAudioCodecPropertyMaximumPacketByteSize = @enumToInt(enum_unnamed_174.kAudioCodecPropertyMaximumPacketByteSize);
+pub const kAudioCodecPropertyPacketSizeLimitForVBR = @enumToInt(enum_unnamed_174.kAudioCodecPropertyPacketSizeLimitForVBR);
+pub const kAudioCodecPropertyCurrentInputFormat = @enumToInt(enum_unnamed_174.kAudioCodecPropertyCurrentInputFormat);
+pub const kAudioCodecPropertyCurrentOutputFormat = @enumToInt(enum_unnamed_174.kAudioCodecPropertyCurrentOutputFormat);
+pub const kAudioCodecPropertyMagicCookie = @enumToInt(enum_unnamed_174.kAudioCodecPropertyMagicCookie);
+pub const kAudioCodecPropertyUsedInputBufferSize = @enumToInt(enum_unnamed_174.kAudioCodecPropertyUsedInputBufferSize);
+pub const kAudioCodecPropertyIsInitialized = @enumToInt(enum_unnamed_174.kAudioCodecPropertyIsInitialized);
+pub const kAudioCodecPropertyCurrentTargetBitRate = @enumToInt(enum_unnamed_174.kAudioCodecPropertyCurrentTargetBitRate);
+pub const kAudioCodecPropertyCurrentInputSampleRate = @enumToInt(enum_unnamed_174.kAudioCodecPropertyCurrentInputSampleRate);
+pub const kAudioCodecPropertyCurrentOutputSampleRate = @enumToInt(enum_unnamed_174.kAudioCodecPropertyCurrentOutputSampleRate);
+pub const kAudioCodecPropertyQualitySetting = @enumToInt(enum_unnamed_174.kAudioCodecPropertyQualitySetting);
+pub const kAudioCodecPropertyApplicableBitRateRange = @enumToInt(enum_unnamed_174.kAudioCodecPropertyApplicableBitRateRange);
+pub const kAudioCodecPropertyRecommendedBitRateRange = @enumToInt(enum_unnamed_174.kAudioCodecPropertyRecommendedBitRateRange);
+pub const kAudioCodecPropertyApplicableInputSampleRates = @enumToInt(enum_unnamed_174.kAudioCodecPropertyApplicableInputSampleRates);
+pub const kAudioCodecPropertyApplicableOutputSampleRates = @enumToInt(enum_unnamed_174.kAudioCodecPropertyApplicableOutputSampleRates);
+pub const kAudioCodecPropertyPaddedZeros = @enumToInt(enum_unnamed_174.kAudioCodecPropertyPaddedZeros);
+pub const kAudioCodecPropertyPrimeMethod = @enumToInt(enum_unnamed_174.kAudioCodecPropertyPrimeMethod);
+pub const kAudioCodecPropertyPrimeInfo = @enumToInt(enum_unnamed_174.kAudioCodecPropertyPrimeInfo);
+pub const kAudioCodecPropertyCurrentInputChannelLayout = @enumToInt(enum_unnamed_174.kAudioCodecPropertyCurrentInputChannelLayout);
+pub const kAudioCodecPropertyCurrentOutputChannelLayout = @enumToInt(enum_unnamed_174.kAudioCodecPropertyCurrentOutputChannelLayout);
+pub const kAudioCodecPropertySettings = @enumToInt(enum_unnamed_174.kAudioCodecPropertySettings);
+pub const kAudioCodecPropertyFormatList = @enumToInt(enum_unnamed_174.kAudioCodecPropertyFormatList);
+pub const kAudioCodecPropertyBitRateControlMode = @enumToInt(enum_unnamed_174.kAudioCodecPropertyBitRateControlMode);
+pub const kAudioCodecPropertySoundQualityForVBR = @enumToInt(enum_unnamed_174.kAudioCodecPropertySoundQualityForVBR);
+pub const kAudioCodecPropertyBitRateForVBR = @enumToInt(enum_unnamed_174.kAudioCodecPropertyBitRateForVBR);
+pub const kAudioCodecPropertyDelayMode = @enumToInt(enum_unnamed_174.kAudioCodecPropertyDelayMode);
+pub const kAudioCodecPropertyAdjustLocalQuality = @enumToInt(enum_unnamed_174.kAudioCodecPropertyAdjustLocalQuality);
+pub const kAudioCodecPropertyProgramTargetLevel = @enumToInt(enum_unnamed_174.kAudioCodecPropertyProgramTargetLevel);
+pub const kAudioCodecPropertyDynamicRangeControlMode = @enumToInt(enum_unnamed_174.kAudioCodecPropertyDynamicRangeControlMode);
+pub const kAudioCodecPropertyProgramTargetLevelConstant = @enumToInt(enum_unnamed_174.kAudioCodecPropertyProgramTargetLevelConstant);
+const enum_unnamed_174 = extern enum(c_int) {
     kAudioCodecPropertyInputBufferSize = 1952609638,
     kAudioCodecPropertyPacketFrameSize = 1885432678,
     kAudioCodecPropertyHasVariablePacketByteSizes = 1987078975,
@@ -8260,12 +7246,12 @@ const enum_unnamed_247 = extern enum(c_int) {
     kAudioCodecPropertyProgramTargetLevelConstant = 1886678115,
     _,
 };
-pub const kAudioCodecQuality_Max = @enumToInt(enum_unnamed_248.kAudioCodecQuality_Max);
-pub const kAudioCodecQuality_High = @enumToInt(enum_unnamed_248.kAudioCodecQuality_High);
-pub const kAudioCodecQuality_Medium = @enumToInt(enum_unnamed_248.kAudioCodecQuality_Medium);
-pub const kAudioCodecQuality_Low = @enumToInt(enum_unnamed_248.kAudioCodecQuality_Low);
-pub const kAudioCodecQuality_Min = @enumToInt(enum_unnamed_248.kAudioCodecQuality_Min);
-const enum_unnamed_248 = extern enum(c_int) {
+pub const kAudioCodecQuality_Max = @enumToInt(enum_unnamed_175.kAudioCodecQuality_Max);
+pub const kAudioCodecQuality_High = @enumToInt(enum_unnamed_175.kAudioCodecQuality_High);
+pub const kAudioCodecQuality_Medium = @enumToInt(enum_unnamed_175.kAudioCodecQuality_Medium);
+pub const kAudioCodecQuality_Low = @enumToInt(enum_unnamed_175.kAudioCodecQuality_Low);
+pub const kAudioCodecQuality_Min = @enumToInt(enum_unnamed_175.kAudioCodecQuality_Min);
+const enum_unnamed_175 = extern enum(c_int) {
     kAudioCodecQuality_Max = 127,
     kAudioCodecQuality_High = 96,
     kAudioCodecQuality_Medium = 64,
@@ -8273,50 +7259,50 @@ const enum_unnamed_248 = extern enum(c_int) {
     kAudioCodecQuality_Min = 0,
     _,
 };
-pub const kAudioCodecPrimeMethod_Pre = @enumToInt(enum_unnamed_249.kAudioCodecPrimeMethod_Pre);
-pub const kAudioCodecPrimeMethod_Normal = @enumToInt(enum_unnamed_249.kAudioCodecPrimeMethod_Normal);
-pub const kAudioCodecPrimeMethod_None = @enumToInt(enum_unnamed_249.kAudioCodecPrimeMethod_None);
-const enum_unnamed_249 = extern enum(c_int) {
+pub const kAudioCodecPrimeMethod_Pre = @enumToInt(enum_unnamed_176.kAudioCodecPrimeMethod_Pre);
+pub const kAudioCodecPrimeMethod_Normal = @enumToInt(enum_unnamed_176.kAudioCodecPrimeMethod_Normal);
+pub const kAudioCodecPrimeMethod_None = @enumToInt(enum_unnamed_176.kAudioCodecPrimeMethod_None);
+const enum_unnamed_176 = extern enum(c_int) {
     kAudioCodecPrimeMethod_Pre = 0,
     kAudioCodecPrimeMethod_Normal = 1,
     kAudioCodecPrimeMethod_None = 2,
     _,
 };
-pub const kAudioCodecBitRateControlMode_Constant = @enumToInt(enum_unnamed_250.kAudioCodecBitRateControlMode_Constant);
-pub const kAudioCodecBitRateControlMode_LongTermAverage = @enumToInt(enum_unnamed_250.kAudioCodecBitRateControlMode_LongTermAverage);
-pub const kAudioCodecBitRateControlMode_VariableConstrained = @enumToInt(enum_unnamed_250.kAudioCodecBitRateControlMode_VariableConstrained);
-pub const kAudioCodecBitRateControlMode_Variable = @enumToInt(enum_unnamed_250.kAudioCodecBitRateControlMode_Variable);
-const enum_unnamed_250 = extern enum(c_int) {
+pub const kAudioCodecBitRateControlMode_Constant = @enumToInt(enum_unnamed_177.kAudioCodecBitRateControlMode_Constant);
+pub const kAudioCodecBitRateControlMode_LongTermAverage = @enumToInt(enum_unnamed_177.kAudioCodecBitRateControlMode_LongTermAverage);
+pub const kAudioCodecBitRateControlMode_VariableConstrained = @enumToInt(enum_unnamed_177.kAudioCodecBitRateControlMode_VariableConstrained);
+pub const kAudioCodecBitRateControlMode_Variable = @enumToInt(enum_unnamed_177.kAudioCodecBitRateControlMode_Variable);
+const enum_unnamed_177 = extern enum(c_int) {
     kAudioCodecBitRateControlMode_Constant = 0,
     kAudioCodecBitRateControlMode_LongTermAverage = 1,
     kAudioCodecBitRateControlMode_VariableConstrained = 2,
     kAudioCodecBitRateControlMode_Variable = 3,
     _,
 };
-pub const kAudioCodecDelayMode_Compatibility = @enumToInt(enum_unnamed_251.kAudioCodecDelayMode_Compatibility);
-pub const kAudioCodecDelayMode_Minimum = @enumToInt(enum_unnamed_251.kAudioCodecDelayMode_Minimum);
-pub const kAudioCodecDelayMode_Optimal = @enumToInt(enum_unnamed_251.kAudioCodecDelayMode_Optimal);
-const enum_unnamed_251 = extern enum(c_int) {
+pub const kAudioCodecDelayMode_Compatibility = @enumToInt(enum_unnamed_178.kAudioCodecDelayMode_Compatibility);
+pub const kAudioCodecDelayMode_Minimum = @enumToInt(enum_unnamed_178.kAudioCodecDelayMode_Minimum);
+pub const kAudioCodecDelayMode_Optimal = @enumToInt(enum_unnamed_178.kAudioCodecDelayMode_Optimal);
+const enum_unnamed_178 = extern enum(c_int) {
     kAudioCodecDelayMode_Compatibility = 0,
     kAudioCodecDelayMode_Minimum = 1,
     kAudioCodecDelayMode_Optimal = 2,
     _,
 };
-pub const kProgramTargetLevel_None = @enumToInt(enum_unnamed_252.kProgramTargetLevel_None);
-pub const kProgramTargetLevel_Minus31dB = @enumToInt(enum_unnamed_252.kProgramTargetLevel_Minus31dB);
-pub const kProgramTargetLevel_Minus23dB = @enumToInt(enum_unnamed_252.kProgramTargetLevel_Minus23dB);
-pub const kProgramTargetLevel_Minus20dB = @enumToInt(enum_unnamed_252.kProgramTargetLevel_Minus20dB);
-const enum_unnamed_252 = extern enum(c_int) {
+pub const kProgramTargetLevel_None = @enumToInt(enum_unnamed_179.kProgramTargetLevel_None);
+pub const kProgramTargetLevel_Minus31dB = @enumToInt(enum_unnamed_179.kProgramTargetLevel_Minus31dB);
+pub const kProgramTargetLevel_Minus23dB = @enumToInt(enum_unnamed_179.kProgramTargetLevel_Minus23dB);
+pub const kProgramTargetLevel_Minus20dB = @enumToInt(enum_unnamed_179.kProgramTargetLevel_Minus20dB);
+const enum_unnamed_179 = extern enum(c_int) {
     kProgramTargetLevel_None = 0,
     kProgramTargetLevel_Minus31dB = 1,
     kProgramTargetLevel_Minus23dB = 2,
     kProgramTargetLevel_Minus20dB = 3,
     _,
 };
-pub const kDynamicRangeControlMode_None = @enumToInt(enum_unnamed_253.kDynamicRangeControlMode_None);
-pub const kDynamicRangeControlMode_Light = @enumToInt(enum_unnamed_253.kDynamicRangeControlMode_Light);
-pub const kDynamicRangeControlMode_Heavy = @enumToInt(enum_unnamed_253.kDynamicRangeControlMode_Heavy);
-const enum_unnamed_253 = extern enum(c_int) {
+pub const kDynamicRangeControlMode_None = @enumToInt(enum_unnamed_180.kDynamicRangeControlMode_None);
+pub const kDynamicRangeControlMode_Light = @enumToInt(enum_unnamed_180.kDynamicRangeControlMode_Light);
+pub const kDynamicRangeControlMode_Heavy = @enumToInt(enum_unnamed_180.kDynamicRangeControlMode_Heavy);
+const enum_unnamed_180 = extern enum(c_int) {
     kDynamicRangeControlMode_None = 0,
     kDynamicRangeControlMode_Light = 1,
     kDynamicRangeControlMode_Heavy = 2,
@@ -8328,23 +7314,23 @@ pub const struct_AudioCodecPrimeInfo = extern struct {
 };
 pub const AudioCodecPrimeInfo = struct_AudioCodecPrimeInfo;
 pub const AudioSettingsFlags = UInt32;
-pub const kAudioSettingsFlags_ExpertParameter = @enumToInt(enum_unnamed_254.kAudioSettingsFlags_ExpertParameter);
-pub const kAudioSettingsFlags_InvisibleParameter = @enumToInt(enum_unnamed_254.kAudioSettingsFlags_InvisibleParameter);
-pub const kAudioSettingsFlags_MetaParameter = @enumToInt(enum_unnamed_254.kAudioSettingsFlags_MetaParameter);
-pub const kAudioSettingsFlags_UserInterfaceParameter = @enumToInt(enum_unnamed_254.kAudioSettingsFlags_UserInterfaceParameter);
-const enum_unnamed_254 = extern enum(c_int) {
+pub const kAudioSettingsFlags_ExpertParameter = @enumToInt(enum_unnamed_181.kAudioSettingsFlags_ExpertParameter);
+pub const kAudioSettingsFlags_InvisibleParameter = @enumToInt(enum_unnamed_181.kAudioSettingsFlags_InvisibleParameter);
+pub const kAudioSettingsFlags_MetaParameter = @enumToInt(enum_unnamed_181.kAudioSettingsFlags_MetaParameter);
+pub const kAudioSettingsFlags_UserInterfaceParameter = @enumToInt(enum_unnamed_181.kAudioSettingsFlags_UserInterfaceParameter);
+const enum_unnamed_181 = extern enum(c_int) {
     kAudioSettingsFlags_ExpertParameter = 1,
     kAudioSettingsFlags_InvisibleParameter = 2,
     kAudioSettingsFlags_MetaParameter = 4,
     kAudioSettingsFlags_UserInterfaceParameter = 8,
     _,
 };
-pub const kAudioCodecProduceOutputPacketFailure = @enumToInt(enum_unnamed_255.kAudioCodecProduceOutputPacketFailure);
-pub const kAudioCodecProduceOutputPacketSuccess = @enumToInt(enum_unnamed_255.kAudioCodecProduceOutputPacketSuccess);
-pub const kAudioCodecProduceOutputPacketSuccessHasMore = @enumToInt(enum_unnamed_255.kAudioCodecProduceOutputPacketSuccessHasMore);
-pub const kAudioCodecProduceOutputPacketNeedsMoreInputData = @enumToInt(enum_unnamed_255.kAudioCodecProduceOutputPacketNeedsMoreInputData);
-pub const kAudioCodecProduceOutputPacketAtEOF = @enumToInt(enum_unnamed_255.kAudioCodecProduceOutputPacketAtEOF);
-const enum_unnamed_255 = extern enum(c_int) {
+pub const kAudioCodecProduceOutputPacketFailure = @enumToInt(enum_unnamed_182.kAudioCodecProduceOutputPacketFailure);
+pub const kAudioCodecProduceOutputPacketSuccess = @enumToInt(enum_unnamed_182.kAudioCodecProduceOutputPacketSuccess);
+pub const kAudioCodecProduceOutputPacketSuccessHasMore = @enumToInt(enum_unnamed_182.kAudioCodecProduceOutputPacketSuccessHasMore);
+pub const kAudioCodecProduceOutputPacketNeedsMoreInputData = @enumToInt(enum_unnamed_182.kAudioCodecProduceOutputPacketNeedsMoreInputData);
+pub const kAudioCodecProduceOutputPacketAtEOF = @enumToInt(enum_unnamed_182.kAudioCodecProduceOutputPacketAtEOF);
+const enum_unnamed_182 = extern enum(c_int) {
     kAudioCodecProduceOutputPacketFailure = 1,
     kAudioCodecProduceOutputPacketSuccess = 2,
     kAudioCodecProduceOutputPacketSuccessHasMore = 3,
@@ -8352,17 +7338,17 @@ const enum_unnamed_255 = extern enum(c_int) {
     kAudioCodecProduceOutputPacketAtEOF = 5,
     _,
 };
-pub const kAudioCodecGetPropertyInfoSelect = @enumToInt(enum_unnamed_256.kAudioCodecGetPropertyInfoSelect);
-pub const kAudioCodecGetPropertySelect = @enumToInt(enum_unnamed_256.kAudioCodecGetPropertySelect);
-pub const kAudioCodecSetPropertySelect = @enumToInt(enum_unnamed_256.kAudioCodecSetPropertySelect);
-pub const kAudioCodecInitializeSelect = @enumToInt(enum_unnamed_256.kAudioCodecInitializeSelect);
-pub const kAudioCodecUninitializeSelect = @enumToInt(enum_unnamed_256.kAudioCodecUninitializeSelect);
-pub const kAudioCodecAppendInputDataSelect = @enumToInt(enum_unnamed_256.kAudioCodecAppendInputDataSelect);
-pub const kAudioCodecProduceOutputDataSelect = @enumToInt(enum_unnamed_256.kAudioCodecProduceOutputDataSelect);
-pub const kAudioCodecResetSelect = @enumToInt(enum_unnamed_256.kAudioCodecResetSelect);
-pub const kAudioCodecAppendInputBufferListSelect = @enumToInt(enum_unnamed_256.kAudioCodecAppendInputBufferListSelect);
-pub const kAudioCodecProduceOutputBufferListSelect = @enumToInt(enum_unnamed_256.kAudioCodecProduceOutputBufferListSelect);
-const enum_unnamed_256 = extern enum(c_int) {
+pub const kAudioCodecGetPropertyInfoSelect = @enumToInt(enum_unnamed_183.kAudioCodecGetPropertyInfoSelect);
+pub const kAudioCodecGetPropertySelect = @enumToInt(enum_unnamed_183.kAudioCodecGetPropertySelect);
+pub const kAudioCodecSetPropertySelect = @enumToInt(enum_unnamed_183.kAudioCodecSetPropertySelect);
+pub const kAudioCodecInitializeSelect = @enumToInt(enum_unnamed_183.kAudioCodecInitializeSelect);
+pub const kAudioCodecUninitializeSelect = @enumToInt(enum_unnamed_183.kAudioCodecUninitializeSelect);
+pub const kAudioCodecAppendInputDataSelect = @enumToInt(enum_unnamed_183.kAudioCodecAppendInputDataSelect);
+pub const kAudioCodecProduceOutputDataSelect = @enumToInt(enum_unnamed_183.kAudioCodecProduceOutputDataSelect);
+pub const kAudioCodecResetSelect = @enumToInt(enum_unnamed_183.kAudioCodecResetSelect);
+pub const kAudioCodecAppendInputBufferListSelect = @enumToInt(enum_unnamed_183.kAudioCodecAppendInputBufferListSelect);
+pub const kAudioCodecProduceOutputBufferListSelect = @enumToInt(enum_unnamed_183.kAudioCodecProduceOutputBufferListSelect);
+const enum_unnamed_183 = extern enum(c_int) {
     kAudioCodecGetPropertyInfoSelect = 1,
     kAudioCodecGetPropertySelect = 2,
     kAudioCodecSetPropertySelect = 3,
@@ -8375,16 +7361,16 @@ const enum_unnamed_256 = extern enum(c_int) {
     kAudioCodecProduceOutputBufferListSelect = 10,
     _,
 };
-pub const kAudioCodecNoError = @enumToInt(enum_unnamed_257.kAudioCodecNoError);
-pub const kAudioCodecUnspecifiedError = @enumToInt(enum_unnamed_257.kAudioCodecUnspecifiedError);
-pub const kAudioCodecUnknownPropertyError = @enumToInt(enum_unnamed_257.kAudioCodecUnknownPropertyError);
-pub const kAudioCodecBadPropertySizeError = @enumToInt(enum_unnamed_257.kAudioCodecBadPropertySizeError);
-pub const kAudioCodecIllegalOperationError = @enumToInt(enum_unnamed_257.kAudioCodecIllegalOperationError);
-pub const kAudioCodecUnsupportedFormatError = @enumToInt(enum_unnamed_257.kAudioCodecUnsupportedFormatError);
-pub const kAudioCodecStateError = @enumToInt(enum_unnamed_257.kAudioCodecStateError);
-pub const kAudioCodecNotEnoughBufferSpaceError = @enumToInt(enum_unnamed_257.kAudioCodecNotEnoughBufferSpaceError);
-pub const kAudioCodecBadDataError = @enumToInt(enum_unnamed_257.kAudioCodecBadDataError);
-const enum_unnamed_257 = extern enum(c_int) {
+pub const kAudioCodecNoError = @enumToInt(enum_unnamed_184.kAudioCodecNoError);
+pub const kAudioCodecUnspecifiedError = @enumToInt(enum_unnamed_184.kAudioCodecUnspecifiedError);
+pub const kAudioCodecUnknownPropertyError = @enumToInt(enum_unnamed_184.kAudioCodecUnknownPropertyError);
+pub const kAudioCodecBadPropertySizeError = @enumToInt(enum_unnamed_184.kAudioCodecBadPropertySizeError);
+pub const kAudioCodecIllegalOperationError = @enumToInt(enum_unnamed_184.kAudioCodecIllegalOperationError);
+pub const kAudioCodecUnsupportedFormatError = @enumToInt(enum_unnamed_184.kAudioCodecUnsupportedFormatError);
+pub const kAudioCodecStateError = @enumToInt(enum_unnamed_184.kAudioCodecStateError);
+pub const kAudioCodecNotEnoughBufferSpaceError = @enumToInt(enum_unnamed_184.kAudioCodecNotEnoughBufferSpaceError);
+pub const kAudioCodecBadDataError = @enumToInt(enum_unnamed_184.kAudioCodecBadDataError);
+const enum_unnamed_184 = extern enum(c_int) {
     kAudioCodecNoError = 0,
     kAudioCodecUnspecifiedError = 2003329396,
     kAudioCodecUnknownPropertyError = 2003332927,
@@ -8416,35 +7402,35 @@ pub const AudioCodecProduceOutputPacketsProc = ?fn (?*c_void, ?*c_void, [*c]UInt
 pub const AudioCodecResetProc = ?fn (?*c_void) callconv(.C) OSStatus;
 pub const AudioCodecAppendInputBufferListProc = ?fn (?*c_void, [*c]const AudioBufferList, [*c]UInt32, [*c]const AudioStreamPacketDescription, [*c]UInt32) callconv(.C) OSStatus;
 pub const AudioCodecProduceOutputBufferListProc = ?fn (?*c_void, [*c]AudioBufferList, [*c]UInt32, [*c]AudioStreamPacketDescription, [*c]UInt32) callconv(.C) OSStatus;
-pub const kAudioCodecPropertyMinimumDelayMode = @enumToInt(enum_unnamed_258.kAudioCodecPropertyMinimumDelayMode);
-const enum_unnamed_258 = extern enum(c_int) {
+pub const kAudioCodecPropertyMinimumDelayMode = @enumToInt(enum_unnamed_185.kAudioCodecPropertyMinimumDelayMode);
+const enum_unnamed_185 = extern enum(c_int) {
     kAudioCodecPropertyMinimumDelayMode = 1835296108,
     _,
 };
-pub const kAudioCodecPropertyNameCFString = @enumToInt(enum_unnamed_259.kAudioCodecPropertyNameCFString);
-pub const kAudioCodecPropertyManufacturerCFString = @enumToInt(enum_unnamed_259.kAudioCodecPropertyManufacturerCFString);
-pub const kAudioCodecPropertyFormatCFString = @enumToInt(enum_unnamed_259.kAudioCodecPropertyFormatCFString);
-const enum_unnamed_259 = extern enum(c_int) {
+pub const kAudioCodecPropertyNameCFString = @enumToInt(enum_unnamed_186.kAudioCodecPropertyNameCFString);
+pub const kAudioCodecPropertyManufacturerCFString = @enumToInt(enum_unnamed_186.kAudioCodecPropertyManufacturerCFString);
+pub const kAudioCodecPropertyFormatCFString = @enumToInt(enum_unnamed_186.kAudioCodecPropertyFormatCFString);
+const enum_unnamed_186 = extern enum(c_int) {
     kAudioCodecPropertyNameCFString = 1819173229,
     kAudioCodecPropertyManufacturerCFString = 1819107691,
     kAudioCodecPropertyFormatCFString = 1818652530,
     _,
 };
-pub const kAudioCodecPropertyRequiresPacketDescription = @enumToInt(enum_unnamed_260.kAudioCodecPropertyRequiresPacketDescription);
-pub const kAudioCodecPropertyAvailableBitRates = @enumToInt(enum_unnamed_260.kAudioCodecPropertyAvailableBitRates);
-pub const kAudioCodecExtendFrequencies = @enumToInt(enum_unnamed_260.kAudioCodecExtendFrequencies);
-pub const kAudioCodecUseRecommendedSampleRate = @enumToInt(enum_unnamed_260.kAudioCodecUseRecommendedSampleRate);
-pub const kAudioCodecOutputPrecedence = @enumToInt(enum_unnamed_260.kAudioCodecOutputPrecedence);
-pub const kAudioCodecBitRateFormat = @enumToInt(enum_unnamed_260.kAudioCodecBitRateFormat);
-pub const kAudioCodecDoesSampleRateConversion = @enumToInt(enum_unnamed_260.kAudioCodecDoesSampleRateConversion);
-pub const kAudioCodecInputFormatsForOutputFormat = @enumToInt(enum_unnamed_260.kAudioCodecInputFormatsForOutputFormat);
-pub const kAudioCodecOutputFormatsForInputFormat = @enumToInt(enum_unnamed_260.kAudioCodecOutputFormatsForInputFormat);
-pub const kAudioCodecPropertyInputChannelLayout = @enumToInt(enum_unnamed_260.kAudioCodecPropertyInputChannelLayout);
-pub const kAudioCodecPropertyOutputChannelLayout = @enumToInt(enum_unnamed_260.kAudioCodecPropertyOutputChannelLayout);
-pub const kAudioCodecPropertyAvailableInputChannelLayouts = @enumToInt(enum_unnamed_260.kAudioCodecPropertyAvailableInputChannelLayouts);
-pub const kAudioCodecPropertyAvailableOutputChannelLayouts = @enumToInt(enum_unnamed_260.kAudioCodecPropertyAvailableOutputChannelLayouts);
-pub const kAudioCodecPropertyZeroFramesPadded = @enumToInt(enum_unnamed_260.kAudioCodecPropertyZeroFramesPadded);
-const enum_unnamed_260 = extern enum(c_int) {
+pub const kAudioCodecPropertyRequiresPacketDescription = @enumToInt(enum_unnamed_187.kAudioCodecPropertyRequiresPacketDescription);
+pub const kAudioCodecPropertyAvailableBitRates = @enumToInt(enum_unnamed_187.kAudioCodecPropertyAvailableBitRates);
+pub const kAudioCodecExtendFrequencies = @enumToInt(enum_unnamed_187.kAudioCodecExtendFrequencies);
+pub const kAudioCodecUseRecommendedSampleRate = @enumToInt(enum_unnamed_187.kAudioCodecUseRecommendedSampleRate);
+pub const kAudioCodecOutputPrecedence = @enumToInt(enum_unnamed_187.kAudioCodecOutputPrecedence);
+pub const kAudioCodecBitRateFormat = @enumToInt(enum_unnamed_187.kAudioCodecBitRateFormat);
+pub const kAudioCodecDoesSampleRateConversion = @enumToInt(enum_unnamed_187.kAudioCodecDoesSampleRateConversion);
+pub const kAudioCodecInputFormatsForOutputFormat = @enumToInt(enum_unnamed_187.kAudioCodecInputFormatsForOutputFormat);
+pub const kAudioCodecOutputFormatsForInputFormat = @enumToInt(enum_unnamed_187.kAudioCodecOutputFormatsForInputFormat);
+pub const kAudioCodecPropertyInputChannelLayout = @enumToInt(enum_unnamed_187.kAudioCodecPropertyInputChannelLayout);
+pub const kAudioCodecPropertyOutputChannelLayout = @enumToInt(enum_unnamed_187.kAudioCodecPropertyOutputChannelLayout);
+pub const kAudioCodecPropertyAvailableInputChannelLayouts = @enumToInt(enum_unnamed_187.kAudioCodecPropertyAvailableInputChannelLayouts);
+pub const kAudioCodecPropertyAvailableOutputChannelLayouts = @enumToInt(enum_unnamed_187.kAudioCodecPropertyAvailableOutputChannelLayouts);
+pub const kAudioCodecPropertyZeroFramesPadded = @enumToInt(enum_unnamed_187.kAudioCodecPropertyZeroFramesPadded);
+const enum_unnamed_187 = extern enum(c_int) {
     kAudioCodecPropertyRequiresPacketDescription = 1885432676,
     kAudioCodecPropertyAvailableBitRates = 1651668003,
     kAudioCodecExtendFrequencies = 1633903974,
@@ -8461,46 +7447,46 @@ const enum_unnamed_260 = extern enum(c_int) {
     kAudioCodecPropertyZeroFramesPadded = 1885430832,
     _,
 };
-pub const kAudioCodecBitRateFormat_CBR = @enumToInt(enum_unnamed_261.kAudioCodecBitRateFormat_CBR);
-pub const kAudioCodecBitRateFormat_ABR = @enumToInt(enum_unnamed_261.kAudioCodecBitRateFormat_ABR);
-pub const kAudioCodecBitRateFormat_VBR = @enumToInt(enum_unnamed_261.kAudioCodecBitRateFormat_VBR);
-const enum_unnamed_261 = extern enum(c_int) {
+pub const kAudioCodecBitRateFormat_CBR = @enumToInt(enum_unnamed_188.kAudioCodecBitRateFormat_CBR);
+pub const kAudioCodecBitRateFormat_ABR = @enumToInt(enum_unnamed_188.kAudioCodecBitRateFormat_ABR);
+pub const kAudioCodecBitRateFormat_VBR = @enumToInt(enum_unnamed_188.kAudioCodecBitRateFormat_VBR);
+const enum_unnamed_188 = extern enum(c_int) {
     kAudioCodecBitRateFormat_CBR = 0,
     kAudioCodecBitRateFormat_ABR = 1,
     kAudioCodecBitRateFormat_VBR = 2,
     _,
 };
-pub const kAudioCodecOutputPrecedenceNone = @enumToInt(enum_unnamed_262.kAudioCodecOutputPrecedenceNone);
-pub const kAudioCodecOutputPrecedenceBitRate = @enumToInt(enum_unnamed_262.kAudioCodecOutputPrecedenceBitRate);
-pub const kAudioCodecOutputPrecedenceSampleRate = @enumToInt(enum_unnamed_262.kAudioCodecOutputPrecedenceSampleRate);
-const enum_unnamed_262 = extern enum(c_int) {
+pub const kAudioCodecOutputPrecedenceNone = @enumToInt(enum_unnamed_189.kAudioCodecOutputPrecedenceNone);
+pub const kAudioCodecOutputPrecedenceBitRate = @enumToInt(enum_unnamed_189.kAudioCodecOutputPrecedenceBitRate);
+pub const kAudioCodecOutputPrecedenceSampleRate = @enumToInt(enum_unnamed_189.kAudioCodecOutputPrecedenceSampleRate);
+const enum_unnamed_189 = extern enum(c_int) {
     kAudioCodecOutputPrecedenceNone = 0,
     kAudioCodecOutputPrecedenceBitRate = 1,
     kAudioCodecOutputPrecedenceSampleRate = 2,
     _,
 };
 pub const MagicCookieInfo = struct_AudioCodecMagicCookieInfo;
-pub const kHintBasic = @enumToInt(enum_unnamed_263.kHintBasic);
-pub const kHintAdvanced = @enumToInt(enum_unnamed_263.kHintAdvanced);
-pub const kHintHidden = @enumToInt(enum_unnamed_263.kHintHidden);
-const enum_unnamed_263 = extern enum(c_int) {
+pub const kHintBasic = @enumToInt(enum_unnamed_190.kHintBasic);
+pub const kHintAdvanced = @enumToInt(enum_unnamed_190.kHintAdvanced);
+pub const kHintHidden = @enumToInt(enum_unnamed_190.kHintHidden);
+const enum_unnamed_190 = extern enum(c_int) {
     kHintBasic = 0,
     kHintAdvanced = 1,
     kHintHidden = 2,
     _,
 };
 pub const AudioUnit = AudioComponentInstance;
-pub const kAudioUnitType_Output = @enumToInt(enum_unnamed_264.kAudioUnitType_Output);
-pub const kAudioUnitType_MusicDevice = @enumToInt(enum_unnamed_264.kAudioUnitType_MusicDevice);
-pub const kAudioUnitType_MusicEffect = @enumToInt(enum_unnamed_264.kAudioUnitType_MusicEffect);
-pub const kAudioUnitType_FormatConverter = @enumToInt(enum_unnamed_264.kAudioUnitType_FormatConverter);
-pub const kAudioUnitType_Effect = @enumToInt(enum_unnamed_264.kAudioUnitType_Effect);
-pub const kAudioUnitType_Mixer = @enumToInt(enum_unnamed_264.kAudioUnitType_Mixer);
-pub const kAudioUnitType_Panner = @enumToInt(enum_unnamed_264.kAudioUnitType_Panner);
-pub const kAudioUnitType_Generator = @enumToInt(enum_unnamed_264.kAudioUnitType_Generator);
-pub const kAudioUnitType_OfflineEffect = @enumToInt(enum_unnamed_264.kAudioUnitType_OfflineEffect);
-pub const kAudioUnitType_MIDIProcessor = @enumToInt(enum_unnamed_264.kAudioUnitType_MIDIProcessor);
-const enum_unnamed_264 = extern enum(c_int) {
+pub const kAudioUnitType_Output = @enumToInt(enum_unnamed_191.kAudioUnitType_Output);
+pub const kAudioUnitType_MusicDevice = @enumToInt(enum_unnamed_191.kAudioUnitType_MusicDevice);
+pub const kAudioUnitType_MusicEffect = @enumToInt(enum_unnamed_191.kAudioUnitType_MusicEffect);
+pub const kAudioUnitType_FormatConverter = @enumToInt(enum_unnamed_191.kAudioUnitType_FormatConverter);
+pub const kAudioUnitType_Effect = @enumToInt(enum_unnamed_191.kAudioUnitType_Effect);
+pub const kAudioUnitType_Mixer = @enumToInt(enum_unnamed_191.kAudioUnitType_Mixer);
+pub const kAudioUnitType_Panner = @enumToInt(enum_unnamed_191.kAudioUnitType_Panner);
+pub const kAudioUnitType_Generator = @enumToInt(enum_unnamed_191.kAudioUnitType_Generator);
+pub const kAudioUnitType_OfflineEffect = @enumToInt(enum_unnamed_191.kAudioUnitType_OfflineEffect);
+pub const kAudioUnitType_MIDIProcessor = @enumToInt(enum_unnamed_191.kAudioUnitType_MIDIProcessor);
+const enum_unnamed_191 = extern enum(c_int) {
     kAudioUnitType_Output = 1635086197,
     kAudioUnitType_MusicDevice = 1635085685,
     kAudioUnitType_MusicEffect = 1635085670,
@@ -8513,46 +7499,46 @@ const enum_unnamed_264 = extern enum(c_int) {
     kAudioUnitType_MIDIProcessor = 1635085673,
     _,
 };
-pub const kAudioUnitManufacturer_Apple = @enumToInt(enum_unnamed_265.kAudioUnitManufacturer_Apple);
-const enum_unnamed_265 = extern enum(c_int) {
+pub const kAudioUnitManufacturer_Apple = @enumToInt(enum_unnamed_192.kAudioUnitManufacturer_Apple);
+const enum_unnamed_192 = extern enum(c_int) {
     kAudioUnitManufacturer_Apple = 1634758764,
     _,
 };
-pub const kAudioUnitSubType_GenericOutput = @enumToInt(enum_unnamed_266.kAudioUnitSubType_GenericOutput);
-pub const kAudioUnitSubType_VoiceProcessingIO = @enumToInt(enum_unnamed_266.kAudioUnitSubType_VoiceProcessingIO);
-const enum_unnamed_266 = extern enum(c_int) {
+pub const kAudioUnitSubType_GenericOutput = @enumToInt(enum_unnamed_193.kAudioUnitSubType_GenericOutput);
+pub const kAudioUnitSubType_VoiceProcessingIO = @enumToInt(enum_unnamed_193.kAudioUnitSubType_VoiceProcessingIO);
+const enum_unnamed_193 = extern enum(c_int) {
     kAudioUnitSubType_GenericOutput = 1734700658,
     kAudioUnitSubType_VoiceProcessingIO = 1987078511,
     _,
 };
-pub const kAudioUnitSubType_HALOutput = @enumToInt(enum_unnamed_267.kAudioUnitSubType_HALOutput);
-pub const kAudioUnitSubType_DefaultOutput = @enumToInt(enum_unnamed_267.kAudioUnitSubType_DefaultOutput);
-pub const kAudioUnitSubType_SystemOutput = @enumToInt(enum_unnamed_267.kAudioUnitSubType_SystemOutput);
-const enum_unnamed_267 = extern enum(c_int) {
+pub const kAudioUnitSubType_HALOutput = @enumToInt(enum_unnamed_194.kAudioUnitSubType_HALOutput);
+pub const kAudioUnitSubType_DefaultOutput = @enumToInt(enum_unnamed_194.kAudioUnitSubType_DefaultOutput);
+pub const kAudioUnitSubType_SystemOutput = @enumToInt(enum_unnamed_194.kAudioUnitSubType_SystemOutput);
+const enum_unnamed_194 = extern enum(c_int) {
     kAudioUnitSubType_HALOutput = 1634230636,
     kAudioUnitSubType_DefaultOutput = 1684366880,
     kAudioUnitSubType_SystemOutput = 1937339168,
     _,
 };
-pub const kAudioUnitSubType_DLSSynth = @enumToInt(enum_unnamed_268.kAudioUnitSubType_DLSSynth);
-pub const kAudioUnitSubType_Sampler = @enumToInt(enum_unnamed_268.kAudioUnitSubType_Sampler);
-pub const kAudioUnitSubType_MIDISynth = @enumToInt(enum_unnamed_268.kAudioUnitSubType_MIDISynth);
-const enum_unnamed_268 = extern enum(c_int) {
+pub const kAudioUnitSubType_DLSSynth = @enumToInt(enum_unnamed_195.kAudioUnitSubType_DLSSynth);
+pub const kAudioUnitSubType_Sampler = @enumToInt(enum_unnamed_195.kAudioUnitSubType_Sampler);
+pub const kAudioUnitSubType_MIDISynth = @enumToInt(enum_unnamed_195.kAudioUnitSubType_MIDISynth);
+const enum_unnamed_195 = extern enum(c_int) {
     kAudioUnitSubType_DLSSynth = 1684828960,
     kAudioUnitSubType_Sampler = 1935764848,
     kAudioUnitSubType_MIDISynth = 1836284270,
     _,
 };
-pub const kAudioUnitSubType_AUConverter = @enumToInt(enum_unnamed_269.kAudioUnitSubType_AUConverter);
-pub const kAudioUnitSubType_Varispeed = @enumToInt(enum_unnamed_269.kAudioUnitSubType_Varispeed);
-pub const kAudioUnitSubType_DeferredRenderer = @enumToInt(enum_unnamed_269.kAudioUnitSubType_DeferredRenderer);
-pub const kAudioUnitSubType_Splitter = @enumToInt(enum_unnamed_269.kAudioUnitSubType_Splitter);
-pub const kAudioUnitSubType_MultiSplitter = @enumToInt(enum_unnamed_269.kAudioUnitSubType_MultiSplitter);
-pub const kAudioUnitSubType_Merger = @enumToInt(enum_unnamed_269.kAudioUnitSubType_Merger);
-pub const kAudioUnitSubType_NewTimePitch = @enumToInt(enum_unnamed_269.kAudioUnitSubType_NewTimePitch);
-pub const kAudioUnitSubType_AUiPodTimeOther = @enumToInt(enum_unnamed_269.kAudioUnitSubType_AUiPodTimeOther);
-pub const kAudioUnitSubType_RoundTripAAC = @enumToInt(enum_unnamed_269.kAudioUnitSubType_RoundTripAAC);
-const enum_unnamed_269 = extern enum(c_int) {
+pub const kAudioUnitSubType_AUConverter = @enumToInt(enum_unnamed_196.kAudioUnitSubType_AUConverter);
+pub const kAudioUnitSubType_Varispeed = @enumToInt(enum_unnamed_196.kAudioUnitSubType_Varispeed);
+pub const kAudioUnitSubType_DeferredRenderer = @enumToInt(enum_unnamed_196.kAudioUnitSubType_DeferredRenderer);
+pub const kAudioUnitSubType_Splitter = @enumToInt(enum_unnamed_196.kAudioUnitSubType_Splitter);
+pub const kAudioUnitSubType_MultiSplitter = @enumToInt(enum_unnamed_196.kAudioUnitSubType_MultiSplitter);
+pub const kAudioUnitSubType_Merger = @enumToInt(enum_unnamed_196.kAudioUnitSubType_Merger);
+pub const kAudioUnitSubType_NewTimePitch = @enumToInt(enum_unnamed_196.kAudioUnitSubType_NewTimePitch);
+pub const kAudioUnitSubType_AUiPodTimeOther = @enumToInt(enum_unnamed_196.kAudioUnitSubType_AUiPodTimeOther);
+pub const kAudioUnitSubType_RoundTripAAC = @enumToInt(enum_unnamed_196.kAudioUnitSubType_RoundTripAAC);
+const enum_unnamed_196 = extern enum(c_int) {
     kAudioUnitSubType_AUConverter = 1668247158,
     kAudioUnitSubType_Varispeed = 1986097769,
     kAudioUnitSubType_DeferredRenderer = 1684366962,
@@ -8564,25 +7550,25 @@ const enum_unnamed_269 = extern enum(c_int) {
     kAudioUnitSubType_RoundTripAAC = 1918984547,
     _,
 };
-pub const kAudioUnitSubType_TimePitch = @enumToInt(enum_unnamed_270.kAudioUnitSubType_TimePitch);
-const enum_unnamed_270 = extern enum(c_int) {
+pub const kAudioUnitSubType_TimePitch = @enumToInt(enum_unnamed_197.kAudioUnitSubType_TimePitch);
+const enum_unnamed_197 = extern enum(c_int) {
     kAudioUnitSubType_TimePitch = 1953329268,
     _,
 };
-pub const kAudioUnitSubType_PeakLimiter = @enumToInt(enum_unnamed_271.kAudioUnitSubType_PeakLimiter);
-pub const kAudioUnitSubType_DynamicsProcessor = @enumToInt(enum_unnamed_271.kAudioUnitSubType_DynamicsProcessor);
-pub const kAudioUnitSubType_LowPassFilter = @enumToInt(enum_unnamed_271.kAudioUnitSubType_LowPassFilter);
-pub const kAudioUnitSubType_HighPassFilter = @enumToInt(enum_unnamed_271.kAudioUnitSubType_HighPassFilter);
-pub const kAudioUnitSubType_BandPassFilter = @enumToInt(enum_unnamed_271.kAudioUnitSubType_BandPassFilter);
-pub const kAudioUnitSubType_HighShelfFilter = @enumToInt(enum_unnamed_271.kAudioUnitSubType_HighShelfFilter);
-pub const kAudioUnitSubType_LowShelfFilter = @enumToInt(enum_unnamed_271.kAudioUnitSubType_LowShelfFilter);
-pub const kAudioUnitSubType_ParametricEQ = @enumToInt(enum_unnamed_271.kAudioUnitSubType_ParametricEQ);
-pub const kAudioUnitSubType_Distortion = @enumToInt(enum_unnamed_271.kAudioUnitSubType_Distortion);
-pub const kAudioUnitSubType_Delay = @enumToInt(enum_unnamed_271.kAudioUnitSubType_Delay);
-pub const kAudioUnitSubType_SampleDelay = @enumToInt(enum_unnamed_271.kAudioUnitSubType_SampleDelay);
-pub const kAudioUnitSubType_NBandEQ = @enumToInt(enum_unnamed_271.kAudioUnitSubType_NBandEQ);
-pub const kAudioUnitSubType_Reverb2 = @enumToInt(enum_unnamed_271.kAudioUnitSubType_Reverb2);
-const enum_unnamed_271 = extern enum(c_int) {
+pub const kAudioUnitSubType_PeakLimiter = @enumToInt(enum_unnamed_198.kAudioUnitSubType_PeakLimiter);
+pub const kAudioUnitSubType_DynamicsProcessor = @enumToInt(enum_unnamed_198.kAudioUnitSubType_DynamicsProcessor);
+pub const kAudioUnitSubType_LowPassFilter = @enumToInt(enum_unnamed_198.kAudioUnitSubType_LowPassFilter);
+pub const kAudioUnitSubType_HighPassFilter = @enumToInt(enum_unnamed_198.kAudioUnitSubType_HighPassFilter);
+pub const kAudioUnitSubType_BandPassFilter = @enumToInt(enum_unnamed_198.kAudioUnitSubType_BandPassFilter);
+pub const kAudioUnitSubType_HighShelfFilter = @enumToInt(enum_unnamed_198.kAudioUnitSubType_HighShelfFilter);
+pub const kAudioUnitSubType_LowShelfFilter = @enumToInt(enum_unnamed_198.kAudioUnitSubType_LowShelfFilter);
+pub const kAudioUnitSubType_ParametricEQ = @enumToInt(enum_unnamed_198.kAudioUnitSubType_ParametricEQ);
+pub const kAudioUnitSubType_Distortion = @enumToInt(enum_unnamed_198.kAudioUnitSubType_Distortion);
+pub const kAudioUnitSubType_Delay = @enumToInt(enum_unnamed_198.kAudioUnitSubType_Delay);
+pub const kAudioUnitSubType_SampleDelay = @enumToInt(enum_unnamed_198.kAudioUnitSubType_SampleDelay);
+pub const kAudioUnitSubType_NBandEQ = @enumToInt(enum_unnamed_198.kAudioUnitSubType_NBandEQ);
+pub const kAudioUnitSubType_Reverb2 = @enumToInt(enum_unnamed_198.kAudioUnitSubType_Reverb2);
+const enum_unnamed_198 = extern enum(c_int) {
     kAudioUnitSubType_PeakLimiter = 1819112562,
     kAudioUnitSubType_DynamicsProcessor = 1684237680,
     kAudioUnitSubType_LowPassFilter = 1819304307,
@@ -8598,14 +7584,14 @@ const enum_unnamed_271 = extern enum(c_int) {
     kAudioUnitSubType_Reverb2 = 1920361010,
     _,
 };
-pub const kAudioUnitSubType_GraphicEQ = @enumToInt(enum_unnamed_272.kAudioUnitSubType_GraphicEQ);
-pub const kAudioUnitSubType_MultiBandCompressor = @enumToInt(enum_unnamed_272.kAudioUnitSubType_MultiBandCompressor);
-pub const kAudioUnitSubType_MatrixReverb = @enumToInt(enum_unnamed_272.kAudioUnitSubType_MatrixReverb);
-pub const kAudioUnitSubType_Pitch = @enumToInt(enum_unnamed_272.kAudioUnitSubType_Pitch);
-pub const kAudioUnitSubType_AUFilter = @enumToInt(enum_unnamed_272.kAudioUnitSubType_AUFilter);
-pub const kAudioUnitSubType_NetSend = @enumToInt(enum_unnamed_272.kAudioUnitSubType_NetSend);
-pub const kAudioUnitSubType_RogerBeep = @enumToInt(enum_unnamed_272.kAudioUnitSubType_RogerBeep);
-const enum_unnamed_272 = extern enum(c_int) {
+pub const kAudioUnitSubType_GraphicEQ = @enumToInt(enum_unnamed_199.kAudioUnitSubType_GraphicEQ);
+pub const kAudioUnitSubType_MultiBandCompressor = @enumToInt(enum_unnamed_199.kAudioUnitSubType_MultiBandCompressor);
+pub const kAudioUnitSubType_MatrixReverb = @enumToInt(enum_unnamed_199.kAudioUnitSubType_MatrixReverb);
+pub const kAudioUnitSubType_Pitch = @enumToInt(enum_unnamed_199.kAudioUnitSubType_Pitch);
+pub const kAudioUnitSubType_AUFilter = @enumToInt(enum_unnamed_199.kAudioUnitSubType_AUFilter);
+pub const kAudioUnitSubType_NetSend = @enumToInt(enum_unnamed_199.kAudioUnitSubType_NetSend);
+pub const kAudioUnitSubType_RogerBeep = @enumToInt(enum_unnamed_199.kAudioUnitSubType_RogerBeep);
+const enum_unnamed_199 = extern enum(c_int) {
     kAudioUnitSubType_GraphicEQ = 1735550321,
     kAudioUnitSubType_MultiBandCompressor = 1835232624,
     kAudioUnitSubType_MatrixReverb = 1836213622,
@@ -8615,52 +7601,52 @@ const enum_unnamed_272 = extern enum(c_int) {
     kAudioUnitSubType_RogerBeep = 1919903602,
     _,
 };
-pub const kAudioUnitSubType_MultiChannelMixer = @enumToInt(enum_unnamed_273.kAudioUnitSubType_MultiChannelMixer);
-pub const kAudioUnitSubType_MatrixMixer = @enumToInt(enum_unnamed_273.kAudioUnitSubType_MatrixMixer);
-pub const kAudioUnitSubType_SpatialMixer = @enumToInt(enum_unnamed_273.kAudioUnitSubType_SpatialMixer);
-const enum_unnamed_273 = extern enum(c_int) {
+pub const kAudioUnitSubType_MultiChannelMixer = @enumToInt(enum_unnamed_200.kAudioUnitSubType_MultiChannelMixer);
+pub const kAudioUnitSubType_MatrixMixer = @enumToInt(enum_unnamed_200.kAudioUnitSubType_MatrixMixer);
+pub const kAudioUnitSubType_SpatialMixer = @enumToInt(enum_unnamed_200.kAudioUnitSubType_SpatialMixer);
+const enum_unnamed_200 = extern enum(c_int) {
     kAudioUnitSubType_MultiChannelMixer = 1835232632,
     kAudioUnitSubType_MatrixMixer = 1836608888,
     kAudioUnitSubType_SpatialMixer = 862217581,
     _,
 };
-pub const kAudioUnitSubType_StereoMixer = @enumToInt(enum_unnamed_274.kAudioUnitSubType_StereoMixer);
-pub const kAudioUnitSubType_3DMixer = @enumToInt(enum_unnamed_274.kAudioUnitSubType_3DMixer);
-const enum_unnamed_274 = extern enum(c_int) {
+pub const kAudioUnitSubType_StereoMixer = @enumToInt(enum_unnamed_201.kAudioUnitSubType_StereoMixer);
+pub const kAudioUnitSubType_3DMixer = @enumToInt(enum_unnamed_201.kAudioUnitSubType_3DMixer);
+const enum_unnamed_201 = extern enum(c_int) {
     kAudioUnitSubType_StereoMixer = 1936554098,
     kAudioUnitSubType_3DMixer = 862219640,
     _,
 };
-pub const kAudioUnitSubType_SphericalHeadPanner = @enumToInt(enum_unnamed_275.kAudioUnitSubType_SphericalHeadPanner);
-pub const kAudioUnitSubType_VectorPanner = @enumToInt(enum_unnamed_275.kAudioUnitSubType_VectorPanner);
-pub const kAudioUnitSubType_SoundFieldPanner = @enumToInt(enum_unnamed_275.kAudioUnitSubType_SoundFieldPanner);
-pub const kAudioUnitSubType_HRTFPanner = @enumToInt(enum_unnamed_275.kAudioUnitSubType_HRTFPanner);
-const enum_unnamed_275 = extern enum(c_int) {
+pub const kAudioUnitSubType_SphericalHeadPanner = @enumToInt(enum_unnamed_202.kAudioUnitSubType_SphericalHeadPanner);
+pub const kAudioUnitSubType_VectorPanner = @enumToInt(enum_unnamed_202.kAudioUnitSubType_VectorPanner);
+pub const kAudioUnitSubType_SoundFieldPanner = @enumToInt(enum_unnamed_202.kAudioUnitSubType_SoundFieldPanner);
+pub const kAudioUnitSubType_HRTFPanner = @enumToInt(enum_unnamed_202.kAudioUnitSubType_HRTFPanner);
+const enum_unnamed_202 = extern enum(c_int) {
     kAudioUnitSubType_SphericalHeadPanner = 1936746610,
     kAudioUnitSubType_VectorPanner = 1986158963,
     kAudioUnitSubType_SoundFieldPanner = 1634558569,
     kAudioUnitSubType_HRTFPanner = 1752331366,
     _,
 };
-pub const kAudioUnitSubType_NetReceive = @enumToInt(enum_unnamed_276.kAudioUnitSubType_NetReceive);
-pub const kAudioUnitSubType_ScheduledSoundPlayer = @enumToInt(enum_unnamed_276.kAudioUnitSubType_ScheduledSoundPlayer);
-pub const kAudioUnitSubType_AudioFilePlayer = @enumToInt(enum_unnamed_276.kAudioUnitSubType_AudioFilePlayer);
-const enum_unnamed_276 = extern enum(c_int) {
+pub const kAudioUnitSubType_NetReceive = @enumToInt(enum_unnamed_203.kAudioUnitSubType_NetReceive);
+pub const kAudioUnitSubType_ScheduledSoundPlayer = @enumToInt(enum_unnamed_203.kAudioUnitSubType_ScheduledSoundPlayer);
+pub const kAudioUnitSubType_AudioFilePlayer = @enumToInt(enum_unnamed_203.kAudioUnitSubType_AudioFilePlayer);
+const enum_unnamed_203 = extern enum(c_int) {
     kAudioUnitSubType_NetReceive = 1852990326,
     kAudioUnitSubType_ScheduledSoundPlayer = 1936945260,
     kAudioUnitSubType_AudioFilePlayer = 1634103404,
     _,
 };
 pub const AudioUnitRenderActionFlags = UInt32;
-pub const kAudioUnitRenderAction_PreRender = @enumToInt(enum_unnamed_277.kAudioUnitRenderAction_PreRender);
-pub const kAudioUnitRenderAction_PostRender = @enumToInt(enum_unnamed_277.kAudioUnitRenderAction_PostRender);
-pub const kAudioUnitRenderAction_OutputIsSilence = @enumToInt(enum_unnamed_277.kAudioUnitRenderAction_OutputIsSilence);
-pub const kAudioOfflineUnitRenderAction_Preflight = @enumToInt(enum_unnamed_277.kAudioOfflineUnitRenderAction_Preflight);
-pub const kAudioOfflineUnitRenderAction_Render = @enumToInt(enum_unnamed_277.kAudioOfflineUnitRenderAction_Render);
-pub const kAudioOfflineUnitRenderAction_Complete = @enumToInt(enum_unnamed_277.kAudioOfflineUnitRenderAction_Complete);
-pub const kAudioUnitRenderAction_PostRenderError = @enumToInt(enum_unnamed_277.kAudioUnitRenderAction_PostRenderError);
-pub const kAudioUnitRenderAction_DoNotCheckRenderArgs = @enumToInt(enum_unnamed_277.kAudioUnitRenderAction_DoNotCheckRenderArgs);
-const enum_unnamed_277 = extern enum(c_int) {
+pub const kAudioUnitRenderAction_PreRender = @enumToInt(enum_unnamed_204.kAudioUnitRenderAction_PreRender);
+pub const kAudioUnitRenderAction_PostRender = @enumToInt(enum_unnamed_204.kAudioUnitRenderAction_PostRender);
+pub const kAudioUnitRenderAction_OutputIsSilence = @enumToInt(enum_unnamed_204.kAudioUnitRenderAction_OutputIsSilence);
+pub const kAudioOfflineUnitRenderAction_Preflight = @enumToInt(enum_unnamed_204.kAudioOfflineUnitRenderAction_Preflight);
+pub const kAudioOfflineUnitRenderAction_Render = @enumToInt(enum_unnamed_204.kAudioOfflineUnitRenderAction_Render);
+pub const kAudioOfflineUnitRenderAction_Complete = @enumToInt(enum_unnamed_204.kAudioOfflineUnitRenderAction_Complete);
+pub const kAudioUnitRenderAction_PostRenderError = @enumToInt(enum_unnamed_204.kAudioUnitRenderAction_PostRenderError);
+pub const kAudioUnitRenderAction_DoNotCheckRenderArgs = @enumToInt(enum_unnamed_204.kAudioUnitRenderAction_DoNotCheckRenderArgs);
+const enum_unnamed_204 = extern enum(c_int) {
     kAudioUnitRenderAction_PreRender = 4,
     kAudioUnitRenderAction_PostRender = 8,
     kAudioUnitRenderAction_OutputIsSilence = 16,
@@ -8671,34 +7657,34 @@ const enum_unnamed_277 = extern enum(c_int) {
     kAudioUnitRenderAction_DoNotCheckRenderArgs = 512,
     _,
 };
-pub const kAudioUnitErr_InvalidProperty = @enumToInt(enum_unnamed_278.kAudioUnitErr_InvalidProperty);
-pub const kAudioUnitErr_InvalidParameter = @enumToInt(enum_unnamed_278.kAudioUnitErr_InvalidParameter);
-pub const kAudioUnitErr_InvalidElement = @enumToInt(enum_unnamed_278.kAudioUnitErr_InvalidElement);
-pub const kAudioUnitErr_NoConnection = @enumToInt(enum_unnamed_278.kAudioUnitErr_NoConnection);
-pub const kAudioUnitErr_FailedInitialization = @enumToInt(enum_unnamed_278.kAudioUnitErr_FailedInitialization);
-pub const kAudioUnitErr_TooManyFramesToProcess = @enumToInt(enum_unnamed_278.kAudioUnitErr_TooManyFramesToProcess);
-pub const kAudioUnitErr_InvalidFile = @enumToInt(enum_unnamed_278.kAudioUnitErr_InvalidFile);
-pub const kAudioUnitErr_UnknownFileType = @enumToInt(enum_unnamed_278.kAudioUnitErr_UnknownFileType);
-pub const kAudioUnitErr_FileNotSpecified = @enumToInt(enum_unnamed_278.kAudioUnitErr_FileNotSpecified);
-pub const kAudioUnitErr_FormatNotSupported = @enumToInt(enum_unnamed_278.kAudioUnitErr_FormatNotSupported);
-pub const kAudioUnitErr_Uninitialized = @enumToInt(enum_unnamed_278.kAudioUnitErr_Uninitialized);
-pub const kAudioUnitErr_InvalidScope = @enumToInt(enum_unnamed_278.kAudioUnitErr_InvalidScope);
-pub const kAudioUnitErr_PropertyNotWritable = @enumToInt(enum_unnamed_278.kAudioUnitErr_PropertyNotWritable);
-pub const kAudioUnitErr_CannotDoInCurrentContext = @enumToInt(enum_unnamed_278.kAudioUnitErr_CannotDoInCurrentContext);
-pub const kAudioUnitErr_InvalidPropertyValue = @enumToInt(enum_unnamed_278.kAudioUnitErr_InvalidPropertyValue);
-pub const kAudioUnitErr_PropertyNotInUse = @enumToInt(enum_unnamed_278.kAudioUnitErr_PropertyNotInUse);
-pub const kAudioUnitErr_Initialized = @enumToInt(enum_unnamed_278.kAudioUnitErr_Initialized);
-pub const kAudioUnitErr_InvalidOfflineRender = @enumToInt(enum_unnamed_278.kAudioUnitErr_InvalidOfflineRender);
-pub const kAudioUnitErr_Unauthorized = @enumToInt(enum_unnamed_278.kAudioUnitErr_Unauthorized);
-pub const kAudioUnitErr_MIDIOutputBufferFull = @enumToInt(enum_unnamed_278.kAudioUnitErr_MIDIOutputBufferFull);
-pub const kAudioComponentErr_InstanceTimedOut = @enumToInt(enum_unnamed_278.kAudioComponentErr_InstanceTimedOut);
-pub const kAudioComponentErr_InstanceInvalidated = @enumToInt(enum_unnamed_278.kAudioComponentErr_InstanceInvalidated);
-pub const kAudioUnitErr_RenderTimeout = @enumToInt(enum_unnamed_278.kAudioUnitErr_RenderTimeout);
-pub const kAudioUnitErr_ExtensionNotFound = @enumToInt(enum_unnamed_278.kAudioUnitErr_ExtensionNotFound);
-pub const kAudioUnitErr_InvalidParameterValue = @enumToInt(enum_unnamed_278.kAudioUnitErr_InvalidParameterValue);
-pub const kAudioUnitErr_InvalidFilePath = @enumToInt(enum_unnamed_278.kAudioUnitErr_InvalidFilePath);
-pub const kAudioUnitErr_MissingKey = @enumToInt(enum_unnamed_278.kAudioUnitErr_MissingKey);
-const enum_unnamed_278 = extern enum(c_int) {
+pub const kAudioUnitErr_InvalidProperty = @enumToInt(enum_unnamed_205.kAudioUnitErr_InvalidProperty);
+pub const kAudioUnitErr_InvalidParameter = @enumToInt(enum_unnamed_205.kAudioUnitErr_InvalidParameter);
+pub const kAudioUnitErr_InvalidElement = @enumToInt(enum_unnamed_205.kAudioUnitErr_InvalidElement);
+pub const kAudioUnitErr_NoConnection = @enumToInt(enum_unnamed_205.kAudioUnitErr_NoConnection);
+pub const kAudioUnitErr_FailedInitialization = @enumToInt(enum_unnamed_205.kAudioUnitErr_FailedInitialization);
+pub const kAudioUnitErr_TooManyFramesToProcess = @enumToInt(enum_unnamed_205.kAudioUnitErr_TooManyFramesToProcess);
+pub const kAudioUnitErr_InvalidFile = @enumToInt(enum_unnamed_205.kAudioUnitErr_InvalidFile);
+pub const kAudioUnitErr_UnknownFileType = @enumToInt(enum_unnamed_205.kAudioUnitErr_UnknownFileType);
+pub const kAudioUnitErr_FileNotSpecified = @enumToInt(enum_unnamed_205.kAudioUnitErr_FileNotSpecified);
+pub const kAudioUnitErr_FormatNotSupported = @enumToInt(enum_unnamed_205.kAudioUnitErr_FormatNotSupported);
+pub const kAudioUnitErr_Uninitialized = @enumToInt(enum_unnamed_205.kAudioUnitErr_Uninitialized);
+pub const kAudioUnitErr_InvalidScope = @enumToInt(enum_unnamed_205.kAudioUnitErr_InvalidScope);
+pub const kAudioUnitErr_PropertyNotWritable = @enumToInt(enum_unnamed_205.kAudioUnitErr_PropertyNotWritable);
+pub const kAudioUnitErr_CannotDoInCurrentContext = @enumToInt(enum_unnamed_205.kAudioUnitErr_CannotDoInCurrentContext);
+pub const kAudioUnitErr_InvalidPropertyValue = @enumToInt(enum_unnamed_205.kAudioUnitErr_InvalidPropertyValue);
+pub const kAudioUnitErr_PropertyNotInUse = @enumToInt(enum_unnamed_205.kAudioUnitErr_PropertyNotInUse);
+pub const kAudioUnitErr_Initialized = @enumToInt(enum_unnamed_205.kAudioUnitErr_Initialized);
+pub const kAudioUnitErr_InvalidOfflineRender = @enumToInt(enum_unnamed_205.kAudioUnitErr_InvalidOfflineRender);
+pub const kAudioUnitErr_Unauthorized = @enumToInt(enum_unnamed_205.kAudioUnitErr_Unauthorized);
+pub const kAudioUnitErr_MIDIOutputBufferFull = @enumToInt(enum_unnamed_205.kAudioUnitErr_MIDIOutputBufferFull);
+pub const kAudioComponentErr_InstanceTimedOut = @enumToInt(enum_unnamed_205.kAudioComponentErr_InstanceTimedOut);
+pub const kAudioComponentErr_InstanceInvalidated = @enumToInt(enum_unnamed_205.kAudioComponentErr_InstanceInvalidated);
+pub const kAudioUnitErr_RenderTimeout = @enumToInt(enum_unnamed_205.kAudioUnitErr_RenderTimeout);
+pub const kAudioUnitErr_ExtensionNotFound = @enumToInt(enum_unnamed_205.kAudioUnitErr_ExtensionNotFound);
+pub const kAudioUnitErr_InvalidParameterValue = @enumToInt(enum_unnamed_205.kAudioUnitErr_InvalidParameterValue);
+pub const kAudioUnitErr_InvalidFilePath = @enumToInt(enum_unnamed_205.kAudioUnitErr_InvalidFilePath);
+pub const kAudioUnitErr_MissingKey = @enumToInt(enum_unnamed_205.kAudioUnitErr_MissingKey);
+const enum_unnamed_205 = extern enum(c_int) {
     kAudioUnitErr_InvalidProperty = -10879,
     kAudioUnitErr_InvalidParameter = -10878,
     kAudioUnitErr_InvalidElement = -10877,
@@ -8734,33 +7720,33 @@ pub const AudioUnitElement = UInt32;
 pub const AudioUnitParameterID = UInt32;
 pub const AudioUnitParameterValue = Float32;
 pub const AUParameterEventType = UInt32;
-pub const kParameterEvent_Immediate = @enumToInt(enum_unnamed_279.kParameterEvent_Immediate);
-pub const kParameterEvent_Ramped = @enumToInt(enum_unnamed_279.kParameterEvent_Ramped);
-const enum_unnamed_279 = extern enum(c_int) {
+pub const kParameterEvent_Immediate = @enumToInt(enum_unnamed_206.kParameterEvent_Immediate);
+pub const kParameterEvent_Ramped = @enumToInt(enum_unnamed_206.kParameterEvent_Ramped);
+const enum_unnamed_206 = extern enum(c_int) {
     kParameterEvent_Immediate = 1,
     kParameterEvent_Ramped = 2,
     _,
 };
-const struct_unnamed_281 = extern struct {
+const struct_unnamed_208 = extern struct {
     startBufferOffset: SInt32,
     durationInFrames: UInt32,
     startValue: AudioUnitParameterValue,
     endValue: AudioUnitParameterValue,
 };
-const struct_unnamed_282 = extern struct {
+const struct_unnamed_209 = extern struct {
     bufferOffset: UInt32,
     value: AudioUnitParameterValue,
 };
-const union_unnamed_280 = extern union {
-    ramp: struct_unnamed_281,
-    immediate: struct_unnamed_282,
+const union_unnamed_207 = extern union {
+    ramp: struct_unnamed_208,
+    immediate: struct_unnamed_209,
 };
 pub const struct_AudioUnitParameterEvent = extern struct {
     scope: AudioUnitScope,
     element: AudioUnitElement,
     parameter: AudioUnitParameterID,
     eventType: AUParameterEventType,
-    eventValues: union_unnamed_280,
+    eventValues: union_unnamed_207,
 };
 pub const AudioUnitParameterEvent = struct_AudioUnitParameterEvent;
 pub const struct_AudioUnitParameter = extern struct {
@@ -8800,26 +7786,26 @@ pub extern fn AudioUnitProcessMultiple(inUnit: AudioUnit, ioActionFlags: [*c]Aud
 pub extern fn AudioUnitReset(inUnit: AudioUnit, inScope: AudioUnitScope, inElement: AudioUnitElement) OSStatus;
 pub extern fn AudioUnitExtensionSetComponentList(extensionIdentifier: CFStringRef, audioComponentInfo: CFArrayRef) OSStatus;
 pub extern fn AudioUnitExtensionCopyComponentList(extensionIdentifier: CFStringRef) CFArrayRef;
-pub const kAudioUnitRange = @enumToInt(enum_unnamed_283.kAudioUnitRange);
-pub const kAudioUnitInitializeSelect = @enumToInt(enum_unnamed_283.kAudioUnitInitializeSelect);
-pub const kAudioUnitUninitializeSelect = @enumToInt(enum_unnamed_283.kAudioUnitUninitializeSelect);
-pub const kAudioUnitGetPropertyInfoSelect = @enumToInt(enum_unnamed_283.kAudioUnitGetPropertyInfoSelect);
-pub const kAudioUnitGetPropertySelect = @enumToInt(enum_unnamed_283.kAudioUnitGetPropertySelect);
-pub const kAudioUnitSetPropertySelect = @enumToInt(enum_unnamed_283.kAudioUnitSetPropertySelect);
-pub const kAudioUnitAddPropertyListenerSelect = @enumToInt(enum_unnamed_283.kAudioUnitAddPropertyListenerSelect);
-pub const kAudioUnitRemovePropertyListenerSelect = @enumToInt(enum_unnamed_283.kAudioUnitRemovePropertyListenerSelect);
-pub const kAudioUnitRemovePropertyListenerWithUserDataSelect = @enumToInt(enum_unnamed_283.kAudioUnitRemovePropertyListenerWithUserDataSelect);
-pub const kAudioUnitAddRenderNotifySelect = @enumToInt(enum_unnamed_283.kAudioUnitAddRenderNotifySelect);
-pub const kAudioUnitRemoveRenderNotifySelect = @enumToInt(enum_unnamed_283.kAudioUnitRemoveRenderNotifySelect);
-pub const kAudioUnitGetParameterSelect = @enumToInt(enum_unnamed_283.kAudioUnitGetParameterSelect);
-pub const kAudioUnitSetParameterSelect = @enumToInt(enum_unnamed_283.kAudioUnitSetParameterSelect);
-pub const kAudioUnitScheduleParametersSelect = @enumToInt(enum_unnamed_283.kAudioUnitScheduleParametersSelect);
-pub const kAudioUnitRenderSelect = @enumToInt(enum_unnamed_283.kAudioUnitRenderSelect);
-pub const kAudioUnitResetSelect = @enumToInt(enum_unnamed_283.kAudioUnitResetSelect);
-pub const kAudioUnitComplexRenderSelect = @enumToInt(enum_unnamed_283.kAudioUnitComplexRenderSelect);
-pub const kAudioUnitProcessSelect = @enumToInt(enum_unnamed_283.kAudioUnitProcessSelect);
-pub const kAudioUnitProcessMultipleSelect = @enumToInt(enum_unnamed_283.kAudioUnitProcessMultipleSelect);
-const enum_unnamed_283 = extern enum(c_int) {
+pub const kAudioUnitRange = @enumToInt(enum_unnamed_210.kAudioUnitRange);
+pub const kAudioUnitInitializeSelect = @enumToInt(enum_unnamed_210.kAudioUnitInitializeSelect);
+pub const kAudioUnitUninitializeSelect = @enumToInt(enum_unnamed_210.kAudioUnitUninitializeSelect);
+pub const kAudioUnitGetPropertyInfoSelect = @enumToInt(enum_unnamed_210.kAudioUnitGetPropertyInfoSelect);
+pub const kAudioUnitGetPropertySelect = @enumToInt(enum_unnamed_210.kAudioUnitGetPropertySelect);
+pub const kAudioUnitSetPropertySelect = @enumToInt(enum_unnamed_210.kAudioUnitSetPropertySelect);
+pub const kAudioUnitAddPropertyListenerSelect = @enumToInt(enum_unnamed_210.kAudioUnitAddPropertyListenerSelect);
+pub const kAudioUnitRemovePropertyListenerSelect = @enumToInt(enum_unnamed_210.kAudioUnitRemovePropertyListenerSelect);
+pub const kAudioUnitRemovePropertyListenerWithUserDataSelect = @enumToInt(enum_unnamed_210.kAudioUnitRemovePropertyListenerWithUserDataSelect);
+pub const kAudioUnitAddRenderNotifySelect = @enumToInt(enum_unnamed_210.kAudioUnitAddRenderNotifySelect);
+pub const kAudioUnitRemoveRenderNotifySelect = @enumToInt(enum_unnamed_210.kAudioUnitRemoveRenderNotifySelect);
+pub const kAudioUnitGetParameterSelect = @enumToInt(enum_unnamed_210.kAudioUnitGetParameterSelect);
+pub const kAudioUnitSetParameterSelect = @enumToInt(enum_unnamed_210.kAudioUnitSetParameterSelect);
+pub const kAudioUnitScheduleParametersSelect = @enumToInt(enum_unnamed_210.kAudioUnitScheduleParametersSelect);
+pub const kAudioUnitRenderSelect = @enumToInt(enum_unnamed_210.kAudioUnitRenderSelect);
+pub const kAudioUnitResetSelect = @enumToInt(enum_unnamed_210.kAudioUnitResetSelect);
+pub const kAudioUnitComplexRenderSelect = @enumToInt(enum_unnamed_210.kAudioUnitComplexRenderSelect);
+pub const kAudioUnitProcessSelect = @enumToInt(enum_unnamed_210.kAudioUnitProcessSelect);
+pub const kAudioUnitProcessMultipleSelect = @enumToInt(enum_unnamed_210.kAudioUnitProcessMultipleSelect);
+const enum_unnamed_210 = extern enum(c_int) {
     kAudioUnitRange = 0,
     kAudioUnitInitializeSelect = 1,
     kAudioUnitUninitializeSelect = 2,
@@ -8859,19 +7845,19 @@ pub const AudioUnitProcessMultipleProc = ?fn (?*c_void, [*c]AudioUnitRenderActio
 pub const AudioUnitGetParameterProc = ?fn (?*c_void, AudioUnitParameterID, AudioUnitScope, AudioUnitElement, [*c]AudioUnitParameterValue) callconv(.C) OSStatus;
 pub const AudioUnitSetParameterProc = ?fn (?*c_void, AudioUnitParameterID, AudioUnitScope, AudioUnitElement, AudioUnitParameterValue, UInt32) callconv(.C) OSStatus;
 pub const AudioUnitRenderProc = ?fn (?*c_void, [*c]AudioUnitRenderActionFlags, [*c]const AudioTimeStamp, UInt32, UInt32, [*c]AudioBufferList) callconv(.C) OSStatus;
-pub const kAudioUnitErr_IllegalInstrument = @enumToInt(enum_unnamed_284.kAudioUnitErr_IllegalInstrument);
-pub const kAudioUnitErr_InstrumentTypeNotFound = @enumToInt(enum_unnamed_284.kAudioUnitErr_InstrumentTypeNotFound);
-const enum_unnamed_284 = extern enum(c_int) {
+pub const kAudioUnitErr_IllegalInstrument = @enumToInt(enum_unnamed_211.kAudioUnitErr_IllegalInstrument);
+pub const kAudioUnitErr_InstrumentTypeNotFound = @enumToInt(enum_unnamed_211.kAudioUnitErr_InstrumentTypeNotFound);
+const enum_unnamed_211 = extern enum(c_int) {
     kAudioUnitErr_IllegalInstrument = -10873,
     kAudioUnitErr_InstrumentTypeNotFound = -10872,
     _,
 };
 pub extern fn AudioOutputUnitStart(ci: AudioUnit) OSStatus;
 pub extern fn AudioOutputUnitStop(ci: AudioUnit) OSStatus;
-pub const kAudioOutputUnitRange = @enumToInt(enum_unnamed_285.kAudioOutputUnitRange);
-pub const kAudioOutputUnitStartSelect = @enumToInt(enum_unnamed_285.kAudioOutputUnitStartSelect);
-pub const kAudioOutputUnitStopSelect = @enumToInt(enum_unnamed_285.kAudioOutputUnitStopSelect);
-const enum_unnamed_285 = extern enum(c_int) {
+pub const kAudioOutputUnitRange = @enumToInt(enum_unnamed_212.kAudioOutputUnitRange);
+pub const kAudioOutputUnitStartSelect = @enumToInt(enum_unnamed_212.kAudioOutputUnitStartSelect);
+pub const kAudioOutputUnitStopSelect = @enumToInt(enum_unnamed_212.kAudioOutputUnitStopSelect);
+const enum_unnamed_212 = extern enum(c_int) {
     kAudioOutputUnitRange = 512,
     kAudioOutputUnitStartSelect = 513,
     kAudioOutputUnitStopSelect = 514,
@@ -8879,15 +7865,15 @@ const enum_unnamed_285 = extern enum(c_int) {
 };
 pub const AudioOutputUnitStartProc = ?fn (?*c_void) callconv(.C) OSStatus;
 pub const AudioOutputUnitStopProc = ?fn (?*c_void) callconv(.C) OSStatus;
-pub const kAudioUnitScope_Global = @enumToInt(enum_unnamed_286.kAudioUnitScope_Global);
-pub const kAudioUnitScope_Input = @enumToInt(enum_unnamed_286.kAudioUnitScope_Input);
-pub const kAudioUnitScope_Output = @enumToInt(enum_unnamed_286.kAudioUnitScope_Output);
-pub const kAudioUnitScope_Group = @enumToInt(enum_unnamed_286.kAudioUnitScope_Group);
-pub const kAudioUnitScope_Part = @enumToInt(enum_unnamed_286.kAudioUnitScope_Part);
-pub const kAudioUnitScope_Note = @enumToInt(enum_unnamed_286.kAudioUnitScope_Note);
-pub const kAudioUnitScope_Layer = @enumToInt(enum_unnamed_286.kAudioUnitScope_Layer);
-pub const kAudioUnitScope_LayerItem = @enumToInt(enum_unnamed_286.kAudioUnitScope_LayerItem);
-const enum_unnamed_286 = extern enum(c_int) {
+pub const kAudioUnitScope_Global = @enumToInt(enum_unnamed_213.kAudioUnitScope_Global);
+pub const kAudioUnitScope_Input = @enumToInt(enum_unnamed_213.kAudioUnitScope_Input);
+pub const kAudioUnitScope_Output = @enumToInt(enum_unnamed_213.kAudioUnitScope_Output);
+pub const kAudioUnitScope_Group = @enumToInt(enum_unnamed_213.kAudioUnitScope_Group);
+pub const kAudioUnitScope_Part = @enumToInt(enum_unnamed_213.kAudioUnitScope_Part);
+pub const kAudioUnitScope_Note = @enumToInt(enum_unnamed_213.kAudioUnitScope_Note);
+pub const kAudioUnitScope_Layer = @enumToInt(enum_unnamed_213.kAudioUnitScope_Layer);
+pub const kAudioUnitScope_LayerItem = @enumToInt(enum_unnamed_213.kAudioUnitScope_LayerItem);
+const enum_unnamed_213 = extern enum(c_int) {
     kAudioUnitScope_Global = 0,
     kAudioUnitScope_Input = 1,
     kAudioUnitScope_Output = 2,
@@ -8898,56 +7884,56 @@ const enum_unnamed_286 = extern enum(c_int) {
     kAudioUnitScope_LayerItem = 7,
     _,
 };
-pub const kAudioUnitProperty_ClassInfo = @enumToInt(enum_unnamed_287.kAudioUnitProperty_ClassInfo);
-pub const kAudioUnitProperty_MakeConnection = @enumToInt(enum_unnamed_287.kAudioUnitProperty_MakeConnection);
-pub const kAudioUnitProperty_SampleRate = @enumToInt(enum_unnamed_287.kAudioUnitProperty_SampleRate);
-pub const kAudioUnitProperty_ParameterList = @enumToInt(enum_unnamed_287.kAudioUnitProperty_ParameterList);
-pub const kAudioUnitProperty_ParameterInfo = @enumToInt(enum_unnamed_287.kAudioUnitProperty_ParameterInfo);
-pub const kAudioUnitProperty_CPULoad = @enumToInt(enum_unnamed_287.kAudioUnitProperty_CPULoad);
-pub const kAudioUnitProperty_StreamFormat = @enumToInt(enum_unnamed_287.kAudioUnitProperty_StreamFormat);
-pub const kAudioUnitProperty_ElementCount = @enumToInt(enum_unnamed_287.kAudioUnitProperty_ElementCount);
-pub const kAudioUnitProperty_Latency = @enumToInt(enum_unnamed_287.kAudioUnitProperty_Latency);
-pub const kAudioUnitProperty_SupportedNumChannels = @enumToInt(enum_unnamed_287.kAudioUnitProperty_SupportedNumChannels);
-pub const kAudioUnitProperty_MaximumFramesPerSlice = @enumToInt(enum_unnamed_287.kAudioUnitProperty_MaximumFramesPerSlice);
-pub const kAudioUnitProperty_ParameterValueStrings = @enumToInt(enum_unnamed_287.kAudioUnitProperty_ParameterValueStrings);
-pub const kAudioUnitProperty_AudioChannelLayout = @enumToInt(enum_unnamed_287.kAudioUnitProperty_AudioChannelLayout);
-pub const kAudioUnitProperty_TailTime = @enumToInt(enum_unnamed_287.kAudioUnitProperty_TailTime);
-pub const kAudioUnitProperty_BypassEffect = @enumToInt(enum_unnamed_287.kAudioUnitProperty_BypassEffect);
-pub const kAudioUnitProperty_LastRenderError = @enumToInt(enum_unnamed_287.kAudioUnitProperty_LastRenderError);
-pub const kAudioUnitProperty_SetRenderCallback = @enumToInt(enum_unnamed_287.kAudioUnitProperty_SetRenderCallback);
-pub const kAudioUnitProperty_FactoryPresets = @enumToInt(enum_unnamed_287.kAudioUnitProperty_FactoryPresets);
-pub const kAudioUnitProperty_RenderQuality = @enumToInt(enum_unnamed_287.kAudioUnitProperty_RenderQuality);
-pub const kAudioUnitProperty_HostCallbacks = @enumToInt(enum_unnamed_287.kAudioUnitProperty_HostCallbacks);
-pub const kAudioUnitProperty_InPlaceProcessing = @enumToInt(enum_unnamed_287.kAudioUnitProperty_InPlaceProcessing);
-pub const kAudioUnitProperty_ElementName = @enumToInt(enum_unnamed_287.kAudioUnitProperty_ElementName);
-pub const kAudioUnitProperty_SupportedChannelLayoutTags = @enumToInt(enum_unnamed_287.kAudioUnitProperty_SupportedChannelLayoutTags);
-pub const kAudioUnitProperty_PresentPreset = @enumToInt(enum_unnamed_287.kAudioUnitProperty_PresentPreset);
-pub const kAudioUnitProperty_DependentParameters = @enumToInt(enum_unnamed_287.kAudioUnitProperty_DependentParameters);
-pub const kAudioUnitProperty_InputSamplesInOutput = @enumToInt(enum_unnamed_287.kAudioUnitProperty_InputSamplesInOutput);
-pub const kAudioUnitProperty_ShouldAllocateBuffer = @enumToInt(enum_unnamed_287.kAudioUnitProperty_ShouldAllocateBuffer);
-pub const kAudioUnitProperty_FrequencyResponse = @enumToInt(enum_unnamed_287.kAudioUnitProperty_FrequencyResponse);
-pub const kAudioUnitProperty_ParameterHistoryInfo = @enumToInt(enum_unnamed_287.kAudioUnitProperty_ParameterHistoryInfo);
-pub const kAudioUnitProperty_NickName = @enumToInt(enum_unnamed_287.kAudioUnitProperty_NickName);
-pub const kAudioUnitProperty_OfflineRender = @enumToInt(enum_unnamed_287.kAudioUnitProperty_OfflineRender);
-pub const kAudioUnitProperty_ParameterIDName = @enumToInt(enum_unnamed_287.kAudioUnitProperty_ParameterIDName);
-pub const kAudioUnitProperty_ParameterStringFromValue = @enumToInt(enum_unnamed_287.kAudioUnitProperty_ParameterStringFromValue);
-pub const kAudioUnitProperty_ParameterClumpName = @enumToInt(enum_unnamed_287.kAudioUnitProperty_ParameterClumpName);
-pub const kAudioUnitProperty_ParameterValueFromString = @enumToInt(enum_unnamed_287.kAudioUnitProperty_ParameterValueFromString);
-pub const kAudioUnitProperty_ContextName = @enumToInt(enum_unnamed_287.kAudioUnitProperty_ContextName);
-pub const kAudioUnitProperty_PresentationLatency = @enumToInt(enum_unnamed_287.kAudioUnitProperty_PresentationLatency);
-pub const kAudioUnitProperty_ClassInfoFromDocument = @enumToInt(enum_unnamed_287.kAudioUnitProperty_ClassInfoFromDocument);
-pub const kAudioUnitProperty_RequestViewController = @enumToInt(enum_unnamed_287.kAudioUnitProperty_RequestViewController);
-pub const kAudioUnitProperty_ParametersForOverview = @enumToInt(enum_unnamed_287.kAudioUnitProperty_ParametersForOverview);
-pub const kAudioUnitProperty_SupportsMPE = @enumToInt(enum_unnamed_287.kAudioUnitProperty_SupportsMPE);
-pub const kAudioUnitProperty_FastDispatch = @enumToInt(enum_unnamed_287.kAudioUnitProperty_FastDispatch);
-pub const kAudioUnitProperty_SetExternalBuffer = @enumToInt(enum_unnamed_287.kAudioUnitProperty_SetExternalBuffer);
-pub const kAudioUnitProperty_GetUIComponentList = @enumToInt(enum_unnamed_287.kAudioUnitProperty_GetUIComponentList);
-pub const kAudioUnitProperty_CocoaUI = @enumToInt(enum_unnamed_287.kAudioUnitProperty_CocoaUI);
-pub const kAudioUnitProperty_IconLocation = @enumToInt(enum_unnamed_287.kAudioUnitProperty_IconLocation);
-pub const kAudioUnitProperty_AUHostIdentifier = @enumToInt(enum_unnamed_287.kAudioUnitProperty_AUHostIdentifier);
-pub const kAudioUnitProperty_MIDIOutputCallbackInfo = @enumToInt(enum_unnamed_287.kAudioUnitProperty_MIDIOutputCallbackInfo);
-pub const kAudioUnitProperty_MIDIOutputCallback = @enumToInt(enum_unnamed_287.kAudioUnitProperty_MIDIOutputCallback);
-const enum_unnamed_287 = extern enum(c_int) {
+pub const kAudioUnitProperty_ClassInfo = @enumToInt(enum_unnamed_214.kAudioUnitProperty_ClassInfo);
+pub const kAudioUnitProperty_MakeConnection = @enumToInt(enum_unnamed_214.kAudioUnitProperty_MakeConnection);
+pub const kAudioUnitProperty_SampleRate = @enumToInt(enum_unnamed_214.kAudioUnitProperty_SampleRate);
+pub const kAudioUnitProperty_ParameterList = @enumToInt(enum_unnamed_214.kAudioUnitProperty_ParameterList);
+pub const kAudioUnitProperty_ParameterInfo = @enumToInt(enum_unnamed_214.kAudioUnitProperty_ParameterInfo);
+pub const kAudioUnitProperty_CPULoad = @enumToInt(enum_unnamed_214.kAudioUnitProperty_CPULoad);
+pub const kAudioUnitProperty_StreamFormat = @enumToInt(enum_unnamed_214.kAudioUnitProperty_StreamFormat);
+pub const kAudioUnitProperty_ElementCount = @enumToInt(enum_unnamed_214.kAudioUnitProperty_ElementCount);
+pub const kAudioUnitProperty_Latency = @enumToInt(enum_unnamed_214.kAudioUnitProperty_Latency);
+pub const kAudioUnitProperty_SupportedNumChannels = @enumToInt(enum_unnamed_214.kAudioUnitProperty_SupportedNumChannels);
+pub const kAudioUnitProperty_MaximumFramesPerSlice = @enumToInt(enum_unnamed_214.kAudioUnitProperty_MaximumFramesPerSlice);
+pub const kAudioUnitProperty_ParameterValueStrings = @enumToInt(enum_unnamed_214.kAudioUnitProperty_ParameterValueStrings);
+pub const kAudioUnitProperty_AudioChannelLayout = @enumToInt(enum_unnamed_214.kAudioUnitProperty_AudioChannelLayout);
+pub const kAudioUnitProperty_TailTime = @enumToInt(enum_unnamed_214.kAudioUnitProperty_TailTime);
+pub const kAudioUnitProperty_BypassEffect = @enumToInt(enum_unnamed_214.kAudioUnitProperty_BypassEffect);
+pub const kAudioUnitProperty_LastRenderError = @enumToInt(enum_unnamed_214.kAudioUnitProperty_LastRenderError);
+pub const kAudioUnitProperty_SetRenderCallback = @enumToInt(enum_unnamed_214.kAudioUnitProperty_SetRenderCallback);
+pub const kAudioUnitProperty_FactoryPresets = @enumToInt(enum_unnamed_214.kAudioUnitProperty_FactoryPresets);
+pub const kAudioUnitProperty_RenderQuality = @enumToInt(enum_unnamed_214.kAudioUnitProperty_RenderQuality);
+pub const kAudioUnitProperty_HostCallbacks = @enumToInt(enum_unnamed_214.kAudioUnitProperty_HostCallbacks);
+pub const kAudioUnitProperty_InPlaceProcessing = @enumToInt(enum_unnamed_214.kAudioUnitProperty_InPlaceProcessing);
+pub const kAudioUnitProperty_ElementName = @enumToInt(enum_unnamed_214.kAudioUnitProperty_ElementName);
+pub const kAudioUnitProperty_SupportedChannelLayoutTags = @enumToInt(enum_unnamed_214.kAudioUnitProperty_SupportedChannelLayoutTags);
+pub const kAudioUnitProperty_PresentPreset = @enumToInt(enum_unnamed_214.kAudioUnitProperty_PresentPreset);
+pub const kAudioUnitProperty_DependentParameters = @enumToInt(enum_unnamed_214.kAudioUnitProperty_DependentParameters);
+pub const kAudioUnitProperty_InputSamplesInOutput = @enumToInt(enum_unnamed_214.kAudioUnitProperty_InputSamplesInOutput);
+pub const kAudioUnitProperty_ShouldAllocateBuffer = @enumToInt(enum_unnamed_214.kAudioUnitProperty_ShouldAllocateBuffer);
+pub const kAudioUnitProperty_FrequencyResponse = @enumToInt(enum_unnamed_214.kAudioUnitProperty_FrequencyResponse);
+pub const kAudioUnitProperty_ParameterHistoryInfo = @enumToInt(enum_unnamed_214.kAudioUnitProperty_ParameterHistoryInfo);
+pub const kAudioUnitProperty_NickName = @enumToInt(enum_unnamed_214.kAudioUnitProperty_NickName);
+pub const kAudioUnitProperty_OfflineRender = @enumToInt(enum_unnamed_214.kAudioUnitProperty_OfflineRender);
+pub const kAudioUnitProperty_ParameterIDName = @enumToInt(enum_unnamed_214.kAudioUnitProperty_ParameterIDName);
+pub const kAudioUnitProperty_ParameterStringFromValue = @enumToInt(enum_unnamed_214.kAudioUnitProperty_ParameterStringFromValue);
+pub const kAudioUnitProperty_ParameterClumpName = @enumToInt(enum_unnamed_214.kAudioUnitProperty_ParameterClumpName);
+pub const kAudioUnitProperty_ParameterValueFromString = @enumToInt(enum_unnamed_214.kAudioUnitProperty_ParameterValueFromString);
+pub const kAudioUnitProperty_ContextName = @enumToInt(enum_unnamed_214.kAudioUnitProperty_ContextName);
+pub const kAudioUnitProperty_PresentationLatency = @enumToInt(enum_unnamed_214.kAudioUnitProperty_PresentationLatency);
+pub const kAudioUnitProperty_ClassInfoFromDocument = @enumToInt(enum_unnamed_214.kAudioUnitProperty_ClassInfoFromDocument);
+pub const kAudioUnitProperty_RequestViewController = @enumToInt(enum_unnamed_214.kAudioUnitProperty_RequestViewController);
+pub const kAudioUnitProperty_ParametersForOverview = @enumToInt(enum_unnamed_214.kAudioUnitProperty_ParametersForOverview);
+pub const kAudioUnitProperty_SupportsMPE = @enumToInt(enum_unnamed_214.kAudioUnitProperty_SupportsMPE);
+pub const kAudioUnitProperty_FastDispatch = @enumToInt(enum_unnamed_214.kAudioUnitProperty_FastDispatch);
+pub const kAudioUnitProperty_SetExternalBuffer = @enumToInt(enum_unnamed_214.kAudioUnitProperty_SetExternalBuffer);
+pub const kAudioUnitProperty_GetUIComponentList = @enumToInt(enum_unnamed_214.kAudioUnitProperty_GetUIComponentList);
+pub const kAudioUnitProperty_CocoaUI = @enumToInt(enum_unnamed_214.kAudioUnitProperty_CocoaUI);
+pub const kAudioUnitProperty_IconLocation = @enumToInt(enum_unnamed_214.kAudioUnitProperty_IconLocation);
+pub const kAudioUnitProperty_AUHostIdentifier = @enumToInt(enum_unnamed_214.kAudioUnitProperty_AUHostIdentifier);
+pub const kAudioUnitProperty_MIDIOutputCallbackInfo = @enumToInt(enum_unnamed_214.kAudioUnitProperty_MIDIOutputCallbackInfo);
+pub const kAudioUnitProperty_MIDIOutputCallback = @enumToInt(enum_unnamed_214.kAudioUnitProperty_MIDIOutputCallback);
+const enum_unnamed_214 = extern enum(c_int) {
     kAudioUnitProperty_ClassInfo = 0,
     kAudioUnitProperty_MakeConnection = 1,
     kAudioUnitProperty_SampleRate = 2,
@@ -9025,12 +8011,12 @@ pub const struct_AUPreset = extern struct {
     presetName: CFStringRef,
 };
 pub const AUPreset = struct_AUPreset;
-pub const kRenderQuality_Max = @enumToInt(enum_unnamed_288.kRenderQuality_Max);
-pub const kRenderQuality_High = @enumToInt(enum_unnamed_288.kRenderQuality_High);
-pub const kRenderQuality_Medium = @enumToInt(enum_unnamed_288.kRenderQuality_Medium);
-pub const kRenderQuality_Low = @enumToInt(enum_unnamed_288.kRenderQuality_Low);
-pub const kRenderQuality_Min = @enumToInt(enum_unnamed_288.kRenderQuality_Min);
-const enum_unnamed_288 = extern enum(c_int) {
+pub const kRenderQuality_Max = @enumToInt(enum_unnamed_215.kRenderQuality_Max);
+pub const kRenderQuality_High = @enumToInt(enum_unnamed_215.kRenderQuality_High);
+pub const kRenderQuality_Medium = @enumToInt(enum_unnamed_215.kRenderQuality_Medium);
+pub const kRenderQuality_Low = @enumToInt(enum_unnamed_215.kRenderQuality_Low);
+pub const kRenderQuality_Min = @enumToInt(enum_unnamed_215.kRenderQuality_Min);
+const enum_unnamed_215 = extern enum(c_int) {
     kRenderQuality_Max = 127,
     kRenderQuality_High = 96,
     kRenderQuality_Medium = 64,
@@ -9038,8 +8024,8 @@ const enum_unnamed_288 = extern enum(c_int) {
     kRenderQuality_Min = 0,
     _,
 };
-pub const kNumberOfResponseFrequencies = @enumToInt(enum_unnamed_289.kNumberOfResponseFrequencies);
-const enum_unnamed_289 = extern enum(c_int) {
+pub const kNumberOfResponseFrequencies = @enumToInt(enum_unnamed_216.kNumberOfResponseFrequencies);
+const enum_unnamed_216 = extern enum(c_int) {
     kNumberOfResponseFrequencies = 1024,
     _,
 };
@@ -9096,34 +8082,34 @@ pub const struct_AudioUnitParameterHistoryInfo = extern struct {
 };
 pub const AudioUnitParameterHistoryInfo = struct_AudioUnitParameterHistoryInfo;
 pub const AudioUnitParameterUnit = UInt32;
-pub const kAudioUnitParameterUnit_Generic = @enumToInt(enum_unnamed_290.kAudioUnitParameterUnit_Generic);
-pub const kAudioUnitParameterUnit_Indexed = @enumToInt(enum_unnamed_290.kAudioUnitParameterUnit_Indexed);
-pub const kAudioUnitParameterUnit_Boolean = @enumToInt(enum_unnamed_290.kAudioUnitParameterUnit_Boolean);
-pub const kAudioUnitParameterUnit_Percent = @enumToInt(enum_unnamed_290.kAudioUnitParameterUnit_Percent);
-pub const kAudioUnitParameterUnit_Seconds = @enumToInt(enum_unnamed_290.kAudioUnitParameterUnit_Seconds);
-pub const kAudioUnitParameterUnit_SampleFrames = @enumToInt(enum_unnamed_290.kAudioUnitParameterUnit_SampleFrames);
-pub const kAudioUnitParameterUnit_Phase = @enumToInt(enum_unnamed_290.kAudioUnitParameterUnit_Phase);
-pub const kAudioUnitParameterUnit_Rate = @enumToInt(enum_unnamed_290.kAudioUnitParameterUnit_Rate);
-pub const kAudioUnitParameterUnit_Hertz = @enumToInt(enum_unnamed_290.kAudioUnitParameterUnit_Hertz);
-pub const kAudioUnitParameterUnit_Cents = @enumToInt(enum_unnamed_290.kAudioUnitParameterUnit_Cents);
-pub const kAudioUnitParameterUnit_RelativeSemiTones = @enumToInt(enum_unnamed_290.kAudioUnitParameterUnit_RelativeSemiTones);
-pub const kAudioUnitParameterUnit_MIDINoteNumber = @enumToInt(enum_unnamed_290.kAudioUnitParameterUnit_MIDINoteNumber);
-pub const kAudioUnitParameterUnit_MIDIController = @enumToInt(enum_unnamed_290.kAudioUnitParameterUnit_MIDIController);
-pub const kAudioUnitParameterUnit_Decibels = @enumToInt(enum_unnamed_290.kAudioUnitParameterUnit_Decibels);
-pub const kAudioUnitParameterUnit_LinearGain = @enumToInt(enum_unnamed_290.kAudioUnitParameterUnit_LinearGain);
-pub const kAudioUnitParameterUnit_Degrees = @enumToInt(enum_unnamed_290.kAudioUnitParameterUnit_Degrees);
-pub const kAudioUnitParameterUnit_EqualPowerCrossfade = @enumToInt(enum_unnamed_290.kAudioUnitParameterUnit_EqualPowerCrossfade);
-pub const kAudioUnitParameterUnit_MixerFaderCurve1 = @enumToInt(enum_unnamed_290.kAudioUnitParameterUnit_MixerFaderCurve1);
-pub const kAudioUnitParameterUnit_Pan = @enumToInt(enum_unnamed_290.kAudioUnitParameterUnit_Pan);
-pub const kAudioUnitParameterUnit_Meters = @enumToInt(enum_unnamed_290.kAudioUnitParameterUnit_Meters);
-pub const kAudioUnitParameterUnit_AbsoluteCents = @enumToInt(enum_unnamed_290.kAudioUnitParameterUnit_AbsoluteCents);
-pub const kAudioUnitParameterUnit_Octaves = @enumToInt(enum_unnamed_290.kAudioUnitParameterUnit_Octaves);
-pub const kAudioUnitParameterUnit_BPM = @enumToInt(enum_unnamed_290.kAudioUnitParameterUnit_BPM);
-pub const kAudioUnitParameterUnit_Beats = @enumToInt(enum_unnamed_290.kAudioUnitParameterUnit_Beats);
-pub const kAudioUnitParameterUnit_Milliseconds = @enumToInt(enum_unnamed_290.kAudioUnitParameterUnit_Milliseconds);
-pub const kAudioUnitParameterUnit_Ratio = @enumToInt(enum_unnamed_290.kAudioUnitParameterUnit_Ratio);
-pub const kAudioUnitParameterUnit_CustomUnit = @enumToInt(enum_unnamed_290.kAudioUnitParameterUnit_CustomUnit);
-const enum_unnamed_290 = extern enum(c_int) {
+pub const kAudioUnitParameterUnit_Generic = @enumToInt(enum_unnamed_217.kAudioUnitParameterUnit_Generic);
+pub const kAudioUnitParameterUnit_Indexed = @enumToInt(enum_unnamed_217.kAudioUnitParameterUnit_Indexed);
+pub const kAudioUnitParameterUnit_Boolean = @enumToInt(enum_unnamed_217.kAudioUnitParameterUnit_Boolean);
+pub const kAudioUnitParameterUnit_Percent = @enumToInt(enum_unnamed_217.kAudioUnitParameterUnit_Percent);
+pub const kAudioUnitParameterUnit_Seconds = @enumToInt(enum_unnamed_217.kAudioUnitParameterUnit_Seconds);
+pub const kAudioUnitParameterUnit_SampleFrames = @enumToInt(enum_unnamed_217.kAudioUnitParameterUnit_SampleFrames);
+pub const kAudioUnitParameterUnit_Phase = @enumToInt(enum_unnamed_217.kAudioUnitParameterUnit_Phase);
+pub const kAudioUnitParameterUnit_Rate = @enumToInt(enum_unnamed_217.kAudioUnitParameterUnit_Rate);
+pub const kAudioUnitParameterUnit_Hertz = @enumToInt(enum_unnamed_217.kAudioUnitParameterUnit_Hertz);
+pub const kAudioUnitParameterUnit_Cents = @enumToInt(enum_unnamed_217.kAudioUnitParameterUnit_Cents);
+pub const kAudioUnitParameterUnit_RelativeSemiTones = @enumToInt(enum_unnamed_217.kAudioUnitParameterUnit_RelativeSemiTones);
+pub const kAudioUnitParameterUnit_MIDINoteNumber = @enumToInt(enum_unnamed_217.kAudioUnitParameterUnit_MIDINoteNumber);
+pub const kAudioUnitParameterUnit_MIDIController = @enumToInt(enum_unnamed_217.kAudioUnitParameterUnit_MIDIController);
+pub const kAudioUnitParameterUnit_Decibels = @enumToInt(enum_unnamed_217.kAudioUnitParameterUnit_Decibels);
+pub const kAudioUnitParameterUnit_LinearGain = @enumToInt(enum_unnamed_217.kAudioUnitParameterUnit_LinearGain);
+pub const kAudioUnitParameterUnit_Degrees = @enumToInt(enum_unnamed_217.kAudioUnitParameterUnit_Degrees);
+pub const kAudioUnitParameterUnit_EqualPowerCrossfade = @enumToInt(enum_unnamed_217.kAudioUnitParameterUnit_EqualPowerCrossfade);
+pub const kAudioUnitParameterUnit_MixerFaderCurve1 = @enumToInt(enum_unnamed_217.kAudioUnitParameterUnit_MixerFaderCurve1);
+pub const kAudioUnitParameterUnit_Pan = @enumToInt(enum_unnamed_217.kAudioUnitParameterUnit_Pan);
+pub const kAudioUnitParameterUnit_Meters = @enumToInt(enum_unnamed_217.kAudioUnitParameterUnit_Meters);
+pub const kAudioUnitParameterUnit_AbsoluteCents = @enumToInt(enum_unnamed_217.kAudioUnitParameterUnit_AbsoluteCents);
+pub const kAudioUnitParameterUnit_Octaves = @enumToInt(enum_unnamed_217.kAudioUnitParameterUnit_Octaves);
+pub const kAudioUnitParameterUnit_BPM = @enumToInt(enum_unnamed_217.kAudioUnitParameterUnit_BPM);
+pub const kAudioUnitParameterUnit_Beats = @enumToInt(enum_unnamed_217.kAudioUnitParameterUnit_Beats);
+pub const kAudioUnitParameterUnit_Milliseconds = @enumToInt(enum_unnamed_217.kAudioUnitParameterUnit_Milliseconds);
+pub const kAudioUnitParameterUnit_Ratio = @enumToInt(enum_unnamed_217.kAudioUnitParameterUnit_Ratio);
+pub const kAudioUnitParameterUnit_CustomUnit = @enumToInt(enum_unnamed_217.kAudioUnitParameterUnit_CustomUnit);
+const enum_unnamed_217 = extern enum(c_int) {
     kAudioUnitParameterUnit_Generic = 0,
     kAudioUnitParameterUnit_Indexed = 1,
     kAudioUnitParameterUnit_Boolean = 2,
@@ -9154,29 +8140,29 @@ const enum_unnamed_290 = extern enum(c_int) {
     _,
 };
 pub const AudioUnitParameterOptions = UInt32;
-pub const kAudioUnitParameterFlag_CFNameRelease = @enumToInt(enum_unnamed_291.kAudioUnitParameterFlag_CFNameRelease);
-pub const kAudioUnitParameterFlag_OmitFromPresets = @enumToInt(enum_unnamed_291.kAudioUnitParameterFlag_OmitFromPresets);
-pub const kAudioUnitParameterFlag_PlotHistory = @enumToInt(enum_unnamed_291.kAudioUnitParameterFlag_PlotHistory);
-pub const kAudioUnitParameterFlag_MeterReadOnly = @enumToInt(enum_unnamed_291.kAudioUnitParameterFlag_MeterReadOnly);
-pub const kAudioUnitParameterFlag_DisplayMask = @enumToInt(enum_unnamed_291.kAudioUnitParameterFlag_DisplayMask);
-pub const kAudioUnitParameterFlag_DisplaySquareRoot = @enumToInt(enum_unnamed_291.kAudioUnitParameterFlag_DisplaySquareRoot);
-pub const kAudioUnitParameterFlag_DisplaySquared = @enumToInt(enum_unnamed_291.kAudioUnitParameterFlag_DisplaySquared);
-pub const kAudioUnitParameterFlag_DisplayCubed = @enumToInt(enum_unnamed_291.kAudioUnitParameterFlag_DisplayCubed);
-pub const kAudioUnitParameterFlag_DisplayCubeRoot = @enumToInt(enum_unnamed_291.kAudioUnitParameterFlag_DisplayCubeRoot);
-pub const kAudioUnitParameterFlag_DisplayExponential = @enumToInt(enum_unnamed_291.kAudioUnitParameterFlag_DisplayExponential);
-pub const kAudioUnitParameterFlag_HasClump = @enumToInt(enum_unnamed_291.kAudioUnitParameterFlag_HasClump);
-pub const kAudioUnitParameterFlag_ValuesHaveStrings = @enumToInt(enum_unnamed_291.kAudioUnitParameterFlag_ValuesHaveStrings);
-pub const kAudioUnitParameterFlag_DisplayLogarithmic = @enumToInt(enum_unnamed_291.kAudioUnitParameterFlag_DisplayLogarithmic);
-pub const kAudioUnitParameterFlag_IsHighResolution = @enumToInt(enum_unnamed_291.kAudioUnitParameterFlag_IsHighResolution);
-pub const kAudioUnitParameterFlag_NonRealTime = @enumToInt(enum_unnamed_291.kAudioUnitParameterFlag_NonRealTime);
-pub const kAudioUnitParameterFlag_CanRamp = @enumToInt(enum_unnamed_291.kAudioUnitParameterFlag_CanRamp);
-pub const kAudioUnitParameterFlag_ExpertMode = @enumToInt(enum_unnamed_291.kAudioUnitParameterFlag_ExpertMode);
-pub const kAudioUnitParameterFlag_HasCFNameString = @enumToInt(enum_unnamed_291.kAudioUnitParameterFlag_HasCFNameString);
-pub const kAudioUnitParameterFlag_IsGlobalMeta = @enumToInt(enum_unnamed_291.kAudioUnitParameterFlag_IsGlobalMeta);
-pub const kAudioUnitParameterFlag_IsElementMeta = @enumToInt(enum_unnamed_291.kAudioUnitParameterFlag_IsElementMeta);
-pub const kAudioUnitParameterFlag_IsReadable = @enumToInt(enum_unnamed_291.kAudioUnitParameterFlag_IsReadable);
-pub const kAudioUnitParameterFlag_IsWritable = @enumToInt(enum_unnamed_291.kAudioUnitParameterFlag_IsWritable);
-const enum_unnamed_291 = extern enum(c_int) {
+pub const kAudioUnitParameterFlag_CFNameRelease = @enumToInt(enum_unnamed_218.kAudioUnitParameterFlag_CFNameRelease);
+pub const kAudioUnitParameterFlag_OmitFromPresets = @enumToInt(enum_unnamed_218.kAudioUnitParameterFlag_OmitFromPresets);
+pub const kAudioUnitParameterFlag_PlotHistory = @enumToInt(enum_unnamed_218.kAudioUnitParameterFlag_PlotHistory);
+pub const kAudioUnitParameterFlag_MeterReadOnly = @enumToInt(enum_unnamed_218.kAudioUnitParameterFlag_MeterReadOnly);
+pub const kAudioUnitParameterFlag_DisplayMask = @enumToInt(enum_unnamed_218.kAudioUnitParameterFlag_DisplayMask);
+pub const kAudioUnitParameterFlag_DisplaySquareRoot = @enumToInt(enum_unnamed_218.kAudioUnitParameterFlag_DisplaySquareRoot);
+pub const kAudioUnitParameterFlag_DisplaySquared = @enumToInt(enum_unnamed_218.kAudioUnitParameterFlag_DisplaySquared);
+pub const kAudioUnitParameterFlag_DisplayCubed = @enumToInt(enum_unnamed_218.kAudioUnitParameterFlag_DisplayCubed);
+pub const kAudioUnitParameterFlag_DisplayCubeRoot = @enumToInt(enum_unnamed_218.kAudioUnitParameterFlag_DisplayCubeRoot);
+pub const kAudioUnitParameterFlag_DisplayExponential = @enumToInt(enum_unnamed_218.kAudioUnitParameterFlag_DisplayExponential);
+pub const kAudioUnitParameterFlag_HasClump = @enumToInt(enum_unnamed_218.kAudioUnitParameterFlag_HasClump);
+pub const kAudioUnitParameterFlag_ValuesHaveStrings = @enumToInt(enum_unnamed_218.kAudioUnitParameterFlag_ValuesHaveStrings);
+pub const kAudioUnitParameterFlag_DisplayLogarithmic = @enumToInt(enum_unnamed_218.kAudioUnitParameterFlag_DisplayLogarithmic);
+pub const kAudioUnitParameterFlag_IsHighResolution = @enumToInt(enum_unnamed_218.kAudioUnitParameterFlag_IsHighResolution);
+pub const kAudioUnitParameterFlag_NonRealTime = @enumToInt(enum_unnamed_218.kAudioUnitParameterFlag_NonRealTime);
+pub const kAudioUnitParameterFlag_CanRamp = @enumToInt(enum_unnamed_218.kAudioUnitParameterFlag_CanRamp);
+pub const kAudioUnitParameterFlag_ExpertMode = @enumToInt(enum_unnamed_218.kAudioUnitParameterFlag_ExpertMode);
+pub const kAudioUnitParameterFlag_HasCFNameString = @enumToInt(enum_unnamed_218.kAudioUnitParameterFlag_HasCFNameString);
+pub const kAudioUnitParameterFlag_IsGlobalMeta = @enumToInt(enum_unnamed_218.kAudioUnitParameterFlag_IsGlobalMeta);
+pub const kAudioUnitParameterFlag_IsElementMeta = @enumToInt(enum_unnamed_218.kAudioUnitParameterFlag_IsElementMeta);
+pub const kAudioUnitParameterFlag_IsReadable = @enumToInt(enum_unnamed_218.kAudioUnitParameterFlag_IsReadable);
+pub const kAudioUnitParameterFlag_IsWritable = @enumToInt(enum_unnamed_218.kAudioUnitParameterFlag_IsWritable);
+const enum_unnamed_218 = extern enum(c_int) {
     kAudioUnitParameterFlag_CFNameRelease = 16,
     kAudioUnitParameterFlag_OmitFromPresets = 8192,
     kAudioUnitParameterFlag_PlotHistory = 16384,
@@ -9213,8 +8199,8 @@ pub const struct_AudioUnitParameterInfo = extern struct {
     flags: AudioUnitParameterOptions,
 };
 pub const AudioUnitParameterInfo = struct_AudioUnitParameterInfo;
-pub const kAudioUnitClumpID_System = @enumToInt(enum_unnamed_292.kAudioUnitClumpID_System);
-const enum_unnamed_292 = extern enum(c_int) {
+pub const kAudioUnitClumpID_System = @enumToInt(enum_unnamed_219.kAudioUnitClumpID_System);
+const enum_unnamed_219 = extern enum(c_int) {
     kAudioUnitClumpID_System = 0,
     _,
 };
@@ -9227,8 +8213,8 @@ pub fn SetAudioUnitParameterDisplayType(arg_flags: AudioUnitParameterOptions, ar
     var displayType = arg_displayType;
     return ((flags & @bitCast(c_uint, ~kAudioUnitParameterFlag_DisplayMask)) | displayType);
 }
-pub const kAudioUnitParameterName_Full = @enumToInt(enum_unnamed_293.kAudioUnitParameterName_Full);
-const enum_unnamed_293 = extern enum(c_int) {
+pub const kAudioUnitParameterName_Full = @enumToInt(enum_unnamed_220.kAudioUnitParameterName_Full);
+const enum_unnamed_220 = extern enum(c_int) {
     kAudioUnitParameterName_Full = -1,
     _,
 };
@@ -9250,16 +8236,16 @@ pub const struct_AudioUnitParameterValueFromString = extern struct {
     outValue: AudioUnitParameterValue,
 };
 pub const AudioUnitParameterValueFromString = struct_AudioUnitParameterValueFromString;
-pub const kAudioOutputUnitProperty_IsRunning = @enumToInt(enum_unnamed_294.kAudioOutputUnitProperty_IsRunning);
-const enum_unnamed_294 = extern enum(c_int) {
+pub const kAudioOutputUnitProperty_IsRunning = @enumToInt(enum_unnamed_221.kAudioOutputUnitProperty_IsRunning);
+const enum_unnamed_221 = extern enum(c_int) {
     kAudioOutputUnitProperty_IsRunning = 2001,
     _,
 };
-pub const kAudioUnitProperty_AllParameterMIDIMappings = @enumToInt(enum_unnamed_295.kAudioUnitProperty_AllParameterMIDIMappings);
-pub const kAudioUnitProperty_AddParameterMIDIMapping = @enumToInt(enum_unnamed_295.kAudioUnitProperty_AddParameterMIDIMapping);
-pub const kAudioUnitProperty_RemoveParameterMIDIMapping = @enumToInt(enum_unnamed_295.kAudioUnitProperty_RemoveParameterMIDIMapping);
-pub const kAudioUnitProperty_HotMapParameterMIDIMapping = @enumToInt(enum_unnamed_295.kAudioUnitProperty_HotMapParameterMIDIMapping);
-const enum_unnamed_295 = extern enum(c_int) {
+pub const kAudioUnitProperty_AllParameterMIDIMappings = @enumToInt(enum_unnamed_222.kAudioUnitProperty_AllParameterMIDIMappings);
+pub const kAudioUnitProperty_AddParameterMIDIMapping = @enumToInt(enum_unnamed_222.kAudioUnitProperty_AddParameterMIDIMapping);
+pub const kAudioUnitProperty_RemoveParameterMIDIMapping = @enumToInt(enum_unnamed_222.kAudioUnitProperty_RemoveParameterMIDIMapping);
+pub const kAudioUnitProperty_HotMapParameterMIDIMapping = @enumToInt(enum_unnamed_222.kAudioUnitProperty_HotMapParameterMIDIMapping);
+const enum_unnamed_222 = extern enum(c_int) {
     kAudioUnitProperty_AllParameterMIDIMappings = 41,
     kAudioUnitProperty_AddParameterMIDIMapping = 42,
     kAudioUnitProperty_RemoveParameterMIDIMapping = 43,
@@ -9267,13 +8253,13 @@ const enum_unnamed_295 = extern enum(c_int) {
     _,
 };
 pub const AUParameterMIDIMappingFlags = UInt32;
-pub const kAUParameterMIDIMapping_AnyChannelFlag = @enumToInt(enum_unnamed_296.kAUParameterMIDIMapping_AnyChannelFlag);
-pub const kAUParameterMIDIMapping_AnyNoteFlag = @enumToInt(enum_unnamed_296.kAUParameterMIDIMapping_AnyNoteFlag);
-pub const kAUParameterMIDIMapping_SubRange = @enumToInt(enum_unnamed_296.kAUParameterMIDIMapping_SubRange);
-pub const kAUParameterMIDIMapping_Toggle = @enumToInt(enum_unnamed_296.kAUParameterMIDIMapping_Toggle);
-pub const kAUParameterMIDIMapping_Bipolar = @enumToInt(enum_unnamed_296.kAUParameterMIDIMapping_Bipolar);
-pub const kAUParameterMIDIMapping_Bipolar_On = @enumToInt(enum_unnamed_296.kAUParameterMIDIMapping_Bipolar_On);
-const enum_unnamed_296 = extern enum(c_int) {
+pub const kAUParameterMIDIMapping_AnyChannelFlag = @enumToInt(enum_unnamed_223.kAUParameterMIDIMapping_AnyChannelFlag);
+pub const kAUParameterMIDIMapping_AnyNoteFlag = @enumToInt(enum_unnamed_223.kAUParameterMIDIMapping_AnyNoteFlag);
+pub const kAUParameterMIDIMapping_SubRange = @enumToInt(enum_unnamed_223.kAUParameterMIDIMapping_SubRange);
+pub const kAUParameterMIDIMapping_Toggle = @enumToInt(enum_unnamed_223.kAUParameterMIDIMapping_Toggle);
+pub const kAUParameterMIDIMapping_Bipolar = @enumToInt(enum_unnamed_223.kAUParameterMIDIMapping_Bipolar);
+pub const kAUParameterMIDIMapping_Bipolar_On = @enumToInt(enum_unnamed_223.kAUParameterMIDIMapping_Bipolar_On);
+const enum_unnamed_223 = extern enum(c_int) {
     kAUParameterMIDIMapping_AnyChannelFlag = 1,
     kAUParameterMIDIMapping_AnyNoteFlag = 2,
     kAUParameterMIDIMapping_SubRange = 4,
@@ -9296,30 +8282,30 @@ pub const struct_AUParameterMIDIMapping = extern struct {
     reserved3: UInt32,
 };
 pub const AUParameterMIDIMapping = struct_AUParameterMIDIMapping;
-pub const kMusicDeviceProperty_MIDIXMLNames = @enumToInt(enum_unnamed_297.kMusicDeviceProperty_MIDIXMLNames);
-pub const kMusicDeviceProperty_PartGroup = @enumToInt(enum_unnamed_297.kMusicDeviceProperty_PartGroup);
-pub const kMusicDeviceProperty_DualSchedulingMode = @enumToInt(enum_unnamed_297.kMusicDeviceProperty_DualSchedulingMode);
-pub const kMusicDeviceProperty_SupportsStartStopNote = @enumToInt(enum_unnamed_297.kMusicDeviceProperty_SupportsStartStopNote);
-const enum_unnamed_297 = extern enum(c_int) {
+pub const kMusicDeviceProperty_MIDIXMLNames = @enumToInt(enum_unnamed_224.kMusicDeviceProperty_MIDIXMLNames);
+pub const kMusicDeviceProperty_PartGroup = @enumToInt(enum_unnamed_224.kMusicDeviceProperty_PartGroup);
+pub const kMusicDeviceProperty_DualSchedulingMode = @enumToInt(enum_unnamed_224.kMusicDeviceProperty_DualSchedulingMode);
+pub const kMusicDeviceProperty_SupportsStartStopNote = @enumToInt(enum_unnamed_224.kMusicDeviceProperty_SupportsStartStopNote);
+const enum_unnamed_224 = extern enum(c_int) {
     kMusicDeviceProperty_MIDIXMLNames = 1006,
     kMusicDeviceProperty_PartGroup = 1010,
     kMusicDeviceProperty_DualSchedulingMode = 1013,
     kMusicDeviceProperty_SupportsStartStopNote = 1014,
     _,
 };
-pub const kMusicDeviceSampleFrameMask_SampleOffset = @enumToInt(enum_unnamed_298.kMusicDeviceSampleFrameMask_SampleOffset);
-pub const kMusicDeviceSampleFrameMask_IsScheduled = @enumToInt(enum_unnamed_298.kMusicDeviceSampleFrameMask_IsScheduled);
-const enum_unnamed_298 = extern enum(c_int) {
+pub const kMusicDeviceSampleFrameMask_SampleOffset = @enumToInt(enum_unnamed_225.kMusicDeviceSampleFrameMask_SampleOffset);
+pub const kMusicDeviceSampleFrameMask_IsScheduled = @enumToInt(enum_unnamed_225.kMusicDeviceSampleFrameMask_IsScheduled);
+const enum_unnamed_225 = extern enum(c_int) {
     kMusicDeviceSampleFrameMask_SampleOffset = 16777215,
     kMusicDeviceSampleFrameMask_IsScheduled = 16777216,
     _,
 };
-pub const kAudioUnitOfflineProperty_InputSize = @enumToInt(enum_unnamed_299.kAudioUnitOfflineProperty_InputSize);
-pub const kAudioUnitOfflineProperty_OutputSize = @enumToInt(enum_unnamed_299.kAudioUnitOfflineProperty_OutputSize);
-pub const kAudioUnitOfflineProperty_StartOffset = @enumToInt(enum_unnamed_299.kAudioUnitOfflineProperty_StartOffset);
-pub const kAudioUnitOfflineProperty_PreflightRequirements = @enumToInt(enum_unnamed_299.kAudioUnitOfflineProperty_PreflightRequirements);
-pub const kAudioUnitOfflineProperty_PreflightName = @enumToInt(enum_unnamed_299.kAudioUnitOfflineProperty_PreflightName);
-const enum_unnamed_299 = extern enum(c_int) {
+pub const kAudioUnitOfflineProperty_InputSize = @enumToInt(enum_unnamed_226.kAudioUnitOfflineProperty_InputSize);
+pub const kAudioUnitOfflineProperty_OutputSize = @enumToInt(enum_unnamed_226.kAudioUnitOfflineProperty_OutputSize);
+pub const kAudioUnitOfflineProperty_StartOffset = @enumToInt(enum_unnamed_226.kAudioUnitOfflineProperty_StartOffset);
+pub const kAudioUnitOfflineProperty_PreflightRequirements = @enumToInt(enum_unnamed_226.kAudioUnitOfflineProperty_PreflightRequirements);
+pub const kAudioUnitOfflineProperty_PreflightName = @enumToInt(enum_unnamed_226.kAudioUnitOfflineProperty_PreflightName);
+const enum_unnamed_226 = extern enum(c_int) {
     kAudioUnitOfflineProperty_InputSize = 3020,
     kAudioUnitOfflineProperty_OutputSize = 3021,
     kAudioUnitOfflineProperty_StartOffset = 3022,
@@ -9327,41 +8313,41 @@ const enum_unnamed_299 = extern enum(c_int) {
     kAudioUnitOfflineProperty_PreflightName = 3024,
     _,
 };
-pub const kOfflinePreflight_NotRequired = @enumToInt(enum_unnamed_300.kOfflinePreflight_NotRequired);
-pub const kOfflinePreflight_Optional = @enumToInt(enum_unnamed_300.kOfflinePreflight_Optional);
-pub const kOfflinePreflight_Required = @enumToInt(enum_unnamed_300.kOfflinePreflight_Required);
-const enum_unnamed_300 = extern enum(c_int) {
+pub const kOfflinePreflight_NotRequired = @enumToInt(enum_unnamed_227.kOfflinePreflight_NotRequired);
+pub const kOfflinePreflight_Optional = @enumToInt(enum_unnamed_227.kOfflinePreflight_Optional);
+pub const kOfflinePreflight_Required = @enumToInt(enum_unnamed_227.kOfflinePreflight_Required);
+const enum_unnamed_227 = extern enum(c_int) {
     kOfflinePreflight_NotRequired = 0,
     kOfflinePreflight_Optional = 1,
     kOfflinePreflight_Required = 2,
     _,
 };
-pub const kAudioUnitProperty_DistanceAttenuationData = @enumToInt(enum_unnamed_301.kAudioUnitProperty_DistanceAttenuationData);
-const enum_unnamed_301 = extern enum(c_int) {
+pub const kAudioUnitProperty_DistanceAttenuationData = @enumToInt(enum_unnamed_228.kAudioUnitProperty_DistanceAttenuationData);
+const enum_unnamed_228 = extern enum(c_int) {
     kAudioUnitProperty_DistanceAttenuationData = 3600,
     _,
 };
-const struct_unnamed_302 = extern struct {
+const struct_unnamed_229 = extern struct {
     inDistance: Float32,
     outGain: Float32,
 };
 pub const struct_AUDistanceAttenuationData = extern struct {
     inNumberOfPairs: UInt32,
-    pairs: [1]struct_unnamed_302,
+    pairs: [1]struct_unnamed_229,
 };
 pub const AUDistanceAttenuationData = struct_AUDistanceAttenuationData;
-pub const kAudioUnitMigrateProperty_FromPlugin = @enumToInt(enum_unnamed_303.kAudioUnitMigrateProperty_FromPlugin);
-pub const kAudioUnitMigrateProperty_OldAutomation = @enumToInt(enum_unnamed_303.kAudioUnitMigrateProperty_OldAutomation);
-const enum_unnamed_303 = extern enum(c_int) {
+pub const kAudioUnitMigrateProperty_FromPlugin = @enumToInt(enum_unnamed_230.kAudioUnitMigrateProperty_FromPlugin);
+pub const kAudioUnitMigrateProperty_OldAutomation = @enumToInt(enum_unnamed_230.kAudioUnitMigrateProperty_OldAutomation);
+const enum_unnamed_230 = extern enum(c_int) {
     kAudioUnitMigrateProperty_FromPlugin = 4000,
     kAudioUnitMigrateProperty_OldAutomation = 4001,
     _,
 };
-pub const kOtherPluginFormat_Undefined = @enumToInt(enum_unnamed_304.kOtherPluginFormat_Undefined);
-pub const kOtherPluginFormat_kMAS = @enumToInt(enum_unnamed_304.kOtherPluginFormat_kMAS);
-pub const kOtherPluginFormat_kVST = @enumToInt(enum_unnamed_304.kOtherPluginFormat_kVST);
-pub const kOtherPluginFormat_AU = @enumToInt(enum_unnamed_304.kOtherPluginFormat_AU);
-const enum_unnamed_304 = extern enum(c_int) {
+pub const kOtherPluginFormat_Undefined = @enumToInt(enum_unnamed_231.kOtherPluginFormat_Undefined);
+pub const kOtherPluginFormat_kMAS = @enumToInt(enum_unnamed_231.kOtherPluginFormat_kMAS);
+pub const kOtherPluginFormat_kVST = @enumToInt(enum_unnamed_231.kOtherPluginFormat_kVST);
+pub const kOtherPluginFormat_AU = @enumToInt(enum_unnamed_231.kOtherPluginFormat_AU);
+const enum_unnamed_231 = extern enum(c_int) {
     kOtherPluginFormat_Undefined = 0,
     kOtherPluginFormat_kMAS = 1,
     kOtherPluginFormat_kVST = 2,
@@ -9397,28 +8383,28 @@ pub const struct_AudioUnitPresetMAS_Settings = extern struct {
     settings: [1]AudioUnitPresetMAS_SettingData,
 };
 pub const AudioUnitPresetMAS_Settings = struct_AudioUnitPresetMAS_Settings;
-pub const kAudioUnitProperty_SampleRateConverterComplexity = @enumToInt(enum_unnamed_305.kAudioUnitProperty_SampleRateConverterComplexity);
-const enum_unnamed_305 = extern enum(c_int) {
+pub const kAudioUnitProperty_SampleRateConverterComplexity = @enumToInt(enum_unnamed_232.kAudioUnitProperty_SampleRateConverterComplexity);
+const enum_unnamed_232 = extern enum(c_int) {
     kAudioUnitProperty_SampleRateConverterComplexity = 3014,
     _,
 };
-pub const kAudioUnitSampleRateConverterComplexity_Linear = @enumToInt(enum_unnamed_306.kAudioUnitSampleRateConverterComplexity_Linear);
-pub const kAudioUnitSampleRateConverterComplexity_Normal = @enumToInt(enum_unnamed_306.kAudioUnitSampleRateConverterComplexity_Normal);
-pub const kAudioUnitSampleRateConverterComplexity_Mastering = @enumToInt(enum_unnamed_306.kAudioUnitSampleRateConverterComplexity_Mastering);
-const enum_unnamed_306 = extern enum(c_int) {
+pub const kAudioUnitSampleRateConverterComplexity_Linear = @enumToInt(enum_unnamed_233.kAudioUnitSampleRateConverterComplexity_Linear);
+pub const kAudioUnitSampleRateConverterComplexity_Normal = @enumToInt(enum_unnamed_233.kAudioUnitSampleRateConverterComplexity_Normal);
+pub const kAudioUnitSampleRateConverterComplexity_Mastering = @enumToInt(enum_unnamed_233.kAudioUnitSampleRateConverterComplexity_Mastering);
+const enum_unnamed_233 = extern enum(c_int) {
     kAudioUnitSampleRateConverterComplexity_Linear = 1818848869,
     kAudioUnitSampleRateConverterComplexity_Normal = 1852797549,
     kAudioUnitSampleRateConverterComplexity_Mastering = 1650553971,
     _,
 };
-pub const kAudioOutputUnitProperty_CurrentDevice = @enumToInt(enum_unnamed_307.kAudioOutputUnitProperty_CurrentDevice);
-pub const kAudioOutputUnitProperty_ChannelMap = @enumToInt(enum_unnamed_307.kAudioOutputUnitProperty_ChannelMap);
-pub const kAudioOutputUnitProperty_EnableIO = @enumToInt(enum_unnamed_307.kAudioOutputUnitProperty_EnableIO);
-pub const kAudioOutputUnitProperty_StartTime = @enumToInt(enum_unnamed_307.kAudioOutputUnitProperty_StartTime);
-pub const kAudioOutputUnitProperty_SetInputCallback = @enumToInt(enum_unnamed_307.kAudioOutputUnitProperty_SetInputCallback);
-pub const kAudioOutputUnitProperty_HasIO = @enumToInt(enum_unnamed_307.kAudioOutputUnitProperty_HasIO);
-pub const kAudioOutputUnitProperty_StartTimestampsAtZero = @enumToInt(enum_unnamed_307.kAudioOutputUnitProperty_StartTimestampsAtZero);
-const enum_unnamed_307 = extern enum(c_int) {
+pub const kAudioOutputUnitProperty_CurrentDevice = @enumToInt(enum_unnamed_234.kAudioOutputUnitProperty_CurrentDevice);
+pub const kAudioOutputUnitProperty_ChannelMap = @enumToInt(enum_unnamed_234.kAudioOutputUnitProperty_ChannelMap);
+pub const kAudioOutputUnitProperty_EnableIO = @enumToInt(enum_unnamed_234.kAudioOutputUnitProperty_EnableIO);
+pub const kAudioOutputUnitProperty_StartTime = @enumToInt(enum_unnamed_234.kAudioOutputUnitProperty_StartTime);
+pub const kAudioOutputUnitProperty_SetInputCallback = @enumToInt(enum_unnamed_234.kAudioOutputUnitProperty_SetInputCallback);
+pub const kAudioOutputUnitProperty_HasIO = @enumToInt(enum_unnamed_234.kAudioOutputUnitProperty_HasIO);
+pub const kAudioOutputUnitProperty_StartTimestampsAtZero = @enumToInt(enum_unnamed_234.kAudioOutputUnitProperty_StartTimestampsAtZero);
+const enum_unnamed_234 = extern enum(c_int) {
     kAudioOutputUnitProperty_CurrentDevice = 2000,
     kAudioOutputUnitProperty_ChannelMap = 2002,
     kAudioOutputUnitProperty_EnableIO = 2003,
@@ -9433,40 +8419,40 @@ pub const struct_AudioOutputUnitStartAtTimeParams = extern struct {
     mFlags: UInt32,
 };
 pub const AudioOutputUnitStartAtTimeParams = struct_AudioOutputUnitStartAtTimeParams;
-pub const kAUVoiceIOProperty_BypassVoiceProcessing = @enumToInt(enum_unnamed_308.kAUVoiceIOProperty_BypassVoiceProcessing);
-pub const kAUVoiceIOProperty_VoiceProcessingEnableAGC = @enumToInt(enum_unnamed_308.kAUVoiceIOProperty_VoiceProcessingEnableAGC);
-pub const kAUVoiceIOProperty_MuteOutput = @enumToInt(enum_unnamed_308.kAUVoiceIOProperty_MuteOutput);
-const enum_unnamed_308 = extern enum(c_int) {
+pub const kAUVoiceIOProperty_BypassVoiceProcessing = @enumToInt(enum_unnamed_235.kAUVoiceIOProperty_BypassVoiceProcessing);
+pub const kAUVoiceIOProperty_VoiceProcessingEnableAGC = @enumToInt(enum_unnamed_235.kAUVoiceIOProperty_VoiceProcessingEnableAGC);
+pub const kAUVoiceIOProperty_MuteOutput = @enumToInt(enum_unnamed_235.kAUVoiceIOProperty_MuteOutput);
+const enum_unnamed_235 = extern enum(c_int) {
     kAUVoiceIOProperty_BypassVoiceProcessing = 2100,
     kAUVoiceIOProperty_VoiceProcessingEnableAGC = 2101,
     kAUVoiceIOProperty_MuteOutput = 2104,
     _,
 };
-pub const kAUVoiceIOProperty_VoiceProcessingQuality = @enumToInt(enum_unnamed_309.kAUVoiceIOProperty_VoiceProcessingQuality);
-const enum_unnamed_309 = extern enum(c_int) {
+pub const kAUVoiceIOProperty_VoiceProcessingQuality = @enumToInt(enum_unnamed_236.kAUVoiceIOProperty_VoiceProcessingQuality);
+const enum_unnamed_236 = extern enum(c_int) {
     kAUVoiceIOProperty_VoiceProcessingQuality = 2103,
     _,
 };
-pub const kAUNBandEQProperty_NumberOfBands = @enumToInt(enum_unnamed_310.kAUNBandEQProperty_NumberOfBands);
-pub const kAUNBandEQProperty_MaxNumberOfBands = @enumToInt(enum_unnamed_310.kAUNBandEQProperty_MaxNumberOfBands);
-pub const kAUNBandEQProperty_BiquadCoefficients = @enumToInt(enum_unnamed_310.kAUNBandEQProperty_BiquadCoefficients);
-const enum_unnamed_310 = extern enum(c_int) {
+pub const kAUNBandEQProperty_NumberOfBands = @enumToInt(enum_unnamed_237.kAUNBandEQProperty_NumberOfBands);
+pub const kAUNBandEQProperty_MaxNumberOfBands = @enumToInt(enum_unnamed_237.kAUNBandEQProperty_MaxNumberOfBands);
+pub const kAUNBandEQProperty_BiquadCoefficients = @enumToInt(enum_unnamed_237.kAUNBandEQProperty_BiquadCoefficients);
+const enum_unnamed_237 = extern enum(c_int) {
     kAUNBandEQProperty_NumberOfBands = 2200,
     kAUNBandEQProperty_MaxNumberOfBands = 2201,
     kAUNBandEQProperty_BiquadCoefficients = 2203,
     _,
 };
-pub const kAUVoiceIOErr_UnexpectedNumberOfInputChannels = @enumToInt(enum_unnamed_311.kAUVoiceIOErr_UnexpectedNumberOfInputChannels);
-const enum_unnamed_311 = extern enum(c_int) {
+pub const kAUVoiceIOErr_UnexpectedNumberOfInputChannels = @enumToInt(enum_unnamed_238.kAUVoiceIOErr_UnexpectedNumberOfInputChannels);
+const enum_unnamed_238 = extern enum(c_int) {
     kAUVoiceIOErr_UnexpectedNumberOfInputChannels = -66784,
     _,
 };
-pub const kAudioUnitProperty_MeteringMode = @enumToInt(enum_unnamed_312.kAudioUnitProperty_MeteringMode);
-pub const kAudioUnitProperty_MatrixLevels = @enumToInt(enum_unnamed_312.kAudioUnitProperty_MatrixLevels);
-pub const kAudioUnitProperty_MatrixDimensions = @enumToInt(enum_unnamed_312.kAudioUnitProperty_MatrixDimensions);
-pub const kAudioUnitProperty_MeterClipping = @enumToInt(enum_unnamed_312.kAudioUnitProperty_MeterClipping);
-pub const kAudioUnitProperty_InputAnchorTimeStamp = @enumToInt(enum_unnamed_312.kAudioUnitProperty_InputAnchorTimeStamp);
-const enum_unnamed_312 = extern enum(c_int) {
+pub const kAudioUnitProperty_MeteringMode = @enumToInt(enum_unnamed_239.kAudioUnitProperty_MeteringMode);
+pub const kAudioUnitProperty_MatrixLevels = @enumToInt(enum_unnamed_239.kAudioUnitProperty_MatrixLevels);
+pub const kAudioUnitProperty_MatrixDimensions = @enumToInt(enum_unnamed_239.kAudioUnitProperty_MatrixDimensions);
+pub const kAudioUnitProperty_MeterClipping = @enumToInt(enum_unnamed_239.kAudioUnitProperty_MeterClipping);
+pub const kAudioUnitProperty_InputAnchorTimeStamp = @enumToInt(enum_unnamed_239.kAudioUnitProperty_InputAnchorTimeStamp);
+const enum_unnamed_239 = extern enum(c_int) {
     kAudioUnitProperty_MeteringMode = 3007,
     kAudioUnitProperty_MatrixLevels = 3006,
     kAudioUnitProperty_MatrixDimensions = 3009,
@@ -9480,13 +8466,13 @@ pub const struct_AudioUnitMeterClipping = extern struct {
     sawNotANumber: Boolean,
 };
 pub const AudioUnitMeterClipping = struct_AudioUnitMeterClipping;
-pub const kAudioUnitProperty_ReverbRoomType = @enumToInt(enum_unnamed_313.kAudioUnitProperty_ReverbRoomType);
-pub const kAudioUnitProperty_UsesInternalReverb = @enumToInt(enum_unnamed_313.kAudioUnitProperty_UsesInternalReverb);
-pub const kAudioUnitProperty_SpatializationAlgorithm = @enumToInt(enum_unnamed_313.kAudioUnitProperty_SpatializationAlgorithm);
-pub const kAudioUnitProperty_SpatialMixerDistanceParams = @enumToInt(enum_unnamed_313.kAudioUnitProperty_SpatialMixerDistanceParams);
-pub const kAudioUnitProperty_SpatialMixerAttenuationCurve = @enumToInt(enum_unnamed_313.kAudioUnitProperty_SpatialMixerAttenuationCurve);
-pub const kAudioUnitProperty_SpatialMixerRenderingFlags = @enumToInt(enum_unnamed_313.kAudioUnitProperty_SpatialMixerRenderingFlags);
-const enum_unnamed_313 = extern enum(c_int) {
+pub const kAudioUnitProperty_ReverbRoomType = @enumToInt(enum_unnamed_240.kAudioUnitProperty_ReverbRoomType);
+pub const kAudioUnitProperty_UsesInternalReverb = @enumToInt(enum_unnamed_240.kAudioUnitProperty_UsesInternalReverb);
+pub const kAudioUnitProperty_SpatializationAlgorithm = @enumToInt(enum_unnamed_240.kAudioUnitProperty_SpatializationAlgorithm);
+pub const kAudioUnitProperty_SpatialMixerDistanceParams = @enumToInt(enum_unnamed_240.kAudioUnitProperty_SpatialMixerDistanceParams);
+pub const kAudioUnitProperty_SpatialMixerAttenuationCurve = @enumToInt(enum_unnamed_240.kAudioUnitProperty_SpatialMixerAttenuationCurve);
+pub const kAudioUnitProperty_SpatialMixerRenderingFlags = @enumToInt(enum_unnamed_240.kAudioUnitProperty_SpatialMixerRenderingFlags);
+const enum_unnamed_240 = extern enum(c_int) {
     kAudioUnitProperty_ReverbRoomType = 10,
     kAudioUnitProperty_UsesInternalReverb = 1005,
     kAudioUnitProperty_SpatializationAlgorithm = 3000,
@@ -9496,14 +8482,14 @@ const enum_unnamed_313 = extern enum(c_int) {
     _,
 };
 pub const AUSpatializationAlgorithm = UInt32;
-pub const kSpatializationAlgorithm_EqualPowerPanning = @enumToInt(enum_unnamed_314.kSpatializationAlgorithm_EqualPowerPanning);
-pub const kSpatializationAlgorithm_SphericalHead = @enumToInt(enum_unnamed_314.kSpatializationAlgorithm_SphericalHead);
-pub const kSpatializationAlgorithm_HRTF = @enumToInt(enum_unnamed_314.kSpatializationAlgorithm_HRTF);
-pub const kSpatializationAlgorithm_SoundField = @enumToInt(enum_unnamed_314.kSpatializationAlgorithm_SoundField);
-pub const kSpatializationAlgorithm_VectorBasedPanning = @enumToInt(enum_unnamed_314.kSpatializationAlgorithm_VectorBasedPanning);
-pub const kSpatializationAlgorithm_StereoPassThrough = @enumToInt(enum_unnamed_314.kSpatializationAlgorithm_StereoPassThrough);
-pub const kSpatializationAlgorithm_HRTFHQ = @enumToInt(enum_unnamed_314.kSpatializationAlgorithm_HRTFHQ);
-const enum_unnamed_314 = extern enum(c_int) {
+pub const kSpatializationAlgorithm_EqualPowerPanning = @enumToInt(enum_unnamed_241.kSpatializationAlgorithm_EqualPowerPanning);
+pub const kSpatializationAlgorithm_SphericalHead = @enumToInt(enum_unnamed_241.kSpatializationAlgorithm_SphericalHead);
+pub const kSpatializationAlgorithm_HRTF = @enumToInt(enum_unnamed_241.kSpatializationAlgorithm_HRTF);
+pub const kSpatializationAlgorithm_SoundField = @enumToInt(enum_unnamed_241.kSpatializationAlgorithm_SoundField);
+pub const kSpatializationAlgorithm_VectorBasedPanning = @enumToInt(enum_unnamed_241.kSpatializationAlgorithm_VectorBasedPanning);
+pub const kSpatializationAlgorithm_StereoPassThrough = @enumToInt(enum_unnamed_241.kSpatializationAlgorithm_StereoPassThrough);
+pub const kSpatializationAlgorithm_HRTFHQ = @enumToInt(enum_unnamed_241.kSpatializationAlgorithm_HRTFHQ);
+const enum_unnamed_241 = extern enum(c_int) {
     kSpatializationAlgorithm_EqualPowerPanning = 0,
     kSpatializationAlgorithm_SphericalHead = 1,
     kSpatializationAlgorithm_HRTF = 2,
@@ -9514,20 +8500,20 @@ const enum_unnamed_314 = extern enum(c_int) {
     _,
 };
 pub const AUReverbRoomType = UInt32;
-pub const kReverbRoomType_SmallRoom = @enumToInt(enum_unnamed_315.kReverbRoomType_SmallRoom);
-pub const kReverbRoomType_MediumRoom = @enumToInt(enum_unnamed_315.kReverbRoomType_MediumRoom);
-pub const kReverbRoomType_LargeRoom = @enumToInt(enum_unnamed_315.kReverbRoomType_LargeRoom);
-pub const kReverbRoomType_MediumHall = @enumToInt(enum_unnamed_315.kReverbRoomType_MediumHall);
-pub const kReverbRoomType_LargeHall = @enumToInt(enum_unnamed_315.kReverbRoomType_LargeHall);
-pub const kReverbRoomType_Plate = @enumToInt(enum_unnamed_315.kReverbRoomType_Plate);
-pub const kReverbRoomType_MediumChamber = @enumToInt(enum_unnamed_315.kReverbRoomType_MediumChamber);
-pub const kReverbRoomType_LargeChamber = @enumToInt(enum_unnamed_315.kReverbRoomType_LargeChamber);
-pub const kReverbRoomType_Cathedral = @enumToInt(enum_unnamed_315.kReverbRoomType_Cathedral);
-pub const kReverbRoomType_LargeRoom2 = @enumToInt(enum_unnamed_315.kReverbRoomType_LargeRoom2);
-pub const kReverbRoomType_MediumHall2 = @enumToInt(enum_unnamed_315.kReverbRoomType_MediumHall2);
-pub const kReverbRoomType_MediumHall3 = @enumToInt(enum_unnamed_315.kReverbRoomType_MediumHall3);
-pub const kReverbRoomType_LargeHall2 = @enumToInt(enum_unnamed_315.kReverbRoomType_LargeHall2);
-const enum_unnamed_315 = extern enum(c_int) {
+pub const kReverbRoomType_SmallRoom = @enumToInt(enum_unnamed_242.kReverbRoomType_SmallRoom);
+pub const kReverbRoomType_MediumRoom = @enumToInt(enum_unnamed_242.kReverbRoomType_MediumRoom);
+pub const kReverbRoomType_LargeRoom = @enumToInt(enum_unnamed_242.kReverbRoomType_LargeRoom);
+pub const kReverbRoomType_MediumHall = @enumToInt(enum_unnamed_242.kReverbRoomType_MediumHall);
+pub const kReverbRoomType_LargeHall = @enumToInt(enum_unnamed_242.kReverbRoomType_LargeHall);
+pub const kReverbRoomType_Plate = @enumToInt(enum_unnamed_242.kReverbRoomType_Plate);
+pub const kReverbRoomType_MediumChamber = @enumToInt(enum_unnamed_242.kReverbRoomType_MediumChamber);
+pub const kReverbRoomType_LargeChamber = @enumToInt(enum_unnamed_242.kReverbRoomType_LargeChamber);
+pub const kReverbRoomType_Cathedral = @enumToInt(enum_unnamed_242.kReverbRoomType_Cathedral);
+pub const kReverbRoomType_LargeRoom2 = @enumToInt(enum_unnamed_242.kReverbRoomType_LargeRoom2);
+pub const kReverbRoomType_MediumHall2 = @enumToInt(enum_unnamed_242.kReverbRoomType_MediumHall2);
+pub const kReverbRoomType_MediumHall3 = @enumToInt(enum_unnamed_242.kReverbRoomType_MediumHall3);
+pub const kReverbRoomType_LargeHall2 = @enumToInt(enum_unnamed_242.kReverbRoomType_LargeHall2);
+const enum_unnamed_242 = extern enum(c_int) {
     kReverbRoomType_SmallRoom = 0,
     kReverbRoomType_MediumRoom = 1,
     kReverbRoomType_LargeRoom = 2,
@@ -9544,11 +8530,11 @@ const enum_unnamed_315 = extern enum(c_int) {
     _,
 };
 pub const AUSpatialMixerAttenuationCurve = UInt32;
-pub const kSpatialMixerAttenuationCurve_Power = @enumToInt(enum_unnamed_316.kSpatialMixerAttenuationCurve_Power);
-pub const kSpatialMixerAttenuationCurve_Exponential = @enumToInt(enum_unnamed_316.kSpatialMixerAttenuationCurve_Exponential);
-pub const kSpatialMixerAttenuationCurve_Inverse = @enumToInt(enum_unnamed_316.kSpatialMixerAttenuationCurve_Inverse);
-pub const kSpatialMixerAttenuationCurve_Linear = @enumToInt(enum_unnamed_316.kSpatialMixerAttenuationCurve_Linear);
-const enum_unnamed_316 = extern enum(c_int) {
+pub const kSpatialMixerAttenuationCurve_Power = @enumToInt(enum_unnamed_243.kSpatialMixerAttenuationCurve_Power);
+pub const kSpatialMixerAttenuationCurve_Exponential = @enumToInt(enum_unnamed_243.kSpatialMixerAttenuationCurve_Exponential);
+pub const kSpatialMixerAttenuationCurve_Inverse = @enumToInt(enum_unnamed_243.kSpatialMixerAttenuationCurve_Inverse);
+pub const kSpatialMixerAttenuationCurve_Linear = @enumToInt(enum_unnamed_243.kSpatialMixerAttenuationCurve_Linear);
+const enum_unnamed_243 = extern enum(c_int) {
     kSpatialMixerAttenuationCurve_Power = 0,
     kSpatialMixerAttenuationCurve_Exponential = 1,
     kSpatialMixerAttenuationCurve_Inverse = 2,
@@ -9562,20 +8548,20 @@ pub const struct_MixerDistanceParams = extern struct {
 };
 pub const MixerDistanceParams = struct_MixerDistanceParams;
 pub const AUSpatialMixerRenderingFlags = UInt32;
-pub const kSpatialMixerRenderingFlags_InterAuralDelay = @enumToInt(enum_unnamed_317.kSpatialMixerRenderingFlags_InterAuralDelay);
-pub const kSpatialMixerRenderingFlags_DistanceAttenuation = @enumToInt(enum_unnamed_317.kSpatialMixerRenderingFlags_DistanceAttenuation);
-const enum_unnamed_317 = extern enum(c_int) {
+pub const kSpatialMixerRenderingFlags_InterAuralDelay = @enumToInt(enum_unnamed_244.kSpatialMixerRenderingFlags_InterAuralDelay);
+pub const kSpatialMixerRenderingFlags_DistanceAttenuation = @enumToInt(enum_unnamed_244.kSpatialMixerRenderingFlags_DistanceAttenuation);
+const enum_unnamed_244 = extern enum(c_int) {
     kSpatialMixerRenderingFlags_InterAuralDelay = 1,
     kSpatialMixerRenderingFlags_DistanceAttenuation = 4,
     _,
 };
-pub const kAudioUnitProperty_3DMixerDistanceParams = @enumToInt(enum_unnamed_318.kAudioUnitProperty_3DMixerDistanceParams);
-pub const kAudioUnitProperty_3DMixerAttenuationCurve = @enumToInt(enum_unnamed_318.kAudioUnitProperty_3DMixerAttenuationCurve);
-pub const kAudioUnitProperty_DopplerShift = @enumToInt(enum_unnamed_318.kAudioUnitProperty_DopplerShift);
-pub const kAudioUnitProperty_3DMixerRenderingFlags = @enumToInt(enum_unnamed_318.kAudioUnitProperty_3DMixerRenderingFlags);
-pub const kAudioUnitProperty_3DMixerDistanceAtten = @enumToInt(enum_unnamed_318.kAudioUnitProperty_3DMixerDistanceAtten);
-pub const kAudioUnitProperty_ReverbPreset = @enumToInt(enum_unnamed_318.kAudioUnitProperty_ReverbPreset);
-const enum_unnamed_318 = extern enum(c_int) {
+pub const kAudioUnitProperty_3DMixerDistanceParams = @enumToInt(enum_unnamed_245.kAudioUnitProperty_3DMixerDistanceParams);
+pub const kAudioUnitProperty_3DMixerAttenuationCurve = @enumToInt(enum_unnamed_245.kAudioUnitProperty_3DMixerAttenuationCurve);
+pub const kAudioUnitProperty_DopplerShift = @enumToInt(enum_unnamed_245.kAudioUnitProperty_DopplerShift);
+pub const kAudioUnitProperty_3DMixerRenderingFlags = @enumToInt(enum_unnamed_245.kAudioUnitProperty_3DMixerRenderingFlags);
+pub const kAudioUnitProperty_3DMixerDistanceAtten = @enumToInt(enum_unnamed_245.kAudioUnitProperty_3DMixerDistanceAtten);
+pub const kAudioUnitProperty_ReverbPreset = @enumToInt(enum_unnamed_245.kAudioUnitProperty_ReverbPreset);
+const enum_unnamed_245 = extern enum(c_int) {
     kAudioUnitProperty_3DMixerDistanceParams = 3010,
     kAudioUnitProperty_3DMixerAttenuationCurve = 3013,
     kAudioUnitProperty_DopplerShift = 3002,
@@ -9585,14 +8571,14 @@ const enum_unnamed_318 = extern enum(c_int) {
     _,
 };
 pub const AU3DMixerRenderingFlags = UInt32;
-pub const k3DMixerRenderingFlags_InterAuralDelay = @enumToInt(enum_unnamed_319.k3DMixerRenderingFlags_InterAuralDelay);
-pub const k3DMixerRenderingFlags_DopplerShift = @enumToInt(enum_unnamed_319.k3DMixerRenderingFlags_DopplerShift);
-pub const k3DMixerRenderingFlags_DistanceAttenuation = @enumToInt(enum_unnamed_319.k3DMixerRenderingFlags_DistanceAttenuation);
-pub const k3DMixerRenderingFlags_DistanceFilter = @enumToInt(enum_unnamed_319.k3DMixerRenderingFlags_DistanceFilter);
-pub const k3DMixerRenderingFlags_DistanceDiffusion = @enumToInt(enum_unnamed_319.k3DMixerRenderingFlags_DistanceDiffusion);
-pub const k3DMixerRenderingFlags_LinearDistanceAttenuation = @enumToInt(enum_unnamed_319.k3DMixerRenderingFlags_LinearDistanceAttenuation);
-pub const k3DMixerRenderingFlags_ConstantReverbBlend = @enumToInt(enum_unnamed_319.k3DMixerRenderingFlags_ConstantReverbBlend);
-const enum_unnamed_319 = extern enum(c_int) {
+pub const k3DMixerRenderingFlags_InterAuralDelay = @enumToInt(enum_unnamed_246.k3DMixerRenderingFlags_InterAuralDelay);
+pub const k3DMixerRenderingFlags_DopplerShift = @enumToInt(enum_unnamed_246.k3DMixerRenderingFlags_DopplerShift);
+pub const k3DMixerRenderingFlags_DistanceAttenuation = @enumToInt(enum_unnamed_246.k3DMixerRenderingFlags_DistanceAttenuation);
+pub const k3DMixerRenderingFlags_DistanceFilter = @enumToInt(enum_unnamed_246.k3DMixerRenderingFlags_DistanceFilter);
+pub const k3DMixerRenderingFlags_DistanceDiffusion = @enumToInt(enum_unnamed_246.k3DMixerRenderingFlags_DistanceDiffusion);
+pub const k3DMixerRenderingFlags_LinearDistanceAttenuation = @enumToInt(enum_unnamed_246.k3DMixerRenderingFlags_LinearDistanceAttenuation);
+pub const k3DMixerRenderingFlags_ConstantReverbBlend = @enumToInt(enum_unnamed_246.k3DMixerRenderingFlags_ConstantReverbBlend);
+const enum_unnamed_246 = extern enum(c_int) {
     k3DMixerRenderingFlags_InterAuralDelay = 1,
     k3DMixerRenderingFlags_DopplerShift = 2,
     k3DMixerRenderingFlags_DistanceAttenuation = 4,
@@ -9603,34 +8589,34 @@ const enum_unnamed_319 = extern enum(c_int) {
     _,
 };
 pub const AU3DMixerAttenuationCurve = UInt32;
-pub const k3DMixerAttenuationCurve_Power = @enumToInt(enum_unnamed_320.k3DMixerAttenuationCurve_Power);
-pub const k3DMixerAttenuationCurve_Exponential = @enumToInt(enum_unnamed_320.k3DMixerAttenuationCurve_Exponential);
-pub const k3DMixerAttenuationCurve_Inverse = @enumToInt(enum_unnamed_320.k3DMixerAttenuationCurve_Inverse);
-pub const k3DMixerAttenuationCurve_Linear = @enumToInt(enum_unnamed_320.k3DMixerAttenuationCurve_Linear);
-const enum_unnamed_320 = extern enum(c_int) {
+pub const k3DMixerAttenuationCurve_Power = @enumToInt(enum_unnamed_247.k3DMixerAttenuationCurve_Power);
+pub const k3DMixerAttenuationCurve_Exponential = @enumToInt(enum_unnamed_247.k3DMixerAttenuationCurve_Exponential);
+pub const k3DMixerAttenuationCurve_Inverse = @enumToInt(enum_unnamed_247.k3DMixerAttenuationCurve_Inverse);
+pub const k3DMixerAttenuationCurve_Linear = @enumToInt(enum_unnamed_247.k3DMixerAttenuationCurve_Linear);
+const enum_unnamed_247 = extern enum(c_int) {
     k3DMixerAttenuationCurve_Power = 0,
     k3DMixerAttenuationCurve_Exponential = 1,
     k3DMixerAttenuationCurve_Inverse = 2,
     k3DMixerAttenuationCurve_Linear = 3,
     _,
 };
-pub const kAudioUnitProperty_ScheduleAudioSlice = @enumToInt(enum_unnamed_321.kAudioUnitProperty_ScheduleAudioSlice);
-pub const kAudioUnitProperty_ScheduleStartTimeStamp = @enumToInt(enum_unnamed_321.kAudioUnitProperty_ScheduleStartTimeStamp);
-pub const kAudioUnitProperty_CurrentPlayTime = @enumToInt(enum_unnamed_321.kAudioUnitProperty_CurrentPlayTime);
-const enum_unnamed_321 = extern enum(c_int) {
+pub const kAudioUnitProperty_ScheduleAudioSlice = @enumToInt(enum_unnamed_248.kAudioUnitProperty_ScheduleAudioSlice);
+pub const kAudioUnitProperty_ScheduleStartTimeStamp = @enumToInt(enum_unnamed_248.kAudioUnitProperty_ScheduleStartTimeStamp);
+pub const kAudioUnitProperty_CurrentPlayTime = @enumToInt(enum_unnamed_248.kAudioUnitProperty_CurrentPlayTime);
+const enum_unnamed_248 = extern enum(c_int) {
     kAudioUnitProperty_ScheduleAudioSlice = 3300,
     kAudioUnitProperty_ScheduleStartTimeStamp = 3301,
     kAudioUnitProperty_CurrentPlayTime = 3302,
     _,
 };
 pub const AUScheduledAudioSliceFlags = UInt32;
-pub const kScheduledAudioSliceFlag_Complete = @enumToInt(enum_unnamed_322.kScheduledAudioSliceFlag_Complete);
-pub const kScheduledAudioSliceFlag_BeganToRender = @enumToInt(enum_unnamed_322.kScheduledAudioSliceFlag_BeganToRender);
-pub const kScheduledAudioSliceFlag_BeganToRenderLate = @enumToInt(enum_unnamed_322.kScheduledAudioSliceFlag_BeganToRenderLate);
-pub const kScheduledAudioSliceFlag_Loop = @enumToInt(enum_unnamed_322.kScheduledAudioSliceFlag_Loop);
-pub const kScheduledAudioSliceFlag_Interrupt = @enumToInt(enum_unnamed_322.kScheduledAudioSliceFlag_Interrupt);
-pub const kScheduledAudioSliceFlag_InterruptAtLoop = @enumToInt(enum_unnamed_322.kScheduledAudioSliceFlag_InterruptAtLoop);
-const enum_unnamed_322 = extern enum(c_int) {
+pub const kScheduledAudioSliceFlag_Complete = @enumToInt(enum_unnamed_249.kScheduledAudioSliceFlag_Complete);
+pub const kScheduledAudioSliceFlag_BeganToRender = @enumToInt(enum_unnamed_249.kScheduledAudioSliceFlag_BeganToRender);
+pub const kScheduledAudioSliceFlag_BeganToRenderLate = @enumToInt(enum_unnamed_249.kScheduledAudioSliceFlag_BeganToRenderLate);
+pub const kScheduledAudioSliceFlag_Loop = @enumToInt(enum_unnamed_249.kScheduledAudioSliceFlag_Loop);
+pub const kScheduledAudioSliceFlag_Interrupt = @enumToInt(enum_unnamed_249.kScheduledAudioSliceFlag_Interrupt);
+pub const kScheduledAudioSliceFlag_InterruptAtLoop = @enumToInt(enum_unnamed_249.kScheduledAudioSliceFlag_InterruptAtLoop);
+const enum_unnamed_249 = extern enum(c_int) {
     kScheduledAudioSliceFlag_Complete = 1,
     kScheduledAudioSliceFlag_BeganToRender = 2,
     kScheduledAudioSliceFlag_BeganToRenderLate = 4,
@@ -9651,12 +8637,12 @@ pub const struct_ScheduledAudioSlice = extern struct {
 };
 pub const ScheduledAudioSlice = struct_ScheduledAudioSlice;
 pub const ScheduledAudioSliceCompletionProc = ?fn (?*c_void, [*c]ScheduledAudioSlice) callconv(.C) void;
-pub const kAudioUnitProperty_ScheduledFileIDs = @enumToInt(enum_unnamed_323.kAudioUnitProperty_ScheduledFileIDs);
-pub const kAudioUnitProperty_ScheduledFileRegion = @enumToInt(enum_unnamed_323.kAudioUnitProperty_ScheduledFileRegion);
-pub const kAudioUnitProperty_ScheduledFilePrime = @enumToInt(enum_unnamed_323.kAudioUnitProperty_ScheduledFilePrime);
-pub const kAudioUnitProperty_ScheduledFileBufferSizeFrames = @enumToInt(enum_unnamed_323.kAudioUnitProperty_ScheduledFileBufferSizeFrames);
-pub const kAudioUnitProperty_ScheduledFileNumberBuffers = @enumToInt(enum_unnamed_323.kAudioUnitProperty_ScheduledFileNumberBuffers);
-const enum_unnamed_323 = extern enum(c_int) {
+pub const kAudioUnitProperty_ScheduledFileIDs = @enumToInt(enum_unnamed_250.kAudioUnitProperty_ScheduledFileIDs);
+pub const kAudioUnitProperty_ScheduledFileRegion = @enumToInt(enum_unnamed_250.kAudioUnitProperty_ScheduledFileRegion);
+pub const kAudioUnitProperty_ScheduledFilePrime = @enumToInt(enum_unnamed_250.kAudioUnitProperty_ScheduledFilePrime);
+pub const kAudioUnitProperty_ScheduledFileBufferSizeFrames = @enumToInt(enum_unnamed_250.kAudioUnitProperty_ScheduledFileBufferSizeFrames);
+pub const kAudioUnitProperty_ScheduledFileNumberBuffers = @enumToInt(enum_unnamed_250.kAudioUnitProperty_ScheduledFileNumberBuffers);
+const enum_unnamed_250 = extern enum(c_int) {
     kAudioUnitProperty_ScheduledFileIDs = 3310,
     kAudioUnitProperty_ScheduledFileRegion = 3311,
     kAudioUnitProperty_ScheduledFilePrime = 3312,
@@ -9676,41 +8662,41 @@ pub const struct_ScheduledAudioFileRegion = extern struct {
 };
 pub const ScheduledAudioFileRegion = struct_ScheduledAudioFileRegion;
 pub const ScheduledAudioFileRegionCompletionProc = ?fn (?*c_void, [*c]ScheduledAudioFileRegion, OSStatus) callconv(.C) void;
-pub const kMusicDeviceProperty_UsesInternalReverb = @enumToInt(enum_unnamed_324.kMusicDeviceProperty_UsesInternalReverb);
-pub const kMusicDeviceProperty_SoundBankData = @enumToInt(enum_unnamed_324.kMusicDeviceProperty_SoundBankData);
-pub const kMusicDeviceProperty_StreamFromDisk = @enumToInt(enum_unnamed_324.kMusicDeviceProperty_StreamFromDisk);
-pub const kMusicDeviceProperty_SoundBankFSRef = @enumToInt(enum_unnamed_324.kMusicDeviceProperty_SoundBankFSRef);
-const enum_unnamed_324 = extern enum(c_int) {
+pub const kMusicDeviceProperty_UsesInternalReverb = @enumToInt(enum_unnamed_251.kMusicDeviceProperty_UsesInternalReverb);
+pub const kMusicDeviceProperty_SoundBankData = @enumToInt(enum_unnamed_251.kMusicDeviceProperty_SoundBankData);
+pub const kMusicDeviceProperty_StreamFromDisk = @enumToInt(enum_unnamed_251.kMusicDeviceProperty_StreamFromDisk);
+pub const kMusicDeviceProperty_SoundBankFSRef = @enumToInt(enum_unnamed_251.kMusicDeviceProperty_SoundBankFSRef);
+const enum_unnamed_251 = extern enum(c_int) {
     kMusicDeviceProperty_UsesInternalReverb = 1005,
     kMusicDeviceProperty_SoundBankData = 1008,
     kMusicDeviceProperty_StreamFromDisk = 1011,
     kMusicDeviceProperty_SoundBankFSRef = 1012,
     _,
 };
-pub const kMusicDeviceProperty_InstrumentName = @enumToInt(enum_unnamed_325.kMusicDeviceProperty_InstrumentName);
-pub const kMusicDeviceProperty_InstrumentNumber = @enumToInt(enum_unnamed_325.kMusicDeviceProperty_InstrumentNumber);
-const enum_unnamed_325 = extern enum(c_int) {
+pub const kMusicDeviceProperty_InstrumentName = @enumToInt(enum_unnamed_252.kMusicDeviceProperty_InstrumentName);
+pub const kMusicDeviceProperty_InstrumentNumber = @enumToInt(enum_unnamed_252.kMusicDeviceProperty_InstrumentNumber);
+const enum_unnamed_252 = extern enum(c_int) {
     kMusicDeviceProperty_InstrumentName = 1001,
     kMusicDeviceProperty_InstrumentNumber = 1004,
     _,
 };
-pub const kMusicDeviceProperty_InstrumentCount = @enumToInt(enum_unnamed_326.kMusicDeviceProperty_InstrumentCount);
-pub const kMusicDeviceProperty_BankName = @enumToInt(enum_unnamed_326.kMusicDeviceProperty_BankName);
-pub const kMusicDeviceProperty_SoundBankURL = @enumToInt(enum_unnamed_326.kMusicDeviceProperty_SoundBankURL);
-const enum_unnamed_326 = extern enum(c_int) {
+pub const kMusicDeviceProperty_InstrumentCount = @enumToInt(enum_unnamed_253.kMusicDeviceProperty_InstrumentCount);
+pub const kMusicDeviceProperty_BankName = @enumToInt(enum_unnamed_253.kMusicDeviceProperty_BankName);
+pub const kMusicDeviceProperty_SoundBankURL = @enumToInt(enum_unnamed_253.kMusicDeviceProperty_SoundBankURL);
+const enum_unnamed_253 = extern enum(c_int) {
     kMusicDeviceProperty_InstrumentCount = 1000,
     kMusicDeviceProperty_BankName = 1007,
     kMusicDeviceProperty_SoundBankURL = 1100,
     _,
 };
-pub const kAUMIDISynthProperty_EnablePreload = @enumToInt(enum_unnamed_327.kAUMIDISynthProperty_EnablePreload);
-const enum_unnamed_327 = extern enum(c_int) {
+pub const kAUMIDISynthProperty_EnablePreload = @enumToInt(enum_unnamed_254.kAUMIDISynthProperty_EnablePreload);
+const enum_unnamed_254 = extern enum(c_int) {
     kAUMIDISynthProperty_EnablePreload = 4119,
     _,
 };
-pub const kAUSamplerProperty_LoadInstrument = @enumToInt(enum_unnamed_328.kAUSamplerProperty_LoadInstrument);
-pub const kAUSamplerProperty_LoadAudioFiles = @enumToInt(enum_unnamed_328.kAUSamplerProperty_LoadAudioFiles);
-const enum_unnamed_328 = extern enum(c_int) {
+pub const kAUSamplerProperty_LoadInstrument = @enumToInt(enum_unnamed_255.kAUSamplerProperty_LoadInstrument);
+pub const kAUSamplerProperty_LoadAudioFiles = @enumToInt(enum_unnamed_255.kAUSamplerProperty_LoadAudioFiles);
+const enum_unnamed_255 = extern enum(c_int) {
     kAUSamplerProperty_LoadInstrument = 4102,
     kAUSamplerProperty_LoadAudioFiles = 4101,
     _,
@@ -9723,12 +8709,12 @@ pub const struct_AUSamplerInstrumentData = extern struct {
     presetID: UInt8,
 };
 pub const AUSamplerInstrumentData = struct_AUSamplerInstrumentData;
-pub const kInstrumentType_DLSPreset = @enumToInt(enum_unnamed_329.kInstrumentType_DLSPreset);
-pub const kInstrumentType_SF2Preset = @enumToInt(enum_unnamed_329.kInstrumentType_SF2Preset);
-pub const kInstrumentType_AUPreset = @enumToInt(enum_unnamed_329.kInstrumentType_AUPreset);
-pub const kInstrumentType_Audiofile = @enumToInt(enum_unnamed_329.kInstrumentType_Audiofile);
-pub const kInstrumentType_EXS24 = @enumToInt(enum_unnamed_329.kInstrumentType_EXS24);
-const enum_unnamed_329 = extern enum(c_int) {
+pub const kInstrumentType_DLSPreset = @enumToInt(enum_unnamed_256.kInstrumentType_DLSPreset);
+pub const kInstrumentType_SF2Preset = @enumToInt(enum_unnamed_256.kInstrumentType_SF2Preset);
+pub const kInstrumentType_AUPreset = @enumToInt(enum_unnamed_256.kInstrumentType_AUPreset);
+pub const kInstrumentType_Audiofile = @enumToInt(enum_unnamed_256.kInstrumentType_Audiofile);
+pub const kInstrumentType_EXS24 = @enumToInt(enum_unnamed_256.kInstrumentType_EXS24);
+const enum_unnamed_256 = extern enum(c_int) {
     kInstrumentType_DLSPreset = 1,
     kInstrumentType_SF2Preset = 1,
     kInstrumentType_AUPreset = 2,
@@ -9736,38 +8722,38 @@ const enum_unnamed_329 = extern enum(c_int) {
     kInstrumentType_EXS24 = 4,
     _,
 };
-pub const kAUSampler_DefaultPercussionBankMSB = @enumToInt(enum_unnamed_330.kAUSampler_DefaultPercussionBankMSB);
-pub const kAUSampler_DefaultMelodicBankMSB = @enumToInt(enum_unnamed_330.kAUSampler_DefaultMelodicBankMSB);
-pub const kAUSampler_DefaultBankLSB = @enumToInt(enum_unnamed_330.kAUSampler_DefaultBankLSB);
-const enum_unnamed_330 = extern enum(c_int) {
+pub const kAUSampler_DefaultPercussionBankMSB = @enumToInt(enum_unnamed_257.kAUSampler_DefaultPercussionBankMSB);
+pub const kAUSampler_DefaultMelodicBankMSB = @enumToInt(enum_unnamed_257.kAUSampler_DefaultMelodicBankMSB);
+pub const kAUSampler_DefaultBankLSB = @enumToInt(enum_unnamed_257.kAUSampler_DefaultBankLSB);
+const enum_unnamed_257 = extern enum(c_int) {
     kAUSampler_DefaultPercussionBankMSB = 120,
     kAUSampler_DefaultMelodicBankMSB = 121,
     kAUSampler_DefaultBankLSB = 0,
     _,
 };
-pub const kAudioUnitProperty_DeferredRendererPullSize = @enumToInt(enum_unnamed_331.kAudioUnitProperty_DeferredRendererPullSize);
-pub const kAudioUnitProperty_DeferredRendererExtraLatency = @enumToInt(enum_unnamed_331.kAudioUnitProperty_DeferredRendererExtraLatency);
-pub const kAudioUnitProperty_DeferredRendererWaitFrames = @enumToInt(enum_unnamed_331.kAudioUnitProperty_DeferredRendererWaitFrames);
-const enum_unnamed_331 = extern enum(c_int) {
+pub const kAudioUnitProperty_DeferredRendererPullSize = @enumToInt(enum_unnamed_258.kAudioUnitProperty_DeferredRendererPullSize);
+pub const kAudioUnitProperty_DeferredRendererExtraLatency = @enumToInt(enum_unnamed_258.kAudioUnitProperty_DeferredRendererExtraLatency);
+pub const kAudioUnitProperty_DeferredRendererWaitFrames = @enumToInt(enum_unnamed_258.kAudioUnitProperty_DeferredRendererWaitFrames);
+const enum_unnamed_258 = extern enum(c_int) {
     kAudioUnitProperty_DeferredRendererPullSize = 3320,
     kAudioUnitProperty_DeferredRendererExtraLatency = 3321,
     kAudioUnitProperty_DeferredRendererWaitFrames = 3322,
     _,
 };
-pub const kAUNetReceiveProperty_Hostname = @enumToInt(enum_unnamed_332.kAUNetReceiveProperty_Hostname);
-pub const kAUNetReceiveProperty_Password = @enumToInt(enum_unnamed_332.kAUNetReceiveProperty_Password);
-const enum_unnamed_332 = extern enum(c_int) {
+pub const kAUNetReceiveProperty_Hostname = @enumToInt(enum_unnamed_259.kAUNetReceiveProperty_Hostname);
+pub const kAUNetReceiveProperty_Password = @enumToInt(enum_unnamed_259.kAUNetReceiveProperty_Password);
+const enum_unnamed_259 = extern enum(c_int) {
     kAUNetReceiveProperty_Hostname = 3511,
     kAUNetReceiveProperty_Password = 3512,
     _,
 };
-pub const kAUNetSendProperty_PortNum = @enumToInt(enum_unnamed_333.kAUNetSendProperty_PortNum);
-pub const kAUNetSendProperty_TransmissionFormat = @enumToInt(enum_unnamed_333.kAUNetSendProperty_TransmissionFormat);
-pub const kAUNetSendProperty_TransmissionFormatIndex = @enumToInt(enum_unnamed_333.kAUNetSendProperty_TransmissionFormatIndex);
-pub const kAUNetSendProperty_ServiceName = @enumToInt(enum_unnamed_333.kAUNetSendProperty_ServiceName);
-pub const kAUNetSendProperty_Disconnect = @enumToInt(enum_unnamed_333.kAUNetSendProperty_Disconnect);
-pub const kAUNetSendProperty_Password = @enumToInt(enum_unnamed_333.kAUNetSendProperty_Password);
-const enum_unnamed_333 = extern enum(c_int) {
+pub const kAUNetSendProperty_PortNum = @enumToInt(enum_unnamed_260.kAUNetSendProperty_PortNum);
+pub const kAUNetSendProperty_TransmissionFormat = @enumToInt(enum_unnamed_260.kAUNetSendProperty_TransmissionFormat);
+pub const kAUNetSendProperty_TransmissionFormatIndex = @enumToInt(enum_unnamed_260.kAUNetSendProperty_TransmissionFormatIndex);
+pub const kAUNetSendProperty_ServiceName = @enumToInt(enum_unnamed_260.kAUNetSendProperty_ServiceName);
+pub const kAUNetSendProperty_Disconnect = @enumToInt(enum_unnamed_260.kAUNetSendProperty_Disconnect);
+pub const kAUNetSendProperty_Password = @enumToInt(enum_unnamed_260.kAUNetSendProperty_Password);
+const enum_unnamed_260 = extern enum(c_int) {
     kAUNetSendProperty_PortNum = 3513,
     kAUNetSendProperty_TransmissionFormat = 3514,
     kAUNetSendProperty_TransmissionFormatIndex = 3515,
@@ -9776,26 +8762,26 @@ const enum_unnamed_333 = extern enum(c_int) {
     kAUNetSendProperty_Password = 3518,
     _,
 };
-pub const kAUNetSendPresetFormat_PCMFloat32 = @enumToInt(enum_unnamed_334.kAUNetSendPresetFormat_PCMFloat32);
-pub const kAUNetSendPresetFormat_PCMInt24 = @enumToInt(enum_unnamed_334.kAUNetSendPresetFormat_PCMInt24);
-pub const kAUNetSendPresetFormat_PCMInt16 = @enumToInt(enum_unnamed_334.kAUNetSendPresetFormat_PCMInt16);
-pub const kAUNetSendPresetFormat_Lossless24 = @enumToInt(enum_unnamed_334.kAUNetSendPresetFormat_Lossless24);
-pub const kAUNetSendPresetFormat_Lossless16 = @enumToInt(enum_unnamed_334.kAUNetSendPresetFormat_Lossless16);
-pub const kAUNetSendPresetFormat_ULaw = @enumToInt(enum_unnamed_334.kAUNetSendPresetFormat_ULaw);
-pub const kAUNetSendPresetFormat_IMA4 = @enumToInt(enum_unnamed_334.kAUNetSendPresetFormat_IMA4);
-pub const kAUNetSendPresetFormat_AAC_128kbpspc = @enumToInt(enum_unnamed_334.kAUNetSendPresetFormat_AAC_128kbpspc);
-pub const kAUNetSendPresetFormat_AAC_96kbpspc = @enumToInt(enum_unnamed_334.kAUNetSendPresetFormat_AAC_96kbpspc);
-pub const kAUNetSendPresetFormat_AAC_80kbpspc = @enumToInt(enum_unnamed_334.kAUNetSendPresetFormat_AAC_80kbpspc);
-pub const kAUNetSendPresetFormat_AAC_64kbpspc = @enumToInt(enum_unnamed_334.kAUNetSendPresetFormat_AAC_64kbpspc);
-pub const kAUNetSendPresetFormat_AAC_48kbpspc = @enumToInt(enum_unnamed_334.kAUNetSendPresetFormat_AAC_48kbpspc);
-pub const kAUNetSendPresetFormat_AAC_40kbpspc = @enumToInt(enum_unnamed_334.kAUNetSendPresetFormat_AAC_40kbpspc);
-pub const kAUNetSendPresetFormat_AAC_32kbpspc = @enumToInt(enum_unnamed_334.kAUNetSendPresetFormat_AAC_32kbpspc);
-pub const kAUNetSendPresetFormat_AAC_LD_64kbpspc = @enumToInt(enum_unnamed_334.kAUNetSendPresetFormat_AAC_LD_64kbpspc);
-pub const kAUNetSendPresetFormat_AAC_LD_48kbpspc = @enumToInt(enum_unnamed_334.kAUNetSendPresetFormat_AAC_LD_48kbpspc);
-pub const kAUNetSendPresetFormat_AAC_LD_40kbpspc = @enumToInt(enum_unnamed_334.kAUNetSendPresetFormat_AAC_LD_40kbpspc);
-pub const kAUNetSendPresetFormat_AAC_LD_32kbpspc = @enumToInt(enum_unnamed_334.kAUNetSendPresetFormat_AAC_LD_32kbpspc);
-pub const kAUNetSendNumPresetFormats = @enumToInt(enum_unnamed_334.kAUNetSendNumPresetFormats);
-const enum_unnamed_334 = extern enum(c_int) {
+pub const kAUNetSendPresetFormat_PCMFloat32 = @enumToInt(enum_unnamed_261.kAUNetSendPresetFormat_PCMFloat32);
+pub const kAUNetSendPresetFormat_PCMInt24 = @enumToInt(enum_unnamed_261.kAUNetSendPresetFormat_PCMInt24);
+pub const kAUNetSendPresetFormat_PCMInt16 = @enumToInt(enum_unnamed_261.kAUNetSendPresetFormat_PCMInt16);
+pub const kAUNetSendPresetFormat_Lossless24 = @enumToInt(enum_unnamed_261.kAUNetSendPresetFormat_Lossless24);
+pub const kAUNetSendPresetFormat_Lossless16 = @enumToInt(enum_unnamed_261.kAUNetSendPresetFormat_Lossless16);
+pub const kAUNetSendPresetFormat_ULaw = @enumToInt(enum_unnamed_261.kAUNetSendPresetFormat_ULaw);
+pub const kAUNetSendPresetFormat_IMA4 = @enumToInt(enum_unnamed_261.kAUNetSendPresetFormat_IMA4);
+pub const kAUNetSendPresetFormat_AAC_128kbpspc = @enumToInt(enum_unnamed_261.kAUNetSendPresetFormat_AAC_128kbpspc);
+pub const kAUNetSendPresetFormat_AAC_96kbpspc = @enumToInt(enum_unnamed_261.kAUNetSendPresetFormat_AAC_96kbpspc);
+pub const kAUNetSendPresetFormat_AAC_80kbpspc = @enumToInt(enum_unnamed_261.kAUNetSendPresetFormat_AAC_80kbpspc);
+pub const kAUNetSendPresetFormat_AAC_64kbpspc = @enumToInt(enum_unnamed_261.kAUNetSendPresetFormat_AAC_64kbpspc);
+pub const kAUNetSendPresetFormat_AAC_48kbpspc = @enumToInt(enum_unnamed_261.kAUNetSendPresetFormat_AAC_48kbpspc);
+pub const kAUNetSendPresetFormat_AAC_40kbpspc = @enumToInt(enum_unnamed_261.kAUNetSendPresetFormat_AAC_40kbpspc);
+pub const kAUNetSendPresetFormat_AAC_32kbpspc = @enumToInt(enum_unnamed_261.kAUNetSendPresetFormat_AAC_32kbpspc);
+pub const kAUNetSendPresetFormat_AAC_LD_64kbpspc = @enumToInt(enum_unnamed_261.kAUNetSendPresetFormat_AAC_LD_64kbpspc);
+pub const kAUNetSendPresetFormat_AAC_LD_48kbpspc = @enumToInt(enum_unnamed_261.kAUNetSendPresetFormat_AAC_LD_48kbpspc);
+pub const kAUNetSendPresetFormat_AAC_LD_40kbpspc = @enumToInt(enum_unnamed_261.kAUNetSendPresetFormat_AAC_LD_40kbpspc);
+pub const kAUNetSendPresetFormat_AAC_LD_32kbpspc = @enumToInt(enum_unnamed_261.kAUNetSendPresetFormat_AAC_LD_32kbpspc);
+pub const kAUNetSendNumPresetFormats = @enumToInt(enum_unnamed_261.kAUNetSendNumPresetFormats);
+const enum_unnamed_261 = extern enum(c_int) {
     kAUNetSendPresetFormat_PCMFloat32 = 0,
     kAUNetSendPresetFormat_PCMInt24 = 1,
     kAUNetSendPresetFormat_PCMInt16 = 2,
@@ -9829,30 +8815,30 @@ pub const struct_AUHostIdentifier = extern struct {
     hostVersion: AUNumVersion,
 };
 pub const AUHostIdentifier = struct_AUHostIdentifier;
-pub const kAudioUnitParameterFlag_Global = @enumToInt(enum_unnamed_335.kAudioUnitParameterFlag_Global);
-pub const kAudioUnitParameterFlag_Input = @enumToInt(enum_unnamed_335.kAudioUnitParameterFlag_Input);
-pub const kAudioUnitParameterFlag_Output = @enumToInt(enum_unnamed_335.kAudioUnitParameterFlag_Output);
-pub const kAudioUnitParameterFlag_Group = @enumToInt(enum_unnamed_335.kAudioUnitParameterFlag_Group);
-const enum_unnamed_335 = extern enum(c_int) {
+pub const kAudioUnitParameterFlag_Global = @enumToInt(enum_unnamed_262.kAudioUnitParameterFlag_Global);
+pub const kAudioUnitParameterFlag_Input = @enumToInt(enum_unnamed_262.kAudioUnitParameterFlag_Input);
+pub const kAudioUnitParameterFlag_Output = @enumToInt(enum_unnamed_262.kAudioUnitParameterFlag_Output);
+pub const kAudioUnitParameterFlag_Group = @enumToInt(enum_unnamed_262.kAudioUnitParameterFlag_Group);
+const enum_unnamed_262 = extern enum(c_int) {
     kAudioUnitParameterFlag_Global = 1,
     kAudioUnitParameterFlag_Input = 2,
     kAudioUnitParameterFlag_Output = 4,
     kAudioUnitParameterFlag_Group = 8,
     _,
 };
-pub const kAudioUnitParameterFlag_HasName = @enumToInt(enum_unnamed_336.kAudioUnitParameterFlag_HasName);
-const enum_unnamed_336 = extern enum(c_int) {
+pub const kAudioUnitParameterFlag_HasName = @enumToInt(enum_unnamed_263.kAudioUnitParameterFlag_HasName);
+const enum_unnamed_263 = extern enum(c_int) {
     kAudioUnitParameterFlag_HasName = 2097152,
     _,
 };
-pub const kAudioUnitProperty_SRCAlgorithm = @enumToInt(enum_unnamed_337.kAudioUnitProperty_SRCAlgorithm);
-pub const kAudioUnitProperty_MIDIControlMapping = @enumToInt(enum_unnamed_337.kAudioUnitProperty_MIDIControlMapping);
-pub const kAudioUnitProperty_CurrentPreset = @enumToInt(enum_unnamed_337.kAudioUnitProperty_CurrentPreset);
-pub const kAudioUnitProperty_ParameterValueName = @enumToInt(enum_unnamed_337.kAudioUnitProperty_ParameterValueName);
-pub const kAudioUnitProperty_BusCount = @enumToInt(enum_unnamed_337.kAudioUnitProperty_BusCount);
-pub const kAudioOfflineUnitProperty_InputSize = @enumToInt(enum_unnamed_337.kAudioOfflineUnitProperty_InputSize);
-pub const kAudioOfflineUnitProperty_OutputSize = @enumToInt(enum_unnamed_337.kAudioOfflineUnitProperty_OutputSize);
-const enum_unnamed_337 = extern enum(c_int) {
+pub const kAudioUnitProperty_SRCAlgorithm = @enumToInt(enum_unnamed_264.kAudioUnitProperty_SRCAlgorithm);
+pub const kAudioUnitProperty_MIDIControlMapping = @enumToInt(enum_unnamed_264.kAudioUnitProperty_MIDIControlMapping);
+pub const kAudioUnitProperty_CurrentPreset = @enumToInt(enum_unnamed_264.kAudioUnitProperty_CurrentPreset);
+pub const kAudioUnitProperty_ParameterValueName = @enumToInt(enum_unnamed_264.kAudioUnitProperty_ParameterValueName);
+pub const kAudioUnitProperty_BusCount = @enumToInt(enum_unnamed_264.kAudioUnitProperty_BusCount);
+pub const kAudioOfflineUnitProperty_InputSize = @enumToInt(enum_unnamed_264.kAudioOfflineUnitProperty_InputSize);
+pub const kAudioOfflineUnitProperty_OutputSize = @enumToInt(enum_unnamed_264.kAudioOfflineUnitProperty_OutputSize);
+const enum_unnamed_264 = extern enum(c_int) {
     kAudioUnitProperty_SRCAlgorithm = 9,
     kAudioUnitProperty_MIDIControlMapping = 17,
     kAudioUnitProperty_CurrentPreset = 28,
@@ -9862,9 +8848,9 @@ const enum_unnamed_337 = extern enum(c_int) {
     kAudioOfflineUnitProperty_OutputSize = 3021,
     _,
 };
-pub const kAudioUnitSRCAlgorithm_Polyphase = @enumToInt(enum_unnamed_338.kAudioUnitSRCAlgorithm_Polyphase);
-pub const kAudioUnitSRCAlgorithm_MediumQuality = @enumToInt(enum_unnamed_338.kAudioUnitSRCAlgorithm_MediumQuality);
-const enum_unnamed_338 = extern enum(c_int) {
+pub const kAudioUnitSRCAlgorithm_Polyphase = @enumToInt(enum_unnamed_265.kAudioUnitSRCAlgorithm_Polyphase);
+pub const kAudioUnitSRCAlgorithm_MediumQuality = @enumToInt(enum_unnamed_265.kAudioUnitSRCAlgorithm_MediumQuality);
+const enum_unnamed_265 = extern enum(c_int) {
     kAudioUnitSRCAlgorithm_Polyphase = 1886350457,
     kAudioUnitSRCAlgorithm_MediumQuality = 1668510307,
     _,
@@ -9883,26 +8869,26 @@ pub const struct_AudioUnitParameterValueName = extern struct {
     outName: CFStringRef,
 };
 pub const AudioUnitParameterValueName = struct_AudioUnitParameterValueName;
-pub const kMusicDeviceProperty_GroupOutputBus = @enumToInt(enum_unnamed_339.kMusicDeviceProperty_GroupOutputBus);
-pub const kMusicDeviceProperty_SoundBankFSSpec = @enumToInt(enum_unnamed_339.kMusicDeviceProperty_SoundBankFSSpec);
-pub const kAudioUnitProperty_PannerMode = @enumToInt(enum_unnamed_339.kAudioUnitProperty_PannerMode);
-const enum_unnamed_339 = extern enum(c_int) {
+pub const kMusicDeviceProperty_GroupOutputBus = @enumToInt(enum_unnamed_266.kMusicDeviceProperty_GroupOutputBus);
+pub const kMusicDeviceProperty_SoundBankFSSpec = @enumToInt(enum_unnamed_266.kMusicDeviceProperty_SoundBankFSSpec);
+pub const kAudioUnitProperty_PannerMode = @enumToInt(enum_unnamed_266.kAudioUnitProperty_PannerMode);
+const enum_unnamed_266 = extern enum(c_int) {
     kMusicDeviceProperty_GroupOutputBus = 1002,
     kMusicDeviceProperty_SoundBankFSSpec = 1003,
     kAudioUnitProperty_PannerMode = 3008,
     _,
 };
-pub const kAudioUnitProperty_SpeakerConfiguration = @enumToInt(enum_unnamed_340.kAudioUnitProperty_SpeakerConfiguration);
-const enum_unnamed_340 = extern enum(c_int) {
+pub const kAudioUnitProperty_SpeakerConfiguration = @enumToInt(enum_unnamed_267.kAudioUnitProperty_SpeakerConfiguration);
+const enum_unnamed_267 = extern enum(c_int) {
     kAudioUnitProperty_SpeakerConfiguration = 3001,
     _,
 };
-pub const kSpeakerConfiguration_HeadPhones = @enumToInt(enum_unnamed_341.kSpeakerConfiguration_HeadPhones);
-pub const kSpeakerConfiguration_Stereo = @enumToInt(enum_unnamed_341.kSpeakerConfiguration_Stereo);
-pub const kSpeakerConfiguration_Quad = @enumToInt(enum_unnamed_341.kSpeakerConfiguration_Quad);
-pub const kSpeakerConfiguration_5_0 = @enumToInt(enum_unnamed_341.kSpeakerConfiguration_5_0);
-pub const kSpeakerConfiguration_5_1 = @enumToInt(enum_unnamed_341.kSpeakerConfiguration_5_1);
-const enum_unnamed_341 = extern enum(c_int) {
+pub const kSpeakerConfiguration_HeadPhones = @enumToInt(enum_unnamed_268.kSpeakerConfiguration_HeadPhones);
+pub const kSpeakerConfiguration_Stereo = @enumToInt(enum_unnamed_268.kSpeakerConfiguration_Stereo);
+pub const kSpeakerConfiguration_Quad = @enumToInt(enum_unnamed_268.kSpeakerConfiguration_Quad);
+pub const kSpeakerConfiguration_5_0 = @enumToInt(enum_unnamed_268.kSpeakerConfiguration_5_0);
+pub const kSpeakerConfiguration_5_1 = @enumToInt(enum_unnamed_268.kSpeakerConfiguration_5_1);
+const enum_unnamed_268 = extern enum(c_int) {
     kSpeakerConfiguration_HeadPhones = 0,
     kSpeakerConfiguration_Stereo = 1,
     kSpeakerConfiguration_Quad = 2,
@@ -9918,36 +8904,36 @@ pub const struct_AUSamplerBankPresetData = extern struct {
     reserved: UInt8,
 };
 pub const AUSamplerBankPresetData = struct_AUSamplerBankPresetData;
-pub const kAUSamplerProperty_LoadPresetFromBank = @enumToInt(enum_unnamed_342.kAUSamplerProperty_LoadPresetFromBank);
-pub const kAUSamplerProperty_BankAndPreset = @enumToInt(enum_unnamed_342.kAUSamplerProperty_BankAndPreset);
-const enum_unnamed_342 = extern enum(c_int) {
+pub const kAUSamplerProperty_LoadPresetFromBank = @enumToInt(enum_unnamed_269.kAUSamplerProperty_LoadPresetFromBank);
+pub const kAUSamplerProperty_BankAndPreset = @enumToInt(enum_unnamed_269.kAUSamplerProperty_BankAndPreset);
+const enum_unnamed_269 = extern enum(c_int) {
     kAUSamplerProperty_LoadPresetFromBank = 4100,
     kAUSamplerProperty_BankAndPreset = 4100,
     _,
 };
-pub const kAUGroupParameterID_Volume = @enumToInt(enum_unnamed_343.kAUGroupParameterID_Volume);
-pub const kAUGroupParameterID_Sustain = @enumToInt(enum_unnamed_343.kAUGroupParameterID_Sustain);
-pub const kAUGroupParameterID_Sostenuto = @enumToInt(enum_unnamed_343.kAUGroupParameterID_Sostenuto);
-pub const kAUGroupParameterID_AllNotesOff = @enumToInt(enum_unnamed_343.kAUGroupParameterID_AllNotesOff);
-pub const kAUGroupParameterID_ModWheel = @enumToInt(enum_unnamed_343.kAUGroupParameterID_ModWheel);
-pub const kAUGroupParameterID_PitchBend = @enumToInt(enum_unnamed_343.kAUGroupParameterID_PitchBend);
-pub const kAUGroupParameterID_AllSoundOff = @enumToInt(enum_unnamed_343.kAUGroupParameterID_AllSoundOff);
-pub const kAUGroupParameterID_ResetAllControllers = @enumToInt(enum_unnamed_343.kAUGroupParameterID_ResetAllControllers);
-pub const kAUGroupParameterID_Pan = @enumToInt(enum_unnamed_343.kAUGroupParameterID_Pan);
-pub const kAUGroupParameterID_Foot = @enumToInt(enum_unnamed_343.kAUGroupParameterID_Foot);
-pub const kAUGroupParameterID_ChannelPressure = @enumToInt(enum_unnamed_343.kAUGroupParameterID_ChannelPressure);
-pub const kAUGroupParameterID_KeyPressure = @enumToInt(enum_unnamed_343.kAUGroupParameterID_KeyPressure);
-pub const kAUGroupParameterID_Expression = @enumToInt(enum_unnamed_343.kAUGroupParameterID_Expression);
-pub const kAUGroupParameterID_DataEntry = @enumToInt(enum_unnamed_343.kAUGroupParameterID_DataEntry);
-pub const kAUGroupParameterID_Volume_LSB = @enumToInt(enum_unnamed_343.kAUGroupParameterID_Volume_LSB);
-pub const kAUGroupParameterID_ModWheel_LSB = @enumToInt(enum_unnamed_343.kAUGroupParameterID_ModWheel_LSB);
-pub const kAUGroupParameterID_Pan_LSB = @enumToInt(enum_unnamed_343.kAUGroupParameterID_Pan_LSB);
-pub const kAUGroupParameterID_Foot_LSB = @enumToInt(enum_unnamed_343.kAUGroupParameterID_Foot_LSB);
-pub const kAUGroupParameterID_Expression_LSB = @enumToInt(enum_unnamed_343.kAUGroupParameterID_Expression_LSB);
-pub const kAUGroupParameterID_DataEntry_LSB = @enumToInt(enum_unnamed_343.kAUGroupParameterID_DataEntry_LSB);
-pub const kAUGroupParameterID_KeyPressure_FirstKey = @enumToInt(enum_unnamed_343.kAUGroupParameterID_KeyPressure_FirstKey);
-pub const kAUGroupParameterID_KeyPressure_LastKey = @enumToInt(enum_unnamed_343.kAUGroupParameterID_KeyPressure_LastKey);
-const enum_unnamed_343 = extern enum(c_int) {
+pub const kAUGroupParameterID_Volume = @enumToInt(enum_unnamed_270.kAUGroupParameterID_Volume);
+pub const kAUGroupParameterID_Sustain = @enumToInt(enum_unnamed_270.kAUGroupParameterID_Sustain);
+pub const kAUGroupParameterID_Sostenuto = @enumToInt(enum_unnamed_270.kAUGroupParameterID_Sostenuto);
+pub const kAUGroupParameterID_AllNotesOff = @enumToInt(enum_unnamed_270.kAUGroupParameterID_AllNotesOff);
+pub const kAUGroupParameterID_ModWheel = @enumToInt(enum_unnamed_270.kAUGroupParameterID_ModWheel);
+pub const kAUGroupParameterID_PitchBend = @enumToInt(enum_unnamed_270.kAUGroupParameterID_PitchBend);
+pub const kAUGroupParameterID_AllSoundOff = @enumToInt(enum_unnamed_270.kAUGroupParameterID_AllSoundOff);
+pub const kAUGroupParameterID_ResetAllControllers = @enumToInt(enum_unnamed_270.kAUGroupParameterID_ResetAllControllers);
+pub const kAUGroupParameterID_Pan = @enumToInt(enum_unnamed_270.kAUGroupParameterID_Pan);
+pub const kAUGroupParameterID_Foot = @enumToInt(enum_unnamed_270.kAUGroupParameterID_Foot);
+pub const kAUGroupParameterID_ChannelPressure = @enumToInt(enum_unnamed_270.kAUGroupParameterID_ChannelPressure);
+pub const kAUGroupParameterID_KeyPressure = @enumToInt(enum_unnamed_270.kAUGroupParameterID_KeyPressure);
+pub const kAUGroupParameterID_Expression = @enumToInt(enum_unnamed_270.kAUGroupParameterID_Expression);
+pub const kAUGroupParameterID_DataEntry = @enumToInt(enum_unnamed_270.kAUGroupParameterID_DataEntry);
+pub const kAUGroupParameterID_Volume_LSB = @enumToInt(enum_unnamed_270.kAUGroupParameterID_Volume_LSB);
+pub const kAUGroupParameterID_ModWheel_LSB = @enumToInt(enum_unnamed_270.kAUGroupParameterID_ModWheel_LSB);
+pub const kAUGroupParameterID_Pan_LSB = @enumToInt(enum_unnamed_270.kAUGroupParameterID_Pan_LSB);
+pub const kAUGroupParameterID_Foot_LSB = @enumToInt(enum_unnamed_270.kAUGroupParameterID_Foot_LSB);
+pub const kAUGroupParameterID_Expression_LSB = @enumToInt(enum_unnamed_270.kAUGroupParameterID_Expression_LSB);
+pub const kAUGroupParameterID_DataEntry_LSB = @enumToInt(enum_unnamed_270.kAUGroupParameterID_DataEntry_LSB);
+pub const kAUGroupParameterID_KeyPressure_FirstKey = @enumToInt(enum_unnamed_270.kAUGroupParameterID_KeyPressure_FirstKey);
+pub const kAUGroupParameterID_KeyPressure_LastKey = @enumToInt(enum_unnamed_270.kAUGroupParameterID_KeyPressure_LastKey);
+const enum_unnamed_270 = extern enum(c_int) {
     kAUGroupParameterID_Volume = 7,
     kAUGroupParameterID_Sustain = 64,
     kAUGroupParameterID_Sostenuto = 66,
@@ -9972,13 +8958,13 @@ const enum_unnamed_343 = extern enum(c_int) {
     kAUGroupParameterID_KeyPressure_LastKey = 383,
     _,
 };
-pub const kPannerParam_Gain = @enumToInt(enum_unnamed_344.kPannerParam_Gain);
-pub const kPannerParam_Azimuth = @enumToInt(enum_unnamed_344.kPannerParam_Azimuth);
-pub const kPannerParam_Elevation = @enumToInt(enum_unnamed_344.kPannerParam_Elevation);
-pub const kPannerParam_Distance = @enumToInt(enum_unnamed_344.kPannerParam_Distance);
-pub const kPannerParam_CoordScale = @enumToInt(enum_unnamed_344.kPannerParam_CoordScale);
-pub const kPannerParam_RefDistance = @enumToInt(enum_unnamed_344.kPannerParam_RefDistance);
-const enum_unnamed_344 = extern enum(c_int) {
+pub const kPannerParam_Gain = @enumToInt(enum_unnamed_271.kPannerParam_Gain);
+pub const kPannerParam_Azimuth = @enumToInt(enum_unnamed_271.kPannerParam_Azimuth);
+pub const kPannerParam_Elevation = @enumToInt(enum_unnamed_271.kPannerParam_Elevation);
+pub const kPannerParam_Distance = @enumToInt(enum_unnamed_271.kPannerParam_Distance);
+pub const kPannerParam_CoordScale = @enumToInt(enum_unnamed_271.kPannerParam_CoordScale);
+pub const kPannerParam_RefDistance = @enumToInt(enum_unnamed_271.kPannerParam_RefDistance);
+const enum_unnamed_271 = extern enum(c_int) {
     kPannerParam_Gain = 0,
     kPannerParam_Azimuth = 1,
     kPannerParam_Elevation = 2,
@@ -9987,19 +8973,19 @@ const enum_unnamed_344 = extern enum(c_int) {
     kPannerParam_RefDistance = 5,
     _,
 };
-pub const kSpatialMixerParam_Azimuth = @enumToInt(enum_unnamed_345.kSpatialMixerParam_Azimuth);
-pub const kSpatialMixerParam_Elevation = @enumToInt(enum_unnamed_345.kSpatialMixerParam_Elevation);
-pub const kSpatialMixerParam_Distance = @enumToInt(enum_unnamed_345.kSpatialMixerParam_Distance);
-pub const kSpatialMixerParam_Gain = @enumToInt(enum_unnamed_345.kSpatialMixerParam_Gain);
-pub const kSpatialMixerParam_PlaybackRate = @enumToInt(enum_unnamed_345.kSpatialMixerParam_PlaybackRate);
-pub const kSpatialMixerParam_Enable = @enumToInt(enum_unnamed_345.kSpatialMixerParam_Enable);
-pub const kSpatialMixerParam_MinGain = @enumToInt(enum_unnamed_345.kSpatialMixerParam_MinGain);
-pub const kSpatialMixerParam_MaxGain = @enumToInt(enum_unnamed_345.kSpatialMixerParam_MaxGain);
-pub const kSpatialMixerParam_ReverbBlend = @enumToInt(enum_unnamed_345.kSpatialMixerParam_ReverbBlend);
-pub const kSpatialMixerParam_GlobalReverbGain = @enumToInt(enum_unnamed_345.kSpatialMixerParam_GlobalReverbGain);
-pub const kSpatialMixerParam_OcclusionAttenuation = @enumToInt(enum_unnamed_345.kSpatialMixerParam_OcclusionAttenuation);
-pub const kSpatialMixerParam_ObstructionAttenuation = @enumToInt(enum_unnamed_345.kSpatialMixerParam_ObstructionAttenuation);
-const enum_unnamed_345 = extern enum(c_int) {
+pub const kSpatialMixerParam_Azimuth = @enumToInt(enum_unnamed_272.kSpatialMixerParam_Azimuth);
+pub const kSpatialMixerParam_Elevation = @enumToInt(enum_unnamed_272.kSpatialMixerParam_Elevation);
+pub const kSpatialMixerParam_Distance = @enumToInt(enum_unnamed_272.kSpatialMixerParam_Distance);
+pub const kSpatialMixerParam_Gain = @enumToInt(enum_unnamed_272.kSpatialMixerParam_Gain);
+pub const kSpatialMixerParam_PlaybackRate = @enumToInt(enum_unnamed_272.kSpatialMixerParam_PlaybackRate);
+pub const kSpatialMixerParam_Enable = @enumToInt(enum_unnamed_272.kSpatialMixerParam_Enable);
+pub const kSpatialMixerParam_MinGain = @enumToInt(enum_unnamed_272.kSpatialMixerParam_MinGain);
+pub const kSpatialMixerParam_MaxGain = @enumToInt(enum_unnamed_272.kSpatialMixerParam_MaxGain);
+pub const kSpatialMixerParam_ReverbBlend = @enumToInt(enum_unnamed_272.kSpatialMixerParam_ReverbBlend);
+pub const kSpatialMixerParam_GlobalReverbGain = @enumToInt(enum_unnamed_272.kSpatialMixerParam_GlobalReverbGain);
+pub const kSpatialMixerParam_OcclusionAttenuation = @enumToInt(enum_unnamed_272.kSpatialMixerParam_OcclusionAttenuation);
+pub const kSpatialMixerParam_ObstructionAttenuation = @enumToInt(enum_unnamed_272.kSpatialMixerParam_ObstructionAttenuation);
+const enum_unnamed_272 = extern enum(c_int) {
     kSpatialMixerParam_Azimuth = 0,
     kSpatialMixerParam_Elevation = 1,
     kSpatialMixerParam_Distance = 2,
@@ -10014,12 +9000,12 @@ const enum_unnamed_345 = extern enum(c_int) {
     kSpatialMixerParam_ObstructionAttenuation = 11,
     _,
 };
-pub const kReverbParam_FilterFrequency = @enumToInt(enum_unnamed_346.kReverbParam_FilterFrequency);
-pub const kReverbParam_FilterBandwidth = @enumToInt(enum_unnamed_346.kReverbParam_FilterBandwidth);
-pub const kReverbParam_FilterGain = @enumToInt(enum_unnamed_346.kReverbParam_FilterGain);
-pub const kReverbParam_FilterType = @enumToInt(enum_unnamed_346.kReverbParam_FilterType);
-pub const kReverbParam_FilterEnable = @enumToInt(enum_unnamed_346.kReverbParam_FilterEnable);
-const enum_unnamed_346 = extern enum(c_int) {
+pub const kReverbParam_FilterFrequency = @enumToInt(enum_unnamed_273.kReverbParam_FilterFrequency);
+pub const kReverbParam_FilterBandwidth = @enumToInt(enum_unnamed_273.kReverbParam_FilterBandwidth);
+pub const kReverbParam_FilterGain = @enumToInt(enum_unnamed_273.kReverbParam_FilterGain);
+pub const kReverbParam_FilterType = @enumToInt(enum_unnamed_273.kReverbParam_FilterType);
+pub const kReverbParam_FilterEnable = @enumToInt(enum_unnamed_273.kReverbParam_FilterEnable);
+const enum_unnamed_273 = extern enum(c_int) {
     kReverbParam_FilterFrequency = 14,
     kReverbParam_FilterBandwidth = 15,
     kReverbParam_FilterGain = 16,
@@ -10027,29 +9013,29 @@ const enum_unnamed_346 = extern enum(c_int) {
     kReverbParam_FilterEnable = 18,
     _,
 };
-pub const k3DMixerParam_Azimuth = @enumToInt(enum_unnamed_347.k3DMixerParam_Azimuth);
-pub const k3DMixerParam_Elevation = @enumToInt(enum_unnamed_347.k3DMixerParam_Elevation);
-pub const k3DMixerParam_Distance = @enumToInt(enum_unnamed_347.k3DMixerParam_Distance);
-pub const k3DMixerParam_Gain = @enumToInt(enum_unnamed_347.k3DMixerParam_Gain);
-pub const k3DMixerParam_PlaybackRate = @enumToInt(enum_unnamed_347.k3DMixerParam_PlaybackRate);
-pub const k3DMixerParam_BusEnable = @enumToInt(enum_unnamed_347.k3DMixerParam_BusEnable);
-pub const k3DMixerParam_MinGainInDecibels = @enumToInt(enum_unnamed_347.k3DMixerParam_MinGainInDecibels);
-pub const k3DMixerParam_MaxGainInDecibels = @enumToInt(enum_unnamed_347.k3DMixerParam_MaxGainInDecibels);
-pub const k3DMixerParam_DryWetReverbBlend = @enumToInt(enum_unnamed_347.k3DMixerParam_DryWetReverbBlend);
-pub const k3DMixerParam_GlobalReverbGainInDecibels = @enumToInt(enum_unnamed_347.k3DMixerParam_GlobalReverbGainInDecibels);
-pub const k3DMixerParam_OcclusionAttenuationInDecibels = @enumToInt(enum_unnamed_347.k3DMixerParam_OcclusionAttenuationInDecibels);
-pub const k3DMixerParam_ObstructionAttenuationInDecibels = @enumToInt(enum_unnamed_347.k3DMixerParam_ObstructionAttenuationInDecibels);
-pub const k3DMixerParam_ReverbBlend = @enumToInt(enum_unnamed_347.k3DMixerParam_ReverbBlend);
-pub const k3DMixerParam_GlobalReverbGain = @enumToInt(enum_unnamed_347.k3DMixerParam_GlobalReverbGain);
-pub const k3DMixerParam_OcclusionAttenuation = @enumToInt(enum_unnamed_347.k3DMixerParam_OcclusionAttenuation);
-pub const k3DMixerParam_ObstructionAttenuation = @enumToInt(enum_unnamed_347.k3DMixerParam_ObstructionAttenuation);
-pub const k3DMixerParam_MinGain = @enumToInt(enum_unnamed_347.k3DMixerParam_MinGain);
-pub const k3DMixerParam_MaxGain = @enumToInt(enum_unnamed_347.k3DMixerParam_MaxGain);
-pub const k3DMixerParam_PreAveragePower = @enumToInt(enum_unnamed_347.k3DMixerParam_PreAveragePower);
-pub const k3DMixerParam_PrePeakHoldLevel = @enumToInt(enum_unnamed_347.k3DMixerParam_PrePeakHoldLevel);
-pub const k3DMixerParam_PostAveragePower = @enumToInt(enum_unnamed_347.k3DMixerParam_PostAveragePower);
-pub const k3DMixerParam_PostPeakHoldLevel = @enumToInt(enum_unnamed_347.k3DMixerParam_PostPeakHoldLevel);
-const enum_unnamed_347 = extern enum(c_int) {
+pub const k3DMixerParam_Azimuth = @enumToInt(enum_unnamed_274.k3DMixerParam_Azimuth);
+pub const k3DMixerParam_Elevation = @enumToInt(enum_unnamed_274.k3DMixerParam_Elevation);
+pub const k3DMixerParam_Distance = @enumToInt(enum_unnamed_274.k3DMixerParam_Distance);
+pub const k3DMixerParam_Gain = @enumToInt(enum_unnamed_274.k3DMixerParam_Gain);
+pub const k3DMixerParam_PlaybackRate = @enumToInt(enum_unnamed_274.k3DMixerParam_PlaybackRate);
+pub const k3DMixerParam_BusEnable = @enumToInt(enum_unnamed_274.k3DMixerParam_BusEnable);
+pub const k3DMixerParam_MinGainInDecibels = @enumToInt(enum_unnamed_274.k3DMixerParam_MinGainInDecibels);
+pub const k3DMixerParam_MaxGainInDecibels = @enumToInt(enum_unnamed_274.k3DMixerParam_MaxGainInDecibels);
+pub const k3DMixerParam_DryWetReverbBlend = @enumToInt(enum_unnamed_274.k3DMixerParam_DryWetReverbBlend);
+pub const k3DMixerParam_GlobalReverbGainInDecibels = @enumToInt(enum_unnamed_274.k3DMixerParam_GlobalReverbGainInDecibels);
+pub const k3DMixerParam_OcclusionAttenuationInDecibels = @enumToInt(enum_unnamed_274.k3DMixerParam_OcclusionAttenuationInDecibels);
+pub const k3DMixerParam_ObstructionAttenuationInDecibels = @enumToInt(enum_unnamed_274.k3DMixerParam_ObstructionAttenuationInDecibels);
+pub const k3DMixerParam_ReverbBlend = @enumToInt(enum_unnamed_274.k3DMixerParam_ReverbBlend);
+pub const k3DMixerParam_GlobalReverbGain = @enumToInt(enum_unnamed_274.k3DMixerParam_GlobalReverbGain);
+pub const k3DMixerParam_OcclusionAttenuation = @enumToInt(enum_unnamed_274.k3DMixerParam_OcclusionAttenuation);
+pub const k3DMixerParam_ObstructionAttenuation = @enumToInt(enum_unnamed_274.k3DMixerParam_ObstructionAttenuation);
+pub const k3DMixerParam_MinGain = @enumToInt(enum_unnamed_274.k3DMixerParam_MinGain);
+pub const k3DMixerParam_MaxGain = @enumToInt(enum_unnamed_274.k3DMixerParam_MaxGain);
+pub const k3DMixerParam_PreAveragePower = @enumToInt(enum_unnamed_274.k3DMixerParam_PreAveragePower);
+pub const k3DMixerParam_PrePeakHoldLevel = @enumToInt(enum_unnamed_274.k3DMixerParam_PrePeakHoldLevel);
+pub const k3DMixerParam_PostAveragePower = @enumToInt(enum_unnamed_274.k3DMixerParam_PostAveragePower);
+pub const k3DMixerParam_PostPeakHoldLevel = @enumToInt(enum_unnamed_274.k3DMixerParam_PostPeakHoldLevel);
+const enum_unnamed_274 = extern enum(c_int) {
     k3DMixerParam_Azimuth = 0,
     k3DMixerParam_Elevation = 1,
     k3DMixerParam_Distance = 2,
@@ -10074,14 +9060,14 @@ const enum_unnamed_347 = extern enum(c_int) {
     k3DMixerParam_PostPeakHoldLevel = 4000,
     _,
 };
-pub const kMultiChannelMixerParam_Volume = @enumToInt(enum_unnamed_348.kMultiChannelMixerParam_Volume);
-pub const kMultiChannelMixerParam_Enable = @enumToInt(enum_unnamed_348.kMultiChannelMixerParam_Enable);
-pub const kMultiChannelMixerParam_Pan = @enumToInt(enum_unnamed_348.kMultiChannelMixerParam_Pan);
-pub const kMultiChannelMixerParam_PreAveragePower = @enumToInt(enum_unnamed_348.kMultiChannelMixerParam_PreAveragePower);
-pub const kMultiChannelMixerParam_PrePeakHoldLevel = @enumToInt(enum_unnamed_348.kMultiChannelMixerParam_PrePeakHoldLevel);
-pub const kMultiChannelMixerParam_PostAveragePower = @enumToInt(enum_unnamed_348.kMultiChannelMixerParam_PostAveragePower);
-pub const kMultiChannelMixerParam_PostPeakHoldLevel = @enumToInt(enum_unnamed_348.kMultiChannelMixerParam_PostPeakHoldLevel);
-const enum_unnamed_348 = extern enum(c_int) {
+pub const kMultiChannelMixerParam_Volume = @enumToInt(enum_unnamed_275.kMultiChannelMixerParam_Volume);
+pub const kMultiChannelMixerParam_Enable = @enumToInt(enum_unnamed_275.kMultiChannelMixerParam_Enable);
+pub const kMultiChannelMixerParam_Pan = @enumToInt(enum_unnamed_275.kMultiChannelMixerParam_Pan);
+pub const kMultiChannelMixerParam_PreAveragePower = @enumToInt(enum_unnamed_275.kMultiChannelMixerParam_PreAveragePower);
+pub const kMultiChannelMixerParam_PrePeakHoldLevel = @enumToInt(enum_unnamed_275.kMultiChannelMixerParam_PrePeakHoldLevel);
+pub const kMultiChannelMixerParam_PostAveragePower = @enumToInt(enum_unnamed_275.kMultiChannelMixerParam_PostAveragePower);
+pub const kMultiChannelMixerParam_PostPeakHoldLevel = @enumToInt(enum_unnamed_275.kMultiChannelMixerParam_PostPeakHoldLevel);
+const enum_unnamed_275 = extern enum(c_int) {
     kMultiChannelMixerParam_Volume = 0,
     kMultiChannelMixerParam_Enable = 1,
     kMultiChannelMixerParam_Pan = 2,
@@ -10091,17 +9077,17 @@ const enum_unnamed_348 = extern enum(c_int) {
     kMultiChannelMixerParam_PostPeakHoldLevel = 4000,
     _,
 };
-pub const kMatrixMixerParam_Volume = @enumToInt(enum_unnamed_349.kMatrixMixerParam_Volume);
-pub const kMatrixMixerParam_Enable = @enumToInt(enum_unnamed_349.kMatrixMixerParam_Enable);
-pub const kMatrixMixerParam_PreAveragePower = @enumToInt(enum_unnamed_349.kMatrixMixerParam_PreAveragePower);
-pub const kMatrixMixerParam_PrePeakHoldLevel = @enumToInt(enum_unnamed_349.kMatrixMixerParam_PrePeakHoldLevel);
-pub const kMatrixMixerParam_PostAveragePower = @enumToInt(enum_unnamed_349.kMatrixMixerParam_PostAveragePower);
-pub const kMatrixMixerParam_PostPeakHoldLevel = @enumToInt(enum_unnamed_349.kMatrixMixerParam_PostPeakHoldLevel);
-pub const kMatrixMixerParam_PreAveragePowerLinear = @enumToInt(enum_unnamed_349.kMatrixMixerParam_PreAveragePowerLinear);
-pub const kMatrixMixerParam_PrePeakHoldLevelLinear = @enumToInt(enum_unnamed_349.kMatrixMixerParam_PrePeakHoldLevelLinear);
-pub const kMatrixMixerParam_PostAveragePowerLinear = @enumToInt(enum_unnamed_349.kMatrixMixerParam_PostAveragePowerLinear);
-pub const kMatrixMixerParam_PostPeakHoldLevelLinear = @enumToInt(enum_unnamed_349.kMatrixMixerParam_PostPeakHoldLevelLinear);
-const enum_unnamed_349 = extern enum(c_int) {
+pub const kMatrixMixerParam_Volume = @enumToInt(enum_unnamed_276.kMatrixMixerParam_Volume);
+pub const kMatrixMixerParam_Enable = @enumToInt(enum_unnamed_276.kMatrixMixerParam_Enable);
+pub const kMatrixMixerParam_PreAveragePower = @enumToInt(enum_unnamed_276.kMatrixMixerParam_PreAveragePower);
+pub const kMatrixMixerParam_PrePeakHoldLevel = @enumToInt(enum_unnamed_276.kMatrixMixerParam_PrePeakHoldLevel);
+pub const kMatrixMixerParam_PostAveragePower = @enumToInt(enum_unnamed_276.kMatrixMixerParam_PostAveragePower);
+pub const kMatrixMixerParam_PostPeakHoldLevel = @enumToInt(enum_unnamed_276.kMatrixMixerParam_PostPeakHoldLevel);
+pub const kMatrixMixerParam_PreAveragePowerLinear = @enumToInt(enum_unnamed_276.kMatrixMixerParam_PreAveragePowerLinear);
+pub const kMatrixMixerParam_PrePeakHoldLevelLinear = @enumToInt(enum_unnamed_276.kMatrixMixerParam_PrePeakHoldLevelLinear);
+pub const kMatrixMixerParam_PostAveragePowerLinear = @enumToInt(enum_unnamed_276.kMatrixMixerParam_PostAveragePowerLinear);
+pub const kMatrixMixerParam_PostPeakHoldLevelLinear = @enumToInt(enum_unnamed_276.kMatrixMixerParam_PostPeakHoldLevelLinear);
+const enum_unnamed_276 = extern enum(c_int) {
     kMatrixMixerParam_Volume = 0,
     kMatrixMixerParam_Enable = 1,
     kMatrixMixerParam_PreAveragePower = 1000,
@@ -10114,106 +9100,106 @@ const enum_unnamed_349 = extern enum(c_int) {
     kMatrixMixerParam_PostPeakHoldLevelLinear = 8000,
     _,
 };
-pub const kHALOutputParam_Volume = @enumToInt(enum_unnamed_350.kHALOutputParam_Volume);
-const enum_unnamed_350 = extern enum(c_int) {
+pub const kHALOutputParam_Volume = @enumToInt(enum_unnamed_277.kHALOutputParam_Volume);
+const enum_unnamed_277 = extern enum(c_int) {
     kHALOutputParam_Volume = 14,
     _,
 };
-pub const kTimePitchParam_Rate = @enumToInt(enum_unnamed_351.kTimePitchParam_Rate);
-pub const kTimePitchParam_Pitch = @enumToInt(enum_unnamed_351.kTimePitchParam_Pitch);
-pub const kTimePitchParam_EffectBlend = @enumToInt(enum_unnamed_351.kTimePitchParam_EffectBlend);
-const enum_unnamed_351 = extern enum(c_int) {
+pub const kTimePitchParam_Rate = @enumToInt(enum_unnamed_278.kTimePitchParam_Rate);
+pub const kTimePitchParam_Pitch = @enumToInt(enum_unnamed_278.kTimePitchParam_Pitch);
+pub const kTimePitchParam_EffectBlend = @enumToInt(enum_unnamed_278.kTimePitchParam_EffectBlend);
+const enum_unnamed_278 = extern enum(c_int) {
     kTimePitchParam_Rate = 0,
     kTimePitchParam_Pitch = 1,
     kTimePitchParam_EffectBlend = 2,
     _,
 };
-pub const kNewTimePitchParam_Rate = @enumToInt(enum_unnamed_352.kNewTimePitchParam_Rate);
-pub const kNewTimePitchParam_Pitch = @enumToInt(enum_unnamed_352.kNewTimePitchParam_Pitch);
-pub const kNewTimePitchParam_Overlap = @enumToInt(enum_unnamed_352.kNewTimePitchParam_Overlap);
-pub const kNewTimePitchParam_EnablePeakLocking = @enumToInt(enum_unnamed_352.kNewTimePitchParam_EnablePeakLocking);
-const enum_unnamed_352 = extern enum(c_int) {
+pub const kNewTimePitchParam_Rate = @enumToInt(enum_unnamed_279.kNewTimePitchParam_Rate);
+pub const kNewTimePitchParam_Pitch = @enumToInt(enum_unnamed_279.kNewTimePitchParam_Pitch);
+pub const kNewTimePitchParam_Overlap = @enumToInt(enum_unnamed_279.kNewTimePitchParam_Overlap);
+pub const kNewTimePitchParam_EnablePeakLocking = @enumToInt(enum_unnamed_279.kNewTimePitchParam_EnablePeakLocking);
+const enum_unnamed_279 = extern enum(c_int) {
     kNewTimePitchParam_Rate = 0,
     kNewTimePitchParam_Pitch = 1,
     kNewTimePitchParam_Overlap = 4,
     kNewTimePitchParam_EnablePeakLocking = 6,
     _,
 };
-pub const kAUSamplerParam_Gain = @enumToInt(enum_unnamed_353.kAUSamplerParam_Gain);
-pub const kAUSamplerParam_CoarseTuning = @enumToInt(enum_unnamed_353.kAUSamplerParam_CoarseTuning);
-pub const kAUSamplerParam_FineTuning = @enumToInt(enum_unnamed_353.kAUSamplerParam_FineTuning);
-pub const kAUSamplerParam_Pan = @enumToInt(enum_unnamed_353.kAUSamplerParam_Pan);
-const enum_unnamed_353 = extern enum(c_int) {
+pub const kAUSamplerParam_Gain = @enumToInt(enum_unnamed_280.kAUSamplerParam_Gain);
+pub const kAUSamplerParam_CoarseTuning = @enumToInt(enum_unnamed_280.kAUSamplerParam_CoarseTuning);
+pub const kAUSamplerParam_FineTuning = @enumToInt(enum_unnamed_280.kAUSamplerParam_FineTuning);
+pub const kAUSamplerParam_Pan = @enumToInt(enum_unnamed_280.kAUSamplerParam_Pan);
+const enum_unnamed_280 = extern enum(c_int) {
     kAUSamplerParam_Gain = 900,
     kAUSamplerParam_CoarseTuning = 901,
     kAUSamplerParam_FineTuning = 902,
     kAUSamplerParam_Pan = 903,
     _,
 };
-pub const kBandpassParam_CenterFrequency = @enumToInt(enum_unnamed_354.kBandpassParam_CenterFrequency);
-pub const kBandpassParam_Bandwidth = @enumToInt(enum_unnamed_354.kBandpassParam_Bandwidth);
-const enum_unnamed_354 = extern enum(c_int) {
+pub const kBandpassParam_CenterFrequency = @enumToInt(enum_unnamed_281.kBandpassParam_CenterFrequency);
+pub const kBandpassParam_Bandwidth = @enumToInt(enum_unnamed_281.kBandpassParam_Bandwidth);
+const enum_unnamed_281 = extern enum(c_int) {
     kBandpassParam_CenterFrequency = 0,
     kBandpassParam_Bandwidth = 1,
     _,
 };
-pub const kHipassParam_CutoffFrequency = @enumToInt(enum_unnamed_355.kHipassParam_CutoffFrequency);
-pub const kHipassParam_Resonance = @enumToInt(enum_unnamed_355.kHipassParam_Resonance);
-const enum_unnamed_355 = extern enum(c_int) {
+pub const kHipassParam_CutoffFrequency = @enumToInt(enum_unnamed_282.kHipassParam_CutoffFrequency);
+pub const kHipassParam_Resonance = @enumToInt(enum_unnamed_282.kHipassParam_Resonance);
+const enum_unnamed_282 = extern enum(c_int) {
     kHipassParam_CutoffFrequency = 0,
     kHipassParam_Resonance = 1,
     _,
 };
-pub const kLowPassParam_CutoffFrequency = @enumToInt(enum_unnamed_356.kLowPassParam_CutoffFrequency);
-pub const kLowPassParam_Resonance = @enumToInt(enum_unnamed_356.kLowPassParam_Resonance);
-const enum_unnamed_356 = extern enum(c_int) {
+pub const kLowPassParam_CutoffFrequency = @enumToInt(enum_unnamed_283.kLowPassParam_CutoffFrequency);
+pub const kLowPassParam_Resonance = @enumToInt(enum_unnamed_283.kLowPassParam_Resonance);
+const enum_unnamed_283 = extern enum(c_int) {
     kLowPassParam_CutoffFrequency = 0,
     kLowPassParam_Resonance = 1,
     _,
 };
-pub const kHighShelfParam_CutOffFrequency = @enumToInt(enum_unnamed_357.kHighShelfParam_CutOffFrequency);
-pub const kHighShelfParam_Gain = @enumToInt(enum_unnamed_357.kHighShelfParam_Gain);
-const enum_unnamed_357 = extern enum(c_int) {
+pub const kHighShelfParam_CutOffFrequency = @enumToInt(enum_unnamed_284.kHighShelfParam_CutOffFrequency);
+pub const kHighShelfParam_Gain = @enumToInt(enum_unnamed_284.kHighShelfParam_Gain);
+const enum_unnamed_284 = extern enum(c_int) {
     kHighShelfParam_CutOffFrequency = 0,
     kHighShelfParam_Gain = 1,
     _,
 };
-pub const kAULowShelfParam_CutoffFrequency = @enumToInt(enum_unnamed_358.kAULowShelfParam_CutoffFrequency);
-pub const kAULowShelfParam_Gain = @enumToInt(enum_unnamed_358.kAULowShelfParam_Gain);
-const enum_unnamed_358 = extern enum(c_int) {
+pub const kAULowShelfParam_CutoffFrequency = @enumToInt(enum_unnamed_285.kAULowShelfParam_CutoffFrequency);
+pub const kAULowShelfParam_Gain = @enumToInt(enum_unnamed_285.kAULowShelfParam_Gain);
+const enum_unnamed_285 = extern enum(c_int) {
     kAULowShelfParam_CutoffFrequency = 0,
     kAULowShelfParam_Gain = 1,
     _,
 };
-pub const kParametricEQParam_CenterFreq = @enumToInt(enum_unnamed_359.kParametricEQParam_CenterFreq);
-pub const kParametricEQParam_Q = @enumToInt(enum_unnamed_359.kParametricEQParam_Q);
-pub const kParametricEQParam_Gain = @enumToInt(enum_unnamed_359.kParametricEQParam_Gain);
-const enum_unnamed_359 = extern enum(c_int) {
+pub const kParametricEQParam_CenterFreq = @enumToInt(enum_unnamed_286.kParametricEQParam_CenterFreq);
+pub const kParametricEQParam_Q = @enumToInt(enum_unnamed_286.kParametricEQParam_Q);
+pub const kParametricEQParam_Gain = @enumToInt(enum_unnamed_286.kParametricEQParam_Gain);
+const enum_unnamed_286 = extern enum(c_int) {
     kParametricEQParam_CenterFreq = 0,
     kParametricEQParam_Q = 1,
     kParametricEQParam_Gain = 2,
     _,
 };
-pub const kLimiterParam_AttackTime = @enumToInt(enum_unnamed_360.kLimiterParam_AttackTime);
-pub const kLimiterParam_DecayTime = @enumToInt(enum_unnamed_360.kLimiterParam_DecayTime);
-pub const kLimiterParam_PreGain = @enumToInt(enum_unnamed_360.kLimiterParam_PreGain);
-const enum_unnamed_360 = extern enum(c_int) {
+pub const kLimiterParam_AttackTime = @enumToInt(enum_unnamed_287.kLimiterParam_AttackTime);
+pub const kLimiterParam_DecayTime = @enumToInt(enum_unnamed_287.kLimiterParam_DecayTime);
+pub const kLimiterParam_PreGain = @enumToInt(enum_unnamed_287.kLimiterParam_PreGain);
+const enum_unnamed_287 = extern enum(c_int) {
     kLimiterParam_AttackTime = 0,
     kLimiterParam_DecayTime = 1,
     kLimiterParam_PreGain = 2,
     _,
 };
-pub const kDynamicsProcessorParam_Threshold = @enumToInt(enum_unnamed_361.kDynamicsProcessorParam_Threshold);
-pub const kDynamicsProcessorParam_HeadRoom = @enumToInt(enum_unnamed_361.kDynamicsProcessorParam_HeadRoom);
-pub const kDynamicsProcessorParam_ExpansionRatio = @enumToInt(enum_unnamed_361.kDynamicsProcessorParam_ExpansionRatio);
-pub const kDynamicsProcessorParam_ExpansionThreshold = @enumToInt(enum_unnamed_361.kDynamicsProcessorParam_ExpansionThreshold);
-pub const kDynamicsProcessorParam_AttackTime = @enumToInt(enum_unnamed_361.kDynamicsProcessorParam_AttackTime);
-pub const kDynamicsProcessorParam_ReleaseTime = @enumToInt(enum_unnamed_361.kDynamicsProcessorParam_ReleaseTime);
-pub const kDynamicsProcessorParam_MasterGain = @enumToInt(enum_unnamed_361.kDynamicsProcessorParam_MasterGain);
-pub const kDynamicsProcessorParam_CompressionAmount = @enumToInt(enum_unnamed_361.kDynamicsProcessorParam_CompressionAmount);
-pub const kDynamicsProcessorParam_InputAmplitude = @enumToInt(enum_unnamed_361.kDynamicsProcessorParam_InputAmplitude);
-pub const kDynamicsProcessorParam_OutputAmplitude = @enumToInt(enum_unnamed_361.kDynamicsProcessorParam_OutputAmplitude);
-const enum_unnamed_361 = extern enum(c_int) {
+pub const kDynamicsProcessorParam_Threshold = @enumToInt(enum_unnamed_288.kDynamicsProcessorParam_Threshold);
+pub const kDynamicsProcessorParam_HeadRoom = @enumToInt(enum_unnamed_288.kDynamicsProcessorParam_HeadRoom);
+pub const kDynamicsProcessorParam_ExpansionRatio = @enumToInt(enum_unnamed_288.kDynamicsProcessorParam_ExpansionRatio);
+pub const kDynamicsProcessorParam_ExpansionThreshold = @enumToInt(enum_unnamed_288.kDynamicsProcessorParam_ExpansionThreshold);
+pub const kDynamicsProcessorParam_AttackTime = @enumToInt(enum_unnamed_288.kDynamicsProcessorParam_AttackTime);
+pub const kDynamicsProcessorParam_ReleaseTime = @enumToInt(enum_unnamed_288.kDynamicsProcessorParam_ReleaseTime);
+pub const kDynamicsProcessorParam_MasterGain = @enumToInt(enum_unnamed_288.kDynamicsProcessorParam_MasterGain);
+pub const kDynamicsProcessorParam_CompressionAmount = @enumToInt(enum_unnamed_288.kDynamicsProcessorParam_CompressionAmount);
+pub const kDynamicsProcessorParam_InputAmplitude = @enumToInt(enum_unnamed_288.kDynamicsProcessorParam_InputAmplitude);
+pub const kDynamicsProcessorParam_OutputAmplitude = @enumToInt(enum_unnamed_288.kDynamicsProcessorParam_OutputAmplitude);
+const enum_unnamed_288 = extern enum(c_int) {
     kDynamicsProcessorParam_Threshold = 0,
     kDynamicsProcessorParam_HeadRoom = 1,
     kDynamicsProcessorParam_ExpansionRatio = 2,
@@ -10226,30 +9212,30 @@ const enum_unnamed_361 = extern enum(c_int) {
     kDynamicsProcessorParam_OutputAmplitude = 3000,
     _,
 };
-pub const kVarispeedParam_PlaybackRate = @enumToInt(enum_unnamed_362.kVarispeedParam_PlaybackRate);
-pub const kVarispeedParam_PlaybackCents = @enumToInt(enum_unnamed_362.kVarispeedParam_PlaybackCents);
-const enum_unnamed_362 = extern enum(c_int) {
+pub const kVarispeedParam_PlaybackRate = @enumToInt(enum_unnamed_289.kVarispeedParam_PlaybackRate);
+pub const kVarispeedParam_PlaybackCents = @enumToInt(enum_unnamed_289.kVarispeedParam_PlaybackCents);
+const enum_unnamed_289 = extern enum(c_int) {
     kVarispeedParam_PlaybackRate = 0,
     kVarispeedParam_PlaybackCents = 1,
     _,
 };
-pub const kDistortionParam_Delay = @enumToInt(enum_unnamed_363.kDistortionParam_Delay);
-pub const kDistortionParam_Decay = @enumToInt(enum_unnamed_363.kDistortionParam_Decay);
-pub const kDistortionParam_DelayMix = @enumToInt(enum_unnamed_363.kDistortionParam_DelayMix);
-pub const kDistortionParam_Decimation = @enumToInt(enum_unnamed_363.kDistortionParam_Decimation);
-pub const kDistortionParam_Rounding = @enumToInt(enum_unnamed_363.kDistortionParam_Rounding);
-pub const kDistortionParam_DecimationMix = @enumToInt(enum_unnamed_363.kDistortionParam_DecimationMix);
-pub const kDistortionParam_LinearTerm = @enumToInt(enum_unnamed_363.kDistortionParam_LinearTerm);
-pub const kDistortionParam_SquaredTerm = @enumToInt(enum_unnamed_363.kDistortionParam_SquaredTerm);
-pub const kDistortionParam_CubicTerm = @enumToInt(enum_unnamed_363.kDistortionParam_CubicTerm);
-pub const kDistortionParam_PolynomialMix = @enumToInt(enum_unnamed_363.kDistortionParam_PolynomialMix);
-pub const kDistortionParam_RingModFreq1 = @enumToInt(enum_unnamed_363.kDistortionParam_RingModFreq1);
-pub const kDistortionParam_RingModFreq2 = @enumToInt(enum_unnamed_363.kDistortionParam_RingModFreq2);
-pub const kDistortionParam_RingModBalance = @enumToInt(enum_unnamed_363.kDistortionParam_RingModBalance);
-pub const kDistortionParam_RingModMix = @enumToInt(enum_unnamed_363.kDistortionParam_RingModMix);
-pub const kDistortionParam_SoftClipGain = @enumToInt(enum_unnamed_363.kDistortionParam_SoftClipGain);
-pub const kDistortionParam_FinalMix = @enumToInt(enum_unnamed_363.kDistortionParam_FinalMix);
-const enum_unnamed_363 = extern enum(c_int) {
+pub const kDistortionParam_Delay = @enumToInt(enum_unnamed_290.kDistortionParam_Delay);
+pub const kDistortionParam_Decay = @enumToInt(enum_unnamed_290.kDistortionParam_Decay);
+pub const kDistortionParam_DelayMix = @enumToInt(enum_unnamed_290.kDistortionParam_DelayMix);
+pub const kDistortionParam_Decimation = @enumToInt(enum_unnamed_290.kDistortionParam_Decimation);
+pub const kDistortionParam_Rounding = @enumToInt(enum_unnamed_290.kDistortionParam_Rounding);
+pub const kDistortionParam_DecimationMix = @enumToInt(enum_unnamed_290.kDistortionParam_DecimationMix);
+pub const kDistortionParam_LinearTerm = @enumToInt(enum_unnamed_290.kDistortionParam_LinearTerm);
+pub const kDistortionParam_SquaredTerm = @enumToInt(enum_unnamed_290.kDistortionParam_SquaredTerm);
+pub const kDistortionParam_CubicTerm = @enumToInt(enum_unnamed_290.kDistortionParam_CubicTerm);
+pub const kDistortionParam_PolynomialMix = @enumToInt(enum_unnamed_290.kDistortionParam_PolynomialMix);
+pub const kDistortionParam_RingModFreq1 = @enumToInt(enum_unnamed_290.kDistortionParam_RingModFreq1);
+pub const kDistortionParam_RingModFreq2 = @enumToInt(enum_unnamed_290.kDistortionParam_RingModFreq2);
+pub const kDistortionParam_RingModBalance = @enumToInt(enum_unnamed_290.kDistortionParam_RingModBalance);
+pub const kDistortionParam_RingModMix = @enumToInt(enum_unnamed_290.kDistortionParam_RingModMix);
+pub const kDistortionParam_SoftClipGain = @enumToInt(enum_unnamed_290.kDistortionParam_SoftClipGain);
+pub const kDistortionParam_FinalMix = @enumToInt(enum_unnamed_290.kDistortionParam_FinalMix);
+const enum_unnamed_290 = extern enum(c_int) {
     kDistortionParam_Delay = 0,
     kDistortionParam_Decay = 1,
     kDistortionParam_DelayMix = 2,
@@ -10268,24 +9254,24 @@ const enum_unnamed_363 = extern enum(c_int) {
     kDistortionParam_FinalMix = 15,
     _,
 };
-pub const kDelayParam_WetDryMix = @enumToInt(enum_unnamed_364.kDelayParam_WetDryMix);
-pub const kDelayParam_DelayTime = @enumToInt(enum_unnamed_364.kDelayParam_DelayTime);
-pub const kDelayParam_Feedback = @enumToInt(enum_unnamed_364.kDelayParam_Feedback);
-pub const kDelayParam_LopassCutoff = @enumToInt(enum_unnamed_364.kDelayParam_LopassCutoff);
-const enum_unnamed_364 = extern enum(c_int) {
+pub const kDelayParam_WetDryMix = @enumToInt(enum_unnamed_291.kDelayParam_WetDryMix);
+pub const kDelayParam_DelayTime = @enumToInt(enum_unnamed_291.kDelayParam_DelayTime);
+pub const kDelayParam_Feedback = @enumToInt(enum_unnamed_291.kDelayParam_Feedback);
+pub const kDelayParam_LopassCutoff = @enumToInt(enum_unnamed_291.kDelayParam_LopassCutoff);
+const enum_unnamed_291 = extern enum(c_int) {
     kDelayParam_WetDryMix = 0,
     kDelayParam_DelayTime = 1,
     kDelayParam_Feedback = 2,
     kDelayParam_LopassCutoff = 3,
     _,
 };
-pub const kAUNBandEQParam_GlobalGain = @enumToInt(enum_unnamed_365.kAUNBandEQParam_GlobalGain);
-pub const kAUNBandEQParam_BypassBand = @enumToInt(enum_unnamed_365.kAUNBandEQParam_BypassBand);
-pub const kAUNBandEQParam_FilterType = @enumToInt(enum_unnamed_365.kAUNBandEQParam_FilterType);
-pub const kAUNBandEQParam_Frequency = @enumToInt(enum_unnamed_365.kAUNBandEQParam_Frequency);
-pub const kAUNBandEQParam_Gain = @enumToInt(enum_unnamed_365.kAUNBandEQParam_Gain);
-pub const kAUNBandEQParam_Bandwidth = @enumToInt(enum_unnamed_365.kAUNBandEQParam_Bandwidth);
-const enum_unnamed_365 = extern enum(c_int) {
+pub const kAUNBandEQParam_GlobalGain = @enumToInt(enum_unnamed_292.kAUNBandEQParam_GlobalGain);
+pub const kAUNBandEQParam_BypassBand = @enumToInt(enum_unnamed_292.kAUNBandEQParam_BypassBand);
+pub const kAUNBandEQParam_FilterType = @enumToInt(enum_unnamed_292.kAUNBandEQParam_FilterType);
+pub const kAUNBandEQParam_Frequency = @enumToInt(enum_unnamed_292.kAUNBandEQParam_Frequency);
+pub const kAUNBandEQParam_Gain = @enumToInt(enum_unnamed_292.kAUNBandEQParam_Gain);
+pub const kAUNBandEQParam_Bandwidth = @enumToInt(enum_unnamed_292.kAUNBandEQParam_Bandwidth);
+const enum_unnamed_292 = extern enum(c_int) {
     kAUNBandEQParam_GlobalGain = 0,
     kAUNBandEQParam_BypassBand = 1000,
     kAUNBandEQParam_FilterType = 2000,
@@ -10294,19 +9280,19 @@ const enum_unnamed_365 = extern enum(c_int) {
     kAUNBandEQParam_Bandwidth = 5000,
     _,
 };
-pub const kAUNBandEQFilterType_Parametric = @enumToInt(enum_unnamed_366.kAUNBandEQFilterType_Parametric);
-pub const kAUNBandEQFilterType_2ndOrderButterworthLowPass = @enumToInt(enum_unnamed_366.kAUNBandEQFilterType_2ndOrderButterworthLowPass);
-pub const kAUNBandEQFilterType_2ndOrderButterworthHighPass = @enumToInt(enum_unnamed_366.kAUNBandEQFilterType_2ndOrderButterworthHighPass);
-pub const kAUNBandEQFilterType_ResonantLowPass = @enumToInt(enum_unnamed_366.kAUNBandEQFilterType_ResonantLowPass);
-pub const kAUNBandEQFilterType_ResonantHighPass = @enumToInt(enum_unnamed_366.kAUNBandEQFilterType_ResonantHighPass);
-pub const kAUNBandEQFilterType_BandPass = @enumToInt(enum_unnamed_366.kAUNBandEQFilterType_BandPass);
-pub const kAUNBandEQFilterType_BandStop = @enumToInt(enum_unnamed_366.kAUNBandEQFilterType_BandStop);
-pub const kAUNBandEQFilterType_LowShelf = @enumToInt(enum_unnamed_366.kAUNBandEQFilterType_LowShelf);
-pub const kAUNBandEQFilterType_HighShelf = @enumToInt(enum_unnamed_366.kAUNBandEQFilterType_HighShelf);
-pub const kAUNBandEQFilterType_ResonantLowShelf = @enumToInt(enum_unnamed_366.kAUNBandEQFilterType_ResonantLowShelf);
-pub const kAUNBandEQFilterType_ResonantHighShelf = @enumToInt(enum_unnamed_366.kAUNBandEQFilterType_ResonantHighShelf);
-pub const kNumAUNBandEQFilterTypes = @enumToInt(enum_unnamed_366.kNumAUNBandEQFilterTypes);
-const enum_unnamed_366 = extern enum(c_int) {
+pub const kAUNBandEQFilterType_Parametric = @enumToInt(enum_unnamed_293.kAUNBandEQFilterType_Parametric);
+pub const kAUNBandEQFilterType_2ndOrderButterworthLowPass = @enumToInt(enum_unnamed_293.kAUNBandEQFilterType_2ndOrderButterworthLowPass);
+pub const kAUNBandEQFilterType_2ndOrderButterworthHighPass = @enumToInt(enum_unnamed_293.kAUNBandEQFilterType_2ndOrderButterworthHighPass);
+pub const kAUNBandEQFilterType_ResonantLowPass = @enumToInt(enum_unnamed_293.kAUNBandEQFilterType_ResonantLowPass);
+pub const kAUNBandEQFilterType_ResonantHighPass = @enumToInt(enum_unnamed_293.kAUNBandEQFilterType_ResonantHighPass);
+pub const kAUNBandEQFilterType_BandPass = @enumToInt(enum_unnamed_293.kAUNBandEQFilterType_BandPass);
+pub const kAUNBandEQFilterType_BandStop = @enumToInt(enum_unnamed_293.kAUNBandEQFilterType_BandStop);
+pub const kAUNBandEQFilterType_LowShelf = @enumToInt(enum_unnamed_293.kAUNBandEQFilterType_LowShelf);
+pub const kAUNBandEQFilterType_HighShelf = @enumToInt(enum_unnamed_293.kAUNBandEQFilterType_HighShelf);
+pub const kAUNBandEQFilterType_ResonantLowShelf = @enumToInt(enum_unnamed_293.kAUNBandEQFilterType_ResonantLowShelf);
+pub const kAUNBandEQFilterType_ResonantHighShelf = @enumToInt(enum_unnamed_293.kAUNBandEQFilterType_ResonantHighShelf);
+pub const kNumAUNBandEQFilterTypes = @enumToInt(enum_unnamed_293.kNumAUNBandEQFilterTypes);
+const enum_unnamed_293 = extern enum(c_int) {
     kAUNBandEQFilterType_Parametric = 0,
     kAUNBandEQFilterType_2ndOrderButterworthLowPass = 1,
     kAUNBandEQFilterType_2ndOrderButterworthHighPass = 2,
@@ -10321,13 +9307,13 @@ const enum_unnamed_366 = extern enum(c_int) {
     kNumAUNBandEQFilterTypes = 11,
     _,
 };
-pub const kRoundTripAACParam_Format = @enumToInt(enum_unnamed_367.kRoundTripAACParam_Format);
-pub const kRoundTripAACParam_EncodingStrategy = @enumToInt(enum_unnamed_367.kRoundTripAACParam_EncodingStrategy);
-pub const kRoundTripAACParam_RateOrQuality = @enumToInt(enum_unnamed_367.kRoundTripAACParam_RateOrQuality);
-pub const kRoundTripAACParam_BitRate = @enumToInt(enum_unnamed_367.kRoundTripAACParam_BitRate);
-pub const kRoundTripAACParam_Quality = @enumToInt(enum_unnamed_367.kRoundTripAACParam_Quality);
-pub const kRoundTripAACParam_CompressedFormatSampleRate = @enumToInt(enum_unnamed_367.kRoundTripAACParam_CompressedFormatSampleRate);
-const enum_unnamed_367 = extern enum(c_int) {
+pub const kRoundTripAACParam_Format = @enumToInt(enum_unnamed_294.kRoundTripAACParam_Format);
+pub const kRoundTripAACParam_EncodingStrategy = @enumToInt(enum_unnamed_294.kRoundTripAACParam_EncodingStrategy);
+pub const kRoundTripAACParam_RateOrQuality = @enumToInt(enum_unnamed_294.kRoundTripAACParam_RateOrQuality);
+pub const kRoundTripAACParam_BitRate = @enumToInt(enum_unnamed_294.kRoundTripAACParam_BitRate);
+pub const kRoundTripAACParam_Quality = @enumToInt(enum_unnamed_294.kRoundTripAACParam_Quality);
+pub const kRoundTripAACParam_CompressedFormatSampleRate = @enumToInt(enum_unnamed_294.kRoundTripAACParam_CompressedFormatSampleRate);
+const enum_unnamed_294 = extern enum(c_int) {
     kRoundTripAACParam_Format = 0,
     kRoundTripAACParam_EncodingStrategy = 1,
     kRoundTripAACParam_RateOrQuality = 2,
@@ -10336,26 +9322,26 @@ const enum_unnamed_367 = extern enum(c_int) {
     kRoundTripAACParam_CompressedFormatSampleRate = 3,
     _,
 };
-pub const kGraphicEQParam_NumberOfBands = @enumToInt(enum_unnamed_368.kGraphicEQParam_NumberOfBands);
-const enum_unnamed_368 = extern enum(c_int) {
+pub const kGraphicEQParam_NumberOfBands = @enumToInt(enum_unnamed_295.kGraphicEQParam_NumberOfBands);
+const enum_unnamed_295 = extern enum(c_int) {
     kGraphicEQParam_NumberOfBands = 10000,
     _,
 };
-pub const kReverbParam_DryWetMix = @enumToInt(enum_unnamed_369.kReverbParam_DryWetMix);
-pub const kReverbParam_SmallLargeMix = @enumToInt(enum_unnamed_369.kReverbParam_SmallLargeMix);
-pub const kReverbParam_SmallSize = @enumToInt(enum_unnamed_369.kReverbParam_SmallSize);
-pub const kReverbParam_LargeSize = @enumToInt(enum_unnamed_369.kReverbParam_LargeSize);
-pub const kReverbParam_PreDelay = @enumToInt(enum_unnamed_369.kReverbParam_PreDelay);
-pub const kReverbParam_LargeDelay = @enumToInt(enum_unnamed_369.kReverbParam_LargeDelay);
-pub const kReverbParam_SmallDensity = @enumToInt(enum_unnamed_369.kReverbParam_SmallDensity);
-pub const kReverbParam_LargeDensity = @enumToInt(enum_unnamed_369.kReverbParam_LargeDensity);
-pub const kReverbParam_LargeDelayRange = @enumToInt(enum_unnamed_369.kReverbParam_LargeDelayRange);
-pub const kReverbParam_SmallBrightness = @enumToInt(enum_unnamed_369.kReverbParam_SmallBrightness);
-pub const kReverbParam_LargeBrightness = @enumToInt(enum_unnamed_369.kReverbParam_LargeBrightness);
-pub const kReverbParam_SmallDelayRange = @enumToInt(enum_unnamed_369.kReverbParam_SmallDelayRange);
-pub const kReverbParam_ModulationRate = @enumToInt(enum_unnamed_369.kReverbParam_ModulationRate);
-pub const kReverbParam_ModulationDepth = @enumToInt(enum_unnamed_369.kReverbParam_ModulationDepth);
-const enum_unnamed_369 = extern enum(c_int) {
+pub const kReverbParam_DryWetMix = @enumToInt(enum_unnamed_296.kReverbParam_DryWetMix);
+pub const kReverbParam_SmallLargeMix = @enumToInt(enum_unnamed_296.kReverbParam_SmallLargeMix);
+pub const kReverbParam_SmallSize = @enumToInt(enum_unnamed_296.kReverbParam_SmallSize);
+pub const kReverbParam_LargeSize = @enumToInt(enum_unnamed_296.kReverbParam_LargeSize);
+pub const kReverbParam_PreDelay = @enumToInt(enum_unnamed_296.kReverbParam_PreDelay);
+pub const kReverbParam_LargeDelay = @enumToInt(enum_unnamed_296.kReverbParam_LargeDelay);
+pub const kReverbParam_SmallDensity = @enumToInt(enum_unnamed_296.kReverbParam_SmallDensity);
+pub const kReverbParam_LargeDensity = @enumToInt(enum_unnamed_296.kReverbParam_LargeDensity);
+pub const kReverbParam_LargeDelayRange = @enumToInt(enum_unnamed_296.kReverbParam_LargeDelayRange);
+pub const kReverbParam_SmallBrightness = @enumToInt(enum_unnamed_296.kReverbParam_SmallBrightness);
+pub const kReverbParam_LargeBrightness = @enumToInt(enum_unnamed_296.kReverbParam_LargeBrightness);
+pub const kReverbParam_SmallDelayRange = @enumToInt(enum_unnamed_296.kReverbParam_SmallDelayRange);
+pub const kReverbParam_ModulationRate = @enumToInt(enum_unnamed_296.kReverbParam_ModulationRate);
+pub const kReverbParam_ModulationDepth = @enumToInt(enum_unnamed_296.kReverbParam_ModulationDepth);
+const enum_unnamed_296 = extern enum(c_int) {
     kReverbParam_DryWetMix = 0,
     kReverbParam_SmallLargeMix = 1,
     kReverbParam_SmallSize = 2,
@@ -10372,38 +9358,38 @@ const enum_unnamed_369 = extern enum(c_int) {
     kReverbParam_ModulationDepth = 13,
     _,
 };
-pub const kMultibandCompressorParam_Pregain = @enumToInt(enum_unnamed_370.kMultibandCompressorParam_Pregain);
-pub const kMultibandCompressorParam_Postgain = @enumToInt(enum_unnamed_370.kMultibandCompressorParam_Postgain);
-pub const kMultibandCompressorParam_Crossover1 = @enumToInt(enum_unnamed_370.kMultibandCompressorParam_Crossover1);
-pub const kMultibandCompressorParam_Crossover2 = @enumToInt(enum_unnamed_370.kMultibandCompressorParam_Crossover2);
-pub const kMultibandCompressorParam_Crossover3 = @enumToInt(enum_unnamed_370.kMultibandCompressorParam_Crossover3);
-pub const kMultibandCompressorParam_Threshold1 = @enumToInt(enum_unnamed_370.kMultibandCompressorParam_Threshold1);
-pub const kMultibandCompressorParam_Threshold2 = @enumToInt(enum_unnamed_370.kMultibandCompressorParam_Threshold2);
-pub const kMultibandCompressorParam_Threshold3 = @enumToInt(enum_unnamed_370.kMultibandCompressorParam_Threshold3);
-pub const kMultibandCompressorParam_Threshold4 = @enumToInt(enum_unnamed_370.kMultibandCompressorParam_Threshold4);
-pub const kMultibandCompressorParam_Headroom1 = @enumToInt(enum_unnamed_370.kMultibandCompressorParam_Headroom1);
-pub const kMultibandCompressorParam_Headroom2 = @enumToInt(enum_unnamed_370.kMultibandCompressorParam_Headroom2);
-pub const kMultibandCompressorParam_Headroom3 = @enumToInt(enum_unnamed_370.kMultibandCompressorParam_Headroom3);
-pub const kMultibandCompressorParam_Headroom4 = @enumToInt(enum_unnamed_370.kMultibandCompressorParam_Headroom4);
-pub const kMultibandCompressorParam_AttackTime = @enumToInt(enum_unnamed_370.kMultibandCompressorParam_AttackTime);
-pub const kMultibandCompressorParam_ReleaseTime = @enumToInt(enum_unnamed_370.kMultibandCompressorParam_ReleaseTime);
-pub const kMultibandCompressorParam_EQ1 = @enumToInt(enum_unnamed_370.kMultibandCompressorParam_EQ1);
-pub const kMultibandCompressorParam_EQ2 = @enumToInt(enum_unnamed_370.kMultibandCompressorParam_EQ2);
-pub const kMultibandCompressorParam_EQ3 = @enumToInt(enum_unnamed_370.kMultibandCompressorParam_EQ3);
-pub const kMultibandCompressorParam_EQ4 = @enumToInt(enum_unnamed_370.kMultibandCompressorParam_EQ4);
-pub const kMultibandCompressorParam_CompressionAmount1 = @enumToInt(enum_unnamed_370.kMultibandCompressorParam_CompressionAmount1);
-pub const kMultibandCompressorParam_CompressionAmount2 = @enumToInt(enum_unnamed_370.kMultibandCompressorParam_CompressionAmount2);
-pub const kMultibandCompressorParam_CompressionAmount3 = @enumToInt(enum_unnamed_370.kMultibandCompressorParam_CompressionAmount3);
-pub const kMultibandCompressorParam_CompressionAmount4 = @enumToInt(enum_unnamed_370.kMultibandCompressorParam_CompressionAmount4);
-pub const kMultibandCompressorParam_InputAmplitude1 = @enumToInt(enum_unnamed_370.kMultibandCompressorParam_InputAmplitude1);
-pub const kMultibandCompressorParam_InputAmplitude2 = @enumToInt(enum_unnamed_370.kMultibandCompressorParam_InputAmplitude2);
-pub const kMultibandCompressorParam_InputAmplitude3 = @enumToInt(enum_unnamed_370.kMultibandCompressorParam_InputAmplitude3);
-pub const kMultibandCompressorParam_InputAmplitude4 = @enumToInt(enum_unnamed_370.kMultibandCompressorParam_InputAmplitude4);
-pub const kMultibandCompressorParam_OutputAmplitude1 = @enumToInt(enum_unnamed_370.kMultibandCompressorParam_OutputAmplitude1);
-pub const kMultibandCompressorParam_OutputAmplitude2 = @enumToInt(enum_unnamed_370.kMultibandCompressorParam_OutputAmplitude2);
-pub const kMultibandCompressorParam_OutputAmplitude3 = @enumToInt(enum_unnamed_370.kMultibandCompressorParam_OutputAmplitude3);
-pub const kMultibandCompressorParam_OutputAmplitude4 = @enumToInt(enum_unnamed_370.kMultibandCompressorParam_OutputAmplitude4);
-const enum_unnamed_370 = extern enum(c_int) {
+pub const kMultibandCompressorParam_Pregain = @enumToInt(enum_unnamed_297.kMultibandCompressorParam_Pregain);
+pub const kMultibandCompressorParam_Postgain = @enumToInt(enum_unnamed_297.kMultibandCompressorParam_Postgain);
+pub const kMultibandCompressorParam_Crossover1 = @enumToInt(enum_unnamed_297.kMultibandCompressorParam_Crossover1);
+pub const kMultibandCompressorParam_Crossover2 = @enumToInt(enum_unnamed_297.kMultibandCompressorParam_Crossover2);
+pub const kMultibandCompressorParam_Crossover3 = @enumToInt(enum_unnamed_297.kMultibandCompressorParam_Crossover3);
+pub const kMultibandCompressorParam_Threshold1 = @enumToInt(enum_unnamed_297.kMultibandCompressorParam_Threshold1);
+pub const kMultibandCompressorParam_Threshold2 = @enumToInt(enum_unnamed_297.kMultibandCompressorParam_Threshold2);
+pub const kMultibandCompressorParam_Threshold3 = @enumToInt(enum_unnamed_297.kMultibandCompressorParam_Threshold3);
+pub const kMultibandCompressorParam_Threshold4 = @enumToInt(enum_unnamed_297.kMultibandCompressorParam_Threshold4);
+pub const kMultibandCompressorParam_Headroom1 = @enumToInt(enum_unnamed_297.kMultibandCompressorParam_Headroom1);
+pub const kMultibandCompressorParam_Headroom2 = @enumToInt(enum_unnamed_297.kMultibandCompressorParam_Headroom2);
+pub const kMultibandCompressorParam_Headroom3 = @enumToInt(enum_unnamed_297.kMultibandCompressorParam_Headroom3);
+pub const kMultibandCompressorParam_Headroom4 = @enumToInt(enum_unnamed_297.kMultibandCompressorParam_Headroom4);
+pub const kMultibandCompressorParam_AttackTime = @enumToInt(enum_unnamed_297.kMultibandCompressorParam_AttackTime);
+pub const kMultibandCompressorParam_ReleaseTime = @enumToInt(enum_unnamed_297.kMultibandCompressorParam_ReleaseTime);
+pub const kMultibandCompressorParam_EQ1 = @enumToInt(enum_unnamed_297.kMultibandCompressorParam_EQ1);
+pub const kMultibandCompressorParam_EQ2 = @enumToInt(enum_unnamed_297.kMultibandCompressorParam_EQ2);
+pub const kMultibandCompressorParam_EQ3 = @enumToInt(enum_unnamed_297.kMultibandCompressorParam_EQ3);
+pub const kMultibandCompressorParam_EQ4 = @enumToInt(enum_unnamed_297.kMultibandCompressorParam_EQ4);
+pub const kMultibandCompressorParam_CompressionAmount1 = @enumToInt(enum_unnamed_297.kMultibandCompressorParam_CompressionAmount1);
+pub const kMultibandCompressorParam_CompressionAmount2 = @enumToInt(enum_unnamed_297.kMultibandCompressorParam_CompressionAmount2);
+pub const kMultibandCompressorParam_CompressionAmount3 = @enumToInt(enum_unnamed_297.kMultibandCompressorParam_CompressionAmount3);
+pub const kMultibandCompressorParam_CompressionAmount4 = @enumToInt(enum_unnamed_297.kMultibandCompressorParam_CompressionAmount4);
+pub const kMultibandCompressorParam_InputAmplitude1 = @enumToInt(enum_unnamed_297.kMultibandCompressorParam_InputAmplitude1);
+pub const kMultibandCompressorParam_InputAmplitude2 = @enumToInt(enum_unnamed_297.kMultibandCompressorParam_InputAmplitude2);
+pub const kMultibandCompressorParam_InputAmplitude3 = @enumToInt(enum_unnamed_297.kMultibandCompressorParam_InputAmplitude3);
+pub const kMultibandCompressorParam_InputAmplitude4 = @enumToInt(enum_unnamed_297.kMultibandCompressorParam_InputAmplitude4);
+pub const kMultibandCompressorParam_OutputAmplitude1 = @enumToInt(enum_unnamed_297.kMultibandCompressorParam_OutputAmplitude1);
+pub const kMultibandCompressorParam_OutputAmplitude2 = @enumToInt(enum_unnamed_297.kMultibandCompressorParam_OutputAmplitude2);
+pub const kMultibandCompressorParam_OutputAmplitude3 = @enumToInt(enum_unnamed_297.kMultibandCompressorParam_OutputAmplitude3);
+pub const kMultibandCompressorParam_OutputAmplitude4 = @enumToInt(enum_unnamed_297.kMultibandCompressorParam_OutputAmplitude4);
+const enum_unnamed_297 = extern enum(c_int) {
     kMultibandCompressorParam_Pregain = 0,
     kMultibandCompressorParam_Postgain = 1,
     kMultibandCompressorParam_Crossover1 = 2,
@@ -10437,22 +9423,22 @@ const enum_unnamed_370 = extern enum(c_int) {
     kMultibandCompressorParam_OutputAmplitude4 = 12000,
     _,
 };
-pub const kMultibandFilter_LowFilterType = @enumToInt(enum_unnamed_371.kMultibandFilter_LowFilterType);
-pub const kMultibandFilter_LowFrequency = @enumToInt(enum_unnamed_371.kMultibandFilter_LowFrequency);
-pub const kMultibandFilter_LowGain = @enumToInt(enum_unnamed_371.kMultibandFilter_LowGain);
-pub const kMultibandFilter_CenterFreq1 = @enumToInt(enum_unnamed_371.kMultibandFilter_CenterFreq1);
-pub const kMultibandFilter_CenterGain1 = @enumToInt(enum_unnamed_371.kMultibandFilter_CenterGain1);
-pub const kMultibandFilter_Bandwidth1 = @enumToInt(enum_unnamed_371.kMultibandFilter_Bandwidth1);
-pub const kMultibandFilter_CenterFreq2 = @enumToInt(enum_unnamed_371.kMultibandFilter_CenterFreq2);
-pub const kMultibandFilter_CenterGain2 = @enumToInt(enum_unnamed_371.kMultibandFilter_CenterGain2);
-pub const kMultibandFilter_Bandwidth2 = @enumToInt(enum_unnamed_371.kMultibandFilter_Bandwidth2);
-pub const kMultibandFilter_CenterFreq3 = @enumToInt(enum_unnamed_371.kMultibandFilter_CenterFreq3);
-pub const kMultibandFilter_CenterGain3 = @enumToInt(enum_unnamed_371.kMultibandFilter_CenterGain3);
-pub const kMultibandFilter_Bandwidth3 = @enumToInt(enum_unnamed_371.kMultibandFilter_Bandwidth3);
-pub const kMultibandFilter_HighFilterType = @enumToInt(enum_unnamed_371.kMultibandFilter_HighFilterType);
-pub const kMultibandFilter_HighFrequency = @enumToInt(enum_unnamed_371.kMultibandFilter_HighFrequency);
-pub const kMultibandFilter_HighGain = @enumToInt(enum_unnamed_371.kMultibandFilter_HighGain);
-const enum_unnamed_371 = extern enum(c_int) {
+pub const kMultibandFilter_LowFilterType = @enumToInt(enum_unnamed_298.kMultibandFilter_LowFilterType);
+pub const kMultibandFilter_LowFrequency = @enumToInt(enum_unnamed_298.kMultibandFilter_LowFrequency);
+pub const kMultibandFilter_LowGain = @enumToInt(enum_unnamed_298.kMultibandFilter_LowGain);
+pub const kMultibandFilter_CenterFreq1 = @enumToInt(enum_unnamed_298.kMultibandFilter_CenterFreq1);
+pub const kMultibandFilter_CenterGain1 = @enumToInt(enum_unnamed_298.kMultibandFilter_CenterGain1);
+pub const kMultibandFilter_Bandwidth1 = @enumToInt(enum_unnamed_298.kMultibandFilter_Bandwidth1);
+pub const kMultibandFilter_CenterFreq2 = @enumToInt(enum_unnamed_298.kMultibandFilter_CenterFreq2);
+pub const kMultibandFilter_CenterGain2 = @enumToInt(enum_unnamed_298.kMultibandFilter_CenterGain2);
+pub const kMultibandFilter_Bandwidth2 = @enumToInt(enum_unnamed_298.kMultibandFilter_Bandwidth2);
+pub const kMultibandFilter_CenterFreq3 = @enumToInt(enum_unnamed_298.kMultibandFilter_CenterFreq3);
+pub const kMultibandFilter_CenterGain3 = @enumToInt(enum_unnamed_298.kMultibandFilter_CenterGain3);
+pub const kMultibandFilter_Bandwidth3 = @enumToInt(enum_unnamed_298.kMultibandFilter_Bandwidth3);
+pub const kMultibandFilter_HighFilterType = @enumToInt(enum_unnamed_298.kMultibandFilter_HighFilterType);
+pub const kMultibandFilter_HighFrequency = @enumToInt(enum_unnamed_298.kMultibandFilter_HighFrequency);
+pub const kMultibandFilter_HighGain = @enumToInt(enum_unnamed_298.kMultibandFilter_HighGain);
+const enum_unnamed_298 = extern enum(c_int) {
     kMultibandFilter_LowFilterType = 0,
     kMultibandFilter_LowFrequency = 1,
     kMultibandFilter_LowGain = 2,
@@ -10470,14 +9456,14 @@ const enum_unnamed_371 = extern enum(c_int) {
     kMultibandFilter_HighGain = 14,
     _,
 };
-pub const kRogerBeepParam_InGateThreshold = @enumToInt(enum_unnamed_372.kRogerBeepParam_InGateThreshold);
-pub const kRogerBeepParam_InGateThresholdTime = @enumToInt(enum_unnamed_372.kRogerBeepParam_InGateThresholdTime);
-pub const kRogerBeepParam_OutGateThreshold = @enumToInt(enum_unnamed_372.kRogerBeepParam_OutGateThreshold);
-pub const kRogerBeepParam_OutGateThresholdTime = @enumToInt(enum_unnamed_372.kRogerBeepParam_OutGateThresholdTime);
-pub const kRogerBeepParam_Sensitivity = @enumToInt(enum_unnamed_372.kRogerBeepParam_Sensitivity);
-pub const kRogerBeepParam_RogerType = @enumToInt(enum_unnamed_372.kRogerBeepParam_RogerType);
-pub const kRogerBeepParam_RogerGain = @enumToInt(enum_unnamed_372.kRogerBeepParam_RogerGain);
-const enum_unnamed_372 = extern enum(c_int) {
+pub const kRogerBeepParam_InGateThreshold = @enumToInt(enum_unnamed_299.kRogerBeepParam_InGateThreshold);
+pub const kRogerBeepParam_InGateThresholdTime = @enumToInt(enum_unnamed_299.kRogerBeepParam_InGateThresholdTime);
+pub const kRogerBeepParam_OutGateThreshold = @enumToInt(enum_unnamed_299.kRogerBeepParam_OutGateThreshold);
+pub const kRogerBeepParam_OutGateThresholdTime = @enumToInt(enum_unnamed_299.kRogerBeepParam_OutGateThresholdTime);
+pub const kRogerBeepParam_Sensitivity = @enumToInt(enum_unnamed_299.kRogerBeepParam_Sensitivity);
+pub const kRogerBeepParam_RogerType = @enumToInt(enum_unnamed_299.kRogerBeepParam_RogerType);
+pub const kRogerBeepParam_RogerGain = @enumToInt(enum_unnamed_299.kRogerBeepParam_RogerGain);
+const enum_unnamed_299 = extern enum(c_int) {
     kRogerBeepParam_InGateThreshold = 0,
     kRogerBeepParam_InGateThresholdTime = 1,
     kRogerBeepParam_OutGateThreshold = 2,
@@ -10487,13 +9473,13 @@ const enum_unnamed_372 = extern enum(c_int) {
     kRogerBeepParam_RogerGain = 6,
     _,
 };
-pub const kStereoMixerParam_Volume = @enumToInt(enum_unnamed_373.kStereoMixerParam_Volume);
-pub const kStereoMixerParam_Pan = @enumToInt(enum_unnamed_373.kStereoMixerParam_Pan);
-pub const kStereoMixerParam_PreAveragePower = @enumToInt(enum_unnamed_373.kStereoMixerParam_PreAveragePower);
-pub const kStereoMixerParam_PrePeakHoldLevel = @enumToInt(enum_unnamed_373.kStereoMixerParam_PrePeakHoldLevel);
-pub const kStereoMixerParam_PostAveragePower = @enumToInt(enum_unnamed_373.kStereoMixerParam_PostAveragePower);
-pub const kStereoMixerParam_PostPeakHoldLevel = @enumToInt(enum_unnamed_373.kStereoMixerParam_PostPeakHoldLevel);
-const enum_unnamed_373 = extern enum(c_int) {
+pub const kStereoMixerParam_Volume = @enumToInt(enum_unnamed_300.kStereoMixerParam_Volume);
+pub const kStereoMixerParam_Pan = @enumToInt(enum_unnamed_300.kStereoMixerParam_Pan);
+pub const kStereoMixerParam_PreAveragePower = @enumToInt(enum_unnamed_300.kStereoMixerParam_PreAveragePower);
+pub const kStereoMixerParam_PrePeakHoldLevel = @enumToInt(enum_unnamed_300.kStereoMixerParam_PrePeakHoldLevel);
+pub const kStereoMixerParam_PostAveragePower = @enumToInt(enum_unnamed_300.kStereoMixerParam_PostAveragePower);
+pub const kStereoMixerParam_PostPeakHoldLevel = @enumToInt(enum_unnamed_300.kStereoMixerParam_PostPeakHoldLevel);
+const enum_unnamed_300 = extern enum(c_int) {
     kStereoMixerParam_Volume = 0,
     kStereoMixerParam_Pan = 1,
     kStereoMixerParam_PreAveragePower = 1000,
@@ -10502,27 +9488,27 @@ const enum_unnamed_373 = extern enum(c_int) {
     kStereoMixerParam_PostPeakHoldLevel = 4000,
     _,
 };
-pub const kAUNetReceiveParam_Status = @enumToInt(enum_unnamed_374.kAUNetReceiveParam_Status);
-pub const kAUNetReceiveParam_NumParameters = @enumToInt(enum_unnamed_374.kAUNetReceiveParam_NumParameters);
-const enum_unnamed_374 = extern enum(c_int) {
+pub const kAUNetReceiveParam_Status = @enumToInt(enum_unnamed_301.kAUNetReceiveParam_Status);
+pub const kAUNetReceiveParam_NumParameters = @enumToInt(enum_unnamed_301.kAUNetReceiveParam_NumParameters);
+const enum_unnamed_301 = extern enum(c_int) {
     kAUNetReceiveParam_Status = 0,
     kAUNetReceiveParam_NumParameters = 1,
     _,
 };
-pub const kAUNetSendParam_Status = @enumToInt(enum_unnamed_375.kAUNetSendParam_Status);
-pub const kAUNetSendParam_NumParameters = @enumToInt(enum_unnamed_375.kAUNetSendParam_NumParameters);
-const enum_unnamed_375 = extern enum(c_int) {
+pub const kAUNetSendParam_Status = @enumToInt(enum_unnamed_302.kAUNetSendParam_Status);
+pub const kAUNetSendParam_NumParameters = @enumToInt(enum_unnamed_302.kAUNetSendParam_NumParameters);
+const enum_unnamed_302 = extern enum(c_int) {
     kAUNetSendParam_Status = 0,
     kAUNetSendParam_NumParameters = 1,
     _,
 };
-pub const kAUNetStatus_NotConnected = @enumToInt(enum_unnamed_376.kAUNetStatus_NotConnected);
-pub const kAUNetStatus_Connected = @enumToInt(enum_unnamed_376.kAUNetStatus_Connected);
-pub const kAUNetStatus_Overflow = @enumToInt(enum_unnamed_376.kAUNetStatus_Overflow);
-pub const kAUNetStatus_Underflow = @enumToInt(enum_unnamed_376.kAUNetStatus_Underflow);
-pub const kAUNetStatus_Connecting = @enumToInt(enum_unnamed_376.kAUNetStatus_Connecting);
-pub const kAUNetStatus_Listening = @enumToInt(enum_unnamed_376.kAUNetStatus_Listening);
-const enum_unnamed_376 = extern enum(c_int) {
+pub const kAUNetStatus_NotConnected = @enumToInt(enum_unnamed_303.kAUNetStatus_NotConnected);
+pub const kAUNetStatus_Connected = @enumToInt(enum_unnamed_303.kAUNetStatus_Connected);
+pub const kAUNetStatus_Overflow = @enumToInt(enum_unnamed_303.kAUNetStatus_Overflow);
+pub const kAUNetStatus_Underflow = @enumToInt(enum_unnamed_303.kAUNetStatus_Underflow);
+pub const kAUNetStatus_Connecting = @enumToInt(enum_unnamed_303.kAUNetStatus_Connecting);
+pub const kAUNetStatus_Listening = @enumToInt(enum_unnamed_303.kAUNetStatus_Listening);
+const enum_unnamed_303 = extern enum(c_int) {
     kAUNetStatus_NotConnected = 0,
     kAUNetStatus_Connected = 1,
     kAUNetStatus_Overflow = 2,
@@ -10531,32 +9517,32 @@ const enum_unnamed_376 = extern enum(c_int) {
     kAUNetStatus_Listening = 5,
     _,
 };
-pub const kMusicDeviceParam_Tuning = @enumToInt(enum_unnamed_377.kMusicDeviceParam_Tuning);
-pub const kMusicDeviceParam_Volume = @enumToInt(enum_unnamed_377.kMusicDeviceParam_Volume);
-pub const kMusicDeviceParam_ReverbVolume = @enumToInt(enum_unnamed_377.kMusicDeviceParam_ReverbVolume);
-const enum_unnamed_377 = extern enum(c_int) {
+pub const kMusicDeviceParam_Tuning = @enumToInt(enum_unnamed_304.kMusicDeviceParam_Tuning);
+pub const kMusicDeviceParam_Volume = @enumToInt(enum_unnamed_304.kMusicDeviceParam_Volume);
+pub const kMusicDeviceParam_ReverbVolume = @enumToInt(enum_unnamed_304.kMusicDeviceParam_ReverbVolume);
+const enum_unnamed_304 = extern enum(c_int) {
     kMusicDeviceParam_Tuning = 0,
     kMusicDeviceParam_Volume = 1,
     kMusicDeviceParam_ReverbVolume = 2,
     _,
 };
-pub const kRandomParam_BoundA = @enumToInt(enum_unnamed_378.kRandomParam_BoundA);
-pub const kRandomParam_BoundB = @enumToInt(enum_unnamed_378.kRandomParam_BoundB);
-pub const kRandomParam_Curve = @enumToInt(enum_unnamed_378.kRandomParam_Curve);
-const enum_unnamed_378 = extern enum(c_int) {
+pub const kRandomParam_BoundA = @enumToInt(enum_unnamed_305.kRandomParam_BoundA);
+pub const kRandomParam_BoundB = @enumToInt(enum_unnamed_305.kRandomParam_BoundB);
+pub const kRandomParam_Curve = @enumToInt(enum_unnamed_305.kRandomParam_Curve);
+const enum_unnamed_305 = extern enum(c_int) {
     kRandomParam_BoundA = 0,
     kRandomParam_BoundB = 1,
     kRandomParam_Curve = 2,
     _,
 };
-pub const kReverb2Param_DryWetMix = @enumToInt(enum_unnamed_379.kReverb2Param_DryWetMix);
-pub const kReverb2Param_Gain = @enumToInt(enum_unnamed_379.kReverb2Param_Gain);
-pub const kReverb2Param_MinDelayTime = @enumToInt(enum_unnamed_379.kReverb2Param_MinDelayTime);
-pub const kReverb2Param_MaxDelayTime = @enumToInt(enum_unnamed_379.kReverb2Param_MaxDelayTime);
-pub const kReverb2Param_DecayTimeAt0Hz = @enumToInt(enum_unnamed_379.kReverb2Param_DecayTimeAt0Hz);
-pub const kReverb2Param_DecayTimeAtNyquist = @enumToInt(enum_unnamed_379.kReverb2Param_DecayTimeAtNyquist);
-pub const kReverb2Param_RandomizeReflections = @enumToInt(enum_unnamed_379.kReverb2Param_RandomizeReflections);
-const enum_unnamed_379 = extern enum(c_int) {
+pub const kReverb2Param_DryWetMix = @enumToInt(enum_unnamed_306.kReverb2Param_DryWetMix);
+pub const kReverb2Param_Gain = @enumToInt(enum_unnamed_306.kReverb2Param_Gain);
+pub const kReverb2Param_MinDelayTime = @enumToInt(enum_unnamed_306.kReverb2Param_MinDelayTime);
+pub const kReverb2Param_MaxDelayTime = @enumToInt(enum_unnamed_306.kReverb2Param_MaxDelayTime);
+pub const kReverb2Param_DecayTimeAt0Hz = @enumToInt(enum_unnamed_306.kReverb2Param_DecayTimeAt0Hz);
+pub const kReverb2Param_DecayTimeAtNyquist = @enumToInt(enum_unnamed_306.kReverb2Param_DecayTimeAtNyquist);
+pub const kReverb2Param_RandomizeReflections = @enumToInt(enum_unnamed_306.kReverb2Param_RandomizeReflections);
+const enum_unnamed_306 = extern enum(c_int) {
     kReverb2Param_DryWetMix = 0,
     kReverb2Param_Gain = 1,
     kReverb2Param_MinDelayTime = 2,
@@ -10585,9 +9571,9 @@ pub const struct_MusicDeviceNoteParams = extern struct {
     mControls: [1]NoteParamsControlValue,
 };
 pub const MusicDeviceNoteParams = struct_MusicDeviceNoteParams;
-pub const kMusicNoteEvent_UseGroupInstrument = @enumToInt(enum_unnamed_380.kMusicNoteEvent_UseGroupInstrument);
-pub const kMusicNoteEvent_Unused = @enumToInt(enum_unnamed_380.kMusicNoteEvent_Unused);
-const enum_unnamed_380 = extern enum(c_int) {
+pub const kMusicNoteEvent_UseGroupInstrument = @enumToInt(enum_unnamed_307.kMusicNoteEvent_UseGroupInstrument);
+pub const kMusicNoteEvent_Unused = @enumToInt(enum_unnamed_307.kMusicNoteEvent_Unused);
+const enum_unnamed_307 = extern enum(c_int) {
     kMusicNoteEvent_UseGroupInstrument = 4294967295,
     kMusicNoteEvent_Unused = 4294967295,
     _,
@@ -10599,14 +9585,14 @@ pub extern fn MusicDeviceMIDIEvent(inUnit: MusicDeviceComponent, inStatus: UInt3
 pub extern fn MusicDeviceSysEx(inUnit: MusicDeviceComponent, inData: [*c]const UInt8, inLength: UInt32) OSStatus;
 pub extern fn MusicDeviceStartNote(inUnit: MusicDeviceComponent, inInstrument: MusicDeviceInstrumentID, inGroupID: MusicDeviceGroupID, outNoteInstanceID: [*c]NoteInstanceID, inOffsetSampleFrame: UInt32, inParams: [*c]const MusicDeviceNoteParams) OSStatus;
 pub extern fn MusicDeviceStopNote(inUnit: MusicDeviceComponent, inGroupID: MusicDeviceGroupID, inNoteInstanceID: NoteInstanceID, inOffsetSampleFrame: UInt32) OSStatus;
-pub const kMusicDeviceRange = @enumToInt(enum_unnamed_381.kMusicDeviceRange);
-pub const kMusicDeviceMIDIEventSelect = @enumToInt(enum_unnamed_381.kMusicDeviceMIDIEventSelect);
-pub const kMusicDeviceSysExSelect = @enumToInt(enum_unnamed_381.kMusicDeviceSysExSelect);
-pub const kMusicDevicePrepareInstrumentSelect = @enumToInt(enum_unnamed_381.kMusicDevicePrepareInstrumentSelect);
-pub const kMusicDeviceReleaseInstrumentSelect = @enumToInt(enum_unnamed_381.kMusicDeviceReleaseInstrumentSelect);
-pub const kMusicDeviceStartNoteSelect = @enumToInt(enum_unnamed_381.kMusicDeviceStartNoteSelect);
-pub const kMusicDeviceStopNoteSelect = @enumToInt(enum_unnamed_381.kMusicDeviceStopNoteSelect);
-const enum_unnamed_381 = extern enum(c_int) {
+pub const kMusicDeviceRange = @enumToInt(enum_unnamed_308.kMusicDeviceRange);
+pub const kMusicDeviceMIDIEventSelect = @enumToInt(enum_unnamed_308.kMusicDeviceMIDIEventSelect);
+pub const kMusicDeviceSysExSelect = @enumToInt(enum_unnamed_308.kMusicDeviceSysExSelect);
+pub const kMusicDevicePrepareInstrumentSelect = @enumToInt(enum_unnamed_308.kMusicDevicePrepareInstrumentSelect);
+pub const kMusicDeviceReleaseInstrumentSelect = @enumToInt(enum_unnamed_308.kMusicDeviceReleaseInstrumentSelect);
+pub const kMusicDeviceStartNoteSelect = @enumToInt(enum_unnamed_308.kMusicDeviceStartNoteSelect);
+pub const kMusicDeviceStopNoteSelect = @enumToInt(enum_unnamed_308.kMusicDeviceStopNoteSelect);
+const enum_unnamed_308 = extern enum(c_int) {
     kMusicDeviceRange = 256,
     kMusicDeviceMIDIEventSelect = 257,
     kMusicDeviceSysExSelect = 258,
@@ -10625,12 +9611,12 @@ pub extern fn MusicDeviceReleaseInstrument(inUnit: MusicDeviceComponent, inInstr
 pub const struct_OpaqueAUGraph = @OpaqueType();
 pub const AUGraph = ?*struct_OpaqueAUGraph;
 pub const AUNode = SInt32;
-pub const kAUGraphErr_NodeNotFound = @enumToInt(enum_unnamed_382.kAUGraphErr_NodeNotFound);
-pub const kAUGraphErr_InvalidConnection = @enumToInt(enum_unnamed_382.kAUGraphErr_InvalidConnection);
-pub const kAUGraphErr_OutputNodeErr = @enumToInt(enum_unnamed_382.kAUGraphErr_OutputNodeErr);
-pub const kAUGraphErr_CannotDoInCurrentContext = @enumToInt(enum_unnamed_382.kAUGraphErr_CannotDoInCurrentContext);
-pub const kAUGraphErr_InvalidAudioUnit = @enumToInt(enum_unnamed_382.kAUGraphErr_InvalidAudioUnit);
-const enum_unnamed_382 = extern enum(c_int) {
+pub const kAUGraphErr_NodeNotFound = @enumToInt(enum_unnamed_309.kAUGraphErr_NodeNotFound);
+pub const kAUGraphErr_InvalidConnection = @enumToInt(enum_unnamed_309.kAUGraphErr_InvalidConnection);
+pub const kAUGraphErr_OutputNodeErr = @enumToInt(enum_unnamed_309.kAUGraphErr_OutputNodeErr);
+pub const kAUGraphErr_CannotDoInCurrentContext = @enumToInt(enum_unnamed_309.kAUGraphErr_CannotDoInCurrentContext);
+pub const kAUGraphErr_InvalidAudioUnit = @enumToInt(enum_unnamed_309.kAUGraphErr_InvalidAudioUnit);
+const enum_unnamed_309 = extern enum(c_int) {
     kAUGraphErr_NodeNotFound = -10860,
     kAUGraphErr_InvalidConnection = -10861,
     kAUGraphErr_OutputNodeErr = -10862,
@@ -10648,9 +9634,9 @@ pub extern fn AUGraphNodeInfo(inGraph: AUGraph, inNode: AUNode, outDescription: 
 pub extern fn AUGraphNewNodeSubGraph(inGraph: AUGraph, outNode: [*c]AUNode) OSStatus;
 pub extern fn AUGraphGetNodeInfoSubGraph(inGraph: AUGraph, inNode: AUNode, outSubGraph: [*c]AUGraph) OSStatus;
 pub extern fn AUGraphIsNodeSubGraph(inGraph: AUGraph, inNode: AUNode, outFlag: [*c]Boolean) OSStatus;
-pub const kAUNodeInteraction_Connection = @enumToInt(enum_unnamed_383.kAUNodeInteraction_Connection);
-pub const kAUNodeInteraction_InputCallback = @enumToInt(enum_unnamed_383.kAUNodeInteraction_InputCallback);
-const enum_unnamed_383 = extern enum(c_int) {
+pub const kAUNodeInteraction_Connection = @enumToInt(enum_unnamed_310.kAUNodeInteraction_Connection);
+pub const kAUNodeInteraction_InputCallback = @enumToInt(enum_unnamed_310.kAUNodeInteraction_InputCallback);
+const enum_unnamed_310 = extern enum(c_int) {
     kAUNodeInteraction_Connection = 1,
     kAUNodeInteraction_InputCallback = 2,
     _,
@@ -10669,13 +9655,13 @@ pub const struct_AUNodeRenderCallback = extern struct {
     cback: AURenderCallbackStruct,
 };
 pub const AUNodeRenderCallback = struct_AUNodeRenderCallback;
-const union_unnamed_384 = extern union {
+const union_unnamed_311 = extern union {
     connection: AUNodeConnection,
     inputCallback: AUNodeRenderCallback,
 };
 pub const struct_AUNodeInteraction = extern struct {
     nodeInteractionType: UInt32,
-    nodeInteraction: union_unnamed_384,
+    nodeInteraction: union_unnamed_311,
 };
 pub const AUNodeInteraction = struct_AUNodeInteraction;
 pub extern fn AUGraphConnectNodeInput(inGraph: AUGraph, inSourceNode: AUNode, inSourceOutputNumber: UInt32, inDestNode: AUNode, inDestInputNumber: UInt32) OSStatus;
@@ -10710,38 +9696,38 @@ pub extern fn AUGraphGetNodeConnections(inGraph: AUGraph, inNode: AUNode, outCon
 pub const struct_OpaqueAudioConverter = @OpaqueType();
 pub const AudioConverterRef = ?*struct_OpaqueAudioConverter;
 pub const AudioConverterPropertyID = UInt32;
-pub const kAudioConverterPropertyMinimumInputBufferSize = @enumToInt(enum_unnamed_385.kAudioConverterPropertyMinimumInputBufferSize);
-pub const kAudioConverterPropertyMinimumOutputBufferSize = @enumToInt(enum_unnamed_385.kAudioConverterPropertyMinimumOutputBufferSize);
-pub const kAudioConverterPropertyMaximumInputPacketSize = @enumToInt(enum_unnamed_385.kAudioConverterPropertyMaximumInputPacketSize);
-pub const kAudioConverterPropertyMaximumOutputPacketSize = @enumToInt(enum_unnamed_385.kAudioConverterPropertyMaximumOutputPacketSize);
-pub const kAudioConverterPropertyCalculateInputBufferSize = @enumToInt(enum_unnamed_385.kAudioConverterPropertyCalculateInputBufferSize);
-pub const kAudioConverterPropertyCalculateOutputBufferSize = @enumToInt(enum_unnamed_385.kAudioConverterPropertyCalculateOutputBufferSize);
-pub const kAudioConverterPropertyInputCodecParameters = @enumToInt(enum_unnamed_385.kAudioConverterPropertyInputCodecParameters);
-pub const kAudioConverterPropertyOutputCodecParameters = @enumToInt(enum_unnamed_385.kAudioConverterPropertyOutputCodecParameters);
-pub const kAudioConverterSampleRateConverterComplexity = @enumToInt(enum_unnamed_385.kAudioConverterSampleRateConverterComplexity);
-pub const kAudioConverterSampleRateConverterQuality = @enumToInt(enum_unnamed_385.kAudioConverterSampleRateConverterQuality);
-pub const kAudioConverterSampleRateConverterInitialPhase = @enumToInt(enum_unnamed_385.kAudioConverterSampleRateConverterInitialPhase);
-pub const kAudioConverterCodecQuality = @enumToInt(enum_unnamed_385.kAudioConverterCodecQuality);
-pub const kAudioConverterPrimeMethod = @enumToInt(enum_unnamed_385.kAudioConverterPrimeMethod);
-pub const kAudioConverterPrimeInfo = @enumToInt(enum_unnamed_385.kAudioConverterPrimeInfo);
-pub const kAudioConverterChannelMap = @enumToInt(enum_unnamed_385.kAudioConverterChannelMap);
-pub const kAudioConverterDecompressionMagicCookie = @enumToInt(enum_unnamed_385.kAudioConverterDecompressionMagicCookie);
-pub const kAudioConverterCompressionMagicCookie = @enumToInt(enum_unnamed_385.kAudioConverterCompressionMagicCookie);
-pub const kAudioConverterEncodeBitRate = @enumToInt(enum_unnamed_385.kAudioConverterEncodeBitRate);
-pub const kAudioConverterEncodeAdjustableSampleRate = @enumToInt(enum_unnamed_385.kAudioConverterEncodeAdjustableSampleRate);
-pub const kAudioConverterInputChannelLayout = @enumToInt(enum_unnamed_385.kAudioConverterInputChannelLayout);
-pub const kAudioConverterOutputChannelLayout = @enumToInt(enum_unnamed_385.kAudioConverterOutputChannelLayout);
-pub const kAudioConverterApplicableEncodeBitRates = @enumToInt(enum_unnamed_385.kAudioConverterApplicableEncodeBitRates);
-pub const kAudioConverterAvailableEncodeBitRates = @enumToInt(enum_unnamed_385.kAudioConverterAvailableEncodeBitRates);
-pub const kAudioConverterApplicableEncodeSampleRates = @enumToInt(enum_unnamed_385.kAudioConverterApplicableEncodeSampleRates);
-pub const kAudioConverterAvailableEncodeSampleRates = @enumToInt(enum_unnamed_385.kAudioConverterAvailableEncodeSampleRates);
-pub const kAudioConverterAvailableEncodeChannelLayoutTags = @enumToInt(enum_unnamed_385.kAudioConverterAvailableEncodeChannelLayoutTags);
-pub const kAudioConverterCurrentOutputStreamDescription = @enumToInt(enum_unnamed_385.kAudioConverterCurrentOutputStreamDescription);
-pub const kAudioConverterCurrentInputStreamDescription = @enumToInt(enum_unnamed_385.kAudioConverterCurrentInputStreamDescription);
-pub const kAudioConverterPropertySettings = @enumToInt(enum_unnamed_385.kAudioConverterPropertySettings);
-pub const kAudioConverterPropertyBitDepthHint = @enumToInt(enum_unnamed_385.kAudioConverterPropertyBitDepthHint);
-pub const kAudioConverterPropertyFormatList = @enumToInt(enum_unnamed_385.kAudioConverterPropertyFormatList);
-const enum_unnamed_385 = extern enum(c_int) {
+pub const kAudioConverterPropertyMinimumInputBufferSize = @enumToInt(enum_unnamed_312.kAudioConverterPropertyMinimumInputBufferSize);
+pub const kAudioConverterPropertyMinimumOutputBufferSize = @enumToInt(enum_unnamed_312.kAudioConverterPropertyMinimumOutputBufferSize);
+pub const kAudioConverterPropertyMaximumInputPacketSize = @enumToInt(enum_unnamed_312.kAudioConverterPropertyMaximumInputPacketSize);
+pub const kAudioConverterPropertyMaximumOutputPacketSize = @enumToInt(enum_unnamed_312.kAudioConverterPropertyMaximumOutputPacketSize);
+pub const kAudioConverterPropertyCalculateInputBufferSize = @enumToInt(enum_unnamed_312.kAudioConverterPropertyCalculateInputBufferSize);
+pub const kAudioConverterPropertyCalculateOutputBufferSize = @enumToInt(enum_unnamed_312.kAudioConverterPropertyCalculateOutputBufferSize);
+pub const kAudioConverterPropertyInputCodecParameters = @enumToInt(enum_unnamed_312.kAudioConverterPropertyInputCodecParameters);
+pub const kAudioConverterPropertyOutputCodecParameters = @enumToInt(enum_unnamed_312.kAudioConverterPropertyOutputCodecParameters);
+pub const kAudioConverterSampleRateConverterComplexity = @enumToInt(enum_unnamed_312.kAudioConverterSampleRateConverterComplexity);
+pub const kAudioConverterSampleRateConverterQuality = @enumToInt(enum_unnamed_312.kAudioConverterSampleRateConverterQuality);
+pub const kAudioConverterSampleRateConverterInitialPhase = @enumToInt(enum_unnamed_312.kAudioConverterSampleRateConverterInitialPhase);
+pub const kAudioConverterCodecQuality = @enumToInt(enum_unnamed_312.kAudioConverterCodecQuality);
+pub const kAudioConverterPrimeMethod = @enumToInt(enum_unnamed_312.kAudioConverterPrimeMethod);
+pub const kAudioConverterPrimeInfo = @enumToInt(enum_unnamed_312.kAudioConverterPrimeInfo);
+pub const kAudioConverterChannelMap = @enumToInt(enum_unnamed_312.kAudioConverterChannelMap);
+pub const kAudioConverterDecompressionMagicCookie = @enumToInt(enum_unnamed_312.kAudioConverterDecompressionMagicCookie);
+pub const kAudioConverterCompressionMagicCookie = @enumToInt(enum_unnamed_312.kAudioConverterCompressionMagicCookie);
+pub const kAudioConverterEncodeBitRate = @enumToInt(enum_unnamed_312.kAudioConverterEncodeBitRate);
+pub const kAudioConverterEncodeAdjustableSampleRate = @enumToInt(enum_unnamed_312.kAudioConverterEncodeAdjustableSampleRate);
+pub const kAudioConverterInputChannelLayout = @enumToInt(enum_unnamed_312.kAudioConverterInputChannelLayout);
+pub const kAudioConverterOutputChannelLayout = @enumToInt(enum_unnamed_312.kAudioConverterOutputChannelLayout);
+pub const kAudioConverterApplicableEncodeBitRates = @enumToInt(enum_unnamed_312.kAudioConverterApplicableEncodeBitRates);
+pub const kAudioConverterAvailableEncodeBitRates = @enumToInt(enum_unnamed_312.kAudioConverterAvailableEncodeBitRates);
+pub const kAudioConverterApplicableEncodeSampleRates = @enumToInt(enum_unnamed_312.kAudioConverterApplicableEncodeSampleRates);
+pub const kAudioConverterAvailableEncodeSampleRates = @enumToInt(enum_unnamed_312.kAudioConverterAvailableEncodeSampleRates);
+pub const kAudioConverterAvailableEncodeChannelLayoutTags = @enumToInt(enum_unnamed_312.kAudioConverterAvailableEncodeChannelLayoutTags);
+pub const kAudioConverterCurrentOutputStreamDescription = @enumToInt(enum_unnamed_312.kAudioConverterCurrentOutputStreamDescription);
+pub const kAudioConverterCurrentInputStreamDescription = @enumToInt(enum_unnamed_312.kAudioConverterCurrentInputStreamDescription);
+pub const kAudioConverterPropertySettings = @enumToInt(enum_unnamed_312.kAudioConverterPropertySettings);
+pub const kAudioConverterPropertyBitDepthHint = @enumToInt(enum_unnamed_312.kAudioConverterPropertyBitDepthHint);
+pub const kAudioConverterPropertyFormatList = @enumToInt(enum_unnamed_312.kAudioConverterPropertyFormatList);
+const enum_unnamed_312 = extern enum(c_int) {
     kAudioConverterPropertyMinimumInputBufferSize = 1835623027,
     kAudioConverterPropertyMinimumOutputBufferSize = 1836016243,
     kAudioConverterPropertyMaximumInputPacketSize = 2020175987,
@@ -10775,26 +9761,26 @@ const enum_unnamed_385 = extern enum(c_int) {
     kAudioConverterPropertyFormatList = 1718383476,
     _,
 };
-pub const kAudioConverterPropertyDithering = @enumToInt(enum_unnamed_386.kAudioConverterPropertyDithering);
-pub const kAudioConverterPropertyDitherBitDepth = @enumToInt(enum_unnamed_386.kAudioConverterPropertyDitherBitDepth);
-const enum_unnamed_386 = extern enum(c_int) {
+pub const kAudioConverterPropertyDithering = @enumToInt(enum_unnamed_313.kAudioConverterPropertyDithering);
+pub const kAudioConverterPropertyDitherBitDepth = @enumToInt(enum_unnamed_313.kAudioConverterPropertyDitherBitDepth);
+const enum_unnamed_313 = extern enum(c_int) {
     kAudioConverterPropertyDithering = 1684632680,
     kAudioConverterPropertyDitherBitDepth = 1684171124,
     _,
 };
-pub const kDitherAlgorithm_TPDF = @enumToInt(enum_unnamed_387.kDitherAlgorithm_TPDF);
-pub const kDitherAlgorithm_NoiseShaping = @enumToInt(enum_unnamed_387.kDitherAlgorithm_NoiseShaping);
-const enum_unnamed_387 = extern enum(c_int) {
+pub const kDitherAlgorithm_TPDF = @enumToInt(enum_unnamed_314.kDitherAlgorithm_TPDF);
+pub const kDitherAlgorithm_NoiseShaping = @enumToInt(enum_unnamed_314.kDitherAlgorithm_NoiseShaping);
+const enum_unnamed_314 = extern enum(c_int) {
     kDitherAlgorithm_TPDF = 1,
     kDitherAlgorithm_NoiseShaping = 2,
     _,
 };
-pub const kAudioConverterQuality_Max = @enumToInt(enum_unnamed_388.kAudioConverterQuality_Max);
-pub const kAudioConverterQuality_High = @enumToInt(enum_unnamed_388.kAudioConverterQuality_High);
-pub const kAudioConverterQuality_Medium = @enumToInt(enum_unnamed_388.kAudioConverterQuality_Medium);
-pub const kAudioConverterQuality_Low = @enumToInt(enum_unnamed_388.kAudioConverterQuality_Low);
-pub const kAudioConverterQuality_Min = @enumToInt(enum_unnamed_388.kAudioConverterQuality_Min);
-const enum_unnamed_388 = extern enum(c_int) {
+pub const kAudioConverterQuality_Max = @enumToInt(enum_unnamed_315.kAudioConverterQuality_Max);
+pub const kAudioConverterQuality_High = @enumToInt(enum_unnamed_315.kAudioConverterQuality_High);
+pub const kAudioConverterQuality_Medium = @enumToInt(enum_unnamed_315.kAudioConverterQuality_Medium);
+pub const kAudioConverterQuality_Low = @enumToInt(enum_unnamed_315.kAudioConverterQuality_Low);
+pub const kAudioConverterQuality_Min = @enumToInt(enum_unnamed_315.kAudioConverterQuality_Min);
+const enum_unnamed_315 = extern enum(c_int) {
     kAudioConverterQuality_Max = 127,
     kAudioConverterQuality_High = 96,
     kAudioConverterQuality_Medium = 64,
@@ -10802,21 +9788,21 @@ const enum_unnamed_388 = extern enum(c_int) {
     kAudioConverterQuality_Min = 0,
     _,
 };
-pub const kAudioConverterSampleRateConverterComplexity_Linear = @enumToInt(enum_unnamed_389.kAudioConverterSampleRateConverterComplexity_Linear);
-pub const kAudioConverterSampleRateConverterComplexity_Normal = @enumToInt(enum_unnamed_389.kAudioConverterSampleRateConverterComplexity_Normal);
-pub const kAudioConverterSampleRateConverterComplexity_Mastering = @enumToInt(enum_unnamed_389.kAudioConverterSampleRateConverterComplexity_Mastering);
-pub const kAudioConverterSampleRateConverterComplexity_MinimumPhase = @enumToInt(enum_unnamed_389.kAudioConverterSampleRateConverterComplexity_MinimumPhase);
-const enum_unnamed_389 = extern enum(c_int) {
+pub const kAudioConverterSampleRateConverterComplexity_Linear = @enumToInt(enum_unnamed_316.kAudioConverterSampleRateConverterComplexity_Linear);
+pub const kAudioConverterSampleRateConverterComplexity_Normal = @enumToInt(enum_unnamed_316.kAudioConverterSampleRateConverterComplexity_Normal);
+pub const kAudioConverterSampleRateConverterComplexity_Mastering = @enumToInt(enum_unnamed_316.kAudioConverterSampleRateConverterComplexity_Mastering);
+pub const kAudioConverterSampleRateConverterComplexity_MinimumPhase = @enumToInt(enum_unnamed_316.kAudioConverterSampleRateConverterComplexity_MinimumPhase);
+const enum_unnamed_316 = extern enum(c_int) {
     kAudioConverterSampleRateConverterComplexity_Linear = 1818848869,
     kAudioConverterSampleRateConverterComplexity_Normal = 1852797549,
     kAudioConverterSampleRateConverterComplexity_Mastering = 1650553971,
     kAudioConverterSampleRateConverterComplexity_MinimumPhase = 1835626096,
     _,
 };
-pub const kConverterPrimeMethod_Pre = @enumToInt(enum_unnamed_390.kConverterPrimeMethod_Pre);
-pub const kConverterPrimeMethod_Normal = @enumToInt(enum_unnamed_390.kConverterPrimeMethod_Normal);
-pub const kConverterPrimeMethod_None = @enumToInt(enum_unnamed_390.kConverterPrimeMethod_None);
-const enum_unnamed_390 = extern enum(c_int) {
+pub const kConverterPrimeMethod_Pre = @enumToInt(enum_unnamed_317.kConverterPrimeMethod_Pre);
+pub const kConverterPrimeMethod_Normal = @enumToInt(enum_unnamed_317.kConverterPrimeMethod_Normal);
+pub const kConverterPrimeMethod_None = @enumToInt(enum_unnamed_317.kConverterPrimeMethod_None);
+const enum_unnamed_317 = extern enum(c_int) {
     kConverterPrimeMethod_Pre = 0,
     kConverterPrimeMethod_Normal = 1,
     kConverterPrimeMethod_None = 2,
@@ -10827,17 +9813,17 @@ pub const struct_AudioConverterPrimeInfo = extern struct {
     trailingFrames: UInt32,
 };
 pub const AudioConverterPrimeInfo = struct_AudioConverterPrimeInfo;
-pub const kAudioConverterErr_FormatNotSupported = @enumToInt(enum_unnamed_391.kAudioConverterErr_FormatNotSupported);
-pub const kAudioConverterErr_OperationNotSupported = @enumToInt(enum_unnamed_391.kAudioConverterErr_OperationNotSupported);
-pub const kAudioConverterErr_PropertyNotSupported = @enumToInt(enum_unnamed_391.kAudioConverterErr_PropertyNotSupported);
-pub const kAudioConverterErr_InvalidInputSize = @enumToInt(enum_unnamed_391.kAudioConverterErr_InvalidInputSize);
-pub const kAudioConverterErr_InvalidOutputSize = @enumToInt(enum_unnamed_391.kAudioConverterErr_InvalidOutputSize);
-pub const kAudioConverterErr_UnspecifiedError = @enumToInt(enum_unnamed_391.kAudioConverterErr_UnspecifiedError);
-pub const kAudioConverterErr_BadPropertySizeError = @enumToInt(enum_unnamed_391.kAudioConverterErr_BadPropertySizeError);
-pub const kAudioConverterErr_RequiresPacketDescriptionsError = @enumToInt(enum_unnamed_391.kAudioConverterErr_RequiresPacketDescriptionsError);
-pub const kAudioConverterErr_InputSampleRateOutOfRange = @enumToInt(enum_unnamed_391.kAudioConverterErr_InputSampleRateOutOfRange);
-pub const kAudioConverterErr_OutputSampleRateOutOfRange = @enumToInt(enum_unnamed_391.kAudioConverterErr_OutputSampleRateOutOfRange);
-const enum_unnamed_391 = extern enum(c_int) {
+pub const kAudioConverterErr_FormatNotSupported = @enumToInt(enum_unnamed_318.kAudioConverterErr_FormatNotSupported);
+pub const kAudioConverterErr_OperationNotSupported = @enumToInt(enum_unnamed_318.kAudioConverterErr_OperationNotSupported);
+pub const kAudioConverterErr_PropertyNotSupported = @enumToInt(enum_unnamed_318.kAudioConverterErr_PropertyNotSupported);
+pub const kAudioConverterErr_InvalidInputSize = @enumToInt(enum_unnamed_318.kAudioConverterErr_InvalidInputSize);
+pub const kAudioConverterErr_InvalidOutputSize = @enumToInt(enum_unnamed_318.kAudioConverterErr_InvalidOutputSize);
+pub const kAudioConverterErr_UnspecifiedError = @enumToInt(enum_unnamed_318.kAudioConverterErr_UnspecifiedError);
+pub const kAudioConverterErr_BadPropertySizeError = @enumToInt(enum_unnamed_318.kAudioConverterErr_BadPropertySizeError);
+pub const kAudioConverterErr_RequiresPacketDescriptionsError = @enumToInt(enum_unnamed_318.kAudioConverterErr_RequiresPacketDescriptionsError);
+pub const kAudioConverterErr_InputSampleRateOutOfRange = @enumToInt(enum_unnamed_318.kAudioConverterErr_InputSampleRateOutOfRange);
+pub const kAudioConverterErr_OutputSampleRateOutOfRange = @enumToInt(enum_unnamed_318.kAudioConverterErr_OutputSampleRateOutOfRange);
+const enum_unnamed_318 = extern enum(c_int) {
     kAudioConverterErr_FormatNotSupported = 1718449215,
     kAudioConverterErr_OperationNotSupported = 1869627199,
     kAudioConverterErr_PropertyNotSupported = 1886547824,
@@ -10861,9 +9847,9 @@ pub extern fn AudioConverterConvertBuffer(inAudioConverter: AudioConverterRef, i
 pub const AudioConverterComplexInputDataProc = ?fn (AudioConverterRef, [*c]UInt32, [*c]AudioBufferList, [*c][*c]AudioStreamPacketDescription, ?*c_void) callconv(.C) OSStatus;
 pub extern fn AudioConverterFillComplexBuffer(inAudioConverter: AudioConverterRef, inInputDataProc: AudioConverterComplexInputDataProc, inInputDataProcUserData: ?*c_void, ioOutputDataPacketSize: [*c]UInt32, outOutputData: [*c]AudioBufferList, outPacketDescription: [*c]AudioStreamPacketDescription) OSStatus;
 pub extern fn AudioConverterConvertComplexBuffer(inAudioConverter: AudioConverterRef, inNumberPCMFrames: UInt32, inInputData: [*c]const AudioBufferList, outOutputData: [*c]AudioBufferList) OSStatus;
-pub const kAudioConverterPropertyMaximumInputBufferSize = @enumToInt(enum_unnamed_392.kAudioConverterPropertyMaximumInputBufferSize);
-pub const kAudioConverterSampleRateConverterAlgorithm = @enumToInt(enum_unnamed_392.kAudioConverterSampleRateConverterAlgorithm);
-const enum_unnamed_392 = extern enum(c_int) {
+pub const kAudioConverterPropertyMaximumInputBufferSize = @enumToInt(enum_unnamed_319.kAudioConverterPropertyMaximumInputBufferSize);
+pub const kAudioConverterSampleRateConverterAlgorithm = @enumToInt(enum_unnamed_319.kAudioConverterSampleRateConverterAlgorithm);
+const enum_unnamed_319 = extern enum(c_int) {
     kAudioConverterPropertyMaximumInputBufferSize = 2020172403,
     kAudioConverterSampleRateConverterAlgorithm = 1936876393,
     _,
@@ -10871,27 +9857,27 @@ const enum_unnamed_392 = extern enum(c_int) {
 pub const AudioConverterInputDataProc = ?fn (AudioConverterRef, [*c]UInt32, [*c]?*c_void, ?*c_void) callconv(.C) OSStatus;
 pub extern fn AudioConverterFillBuffer(inAudioConverter: AudioConverterRef, inInputDataProc: AudioConverterInputDataProc, inInputDataProcUserData: ?*c_void, ioOutputDataSize: [*c]UInt32, outOutputData: ?*c_void) OSStatus;
 pub const AudioFileTypeID = UInt32;
-pub const kAudioFileAIFFType = @enumToInt(enum_unnamed_393.kAudioFileAIFFType);
-pub const kAudioFileAIFCType = @enumToInt(enum_unnamed_393.kAudioFileAIFCType);
-pub const kAudioFileWAVEType = @enumToInt(enum_unnamed_393.kAudioFileWAVEType);
-pub const kAudioFileRF64Type = @enumToInt(enum_unnamed_393.kAudioFileRF64Type);
-pub const kAudioFileSoundDesigner2Type = @enumToInt(enum_unnamed_393.kAudioFileSoundDesigner2Type);
-pub const kAudioFileNextType = @enumToInt(enum_unnamed_393.kAudioFileNextType);
-pub const kAudioFileMP3Type = @enumToInt(enum_unnamed_393.kAudioFileMP3Type);
-pub const kAudioFileMP2Type = @enumToInt(enum_unnamed_393.kAudioFileMP2Type);
-pub const kAudioFileMP1Type = @enumToInt(enum_unnamed_393.kAudioFileMP1Type);
-pub const kAudioFileAC3Type = @enumToInt(enum_unnamed_393.kAudioFileAC3Type);
-pub const kAudioFileAAC_ADTSType = @enumToInt(enum_unnamed_393.kAudioFileAAC_ADTSType);
-pub const kAudioFileMPEG4Type = @enumToInt(enum_unnamed_393.kAudioFileMPEG4Type);
-pub const kAudioFileM4AType = @enumToInt(enum_unnamed_393.kAudioFileM4AType);
-pub const kAudioFileM4BType = @enumToInt(enum_unnamed_393.kAudioFileM4BType);
-pub const kAudioFileCAFType = @enumToInt(enum_unnamed_393.kAudioFileCAFType);
-pub const kAudioFile3GPType = @enumToInt(enum_unnamed_393.kAudioFile3GPType);
-pub const kAudioFile3GP2Type = @enumToInt(enum_unnamed_393.kAudioFile3GP2Type);
-pub const kAudioFileAMRType = @enumToInt(enum_unnamed_393.kAudioFileAMRType);
-pub const kAudioFileFLACType = @enumToInt(enum_unnamed_393.kAudioFileFLACType);
-pub const kAudioFileLATMInLOASType = @enumToInt(enum_unnamed_393.kAudioFileLATMInLOASType);
-const enum_unnamed_393 = extern enum(c_int) {
+pub const kAudioFileAIFFType = @enumToInt(enum_unnamed_320.kAudioFileAIFFType);
+pub const kAudioFileAIFCType = @enumToInt(enum_unnamed_320.kAudioFileAIFCType);
+pub const kAudioFileWAVEType = @enumToInt(enum_unnamed_320.kAudioFileWAVEType);
+pub const kAudioFileRF64Type = @enumToInt(enum_unnamed_320.kAudioFileRF64Type);
+pub const kAudioFileSoundDesigner2Type = @enumToInt(enum_unnamed_320.kAudioFileSoundDesigner2Type);
+pub const kAudioFileNextType = @enumToInt(enum_unnamed_320.kAudioFileNextType);
+pub const kAudioFileMP3Type = @enumToInt(enum_unnamed_320.kAudioFileMP3Type);
+pub const kAudioFileMP2Type = @enumToInt(enum_unnamed_320.kAudioFileMP2Type);
+pub const kAudioFileMP1Type = @enumToInt(enum_unnamed_320.kAudioFileMP1Type);
+pub const kAudioFileAC3Type = @enumToInt(enum_unnamed_320.kAudioFileAC3Type);
+pub const kAudioFileAAC_ADTSType = @enumToInt(enum_unnamed_320.kAudioFileAAC_ADTSType);
+pub const kAudioFileMPEG4Type = @enumToInt(enum_unnamed_320.kAudioFileMPEG4Type);
+pub const kAudioFileM4AType = @enumToInt(enum_unnamed_320.kAudioFileM4AType);
+pub const kAudioFileM4BType = @enumToInt(enum_unnamed_320.kAudioFileM4BType);
+pub const kAudioFileCAFType = @enumToInt(enum_unnamed_320.kAudioFileCAFType);
+pub const kAudioFile3GPType = @enumToInt(enum_unnamed_320.kAudioFile3GPType);
+pub const kAudioFile3GP2Type = @enumToInt(enum_unnamed_320.kAudioFile3GP2Type);
+pub const kAudioFileAMRType = @enumToInt(enum_unnamed_320.kAudioFileAMRType);
+pub const kAudioFileFLACType = @enumToInt(enum_unnamed_320.kAudioFileFLACType);
+pub const kAudioFileLATMInLOASType = @enumToInt(enum_unnamed_320.kAudioFileLATMInLOASType);
+const enum_unnamed_320 = extern enum(c_int) {
     kAudioFileAIFFType = 1095321158,
     kAudioFileAIFCType = 1095321155,
     kAudioFileWAVEType = 1463899717,
@@ -10914,24 +9900,24 @@ const enum_unnamed_393 = extern enum(c_int) {
     kAudioFileLATMInLOASType = 1819238771,
     _,
 };
-pub const kAudioFileUnspecifiedError = @enumToInt(enum_unnamed_394.kAudioFileUnspecifiedError);
-pub const kAudioFileUnsupportedFileTypeError = @enumToInt(enum_unnamed_394.kAudioFileUnsupportedFileTypeError);
-pub const kAudioFileUnsupportedDataFormatError = @enumToInt(enum_unnamed_394.kAudioFileUnsupportedDataFormatError);
-pub const kAudioFileUnsupportedPropertyError = @enumToInt(enum_unnamed_394.kAudioFileUnsupportedPropertyError);
-pub const kAudioFileBadPropertySizeError = @enumToInt(enum_unnamed_394.kAudioFileBadPropertySizeError);
-pub const kAudioFilePermissionsError = @enumToInt(enum_unnamed_394.kAudioFilePermissionsError);
-pub const kAudioFileNotOptimizedError = @enumToInt(enum_unnamed_394.kAudioFileNotOptimizedError);
-pub const kAudioFileInvalidChunkError = @enumToInt(enum_unnamed_394.kAudioFileInvalidChunkError);
-pub const kAudioFileDoesNotAllow64BitDataSizeError = @enumToInt(enum_unnamed_394.kAudioFileDoesNotAllow64BitDataSizeError);
-pub const kAudioFileInvalidPacketOffsetError = @enumToInt(enum_unnamed_394.kAudioFileInvalidPacketOffsetError);
-pub const kAudioFileInvalidPacketDependencyError = @enumToInt(enum_unnamed_394.kAudioFileInvalidPacketDependencyError);
-pub const kAudioFileInvalidFileError = @enumToInt(enum_unnamed_394.kAudioFileInvalidFileError);
-pub const kAudioFileOperationNotSupportedError = @enumToInt(enum_unnamed_394.kAudioFileOperationNotSupportedError);
-pub const kAudioFileNotOpenError = @enumToInt(enum_unnamed_394.kAudioFileNotOpenError);
-pub const kAudioFileEndOfFileError = @enumToInt(enum_unnamed_394.kAudioFileEndOfFileError);
-pub const kAudioFilePositionError = @enumToInt(enum_unnamed_394.kAudioFilePositionError);
-pub const kAudioFileFileNotFoundError = @enumToInt(enum_unnamed_394.kAudioFileFileNotFoundError);
-const enum_unnamed_394 = extern enum(c_int) {
+pub const kAudioFileUnspecifiedError = @enumToInt(enum_unnamed_321.kAudioFileUnspecifiedError);
+pub const kAudioFileUnsupportedFileTypeError = @enumToInt(enum_unnamed_321.kAudioFileUnsupportedFileTypeError);
+pub const kAudioFileUnsupportedDataFormatError = @enumToInt(enum_unnamed_321.kAudioFileUnsupportedDataFormatError);
+pub const kAudioFileUnsupportedPropertyError = @enumToInt(enum_unnamed_321.kAudioFileUnsupportedPropertyError);
+pub const kAudioFileBadPropertySizeError = @enumToInt(enum_unnamed_321.kAudioFileBadPropertySizeError);
+pub const kAudioFilePermissionsError = @enumToInt(enum_unnamed_321.kAudioFilePermissionsError);
+pub const kAudioFileNotOptimizedError = @enumToInt(enum_unnamed_321.kAudioFileNotOptimizedError);
+pub const kAudioFileInvalidChunkError = @enumToInt(enum_unnamed_321.kAudioFileInvalidChunkError);
+pub const kAudioFileDoesNotAllow64BitDataSizeError = @enumToInt(enum_unnamed_321.kAudioFileDoesNotAllow64BitDataSizeError);
+pub const kAudioFileInvalidPacketOffsetError = @enumToInt(enum_unnamed_321.kAudioFileInvalidPacketOffsetError);
+pub const kAudioFileInvalidPacketDependencyError = @enumToInt(enum_unnamed_321.kAudioFileInvalidPacketDependencyError);
+pub const kAudioFileInvalidFileError = @enumToInt(enum_unnamed_321.kAudioFileInvalidFileError);
+pub const kAudioFileOperationNotSupportedError = @enumToInt(enum_unnamed_321.kAudioFileOperationNotSupportedError);
+pub const kAudioFileNotOpenError = @enumToInt(enum_unnamed_321.kAudioFileNotOpenError);
+pub const kAudioFileEndOfFileError = @enumToInt(enum_unnamed_321.kAudioFileEndOfFileError);
+pub const kAudioFilePositionError = @enumToInt(enum_unnamed_321.kAudioFilePositionError);
+pub const kAudioFileFileNotFoundError = @enumToInt(enum_unnamed_321.kAudioFileFileNotFoundError);
+const enum_unnamed_321 = extern enum(c_int) {
     kAudioFileUnspecifiedError = 2003334207,
     kAudioFileUnsupportedFileTypeError = 1954115647,
     kAudioFileUnsupportedDataFormatError = 1718449215,
@@ -10952,18 +9938,18 @@ const enum_unnamed_394 = extern enum(c_int) {
     _,
 };
 pub const AudioFileFlags = UInt32;
-pub const kAudioFileFlags_EraseFile = @enumToInt(enum_unnamed_395.kAudioFileFlags_EraseFile);
-pub const kAudioFileFlags_DontPageAlignAudioData = @enumToInt(enum_unnamed_395.kAudioFileFlags_DontPageAlignAudioData);
-const enum_unnamed_395 = extern enum(c_int) {
+pub const kAudioFileFlags_EraseFile = @enumToInt(enum_unnamed_322.kAudioFileFlags_EraseFile);
+pub const kAudioFileFlags_DontPageAlignAudioData = @enumToInt(enum_unnamed_322.kAudioFileFlags_DontPageAlignAudioData);
+const enum_unnamed_322 = extern enum(c_int) {
     kAudioFileFlags_EraseFile = 1,
     kAudioFileFlags_DontPageAlignAudioData = 2,
     _,
 };
 pub const AudioFilePermissions = SInt8;
-pub const kAudioFileReadPermission = @enumToInt(enum_unnamed_396.kAudioFileReadPermission);
-pub const kAudioFileWritePermission = @enumToInt(enum_unnamed_396.kAudioFileWritePermission);
-pub const kAudioFileReadWritePermission = @enumToInt(enum_unnamed_396.kAudioFileReadWritePermission);
-const enum_unnamed_396 = extern enum(c_int) {
+pub const kAudioFileReadPermission = @enumToInt(enum_unnamed_323.kAudioFileReadPermission);
+pub const kAudioFileWritePermission = @enumToInt(enum_unnamed_323.kAudioFileWritePermission);
+pub const kAudioFileReadWritePermission = @enumToInt(enum_unnamed_323.kAudioFileReadWritePermission);
+const enum_unnamed_323 = extern enum(c_int) {
     kAudioFileReadPermission = 1,
     kAudioFileWritePermission = 2,
     kAudioFileReadWritePermission = 3,
@@ -10971,11 +9957,11 @@ const enum_unnamed_396 = extern enum(c_int) {
 };
 pub const AudioFileID = ?*struct_OpaqueAudioFileID;
 pub const AudioFilePropertyID = UInt32;
-pub const kAudioFileLoopDirection_NoLooping = @enumToInt(enum_unnamed_397.kAudioFileLoopDirection_NoLooping);
-pub const kAudioFileLoopDirection_Forward = @enumToInt(enum_unnamed_397.kAudioFileLoopDirection_Forward);
-pub const kAudioFileLoopDirection_ForwardAndBackward = @enumToInt(enum_unnamed_397.kAudioFileLoopDirection_ForwardAndBackward);
-pub const kAudioFileLoopDirection_Backward = @enumToInt(enum_unnamed_397.kAudioFileLoopDirection_Backward);
-const enum_unnamed_397 = extern enum(c_int) {
+pub const kAudioFileLoopDirection_NoLooping = @enumToInt(enum_unnamed_324.kAudioFileLoopDirection_NoLooping);
+pub const kAudioFileLoopDirection_Forward = @enumToInt(enum_unnamed_324.kAudioFileLoopDirection_Forward);
+pub const kAudioFileLoopDirection_ForwardAndBackward = @enumToInt(enum_unnamed_324.kAudioFileLoopDirection_ForwardAndBackward);
+pub const kAudioFileLoopDirection_Backward = @enumToInt(enum_unnamed_324.kAudioFileLoopDirection_Backward);
+const enum_unnamed_324 = extern enum(c_int) {
     kAudioFileLoopDirection_NoLooping = 0,
     kAudioFileLoopDirection_Forward = 1,
     kAudioFileLoopDirection_ForwardAndBackward = 2,
@@ -10990,8 +9976,8 @@ pub const struct_AudioFile_SMPTE_Time = extern struct {
     mSubFrameSampleOffset: UInt32,
 };
 pub const AudioFile_SMPTE_Time = struct_AudioFile_SMPTE_Time;
-pub const kAudioFileMarkerType_Generic = @enumToInt(enum_unnamed_398.kAudioFileMarkerType_Generic);
-const enum_unnamed_398 = extern enum(c_int) {
+pub const kAudioFileMarkerType_Generic = @enumToInt(enum_unnamed_325.kAudioFileMarkerType_Generic);
+const enum_unnamed_325 = extern enum(c_int) {
     kAudioFileMarkerType_Generic = 0,
     _,
 };
@@ -11011,13 +9997,13 @@ pub const struct_AudioFileMarkerList = extern struct {
     mMarkers: [1]AudioFileMarker,
 };
 pub const AudioFileMarkerList = struct_AudioFileMarkerList;
-pub const NumBytesToNumAudioFileMarkers = @compileError("unable to translate function"); // /Users/hannes/Documents/zig-builds/zig-macos-x86_64-0.5.0+c522699f2/lib/zig/include/stddef.h:104:24: warning: TODO implement translation of stmt class OffsetOfExprClass
+pub const NumBytesToNumAudioFileMarkers = @compileError("unable to translate function"); // /Users/hannes/Documents/zig-builds/zig-macos-x86_64-0.5.0+e624c8628/lib/zig/include/stddef.h:104:24: warning: TODO implement translation of stmt class OffsetOfExprClass
 pub const NumAudioFileMarkersToNumBytes = @compileError("unable to translate function");
 pub const AudioFileRegionFlags = UInt32;
-pub const kAudioFileRegionFlag_LoopEnable = @enumToInt(enum_unnamed_399.kAudioFileRegionFlag_LoopEnable);
-pub const kAudioFileRegionFlag_PlayForward = @enumToInt(enum_unnamed_399.kAudioFileRegionFlag_PlayForward);
-pub const kAudioFileRegionFlag_PlayBackward = @enumToInt(enum_unnamed_399.kAudioFileRegionFlag_PlayBackward);
-const enum_unnamed_399 = extern enum(c_int) {
+pub const kAudioFileRegionFlag_LoopEnable = @enumToInt(enum_unnamed_326.kAudioFileRegionFlag_LoopEnable);
+pub const kAudioFileRegionFlag_PlayForward = @enumToInt(enum_unnamed_326.kAudioFileRegionFlag_PlayForward);
+pub const kAudioFileRegionFlag_PlayBackward = @enumToInt(enum_unnamed_326.kAudioFileRegionFlag_PlayBackward);
+const enum_unnamed_326 = extern enum(c_int) {
     kAudioFileRegionFlag_LoopEnable = 1,
     kAudioFileRegionFlag_PlayForward = 2,
     kAudioFileRegionFlag_PlayBackward = 4,
@@ -11045,8 +10031,8 @@ pub const struct_AudioFramePacketTranslation = extern struct {
 };
 pub const AudioFramePacketTranslation = struct_AudioFramePacketTranslation;
 pub const AudioBytePacketTranslationFlags = UInt32;
-pub const kBytePacketTranslationFlag_IsEstimate = @enumToInt(enum_unnamed_400.kBytePacketTranslationFlag_IsEstimate);
-const enum_unnamed_400 = extern enum(c_int) {
+pub const kBytePacketTranslationFlag_IsEstimate = @enumToInt(enum_unnamed_327.kBytePacketTranslationFlag_IsEstimate);
+const enum_unnamed_327 = extern enum(c_int) {
     kBytePacketTranslationFlag_IsEstimate = 1,
     _,
 };
@@ -11105,43 +10091,43 @@ pub extern fn AudioFileGetUserDataSize(inAudioFile: AudioFileID, inUserDataID: U
 pub extern fn AudioFileGetUserData(inAudioFile: AudioFileID, inUserDataID: UInt32, inIndex: UInt32, ioUserDataSize: [*c]UInt32, outUserData: ?*c_void) OSStatus;
 pub extern fn AudioFileSetUserData(inAudioFile: AudioFileID, inUserDataID: UInt32, inIndex: UInt32, inUserDataSize: UInt32, inUserData: ?*const c_void) OSStatus;
 pub extern fn AudioFileRemoveUserData(inAudioFile: AudioFileID, inUserDataID: UInt32, inIndex: UInt32) OSStatus;
-pub const kAudioFilePropertyFileFormat = @enumToInt(enum_unnamed_401.kAudioFilePropertyFileFormat);
-pub const kAudioFilePropertyDataFormat = @enumToInt(enum_unnamed_401.kAudioFilePropertyDataFormat);
-pub const kAudioFilePropertyIsOptimized = @enumToInt(enum_unnamed_401.kAudioFilePropertyIsOptimized);
-pub const kAudioFilePropertyMagicCookieData = @enumToInt(enum_unnamed_401.kAudioFilePropertyMagicCookieData);
-pub const kAudioFilePropertyAudioDataByteCount = @enumToInt(enum_unnamed_401.kAudioFilePropertyAudioDataByteCount);
-pub const kAudioFilePropertyAudioDataPacketCount = @enumToInt(enum_unnamed_401.kAudioFilePropertyAudioDataPacketCount);
-pub const kAudioFilePropertyMaximumPacketSize = @enumToInt(enum_unnamed_401.kAudioFilePropertyMaximumPacketSize);
-pub const kAudioFilePropertyDataOffset = @enumToInt(enum_unnamed_401.kAudioFilePropertyDataOffset);
-pub const kAudioFilePropertyChannelLayout = @enumToInt(enum_unnamed_401.kAudioFilePropertyChannelLayout);
-pub const kAudioFilePropertyDeferSizeUpdates = @enumToInt(enum_unnamed_401.kAudioFilePropertyDeferSizeUpdates);
-pub const kAudioFilePropertyDataFormatName = @enumToInt(enum_unnamed_401.kAudioFilePropertyDataFormatName);
-pub const kAudioFilePropertyMarkerList = @enumToInt(enum_unnamed_401.kAudioFilePropertyMarkerList);
-pub const kAudioFilePropertyRegionList = @enumToInt(enum_unnamed_401.kAudioFilePropertyRegionList);
-pub const kAudioFilePropertyPacketToFrame = @enumToInt(enum_unnamed_401.kAudioFilePropertyPacketToFrame);
-pub const kAudioFilePropertyFrameToPacket = @enumToInt(enum_unnamed_401.kAudioFilePropertyFrameToPacket);
-pub const kAudioFilePropertyRestrictsRandomAccess = @enumToInt(enum_unnamed_401.kAudioFilePropertyRestrictsRandomAccess);
-pub const kAudioFilePropertyPacketToRollDistance = @enumToInt(enum_unnamed_401.kAudioFilePropertyPacketToRollDistance);
-pub const kAudioFilePropertyPreviousIndependentPacket = @enumToInt(enum_unnamed_401.kAudioFilePropertyPreviousIndependentPacket);
-pub const kAudioFilePropertyNextIndependentPacket = @enumToInt(enum_unnamed_401.kAudioFilePropertyNextIndependentPacket);
-pub const kAudioFilePropertyPacketToDependencyInfo = @enumToInt(enum_unnamed_401.kAudioFilePropertyPacketToDependencyInfo);
-pub const kAudioFilePropertyPacketToByte = @enumToInt(enum_unnamed_401.kAudioFilePropertyPacketToByte);
-pub const kAudioFilePropertyByteToPacket = @enumToInt(enum_unnamed_401.kAudioFilePropertyByteToPacket);
-pub const kAudioFilePropertyChunkIDs = @enumToInt(enum_unnamed_401.kAudioFilePropertyChunkIDs);
-pub const kAudioFilePropertyInfoDictionary = @enumToInt(enum_unnamed_401.kAudioFilePropertyInfoDictionary);
-pub const kAudioFilePropertyPacketTableInfo = @enumToInt(enum_unnamed_401.kAudioFilePropertyPacketTableInfo);
-pub const kAudioFilePropertyFormatList = @enumToInt(enum_unnamed_401.kAudioFilePropertyFormatList);
-pub const kAudioFilePropertyPacketSizeUpperBound = @enumToInt(enum_unnamed_401.kAudioFilePropertyPacketSizeUpperBound);
-pub const kAudioFilePropertyPacketRangeByteCountUpperBound = @enumToInt(enum_unnamed_401.kAudioFilePropertyPacketRangeByteCountUpperBound);
-pub const kAudioFilePropertyReserveDuration = @enumToInt(enum_unnamed_401.kAudioFilePropertyReserveDuration);
-pub const kAudioFilePropertyEstimatedDuration = @enumToInt(enum_unnamed_401.kAudioFilePropertyEstimatedDuration);
-pub const kAudioFilePropertyBitRate = @enumToInt(enum_unnamed_401.kAudioFilePropertyBitRate);
-pub const kAudioFilePropertyID3Tag = @enumToInt(enum_unnamed_401.kAudioFilePropertyID3Tag);
-pub const kAudioFilePropertySourceBitDepth = @enumToInt(enum_unnamed_401.kAudioFilePropertySourceBitDepth);
-pub const kAudioFilePropertyAlbumArtwork = @enumToInt(enum_unnamed_401.kAudioFilePropertyAlbumArtwork);
-pub const kAudioFilePropertyAudioTrackCount = @enumToInt(enum_unnamed_401.kAudioFilePropertyAudioTrackCount);
-pub const kAudioFilePropertyUseAudioTrack = @enumToInt(enum_unnamed_401.kAudioFilePropertyUseAudioTrack);
-const enum_unnamed_401 = extern enum(c_int) {
+pub const kAudioFilePropertyFileFormat = @enumToInt(enum_unnamed_328.kAudioFilePropertyFileFormat);
+pub const kAudioFilePropertyDataFormat = @enumToInt(enum_unnamed_328.kAudioFilePropertyDataFormat);
+pub const kAudioFilePropertyIsOptimized = @enumToInt(enum_unnamed_328.kAudioFilePropertyIsOptimized);
+pub const kAudioFilePropertyMagicCookieData = @enumToInt(enum_unnamed_328.kAudioFilePropertyMagicCookieData);
+pub const kAudioFilePropertyAudioDataByteCount = @enumToInt(enum_unnamed_328.kAudioFilePropertyAudioDataByteCount);
+pub const kAudioFilePropertyAudioDataPacketCount = @enumToInt(enum_unnamed_328.kAudioFilePropertyAudioDataPacketCount);
+pub const kAudioFilePropertyMaximumPacketSize = @enumToInt(enum_unnamed_328.kAudioFilePropertyMaximumPacketSize);
+pub const kAudioFilePropertyDataOffset = @enumToInt(enum_unnamed_328.kAudioFilePropertyDataOffset);
+pub const kAudioFilePropertyChannelLayout = @enumToInt(enum_unnamed_328.kAudioFilePropertyChannelLayout);
+pub const kAudioFilePropertyDeferSizeUpdates = @enumToInt(enum_unnamed_328.kAudioFilePropertyDeferSizeUpdates);
+pub const kAudioFilePropertyDataFormatName = @enumToInt(enum_unnamed_328.kAudioFilePropertyDataFormatName);
+pub const kAudioFilePropertyMarkerList = @enumToInt(enum_unnamed_328.kAudioFilePropertyMarkerList);
+pub const kAudioFilePropertyRegionList = @enumToInt(enum_unnamed_328.kAudioFilePropertyRegionList);
+pub const kAudioFilePropertyPacketToFrame = @enumToInt(enum_unnamed_328.kAudioFilePropertyPacketToFrame);
+pub const kAudioFilePropertyFrameToPacket = @enumToInt(enum_unnamed_328.kAudioFilePropertyFrameToPacket);
+pub const kAudioFilePropertyRestrictsRandomAccess = @enumToInt(enum_unnamed_328.kAudioFilePropertyRestrictsRandomAccess);
+pub const kAudioFilePropertyPacketToRollDistance = @enumToInt(enum_unnamed_328.kAudioFilePropertyPacketToRollDistance);
+pub const kAudioFilePropertyPreviousIndependentPacket = @enumToInt(enum_unnamed_328.kAudioFilePropertyPreviousIndependentPacket);
+pub const kAudioFilePropertyNextIndependentPacket = @enumToInt(enum_unnamed_328.kAudioFilePropertyNextIndependentPacket);
+pub const kAudioFilePropertyPacketToDependencyInfo = @enumToInt(enum_unnamed_328.kAudioFilePropertyPacketToDependencyInfo);
+pub const kAudioFilePropertyPacketToByte = @enumToInt(enum_unnamed_328.kAudioFilePropertyPacketToByte);
+pub const kAudioFilePropertyByteToPacket = @enumToInt(enum_unnamed_328.kAudioFilePropertyByteToPacket);
+pub const kAudioFilePropertyChunkIDs = @enumToInt(enum_unnamed_328.kAudioFilePropertyChunkIDs);
+pub const kAudioFilePropertyInfoDictionary = @enumToInt(enum_unnamed_328.kAudioFilePropertyInfoDictionary);
+pub const kAudioFilePropertyPacketTableInfo = @enumToInt(enum_unnamed_328.kAudioFilePropertyPacketTableInfo);
+pub const kAudioFilePropertyFormatList = @enumToInt(enum_unnamed_328.kAudioFilePropertyFormatList);
+pub const kAudioFilePropertyPacketSizeUpperBound = @enumToInt(enum_unnamed_328.kAudioFilePropertyPacketSizeUpperBound);
+pub const kAudioFilePropertyPacketRangeByteCountUpperBound = @enumToInt(enum_unnamed_328.kAudioFilePropertyPacketRangeByteCountUpperBound);
+pub const kAudioFilePropertyReserveDuration = @enumToInt(enum_unnamed_328.kAudioFilePropertyReserveDuration);
+pub const kAudioFilePropertyEstimatedDuration = @enumToInt(enum_unnamed_328.kAudioFilePropertyEstimatedDuration);
+pub const kAudioFilePropertyBitRate = @enumToInt(enum_unnamed_328.kAudioFilePropertyBitRate);
+pub const kAudioFilePropertyID3Tag = @enumToInt(enum_unnamed_328.kAudioFilePropertyID3Tag);
+pub const kAudioFilePropertySourceBitDepth = @enumToInt(enum_unnamed_328.kAudioFilePropertySourceBitDepth);
+pub const kAudioFilePropertyAlbumArtwork = @enumToInt(enum_unnamed_328.kAudioFilePropertyAlbumArtwork);
+pub const kAudioFilePropertyAudioTrackCount = @enumToInt(enum_unnamed_328.kAudioFilePropertyAudioTrackCount);
+pub const kAudioFilePropertyUseAudioTrack = @enumToInt(enum_unnamed_328.kAudioFilePropertyUseAudioTrack);
+const enum_unnamed_328 = extern enum(c_int) {
     kAudioFilePropertyFileFormat = 1717988724,
     kAudioFilePropertyDataFormat = 1684434292,
     kAudioFilePropertyIsOptimized = 1869640813,
@@ -11183,24 +10169,24 @@ const enum_unnamed_401 = extern enum(c_int) {
 pub extern fn AudioFileGetPropertyInfo(inAudioFile: AudioFileID, inPropertyID: AudioFilePropertyID, outDataSize: [*c]UInt32, isWritable: [*c]UInt32) OSStatus;
 pub extern fn AudioFileGetProperty(inAudioFile: AudioFileID, inPropertyID: AudioFilePropertyID, ioDataSize: [*c]UInt32, outPropertyData: ?*c_void) OSStatus;
 pub extern fn AudioFileSetProperty(inAudioFile: AudioFileID, inPropertyID: AudioFilePropertyID, inDataSize: UInt32, inPropertyData: ?*const c_void) OSStatus;
-pub const kAudioFileGlobalInfo_ReadableTypes = @enumToInt(enum_unnamed_402.kAudioFileGlobalInfo_ReadableTypes);
-pub const kAudioFileGlobalInfo_WritableTypes = @enumToInt(enum_unnamed_402.kAudioFileGlobalInfo_WritableTypes);
-pub const kAudioFileGlobalInfo_FileTypeName = @enumToInt(enum_unnamed_402.kAudioFileGlobalInfo_FileTypeName);
-pub const kAudioFileGlobalInfo_AvailableStreamDescriptionsForFormat = @enumToInt(enum_unnamed_402.kAudioFileGlobalInfo_AvailableStreamDescriptionsForFormat);
-pub const kAudioFileGlobalInfo_AvailableFormatIDs = @enumToInt(enum_unnamed_402.kAudioFileGlobalInfo_AvailableFormatIDs);
-pub const kAudioFileGlobalInfo_AllExtensions = @enumToInt(enum_unnamed_402.kAudioFileGlobalInfo_AllExtensions);
-pub const kAudioFileGlobalInfo_AllHFSTypeCodes = @enumToInt(enum_unnamed_402.kAudioFileGlobalInfo_AllHFSTypeCodes);
-pub const kAudioFileGlobalInfo_AllUTIs = @enumToInt(enum_unnamed_402.kAudioFileGlobalInfo_AllUTIs);
-pub const kAudioFileGlobalInfo_AllMIMETypes = @enumToInt(enum_unnamed_402.kAudioFileGlobalInfo_AllMIMETypes);
-pub const kAudioFileGlobalInfo_ExtensionsForType = @enumToInt(enum_unnamed_402.kAudioFileGlobalInfo_ExtensionsForType);
-pub const kAudioFileGlobalInfo_HFSTypeCodesForType = @enumToInt(enum_unnamed_402.kAudioFileGlobalInfo_HFSTypeCodesForType);
-pub const kAudioFileGlobalInfo_UTIsForType = @enumToInt(enum_unnamed_402.kAudioFileGlobalInfo_UTIsForType);
-pub const kAudioFileGlobalInfo_MIMETypesForType = @enumToInt(enum_unnamed_402.kAudioFileGlobalInfo_MIMETypesForType);
-pub const kAudioFileGlobalInfo_TypesForMIMEType = @enumToInt(enum_unnamed_402.kAudioFileGlobalInfo_TypesForMIMEType);
-pub const kAudioFileGlobalInfo_TypesForUTI = @enumToInt(enum_unnamed_402.kAudioFileGlobalInfo_TypesForUTI);
-pub const kAudioFileGlobalInfo_TypesForHFSTypeCode = @enumToInt(enum_unnamed_402.kAudioFileGlobalInfo_TypesForHFSTypeCode);
-pub const kAudioFileGlobalInfo_TypesForExtension = @enumToInt(enum_unnamed_402.kAudioFileGlobalInfo_TypesForExtension);
-const enum_unnamed_402 = extern enum(c_int) {
+pub const kAudioFileGlobalInfo_ReadableTypes = @enumToInt(enum_unnamed_329.kAudioFileGlobalInfo_ReadableTypes);
+pub const kAudioFileGlobalInfo_WritableTypes = @enumToInt(enum_unnamed_329.kAudioFileGlobalInfo_WritableTypes);
+pub const kAudioFileGlobalInfo_FileTypeName = @enumToInt(enum_unnamed_329.kAudioFileGlobalInfo_FileTypeName);
+pub const kAudioFileGlobalInfo_AvailableStreamDescriptionsForFormat = @enumToInt(enum_unnamed_329.kAudioFileGlobalInfo_AvailableStreamDescriptionsForFormat);
+pub const kAudioFileGlobalInfo_AvailableFormatIDs = @enumToInt(enum_unnamed_329.kAudioFileGlobalInfo_AvailableFormatIDs);
+pub const kAudioFileGlobalInfo_AllExtensions = @enumToInt(enum_unnamed_329.kAudioFileGlobalInfo_AllExtensions);
+pub const kAudioFileGlobalInfo_AllHFSTypeCodes = @enumToInt(enum_unnamed_329.kAudioFileGlobalInfo_AllHFSTypeCodes);
+pub const kAudioFileGlobalInfo_AllUTIs = @enumToInt(enum_unnamed_329.kAudioFileGlobalInfo_AllUTIs);
+pub const kAudioFileGlobalInfo_AllMIMETypes = @enumToInt(enum_unnamed_329.kAudioFileGlobalInfo_AllMIMETypes);
+pub const kAudioFileGlobalInfo_ExtensionsForType = @enumToInt(enum_unnamed_329.kAudioFileGlobalInfo_ExtensionsForType);
+pub const kAudioFileGlobalInfo_HFSTypeCodesForType = @enumToInt(enum_unnamed_329.kAudioFileGlobalInfo_HFSTypeCodesForType);
+pub const kAudioFileGlobalInfo_UTIsForType = @enumToInt(enum_unnamed_329.kAudioFileGlobalInfo_UTIsForType);
+pub const kAudioFileGlobalInfo_MIMETypesForType = @enumToInt(enum_unnamed_329.kAudioFileGlobalInfo_MIMETypesForType);
+pub const kAudioFileGlobalInfo_TypesForMIMEType = @enumToInt(enum_unnamed_329.kAudioFileGlobalInfo_TypesForMIMEType);
+pub const kAudioFileGlobalInfo_TypesForUTI = @enumToInt(enum_unnamed_329.kAudioFileGlobalInfo_TypesForUTI);
+pub const kAudioFileGlobalInfo_TypesForHFSTypeCode = @enumToInt(enum_unnamed_329.kAudioFileGlobalInfo_TypesForHFSTypeCode);
+pub const kAudioFileGlobalInfo_TypesForExtension = @enumToInt(enum_unnamed_329.kAudioFileGlobalInfo_TypesForExtension);
+const enum_unnamed_329 = extern enum(c_int) {
     kAudioFileGlobalInfo_ReadableTypes = 1634103910,
     kAudioFileGlobalInfo_WritableTypes = 1634105190,
     kAudioFileGlobalInfo_FileTypeName = 1718906477,
@@ -11231,22 +10217,22 @@ pub extern fn AudioFileCreate(inParentRef: ?*const struct_FSRef, inFileName: CFS
 pub extern fn AudioFileInitialize(inFileRef: ?*const struct_FSRef, inFileType: AudioFileTypeID, inFormat: [*c]const AudioStreamBasicDescription, inFlags: AudioFileFlags, outAudioFile: [*c]AudioFileID) OSStatus;
 pub extern fn AudioFileOpen(inFileRef: ?*const struct_FSRef, inPermissions: AudioFilePermissions, inFileTypeHint: AudioFileTypeID, outAudioFile: [*c]AudioFileID) OSStatus;
 pub const AudioFileStreamPropertyFlags = UInt32;
-pub const kAudioFileStreamPropertyFlag_PropertyIsCached = @enumToInt(enum_unnamed_403.kAudioFileStreamPropertyFlag_PropertyIsCached);
-pub const kAudioFileStreamPropertyFlag_CacheProperty = @enumToInt(enum_unnamed_403.kAudioFileStreamPropertyFlag_CacheProperty);
-const enum_unnamed_403 = extern enum(c_int) {
+pub const kAudioFileStreamPropertyFlag_PropertyIsCached = @enumToInt(enum_unnamed_330.kAudioFileStreamPropertyFlag_PropertyIsCached);
+pub const kAudioFileStreamPropertyFlag_CacheProperty = @enumToInt(enum_unnamed_330.kAudioFileStreamPropertyFlag_CacheProperty);
+const enum_unnamed_330 = extern enum(c_int) {
     kAudioFileStreamPropertyFlag_PropertyIsCached = 1,
     kAudioFileStreamPropertyFlag_CacheProperty = 2,
     _,
 };
 pub const AudioFileStreamParseFlags = UInt32;
-pub const kAudioFileStreamParseFlag_Discontinuity = @enumToInt(enum_unnamed_404.kAudioFileStreamParseFlag_Discontinuity);
-const enum_unnamed_404 = extern enum(c_int) {
+pub const kAudioFileStreamParseFlag_Discontinuity = @enumToInt(enum_unnamed_331.kAudioFileStreamParseFlag_Discontinuity);
+const enum_unnamed_331 = extern enum(c_int) {
     kAudioFileStreamParseFlag_Discontinuity = 1,
     _,
 };
 pub const AudioFileStreamSeekFlags = UInt32;
-pub const kAudioFileStreamSeekFlag_OffsetIsEstimated = @enumToInt(enum_unnamed_405.kAudioFileStreamSeekFlag_OffsetIsEstimated);
-const enum_unnamed_405 = extern enum(c_int) {
+pub const kAudioFileStreamSeekFlag_OffsetIsEstimated = @enumToInt(enum_unnamed_332.kAudioFileStreamSeekFlag_OffsetIsEstimated);
+const enum_unnamed_332 = extern enum(c_int) {
     kAudioFileStreamSeekFlag_OffsetIsEstimated = 1,
     _,
 };
@@ -11255,19 +10241,19 @@ pub const struct_OpaqueAudioFileStreamID = @OpaqueType();
 pub const AudioFileStreamID = ?*struct_OpaqueAudioFileStreamID;
 pub const AudioFileStream_PropertyListenerProc = ?fn (?*c_void, AudioFileStreamID, AudioFileStreamPropertyID, [*c]AudioFileStreamPropertyFlags) callconv(.C) void;
 pub const AudioFileStream_PacketsProc = ?fn (?*c_void, UInt32, UInt32, ?*const c_void, [*c]AudioStreamPacketDescription) callconv(.C) void;
-pub const kAudioFileStreamError_UnsupportedFileType = @enumToInt(enum_unnamed_406.kAudioFileStreamError_UnsupportedFileType);
-pub const kAudioFileStreamError_UnsupportedDataFormat = @enumToInt(enum_unnamed_406.kAudioFileStreamError_UnsupportedDataFormat);
-pub const kAudioFileStreamError_UnsupportedProperty = @enumToInt(enum_unnamed_406.kAudioFileStreamError_UnsupportedProperty);
-pub const kAudioFileStreamError_BadPropertySize = @enumToInt(enum_unnamed_406.kAudioFileStreamError_BadPropertySize);
-pub const kAudioFileStreamError_NotOptimized = @enumToInt(enum_unnamed_406.kAudioFileStreamError_NotOptimized);
-pub const kAudioFileStreamError_InvalidPacketOffset = @enumToInt(enum_unnamed_406.kAudioFileStreamError_InvalidPacketOffset);
-pub const kAudioFileStreamError_InvalidFile = @enumToInt(enum_unnamed_406.kAudioFileStreamError_InvalidFile);
-pub const kAudioFileStreamError_ValueUnknown = @enumToInt(enum_unnamed_406.kAudioFileStreamError_ValueUnknown);
-pub const kAudioFileStreamError_DataUnavailable = @enumToInt(enum_unnamed_406.kAudioFileStreamError_DataUnavailable);
-pub const kAudioFileStreamError_IllegalOperation = @enumToInt(enum_unnamed_406.kAudioFileStreamError_IllegalOperation);
-pub const kAudioFileStreamError_UnspecifiedError = @enumToInt(enum_unnamed_406.kAudioFileStreamError_UnspecifiedError);
-pub const kAudioFileStreamError_DiscontinuityCantRecover = @enumToInt(enum_unnamed_406.kAudioFileStreamError_DiscontinuityCantRecover);
-const enum_unnamed_406 = extern enum(c_int) {
+pub const kAudioFileStreamError_UnsupportedFileType = @enumToInt(enum_unnamed_333.kAudioFileStreamError_UnsupportedFileType);
+pub const kAudioFileStreamError_UnsupportedDataFormat = @enumToInt(enum_unnamed_333.kAudioFileStreamError_UnsupportedDataFormat);
+pub const kAudioFileStreamError_UnsupportedProperty = @enumToInt(enum_unnamed_333.kAudioFileStreamError_UnsupportedProperty);
+pub const kAudioFileStreamError_BadPropertySize = @enumToInt(enum_unnamed_333.kAudioFileStreamError_BadPropertySize);
+pub const kAudioFileStreamError_NotOptimized = @enumToInt(enum_unnamed_333.kAudioFileStreamError_NotOptimized);
+pub const kAudioFileStreamError_InvalidPacketOffset = @enumToInt(enum_unnamed_333.kAudioFileStreamError_InvalidPacketOffset);
+pub const kAudioFileStreamError_InvalidFile = @enumToInt(enum_unnamed_333.kAudioFileStreamError_InvalidFile);
+pub const kAudioFileStreamError_ValueUnknown = @enumToInt(enum_unnamed_333.kAudioFileStreamError_ValueUnknown);
+pub const kAudioFileStreamError_DataUnavailable = @enumToInt(enum_unnamed_333.kAudioFileStreamError_DataUnavailable);
+pub const kAudioFileStreamError_IllegalOperation = @enumToInt(enum_unnamed_333.kAudioFileStreamError_IllegalOperation);
+pub const kAudioFileStreamError_UnspecifiedError = @enumToInt(enum_unnamed_333.kAudioFileStreamError_UnspecifiedError);
+pub const kAudioFileStreamError_DiscontinuityCantRecover = @enumToInt(enum_unnamed_333.kAudioFileStreamError_DiscontinuityCantRecover);
+const enum_unnamed_333 = extern enum(c_int) {
     kAudioFileStreamError_UnsupportedFileType = 1954115647,
     kAudioFileStreamError_UnsupportedDataFormat = 1718449215,
     kAudioFileStreamError_UnsupportedProperty = 1886681407,
@@ -11282,31 +10268,31 @@ const enum_unnamed_406 = extern enum(c_int) {
     kAudioFileStreamError_DiscontinuityCantRecover = 1685283617,
     _,
 };
-pub const kAudioFileStreamProperty_ReadyToProducePackets = @enumToInt(enum_unnamed_407.kAudioFileStreamProperty_ReadyToProducePackets);
-pub const kAudioFileStreamProperty_FileFormat = @enumToInt(enum_unnamed_407.kAudioFileStreamProperty_FileFormat);
-pub const kAudioFileStreamProperty_DataFormat = @enumToInt(enum_unnamed_407.kAudioFileStreamProperty_DataFormat);
-pub const kAudioFileStreamProperty_FormatList = @enumToInt(enum_unnamed_407.kAudioFileStreamProperty_FormatList);
-pub const kAudioFileStreamProperty_MagicCookieData = @enumToInt(enum_unnamed_407.kAudioFileStreamProperty_MagicCookieData);
-pub const kAudioFileStreamProperty_AudioDataByteCount = @enumToInt(enum_unnamed_407.kAudioFileStreamProperty_AudioDataByteCount);
-pub const kAudioFileStreamProperty_AudioDataPacketCount = @enumToInt(enum_unnamed_407.kAudioFileStreamProperty_AudioDataPacketCount);
-pub const kAudioFileStreamProperty_MaximumPacketSize = @enumToInt(enum_unnamed_407.kAudioFileStreamProperty_MaximumPacketSize);
-pub const kAudioFileStreamProperty_DataOffset = @enumToInt(enum_unnamed_407.kAudioFileStreamProperty_DataOffset);
-pub const kAudioFileStreamProperty_ChannelLayout = @enumToInt(enum_unnamed_407.kAudioFileStreamProperty_ChannelLayout);
-pub const kAudioFileStreamProperty_PacketToFrame = @enumToInt(enum_unnamed_407.kAudioFileStreamProperty_PacketToFrame);
-pub const kAudioFileStreamProperty_FrameToPacket = @enumToInt(enum_unnamed_407.kAudioFileStreamProperty_FrameToPacket);
-pub const kAudioFileStreamProperty_RestrictsRandomAccess = @enumToInt(enum_unnamed_407.kAudioFileStreamProperty_RestrictsRandomAccess);
-pub const kAudioFileStreamProperty_PacketToRollDistance = @enumToInt(enum_unnamed_407.kAudioFileStreamProperty_PacketToRollDistance);
-pub const kAudioFileStreamProperty_PreviousIndependentPacket = @enumToInt(enum_unnamed_407.kAudioFileStreamProperty_PreviousIndependentPacket);
-pub const kAudioFileStreamProperty_NextIndependentPacket = @enumToInt(enum_unnamed_407.kAudioFileStreamProperty_NextIndependentPacket);
-pub const kAudioFileStreamProperty_PacketToDependencyInfo = @enumToInt(enum_unnamed_407.kAudioFileStreamProperty_PacketToDependencyInfo);
-pub const kAudioFileStreamProperty_PacketToByte = @enumToInt(enum_unnamed_407.kAudioFileStreamProperty_PacketToByte);
-pub const kAudioFileStreamProperty_ByteToPacket = @enumToInt(enum_unnamed_407.kAudioFileStreamProperty_ByteToPacket);
-pub const kAudioFileStreamProperty_PacketTableInfo = @enumToInt(enum_unnamed_407.kAudioFileStreamProperty_PacketTableInfo);
-pub const kAudioFileStreamProperty_PacketSizeUpperBound = @enumToInt(enum_unnamed_407.kAudioFileStreamProperty_PacketSizeUpperBound);
-pub const kAudioFileStreamProperty_AverageBytesPerPacket = @enumToInt(enum_unnamed_407.kAudioFileStreamProperty_AverageBytesPerPacket);
-pub const kAudioFileStreamProperty_BitRate = @enumToInt(enum_unnamed_407.kAudioFileStreamProperty_BitRate);
-pub const kAudioFileStreamProperty_InfoDictionary = @enumToInt(enum_unnamed_407.kAudioFileStreamProperty_InfoDictionary);
-const enum_unnamed_407 = extern enum(c_int) {
+pub const kAudioFileStreamProperty_ReadyToProducePackets = @enumToInt(enum_unnamed_334.kAudioFileStreamProperty_ReadyToProducePackets);
+pub const kAudioFileStreamProperty_FileFormat = @enumToInt(enum_unnamed_334.kAudioFileStreamProperty_FileFormat);
+pub const kAudioFileStreamProperty_DataFormat = @enumToInt(enum_unnamed_334.kAudioFileStreamProperty_DataFormat);
+pub const kAudioFileStreamProperty_FormatList = @enumToInt(enum_unnamed_334.kAudioFileStreamProperty_FormatList);
+pub const kAudioFileStreamProperty_MagicCookieData = @enumToInt(enum_unnamed_334.kAudioFileStreamProperty_MagicCookieData);
+pub const kAudioFileStreamProperty_AudioDataByteCount = @enumToInt(enum_unnamed_334.kAudioFileStreamProperty_AudioDataByteCount);
+pub const kAudioFileStreamProperty_AudioDataPacketCount = @enumToInt(enum_unnamed_334.kAudioFileStreamProperty_AudioDataPacketCount);
+pub const kAudioFileStreamProperty_MaximumPacketSize = @enumToInt(enum_unnamed_334.kAudioFileStreamProperty_MaximumPacketSize);
+pub const kAudioFileStreamProperty_DataOffset = @enumToInt(enum_unnamed_334.kAudioFileStreamProperty_DataOffset);
+pub const kAudioFileStreamProperty_ChannelLayout = @enumToInt(enum_unnamed_334.kAudioFileStreamProperty_ChannelLayout);
+pub const kAudioFileStreamProperty_PacketToFrame = @enumToInt(enum_unnamed_334.kAudioFileStreamProperty_PacketToFrame);
+pub const kAudioFileStreamProperty_FrameToPacket = @enumToInt(enum_unnamed_334.kAudioFileStreamProperty_FrameToPacket);
+pub const kAudioFileStreamProperty_RestrictsRandomAccess = @enumToInt(enum_unnamed_334.kAudioFileStreamProperty_RestrictsRandomAccess);
+pub const kAudioFileStreamProperty_PacketToRollDistance = @enumToInt(enum_unnamed_334.kAudioFileStreamProperty_PacketToRollDistance);
+pub const kAudioFileStreamProperty_PreviousIndependentPacket = @enumToInt(enum_unnamed_334.kAudioFileStreamProperty_PreviousIndependentPacket);
+pub const kAudioFileStreamProperty_NextIndependentPacket = @enumToInt(enum_unnamed_334.kAudioFileStreamProperty_NextIndependentPacket);
+pub const kAudioFileStreamProperty_PacketToDependencyInfo = @enumToInt(enum_unnamed_334.kAudioFileStreamProperty_PacketToDependencyInfo);
+pub const kAudioFileStreamProperty_PacketToByte = @enumToInt(enum_unnamed_334.kAudioFileStreamProperty_PacketToByte);
+pub const kAudioFileStreamProperty_ByteToPacket = @enumToInt(enum_unnamed_334.kAudioFileStreamProperty_ByteToPacket);
+pub const kAudioFileStreamProperty_PacketTableInfo = @enumToInt(enum_unnamed_334.kAudioFileStreamProperty_PacketTableInfo);
+pub const kAudioFileStreamProperty_PacketSizeUpperBound = @enumToInt(enum_unnamed_334.kAudioFileStreamProperty_PacketSizeUpperBound);
+pub const kAudioFileStreamProperty_AverageBytesPerPacket = @enumToInt(enum_unnamed_334.kAudioFileStreamProperty_AverageBytesPerPacket);
+pub const kAudioFileStreamProperty_BitRate = @enumToInt(enum_unnamed_334.kAudioFileStreamProperty_BitRate);
+pub const kAudioFileStreamProperty_InfoDictionary = @enumToInt(enum_unnamed_334.kAudioFileStreamProperty_InfoDictionary);
+const enum_unnamed_334 = extern enum(c_int) {
     kAudioFileStreamProperty_ReadyToProducePackets = 1919247481,
     kAudioFileStreamProperty_FileFormat = 1717988724,
     kAudioFileStreamProperty_DataFormat = 1684434292,
@@ -11342,9 +10328,9 @@ pub extern fn AudioFileStreamSetProperty(inAudioFileStream: AudioFileStreamID, i
 pub extern fn AudioFileStreamClose(inAudioFileStream: AudioFileStreamID) OSStatus;
 pub const AudioFormatPropertyID = UInt32;
 pub const AudioPanningMode = UInt32;
-pub const kPanningMode_SoundField = @enumToInt(enum_unnamed_408.kPanningMode_SoundField);
-pub const kPanningMode_VectorBasedPanning = @enumToInt(enum_unnamed_408.kPanningMode_VectorBasedPanning);
-const enum_unnamed_408 = extern enum(c_int) {
+pub const kPanningMode_SoundField = @enumToInt(enum_unnamed_335.kPanningMode_SoundField);
+pub const kPanningMode_VectorBasedPanning = @enumToInt(enum_unnamed_335.kPanningMode_VectorBasedPanning);
+const enum_unnamed_335 = extern enum(c_int) {
     kPanningMode_SoundField = 3,
     kPanningMode_VectorBasedPanning = 4,
     _,
@@ -11358,9 +10344,9 @@ pub const struct_AudioPanningInfo = extern struct {
 };
 pub const AudioPanningInfo = struct_AudioPanningInfo;
 pub const AudioBalanceFadeType = UInt32;
-pub const kAudioBalanceFadeType_MaxUnityGain = @enumToInt(enum_unnamed_409.kAudioBalanceFadeType_MaxUnityGain);
-pub const kAudioBalanceFadeType_EqualPower = @enumToInt(enum_unnamed_409.kAudioBalanceFadeType_EqualPower);
-const enum_unnamed_409 = extern enum(c_int) {
+pub const kAudioBalanceFadeType_MaxUnityGain = @enumToInt(enum_unnamed_336.kAudioBalanceFadeType_MaxUnityGain);
+pub const kAudioBalanceFadeType_EqualPower = @enumToInt(enum_unnamed_336.kAudioBalanceFadeType_EqualPower);
+const enum_unnamed_336 = extern enum(c_int) {
     kAudioBalanceFadeType_MaxUnityGain = 0,
     kAudioBalanceFadeType_EqualPower = 1,
     _,
@@ -11385,46 +10371,46 @@ pub const struct_ExtendedAudioFormatInfo = extern struct {
     mClassDescription: AudioClassDescription,
 };
 pub const ExtendedAudioFormatInfo = struct_ExtendedAudioFormatInfo;
-pub const kAudioFormatProperty_FormatInfo = @enumToInt(enum_unnamed_410.kAudioFormatProperty_FormatInfo);
-pub const kAudioFormatProperty_FormatName = @enumToInt(enum_unnamed_410.kAudioFormatProperty_FormatName);
-pub const kAudioFormatProperty_EncodeFormatIDs = @enumToInt(enum_unnamed_410.kAudioFormatProperty_EncodeFormatIDs);
-pub const kAudioFormatProperty_DecodeFormatIDs = @enumToInt(enum_unnamed_410.kAudioFormatProperty_DecodeFormatIDs);
-pub const kAudioFormatProperty_FormatList = @enumToInt(enum_unnamed_410.kAudioFormatProperty_FormatList);
-pub const kAudioFormatProperty_ASBDFromESDS = @enumToInt(enum_unnamed_410.kAudioFormatProperty_ASBDFromESDS);
-pub const kAudioFormatProperty_ChannelLayoutFromESDS = @enumToInt(enum_unnamed_410.kAudioFormatProperty_ChannelLayoutFromESDS);
-pub const kAudioFormatProperty_OutputFormatList = @enumToInt(enum_unnamed_410.kAudioFormatProperty_OutputFormatList);
-pub const kAudioFormatProperty_FirstPlayableFormatFromList = @enumToInt(enum_unnamed_410.kAudioFormatProperty_FirstPlayableFormatFromList);
-pub const kAudioFormatProperty_FormatIsVBR = @enumToInt(enum_unnamed_410.kAudioFormatProperty_FormatIsVBR);
-pub const kAudioFormatProperty_FormatIsExternallyFramed = @enumToInt(enum_unnamed_410.kAudioFormatProperty_FormatIsExternallyFramed);
-pub const kAudioFormatProperty_FormatEmploysDependentPackets = @enumToInt(enum_unnamed_410.kAudioFormatProperty_FormatEmploysDependentPackets);
-pub const kAudioFormatProperty_FormatIsEncrypted = @enumToInt(enum_unnamed_410.kAudioFormatProperty_FormatIsEncrypted);
-pub const kAudioFormatProperty_Encoders = @enumToInt(enum_unnamed_410.kAudioFormatProperty_Encoders);
-pub const kAudioFormatProperty_Decoders = @enumToInt(enum_unnamed_410.kAudioFormatProperty_Decoders);
-pub const kAudioFormatProperty_AvailableEncodeBitRates = @enumToInt(enum_unnamed_410.kAudioFormatProperty_AvailableEncodeBitRates);
-pub const kAudioFormatProperty_AvailableEncodeSampleRates = @enumToInt(enum_unnamed_410.kAudioFormatProperty_AvailableEncodeSampleRates);
-pub const kAudioFormatProperty_AvailableEncodeChannelLayoutTags = @enumToInt(enum_unnamed_410.kAudioFormatProperty_AvailableEncodeChannelLayoutTags);
-pub const kAudioFormatProperty_AvailableEncodeNumberChannels = @enumToInt(enum_unnamed_410.kAudioFormatProperty_AvailableEncodeNumberChannels);
-pub const kAudioFormatProperty_ASBDFromMPEGPacket = @enumToInt(enum_unnamed_410.kAudioFormatProperty_ASBDFromMPEGPacket);
-pub const kAudioFormatProperty_BitmapForLayoutTag = @enumToInt(enum_unnamed_410.kAudioFormatProperty_BitmapForLayoutTag);
-pub const kAudioFormatProperty_MatrixMixMap = @enumToInt(enum_unnamed_410.kAudioFormatProperty_MatrixMixMap);
-pub const kAudioFormatProperty_ChannelMap = @enumToInt(enum_unnamed_410.kAudioFormatProperty_ChannelMap);
-pub const kAudioFormatProperty_NumberOfChannelsForLayout = @enumToInt(enum_unnamed_410.kAudioFormatProperty_NumberOfChannelsForLayout);
-pub const kAudioFormatProperty_AreChannelLayoutsEquivalent = @enumToInt(enum_unnamed_410.kAudioFormatProperty_AreChannelLayoutsEquivalent);
-pub const kAudioFormatProperty_ChannelLayoutHash = @enumToInt(enum_unnamed_410.kAudioFormatProperty_ChannelLayoutHash);
-pub const kAudioFormatProperty_ValidateChannelLayout = @enumToInt(enum_unnamed_410.kAudioFormatProperty_ValidateChannelLayout);
-pub const kAudioFormatProperty_ChannelLayoutForTag = @enumToInt(enum_unnamed_410.kAudioFormatProperty_ChannelLayoutForTag);
-pub const kAudioFormatProperty_TagForChannelLayout = @enumToInt(enum_unnamed_410.kAudioFormatProperty_TagForChannelLayout);
-pub const kAudioFormatProperty_ChannelLayoutName = @enumToInt(enum_unnamed_410.kAudioFormatProperty_ChannelLayoutName);
-pub const kAudioFormatProperty_ChannelLayoutSimpleName = @enumToInt(enum_unnamed_410.kAudioFormatProperty_ChannelLayoutSimpleName);
-pub const kAudioFormatProperty_ChannelLayoutForBitmap = @enumToInt(enum_unnamed_410.kAudioFormatProperty_ChannelLayoutForBitmap);
-pub const kAudioFormatProperty_ChannelName = @enumToInt(enum_unnamed_410.kAudioFormatProperty_ChannelName);
-pub const kAudioFormatProperty_ChannelShortName = @enumToInt(enum_unnamed_410.kAudioFormatProperty_ChannelShortName);
-pub const kAudioFormatProperty_TagsForNumberOfChannels = @enumToInt(enum_unnamed_410.kAudioFormatProperty_TagsForNumberOfChannels);
-pub const kAudioFormatProperty_PanningMatrix = @enumToInt(enum_unnamed_410.kAudioFormatProperty_PanningMatrix);
-pub const kAudioFormatProperty_BalanceFade = @enumToInt(enum_unnamed_410.kAudioFormatProperty_BalanceFade);
-pub const kAudioFormatProperty_ID3TagSize = @enumToInt(enum_unnamed_410.kAudioFormatProperty_ID3TagSize);
-pub const kAudioFormatProperty_ID3TagToDictionary = @enumToInt(enum_unnamed_410.kAudioFormatProperty_ID3TagToDictionary);
-const enum_unnamed_410 = extern enum(c_int) {
+pub const kAudioFormatProperty_FormatInfo = @enumToInt(enum_unnamed_337.kAudioFormatProperty_FormatInfo);
+pub const kAudioFormatProperty_FormatName = @enumToInt(enum_unnamed_337.kAudioFormatProperty_FormatName);
+pub const kAudioFormatProperty_EncodeFormatIDs = @enumToInt(enum_unnamed_337.kAudioFormatProperty_EncodeFormatIDs);
+pub const kAudioFormatProperty_DecodeFormatIDs = @enumToInt(enum_unnamed_337.kAudioFormatProperty_DecodeFormatIDs);
+pub const kAudioFormatProperty_FormatList = @enumToInt(enum_unnamed_337.kAudioFormatProperty_FormatList);
+pub const kAudioFormatProperty_ASBDFromESDS = @enumToInt(enum_unnamed_337.kAudioFormatProperty_ASBDFromESDS);
+pub const kAudioFormatProperty_ChannelLayoutFromESDS = @enumToInt(enum_unnamed_337.kAudioFormatProperty_ChannelLayoutFromESDS);
+pub const kAudioFormatProperty_OutputFormatList = @enumToInt(enum_unnamed_337.kAudioFormatProperty_OutputFormatList);
+pub const kAudioFormatProperty_FirstPlayableFormatFromList = @enumToInt(enum_unnamed_337.kAudioFormatProperty_FirstPlayableFormatFromList);
+pub const kAudioFormatProperty_FormatIsVBR = @enumToInt(enum_unnamed_337.kAudioFormatProperty_FormatIsVBR);
+pub const kAudioFormatProperty_FormatIsExternallyFramed = @enumToInt(enum_unnamed_337.kAudioFormatProperty_FormatIsExternallyFramed);
+pub const kAudioFormatProperty_FormatEmploysDependentPackets = @enumToInt(enum_unnamed_337.kAudioFormatProperty_FormatEmploysDependentPackets);
+pub const kAudioFormatProperty_FormatIsEncrypted = @enumToInt(enum_unnamed_337.kAudioFormatProperty_FormatIsEncrypted);
+pub const kAudioFormatProperty_Encoders = @enumToInt(enum_unnamed_337.kAudioFormatProperty_Encoders);
+pub const kAudioFormatProperty_Decoders = @enumToInt(enum_unnamed_337.kAudioFormatProperty_Decoders);
+pub const kAudioFormatProperty_AvailableEncodeBitRates = @enumToInt(enum_unnamed_337.kAudioFormatProperty_AvailableEncodeBitRates);
+pub const kAudioFormatProperty_AvailableEncodeSampleRates = @enumToInt(enum_unnamed_337.kAudioFormatProperty_AvailableEncodeSampleRates);
+pub const kAudioFormatProperty_AvailableEncodeChannelLayoutTags = @enumToInt(enum_unnamed_337.kAudioFormatProperty_AvailableEncodeChannelLayoutTags);
+pub const kAudioFormatProperty_AvailableEncodeNumberChannels = @enumToInt(enum_unnamed_337.kAudioFormatProperty_AvailableEncodeNumberChannels);
+pub const kAudioFormatProperty_ASBDFromMPEGPacket = @enumToInt(enum_unnamed_337.kAudioFormatProperty_ASBDFromMPEGPacket);
+pub const kAudioFormatProperty_BitmapForLayoutTag = @enumToInt(enum_unnamed_337.kAudioFormatProperty_BitmapForLayoutTag);
+pub const kAudioFormatProperty_MatrixMixMap = @enumToInt(enum_unnamed_337.kAudioFormatProperty_MatrixMixMap);
+pub const kAudioFormatProperty_ChannelMap = @enumToInt(enum_unnamed_337.kAudioFormatProperty_ChannelMap);
+pub const kAudioFormatProperty_NumberOfChannelsForLayout = @enumToInt(enum_unnamed_337.kAudioFormatProperty_NumberOfChannelsForLayout);
+pub const kAudioFormatProperty_AreChannelLayoutsEquivalent = @enumToInt(enum_unnamed_337.kAudioFormatProperty_AreChannelLayoutsEquivalent);
+pub const kAudioFormatProperty_ChannelLayoutHash = @enumToInt(enum_unnamed_337.kAudioFormatProperty_ChannelLayoutHash);
+pub const kAudioFormatProperty_ValidateChannelLayout = @enumToInt(enum_unnamed_337.kAudioFormatProperty_ValidateChannelLayout);
+pub const kAudioFormatProperty_ChannelLayoutForTag = @enumToInt(enum_unnamed_337.kAudioFormatProperty_ChannelLayoutForTag);
+pub const kAudioFormatProperty_TagForChannelLayout = @enumToInt(enum_unnamed_337.kAudioFormatProperty_TagForChannelLayout);
+pub const kAudioFormatProperty_ChannelLayoutName = @enumToInt(enum_unnamed_337.kAudioFormatProperty_ChannelLayoutName);
+pub const kAudioFormatProperty_ChannelLayoutSimpleName = @enumToInt(enum_unnamed_337.kAudioFormatProperty_ChannelLayoutSimpleName);
+pub const kAudioFormatProperty_ChannelLayoutForBitmap = @enumToInt(enum_unnamed_337.kAudioFormatProperty_ChannelLayoutForBitmap);
+pub const kAudioFormatProperty_ChannelName = @enumToInt(enum_unnamed_337.kAudioFormatProperty_ChannelName);
+pub const kAudioFormatProperty_ChannelShortName = @enumToInt(enum_unnamed_337.kAudioFormatProperty_ChannelShortName);
+pub const kAudioFormatProperty_TagsForNumberOfChannels = @enumToInt(enum_unnamed_337.kAudioFormatProperty_TagsForNumberOfChannels);
+pub const kAudioFormatProperty_PanningMatrix = @enumToInt(enum_unnamed_337.kAudioFormatProperty_PanningMatrix);
+pub const kAudioFormatProperty_BalanceFade = @enumToInt(enum_unnamed_337.kAudioFormatProperty_BalanceFade);
+pub const kAudioFormatProperty_ID3TagSize = @enumToInt(enum_unnamed_337.kAudioFormatProperty_ID3TagSize);
+pub const kAudioFormatProperty_ID3TagToDictionary = @enumToInt(enum_unnamed_337.kAudioFormatProperty_ID3TagToDictionary);
+const enum_unnamed_337 = extern enum(c_int) {
     kAudioFormatProperty_FormatInfo = 1718449257,
     kAudioFormatProperty_FormatName = 1718509933,
     kAudioFormatProperty_EncodeFormatIDs = 1633906534,
@@ -11468,13 +10454,13 @@ const enum_unnamed_410 = extern enum(c_int) {
 };
 pub extern fn AudioFormatGetPropertyInfo(inPropertyID: AudioFormatPropertyID, inSpecifierSize: UInt32, inSpecifier: ?*const c_void, outPropertyDataSize: [*c]UInt32) OSStatus;
 pub extern fn AudioFormatGetProperty(inPropertyID: AudioFormatPropertyID, inSpecifierSize: UInt32, inSpecifier: ?*const c_void, ioPropertyDataSize: [*c]UInt32, outPropertyData: ?*c_void) OSStatus;
-pub const kAudioFormatUnspecifiedError = @enumToInt(enum_unnamed_411.kAudioFormatUnspecifiedError);
-pub const kAudioFormatUnsupportedPropertyError = @enumToInt(enum_unnamed_411.kAudioFormatUnsupportedPropertyError);
-pub const kAudioFormatBadPropertySizeError = @enumToInt(enum_unnamed_411.kAudioFormatBadPropertySizeError);
-pub const kAudioFormatBadSpecifierSizeError = @enumToInt(enum_unnamed_411.kAudioFormatBadSpecifierSizeError);
-pub const kAudioFormatUnsupportedDataFormatError = @enumToInt(enum_unnamed_411.kAudioFormatUnsupportedDataFormatError);
-pub const kAudioFormatUnknownFormatError = @enumToInt(enum_unnamed_411.kAudioFormatUnknownFormatError);
-const enum_unnamed_411 = extern enum(c_int) {
+pub const kAudioFormatUnspecifiedError = @enumToInt(enum_unnamed_338.kAudioFormatUnspecifiedError);
+pub const kAudioFormatUnsupportedPropertyError = @enumToInt(enum_unnamed_338.kAudioFormatUnsupportedPropertyError);
+pub const kAudioFormatBadPropertySizeError = @enumToInt(enum_unnamed_338.kAudioFormatBadPropertySizeError);
+pub const kAudioFormatBadSpecifierSizeError = @enumToInt(enum_unnamed_338.kAudioFormatBadSpecifierSizeError);
+pub const kAudioFormatUnsupportedDataFormatError = @enumToInt(enum_unnamed_338.kAudioFormatUnsupportedDataFormatError);
+pub const kAudioFormatUnknownFormatError = @enumToInt(enum_unnamed_338.kAudioFormatUnknownFormatError);
+const enum_unnamed_338 = extern enum(c_int) {
     kAudioFormatUnspecifiedError = 2003329396,
     kAudioFormatUnsupportedPropertyError = 1886547824,
     kAudioFormatBadPropertySizeError = 561211770,
@@ -11490,32 +10476,32 @@ pub const struct_OpaqueAudioQueue = @OpaqueType();
 pub const AudioQueueRef = ?*struct_OpaqueAudioQueue;
 pub const struct_OpaqueAudioQueueTimeline = @OpaqueType();
 pub const AudioQueueTimelineRef = ?*struct_OpaqueAudioQueueTimeline;
-pub const kAudioQueueErr_InvalidBuffer = @enumToInt(enum_unnamed_412.kAudioQueueErr_InvalidBuffer);
-pub const kAudioQueueErr_BufferEmpty = @enumToInt(enum_unnamed_412.kAudioQueueErr_BufferEmpty);
-pub const kAudioQueueErr_DisposalPending = @enumToInt(enum_unnamed_412.kAudioQueueErr_DisposalPending);
-pub const kAudioQueueErr_InvalidProperty = @enumToInt(enum_unnamed_412.kAudioQueueErr_InvalidProperty);
-pub const kAudioQueueErr_InvalidPropertySize = @enumToInt(enum_unnamed_412.kAudioQueueErr_InvalidPropertySize);
-pub const kAudioQueueErr_InvalidParameter = @enumToInt(enum_unnamed_412.kAudioQueueErr_InvalidParameter);
-pub const kAudioQueueErr_CannotStart = @enumToInt(enum_unnamed_412.kAudioQueueErr_CannotStart);
-pub const kAudioQueueErr_InvalidDevice = @enumToInt(enum_unnamed_412.kAudioQueueErr_InvalidDevice);
-pub const kAudioQueueErr_BufferInQueue = @enumToInt(enum_unnamed_412.kAudioQueueErr_BufferInQueue);
-pub const kAudioQueueErr_InvalidRunState = @enumToInt(enum_unnamed_412.kAudioQueueErr_InvalidRunState);
-pub const kAudioQueueErr_InvalidQueueType = @enumToInt(enum_unnamed_412.kAudioQueueErr_InvalidQueueType);
-pub const kAudioQueueErr_Permissions = @enumToInt(enum_unnamed_412.kAudioQueueErr_Permissions);
-pub const kAudioQueueErr_InvalidPropertyValue = @enumToInt(enum_unnamed_412.kAudioQueueErr_InvalidPropertyValue);
-pub const kAudioQueueErr_PrimeTimedOut = @enumToInt(enum_unnamed_412.kAudioQueueErr_PrimeTimedOut);
-pub const kAudioQueueErr_CodecNotFound = @enumToInt(enum_unnamed_412.kAudioQueueErr_CodecNotFound);
-pub const kAudioQueueErr_InvalidCodecAccess = @enumToInt(enum_unnamed_412.kAudioQueueErr_InvalidCodecAccess);
-pub const kAudioQueueErr_QueueInvalidated = @enumToInt(enum_unnamed_412.kAudioQueueErr_QueueInvalidated);
-pub const kAudioQueueErr_TooManyTaps = @enumToInt(enum_unnamed_412.kAudioQueueErr_TooManyTaps);
-pub const kAudioQueueErr_InvalidTapContext = @enumToInt(enum_unnamed_412.kAudioQueueErr_InvalidTapContext);
-pub const kAudioQueueErr_RecordUnderrun = @enumToInt(enum_unnamed_412.kAudioQueueErr_RecordUnderrun);
-pub const kAudioQueueErr_InvalidTapType = @enumToInt(enum_unnamed_412.kAudioQueueErr_InvalidTapType);
-pub const kAudioQueueErr_BufferEnqueuedTwice = @enumToInt(enum_unnamed_412.kAudioQueueErr_BufferEnqueuedTwice);
-pub const kAudioQueueErr_CannotStartYet = @enumToInt(enum_unnamed_412.kAudioQueueErr_CannotStartYet);
-pub const kAudioQueueErr_EnqueueDuringReset = @enumToInt(enum_unnamed_412.kAudioQueueErr_EnqueueDuringReset);
-pub const kAudioQueueErr_InvalidOfflineMode = @enumToInt(enum_unnamed_412.kAudioQueueErr_InvalidOfflineMode);
-const enum_unnamed_412 = extern enum(c_int) {
+pub const kAudioQueueErr_InvalidBuffer = @enumToInt(enum_unnamed_339.kAudioQueueErr_InvalidBuffer);
+pub const kAudioQueueErr_BufferEmpty = @enumToInt(enum_unnamed_339.kAudioQueueErr_BufferEmpty);
+pub const kAudioQueueErr_DisposalPending = @enumToInt(enum_unnamed_339.kAudioQueueErr_DisposalPending);
+pub const kAudioQueueErr_InvalidProperty = @enumToInt(enum_unnamed_339.kAudioQueueErr_InvalidProperty);
+pub const kAudioQueueErr_InvalidPropertySize = @enumToInt(enum_unnamed_339.kAudioQueueErr_InvalidPropertySize);
+pub const kAudioQueueErr_InvalidParameter = @enumToInt(enum_unnamed_339.kAudioQueueErr_InvalidParameter);
+pub const kAudioQueueErr_CannotStart = @enumToInt(enum_unnamed_339.kAudioQueueErr_CannotStart);
+pub const kAudioQueueErr_InvalidDevice = @enumToInt(enum_unnamed_339.kAudioQueueErr_InvalidDevice);
+pub const kAudioQueueErr_BufferInQueue = @enumToInt(enum_unnamed_339.kAudioQueueErr_BufferInQueue);
+pub const kAudioQueueErr_InvalidRunState = @enumToInt(enum_unnamed_339.kAudioQueueErr_InvalidRunState);
+pub const kAudioQueueErr_InvalidQueueType = @enumToInt(enum_unnamed_339.kAudioQueueErr_InvalidQueueType);
+pub const kAudioQueueErr_Permissions = @enumToInt(enum_unnamed_339.kAudioQueueErr_Permissions);
+pub const kAudioQueueErr_InvalidPropertyValue = @enumToInt(enum_unnamed_339.kAudioQueueErr_InvalidPropertyValue);
+pub const kAudioQueueErr_PrimeTimedOut = @enumToInt(enum_unnamed_339.kAudioQueueErr_PrimeTimedOut);
+pub const kAudioQueueErr_CodecNotFound = @enumToInt(enum_unnamed_339.kAudioQueueErr_CodecNotFound);
+pub const kAudioQueueErr_InvalidCodecAccess = @enumToInt(enum_unnamed_339.kAudioQueueErr_InvalidCodecAccess);
+pub const kAudioQueueErr_QueueInvalidated = @enumToInt(enum_unnamed_339.kAudioQueueErr_QueueInvalidated);
+pub const kAudioQueueErr_TooManyTaps = @enumToInt(enum_unnamed_339.kAudioQueueErr_TooManyTaps);
+pub const kAudioQueueErr_InvalidTapContext = @enumToInt(enum_unnamed_339.kAudioQueueErr_InvalidTapContext);
+pub const kAudioQueueErr_RecordUnderrun = @enumToInt(enum_unnamed_339.kAudioQueueErr_RecordUnderrun);
+pub const kAudioQueueErr_InvalidTapType = @enumToInt(enum_unnamed_339.kAudioQueueErr_InvalidTapType);
+pub const kAudioQueueErr_BufferEnqueuedTwice = @enumToInt(enum_unnamed_339.kAudioQueueErr_BufferEnqueuedTwice);
+pub const kAudioQueueErr_CannotStartYet = @enumToInt(enum_unnamed_339.kAudioQueueErr_CannotStartYet);
+pub const kAudioQueueErr_EnqueueDuringReset = @enumToInt(enum_unnamed_339.kAudioQueueErr_EnqueueDuringReset);
+pub const kAudioQueueErr_InvalidOfflineMode = @enumToInt(enum_unnamed_339.kAudioQueueErr_InvalidOfflineMode);
+const enum_unnamed_339 = extern enum(c_int) {
     kAudioQueueErr_InvalidBuffer = -66687,
     kAudioQueueErr_BufferEmpty = -66686,
     kAudioQueueErr_DisposalPending = -66685,
@@ -11543,23 +10529,23 @@ const enum_unnamed_412 = extern enum(c_int) {
     kAudioQueueErr_InvalidOfflineMode = -66626,
     _,
 };
-pub const kAudioQueueProperty_IsRunning = @enumToInt(enum_unnamed_413.kAudioQueueProperty_IsRunning);
-pub const kAudioQueueDeviceProperty_SampleRate = @enumToInt(enum_unnamed_413.kAudioQueueDeviceProperty_SampleRate);
-pub const kAudioQueueDeviceProperty_NumberChannels = @enumToInt(enum_unnamed_413.kAudioQueueDeviceProperty_NumberChannels);
-pub const kAudioQueueProperty_CurrentDevice = @enumToInt(enum_unnamed_413.kAudioQueueProperty_CurrentDevice);
-pub const kAudioQueueProperty_MagicCookie = @enumToInt(enum_unnamed_413.kAudioQueueProperty_MagicCookie);
-pub const kAudioQueueProperty_MaximumOutputPacketSize = @enumToInt(enum_unnamed_413.kAudioQueueProperty_MaximumOutputPacketSize);
-pub const kAudioQueueProperty_StreamDescription = @enumToInt(enum_unnamed_413.kAudioQueueProperty_StreamDescription);
-pub const kAudioQueueProperty_ChannelLayout = @enumToInt(enum_unnamed_413.kAudioQueueProperty_ChannelLayout);
-pub const kAudioQueueProperty_EnableLevelMetering = @enumToInt(enum_unnamed_413.kAudioQueueProperty_EnableLevelMetering);
-pub const kAudioQueueProperty_CurrentLevelMeter = @enumToInt(enum_unnamed_413.kAudioQueueProperty_CurrentLevelMeter);
-pub const kAudioQueueProperty_CurrentLevelMeterDB = @enumToInt(enum_unnamed_413.kAudioQueueProperty_CurrentLevelMeterDB);
-pub const kAudioQueueProperty_DecodeBufferSizeFrames = @enumToInt(enum_unnamed_413.kAudioQueueProperty_DecodeBufferSizeFrames);
-pub const kAudioQueueProperty_ConverterError = @enumToInt(enum_unnamed_413.kAudioQueueProperty_ConverterError);
-pub const kAudioQueueProperty_EnableTimePitch = @enumToInt(enum_unnamed_413.kAudioQueueProperty_EnableTimePitch);
-pub const kAudioQueueProperty_TimePitchAlgorithm = @enumToInt(enum_unnamed_413.kAudioQueueProperty_TimePitchAlgorithm);
-pub const kAudioQueueProperty_TimePitchBypass = @enumToInt(enum_unnamed_413.kAudioQueueProperty_TimePitchBypass);
-const enum_unnamed_413 = extern enum(c_int) {
+pub const kAudioQueueProperty_IsRunning = @enumToInt(enum_unnamed_340.kAudioQueueProperty_IsRunning);
+pub const kAudioQueueDeviceProperty_SampleRate = @enumToInt(enum_unnamed_340.kAudioQueueDeviceProperty_SampleRate);
+pub const kAudioQueueDeviceProperty_NumberChannels = @enumToInt(enum_unnamed_340.kAudioQueueDeviceProperty_NumberChannels);
+pub const kAudioQueueProperty_CurrentDevice = @enumToInt(enum_unnamed_340.kAudioQueueProperty_CurrentDevice);
+pub const kAudioQueueProperty_MagicCookie = @enumToInt(enum_unnamed_340.kAudioQueueProperty_MagicCookie);
+pub const kAudioQueueProperty_MaximumOutputPacketSize = @enumToInt(enum_unnamed_340.kAudioQueueProperty_MaximumOutputPacketSize);
+pub const kAudioQueueProperty_StreamDescription = @enumToInt(enum_unnamed_340.kAudioQueueProperty_StreamDescription);
+pub const kAudioQueueProperty_ChannelLayout = @enumToInt(enum_unnamed_340.kAudioQueueProperty_ChannelLayout);
+pub const kAudioQueueProperty_EnableLevelMetering = @enumToInt(enum_unnamed_340.kAudioQueueProperty_EnableLevelMetering);
+pub const kAudioQueueProperty_CurrentLevelMeter = @enumToInt(enum_unnamed_340.kAudioQueueProperty_CurrentLevelMeter);
+pub const kAudioQueueProperty_CurrentLevelMeterDB = @enumToInt(enum_unnamed_340.kAudioQueueProperty_CurrentLevelMeterDB);
+pub const kAudioQueueProperty_DecodeBufferSizeFrames = @enumToInt(enum_unnamed_340.kAudioQueueProperty_DecodeBufferSizeFrames);
+pub const kAudioQueueProperty_ConverterError = @enumToInt(enum_unnamed_340.kAudioQueueProperty_ConverterError);
+pub const kAudioQueueProperty_EnableTimePitch = @enumToInt(enum_unnamed_340.kAudioQueueProperty_EnableTimePitch);
+pub const kAudioQueueProperty_TimePitchAlgorithm = @enumToInt(enum_unnamed_340.kAudioQueueProperty_TimePitchAlgorithm);
+pub const kAudioQueueProperty_TimePitchBypass = @enumToInt(enum_unnamed_340.kAudioQueueProperty_TimePitchBypass);
+const enum_unnamed_340 = extern enum(c_int) {
     kAudioQueueProperty_IsRunning = 1634824814,
     kAudioQueueDeviceProperty_SampleRate = 1634825074,
     kAudioQueueDeviceProperty_NumberChannels = 1634821219,
@@ -11578,26 +10564,26 @@ const enum_unnamed_413 = extern enum(c_int) {
     kAudioQueueProperty_TimePitchBypass = 1903456354,
     _,
 };
-pub const kAudioQueueTimePitchAlgorithm_Spectral = @enumToInt(enum_unnamed_414.kAudioQueueTimePitchAlgorithm_Spectral);
-pub const kAudioQueueTimePitchAlgorithm_TimeDomain = @enumToInt(enum_unnamed_414.kAudioQueueTimePitchAlgorithm_TimeDomain);
-pub const kAudioQueueTimePitchAlgorithm_Varispeed = @enumToInt(enum_unnamed_414.kAudioQueueTimePitchAlgorithm_Varispeed);
-const enum_unnamed_414 = extern enum(c_int) {
+pub const kAudioQueueTimePitchAlgorithm_Spectral = @enumToInt(enum_unnamed_341.kAudioQueueTimePitchAlgorithm_Spectral);
+pub const kAudioQueueTimePitchAlgorithm_TimeDomain = @enumToInt(enum_unnamed_341.kAudioQueueTimePitchAlgorithm_TimeDomain);
+pub const kAudioQueueTimePitchAlgorithm_Varispeed = @enumToInt(enum_unnamed_341.kAudioQueueTimePitchAlgorithm_Varispeed);
+const enum_unnamed_341 = extern enum(c_int) {
     kAudioQueueTimePitchAlgorithm_Spectral = 1936745827,
     kAudioQueueTimePitchAlgorithm_TimeDomain = 1953064047,
     kAudioQueueTimePitchAlgorithm_Varispeed = 1987276900,
     _,
 };
-pub const kAudioQueueProperty_ChannelAssignments = @enumToInt(enum_unnamed_415.kAudioQueueProperty_ChannelAssignments);
-const enum_unnamed_415 = extern enum(c_int) {
+pub const kAudioQueueProperty_ChannelAssignments = @enumToInt(enum_unnamed_342.kAudioQueueProperty_ChannelAssignments);
+const enum_unnamed_342 = extern enum(c_int) {
     kAudioQueueProperty_ChannelAssignments = 1634820961,
     _,
 };
-pub const kAudioQueueParam_Volume = @enumToInt(enum_unnamed_416.kAudioQueueParam_Volume);
-pub const kAudioQueueParam_PlayRate = @enumToInt(enum_unnamed_416.kAudioQueueParam_PlayRate);
-pub const kAudioQueueParam_Pitch = @enumToInt(enum_unnamed_416.kAudioQueueParam_Pitch);
-pub const kAudioQueueParam_VolumeRampTime = @enumToInt(enum_unnamed_416.kAudioQueueParam_VolumeRampTime);
-pub const kAudioQueueParam_Pan = @enumToInt(enum_unnamed_416.kAudioQueueParam_Pan);
-const enum_unnamed_416 = extern enum(c_int) {
+pub const kAudioQueueParam_Volume = @enumToInt(enum_unnamed_343.kAudioQueueParam_Volume);
+pub const kAudioQueueParam_PlayRate = @enumToInt(enum_unnamed_343.kAudioQueueParam_PlayRate);
+pub const kAudioQueueParam_Pitch = @enumToInt(enum_unnamed_343.kAudioQueueParam_Pitch);
+pub const kAudioQueueParam_VolumeRampTime = @enumToInt(enum_unnamed_343.kAudioQueueParam_VolumeRampTime);
+pub const kAudioQueueParam_Pan = @enumToInt(enum_unnamed_343.kAudioQueueParam_Pan);
+const enum_unnamed_343 = extern enum(c_int) {
     kAudioQueueParam_Volume = 1,
     kAudioQueueParam_PlayRate = 2,
     kAudioQueueParam_Pitch = 3,
@@ -11606,12 +10592,12 @@ const enum_unnamed_416 = extern enum(c_int) {
     _,
 };
 pub const AudioQueueProcessingTapFlags = UInt32;
-pub const kAudioQueueProcessingTap_PreEffects = @enumToInt(enum_unnamed_417.kAudioQueueProcessingTap_PreEffects);
-pub const kAudioQueueProcessingTap_PostEffects = @enumToInt(enum_unnamed_417.kAudioQueueProcessingTap_PostEffects);
-pub const kAudioQueueProcessingTap_Siphon = @enumToInt(enum_unnamed_417.kAudioQueueProcessingTap_Siphon);
-pub const kAudioQueueProcessingTap_StartOfStream = @enumToInt(enum_unnamed_417.kAudioQueueProcessingTap_StartOfStream);
-pub const kAudioQueueProcessingTap_EndOfStream = @enumToInt(enum_unnamed_417.kAudioQueueProcessingTap_EndOfStream);
-const enum_unnamed_417 = extern enum(c_int) {
+pub const kAudioQueueProcessingTap_PreEffects = @enumToInt(enum_unnamed_344.kAudioQueueProcessingTap_PreEffects);
+pub const kAudioQueueProcessingTap_PostEffects = @enumToInt(enum_unnamed_344.kAudioQueueProcessingTap_PostEffects);
+pub const kAudioQueueProcessingTap_Siphon = @enumToInt(enum_unnamed_344.kAudioQueueProcessingTap_Siphon);
+pub const kAudioQueueProcessingTap_StartOfStream = @enumToInt(enum_unnamed_344.kAudioQueueProcessingTap_StartOfStream);
+pub const kAudioQueueProcessingTap_EndOfStream = @enumToInt(enum_unnamed_344.kAudioQueueProcessingTap_EndOfStream);
+const enum_unnamed_344 = extern enum(c_int) {
     kAudioQueueProcessingTap_PreEffects = 1,
     kAudioQueueProcessingTap_PostEffects = 2,
     kAudioQueueProcessingTap_Siphon = 4,
@@ -11688,6 +10674,1015 @@ pub extern fn AudioQueueProcessingTapNew(inAQ: AudioQueueRef, inCallback: AudioQ
 pub extern fn AudioQueueProcessingTapDispose(inAQTap: AudioQueueProcessingTapRef) OSStatus;
 pub extern fn AudioQueueProcessingTapGetSourceAudio(inAQTap: AudioQueueProcessingTapRef, inNumberFrames: UInt32, ioTimeStamp: [*c]AudioTimeStamp, outFlags: [*c]AudioQueueProcessingTapFlags, outNumberFrames: [*c]UInt32, ioData: [*c]AudioBufferList) OSStatus;
 pub extern fn AudioQueueProcessingTapGetQueueTime(inAQTap: AudioQueueProcessingTapRef, outQueueSampleTime: [*c]Float64, outQueueFrameCount: [*c]UInt32) OSStatus;
+pub const AudioObjectID = UInt32;
+pub const AudioClassID = UInt32;
+pub const AudioObjectPropertySelector = UInt32;
+pub const AudioObjectPropertyScope = UInt32;
+pub const AudioObjectPropertyElement = UInt32;
+pub const struct_AudioObjectPropertyAddress = extern struct {
+    mSelector: AudioObjectPropertySelector,
+    mScope: AudioObjectPropertyScope,
+    mElement: AudioObjectPropertyElement,
+};
+pub const AudioObjectPropertyAddress = struct_AudioObjectPropertyAddress;
+pub const kAudioHardwareNoError = @enumToInt(enum_unnamed_345.kAudioHardwareNoError);
+pub const kAudioHardwareNotRunningError = @enumToInt(enum_unnamed_345.kAudioHardwareNotRunningError);
+pub const kAudioHardwareUnspecifiedError = @enumToInt(enum_unnamed_345.kAudioHardwareUnspecifiedError);
+pub const kAudioHardwareUnknownPropertyError = @enumToInt(enum_unnamed_345.kAudioHardwareUnknownPropertyError);
+pub const kAudioHardwareBadPropertySizeError = @enumToInt(enum_unnamed_345.kAudioHardwareBadPropertySizeError);
+pub const kAudioHardwareIllegalOperationError = @enumToInt(enum_unnamed_345.kAudioHardwareIllegalOperationError);
+pub const kAudioHardwareBadObjectError = @enumToInt(enum_unnamed_345.kAudioHardwareBadObjectError);
+pub const kAudioHardwareBadDeviceError = @enumToInt(enum_unnamed_345.kAudioHardwareBadDeviceError);
+pub const kAudioHardwareBadStreamError = @enumToInt(enum_unnamed_345.kAudioHardwareBadStreamError);
+pub const kAudioHardwareUnsupportedOperationError = @enumToInt(enum_unnamed_345.kAudioHardwareUnsupportedOperationError);
+pub const kAudioDeviceUnsupportedFormatError = @enumToInt(enum_unnamed_345.kAudioDeviceUnsupportedFormatError);
+pub const kAudioDevicePermissionsError = @enumToInt(enum_unnamed_345.kAudioDevicePermissionsError);
+const enum_unnamed_345 = extern enum(c_int) {
+    kAudioHardwareNoError = 0,
+    kAudioHardwareNotRunningError = 1937010544,
+    kAudioHardwareUnspecifiedError = 2003329396,
+    kAudioHardwareUnknownPropertyError = 2003332927,
+    kAudioHardwareBadPropertySizeError = 561211770,
+    kAudioHardwareIllegalOperationError = 1852797029,
+    kAudioHardwareBadObjectError = 560947818,
+    kAudioHardwareBadDeviceError = 560227702,
+    kAudioHardwareBadStreamError = 561214578,
+    kAudioHardwareUnsupportedOperationError = 1970171760,
+    kAudioDeviceUnsupportedFormatError = 560226676,
+    kAudioDevicePermissionsError = 560492391,
+    _,
+};
+pub const kAudioObjectUnknown = @enumToInt(enum_unnamed_346.kAudioObjectUnknown);
+const enum_unnamed_346 = extern enum(c_int) {
+    kAudioObjectUnknown = 0,
+    _,
+};
+pub const kAudioObjectPropertyScopeGlobal = @enumToInt(enum_unnamed_347.kAudioObjectPropertyScopeGlobal);
+pub const kAudioObjectPropertyScopeInput = @enumToInt(enum_unnamed_347.kAudioObjectPropertyScopeInput);
+pub const kAudioObjectPropertyScopeOutput = @enumToInt(enum_unnamed_347.kAudioObjectPropertyScopeOutput);
+pub const kAudioObjectPropertyScopePlayThrough = @enumToInt(enum_unnamed_347.kAudioObjectPropertyScopePlayThrough);
+pub const kAudioObjectPropertyElementMaster = @enumToInt(enum_unnamed_347.kAudioObjectPropertyElementMaster);
+const enum_unnamed_347 = extern enum(c_int) {
+    kAudioObjectPropertyScopeGlobal = 1735159650,
+    kAudioObjectPropertyScopeInput = 1768845428,
+    kAudioObjectPropertyScopeOutput = 1869968496,
+    kAudioObjectPropertyScopePlayThrough = 1886679669,
+    kAudioObjectPropertyElementMaster = 0,
+    _,
+};
+pub const kAudioObjectPropertySelectorWildcard = @enumToInt(enum_unnamed_348.kAudioObjectPropertySelectorWildcard);
+const enum_unnamed_348 = extern enum(c_int) {
+    kAudioObjectPropertySelectorWildcard = 707406378,
+    _,
+};
+pub const kAudioObjectPropertyScopeWildcard = @enumToInt(enum_unnamed_349.kAudioObjectPropertyScopeWildcard);
+const enum_unnamed_349 = extern enum(c_int) {
+    kAudioObjectPropertyScopeWildcard = 707406378,
+    _,
+};
+pub const kAudioObjectPropertyElementWildcard = @enumToInt(enum_unnamed_350.kAudioObjectPropertyElementWildcard);
+const enum_unnamed_350 = extern enum(c_int) {
+    kAudioObjectPropertyElementWildcard = 4294967295,
+    _,
+};
+pub const kAudioObjectClassIDWildcard = @enumToInt(enum_unnamed_351.kAudioObjectClassIDWildcard);
+const enum_unnamed_351 = extern enum(c_int) {
+    kAudioObjectClassIDWildcard = 707406378,
+    _,
+};
+pub const kAudioObjectClassID = @enumToInt(enum_unnamed_352.kAudioObjectClassID);
+const enum_unnamed_352 = extern enum(c_int) {
+    kAudioObjectClassID = 1634689642,
+    _,
+};
+pub const kAudioObjectPropertyBaseClass = @enumToInt(enum_unnamed_353.kAudioObjectPropertyBaseClass);
+pub const kAudioObjectPropertyClass = @enumToInt(enum_unnamed_353.kAudioObjectPropertyClass);
+pub const kAudioObjectPropertyOwner = @enumToInt(enum_unnamed_353.kAudioObjectPropertyOwner);
+pub const kAudioObjectPropertyName = @enumToInt(enum_unnamed_353.kAudioObjectPropertyName);
+pub const kAudioObjectPropertyModelName = @enumToInt(enum_unnamed_353.kAudioObjectPropertyModelName);
+pub const kAudioObjectPropertyManufacturer = @enumToInt(enum_unnamed_353.kAudioObjectPropertyManufacturer);
+pub const kAudioObjectPropertyElementName = @enumToInt(enum_unnamed_353.kAudioObjectPropertyElementName);
+pub const kAudioObjectPropertyElementCategoryName = @enumToInt(enum_unnamed_353.kAudioObjectPropertyElementCategoryName);
+pub const kAudioObjectPropertyElementNumberName = @enumToInt(enum_unnamed_353.kAudioObjectPropertyElementNumberName);
+pub const kAudioObjectPropertyOwnedObjects = @enumToInt(enum_unnamed_353.kAudioObjectPropertyOwnedObjects);
+pub const kAudioObjectPropertyIdentify = @enumToInt(enum_unnamed_353.kAudioObjectPropertyIdentify);
+pub const kAudioObjectPropertySerialNumber = @enumToInt(enum_unnamed_353.kAudioObjectPropertySerialNumber);
+pub const kAudioObjectPropertyFirmwareVersion = @enumToInt(enum_unnamed_353.kAudioObjectPropertyFirmwareVersion);
+const enum_unnamed_353 = extern enum(c_int) {
+    kAudioObjectPropertyBaseClass = 1650682995,
+    kAudioObjectPropertyClass = 1668047219,
+    kAudioObjectPropertyOwner = 1937007734,
+    kAudioObjectPropertyName = 1819173229,
+    kAudioObjectPropertyModelName = 1819111268,
+    kAudioObjectPropertyManufacturer = 1819107691,
+    kAudioObjectPropertyElementName = 1818454126,
+    kAudioObjectPropertyElementCategoryName = 1818452846,
+    kAudioObjectPropertyElementNumberName = 1818455662,
+    kAudioObjectPropertyOwnedObjects = 1870098020,
+    kAudioObjectPropertyIdentify = 1768187246,
+    kAudioObjectPropertySerialNumber = 1936618861,
+    kAudioObjectPropertyFirmwareVersion = 1719105134,
+    _,
+};
+pub const kAudioPlugInClassID = @enumToInt(enum_unnamed_354.kAudioPlugInClassID);
+const enum_unnamed_354 = extern enum(c_int) {
+    kAudioPlugInClassID = 1634757735,
+    _,
+};
+pub const kAudioPlugInPropertyBundleID = @enumToInt(enum_unnamed_355.kAudioPlugInPropertyBundleID);
+pub const kAudioPlugInPropertyDeviceList = @enumToInt(enum_unnamed_355.kAudioPlugInPropertyDeviceList);
+pub const kAudioPlugInPropertyTranslateUIDToDevice = @enumToInt(enum_unnamed_355.kAudioPlugInPropertyTranslateUIDToDevice);
+pub const kAudioPlugInPropertyBoxList = @enumToInt(enum_unnamed_355.kAudioPlugInPropertyBoxList);
+pub const kAudioPlugInPropertyTranslateUIDToBox = @enumToInt(enum_unnamed_355.kAudioPlugInPropertyTranslateUIDToBox);
+pub const kAudioPlugInPropertyClockDeviceList = @enumToInt(enum_unnamed_355.kAudioPlugInPropertyClockDeviceList);
+pub const kAudioPlugInPropertyTranslateUIDToClockDevice = @enumToInt(enum_unnamed_355.kAudioPlugInPropertyTranslateUIDToClockDevice);
+const enum_unnamed_355 = extern enum(c_int) {
+    kAudioPlugInPropertyBundleID = 1885956452,
+    kAudioPlugInPropertyDeviceList = 1684370979,
+    kAudioPlugInPropertyTranslateUIDToDevice = 1969841252,
+    kAudioPlugInPropertyBoxList = 1651472419,
+    kAudioPlugInPropertyTranslateUIDToBox = 1969841250,
+    kAudioPlugInPropertyClockDeviceList = 1668049699,
+    kAudioPlugInPropertyTranslateUIDToClockDevice = 1969841251,
+    _,
+};
+pub const kAudioTransportManagerClassID = @enumToInt(enum_unnamed_356.kAudioTransportManagerClassID);
+const enum_unnamed_356 = extern enum(c_int) {
+    kAudioTransportManagerClassID = 1953656941,
+    _,
+};
+pub const kAudioTransportManagerPropertyEndPointList = @enumToInt(enum_unnamed_357.kAudioTransportManagerPropertyEndPointList);
+pub const kAudioTransportManagerPropertyTranslateUIDToEndPoint = @enumToInt(enum_unnamed_357.kAudioTransportManagerPropertyTranslateUIDToEndPoint);
+pub const kAudioTransportManagerPropertyTransportType = @enumToInt(enum_unnamed_357.kAudioTransportManagerPropertyTransportType);
+const enum_unnamed_357 = extern enum(c_int) {
+    kAudioTransportManagerPropertyEndPointList = 1701733411,
+    kAudioTransportManagerPropertyTranslateUIDToEndPoint = 1969841253,
+    kAudioTransportManagerPropertyTransportType = 1953653102,
+    _,
+};
+pub const kAudioBoxClassID = @enumToInt(enum_unnamed_358.kAudioBoxClassID);
+const enum_unnamed_358 = extern enum(c_int) {
+    kAudioBoxClassID = 1633841016,
+    _,
+};
+pub const kAudioBoxPropertyBoxUID = @enumToInt(enum_unnamed_359.kAudioBoxPropertyBoxUID);
+pub const kAudioBoxPropertyTransportType = @enumToInt(enum_unnamed_359.kAudioBoxPropertyTransportType);
+pub const kAudioBoxPropertyHasAudio = @enumToInt(enum_unnamed_359.kAudioBoxPropertyHasAudio);
+pub const kAudioBoxPropertyHasVideo = @enumToInt(enum_unnamed_359.kAudioBoxPropertyHasVideo);
+pub const kAudioBoxPropertyHasMIDI = @enumToInt(enum_unnamed_359.kAudioBoxPropertyHasMIDI);
+pub const kAudioBoxPropertyIsProtected = @enumToInt(enum_unnamed_359.kAudioBoxPropertyIsProtected);
+pub const kAudioBoxPropertyAcquired = @enumToInt(enum_unnamed_359.kAudioBoxPropertyAcquired);
+pub const kAudioBoxPropertyAcquisitionFailed = @enumToInt(enum_unnamed_359.kAudioBoxPropertyAcquisitionFailed);
+pub const kAudioBoxPropertyDeviceList = @enumToInt(enum_unnamed_359.kAudioBoxPropertyDeviceList);
+pub const kAudioBoxPropertyClockDeviceList = @enumToInt(enum_unnamed_359.kAudioBoxPropertyClockDeviceList);
+const enum_unnamed_359 = extern enum(c_int) {
+    kAudioBoxPropertyBoxUID = 1651861860,
+    kAudioBoxPropertyTransportType = 1953653102,
+    kAudioBoxPropertyHasAudio = 1651007861,
+    kAudioBoxPropertyHasVideo = 1651013225,
+    kAudioBoxPropertyHasMIDI = 1651010921,
+    kAudioBoxPropertyIsProtected = 1651536495,
+    kAudioBoxPropertyAcquired = 1652060014,
+    kAudioBoxPropertyAcquisitionFailed = 1652060006,
+    kAudioBoxPropertyDeviceList = 1650751011,
+    kAudioBoxPropertyClockDeviceList = 1650682915,
+    _,
+};
+pub const kAudioDeviceClassID = @enumToInt(enum_unnamed_360.kAudioDeviceClassID);
+const enum_unnamed_360 = extern enum(c_int) {
+    kAudioDeviceClassID = 1633969526,
+    _,
+};
+pub const kAudioDeviceTransportTypeUnknown = @enumToInt(enum_unnamed_361.kAudioDeviceTransportTypeUnknown);
+pub const kAudioDeviceTransportTypeBuiltIn = @enumToInt(enum_unnamed_361.kAudioDeviceTransportTypeBuiltIn);
+pub const kAudioDeviceTransportTypeAggregate = @enumToInt(enum_unnamed_361.kAudioDeviceTransportTypeAggregate);
+pub const kAudioDeviceTransportTypeVirtual = @enumToInt(enum_unnamed_361.kAudioDeviceTransportTypeVirtual);
+pub const kAudioDeviceTransportTypePCI = @enumToInt(enum_unnamed_361.kAudioDeviceTransportTypePCI);
+pub const kAudioDeviceTransportTypeUSB = @enumToInt(enum_unnamed_361.kAudioDeviceTransportTypeUSB);
+pub const kAudioDeviceTransportTypeFireWire = @enumToInt(enum_unnamed_361.kAudioDeviceTransportTypeFireWire);
+pub const kAudioDeviceTransportTypeBluetooth = @enumToInt(enum_unnamed_361.kAudioDeviceTransportTypeBluetooth);
+pub const kAudioDeviceTransportTypeBluetoothLE = @enumToInt(enum_unnamed_361.kAudioDeviceTransportTypeBluetoothLE);
+pub const kAudioDeviceTransportTypeHDMI = @enumToInt(enum_unnamed_361.kAudioDeviceTransportTypeHDMI);
+pub const kAudioDeviceTransportTypeDisplayPort = @enumToInt(enum_unnamed_361.kAudioDeviceTransportTypeDisplayPort);
+pub const kAudioDeviceTransportTypeAirPlay = @enumToInt(enum_unnamed_361.kAudioDeviceTransportTypeAirPlay);
+pub const kAudioDeviceTransportTypeAVB = @enumToInt(enum_unnamed_361.kAudioDeviceTransportTypeAVB);
+pub const kAudioDeviceTransportTypeThunderbolt = @enumToInt(enum_unnamed_361.kAudioDeviceTransportTypeThunderbolt);
+const enum_unnamed_361 = extern enum(c_int) {
+    kAudioDeviceTransportTypeUnknown = 0,
+    kAudioDeviceTransportTypeBuiltIn = 1651274862,
+    kAudioDeviceTransportTypeAggregate = 1735554416,
+    kAudioDeviceTransportTypeVirtual = 1986622068,
+    kAudioDeviceTransportTypePCI = 1885563168,
+    kAudioDeviceTransportTypeUSB = 1970496032,
+    kAudioDeviceTransportTypeFireWire = 825440564,
+    kAudioDeviceTransportTypeBluetooth = 1651275109,
+    kAudioDeviceTransportTypeBluetoothLE = 1651271009,
+    kAudioDeviceTransportTypeHDMI = 1751412073,
+    kAudioDeviceTransportTypeDisplayPort = 1685090932,
+    kAudioDeviceTransportTypeAirPlay = 1634300528,
+    kAudioDeviceTransportTypeAVB = 1700886114,
+    kAudioDeviceTransportTypeThunderbolt = 1953002862,
+    _,
+};
+pub const kAudioDevicePropertyConfigurationApplication = @enumToInt(enum_unnamed_362.kAudioDevicePropertyConfigurationApplication);
+pub const kAudioDevicePropertyDeviceUID = @enumToInt(enum_unnamed_362.kAudioDevicePropertyDeviceUID);
+pub const kAudioDevicePropertyModelUID = @enumToInt(enum_unnamed_362.kAudioDevicePropertyModelUID);
+pub const kAudioDevicePropertyTransportType = @enumToInt(enum_unnamed_362.kAudioDevicePropertyTransportType);
+pub const kAudioDevicePropertyRelatedDevices = @enumToInt(enum_unnamed_362.kAudioDevicePropertyRelatedDevices);
+pub const kAudioDevicePropertyClockDomain = @enumToInt(enum_unnamed_362.kAudioDevicePropertyClockDomain);
+pub const kAudioDevicePropertyDeviceIsAlive = @enumToInt(enum_unnamed_362.kAudioDevicePropertyDeviceIsAlive);
+pub const kAudioDevicePropertyDeviceIsRunning = @enumToInt(enum_unnamed_362.kAudioDevicePropertyDeviceIsRunning);
+pub const kAudioDevicePropertyDeviceCanBeDefaultDevice = @enumToInt(enum_unnamed_362.kAudioDevicePropertyDeviceCanBeDefaultDevice);
+pub const kAudioDevicePropertyDeviceCanBeDefaultSystemDevice = @enumToInt(enum_unnamed_362.kAudioDevicePropertyDeviceCanBeDefaultSystemDevice);
+pub const kAudioDevicePropertyLatency = @enumToInt(enum_unnamed_362.kAudioDevicePropertyLatency);
+pub const kAudioDevicePropertyStreams = @enumToInt(enum_unnamed_362.kAudioDevicePropertyStreams);
+pub const kAudioObjectPropertyControlList = @enumToInt(enum_unnamed_362.kAudioObjectPropertyControlList);
+pub const kAudioDevicePropertySafetyOffset = @enumToInt(enum_unnamed_362.kAudioDevicePropertySafetyOffset);
+pub const kAudioDevicePropertyNominalSampleRate = @enumToInt(enum_unnamed_362.kAudioDevicePropertyNominalSampleRate);
+pub const kAudioDevicePropertyAvailableNominalSampleRates = @enumToInt(enum_unnamed_362.kAudioDevicePropertyAvailableNominalSampleRates);
+pub const kAudioDevicePropertyIcon = @enumToInt(enum_unnamed_362.kAudioDevicePropertyIcon);
+pub const kAudioDevicePropertyIsHidden = @enumToInt(enum_unnamed_362.kAudioDevicePropertyIsHidden);
+pub const kAudioDevicePropertyPreferredChannelsForStereo = @enumToInt(enum_unnamed_362.kAudioDevicePropertyPreferredChannelsForStereo);
+pub const kAudioDevicePropertyPreferredChannelLayout = @enumToInt(enum_unnamed_362.kAudioDevicePropertyPreferredChannelLayout);
+const enum_unnamed_362 = extern enum(c_int) {
+    kAudioDevicePropertyConfigurationApplication = 1667330160,
+    kAudioDevicePropertyDeviceUID = 1969841184,
+    kAudioDevicePropertyModelUID = 1836411236,
+    kAudioDevicePropertyTransportType = 1953653102,
+    kAudioDevicePropertyRelatedDevices = 1634429294,
+    kAudioDevicePropertyClockDomain = 1668049764,
+    kAudioDevicePropertyDeviceIsAlive = 1818850926,
+    kAudioDevicePropertyDeviceIsRunning = 1735354734,
+    kAudioDevicePropertyDeviceCanBeDefaultDevice = 1684434036,
+    kAudioDevicePropertyDeviceCanBeDefaultSystemDevice = 1936092276,
+    kAudioDevicePropertyLatency = 1819569763,
+    kAudioDevicePropertyStreams = 1937009955,
+    kAudioObjectPropertyControlList = 1668575852,
+    kAudioDevicePropertySafetyOffset = 1935763060,
+    kAudioDevicePropertyNominalSampleRate = 1853059700,
+    kAudioDevicePropertyAvailableNominalSampleRates = 1853059619,
+    kAudioDevicePropertyIcon = 1768124270,
+    kAudioDevicePropertyIsHidden = 1751737454,
+    kAudioDevicePropertyPreferredChannelsForStereo = 1684236338,
+    kAudioDevicePropertyPreferredChannelLayout = 1936879204,
+    _,
+};
+pub const kAudioClockDeviceClassID = @enumToInt(enum_unnamed_363.kAudioClockDeviceClassID);
+const enum_unnamed_363 = extern enum(c_int) {
+    kAudioClockDeviceClassID = 1633905771,
+    _,
+};
+pub const kAudioClockDevicePropertyDeviceUID = @enumToInt(enum_unnamed_364.kAudioClockDevicePropertyDeviceUID);
+pub const kAudioClockDevicePropertyTransportType = @enumToInt(enum_unnamed_364.kAudioClockDevicePropertyTransportType);
+pub const kAudioClockDevicePropertyClockDomain = @enumToInt(enum_unnamed_364.kAudioClockDevicePropertyClockDomain);
+pub const kAudioClockDevicePropertyDeviceIsAlive = @enumToInt(enum_unnamed_364.kAudioClockDevicePropertyDeviceIsAlive);
+pub const kAudioClockDevicePropertyDeviceIsRunning = @enumToInt(enum_unnamed_364.kAudioClockDevicePropertyDeviceIsRunning);
+pub const kAudioClockDevicePropertyLatency = @enumToInt(enum_unnamed_364.kAudioClockDevicePropertyLatency);
+pub const kAudioClockDevicePropertyControlList = @enumToInt(enum_unnamed_364.kAudioClockDevicePropertyControlList);
+pub const kAudioClockDevicePropertyNominalSampleRate = @enumToInt(enum_unnamed_364.kAudioClockDevicePropertyNominalSampleRate);
+pub const kAudioClockDevicePropertyAvailableNominalSampleRates = @enumToInt(enum_unnamed_364.kAudioClockDevicePropertyAvailableNominalSampleRates);
+const enum_unnamed_364 = extern enum(c_int) {
+    kAudioClockDevicePropertyDeviceUID = 1668639076,
+    kAudioClockDevicePropertyTransportType = 1953653102,
+    kAudioClockDevicePropertyClockDomain = 1668049764,
+    kAudioClockDevicePropertyDeviceIsAlive = 1818850926,
+    kAudioClockDevicePropertyDeviceIsRunning = 1735354734,
+    kAudioClockDevicePropertyLatency = 1819569763,
+    kAudioClockDevicePropertyControlList = 1668575852,
+    kAudioClockDevicePropertyNominalSampleRate = 1853059700,
+    kAudioClockDevicePropertyAvailableNominalSampleRates = 1853059619,
+    _,
+};
+pub const kAudioEndPointDeviceClassID = @enumToInt(enum_unnamed_365.kAudioEndPointDeviceClassID);
+const enum_unnamed_365 = extern enum(c_int) {
+    kAudioEndPointDeviceClassID = 1701078390,
+    _,
+};
+pub const kAudioEndPointDevicePropertyComposition = @enumToInt(enum_unnamed_366.kAudioEndPointDevicePropertyComposition);
+pub const kAudioEndPointDevicePropertyEndPointList = @enumToInt(enum_unnamed_366.kAudioEndPointDevicePropertyEndPointList);
+pub const kAudioEndPointDevicePropertyIsPrivate = @enumToInt(enum_unnamed_366.kAudioEndPointDevicePropertyIsPrivate);
+const enum_unnamed_366 = extern enum(c_int) {
+    kAudioEndPointDevicePropertyComposition = 1633906541,
+    kAudioEndPointDevicePropertyEndPointList = 1634169456,
+    kAudioEndPointDevicePropertyIsPrivate = 1886546294,
+    _,
+};
+pub const kAudioEndPointClassID = @enumToInt(enum_unnamed_367.kAudioEndPointClassID);
+const enum_unnamed_367 = extern enum(c_int) {
+    kAudioEndPointClassID = 1701733488,
+    _,
+};
+pub const struct_AudioStreamRangedDescription = extern struct {
+    mFormat: AudioStreamBasicDescription,
+    mSampleRateRange: AudioValueRange,
+};
+pub const AudioStreamRangedDescription = struct_AudioStreamRangedDescription;
+pub const kAudioStreamClassID = @enumToInt(enum_unnamed_368.kAudioStreamClassID);
+const enum_unnamed_368 = extern enum(c_int) {
+    kAudioStreamClassID = 1634956402,
+    _,
+};
+pub const kAudioStreamTerminalTypeUnknown = @enumToInt(enum_unnamed_369.kAudioStreamTerminalTypeUnknown);
+pub const kAudioStreamTerminalTypeLine = @enumToInt(enum_unnamed_369.kAudioStreamTerminalTypeLine);
+pub const kAudioStreamTerminalTypeDigitalAudioInterface = @enumToInt(enum_unnamed_369.kAudioStreamTerminalTypeDigitalAudioInterface);
+pub const kAudioStreamTerminalTypeSpeaker = @enumToInt(enum_unnamed_369.kAudioStreamTerminalTypeSpeaker);
+pub const kAudioStreamTerminalTypeHeadphones = @enumToInt(enum_unnamed_369.kAudioStreamTerminalTypeHeadphones);
+pub const kAudioStreamTerminalTypeLFESpeaker = @enumToInt(enum_unnamed_369.kAudioStreamTerminalTypeLFESpeaker);
+pub const kAudioStreamTerminalTypeReceiverSpeaker = @enumToInt(enum_unnamed_369.kAudioStreamTerminalTypeReceiverSpeaker);
+pub const kAudioStreamTerminalTypeMicrophone = @enumToInt(enum_unnamed_369.kAudioStreamTerminalTypeMicrophone);
+pub const kAudioStreamTerminalTypeHeadsetMicrophone = @enumToInt(enum_unnamed_369.kAudioStreamTerminalTypeHeadsetMicrophone);
+pub const kAudioStreamTerminalTypeReceiverMicrophone = @enumToInt(enum_unnamed_369.kAudioStreamTerminalTypeReceiverMicrophone);
+pub const kAudioStreamTerminalTypeTTY = @enumToInt(enum_unnamed_369.kAudioStreamTerminalTypeTTY);
+pub const kAudioStreamTerminalTypeHDMI = @enumToInt(enum_unnamed_369.kAudioStreamTerminalTypeHDMI);
+pub const kAudioStreamTerminalTypeDisplayPort = @enumToInt(enum_unnamed_369.kAudioStreamTerminalTypeDisplayPort);
+const enum_unnamed_369 = extern enum(c_int) {
+    kAudioStreamTerminalTypeUnknown = 0,
+    kAudioStreamTerminalTypeLine = 1818848869,
+    kAudioStreamTerminalTypeDigitalAudioInterface = 1936745574,
+    kAudioStreamTerminalTypeSpeaker = 1936747378,
+    kAudioStreamTerminalTypeHeadphones = 1751412840,
+    kAudioStreamTerminalTypeLFESpeaker = 1818649971,
+    kAudioStreamTerminalTypeReceiverSpeaker = 1920168043,
+    kAudioStreamTerminalTypeMicrophone = 1835623282,
+    kAudioStreamTerminalTypeHeadsetMicrophone = 1752000867,
+    kAudioStreamTerminalTypeReceiverMicrophone = 1919773027,
+    kAudioStreamTerminalTypeTTY = 1953790303,
+    kAudioStreamTerminalTypeHDMI = 1751412073,
+    kAudioStreamTerminalTypeDisplayPort = 1685090932,
+    _,
+};
+pub const kAudioStreamPropertyIsActive = @enumToInt(enum_unnamed_370.kAudioStreamPropertyIsActive);
+pub const kAudioStreamPropertyDirection = @enumToInt(enum_unnamed_370.kAudioStreamPropertyDirection);
+pub const kAudioStreamPropertyTerminalType = @enumToInt(enum_unnamed_370.kAudioStreamPropertyTerminalType);
+pub const kAudioStreamPropertyStartingChannel = @enumToInt(enum_unnamed_370.kAudioStreamPropertyStartingChannel);
+pub const kAudioStreamPropertyLatency = @enumToInt(enum_unnamed_370.kAudioStreamPropertyLatency);
+pub const kAudioStreamPropertyVirtualFormat = @enumToInt(enum_unnamed_370.kAudioStreamPropertyVirtualFormat);
+pub const kAudioStreamPropertyAvailableVirtualFormats = @enumToInt(enum_unnamed_370.kAudioStreamPropertyAvailableVirtualFormats);
+pub const kAudioStreamPropertyPhysicalFormat = @enumToInt(enum_unnamed_370.kAudioStreamPropertyPhysicalFormat);
+pub const kAudioStreamPropertyAvailablePhysicalFormats = @enumToInt(enum_unnamed_370.kAudioStreamPropertyAvailablePhysicalFormats);
+const enum_unnamed_370 = extern enum(c_int) {
+    kAudioStreamPropertyIsActive = 1935762292,
+    kAudioStreamPropertyDirection = 1935960434,
+    kAudioStreamPropertyTerminalType = 1952805485,
+    kAudioStreamPropertyStartingChannel = 1935894638,
+    kAudioStreamPropertyLatency = 1819569763,
+    kAudioStreamPropertyVirtualFormat = 1936092532,
+    kAudioStreamPropertyAvailableVirtualFormats = 1936092513,
+    kAudioStreamPropertyPhysicalFormat = 1885762592,
+    kAudioStreamPropertyAvailablePhysicalFormats = 1885762657,
+    _,
+};
+pub const kAudioControlClassID = @enumToInt(enum_unnamed_371.kAudioControlClassID);
+const enum_unnamed_371 = extern enum(c_int) {
+    kAudioControlClassID = 1633907820,
+    _,
+};
+pub const kAudioControlPropertyScope = @enumToInt(enum_unnamed_372.kAudioControlPropertyScope);
+pub const kAudioControlPropertyElement = @enumToInt(enum_unnamed_372.kAudioControlPropertyElement);
+const enum_unnamed_372 = extern enum(c_int) {
+    kAudioControlPropertyScope = 1668506480,
+    kAudioControlPropertyElement = 1667591277,
+    _,
+};
+pub const kAudioSliderControlClassID = @enumToInt(enum_unnamed_373.kAudioSliderControlClassID);
+const enum_unnamed_373 = extern enum(c_int) {
+    kAudioSliderControlClassID = 1936483442,
+    _,
+};
+pub const kAudioSliderControlPropertyValue = @enumToInt(enum_unnamed_374.kAudioSliderControlPropertyValue);
+pub const kAudioSliderControlPropertyRange = @enumToInt(enum_unnamed_374.kAudioSliderControlPropertyRange);
+const enum_unnamed_374 = extern enum(c_int) {
+    kAudioSliderControlPropertyValue = 1935962742,
+    kAudioSliderControlPropertyRange = 1935962738,
+    _,
+};
+pub const kAudioLevelControlClassID = @enumToInt(enum_unnamed_375.kAudioLevelControlClassID);
+pub const kAudioVolumeControlClassID = @enumToInt(enum_unnamed_375.kAudioVolumeControlClassID);
+pub const kAudioLFEVolumeControlClassID = @enumToInt(enum_unnamed_375.kAudioLFEVolumeControlClassID);
+const enum_unnamed_375 = extern enum(c_int) {
+    kAudioLevelControlClassID = 1818588780,
+    kAudioVolumeControlClassID = 1986817381,
+    kAudioLFEVolumeControlClassID = 1937072758,
+    _,
+};
+pub const kAudioLevelControlPropertyScalarValue = @enumToInt(enum_unnamed_376.kAudioLevelControlPropertyScalarValue);
+pub const kAudioLevelControlPropertyDecibelValue = @enumToInt(enum_unnamed_376.kAudioLevelControlPropertyDecibelValue);
+pub const kAudioLevelControlPropertyDecibelRange = @enumToInt(enum_unnamed_376.kAudioLevelControlPropertyDecibelRange);
+pub const kAudioLevelControlPropertyConvertScalarToDecibels = @enumToInt(enum_unnamed_376.kAudioLevelControlPropertyConvertScalarToDecibels);
+pub const kAudioLevelControlPropertyConvertDecibelsToScalar = @enumToInt(enum_unnamed_376.kAudioLevelControlPropertyConvertDecibelsToScalar);
+const enum_unnamed_376 = extern enum(c_int) {
+    kAudioLevelControlPropertyScalarValue = 1818456950,
+    kAudioLevelControlPropertyDecibelValue = 1818453110,
+    kAudioLevelControlPropertyDecibelRange = 1818453106,
+    kAudioLevelControlPropertyConvertScalarToDecibels = 1818456932,
+    kAudioLevelControlPropertyConvertDecibelsToScalar = 1818453107,
+    _,
+};
+pub const kAudioBooleanControlClassID = @enumToInt(enum_unnamed_377.kAudioBooleanControlClassID);
+pub const kAudioMuteControlClassID = @enumToInt(enum_unnamed_377.kAudioMuteControlClassID);
+pub const kAudioSoloControlClassID = @enumToInt(enum_unnamed_377.kAudioSoloControlClassID);
+pub const kAudioJackControlClassID = @enumToInt(enum_unnamed_377.kAudioJackControlClassID);
+pub const kAudioLFEMuteControlClassID = @enumToInt(enum_unnamed_377.kAudioLFEMuteControlClassID);
+pub const kAudioPhantomPowerControlClassID = @enumToInt(enum_unnamed_377.kAudioPhantomPowerControlClassID);
+pub const kAudioPhaseInvertControlClassID = @enumToInt(enum_unnamed_377.kAudioPhaseInvertControlClassID);
+pub const kAudioClipLightControlClassID = @enumToInt(enum_unnamed_377.kAudioClipLightControlClassID);
+pub const kAudioTalkbackControlClassID = @enumToInt(enum_unnamed_377.kAudioTalkbackControlClassID);
+pub const kAudioListenbackControlClassID = @enumToInt(enum_unnamed_377.kAudioListenbackControlClassID);
+const enum_unnamed_377 = extern enum(c_int) {
+    kAudioBooleanControlClassID = 1953458028,
+    kAudioMuteControlClassID = 1836414053,
+    kAudioSoloControlClassID = 1936682095,
+    kAudioJackControlClassID = 1784767339,
+    kAudioLFEMuteControlClassID = 1937072749,
+    kAudioPhantomPowerControlClassID = 1885888878,
+    kAudioPhaseInvertControlClassID = 1885893481,
+    kAudioClipLightControlClassID = 1668049264,
+    kAudioTalkbackControlClassID = 1952541794,
+    kAudioListenbackControlClassID = 1819504226,
+    _,
+};
+pub const kAudioBooleanControlPropertyValue = @enumToInt(enum_unnamed_378.kAudioBooleanControlPropertyValue);
+const enum_unnamed_378 = extern enum(c_int) {
+    kAudioBooleanControlPropertyValue = 1650685548,
+    _,
+};
+pub const kAudioSelectorControlClassID = @enumToInt(enum_unnamed_379.kAudioSelectorControlClassID);
+pub const kAudioDataSourceControlClassID = @enumToInt(enum_unnamed_379.kAudioDataSourceControlClassID);
+pub const kAudioDataDestinationControlClassID = @enumToInt(enum_unnamed_379.kAudioDataDestinationControlClassID);
+pub const kAudioClockSourceControlClassID = @enumToInt(enum_unnamed_379.kAudioClockSourceControlClassID);
+pub const kAudioLineLevelControlClassID = @enumToInt(enum_unnamed_379.kAudioLineLevelControlClassID);
+pub const kAudioHighPassFilterControlClassID = @enumToInt(enum_unnamed_379.kAudioHighPassFilterControlClassID);
+const enum_unnamed_379 = extern enum(c_int) {
+    kAudioSelectorControlClassID = 1936483188,
+    kAudioDataSourceControlClassID = 1685287523,
+    kAudioDataDestinationControlClassID = 1684370292,
+    kAudioClockSourceControlClassID = 1668047723,
+    kAudioLineLevelControlClassID = 1852601964,
+    kAudioHighPassFilterControlClassID = 1751740518,
+    _,
+};
+pub const kAudioSelectorControlPropertyCurrentItem = @enumToInt(enum_unnamed_380.kAudioSelectorControlPropertyCurrentItem);
+pub const kAudioSelectorControlPropertyAvailableItems = @enumToInt(enum_unnamed_380.kAudioSelectorControlPropertyAvailableItems);
+pub const kAudioSelectorControlPropertyItemName = @enumToInt(enum_unnamed_380.kAudioSelectorControlPropertyItemName);
+pub const kAudioSelectorControlPropertyItemKind = @enumToInt(enum_unnamed_380.kAudioSelectorControlPropertyItemKind);
+const enum_unnamed_380 = extern enum(c_int) {
+    kAudioSelectorControlPropertyCurrentItem = 1935893353,
+    kAudioSelectorControlPropertyAvailableItems = 1935892841,
+    kAudioSelectorControlPropertyItemName = 1935894894,
+    kAudioSelectorControlPropertyItemKind = 1668049771,
+    _,
+};
+pub const kAudioSelectorControlItemKindSpacer = @enumToInt(enum_unnamed_381.kAudioSelectorControlItemKindSpacer);
+const enum_unnamed_381 = extern enum(c_int) {
+    kAudioSelectorControlItemKindSpacer = 1936745330,
+    _,
+};
+pub const kAudioClockSourceItemKindInternal = @enumToInt(enum_unnamed_382.kAudioClockSourceItemKindInternal);
+const enum_unnamed_382 = extern enum(c_int) {
+    kAudioClockSourceItemKindInternal = 1768846368,
+    _,
+};
+pub const kAudioStereoPanControlClassID = @enumToInt(enum_unnamed_383.kAudioStereoPanControlClassID);
+const enum_unnamed_383 = extern enum(c_int) {
+    kAudioStereoPanControlClassID = 1936744814,
+    _,
+};
+pub const kAudioStereoPanControlPropertyValue = @enumToInt(enum_unnamed_384.kAudioStereoPanControlPropertyValue);
+pub const kAudioStereoPanControlPropertyPanningChannels = @enumToInt(enum_unnamed_384.kAudioStereoPanControlPropertyPanningChannels);
+const enum_unnamed_384 = extern enum(c_int) {
+    kAudioStereoPanControlPropertyValue = 1936745334,
+    kAudioStereoPanControlPropertyPanningChannels = 1936745315,
+    _,
+};
+pub const kAudioObjectSystemObject = @enumToInt(enum_unnamed_385.kAudioObjectSystemObject);
+const enum_unnamed_385 = extern enum(c_int) {
+    kAudioObjectSystemObject = 1,
+    _,
+};
+pub const AudioObjectPropertyListenerProc = ?fn (AudioObjectID, UInt32, [*c]const AudioObjectPropertyAddress, ?*c_void) callconv(.C) OSStatus;
+pub const AudioObjectPropertyListenerBlock = @compileError("unable to resolve typedef child type");
+pub const kAudioObjectPropertyCreator = @enumToInt(enum_unnamed_386.kAudioObjectPropertyCreator);
+pub const kAudioObjectPropertyListenerAdded = @enumToInt(enum_unnamed_386.kAudioObjectPropertyListenerAdded);
+pub const kAudioObjectPropertyListenerRemoved = @enumToInt(enum_unnamed_386.kAudioObjectPropertyListenerRemoved);
+const enum_unnamed_386 = extern enum(c_int) {
+    kAudioObjectPropertyCreator = 1869638759,
+    kAudioObjectPropertyListenerAdded = 1818850145,
+    kAudioObjectPropertyListenerRemoved = 1818850162,
+    _,
+};
+pub extern fn AudioObjectShow(inObjectID: AudioObjectID) void;
+pub extern fn AudioObjectHasProperty(inObjectID: AudioObjectID, inAddress: [*c]const AudioObjectPropertyAddress) Boolean;
+pub extern fn AudioObjectIsPropertySettable(inObjectID: AudioObjectID, inAddress: [*c]const AudioObjectPropertyAddress, outIsSettable: [*c]Boolean) OSStatus;
+pub extern fn AudioObjectGetPropertyDataSize(inObjectID: AudioObjectID, inAddress: [*c]const AudioObjectPropertyAddress, inQualifierDataSize: UInt32, inQualifierData: ?*const c_void, outDataSize: [*c]UInt32) OSStatus;
+pub extern fn AudioObjectGetPropertyData(inObjectID: AudioObjectID, inAddress: [*c]const AudioObjectPropertyAddress, inQualifierDataSize: UInt32, inQualifierData: ?*const c_void, ioDataSize: [*c]UInt32, outData: ?*c_void) OSStatus;
+pub extern fn AudioObjectSetPropertyData(inObjectID: AudioObjectID, inAddress: [*c]const AudioObjectPropertyAddress, inQualifierDataSize: UInt32, inQualifierData: ?*const c_void, inDataSize: UInt32, inData: ?*const c_void) OSStatus;
+pub extern fn AudioObjectAddPropertyListener(inObjectID: AudioObjectID, inAddress: [*c]const AudioObjectPropertyAddress, inListener: AudioObjectPropertyListenerProc, inClientData: ?*c_void) OSStatus;
+pub extern fn AudioObjectRemovePropertyListener(inObjectID: AudioObjectID, inAddress: [*c]const AudioObjectPropertyAddress, inListener: AudioObjectPropertyListenerProc, inClientData: ?*c_void) OSStatus;
+pub extern fn AudioObjectAddPropertyListenerBlock(inObjectID: AudioObjectID, inAddress: [*c]const AudioObjectPropertyAddress, inDispatchQueue: dispatch_queue_t, inListener: AudioObjectPropertyListenerBlock) OSStatus;
+pub extern fn AudioObjectRemovePropertyListenerBlock(inObjectID: AudioObjectID, inAddress: [*c]const AudioObjectPropertyAddress, inDispatchQueue: dispatch_queue_t, inListener: AudioObjectPropertyListenerBlock) OSStatus;
+pub const kAudioSystemObjectClassID = @enumToInt(enum_unnamed_387.kAudioSystemObjectClassID);
+const enum_unnamed_387 = extern enum(c_int) {
+    kAudioSystemObjectClassID = 1634957683,
+    _,
+};
+pub const AudioHardwarePowerHint = UInt32;
+pub const kAudioHardwarePowerHintNone = @enumToInt(enum_unnamed_388.kAudioHardwarePowerHintNone);
+pub const kAudioHardwarePowerHintFavorSavingPower = @enumToInt(enum_unnamed_388.kAudioHardwarePowerHintFavorSavingPower);
+const enum_unnamed_388 = extern enum(c_int) {
+    kAudioHardwarePowerHintNone = 0,
+    kAudioHardwarePowerHintFavorSavingPower = 1,
+    _,
+};
+pub const kAudioHardwarePropertyDevices = @enumToInt(enum_unnamed_389.kAudioHardwarePropertyDevices);
+pub const kAudioHardwarePropertyDefaultInputDevice = @enumToInt(enum_unnamed_389.kAudioHardwarePropertyDefaultInputDevice);
+pub const kAudioHardwarePropertyDefaultOutputDevice = @enumToInt(enum_unnamed_389.kAudioHardwarePropertyDefaultOutputDevice);
+pub const kAudioHardwarePropertyDefaultSystemOutputDevice = @enumToInt(enum_unnamed_389.kAudioHardwarePropertyDefaultSystemOutputDevice);
+pub const kAudioHardwarePropertyTranslateUIDToDevice = @enumToInt(enum_unnamed_389.kAudioHardwarePropertyTranslateUIDToDevice);
+pub const kAudioHardwarePropertyMixStereoToMono = @enumToInt(enum_unnamed_389.kAudioHardwarePropertyMixStereoToMono);
+pub const kAudioHardwarePropertyPlugInList = @enumToInt(enum_unnamed_389.kAudioHardwarePropertyPlugInList);
+pub const kAudioHardwarePropertyTranslateBundleIDToPlugIn = @enumToInt(enum_unnamed_389.kAudioHardwarePropertyTranslateBundleIDToPlugIn);
+pub const kAudioHardwarePropertyTransportManagerList = @enumToInt(enum_unnamed_389.kAudioHardwarePropertyTransportManagerList);
+pub const kAudioHardwarePropertyTranslateBundleIDToTransportManager = @enumToInt(enum_unnamed_389.kAudioHardwarePropertyTranslateBundleIDToTransportManager);
+pub const kAudioHardwarePropertyBoxList = @enumToInt(enum_unnamed_389.kAudioHardwarePropertyBoxList);
+pub const kAudioHardwarePropertyTranslateUIDToBox = @enumToInt(enum_unnamed_389.kAudioHardwarePropertyTranslateUIDToBox);
+pub const kAudioHardwarePropertyClockDeviceList = @enumToInt(enum_unnamed_389.kAudioHardwarePropertyClockDeviceList);
+pub const kAudioHardwarePropertyTranslateUIDToClockDevice = @enumToInt(enum_unnamed_389.kAudioHardwarePropertyTranslateUIDToClockDevice);
+pub const kAudioHardwarePropertyProcessIsMaster = @enumToInt(enum_unnamed_389.kAudioHardwarePropertyProcessIsMaster);
+pub const kAudioHardwarePropertyIsInitingOrExiting = @enumToInt(enum_unnamed_389.kAudioHardwarePropertyIsInitingOrExiting);
+pub const kAudioHardwarePropertyUserIDChanged = @enumToInt(enum_unnamed_389.kAudioHardwarePropertyUserIDChanged);
+pub const kAudioHardwarePropertyProcessIsAudible = @enumToInt(enum_unnamed_389.kAudioHardwarePropertyProcessIsAudible);
+pub const kAudioHardwarePropertySleepingIsAllowed = @enumToInt(enum_unnamed_389.kAudioHardwarePropertySleepingIsAllowed);
+pub const kAudioHardwarePropertyUnloadingIsAllowed = @enumToInt(enum_unnamed_389.kAudioHardwarePropertyUnloadingIsAllowed);
+pub const kAudioHardwarePropertyHogModeIsAllowed = @enumToInt(enum_unnamed_389.kAudioHardwarePropertyHogModeIsAllowed);
+pub const kAudioHardwarePropertyUserSessionIsActiveOrHeadless = @enumToInt(enum_unnamed_389.kAudioHardwarePropertyUserSessionIsActiveOrHeadless);
+pub const kAudioHardwarePropertyServiceRestarted = @enumToInt(enum_unnamed_389.kAudioHardwarePropertyServiceRestarted);
+pub const kAudioHardwarePropertyPowerHint = @enumToInt(enum_unnamed_389.kAudioHardwarePropertyPowerHint);
+const enum_unnamed_389 = extern enum(c_int) {
+    kAudioHardwarePropertyDevices = 1684370979,
+    kAudioHardwarePropertyDefaultInputDevice = 1682533920,
+    kAudioHardwarePropertyDefaultOutputDevice = 1682929012,
+    kAudioHardwarePropertyDefaultSystemOutputDevice = 1934587252,
+    kAudioHardwarePropertyTranslateUIDToDevice = 1969841252,
+    kAudioHardwarePropertyMixStereoToMono = 1937010031,
+    kAudioHardwarePropertyPlugInList = 1886152483,
+    kAudioHardwarePropertyTranslateBundleIDToPlugIn = 1651074160,
+    kAudioHardwarePropertyTransportManagerList = 1953326883,
+    kAudioHardwarePropertyTranslateBundleIDToTransportManager = 1953325673,
+    kAudioHardwarePropertyBoxList = 1651472419,
+    kAudioHardwarePropertyTranslateUIDToBox = 1969841250,
+    kAudioHardwarePropertyClockDeviceList = 1668049699,
+    kAudioHardwarePropertyTranslateUIDToClockDevice = 1969841251,
+    kAudioHardwarePropertyProcessIsMaster = 1835103092,
+    kAudioHardwarePropertyIsInitingOrExiting = 1768845172,
+    kAudioHardwarePropertyUserIDChanged = 1702193508,
+    kAudioHardwarePropertyProcessIsAudible = 1886221684,
+    kAudioHardwarePropertySleepingIsAllowed = 1936483696,
+    kAudioHardwarePropertyUnloadingIsAllowed = 1970170980,
+    kAudioHardwarePropertyHogModeIsAllowed = 1752131442,
+    kAudioHardwarePropertyUserSessionIsActiveOrHeadless = 1970496882,
+    kAudioHardwarePropertyServiceRestarted = 1936880500,
+    kAudioHardwarePropertyPowerHint = 1886353256,
+    _,
+};
+pub extern fn AudioHardwareUnload() OSStatus;
+pub extern fn AudioHardwareCreateAggregateDevice(inDescription: CFDictionaryRef, outDeviceID: [*c]AudioObjectID) OSStatus;
+pub extern fn AudioHardwareDestroyAggregateDevice(inDeviceID: AudioObjectID) OSStatus;
+pub const kAudioPlugInCreateAggregateDevice = @enumToInt(enum_unnamed_390.kAudioPlugInCreateAggregateDevice);
+pub const kAudioPlugInDestroyAggregateDevice = @enumToInt(enum_unnamed_390.kAudioPlugInDestroyAggregateDevice);
+const enum_unnamed_390 = extern enum(c_int) {
+    kAudioPlugInCreateAggregateDevice = 1667327847,
+    kAudioPlugInDestroyAggregateDevice = 1684105063,
+    _,
+};
+pub const kAudioTransportManagerCreateEndPointDevice = @enumToInt(enum_unnamed_391.kAudioTransportManagerCreateEndPointDevice);
+pub const kAudioTransportManagerDestroyEndPointDevice = @enumToInt(enum_unnamed_391.kAudioTransportManagerDestroyEndPointDevice);
+const enum_unnamed_391 = extern enum(c_int) {
+    kAudioTransportManagerCreateEndPointDevice = 1667523958,
+    kAudioTransportManagerDestroyEndPointDevice = 1684301174,
+    _,
+};
+pub const AudioDeviceIOProc = ?fn (AudioObjectID, [*c]const AudioTimeStamp, [*c]const AudioBufferList, [*c]const AudioTimeStamp, [*c]AudioBufferList, [*c]const AudioTimeStamp, ?*c_void) callconv(.C) OSStatus;
+pub const AudioDeviceIOBlock = @compileError("unable to resolve typedef child type");
+pub const AudioDeviceIOProcID = AudioDeviceIOProc;
+pub const struct_AudioHardwareIOProcStreamUsage = extern struct {
+    mIOProc: ?*c_void,
+    mNumberStreams: UInt32,
+    mStreamIsOn: [1]UInt32,
+};
+pub const AudioHardwareIOProcStreamUsage = struct_AudioHardwareIOProcStreamUsage;
+pub const kAudioDeviceStartTimeIsInputFlag = @enumToInt(enum_unnamed_392.kAudioDeviceStartTimeIsInputFlag);
+pub const kAudioDeviceStartTimeDontConsultDeviceFlag = @enumToInt(enum_unnamed_392.kAudioDeviceStartTimeDontConsultDeviceFlag);
+pub const kAudioDeviceStartTimeDontConsultHALFlag = @enumToInt(enum_unnamed_392.kAudioDeviceStartTimeDontConsultHALFlag);
+const enum_unnamed_392 = extern enum(c_int) {
+    kAudioDeviceStartTimeIsInputFlag = 1,
+    kAudioDeviceStartTimeDontConsultDeviceFlag = 2,
+    kAudioDeviceStartTimeDontConsultHALFlag = 4,
+    _,
+};
+pub const kAudioDevicePropertyPlugIn = @enumToInt(enum_unnamed_393.kAudioDevicePropertyPlugIn);
+pub const kAudioDevicePropertyDeviceHasChanged = @enumToInt(enum_unnamed_393.kAudioDevicePropertyDeviceHasChanged);
+pub const kAudioDevicePropertyDeviceIsRunningSomewhere = @enumToInt(enum_unnamed_393.kAudioDevicePropertyDeviceIsRunningSomewhere);
+pub const kAudioDeviceProcessorOverload = @enumToInt(enum_unnamed_393.kAudioDeviceProcessorOverload);
+pub const kAudioDevicePropertyIOStoppedAbnormally = @enumToInt(enum_unnamed_393.kAudioDevicePropertyIOStoppedAbnormally);
+pub const kAudioDevicePropertyHogMode = @enumToInt(enum_unnamed_393.kAudioDevicePropertyHogMode);
+pub const kAudioDevicePropertyBufferFrameSize = @enumToInt(enum_unnamed_393.kAudioDevicePropertyBufferFrameSize);
+pub const kAudioDevicePropertyBufferFrameSizeRange = @enumToInt(enum_unnamed_393.kAudioDevicePropertyBufferFrameSizeRange);
+pub const kAudioDevicePropertyUsesVariableBufferFrameSizes = @enumToInt(enum_unnamed_393.kAudioDevicePropertyUsesVariableBufferFrameSizes);
+pub const kAudioDevicePropertyIOCycleUsage = @enumToInt(enum_unnamed_393.kAudioDevicePropertyIOCycleUsage);
+pub const kAudioDevicePropertyStreamConfiguration = @enumToInt(enum_unnamed_393.kAudioDevicePropertyStreamConfiguration);
+pub const kAudioDevicePropertyIOProcStreamUsage = @enumToInt(enum_unnamed_393.kAudioDevicePropertyIOProcStreamUsage);
+pub const kAudioDevicePropertyActualSampleRate = @enumToInt(enum_unnamed_393.kAudioDevicePropertyActualSampleRate);
+pub const kAudioDevicePropertyClockDevice = @enumToInt(enum_unnamed_393.kAudioDevicePropertyClockDevice);
+const enum_unnamed_393 = extern enum(c_int) {
+    kAudioDevicePropertyPlugIn = 1886156135,
+    kAudioDevicePropertyDeviceHasChanged = 1684629094,
+    kAudioDevicePropertyDeviceIsRunningSomewhere = 1735356005,
+    kAudioDeviceProcessorOverload = 1870030194,
+    kAudioDevicePropertyIOStoppedAbnormally = 1937010788,
+    kAudioDevicePropertyHogMode = 1869180523,
+    kAudioDevicePropertyBufferFrameSize = 1718839674,
+    kAudioDevicePropertyBufferFrameSizeRange = 1718843939,
+    kAudioDevicePropertyUsesVariableBufferFrameSizes = 1986425722,
+    kAudioDevicePropertyIOCycleUsage = 1852012899,
+    kAudioDevicePropertyStreamConfiguration = 1936482681,
+    kAudioDevicePropertyIOProcStreamUsage = 1937077093,
+    kAudioDevicePropertyActualSampleRate = 1634955892,
+    kAudioDevicePropertyClockDevice = 1634755428,
+    _,
+};
+pub const kAudioDevicePropertyJackIsConnected = @enumToInt(enum_unnamed_394.kAudioDevicePropertyJackIsConnected);
+pub const kAudioDevicePropertyVolumeScalar = @enumToInt(enum_unnamed_394.kAudioDevicePropertyVolumeScalar);
+pub const kAudioDevicePropertyVolumeDecibels = @enumToInt(enum_unnamed_394.kAudioDevicePropertyVolumeDecibels);
+pub const kAudioDevicePropertyVolumeRangeDecibels = @enumToInt(enum_unnamed_394.kAudioDevicePropertyVolumeRangeDecibels);
+pub const kAudioDevicePropertyVolumeScalarToDecibels = @enumToInt(enum_unnamed_394.kAudioDevicePropertyVolumeScalarToDecibels);
+pub const kAudioDevicePropertyVolumeDecibelsToScalar = @enumToInt(enum_unnamed_394.kAudioDevicePropertyVolumeDecibelsToScalar);
+pub const kAudioDevicePropertyStereoPan = @enumToInt(enum_unnamed_394.kAudioDevicePropertyStereoPan);
+pub const kAudioDevicePropertyStereoPanChannels = @enumToInt(enum_unnamed_394.kAudioDevicePropertyStereoPanChannels);
+pub const kAudioDevicePropertyMute = @enumToInt(enum_unnamed_394.kAudioDevicePropertyMute);
+pub const kAudioDevicePropertySolo = @enumToInt(enum_unnamed_394.kAudioDevicePropertySolo);
+pub const kAudioDevicePropertyPhantomPower = @enumToInt(enum_unnamed_394.kAudioDevicePropertyPhantomPower);
+pub const kAudioDevicePropertyPhaseInvert = @enumToInt(enum_unnamed_394.kAudioDevicePropertyPhaseInvert);
+pub const kAudioDevicePropertyClipLight = @enumToInt(enum_unnamed_394.kAudioDevicePropertyClipLight);
+pub const kAudioDevicePropertyTalkback = @enumToInt(enum_unnamed_394.kAudioDevicePropertyTalkback);
+pub const kAudioDevicePropertyListenback = @enumToInt(enum_unnamed_394.kAudioDevicePropertyListenback);
+pub const kAudioDevicePropertyDataSource = @enumToInt(enum_unnamed_394.kAudioDevicePropertyDataSource);
+pub const kAudioDevicePropertyDataSources = @enumToInt(enum_unnamed_394.kAudioDevicePropertyDataSources);
+pub const kAudioDevicePropertyDataSourceNameForIDCFString = @enumToInt(enum_unnamed_394.kAudioDevicePropertyDataSourceNameForIDCFString);
+pub const kAudioDevicePropertyDataSourceKindForID = @enumToInt(enum_unnamed_394.kAudioDevicePropertyDataSourceKindForID);
+pub const kAudioDevicePropertyClockSource = @enumToInt(enum_unnamed_394.kAudioDevicePropertyClockSource);
+pub const kAudioDevicePropertyClockSources = @enumToInt(enum_unnamed_394.kAudioDevicePropertyClockSources);
+pub const kAudioDevicePropertyClockSourceNameForIDCFString = @enumToInt(enum_unnamed_394.kAudioDevicePropertyClockSourceNameForIDCFString);
+pub const kAudioDevicePropertyClockSourceKindForID = @enumToInt(enum_unnamed_394.kAudioDevicePropertyClockSourceKindForID);
+pub const kAudioDevicePropertyPlayThru = @enumToInt(enum_unnamed_394.kAudioDevicePropertyPlayThru);
+pub const kAudioDevicePropertyPlayThruSolo = @enumToInt(enum_unnamed_394.kAudioDevicePropertyPlayThruSolo);
+pub const kAudioDevicePropertyPlayThruVolumeScalar = @enumToInt(enum_unnamed_394.kAudioDevicePropertyPlayThruVolumeScalar);
+pub const kAudioDevicePropertyPlayThruVolumeDecibels = @enumToInt(enum_unnamed_394.kAudioDevicePropertyPlayThruVolumeDecibels);
+pub const kAudioDevicePropertyPlayThruVolumeRangeDecibels = @enumToInt(enum_unnamed_394.kAudioDevicePropertyPlayThruVolumeRangeDecibels);
+pub const kAudioDevicePropertyPlayThruVolumeScalarToDecibels = @enumToInt(enum_unnamed_394.kAudioDevicePropertyPlayThruVolumeScalarToDecibels);
+pub const kAudioDevicePropertyPlayThruVolumeDecibelsToScalar = @enumToInt(enum_unnamed_394.kAudioDevicePropertyPlayThruVolumeDecibelsToScalar);
+pub const kAudioDevicePropertyPlayThruStereoPan = @enumToInt(enum_unnamed_394.kAudioDevicePropertyPlayThruStereoPan);
+pub const kAudioDevicePropertyPlayThruStereoPanChannels = @enumToInt(enum_unnamed_394.kAudioDevicePropertyPlayThruStereoPanChannels);
+pub const kAudioDevicePropertyPlayThruDestination = @enumToInt(enum_unnamed_394.kAudioDevicePropertyPlayThruDestination);
+pub const kAudioDevicePropertyPlayThruDestinations = @enumToInt(enum_unnamed_394.kAudioDevicePropertyPlayThruDestinations);
+pub const kAudioDevicePropertyPlayThruDestinationNameForIDCFString = @enumToInt(enum_unnamed_394.kAudioDevicePropertyPlayThruDestinationNameForIDCFString);
+pub const kAudioDevicePropertyChannelNominalLineLevel = @enumToInt(enum_unnamed_394.kAudioDevicePropertyChannelNominalLineLevel);
+pub const kAudioDevicePropertyChannelNominalLineLevels = @enumToInt(enum_unnamed_394.kAudioDevicePropertyChannelNominalLineLevels);
+pub const kAudioDevicePropertyChannelNominalLineLevelNameForIDCFString = @enumToInt(enum_unnamed_394.kAudioDevicePropertyChannelNominalLineLevelNameForIDCFString);
+pub const kAudioDevicePropertyHighPassFilterSetting = @enumToInt(enum_unnamed_394.kAudioDevicePropertyHighPassFilterSetting);
+pub const kAudioDevicePropertyHighPassFilterSettings = @enumToInt(enum_unnamed_394.kAudioDevicePropertyHighPassFilterSettings);
+pub const kAudioDevicePropertyHighPassFilterSettingNameForIDCFString = @enumToInt(enum_unnamed_394.kAudioDevicePropertyHighPassFilterSettingNameForIDCFString);
+pub const kAudioDevicePropertySubVolumeScalar = @enumToInt(enum_unnamed_394.kAudioDevicePropertySubVolumeScalar);
+pub const kAudioDevicePropertySubVolumeDecibels = @enumToInt(enum_unnamed_394.kAudioDevicePropertySubVolumeDecibels);
+pub const kAudioDevicePropertySubVolumeRangeDecibels = @enumToInt(enum_unnamed_394.kAudioDevicePropertySubVolumeRangeDecibels);
+pub const kAudioDevicePropertySubVolumeScalarToDecibels = @enumToInt(enum_unnamed_394.kAudioDevicePropertySubVolumeScalarToDecibels);
+pub const kAudioDevicePropertySubVolumeDecibelsToScalar = @enumToInt(enum_unnamed_394.kAudioDevicePropertySubVolumeDecibelsToScalar);
+pub const kAudioDevicePropertySubMute = @enumToInt(enum_unnamed_394.kAudioDevicePropertySubMute);
+const enum_unnamed_394 = extern enum(c_int) {
+    kAudioDevicePropertyJackIsConnected = 1784767339,
+    kAudioDevicePropertyVolumeScalar = 1987013741,
+    kAudioDevicePropertyVolumeDecibels = 1987013732,
+    kAudioDevicePropertyVolumeRangeDecibels = 1986290211,
+    kAudioDevicePropertyVolumeScalarToDecibels = 1983013986,
+    kAudioDevicePropertyVolumeDecibelsToScalar = 1684157046,
+    kAudioDevicePropertyStereoPan = 1936744814,
+    kAudioDevicePropertyStereoPanChannels = 1936748067,
+    kAudioDevicePropertyMute = 1836414053,
+    kAudioDevicePropertySolo = 1936682095,
+    kAudioDevicePropertyPhantomPower = 1885888878,
+    kAudioDevicePropertyPhaseInvert = 1885893481,
+    kAudioDevicePropertyClipLight = 1668049264,
+    kAudioDevicePropertyTalkback = 1952541794,
+    kAudioDevicePropertyListenback = 1819504226,
+    kAudioDevicePropertyDataSource = 1936945763,
+    kAudioDevicePropertyDataSources = 1936941859,
+    kAudioDevicePropertyDataSourceNameForIDCFString = 1819501422,
+    kAudioDevicePropertyDataSourceKindForID = 1936941931,
+    kAudioDevicePropertyClockSource = 1668510307,
+    kAudioDevicePropertyClockSources = 1668506403,
+    kAudioDevicePropertyClockSourceNameForIDCFString = 1818456942,
+    kAudioDevicePropertyClockSourceKindForID = 1668506475,
+    kAudioDevicePropertyPlayThru = 1953002101,
+    kAudioDevicePropertyPlayThruSolo = 1953002099,
+    kAudioDevicePropertyPlayThruVolumeScalar = 1836479331,
+    kAudioDevicePropertyPlayThruVolumeDecibels = 1836475490,
+    kAudioDevicePropertyPlayThruVolumeRangeDecibels = 1836475427,
+    kAudioDevicePropertyPlayThruVolumeScalarToDecibels = 1836462692,
+    kAudioDevicePropertyPlayThruVolumeDecibelsToScalar = 1836462707,
+    kAudioDevicePropertyPlayThruStereoPan = 1836281966,
+    kAudioDevicePropertyPlayThruStereoPanChannels = 1836281891,
+    kAudioDevicePropertyPlayThruDestination = 1835295859,
+    kAudioDevicePropertyPlayThruDestinations = 1835295779,
+    kAudioDevicePropertyPlayThruDestinationNameForIDCFString = 1835295843,
+    kAudioDevicePropertyChannelNominalLineLevel = 1852601964,
+    kAudioDevicePropertyChannelNominalLineLevels = 1852601891,
+    kAudioDevicePropertyChannelNominalLineLevelNameForIDCFString = 1818455660,
+    kAudioDevicePropertyHighPassFilterSetting = 1751740518,
+    kAudioDevicePropertyHighPassFilterSettings = 1751740451,
+    kAudioDevicePropertyHighPassFilterSettingNameForIDCFString = 1751740524,
+    kAudioDevicePropertySubVolumeScalar = 1937140845,
+    kAudioDevicePropertySubVolumeDecibels = 1937140836,
+    kAudioDevicePropertySubVolumeRangeDecibels = 1937138723,
+    kAudioDevicePropertySubVolumeScalarToDecibels = 1937125988,
+    kAudioDevicePropertySubVolumeDecibelsToScalar = 1935946358,
+    kAudioDevicePropertySubMute = 1936553332,
+    _,
+};
+pub extern fn AudioDeviceCreateIOProcID(inDevice: AudioObjectID, inProc: AudioDeviceIOProc, inClientData: ?*c_void, outIOProcID: [*c]AudioDeviceIOProcID) OSStatus;
+pub extern fn AudioDeviceCreateIOProcIDWithBlock(outIOProcID: [*c]AudioDeviceIOProcID, inDevice: AudioObjectID, inDispatchQueue: dispatch_queue_t, inIOBlock: AudioDeviceIOBlock) OSStatus;
+pub extern fn AudioDeviceDestroyIOProcID(inDevice: AudioObjectID, inIOProcID: AudioDeviceIOProcID) OSStatus;
+pub extern fn AudioDeviceStart(inDevice: AudioObjectID, inProcID: AudioDeviceIOProcID) OSStatus;
+pub extern fn AudioDeviceStartAtTime(inDevice: AudioObjectID, inProcID: AudioDeviceIOProcID, ioRequestedStartTime: [*c]AudioTimeStamp, inFlags: UInt32) OSStatus;
+pub extern fn AudioDeviceStop(inDevice: AudioObjectID, inProcID: AudioDeviceIOProcID) OSStatus;
+pub extern fn AudioDeviceGetCurrentTime(inDevice: AudioObjectID, outTime: [*c]AudioTimeStamp) OSStatus;
+pub extern fn AudioDeviceTranslateTime(inDevice: AudioObjectID, inTime: [*c]const AudioTimeStamp, outTime: [*c]AudioTimeStamp) OSStatus;
+pub extern fn AudioDeviceGetNearestStartTime(inDevice: AudioObjectID, ioRequestedStartTime: [*c]AudioTimeStamp, inFlags: UInt32) OSStatus;
+pub const kAudioAggregateDeviceClassID = @enumToInt(enum_unnamed_395.kAudioAggregateDeviceClassID);
+const enum_unnamed_395 = extern enum(c_int) {
+    kAudioAggregateDeviceClassID = 1633773415,
+    _,
+};
+pub const kAudioAggregateDevicePropertyFullSubDeviceList = @enumToInt(enum_unnamed_396.kAudioAggregateDevicePropertyFullSubDeviceList);
+pub const kAudioAggregateDevicePropertyActiveSubDeviceList = @enumToInt(enum_unnamed_396.kAudioAggregateDevicePropertyActiveSubDeviceList);
+pub const kAudioAggregateDevicePropertyComposition = @enumToInt(enum_unnamed_396.kAudioAggregateDevicePropertyComposition);
+pub const kAudioAggregateDevicePropertyMasterSubDevice = @enumToInt(enum_unnamed_396.kAudioAggregateDevicePropertyMasterSubDevice);
+pub const kAudioAggregateDevicePropertyClockDevice = @enumToInt(enum_unnamed_396.kAudioAggregateDevicePropertyClockDevice);
+const enum_unnamed_396 = extern enum(c_int) {
+    kAudioAggregateDevicePropertyFullSubDeviceList = 1735554416,
+    kAudioAggregateDevicePropertyActiveSubDeviceList = 1634169456,
+    kAudioAggregateDevicePropertyComposition = 1633906541,
+    kAudioAggregateDevicePropertyMasterSubDevice = 1634562932,
+    kAudioAggregateDevicePropertyClockDevice = 1634755428,
+    _,
+};
+pub const kAudioSubDeviceClassID = @enumToInt(enum_unnamed_397.kAudioSubDeviceClassID);
+const enum_unnamed_397 = extern enum(c_int) {
+    kAudioSubDeviceClassID = 1634956642,
+    _,
+};
+pub const kAudioSubDeviceDriftCompensationMinQuality = @enumToInt(enum_unnamed_398.kAudioSubDeviceDriftCompensationMinQuality);
+pub const kAudioSubDeviceDriftCompensationLowQuality = @enumToInt(enum_unnamed_398.kAudioSubDeviceDriftCompensationLowQuality);
+pub const kAudioSubDeviceDriftCompensationMediumQuality = @enumToInt(enum_unnamed_398.kAudioSubDeviceDriftCompensationMediumQuality);
+pub const kAudioSubDeviceDriftCompensationHighQuality = @enumToInt(enum_unnamed_398.kAudioSubDeviceDriftCompensationHighQuality);
+pub const kAudioSubDeviceDriftCompensationMaxQuality = @enumToInt(enum_unnamed_398.kAudioSubDeviceDriftCompensationMaxQuality);
+const enum_unnamed_398 = extern enum(c_int) {
+    kAudioSubDeviceDriftCompensationMinQuality = 0,
+    kAudioSubDeviceDriftCompensationLowQuality = 32,
+    kAudioSubDeviceDriftCompensationMediumQuality = 64,
+    kAudioSubDeviceDriftCompensationHighQuality = 96,
+    kAudioSubDeviceDriftCompensationMaxQuality = 127,
+    _,
+};
+pub const kAudioSubDevicePropertyExtraLatency = @enumToInt(enum_unnamed_399.kAudioSubDevicePropertyExtraLatency);
+pub const kAudioSubDevicePropertyDriftCompensation = @enumToInt(enum_unnamed_399.kAudioSubDevicePropertyDriftCompensation);
+pub const kAudioSubDevicePropertyDriftCompensationQuality = @enumToInt(enum_unnamed_399.kAudioSubDevicePropertyDriftCompensationQuality);
+const enum_unnamed_399 = extern enum(c_int) {
+    kAudioSubDevicePropertyExtraLatency = 2020373603,
+    kAudioSubDevicePropertyDriftCompensation = 1685218932,
+    kAudioSubDevicePropertyDriftCompensationQuality = 1685218929,
+    _,
+};
+pub const kAudioDevicePropertyScopeInput = @enumToInt(enum_unnamed_400.kAudioDevicePropertyScopeInput);
+pub const kAudioDevicePropertyScopeOutput = @enumToInt(enum_unnamed_400.kAudioDevicePropertyScopeOutput);
+pub const kAudioDevicePropertyScopePlayThrough = @enumToInt(enum_unnamed_400.kAudioDevicePropertyScopePlayThrough);
+const enum_unnamed_400 = extern enum(c_int) {
+    kAudioDevicePropertyScopeInput = 1768845428,
+    kAudioDevicePropertyScopeOutput = 1869968496,
+    kAudioDevicePropertyScopePlayThrough = 1886679669,
+    _,
+};
+pub const kAudioPropertyWildcardPropertyID = @enumToInt(enum_unnamed_401.kAudioPropertyWildcardPropertyID);
+const enum_unnamed_401 = extern enum(c_int) {
+    kAudioPropertyWildcardPropertyID = 707406378,
+    _,
+};
+pub const kAudioPropertyWildcardSection = @enumToInt(enum_unnamed_402.kAudioPropertyWildcardSection);
+const enum_unnamed_402 = extern enum(c_int) {
+    kAudioPropertyWildcardSection = 255,
+    _,
+};
+pub const kAudioPropertyWildcardChannel = @enumToInt(enum_unnamed_403.kAudioPropertyWildcardChannel);
+const enum_unnamed_403 = extern enum(c_int) {
+    kAudioPropertyWildcardChannel = 4294967295,
+    _,
+};
+pub const kAudioISubOwnerControlClassID = @enumToInt(enum_unnamed_404.kAudioISubOwnerControlClassID);
+const enum_unnamed_404 = extern enum(c_int) {
+    kAudioISubOwnerControlClassID = 1635017576,
+    _,
+};
+pub const kAudioLevelControlPropertyDecibelsToScalarTransferFunction = @enumToInt(enum_unnamed_405.kAudioLevelControlPropertyDecibelsToScalarTransferFunction);
+const enum_unnamed_405 = extern enum(c_int) {
+    kAudioLevelControlPropertyDecibelsToScalarTransferFunction = 1818457190,
+    _,
+};
+pub const AudioLevelControlTransferFunction = UInt32;
+pub const kAudioLevelControlTranferFunctionLinear = @enumToInt(enum_unnamed_406.kAudioLevelControlTranferFunctionLinear);
+pub const kAudioLevelControlTranferFunction1Over3 = @enumToInt(enum_unnamed_406.kAudioLevelControlTranferFunction1Over3);
+pub const kAudioLevelControlTranferFunction1Over2 = @enumToInt(enum_unnamed_406.kAudioLevelControlTranferFunction1Over2);
+pub const kAudioLevelControlTranferFunction3Over4 = @enumToInt(enum_unnamed_406.kAudioLevelControlTranferFunction3Over4);
+pub const kAudioLevelControlTranferFunction3Over2 = @enumToInt(enum_unnamed_406.kAudioLevelControlTranferFunction3Over2);
+pub const kAudioLevelControlTranferFunction2Over1 = @enumToInt(enum_unnamed_406.kAudioLevelControlTranferFunction2Over1);
+pub const kAudioLevelControlTranferFunction3Over1 = @enumToInt(enum_unnamed_406.kAudioLevelControlTranferFunction3Over1);
+pub const kAudioLevelControlTranferFunction4Over1 = @enumToInt(enum_unnamed_406.kAudioLevelControlTranferFunction4Over1);
+pub const kAudioLevelControlTranferFunction5Over1 = @enumToInt(enum_unnamed_406.kAudioLevelControlTranferFunction5Over1);
+pub const kAudioLevelControlTranferFunction6Over1 = @enumToInt(enum_unnamed_406.kAudioLevelControlTranferFunction6Over1);
+pub const kAudioLevelControlTranferFunction7Over1 = @enumToInt(enum_unnamed_406.kAudioLevelControlTranferFunction7Over1);
+pub const kAudioLevelControlTranferFunction8Over1 = @enumToInt(enum_unnamed_406.kAudioLevelControlTranferFunction8Over1);
+pub const kAudioLevelControlTranferFunction9Over1 = @enumToInt(enum_unnamed_406.kAudioLevelControlTranferFunction9Over1);
+pub const kAudioLevelControlTranferFunction10Over1 = @enumToInt(enum_unnamed_406.kAudioLevelControlTranferFunction10Over1);
+pub const kAudioLevelControlTranferFunction11Over1 = @enumToInt(enum_unnamed_406.kAudioLevelControlTranferFunction11Over1);
+pub const kAudioLevelControlTranferFunction12Over1 = @enumToInt(enum_unnamed_406.kAudioLevelControlTranferFunction12Over1);
+const enum_unnamed_406 = extern enum(c_int) {
+    kAudioLevelControlTranferFunctionLinear = 0,
+    kAudioLevelControlTranferFunction1Over3 = 1,
+    kAudioLevelControlTranferFunction1Over2 = 2,
+    kAudioLevelControlTranferFunction3Over4 = 3,
+    kAudioLevelControlTranferFunction3Over2 = 4,
+    kAudioLevelControlTranferFunction2Over1 = 5,
+    kAudioLevelControlTranferFunction3Over1 = 6,
+    kAudioLevelControlTranferFunction4Over1 = 7,
+    kAudioLevelControlTranferFunction5Over1 = 8,
+    kAudioLevelControlTranferFunction6Over1 = 9,
+    kAudioLevelControlTranferFunction7Over1 = 10,
+    kAudioLevelControlTranferFunction8Over1 = 11,
+    kAudioLevelControlTranferFunction9Over1 = 12,
+    kAudioLevelControlTranferFunction10Over1 = 13,
+    kAudioLevelControlTranferFunction11Over1 = 14,
+    kAudioLevelControlTranferFunction12Over1 = 15,
+    _,
+};
+pub const AudioHardwarePropertyID = AudioObjectPropertySelector;
+pub const AudioHardwarePropertyListenerProc = ?fn (AudioHardwarePropertyID, ?*c_void) callconv(.C) OSStatus;
+pub const kAudioHardwarePropertyRunLoop = @enumToInt(enum_unnamed_407.kAudioHardwarePropertyRunLoop);
+pub const kAudioHardwarePropertyDeviceForUID = @enumToInt(enum_unnamed_407.kAudioHardwarePropertyDeviceForUID);
+pub const kAudioHardwarePropertyPlugInForBundleID = @enumToInt(enum_unnamed_407.kAudioHardwarePropertyPlugInForBundleID);
+const enum_unnamed_407 = extern enum(c_int) {
+    kAudioHardwarePropertyRunLoop = 1919839344,
+    kAudioHardwarePropertyDeviceForUID = 1685416292,
+    kAudioHardwarePropertyPlugInForBundleID = 1885954665,
+    _,
+};
+pub const kAudioHardwarePropertyBootChimeVolumeScalar = @enumToInt(enum_unnamed_408.kAudioHardwarePropertyBootChimeVolumeScalar);
+pub const kAudioHardwarePropertyBootChimeVolumeDecibels = @enumToInt(enum_unnamed_408.kAudioHardwarePropertyBootChimeVolumeDecibels);
+pub const kAudioHardwarePropertyBootChimeVolumeRangeDecibels = @enumToInt(enum_unnamed_408.kAudioHardwarePropertyBootChimeVolumeRangeDecibels);
+pub const kAudioHardwarePropertyBootChimeVolumeScalarToDecibels = @enumToInt(enum_unnamed_408.kAudioHardwarePropertyBootChimeVolumeScalarToDecibels);
+pub const kAudioHardwarePropertyBootChimeVolumeDecibelsToScalar = @enumToInt(enum_unnamed_408.kAudioHardwarePropertyBootChimeVolumeDecibelsToScalar);
+pub const kAudioHardwarePropertyBootChimeVolumeDecibelsToScalarTransferFunction = @enumToInt(enum_unnamed_408.kAudioHardwarePropertyBootChimeVolumeDecibelsToScalarTransferFunction);
+const enum_unnamed_408 = extern enum(c_int) {
+    kAudioHardwarePropertyBootChimeVolumeScalar = 1650620019,
+    kAudioHardwarePropertyBootChimeVolumeDecibels = 1650620004,
+    kAudioHardwarePropertyBootChimeVolumeRangeDecibels = 1650615331,
+    kAudioHardwarePropertyBootChimeVolumeScalarToDecibels = 1651913316,
+    kAudioHardwarePropertyBootChimeVolumeDecibelsToScalar = 1650733686,
+    kAudioHardwarePropertyBootChimeVolumeDecibelsToScalarTransferFunction = 1651930214,
+    _,
+};
+pub extern fn AudioHardwareAddRunLoopSource(inRunLoopSource: CFRunLoopSourceRef) OSStatus;
+pub extern fn AudioHardwareRemoveRunLoopSource(inRunLoopSource: CFRunLoopSourceRef) OSStatus;
+pub extern fn AudioHardwareGetPropertyInfo(inPropertyID: AudioHardwarePropertyID, outSize: [*c]UInt32, outWritable: [*c]Boolean) OSStatus;
+pub extern fn AudioHardwareGetProperty(inPropertyID: AudioHardwarePropertyID, ioPropertyDataSize: [*c]UInt32, outPropertyData: ?*c_void) OSStatus;
+pub extern fn AudioHardwareSetProperty(inPropertyID: AudioHardwarePropertyID, inPropertyDataSize: UInt32, inPropertyData: ?*const c_void) OSStatus;
+pub extern fn AudioHardwareAddPropertyListener(inPropertyID: AudioHardwarePropertyID, inProc: AudioHardwarePropertyListenerProc, inClientData: ?*c_void) OSStatus;
+pub extern fn AudioHardwareRemovePropertyListener(inPropertyID: AudioHardwarePropertyID, inProc: AudioHardwarePropertyListenerProc) OSStatus;
+pub const AudioDeviceID = AudioObjectID;
+pub const AudioDevicePropertyID = AudioObjectPropertySelector;
+pub const AudioDevicePropertyListenerProc = ?fn (AudioDeviceID, UInt32, Boolean, AudioDevicePropertyID, ?*c_void) callconv(.C) OSStatus;
+pub const kAudioDeviceUnknown = @enumToInt(enum_unnamed_409.kAudioDeviceUnknown);
+const enum_unnamed_409 = extern enum(c_int) {
+    kAudioDeviceUnknown = 0,
+    _,
+};
+pub const kAudioDeviceTransportTypeAutoAggregate = @enumToInt(enum_unnamed_410.kAudioDeviceTransportTypeAutoAggregate);
+const enum_unnamed_410 = extern enum(c_int) {
+    kAudioDeviceTransportTypeAutoAggregate = 1718055536,
+    _,
+};
+pub const kAudioDevicePropertyVolumeDecibelsToScalarTransferFunction = @enumToInt(enum_unnamed_411.kAudioDevicePropertyVolumeDecibelsToScalarTransferFunction);
+pub const kAudioDevicePropertyPlayThruVolumeDecibelsToScalarTransferFunction = @enumToInt(enum_unnamed_411.kAudioDevicePropertyPlayThruVolumeDecibelsToScalarTransferFunction);
+pub const kAudioDevicePropertyDriverShouldOwniSub = @enumToInt(enum_unnamed_411.kAudioDevicePropertyDriverShouldOwniSub);
+pub const kAudioDevicePropertySubVolumeDecibelsToScalarTransferFunction = @enumToInt(enum_unnamed_411.kAudioDevicePropertySubVolumeDecibelsToScalarTransferFunction);
+const enum_unnamed_411 = extern enum(c_int) {
+    kAudioDevicePropertyVolumeDecibelsToScalarTransferFunction = 1986229350,
+    kAudioDevicePropertyPlayThruVolumeDecibelsToScalarTransferFunction = 1836479590,
+    kAudioDevicePropertyDriverShouldOwniSub = 1769174370,
+    kAudioDevicePropertySubVolumeDecibelsToScalarTransferFunction = 1937142886,
+    _,
+};
+pub const kAudioDevicePropertyDeviceName = @enumToInt(enum_unnamed_412.kAudioDevicePropertyDeviceName);
+pub const kAudioDevicePropertyDeviceNameCFString = @enumToInt(enum_unnamed_412.kAudioDevicePropertyDeviceNameCFString);
+pub const kAudioDevicePropertyDeviceManufacturer = @enumToInt(enum_unnamed_412.kAudioDevicePropertyDeviceManufacturer);
+pub const kAudioDevicePropertyDeviceManufacturerCFString = @enumToInt(enum_unnamed_412.kAudioDevicePropertyDeviceManufacturerCFString);
+pub const kAudioDevicePropertyRegisterBufferList = @enumToInt(enum_unnamed_412.kAudioDevicePropertyRegisterBufferList);
+pub const kAudioDevicePropertyBufferSize = @enumToInt(enum_unnamed_412.kAudioDevicePropertyBufferSize);
+pub const kAudioDevicePropertyBufferSizeRange = @enumToInt(enum_unnamed_412.kAudioDevicePropertyBufferSizeRange);
+pub const kAudioDevicePropertyChannelName = @enumToInt(enum_unnamed_412.kAudioDevicePropertyChannelName);
+pub const kAudioDevicePropertyChannelNameCFString = @enumToInt(enum_unnamed_412.kAudioDevicePropertyChannelNameCFString);
+pub const kAudioDevicePropertyChannelCategoryName = @enumToInt(enum_unnamed_412.kAudioDevicePropertyChannelCategoryName);
+pub const kAudioDevicePropertyChannelCategoryNameCFString = @enumToInt(enum_unnamed_412.kAudioDevicePropertyChannelCategoryNameCFString);
+pub const kAudioDevicePropertyChannelNumberName = @enumToInt(enum_unnamed_412.kAudioDevicePropertyChannelNumberName);
+pub const kAudioDevicePropertyChannelNumberNameCFString = @enumToInt(enum_unnamed_412.kAudioDevicePropertyChannelNumberNameCFString);
+pub const kAudioDevicePropertySupportsMixing = @enumToInt(enum_unnamed_412.kAudioDevicePropertySupportsMixing);
+pub const kAudioDevicePropertyStreamFormat = @enumToInt(enum_unnamed_412.kAudioDevicePropertyStreamFormat);
+pub const kAudioDevicePropertyStreamFormats = @enumToInt(enum_unnamed_412.kAudioDevicePropertyStreamFormats);
+pub const kAudioDevicePropertyStreamFormatSupported = @enumToInt(enum_unnamed_412.kAudioDevicePropertyStreamFormatSupported);
+pub const kAudioDevicePropertyStreamFormatMatch = @enumToInt(enum_unnamed_412.kAudioDevicePropertyStreamFormatMatch);
+pub const kAudioDevicePropertyDataSourceNameForID = @enumToInt(enum_unnamed_412.kAudioDevicePropertyDataSourceNameForID);
+pub const kAudioDevicePropertyClockSourceNameForID = @enumToInt(enum_unnamed_412.kAudioDevicePropertyClockSourceNameForID);
+pub const kAudioDevicePropertyPlayThruDestinationNameForID = @enumToInt(enum_unnamed_412.kAudioDevicePropertyPlayThruDestinationNameForID);
+pub const kAudioDevicePropertyChannelNominalLineLevelNameForID = @enumToInt(enum_unnamed_412.kAudioDevicePropertyChannelNominalLineLevelNameForID);
+pub const kAudioDevicePropertyHighPassFilterSettingNameForID = @enumToInt(enum_unnamed_412.kAudioDevicePropertyHighPassFilterSettingNameForID);
+const enum_unnamed_412 = extern enum(c_int) {
+    kAudioDevicePropertyDeviceName = 1851878757,
+    kAudioDevicePropertyDeviceNameCFString = 1819173229,
+    kAudioDevicePropertyDeviceManufacturer = 1835101042,
+    kAudioDevicePropertyDeviceManufacturerCFString = 1819107691,
+    kAudioDevicePropertyRegisterBufferList = 1919055206,
+    kAudioDevicePropertyBufferSize = 1651730810,
+    kAudioDevicePropertyBufferSizeRange = 1651735075,
+    kAudioDevicePropertyChannelName = 1667788397,
+    kAudioDevicePropertyChannelNameCFString = 1818454126,
+    kAudioDevicePropertyChannelCategoryName = 1667460717,
+    kAudioDevicePropertyChannelCategoryNameCFString = 1818452846,
+    kAudioDevicePropertyChannelNumberName = 1668181613,
+    kAudioDevicePropertyChannelNumberNameCFString = 1818455662,
+    kAudioDevicePropertySupportsMixing = 1835628607,
+    kAudioDevicePropertyStreamFormat = 1936092532,
+    kAudioDevicePropertyStreamFormats = 1936092451,
+    kAudioDevicePropertyStreamFormatSupported = 1936092479,
+    kAudioDevicePropertyStreamFormatMatch = 1936092525,
+    kAudioDevicePropertyDataSourceNameForID = 1936941934,
+    kAudioDevicePropertyClockSourceNameForID = 1668506478,
+    kAudioDevicePropertyPlayThruDestinationNameForID = 1835295854,
+    kAudioDevicePropertyChannelNominalLineLevelNameForID = 1668181110,
+    kAudioDevicePropertyHighPassFilterSettingNameForID = 1667787120,
+    _,
+};
+pub extern fn AudioDeviceAddIOProc(inDevice: AudioDeviceID, inProc: AudioDeviceIOProc, inClientData: ?*c_void) OSStatus;
+pub extern fn AudioDeviceRemoveIOProc(inDevice: AudioDeviceID, inProc: AudioDeviceIOProc) OSStatus;
+pub extern fn AudioDeviceRead(inDevice: AudioDeviceID, inStartTime: [*c]const AudioTimeStamp, outData: [*c]AudioBufferList) OSStatus;
+pub extern fn AudioDeviceGetPropertyInfo(inDevice: AudioDeviceID, inChannel: UInt32, isInput: Boolean, inPropertyID: AudioDevicePropertyID, outSize: [*c]UInt32, outWritable: [*c]Boolean) OSStatus;
+pub extern fn AudioDeviceGetProperty(inDevice: AudioDeviceID, inChannel: UInt32, isInput: Boolean, inPropertyID: AudioDevicePropertyID, ioPropertyDataSize: [*c]UInt32, outPropertyData: ?*c_void) OSStatus;
+pub extern fn AudioDeviceSetProperty(inDevice: AudioDeviceID, inWhen: [*c]const AudioTimeStamp, inChannel: UInt32, isInput: Boolean, inPropertyID: AudioDevicePropertyID, inPropertyDataSize: UInt32, inPropertyData: ?*const c_void) OSStatus;
+pub extern fn AudioDeviceAddPropertyListener(inDevice: AudioDeviceID, inChannel: UInt32, isInput: Boolean, inPropertyID: AudioDevicePropertyID, inProc: AudioDevicePropertyListenerProc, inClientData: ?*c_void) OSStatus;
+pub extern fn AudioDeviceRemovePropertyListener(inDevice: AudioDeviceID, inChannel: UInt32, isInput: Boolean, inPropertyID: AudioDevicePropertyID, inProc: AudioDevicePropertyListenerProc) OSStatus;
+pub const AudioStreamID = AudioObjectID;
+pub const AudioStreamPropertyListenerProc = ?fn (AudioStreamID, UInt32, AudioDevicePropertyID, ?*c_void) callconv(.C) OSStatus;
+pub const kAudioStreamUnknown = @enumToInt(enum_unnamed_413.kAudioStreamUnknown);
+const enum_unnamed_413 = extern enum(c_int) {
+    kAudioStreamUnknown = 0,
+    _,
+};
+pub const kAudioStreamPropertyOwningDevice = @enumToInt(enum_unnamed_414.kAudioStreamPropertyOwningDevice);
+pub const kAudioStreamPropertyPhysicalFormats = @enumToInt(enum_unnamed_414.kAudioStreamPropertyPhysicalFormats);
+pub const kAudioStreamPropertyPhysicalFormatSupported = @enumToInt(enum_unnamed_414.kAudioStreamPropertyPhysicalFormatSupported);
+pub const kAudioStreamPropertyPhysicalFormatMatch = @enumToInt(enum_unnamed_414.kAudioStreamPropertyPhysicalFormatMatch);
+const enum_unnamed_414 = extern enum(c_int) {
+    kAudioStreamPropertyOwningDevice = 1937007734,
+    kAudioStreamPropertyPhysicalFormats = 1885762595,
+    kAudioStreamPropertyPhysicalFormatSupported = 1885762623,
+    kAudioStreamPropertyPhysicalFormatMatch = 1885762669,
+    _,
+};
+pub extern fn AudioStreamGetPropertyInfo(inStream: AudioStreamID, inChannel: UInt32, inPropertyID: AudioDevicePropertyID, outSize: [*c]UInt32, outWritable: [*c]Boolean) OSStatus;
+pub extern fn AudioStreamGetProperty(inStream: AudioStreamID, inChannel: UInt32, inPropertyID: AudioDevicePropertyID, ioPropertyDataSize: [*c]UInt32, outPropertyData: ?*c_void) OSStatus;
+pub extern fn AudioStreamSetProperty(inStream: AudioStreamID, inWhen: [*c]const AudioTimeStamp, inChannel: UInt32, inPropertyID: AudioDevicePropertyID, inPropertyDataSize: UInt32, inPropertyData: ?*const c_void) OSStatus;
+pub extern fn AudioStreamAddPropertyListener(inStream: AudioStreamID, inChannel: UInt32, inPropertyID: AudioDevicePropertyID, inProc: AudioStreamPropertyListenerProc, inClientData: ?*c_void) OSStatus;
+pub extern fn AudioStreamRemovePropertyListener(inStream: AudioStreamID, inChannel: UInt32, inPropertyID: AudioDevicePropertyID, inProc: AudioStreamPropertyListenerProc) OSStatus;
+pub const kAudioBootChimeVolumeControlClassID = @enumToInt(enum_unnamed_415.kAudioBootChimeVolumeControlClassID);
+const enum_unnamed_415 = extern enum(c_int) {
+    kAudioBootChimeVolumeControlClassID = 1886544237,
+    _,
+};
+pub const kAudioControlPropertyVariant = @enumToInt(enum_unnamed_416.kAudioControlPropertyVariant);
+const enum_unnamed_416 = extern enum(c_int) {
+    kAudioControlPropertyVariant = 1668702578,
+    _,
+};
+pub const kAudioClockSourceControlPropertyItemKind = @enumToInt(enum_unnamed_417.kAudioClockSourceControlPropertyItemKind);
+const enum_unnamed_417 = extern enum(c_int) {
+    kAudioClockSourceControlPropertyItemKind = 1668049771,
+    _,
+};
 pub const kAudioHardwareServiceProperty_ServiceRestarted = @enumToInt(enum_unnamed_418.kAudioHardwareServiceProperty_ServiceRestarted);
 pub const kAudioHardwareServiceDeviceProperty_VirtualMasterVolume = @enumToInt(enum_unnamed_418.kAudioHardwareServiceDeviceProperty_VirtualMasterVolume);
 pub const kAudioHardwareServiceDeviceProperty_VirtualMasterBalance = @enumToInt(enum_unnamed_418.kAudioHardwareServiceDeviceProperty_VirtualMasterBalance);
@@ -12195,7 +12190,11 @@ pub const MIDINotifyBlock = @compileError("unable to resolve typedef child type"
 pub const MIDIReadProc = ?fn ([*c]const MIDIPacketList, ?*c_void, ?*c_void) callconv(.C) void;
 pub const MIDIReadBlock = @compileError("unable to resolve typedef child type");
 pub const MIDICompletionProc = ?fn ([*c]MIDISysexSendRequest) callconv(.C) void;
-pub const struct_MIDIPacket = extern struct {
+
+// NOTE: Header contains `#pragma pack(push, 4)`, but `zig translate-c` doesn't
+//       seem to notice that.
+// pub const struct_MIDIPacket = extern struct {
+pub const struct_MIDIPacket = packed struct {
     timeStamp: MIDITimeStamp,
     length: UInt16,
     data: [256]Byte,
@@ -13025,32 +13024,199 @@ pub extern fn CAClockParseMIDI(inCAClock: CAClockRef, inMIDIPacketList: [*c]cons
 pub extern fn GetNameFromSoundBank(inSoundBankRef: ?*const struct_FSRef, outName: [*c]CFStringRef) OSStatus;
 pub extern fn CopyNameFromSoundBank(inURL: CFURLRef, outName: [*c]CFStringRef) OSStatus;
 pub extern fn CopyInstrumentInfoFromSoundBank(inURL: CFURLRef, outInstrumentInfo: [*c]CFArrayRef) OSStatus;
-pub const __INTMAX_TYPE__ = @compileError("unable to translate C expr: unexpected token Id.Identifier");
-pub const __UINTMAX_TYPE__ = @compileError("unable to translate C expr: unexpected token Id.Identifier");
-pub const __PTRDIFF_TYPE__ = @compileError("unable to translate C expr: unexpected token Id.Identifier");
-pub const __INTPTR_TYPE__ = @compileError("unable to translate C expr: unexpected token Id.Identifier");
-pub const __SIZE_TYPE__ = @compileError("unable to translate C expr: unexpected token Id.Identifier");
-pub const __CHAR16_TYPE__ = @compileError("unable to translate C expr: unexpected token Id.Identifier");
-pub const __CHAR32_TYPE__ = @compileError("unable to translate C expr: unexpected token Id.Identifier");
-pub const __UINTPTR_TYPE__ = @compileError("unable to translate C expr: unexpected token Id.Identifier");
-pub const __INT8_TYPE__ = @compileError("unable to translate C expr: unexpected token Id.Identifier");
-pub const __INT64_TYPE__ = @compileError("unable to translate C expr: unexpected token Id.Identifier");
-pub const __UINT8_TYPE__ = @compileError("unable to translate C expr: unexpected token Id.Identifier");
-pub const __UINT16_TYPE__ = @compileError("unable to translate C expr: unexpected token Id.Identifier");
-pub const __UINT32_TYPE__ = @compileError("unable to translate C expr: unexpected token Id.Identifier");
-pub const __UINT64_TYPE__ = @compileError("unable to translate C expr: unexpected token Id.Identifier");
-pub const __INT_LEAST8_TYPE__ = @compileError("unable to translate C expr: unexpected token Id.Identifier");
-pub const __UINT_LEAST8_TYPE__ = @compileError("unable to translate C expr: unexpected token Id.Identifier");
-pub const __UINT_LEAST16_TYPE__ = @compileError("unable to translate C expr: unexpected token Id.Identifier");
-pub const __UINT_LEAST32_TYPE__ = @compileError("unable to translate C expr: unexpected token Id.Identifier");
-pub const __INT_LEAST64_TYPE__ = @compileError("unable to translate C expr: unexpected token Id.Identifier");
-pub const __UINT_LEAST64_TYPE__ = @compileError("unable to translate C expr: unexpected token Id.Identifier");
-pub const __INT_FAST8_TYPE__ = @compileError("unable to translate C expr: unexpected token Id.Identifier");
-pub const __UINT_FAST8_TYPE__ = @compileError("unable to translate C expr: unexpected token Id.Identifier");
-pub const __UINT_FAST16_TYPE__ = @compileError("unable to translate C expr: unexpected token Id.Identifier");
-pub const __UINT_FAST32_TYPE__ = @compileError("unable to translate C expr: unexpected token Id.Identifier");
-pub const __INT_FAST64_TYPE__ = @compileError("unable to translate C expr: unexpected token Id.Identifier");
-pub const __UINT_FAST64_TYPE__ = @compileError("unable to translate C expr: unexpected token Id.Identifier");
+pub extern fn AudioGetCurrentHostTime() UInt64;
+pub extern fn AudioGetHostClockFrequency() Float64;
+pub extern fn AudioGetHostClockMinimumTimeDelta() UInt32;
+pub extern fn AudioConvertHostTimeToNanos(inHostTime: UInt64) UInt64;
+pub extern fn AudioConvertNanosToHostTime(inNanos: UInt64) UInt64;
+pub const MIDISetupRef = MIDIObjectRef;
+pub extern fn MIDISetupCreate(outSetup: [*c]MIDISetupRef) OSStatus;
+pub extern fn MIDISetupDispose(setup: MIDISetupRef) OSStatus;
+pub extern fn MIDISetupInstall(setup: MIDISetupRef) OSStatus;
+pub extern fn MIDISetupGetCurrent(outSetup: [*c]MIDISetupRef) OSStatus;
+pub extern fn MIDISetupToData(setup: MIDISetupRef, outData: [*c]CFDataRef) OSStatus;
+pub extern fn MIDISetupFromData(data: CFDataRef, outSetup: [*c]MIDISetupRef) OSStatus;
+pub extern fn MIDIDeviceAddEntity(device: MIDIDeviceRef, name: CFStringRef, embedded: Boolean, numSourceEndpoints: ItemCount, numDestinationEndpoints: ItemCount, newEntity: [*c]MIDIEntityRef) OSStatus;
+pub extern fn MIDIDeviceRemoveEntity(device: MIDIDeviceRef, entity: MIDIEntityRef) OSStatus;
+pub extern fn MIDIEntityAddOrRemoveEndpoints(entity: MIDIEntityRef, numSourceEndpoints: ItemCount, numDestinationEndpoints: ItemCount) OSStatus;
+pub extern fn MIDISetupAddDevice(device: MIDIDeviceRef) OSStatus;
+pub extern fn MIDISetupRemoveDevice(device: MIDIDeviceRef) OSStatus;
+pub extern fn MIDISetupAddExternalDevice(device: MIDIDeviceRef) OSStatus;
+pub extern fn MIDISetupRemoveExternalDevice(device: MIDIDeviceRef) OSStatus;
+pub extern fn MIDIGetSerialPortOwner(portName: CFStringRef, outDriverName: [*c]CFStringRef) OSStatus;
+pub extern fn MIDISetSerialPortOwner(portName: CFStringRef, driverName: CFStringRef) OSStatus;
+pub extern fn MIDIGetSerialPortDrivers(outDriverNames: [*c]CFArrayRef) OSStatus;
+pub extern fn MIDIExternalDeviceCreate(name: CFStringRef, manufacturer: CFStringRef, model: CFStringRef, outDevice: [*c]MIDIDeviceRef) OSStatus;
+pub const MIDIThruConnectionRef = MIDIObjectRef;
+pub const struct_MIDIValueMap = extern struct {
+    value: [128]UInt8,
+};
+pub const MIDIValueMap = struct_MIDIValueMap;
+pub const MIDITransformType = UInt16;
+pub const kMIDITransform_None = @enumToInt(enum_unnamed_455.kMIDITransform_None);
+pub const kMIDITransform_FilterOut = @enumToInt(enum_unnamed_455.kMIDITransform_FilterOut);
+pub const kMIDITransform_MapControl = @enumToInt(enum_unnamed_455.kMIDITransform_MapControl);
+pub const kMIDITransform_Add = @enumToInt(enum_unnamed_455.kMIDITransform_Add);
+pub const kMIDITransform_Scale = @enumToInt(enum_unnamed_455.kMIDITransform_Scale);
+pub const kMIDITransform_MinValue = @enumToInt(enum_unnamed_455.kMIDITransform_MinValue);
+pub const kMIDITransform_MaxValue = @enumToInt(enum_unnamed_455.kMIDITransform_MaxValue);
+pub const kMIDITransform_MapValue = @enumToInt(enum_unnamed_455.kMIDITransform_MapValue);
+const enum_unnamed_455 = extern enum(c_int) {
+    kMIDITransform_None = 0,
+    kMIDITransform_FilterOut = 1,
+    kMIDITransform_MapControl = 2,
+    kMIDITransform_Add = 8,
+    kMIDITransform_Scale = 9,
+    kMIDITransform_MinValue = 10,
+    kMIDITransform_MaxValue = 11,
+    kMIDITransform_MapValue = 12,
+    _,
+};
+pub const kMIDIThruConnection_MaxEndpoints = @enumToInt(enum_unnamed_456.kMIDIThruConnection_MaxEndpoints);
+const enum_unnamed_456 = extern enum(c_int) {
+    kMIDIThruConnection_MaxEndpoints = 8,
+    _,
+};
+pub const MIDITransformControlType = UInt8;
+pub const kMIDIControlType_7Bit = @enumToInt(enum_unnamed_457.kMIDIControlType_7Bit);
+pub const kMIDIControlType_14Bit = @enumToInt(enum_unnamed_457.kMIDIControlType_14Bit);
+pub const kMIDIControlType_7BitRPN = @enumToInt(enum_unnamed_457.kMIDIControlType_7BitRPN);
+pub const kMIDIControlType_14BitRPN = @enumToInt(enum_unnamed_457.kMIDIControlType_14BitRPN);
+pub const kMIDIControlType_7BitNRPN = @enumToInt(enum_unnamed_457.kMIDIControlType_7BitNRPN);
+pub const kMIDIControlType_14BitNRPN = @enumToInt(enum_unnamed_457.kMIDIControlType_14BitNRPN);
+const enum_unnamed_457 = extern enum(c_int) {
+    kMIDIControlType_7Bit = 0,
+    kMIDIControlType_14Bit = 1,
+    kMIDIControlType_7BitRPN = 2,
+    kMIDIControlType_14BitRPN = 3,
+    kMIDIControlType_7BitNRPN = 4,
+    kMIDIControlType_14BitNRPN = 5,
+    _,
+};
+pub const struct_MIDITransform = extern struct {
+    transform: MIDITransformType,
+    param: SInt16,
+};
+pub const MIDITransform = struct_MIDITransform;
+pub const struct_MIDIControlTransform = extern struct {
+    controlType: MIDITransformControlType,
+    remappedControlType: MIDITransformControlType,
+    controlNumber: UInt16,
+    transform: MIDITransformType,
+    param: SInt16,
+};
+pub const MIDIControlTransform = struct_MIDIControlTransform;
+pub const struct_MIDIThruConnectionEndpoint = extern struct {
+    endpointRef: MIDIEndpointRef,
+    uniqueID: MIDIUniqueID,
+};
+pub const MIDIThruConnectionEndpoint = struct_MIDIThruConnectionEndpoint;
+pub const struct_MIDIThruConnectionParams = extern struct {
+    version: UInt32,
+    numSources: UInt32,
+    sources: [8]MIDIThruConnectionEndpoint,
+    numDestinations: UInt32,
+    destinations: [8]MIDIThruConnectionEndpoint,
+    channelMap: [16]UInt8,
+    lowVelocity: UInt8,
+    highVelocity: UInt8,
+    lowNote: UInt8,
+    highNote: UInt8,
+    noteNumber: MIDITransform,
+    velocity: MIDITransform,
+    keyPressure: MIDITransform,
+    channelPressure: MIDITransform,
+    programChange: MIDITransform,
+    pitchBend: MIDITransform,
+    filterOutSysEx: UInt8,
+    filterOutMTC: UInt8,
+    filterOutBeatClock: UInt8,
+    filterOutTuneRequest: UInt8,
+    reserved2: [3]UInt8,
+    filterOutAllControls: UInt8,
+    numControlTransforms: UInt16,
+    numMaps: UInt16,
+    reserved3: [4]UInt16,
+};
+pub const MIDIThruConnectionParams = struct_MIDIThruConnectionParams;
+pub fn MIDIThruConnectionParamsSize(arg_ptr: [*c]const MIDIThruConnectionParams) callconv(.C) usize {
+    var ptr = arg_ptr;
+    return ((@sizeOf(MIDIThruConnectionParams) +% (@bitCast(c_ulong, @as(c_ulong, ptr.*.numControlTransforms)) *% @sizeOf(MIDIControlTransform))) +% (@bitCast(c_ulong, @as(c_ulong, ptr.*.numMaps)) *% @sizeOf(MIDIValueMap)));
+}
+pub extern fn MIDIThruConnectionParamsInitialize(inConnectionParams: [*c]MIDIThruConnectionParams) void;
+pub extern fn MIDIThruConnectionCreate(inPersistentOwnerID: CFStringRef, inConnectionParams: CFDataRef, outConnection: [*c]MIDIThruConnectionRef) OSStatus;
+pub extern fn MIDIThruConnectionDispose(connection: MIDIThruConnectionRef) OSStatus;
+pub extern fn MIDIThruConnectionGetParams(connection: MIDIThruConnectionRef, outConnectionParams: [*c]CFDataRef) OSStatus;
+pub extern fn MIDIThruConnectionSetParams(connection: MIDIThruConnectionRef, inConnectionParams: CFDataRef) OSStatus;
+pub extern fn MIDIThruConnectionFind(inPersistentOwnerID: CFStringRef, outConnectionList: [*c]CFDataRef) OSStatus;
+pub const HRESULT = SInt32;
+pub const ULONG = UInt32;
+pub const LPVOID = ?*c_void;
+pub const REFIID = CFUUIDBytes;
+pub const struct_IUnknownVTbl = extern struct {
+    _reserved: ?*c_void,
+    QueryInterface: ?fn (?*c_void, REFIID, [*c]LPVOID) callconv(.C) HRESULT,
+    AddRef: ?fn (?*c_void) callconv(.C) ULONG,
+    Release: ?fn (?*c_void) callconv(.C) ULONG,
+};
+pub const IUnknownVTbl = struct_IUnknownVTbl;
+pub const struct_MIDIDriverInterface = extern struct {
+    _reserved: ?*c_void,
+    QueryInterface: ?fn (?*c_void, REFIID, [*c]LPVOID) callconv(.C) HRESULT,
+    AddRef: ?fn (?*c_void) callconv(.C) ULONG,
+    Release: ?fn (?*c_void) callconv(.C) ULONG,
+    FindDevices: ?fn (MIDIDriverRef, MIDIDeviceListRef) callconv(.C) OSStatus,
+    Start: ?fn (MIDIDriverRef, MIDIDeviceListRef) callconv(.C) OSStatus,
+    Stop: ?fn (MIDIDriverRef) callconv(.C) OSStatus,
+    Configure: ?fn (MIDIDriverRef, MIDIDeviceRef) callconv(.C) OSStatus,
+    Send: ?fn (MIDIDriverRef, [*c]const MIDIPacketList, ?*c_void, ?*c_void) callconv(.C) OSStatus,
+    EnableSource: ?fn (MIDIDriverRef, MIDIEndpointRef, Boolean) callconv(.C) OSStatus,
+    Flush: ?fn (MIDIDriverRef, MIDIEndpointRef, ?*c_void, ?*c_void) callconv(.C) OSStatus,
+    Monitor: ?fn (MIDIDriverRef, MIDIEndpointRef, [*c]const MIDIPacketList) callconv(.C) OSStatus,
+};
+pub const MIDIDriverInterface = struct_MIDIDriverInterface;
+pub const MIDIDriverRef = [*c][*c]MIDIDriverInterface;
+pub const MIDIDeviceListRef = MIDIObjectRef;
+pub extern const kMIDIDriverPropertyUsesSerial: CFStringRef;
+pub extern fn MIDIDeviceCreate(owner: MIDIDriverRef, name: CFStringRef, manufacturer: CFStringRef, model: CFStringRef, outDevice: [*c]MIDIDeviceRef) OSStatus;
+pub extern fn MIDIDeviceDispose(device: MIDIDeviceRef) OSStatus;
+pub extern fn MIDIDeviceListGetNumberOfDevices(devList: MIDIDeviceListRef) ItemCount;
+pub extern fn MIDIDeviceListGetDevice(devList: MIDIDeviceListRef, index0: ItemCount) MIDIDeviceRef;
+pub extern fn MIDIDeviceListAddDevice(devList: MIDIDeviceListRef, dev: MIDIDeviceRef) OSStatus;
+pub extern fn MIDIDeviceListDispose(devList: MIDIDeviceListRef) OSStatus;
+pub extern fn MIDIEndpointSetRefCons(endpt: MIDIEndpointRef, ref1: ?*c_void, ref2: ?*c_void) OSStatus;
+pub extern fn MIDIEndpointGetRefCons(endpt: MIDIEndpointRef, ref1: [*c]?*c_void, ref2: [*c]?*c_void) OSStatus;
+pub extern fn MIDIGetDriverIORunLoop() CFRunLoopRef;
+pub extern fn MIDIGetDriverDeviceList(driver: MIDIDriverRef) MIDIDeviceListRef;
+pub extern fn MIDIDriverEnableMonitoring(driver: MIDIDriverRef, enabled: Boolean) OSStatus;
+pub const __INTMAX_TYPE__ = @compileError("unable to translate C expr: unexpected token Id{ .Keyword_int = void }");
+pub const __INTMAX_C_SUFFIX__ = @compileError("unable to translate C expr: unexpected token Id{ .Hash = void }");
+pub const __UINTMAX_TYPE__ = @compileError("unable to translate C expr: unexpected token Id{ .Keyword_unsigned = void }");
+pub const __PTRDIFF_TYPE__ = @compileError("unable to translate C expr: unexpected token Id{ .Keyword_int = void }");
+pub const __INTPTR_TYPE__ = @compileError("unable to translate C expr: unexpected token Id{ .Keyword_int = void }");
+pub const __SIZE_TYPE__ = @compileError("unable to translate C expr: unexpected token Id{ .Keyword_unsigned = void }");
+pub const __CHAR16_TYPE__ = @compileError("unable to translate C expr: unexpected token Id{ .Keyword_short = void }");
+pub const __CHAR32_TYPE__ = @compileError("unable to translate C expr: unexpected token Id{ .Keyword_int = void }");
+pub const __UINTPTR_TYPE__ = @compileError("unable to translate C expr: unexpected token Id{ .Keyword_unsigned = void }");
+pub const __INT8_TYPE__ = @compileError("unable to translate C expr: unexpected token Id{ .Keyword_signed = void }");
+pub const __INT64_TYPE__ = @compileError("unable to translate C expr: unexpected token Id{ .Keyword_long = void }");
+pub const __UINT8_TYPE__ = @compileError("unable to translate C expr: unexpected token Id{ .Keyword_char = void }");
+pub const __UINT16_TYPE__ = @compileError("unable to translate C expr: unexpected token Id{ .Keyword_short = void }");
+pub const __UINT32_TYPE__ = @compileError("unable to translate C expr: unexpected token Id{ .Keyword_int = void }");
+pub const __UINT32_C_SUFFIX__ = @compileError("unable to translate C expr: unexpected token Id{ .Hash = void }");
+pub const __UINT64_TYPE__ = @compileError("unable to translate C expr: unexpected token Id{ .Keyword_long = void }");
+pub const __INT_LEAST8_TYPE__ = @compileError("unable to translate C expr: unexpected token Id{ .Keyword_signed = void }");
+pub const __UINT_LEAST8_TYPE__ = @compileError("unable to translate C expr: unexpected token Id{ .Keyword_char = void }");
+pub const __UINT_LEAST16_TYPE__ = @compileError("unable to translate C expr: unexpected token Id{ .Keyword_short = void }");
+pub const __UINT_LEAST32_TYPE__ = @compileError("unable to translate C expr: unexpected token Id{ .Keyword_int = void }");
+pub const __INT_LEAST64_TYPE__ = @compileError("unable to translate C expr: unexpected token Id{ .Keyword_long = void }");
+pub const __UINT_LEAST64_TYPE__ = @compileError("unable to translate C expr: unexpected token Id{ .Keyword_long = void }");
+pub const __INT_FAST8_TYPE__ = @compileError("unable to translate C expr: unexpected token Id{ .Keyword_signed = void }");
+pub const __UINT_FAST8_TYPE__ = @compileError("unable to translate C expr: unexpected token Id{ .Keyword_char = void }");
+pub const __UINT_FAST16_TYPE__ = @compileError("unable to translate C expr: unexpected token Id{ .Keyword_short = void }");
+pub const __UINT_FAST32_TYPE__ = @compileError("unable to translate C expr: unexpected token Id{ .Keyword_int = void }");
+pub const __INT_FAST64_TYPE__ = @compileError("unable to translate C expr: unexpected token Id{ .Keyword_long = void }");
+pub const __UINT_FAST64_TYPE__ = @compileError("unable to translate C expr: unexpected token Id{ .Keyword_long = void }");
 pub const __AVAILABILITY_INTERNAL__MAC_10_1_DEP__MAC_10_1 = @compileError("unable to translate C expr: expected ',' or ')'");
 pub const __AVAILABILITY_INTERNAL__MAC_10_1_DEP__MAC_10_10 = @compileError("unable to translate C expr: expected ',' or ')'");
 pub const __AVAILABILITY_INTERNAL__MAC_10_1_DEP__MAC_10_10_2 = @compileError("unable to translate C expr: expected ',' or ')'");
@@ -13609,110 +13775,111 @@ pub const __AVAILABILITY_INTERNAL__MAC_10_13_4 = @compileError("unable to transl
 pub const __AVAILABILITY_INTERNAL__MAC_10_14 = @compileError("unable to translate C expr: expected ',' or ')'");
 pub const __AVAILABILITY_INTERNAL__MAC_10_14_DEP__MAC_10_14 = @compileError("unable to translate C expr: expected ',' or ')'");
 pub const __AVAILABILITY_INTERNAL__MAC_10_15 = @compileError("unable to translate C expr: expected ',' or ')'");
-pub const __API_AVAILABLE_PLATFORM_macos = @compileError("unable to translate C expr: unexpected token Id.Comma");
-pub const __API_AVAILABLE_PLATFORM_macosx = @compileError("unable to translate C expr: unexpected token Id.Comma");
-pub const __API_AVAILABLE_PLATFORM_ios = @compileError("unable to translate C expr: unexpected token Id.Comma");
-pub const __API_AVAILABLE_PLATFORM_watchos = @compileError("unable to translate C expr: unexpected token Id.Comma");
-pub const __API_AVAILABLE_PLATFORM_tvos = @compileError("unable to translate C expr: unexpected token Id.Comma");
-pub const __API_AVAILABLE_PLATFORM_macCatalyst = @compileError("unable to translate C expr: unexpected token Id.Comma");
-pub const __API_AVAILABLE_PLATFORM_uikitformac = @compileError("unable to translate C expr: unexpected token Id.Comma");
-pub const __API_AVAILABLE_PLATFORM_driverkit = @compileError("unable to translate C expr: unexpected token Id.Comma");
-pub const __API_A = @compileError("macro tokenizing failed: unexpected character '#'");
-pub const __API_AVAILABLE2 = @compileError("unable to translate C expr: unexpected token Id.Identifier");
-pub const __API_AVAILABLE3 = @compileError("unable to translate C expr: unexpected token Id.Identifier");
-pub const __API_AVAILABLE4 = @compileError("unable to translate C expr: unexpected token Id.Identifier");
-pub const __API_AVAILABLE5 = @compileError("unable to translate C expr: unexpected token Id.Identifier");
-pub const __API_AVAILABLE6 = @compileError("unable to translate C expr: unexpected token Id.Identifier");
-pub const __API_AVAILABLE7 = @compileError("unable to translate C expr: unexpected token Id.Identifier");
+pub const __API_AVAILABLE_PLATFORM_macos = @compileError("unable to translate C expr: unexpected token Id{ .Comma = void }");
+pub const __API_AVAILABLE_PLATFORM_macosx = @compileError("unable to translate C expr: unexpected token Id{ .Comma = void }");
+pub const __API_AVAILABLE_PLATFORM_ios = @compileError("unable to translate C expr: unexpected token Id{ .Comma = void }");
+pub const __API_AVAILABLE_PLATFORM_watchos = @compileError("unable to translate C expr: unexpected token Id{ .Comma = void }");
+pub const __API_AVAILABLE_PLATFORM_tvos = @compileError("unable to translate C expr: unexpected token Id{ .Comma = void }");
+pub const __API_AVAILABLE_PLATFORM_macCatalyst = @compileError("unable to translate C expr: unexpected token Id{ .Comma = void }");
+pub const __API_AVAILABLE_PLATFORM_uikitformac = @compileError("unable to translate C expr: unexpected token Id{ .Comma = void }");
+pub const __API_AVAILABLE_PLATFORM_driverkit = @compileError("unable to translate C expr: unexpected token Id{ .Comma = void }");
+pub const __API_A = @compileError("unable to translate C expr: expected ',' or ')'");
+pub const __API_AVAILABLE2 = @compileError("unable to translate C expr: unexpected token Id{ .Identifier = void }");
+pub const __API_AVAILABLE3 = @compileError("unable to translate C expr: unexpected token Id{ .Identifier = void }");
+pub const __API_AVAILABLE4 = @compileError("unable to translate C expr: unexpected token Id{ .Identifier = void }");
+pub const __API_AVAILABLE5 = @compileError("unable to translate C expr: unexpected token Id{ .Identifier = void }");
+pub const __API_AVAILABLE6 = @compileError("unable to translate C expr: unexpected token Id{ .Identifier = void }");
+pub const __API_AVAILABLE7 = @compileError("unable to translate C expr: unexpected token Id{ .Identifier = void }");
 pub const __API_AVAILABLE_GET_MACRO = @compileError("unable to translate C expr: expected identifier");
-pub const __API_RANGE_STRINGIFY2 = @compileError("macro tokenizing failed: unexpected character '#'");
-pub const __API_A_BEGIN = @compileError("macro tokenizing failed: unexpected character '#'");
-pub const __API_AVAILABLE_BEGIN2 = @compileError("unable to translate C expr: unexpected token Id.Identifier");
-pub const __API_AVAILABLE_BEGIN3 = @compileError("unable to translate C expr: unexpected token Id.Identifier");
-pub const __API_AVAILABLE_BEGIN4 = @compileError("unable to translate C expr: unexpected token Id.Identifier");
-pub const __API_AVAILABLE_BEGIN5 = @compileError("unable to translate C expr: unexpected token Id.Identifier");
-pub const __API_AVAILABLE_BEGIN6 = @compileError("unable to translate C expr: unexpected token Id.Identifier");
-pub const __API_AVAILABLE_BEGIN7 = @compileError("unable to translate C expr: unexpected token Id.Identifier");
+pub const __API_APPLY_TO = @compileError("unable to translate C expr: unexpected token Id{ .Keyword_enum = void }");
+pub const __API_RANGE_STRINGIFY2 = @compileError("unable to translate C expr: unexpected token Id{ .Hash = void }");
+pub const __API_A_BEGIN = @compileError("unable to translate C expr: expected ',' or ')'");
+pub const __API_AVAILABLE_BEGIN2 = @compileError("unable to translate C expr: unexpected token Id{ .Identifier = void }");
+pub const __API_AVAILABLE_BEGIN3 = @compileError("unable to translate C expr: unexpected token Id{ .Identifier = void }");
+pub const __API_AVAILABLE_BEGIN4 = @compileError("unable to translate C expr: unexpected token Id{ .Identifier = void }");
+pub const __API_AVAILABLE_BEGIN5 = @compileError("unable to translate C expr: unexpected token Id{ .Identifier = void }");
+pub const __API_AVAILABLE_BEGIN6 = @compileError("unable to translate C expr: unexpected token Id{ .Identifier = void }");
+pub const __API_AVAILABLE_BEGIN7 = @compileError("unable to translate C expr: unexpected token Id{ .Identifier = void }");
 pub const __API_AVAILABLE_BEGIN_GET_MACRO = @compileError("unable to translate C expr: expected identifier");
-pub const __API_DEPRECATED_PLATFORM_macos = @compileError("unable to translate C expr: unexpected token Id.Comma");
-pub const __API_DEPRECATED_PLATFORM_macosx = @compileError("unable to translate C expr: unexpected token Id.Comma");
-pub const __API_DEPRECATED_PLATFORM_ios = @compileError("unable to translate C expr: unexpected token Id.Comma");
-pub const __API_DEPRECATED_PLATFORM_watchos = @compileError("unable to translate C expr: unexpected token Id.Comma");
-pub const __API_DEPRECATED_PLATFORM_tvos = @compileError("unable to translate C expr: unexpected token Id.Comma");
-pub const __API_DEPRECATED_PLATFORM_macCatalyst = @compileError("unable to translate C expr: unexpected token Id.Comma");
-pub const __API_DEPRECATED_PLATFORM_uikitformac = @compileError("unable to translate C expr: unexpected token Id.Comma");
-pub const __API_DEPRECATED_PLATFORM_driverkit = @compileError("unable to translate C expr: unexpected token Id.Comma");
-pub const __API_D = @compileError("macro tokenizing failed: unexpected character '#'");
-pub const __API_DEPRECATED_MSG3 = @compileError("unable to translate C expr: unexpected token Id.Identifier");
-pub const __API_DEPRECATED_MSG4 = @compileError("unable to translate C expr: unexpected token Id.Identifier");
-pub const __API_DEPRECATED_MSG5 = @compileError("unable to translate C expr: unexpected token Id.Identifier");
-pub const __API_DEPRECATED_MSG6 = @compileError("unable to translate C expr: unexpected token Id.Identifier");
-pub const __API_DEPRECATED_MSG7 = @compileError("unable to translate C expr: unexpected token Id.Identifier");
-pub const __API_DEPRECATED_MSG8 = @compileError("unable to translate C expr: unexpected token Id.Identifier");
+pub const __API_DEPRECATED_PLATFORM_macos = @compileError("unable to translate C expr: unexpected token Id{ .Comma = void }");
+pub const __API_DEPRECATED_PLATFORM_macosx = @compileError("unable to translate C expr: unexpected token Id{ .Comma = void }");
+pub const __API_DEPRECATED_PLATFORM_ios = @compileError("unable to translate C expr: unexpected token Id{ .Comma = void }");
+pub const __API_DEPRECATED_PLATFORM_watchos = @compileError("unable to translate C expr: unexpected token Id{ .Comma = void }");
+pub const __API_DEPRECATED_PLATFORM_tvos = @compileError("unable to translate C expr: unexpected token Id{ .Comma = void }");
+pub const __API_DEPRECATED_PLATFORM_macCatalyst = @compileError("unable to translate C expr: unexpected token Id{ .Comma = void }");
+pub const __API_DEPRECATED_PLATFORM_uikitformac = @compileError("unable to translate C expr: unexpected token Id{ .Comma = void }");
+pub const __API_DEPRECATED_PLATFORM_driverkit = @compileError("unable to translate C expr: unexpected token Id{ .Comma = void }");
+pub const __API_D = @compileError("unable to translate C expr: expected ',' or ')'");
+pub const __API_DEPRECATED_MSG3 = @compileError("unable to translate C expr: unexpected token Id{ .Identifier = void }");
+pub const __API_DEPRECATED_MSG4 = @compileError("unable to translate C expr: unexpected token Id{ .Identifier = void }");
+pub const __API_DEPRECATED_MSG5 = @compileError("unable to translate C expr: unexpected token Id{ .Identifier = void }");
+pub const __API_DEPRECATED_MSG6 = @compileError("unable to translate C expr: unexpected token Id{ .Identifier = void }");
+pub const __API_DEPRECATED_MSG7 = @compileError("unable to translate C expr: unexpected token Id{ .Identifier = void }");
+pub const __API_DEPRECATED_MSG8 = @compileError("unable to translate C expr: unexpected token Id{ .Identifier = void }");
 pub const __API_DEPRECATED_MSG_GET_MACRO = @compileError("unable to translate C expr: expected identifier");
-pub const __API_D_BEGIN = @compileError("macro tokenizing failed: unexpected character '#'");
-pub const __API_DEPRECATED_BEGIN_MSG3 = @compileError("unable to translate C expr: unexpected token Id.Identifier");
-pub const __API_DEPRECATED_BEGIN_MSG4 = @compileError("unable to translate C expr: unexpected token Id.Identifier");
-pub const __API_DEPRECATED_BEGIN_MSG5 = @compileError("unable to translate C expr: unexpected token Id.Identifier");
-pub const __API_DEPRECATED_BEGIN_MSG6 = @compileError("unable to translate C expr: unexpected token Id.Identifier");
-pub const __API_DEPRECATED_BEGIN_MSG7 = @compileError("unable to translate C expr: unexpected token Id.Identifier");
-pub const __API_DEPRECATED_BEGIN_MSG8 = @compileError("unable to translate C expr: unexpected token Id.Identifier");
+pub const __API_D_BEGIN = @compileError("unable to translate C expr: expected ',' or ')'");
+pub const __API_DEPRECATED_BEGIN_MSG3 = @compileError("unable to translate C expr: unexpected token Id{ .Identifier = void }");
+pub const __API_DEPRECATED_BEGIN_MSG4 = @compileError("unable to translate C expr: unexpected token Id{ .Identifier = void }");
+pub const __API_DEPRECATED_BEGIN_MSG5 = @compileError("unable to translate C expr: unexpected token Id{ .Identifier = void }");
+pub const __API_DEPRECATED_BEGIN_MSG6 = @compileError("unable to translate C expr: unexpected token Id{ .Identifier = void }");
+pub const __API_DEPRECATED_BEGIN_MSG7 = @compileError("unable to translate C expr: unexpected token Id{ .Identifier = void }");
+pub const __API_DEPRECATED_BEGIN_MSG8 = @compileError("unable to translate C expr: unexpected token Id{ .Identifier = void }");
 pub const __API_DEPRECATED_BEGIN_MSG_GET_MACRO = @compileError("unable to translate C expr: expected identifier");
-pub const __API_R = @compileError("macro tokenizing failed: unexpected character '#'");
-pub const __API_DEPRECATED_REP3 = @compileError("unable to translate C expr: unexpected token Id.Identifier");
-pub const __API_DEPRECATED_REP4 = @compileError("unable to translate C expr: unexpected token Id.Identifier");
-pub const __API_DEPRECATED_REP5 = @compileError("unable to translate C expr: unexpected token Id.Identifier");
-pub const __API_DEPRECATED_REP6 = @compileError("unable to translate C expr: unexpected token Id.Identifier");
-pub const __API_DEPRECATED_REP7 = @compileError("unable to translate C expr: unexpected token Id.Identifier");
-pub const __API_DEPRECATED_REP8 = @compileError("unable to translate C expr: unexpected token Id.Identifier");
+pub const __API_R = @compileError("unable to translate C expr: expected ',' or ')'");
+pub const __API_DEPRECATED_REP3 = @compileError("unable to translate C expr: unexpected token Id{ .Identifier = void }");
+pub const __API_DEPRECATED_REP4 = @compileError("unable to translate C expr: unexpected token Id{ .Identifier = void }");
+pub const __API_DEPRECATED_REP5 = @compileError("unable to translate C expr: unexpected token Id{ .Identifier = void }");
+pub const __API_DEPRECATED_REP6 = @compileError("unable to translate C expr: unexpected token Id{ .Identifier = void }");
+pub const __API_DEPRECATED_REP7 = @compileError("unable to translate C expr: unexpected token Id{ .Identifier = void }");
+pub const __API_DEPRECATED_REP8 = @compileError("unable to translate C expr: unexpected token Id{ .Identifier = void }");
 pub const __API_DEPRECATED_REP_GET_MACRO = @compileError("unable to translate C expr: expected identifier");
-pub const __API_R_BEGIN = @compileError("macro tokenizing failed: unexpected character '#'");
-pub const __API_DEPRECATED_BEGIN_REP3 = @compileError("unable to translate C expr: unexpected token Id.Identifier");
-pub const __API_DEPRECATED_BEGIN_REP4 = @compileError("unable to translate C expr: unexpected token Id.Identifier");
-pub const __API_DEPRECATED_BEGIN_REP5 = @compileError("unable to translate C expr: unexpected token Id.Identifier");
-pub const __API_DEPRECATED_BEGIN_REP6 = @compileError("unable to translate C expr: unexpected token Id.Identifier");
-pub const __API_DEPRECATED_BEGIN_REP7 = @compileError("unable to translate C expr: unexpected token Id.Identifier");
-pub const __API_DEPRECATED_BEGIN_REP8 = @compileError("unable to translate C expr: unexpected token Id.Identifier");
+pub const __API_R_BEGIN = @compileError("unable to translate C expr: expected ',' or ')'");
+pub const __API_DEPRECATED_BEGIN_REP3 = @compileError("unable to translate C expr: unexpected token Id{ .Identifier = void }");
+pub const __API_DEPRECATED_BEGIN_REP4 = @compileError("unable to translate C expr: unexpected token Id{ .Identifier = void }");
+pub const __API_DEPRECATED_BEGIN_REP5 = @compileError("unable to translate C expr: unexpected token Id{ .Identifier = void }");
+pub const __API_DEPRECATED_BEGIN_REP6 = @compileError("unable to translate C expr: unexpected token Id{ .Identifier = void }");
+pub const __API_DEPRECATED_BEGIN_REP7 = @compileError("unable to translate C expr: unexpected token Id{ .Identifier = void }");
+pub const __API_DEPRECATED_BEGIN_REP8 = @compileError("unable to translate C expr: unexpected token Id{ .Identifier = void }");
 pub const __API_DEPRECATED_BEGIN_REP_GET_MACRO = @compileError("unable to translate C expr: expected identifier");
-pub const __API_UNAVAILABLE_PLATFORM_macos = @compileError("unable to translate C expr: unexpected token Id.Comma");
-pub const __API_UNAVAILABLE_PLATFORM_macosx = @compileError("unable to translate C expr: unexpected token Id.Comma");
-pub const __API_UNAVAILABLE_PLATFORM_ios = @compileError("unable to translate C expr: unexpected token Id.Comma");
-pub const __API_UNAVAILABLE_PLATFORM_watchos = @compileError("unable to translate C expr: unexpected token Id.Comma");
-pub const __API_UNAVAILABLE_PLATFORM_tvos = @compileError("unable to translate C expr: unexpected token Id.Comma");
-pub const __API_UNAVAILABLE_PLATFORM_macCatalyst = @compileError("unable to translate C expr: unexpected token Id.Comma");
-pub const __API_UNAVAILABLE_PLATFORM_uikitformac = @compileError("unable to translate C expr: unexpected token Id.Comma");
-pub const __API_UNAVAILABLE_PLATFORM_driverkit = @compileError("unable to translate C expr: unexpected token Id.Comma");
-pub const __API_U = @compileError("macro tokenizing failed: unexpected character '#'");
-pub const __API_UNAVAILABLE2 = @compileError("unable to translate C expr: unexpected token Id.Identifier");
-pub const __API_UNAVAILABLE3 = @compileError("unable to translate C expr: unexpected token Id.Identifier");
-pub const __API_UNAVAILABLE4 = @compileError("unable to translate C expr: unexpected token Id.Identifier");
-pub const __API_UNAVAILABLE5 = @compileError("unable to translate C expr: unexpected token Id.Identifier");
-pub const __API_UNAVAILABLE6 = @compileError("unable to translate C expr: unexpected token Id.Identifier");
-pub const __API_UNAVAILABLE7 = @compileError("unable to translate C expr: unexpected token Id.Identifier");
+pub const __API_UNAVAILABLE_PLATFORM_macos = @compileError("unable to translate C expr: unexpected token Id{ .Comma = void }");
+pub const __API_UNAVAILABLE_PLATFORM_macosx = @compileError("unable to translate C expr: unexpected token Id{ .Comma = void }");
+pub const __API_UNAVAILABLE_PLATFORM_ios = @compileError("unable to translate C expr: unexpected token Id{ .Comma = void }");
+pub const __API_UNAVAILABLE_PLATFORM_watchos = @compileError("unable to translate C expr: unexpected token Id{ .Comma = void }");
+pub const __API_UNAVAILABLE_PLATFORM_tvos = @compileError("unable to translate C expr: unexpected token Id{ .Comma = void }");
+pub const __API_UNAVAILABLE_PLATFORM_macCatalyst = @compileError("unable to translate C expr: unexpected token Id{ .Comma = void }");
+pub const __API_UNAVAILABLE_PLATFORM_uikitformac = @compileError("unable to translate C expr: unexpected token Id{ .Comma = void }");
+pub const __API_UNAVAILABLE_PLATFORM_driverkit = @compileError("unable to translate C expr: unexpected token Id{ .Comma = void }");
+pub const __API_U = @compileError("unable to translate C expr: expected ',' or ')'");
+pub const __API_UNAVAILABLE2 = @compileError("unable to translate C expr: unexpected token Id{ .Identifier = void }");
+pub const __API_UNAVAILABLE3 = @compileError("unable to translate C expr: unexpected token Id{ .Identifier = void }");
+pub const __API_UNAVAILABLE4 = @compileError("unable to translate C expr: unexpected token Id{ .Identifier = void }");
+pub const __API_UNAVAILABLE5 = @compileError("unable to translate C expr: unexpected token Id{ .Identifier = void }");
+pub const __API_UNAVAILABLE6 = @compileError("unable to translate C expr: unexpected token Id{ .Identifier = void }");
+pub const __API_UNAVAILABLE7 = @compileError("unable to translate C expr: unexpected token Id{ .Identifier = void }");
 pub const __API_UNAVAILABLE_GET_MACRO = @compileError("unable to translate C expr: expected identifier");
-pub const __API_U_BEGIN = @compileError("macro tokenizing failed: unexpected character '#'");
-pub const __API_UNAVAILABLE_BEGIN2 = @compileError("unable to translate C expr: unexpected token Id.Identifier");
-pub const __API_UNAVAILABLE_BEGIN3 = @compileError("unable to translate C expr: unexpected token Id.Identifier");
-pub const __API_UNAVAILABLE_BEGIN4 = @compileError("unable to translate C expr: unexpected token Id.Identifier");
-pub const __API_UNAVAILABLE_BEGIN5 = @compileError("unable to translate C expr: unexpected token Id.Identifier");
-pub const __API_UNAVAILABLE_BEGIN6 = @compileError("unable to translate C expr: unexpected token Id.Identifier");
-pub const __API_UNAVAILABLE_BEGIN7 = @compileError("unable to translate C expr: unexpected token Id.Identifier");
+pub const __API_U_BEGIN = @compileError("unable to translate C expr: expected ',' or ')'");
+pub const __API_UNAVAILABLE_BEGIN2 = @compileError("unable to translate C expr: unexpected token Id{ .Identifier = void }");
+pub const __API_UNAVAILABLE_BEGIN3 = @compileError("unable to translate C expr: unexpected token Id{ .Identifier = void }");
+pub const __API_UNAVAILABLE_BEGIN4 = @compileError("unable to translate C expr: unexpected token Id{ .Identifier = void }");
+pub const __API_UNAVAILABLE_BEGIN5 = @compileError("unable to translate C expr: unexpected token Id{ .Identifier = void }");
+pub const __API_UNAVAILABLE_BEGIN6 = @compileError("unable to translate C expr: unexpected token Id{ .Identifier = void }");
+pub const __API_UNAVAILABLE_BEGIN7 = @compileError("unable to translate C expr: unexpected token Id{ .Identifier = void }");
 pub const __API_UNAVAILABLE_BEGIN_GET_MACRO = @compileError("unable to translate C expr: expected identifier");
 pub const __swift_compiler_version_at_least = @compileError("unable to translate C expr: expected identifier");
 pub const __SPI_AVAILABLE = @compileError("unable to translate C expr: expected identifier");
-pub const __OSX_AVAILABLE_STARTING = @compileError("macro tokenizing failed: unexpected character '#'");
-pub const __OSX_AVAILABLE_BUT_DEPRECATED = @compileError("macro tokenizing failed: unexpected character '#'");
-pub const __OSX_AVAILABLE_BUT_DEPRECATED_MSG = @compileError("macro tokenizing failed: unexpected character '#'");
+pub const __OSX_AVAILABLE_STARTING = @compileError("unable to translate C expr: unexpected token Id{ .HashHash = void }");
+pub const __OSX_AVAILABLE_BUT_DEPRECATED = @compileError("unable to translate C expr: unexpected token Id{ .HashHash = void }");
+pub const __OSX_AVAILABLE_BUT_DEPRECATED_MSG = @compileError("unable to translate C expr: unexpected token Id{ .HashHash = void }");
 pub const __OS_AVAILABILITY_MSG = @compileError("unable to translate C expr: expected ',' or ')'");
-pub const __OS_EXTENSION_UNAVAILABLE = @compileError("unable to translate C expr: unexpected token Id.Identifier");
+pub const __OS_EXTENSION_UNAVAILABLE = @compileError("unable to translate C expr: unexpected token Id{ .Identifier = void }");
 pub const __OSX_AVAILABLE = @compileError("unable to translate C expr: expected ',' or ')'");
-pub const __OSX_DEPRECATED = @compileError("unable to translate C expr: unexpected token Id.Identifier");
+pub const __OSX_DEPRECATED = @compileError("unable to translate C expr: unexpected token Id{ .Identifier = void }");
 pub const __IOS_AVAILABLE = @compileError("unable to translate C expr: expected ',' or ')'");
-pub const __IOS_DEPRECATED = @compileError("unable to translate C expr: unexpected token Id.Identifier");
+pub const __IOS_DEPRECATED = @compileError("unable to translate C expr: unexpected token Id{ .Identifier = void }");
 pub const __TVOS_AVAILABLE = @compileError("unable to translate C expr: expected ',' or ')'");
-pub const __TVOS_DEPRECATED = @compileError("unable to translate C expr: unexpected token Id.Identifier");
+pub const __TVOS_DEPRECATED = @compileError("unable to translate C expr: unexpected token Id{ .Identifier = void }");
 pub const __WATCHOS_AVAILABLE = @compileError("unable to translate C expr: expected ',' or ')'");
-pub const __WATCHOS_DEPRECATED = @compileError("unable to translate C expr: unexpected token Id.Identifier");
+pub const __WATCHOS_DEPRECATED = @compileError("unable to translate C expr: unexpected token Id{ .Identifier = void }");
 pub const __API_AVAILABLE = @compileError("unable to translate C expr: expected identifier");
 pub const __API_AVAILABLE_BEGIN = @compileError("unable to translate C expr: expected identifier");
 pub const __API_DEPRECATED = @compileError("unable to translate C expr: expected identifier");
@@ -13742,25 +13909,33 @@ pub const CF_DEPRECATED_IOS = @compileError("unable to translate C expr: expecte
 pub const CF_ENUM_DEPRECATED = @compileError("unable to translate C expr: expected identifier");
 pub const CF_ENUM_DEPRECATED_MAC = @compileError("unable to translate C expr: expected identifier");
 pub const CF_ENUM_DEPRECATED_IOS = @compileError("unable to translate C expr: expected identifier");
-pub const __CF_OPTIONS_ATTRIBUTES = @compileError("unable to translate C expr: unexpected token Id.Comma");
+pub const __CF_OPTIONS_ATTRIBUTES = @compileError("unable to translate C expr: unexpected token Id{ .Comma = void }");
 pub const __CF_ENUM_GET_MACRO = @compileError("unable to translate C expr: expected identifier");
-pub const __CF_NAMED_ENUM = @compileError("macro tokenizing failed: unexpected character ';'");
-pub const CF_CLOSED_ENUM = @compileError("macro tokenizing failed: unexpected character ';'");
-pub const CF_OPTIONS = @compileError("macro tokenizing failed: unexpected character ';'");
+pub const __CF_NAMED_ENUM = @compileError("unable to translate C expr: unexpected token Id{ .Identifier = void }");
+pub const __CF_ANON_ENUM = @compileError("unable to translate C expr: unexpected token Id{ .Keyword_enum = void }");
+pub const CF_CLOSED_ENUM = @compileError("unable to translate C expr: unexpected token Id{ .Identifier = void }");
+pub const CF_OPTIONS = @compileError("unable to translate C expr: unexpected token Id{ .Identifier = void }");
 pub const CF_ENUM = @compileError("unable to translate C expr: expected identifier");
 pub const __CF_ERROR_ENUM_GET_MACRO = @compileError("unable to translate C expr: expected identifier");
 pub const CF_ERROR_ENUM = @compileError("unable to translate C expr: expected identifier");
 pub const CF_SWIFT_UNAVAILABLE = @compileError("unable to translate C expr: expected ',' or ')'");
-pub const __CONCAT = @compileError("macro tokenizing failed: unexpected character '#'");
-pub const __STRING = @compileError("macro tokenizing failed: unexpected character '#'");
-pub const __kpi_deprecated = @compileError("unable to translate C expr: unexpected token Id.Eof");
+pub const __CONCAT = @compileError("unable to translate C expr: unexpected token Id{ .HashHash = void }");
+pub const __STRING = @compileError("unable to translate C expr: unexpected token Id{ .Hash = void }");
+pub const __const = @compileError("unable to translate C expr: unexpected token Id{ .Keyword_const = void }");
+pub const __signed = @compileError("unable to translate C expr: unexpected token Id{ .Keyword_signed = void }");
+pub const __volatile = @compileError("unable to translate C expr: unexpected token Id{ .Keyword_volatile = void }");
+pub const __kpi_deprecated = @compileError("unable to translate C expr: unexpected token Id{ .Nl = void }");
+pub const __restrict = @compileError("unable to translate C expr: unexpected token Id{ .Keyword_restrict = void }");
 pub const __swift_unavailable = @compileError("unable to translate C expr: expected ',' or ')'");
-pub const __abortlike = @compileError("unable to translate C expr: unexpected token Id.Identifier");
-pub const __header_always_inline = @compileError("unable to translate C expr: unexpected token Id.Identifier");
-pub const __unreachable_ok_push = @compileError("macro tokenizing failed: expected whitespace");
-pub const __IDSTRING = @compileError("unable to translate C expr: unexpected token Id.Identifier");
-pub const __FBSDID = @compileError("unable to translate C expr: unexpected token Id.Eof");
-pub const __DEQUALIFY = @compileError("unable to translate C expr: expected ',' or ')'");
+pub const __abortlike = @compileError("unable to translate C expr: unexpected token Id{ .Identifier = void }");
+pub const __header_inline = @compileError("unable to translate C expr: unexpected token Id{ .Keyword_inline = void }");
+pub const __header_always_inline = @compileError("unable to translate C expr: unexpected token Id{ .Identifier = void }");
+pub const __unreachable_ok_push = @compileError("unable to translate C expr: unexpected token Id{ .Identifier = void }");
+pub const __IDSTRING = @compileError("unable to translate C expr: unexpected token Id{ .Keyword_static = void }");
+pub const __FBSDID = @compileError("unable to translate C expr: unexpected token Id{ .Nl = void }");
+pub const __DECONST = @compileError("unable to translate C expr: unexpected token Id{ .Keyword_const = void }");
+pub const __DEVOLATILE = @compileError("unable to translate C expr: unexpected token Id{ .Keyword_volatile = void }");
+pub const __DEQUALIFY = @compileError("unable to translate C expr: unexpected token Id{ .Keyword_const = void }");
 pub const __alloc_size = @compileError("unable to translate C expr: expected identifier");
 pub const __DARWIN_ALIAS = @compileError("unable to translate C expr: expected ',' or ')'");
 pub const __DARWIN_ALIAS_C = @compileError("unable to translate C expr: expected ',' or ')'");
@@ -13774,285 +13949,300 @@ pub const __DARWIN_1050ALIAS_I = @compileError("unable to translate C expr: expe
 pub const __DARWIN_1050INODE64 = @compileError("unable to translate C expr: expected ',' or ')'");
 pub const __DARWIN_EXTSN = @compileError("unable to translate C expr: expected ',' or ')'");
 pub const __DARWIN_EXTSN_C = @compileError("unable to translate C expr: expected ',' or ')'");
-pub const __DARWIN_ALIAS_STARTING_IPHONE___IPHONE_2_0 = @compileError("unable to translate C expr: unexpected token Id.Eof");
-pub const __DARWIN_ALIAS_STARTING_IPHONE___IPHONE_2_1 = @compileError("unable to translate C expr: unexpected token Id.Eof");
-pub const __DARWIN_ALIAS_STARTING_IPHONE___IPHONE_2_2 = @compileError("unable to translate C expr: unexpected token Id.Eof");
-pub const __DARWIN_ALIAS_STARTING_IPHONE___IPHONE_3_0 = @compileError("unable to translate C expr: unexpected token Id.Eof");
-pub const __DARWIN_ALIAS_STARTING_IPHONE___IPHONE_3_1 = @compileError("unable to translate C expr: unexpected token Id.Eof");
-pub const __DARWIN_ALIAS_STARTING_IPHONE___IPHONE_3_2 = @compileError("unable to translate C expr: unexpected token Id.Eof");
-pub const __DARWIN_ALIAS_STARTING_IPHONE___IPHONE_4_0 = @compileError("unable to translate C expr: unexpected token Id.Eof");
-pub const __DARWIN_ALIAS_STARTING_IPHONE___IPHONE_4_1 = @compileError("unable to translate C expr: unexpected token Id.Eof");
-pub const __DARWIN_ALIAS_STARTING_IPHONE___IPHONE_4_2 = @compileError("unable to translate C expr: unexpected token Id.Eof");
-pub const __DARWIN_ALIAS_STARTING_IPHONE___IPHONE_4_3 = @compileError("unable to translate C expr: unexpected token Id.Eof");
-pub const __DARWIN_ALIAS_STARTING_IPHONE___IPHONE_5_0 = @compileError("unable to translate C expr: unexpected token Id.Eof");
-pub const __DARWIN_ALIAS_STARTING_IPHONE___IPHONE_5_1 = @compileError("unable to translate C expr: unexpected token Id.Eof");
-pub const __DARWIN_ALIAS_STARTING_IPHONE___IPHONE_6_0 = @compileError("unable to translate C expr: unexpected token Id.Eof");
-pub const __DARWIN_ALIAS_STARTING_IPHONE___IPHONE_6_1 = @compileError("unable to translate C expr: unexpected token Id.Eof");
-pub const __DARWIN_ALIAS_STARTING_IPHONE___IPHONE_7_0 = @compileError("unable to translate C expr: unexpected token Id.Eof");
-pub const __DARWIN_ALIAS_STARTING_IPHONE___IPHONE_7_1 = @compileError("unable to translate C expr: unexpected token Id.Eof");
-pub const __DARWIN_ALIAS_STARTING_IPHONE___IPHONE_8_0 = @compileError("unable to translate C expr: unexpected token Id.Eof");
-pub const __DARWIN_ALIAS_STARTING_IPHONE___IPHONE_8_1 = @compileError("unable to translate C expr: unexpected token Id.Eof");
-pub const __DARWIN_ALIAS_STARTING_IPHONE___IPHONE_8_2 = @compileError("unable to translate C expr: unexpected token Id.Eof");
-pub const __DARWIN_ALIAS_STARTING_IPHONE___IPHONE_8_3 = @compileError("unable to translate C expr: unexpected token Id.Eof");
-pub const __DARWIN_ALIAS_STARTING_IPHONE___IPHONE_8_4 = @compileError("unable to translate C expr: unexpected token Id.Eof");
-pub const __DARWIN_ALIAS_STARTING_IPHONE___IPHONE_9_0 = @compileError("unable to translate C expr: unexpected token Id.Eof");
-pub const __DARWIN_ALIAS_STARTING_IPHONE___IPHONE_9_1 = @compileError("unable to translate C expr: unexpected token Id.Eof");
-pub const __DARWIN_ALIAS_STARTING_IPHONE___IPHONE_9_2 = @compileError("unable to translate C expr: unexpected token Id.Eof");
-pub const __DARWIN_ALIAS_STARTING_IPHONE___IPHONE_9_3 = @compileError("unable to translate C expr: unexpected token Id.Eof");
-pub const __DARWIN_ALIAS_STARTING_IPHONE___IPHONE_10_0 = @compileError("unable to translate C expr: unexpected token Id.Eof");
-pub const __DARWIN_ALIAS_STARTING_IPHONE___IPHONE_10_1 = @compileError("unable to translate C expr: unexpected token Id.Eof");
-pub const __DARWIN_ALIAS_STARTING_IPHONE___IPHONE_10_2 = @compileError("unable to translate C expr: unexpected token Id.Eof");
-pub const __DARWIN_ALIAS_STARTING_IPHONE___IPHONE_10_3 = @compileError("unable to translate C expr: unexpected token Id.Eof");
-pub const __DARWIN_ALIAS_STARTING_IPHONE___IPHONE_11_0 = @compileError("unable to translate C expr: unexpected token Id.Eof");
-pub const __DARWIN_ALIAS_STARTING_IPHONE___IPHONE_11_1 = @compileError("unable to translate C expr: unexpected token Id.Eof");
-pub const __DARWIN_ALIAS_STARTING_IPHONE___IPHONE_11_2 = @compileError("unable to translate C expr: unexpected token Id.Eof");
-pub const __DARWIN_ALIAS_STARTING_IPHONE___IPHONE_11_3 = @compileError("unable to translate C expr: unexpected token Id.Eof");
-pub const __DARWIN_ALIAS_STARTING_IPHONE___IPHONE_11_4 = @compileError("unable to translate C expr: unexpected token Id.Eof");
-pub const __DARWIN_ALIAS_STARTING_IPHONE___IPHONE_12_0 = @compileError("unable to translate C expr: unexpected token Id.Eof");
-pub const __DARWIN_ALIAS_STARTING_IPHONE___IPHONE_12_1 = @compileError("unable to translate C expr: unexpected token Id.Eof");
-pub const __DARWIN_ALIAS_STARTING_IPHONE___IPHONE_12_2 = @compileError("unable to translate C expr: unexpected token Id.Eof");
-pub const __DARWIN_ALIAS_STARTING_IPHONE___IPHONE_12_3 = @compileError("unable to translate C expr: unexpected token Id.Eof");
-pub const __DARWIN_ALIAS_STARTING_IPHONE___IPHONE_12_4 = @compileError("unable to translate C expr: unexpected token Id.Eof");
-pub const __DARWIN_ALIAS_STARTING_IPHONE___IPHONE_13_0 = @compileError("unable to translate C expr: unexpected token Id.Eof");
-pub const __DARWIN_ALIAS_STARTING_IPHONE___IPHONE_13_1 = @compileError("unable to translate C expr: unexpected token Id.Eof");
-pub const __DARWIN_ALIAS_STARTING_IPHONE___IPHONE_13_2 = @compileError("unable to translate C expr: unexpected token Id.Eof");
-pub const __DARWIN_ALIAS_STARTING_MAC___MAC_10_15_1 = @compileError("unable to translate C expr: unexpected token Id.Eof");
-pub const __DARWIN_ALIAS_STARTING = @compileError("macro tokenizing failed: unexpected character '#'");
-pub const __POSIX_C_DEPRECATED = @compileError("macro tokenizing failed: unexpected character '#'");
+pub const __DARWIN_ALIAS_STARTING_IPHONE___IPHONE_2_0 = @compileError("unable to translate C expr: unexpected token Id{ .Nl = void }");
+pub const __DARWIN_ALIAS_STARTING_IPHONE___IPHONE_2_1 = @compileError("unable to translate C expr: unexpected token Id{ .Nl = void }");
+pub const __DARWIN_ALIAS_STARTING_IPHONE___IPHONE_2_2 = @compileError("unable to translate C expr: unexpected token Id{ .Nl = void }");
+pub const __DARWIN_ALIAS_STARTING_IPHONE___IPHONE_3_0 = @compileError("unable to translate C expr: unexpected token Id{ .Nl = void }");
+pub const __DARWIN_ALIAS_STARTING_IPHONE___IPHONE_3_1 = @compileError("unable to translate C expr: unexpected token Id{ .Nl = void }");
+pub const __DARWIN_ALIAS_STARTING_IPHONE___IPHONE_3_2 = @compileError("unable to translate C expr: unexpected token Id{ .Nl = void }");
+pub const __DARWIN_ALIAS_STARTING_IPHONE___IPHONE_4_0 = @compileError("unable to translate C expr: unexpected token Id{ .Nl = void }");
+pub const __DARWIN_ALIAS_STARTING_IPHONE___IPHONE_4_1 = @compileError("unable to translate C expr: unexpected token Id{ .Nl = void }");
+pub const __DARWIN_ALIAS_STARTING_IPHONE___IPHONE_4_2 = @compileError("unable to translate C expr: unexpected token Id{ .Nl = void }");
+pub const __DARWIN_ALIAS_STARTING_IPHONE___IPHONE_4_3 = @compileError("unable to translate C expr: unexpected token Id{ .Nl = void }");
+pub const __DARWIN_ALIAS_STARTING_IPHONE___IPHONE_5_0 = @compileError("unable to translate C expr: unexpected token Id{ .Nl = void }");
+pub const __DARWIN_ALIAS_STARTING_IPHONE___IPHONE_5_1 = @compileError("unable to translate C expr: unexpected token Id{ .Nl = void }");
+pub const __DARWIN_ALIAS_STARTING_IPHONE___IPHONE_6_0 = @compileError("unable to translate C expr: unexpected token Id{ .Nl = void }");
+pub const __DARWIN_ALIAS_STARTING_IPHONE___IPHONE_6_1 = @compileError("unable to translate C expr: unexpected token Id{ .Nl = void }");
+pub const __DARWIN_ALIAS_STARTING_IPHONE___IPHONE_7_0 = @compileError("unable to translate C expr: unexpected token Id{ .Nl = void }");
+pub const __DARWIN_ALIAS_STARTING_IPHONE___IPHONE_7_1 = @compileError("unable to translate C expr: unexpected token Id{ .Nl = void }");
+pub const __DARWIN_ALIAS_STARTING_IPHONE___IPHONE_8_0 = @compileError("unable to translate C expr: unexpected token Id{ .Nl = void }");
+pub const __DARWIN_ALIAS_STARTING_IPHONE___IPHONE_8_1 = @compileError("unable to translate C expr: unexpected token Id{ .Nl = void }");
+pub const __DARWIN_ALIAS_STARTING_IPHONE___IPHONE_8_2 = @compileError("unable to translate C expr: unexpected token Id{ .Nl = void }");
+pub const __DARWIN_ALIAS_STARTING_IPHONE___IPHONE_8_3 = @compileError("unable to translate C expr: unexpected token Id{ .Nl = void }");
+pub const __DARWIN_ALIAS_STARTING_IPHONE___IPHONE_8_4 = @compileError("unable to translate C expr: unexpected token Id{ .Nl = void }");
+pub const __DARWIN_ALIAS_STARTING_IPHONE___IPHONE_9_0 = @compileError("unable to translate C expr: unexpected token Id{ .Nl = void }");
+pub const __DARWIN_ALIAS_STARTING_IPHONE___IPHONE_9_1 = @compileError("unable to translate C expr: unexpected token Id{ .Nl = void }");
+pub const __DARWIN_ALIAS_STARTING_IPHONE___IPHONE_9_2 = @compileError("unable to translate C expr: unexpected token Id{ .Nl = void }");
+pub const __DARWIN_ALIAS_STARTING_IPHONE___IPHONE_9_3 = @compileError("unable to translate C expr: unexpected token Id{ .Nl = void }");
+pub const __DARWIN_ALIAS_STARTING_IPHONE___IPHONE_10_0 = @compileError("unable to translate C expr: unexpected token Id{ .Nl = void }");
+pub const __DARWIN_ALIAS_STARTING_IPHONE___IPHONE_10_1 = @compileError("unable to translate C expr: unexpected token Id{ .Nl = void }");
+pub const __DARWIN_ALIAS_STARTING_IPHONE___IPHONE_10_2 = @compileError("unable to translate C expr: unexpected token Id{ .Nl = void }");
+pub const __DARWIN_ALIAS_STARTING_IPHONE___IPHONE_10_3 = @compileError("unable to translate C expr: unexpected token Id{ .Nl = void }");
+pub const __DARWIN_ALIAS_STARTING_IPHONE___IPHONE_11_0 = @compileError("unable to translate C expr: unexpected token Id{ .Nl = void }");
+pub const __DARWIN_ALIAS_STARTING_IPHONE___IPHONE_11_1 = @compileError("unable to translate C expr: unexpected token Id{ .Nl = void }");
+pub const __DARWIN_ALIAS_STARTING_IPHONE___IPHONE_11_2 = @compileError("unable to translate C expr: unexpected token Id{ .Nl = void }");
+pub const __DARWIN_ALIAS_STARTING_IPHONE___IPHONE_11_3 = @compileError("unable to translate C expr: unexpected token Id{ .Nl = void }");
+pub const __DARWIN_ALIAS_STARTING_IPHONE___IPHONE_11_4 = @compileError("unable to translate C expr: unexpected token Id{ .Nl = void }");
+pub const __DARWIN_ALIAS_STARTING_IPHONE___IPHONE_12_0 = @compileError("unable to translate C expr: unexpected token Id{ .Nl = void }");
+pub const __DARWIN_ALIAS_STARTING_IPHONE___IPHONE_12_1 = @compileError("unable to translate C expr: unexpected token Id{ .Nl = void }");
+pub const __DARWIN_ALIAS_STARTING_IPHONE___IPHONE_12_2 = @compileError("unable to translate C expr: unexpected token Id{ .Nl = void }");
+pub const __DARWIN_ALIAS_STARTING_IPHONE___IPHONE_12_3 = @compileError("unable to translate C expr: unexpected token Id{ .Nl = void }");
+pub const __DARWIN_ALIAS_STARTING_IPHONE___IPHONE_12_4 = @compileError("unable to translate C expr: unexpected token Id{ .Nl = void }");
+pub const __DARWIN_ALIAS_STARTING_IPHONE___IPHONE_13_0 = @compileError("unable to translate C expr: unexpected token Id{ .Nl = void }");
+pub const __DARWIN_ALIAS_STARTING_IPHONE___IPHONE_13_1 = @compileError("unable to translate C expr: unexpected token Id{ .Nl = void }");
+pub const __DARWIN_ALIAS_STARTING_IPHONE___IPHONE_13_2 = @compileError("unable to translate C expr: unexpected token Id{ .Nl = void }");
+pub const __DARWIN_ALIAS_STARTING_MAC___MAC_10_15_1 = @compileError("unable to translate C expr: unexpected token Id{ .Nl = void }");
+pub const __DARWIN_ALIAS_STARTING = @compileError("unable to translate C expr: unexpected token Id{ .HashHash = void }");
+pub const __POSIX_C_DEPRECATED = @compileError("unable to translate C expr: unexpected token Id{ .HashHash = void }");
 pub const __compiler_barrier = @compileError("unable to translate C expr: expected identifier");
 pub const __enum_decl = @compileError("unable to translate C expr: expected identifier");
 pub const __enum_closed_decl = @compileError("unable to translate C expr: expected identifier");
 pub const __options_decl = @compileError("unable to translate C expr: expected identifier");
 pub const __options_closed_decl = @compileError("unable to translate C expr: expected identifier");
-pub const INT64_C = @compileError("macro tokenizing failed: unexpected character '#'");
-pub const UINT32_C = @compileError("macro tokenizing failed: unexpected character '#'");
-pub const UINT64_C = @compileError("macro tokenizing failed: unexpected character '#'");
-pub const INTMAX_C = @compileError("macro tokenizing failed: unexpected character '#'");
-pub const UINTMAX_C = @compileError("macro tokenizing failed: unexpected character '#'");
+pub const INT64_C = @compileError("unable to translate C expr: unexpected token Id{ .HashHash = void }");
+pub const UINT32_C = @compileError("unable to translate C expr: unexpected token Id{ .HashHash = void }");
+pub const UINT64_C = @compileError("unable to translate C expr: unexpected token Id{ .HashHash = void }");
+pub const INTMAX_C = @compileError("unable to translate C expr: unexpected token Id{ .HashHash = void }");
+pub const UINTMAX_C = @compileError("unable to translate C expr: unexpected token Id{ .HashHash = void }");
+pub const BLOCK_EXPORT = @compileError("unable to translate C expr: unexpected token Id{ .Keyword_extern = void }");
 pub const Block_copy = @compileError("unable to translate C expr: expected identifier");
 pub const Block_release = @compileError("unable to translate C expr: expected identifier");
-pub const EXTERN_API = @compileError("unable to translate C expr: unexpected token Id.Identifier");
-pub const EXTERN_API_C = @compileError("unable to translate C expr: unexpected token Id.Identifier");
-pub const EXTERN_API_STDCALL = @compileError("unable to translate C expr: unexpected token Id.Identifier");
-pub const EXTERN_API_C_STDCALL = @compileError("unable to translate C expr: unexpected token Id.Identifier");
-pub const PRAGMA_ALIGN_SUPPORTED = @compileError("unable to translate C expr: unexpected token Id.Dot");
-pub const GENERATINGPOWERPC = @compileError("unable to translate C expr: unexpected token Id.Dot");
-pub const GENERATING68K = @compileError("unable to translate C expr: unexpected token Id.Dot");
-pub const GENERATING68881 = @compileError("unable to translate C expr: unexpected token Id.Dot");
-pub const GENERATINGCFM = @compileError("unable to translate C expr: unexpected token Id.Dot");
-pub const CFMSYSTEMCALLS = @compileError("unable to translate C expr: unexpected token Id.Dot");
-pub const ONEWORDINLINE = @compileError("unable to translate C expr: unexpected token Id.Eof");
-pub const TWOWORDINLINE = @compileError("unable to translate C expr: unexpected token Id.Eof");
-pub const THREEWORDINLINE = @compileError("unable to translate C expr: unexpected token Id.Eof");
-pub const FOURWORDINLINE = @compileError("unable to translate C expr: unexpected token Id.Eof");
-pub const FIVEWORDINLINE = @compileError("unable to translate C expr: unexpected token Id.Eof");
-pub const SIXWORDINLINE = @compileError("unable to translate C expr: unexpected token Id.Eof");
-pub const SEVENWORDINLINE = @compileError("unable to translate C expr: unexpected token Id.Eof");
-pub const EIGHTWORDINLINE = @compileError("unable to translate C expr: unexpected token Id.Eof");
-pub const NINEWORDINLINE = @compileError("unable to translate C expr: unexpected token Id.Eof");
-pub const TENWORDINLINE = @compileError("unable to translate C expr: unexpected token Id.Eof");
-pub const ELEVENWORDINLINE = @compileError("unable to translate C expr: unexpected token Id.Eof");
-pub const TWELVEWORDINLINE = @compileError("unable to translate C expr: unexpected token Id.Eof");
-pub const __DARWIN_OS_INLINE = @compileError("unable to translate C expr: unexpected token Id.Identifier");
+pub const EXTERN_API = @compileError("unable to translate C expr: unexpected token Id{ .Keyword_extern = void }");
+pub const EXTERN_API_C = @compileError("unable to translate C expr: unexpected token Id{ .Keyword_extern = void }");
+pub const EXTERN_API_STDCALL = @compileError("unable to translate C expr: unexpected token Id{ .Keyword_extern = void }");
+pub const EXTERN_API_C_STDCALL = @compileError("unable to translate C expr: unexpected token Id{ .Keyword_extern = void }");
+pub const PRAGMA_ALIGN_SUPPORTED = @compileError("unable to translate C expr: unexpected token Id{ .Period = void }");
+pub const GENERATINGPOWERPC = @compileError("unable to translate C expr: unexpected token Id{ .Period = void }");
+pub const GENERATING68K = @compileError("unable to translate C expr: unexpected token Id{ .Period = void }");
+pub const GENERATING68881 = @compileError("unable to translate C expr: unexpected token Id{ .Period = void }");
+pub const GENERATINGCFM = @compileError("unable to translate C expr: unexpected token Id{ .Period = void }");
+pub const CFMSYSTEMCALLS = @compileError("unable to translate C expr: unexpected token Id{ .Period = void }");
+pub const ONEWORDINLINE = @compileError("unable to translate C expr: unexpected token Id{ .Nl = void }");
+pub const TWOWORDINLINE = @compileError("unable to translate C expr: unexpected token Id{ .Nl = void }");
+pub const THREEWORDINLINE = @compileError("unable to translate C expr: unexpected token Id{ .Nl = void }");
+pub const FOURWORDINLINE = @compileError("unable to translate C expr: unexpected token Id{ .Nl = void }");
+pub const FIVEWORDINLINE = @compileError("unable to translate C expr: unexpected token Id{ .Nl = void }");
+pub const SIXWORDINLINE = @compileError("unable to translate C expr: unexpected token Id{ .Nl = void }");
+pub const SEVENWORDINLINE = @compileError("unable to translate C expr: unexpected token Id{ .Nl = void }");
+pub const EIGHTWORDINLINE = @compileError("unable to translate C expr: unexpected token Id{ .Nl = void }");
+pub const NINEWORDINLINE = @compileError("unable to translate C expr: unexpected token Id{ .Nl = void }");
+pub const TENWORDINLINE = @compileError("unable to translate C expr: unexpected token Id{ .Nl = void }");
+pub const ELEVENWORDINLINE = @compileError("unable to translate C expr: unexpected token Id{ .Nl = void }");
+pub const TWELVEWORDINLINE = @compileError("unable to translate C expr: unexpected token Id{ .Nl = void }");
+pub const __DARWIN_OS_INLINE = @compileError("unable to translate C expr: unexpected token Id{ .Keyword_static = void }");
 pub const __DARWIN_OSSwapInt16 = @compileError("unable to translate C expr: expected ':'");
 pub const __DARWIN_OSSwapInt32 = @compileError("unable to translate C expr: expected ':'");
 pub const __DARWIN_OSSwapInt64 = @compileError("unable to translate C expr: expected ':'");
-pub const NTOHL = @compileError("unable to translate C expr: unexpected token Id.Assign");
-pub const NTOHS = @compileError("unable to translate C expr: unexpected token Id.Assign");
-pub const NTOHLL = @compileError("unable to translate C expr: unexpected token Id.Assign");
-pub const HTONL = @compileError("unable to translate C expr: unexpected token Id.Assign");
-pub const HTONS = @compileError("unable to translate C expr: unexpected token Id.Assign");
-pub const HTONLL = @compileError("unable to translate C expr: unexpected token Id.Assign");
-pub const __DARWIN_howmany = @compileError("macro tokenizing failed: unexpected character '%'");
-pub const __DARWIN_FD_SET = @compileError("macro tokenizing failed: unexpected character '{'");
-pub const __DARWIN_FD_CLR = @compileError("macro tokenizing failed: unexpected character '{'");
-pub const StrLength = @compileError("unable to translate C expr: expected ')''");
-pub const CF_INLINE = @compileError("unable to translate C expr: unexpected token Id.Identifier");
-pub const CF_SWIFT_NAME = @compileError("unable to translate C expr: unexpected token Id.Eof");
-pub const TestAudioFormatNativeEndian = @compileError("unable to translate C expr: unexpected token Id.Eq");
-pub const assert = @compileError("macro tokenizing failed: unexpected character '#'");
-pub const errno = @compileError("unable to translate C expr: unexpected token Id.RParen");
-pub const FLT_ROUNDS = @compileError("unable to translate C expr: unexpected token Id.RParen");
-pub const HUGE_VAL = @compileError("unable to translate C expr: unexpected token Id.RParen");
-pub const HUGE_VALF = @compileError("unable to translate C expr: unexpected token Id.RParen");
-pub const HUGE_VALL = @compileError("unable to translate C expr: unexpected token Id.RParen");
-pub const math_errhandling = @compileError("unable to translate C expr: unexpected token Id.RParen");
-pub const fpclassify = @compileError("unable to translate C expr: unexpected token Id.Eq");
-pub const isnormal = @compileError("unable to translate C expr: unexpected token Id.Eq");
-pub const isfinite = @compileError("unable to translate C expr: unexpected token Id.Eq");
-pub const isinf = @compileError("unable to translate C expr: unexpected token Id.Eq");
-pub const isnan = @compileError("unable to translate C expr: unexpected token Id.Eq");
-pub const signbit = @compileError("unable to translate C expr: unexpected token Id.Eq");
-pub const MAXFLOAT = @compileError("unable to translate C expr: unexpected token Id.Identifier");
-pub const SIG_DFL = @compileError("unable to translate C expr: unexpected token Id.RParen");
-pub const SIG_IGN = @compileError("unable to translate C expr: unexpected token Id.RParen");
-pub const SIG_HOLD = @compileError("unable to translate C expr: unexpected token Id.RParen");
-pub const SIG_ERR = @compileError("unable to translate C expr: unexpected token Id.RParen");
-pub const _STRUCT_X86_THREAD_STATE32 = @compileError("unable to translate C expr: unexpected token Id.Identifier");
-pub const _STRUCT_FP_CONTROL = @compileError("unable to translate C expr: unexpected token Id.Identifier");
-pub const _STRUCT_FP_STATUS = @compileError("unable to translate C expr: unexpected token Id.Identifier");
-pub const _STRUCT_MMST_REG = @compileError("unable to translate C expr: unexpected token Id.Identifier");
-pub const _STRUCT_XMM_REG = @compileError("unable to translate C expr: unexpected token Id.Identifier");
-pub const _STRUCT_YMM_REG = @compileError("unable to translate C expr: unexpected token Id.Identifier");
-pub const _STRUCT_ZMM_REG = @compileError("unable to translate C expr: unexpected token Id.Identifier");
-pub const _STRUCT_OPMASK_REG = @compileError("unable to translate C expr: unexpected token Id.Identifier");
-pub const _STRUCT_X86_FLOAT_STATE32 = @compileError("unable to translate C expr: unexpected token Id.Identifier");
-pub const _STRUCT_X86_AVX_STATE32 = @compileError("unable to translate C expr: unexpected token Id.Identifier");
-pub const _STRUCT_X86_AVX512_STATE32 = @compileError("unable to translate C expr: unexpected token Id.Identifier");
-pub const _STRUCT_X86_EXCEPTION_STATE32 = @compileError("unable to translate C expr: unexpected token Id.Identifier");
-pub const _STRUCT_X86_DEBUG_STATE32 = @compileError("unable to translate C expr: unexpected token Id.Identifier");
-pub const _STRUCT_X86_PAGEIN_STATE = @compileError("unable to translate C expr: unexpected token Id.Identifier");
-pub const _STRUCT_X86_THREAD_STATE64 = @compileError("unable to translate C expr: unexpected token Id.Identifier");
-pub const _STRUCT_X86_THREAD_FULL_STATE64 = @compileError("unable to translate C expr: unexpected token Id.Identifier");
-pub const _STRUCT_X86_FLOAT_STATE64 = @compileError("unable to translate C expr: unexpected token Id.Identifier");
-pub const _STRUCT_X86_AVX_STATE64 = @compileError("unable to translate C expr: unexpected token Id.Identifier");
-pub const _STRUCT_X86_AVX512_STATE64 = @compileError("unable to translate C expr: unexpected token Id.Identifier");
-pub const _STRUCT_X86_EXCEPTION_STATE64 = @compileError("unable to translate C expr: unexpected token Id.Identifier");
-pub const _STRUCT_X86_DEBUG_STATE64 = @compileError("unable to translate C expr: unexpected token Id.Identifier");
-pub const _STRUCT_X86_CPMU_STATE64 = @compileError("unable to translate C expr: unexpected token Id.Identifier");
-pub const _STRUCT_MCONTEXT32 = @compileError("unable to translate C expr: unexpected token Id.Identifier");
-pub const _STRUCT_MCONTEXT_AVX32 = @compileError("unable to translate C expr: unexpected token Id.Identifier");
-pub const _STRUCT_MCONTEXT_AVX512_32 = @compileError("unable to translate C expr: unexpected token Id.Identifier");
-pub const _STRUCT_MCONTEXT64 = @compileError("unable to translate C expr: unexpected token Id.Identifier");
-pub const _STRUCT_MCONTEXT64_FULL = @compileError("unable to translate C expr: unexpected token Id.Identifier");
-pub const _STRUCT_MCONTEXT_AVX64 = @compileError("unable to translate C expr: unexpected token Id.Identifier");
-pub const _STRUCT_MCONTEXT_AVX64_FULL = @compileError("unable to translate C expr: unexpected token Id.Identifier");
-pub const _STRUCT_MCONTEXT_AVX512_64 = @compileError("unable to translate C expr: unexpected token Id.Identifier");
-pub const _STRUCT_MCONTEXT_AVX512_64_FULL = @compileError("unable to translate C expr: unexpected token Id.Identifier");
-pub const _STRUCT_SIGALTSTACK = @compileError("unable to translate C expr: unexpected token Id.Identifier");
-pub const _STRUCT_UCONTEXT = @compileError("unable to translate C expr: unexpected token Id.Identifier");
-pub const __sgetc = @compileError("unable to translate C expr: unexpected token Id.Decrement");
-pub const __sfeof = @compileError("unable to translate C expr: unexpected token Id.Ne");
-pub const __sferror = @compileError("unable to translate C expr: unexpected token Id.Ne");
-pub const __sclearerr = @compileError("unable to translate C expr: unexpected token Id.Assign");
+pub const NTOHL = @compileError("unable to translate C expr: unexpected token Id{ .Equal = void }");
+pub const NTOHS = @compileError("unable to translate C expr: unexpected token Id{ .Equal = void }");
+pub const NTOHLL = @compileError("unable to translate C expr: unexpected token Id{ .Equal = void }");
+pub const HTONL = @compileError("unable to translate C expr: unexpected token Id{ .Equal = void }");
+pub const HTONS = @compileError("unable to translate C expr: unexpected token Id{ .Equal = void }");
+pub const HTONLL = @compileError("unable to translate C expr: unexpected token Id{ .Equal = void }");
+pub const __DARWIN_NFDBITS = @compileError("unable to translate C expr: unexpected token Id{ .Keyword_sizeof = void }");
+pub const __DARWIN_howmany = @compileError("unable to translate C expr: unexpected token Id{ .Percent = void }");
+pub const __DARWIN_FD_SET = @compileError("unable to translate C expr: unexpected token Id{ .Keyword_do = void }");
+pub const __DARWIN_FD_CLR = @compileError("unable to translate C expr: unexpected token Id{ .Keyword_do = void }");
+pub const __DARWIN_FD_ZERO = @compileError("unable to translate C expr: unexpected token Id{ .Keyword_sizeof = void }");
+pub const __DARWIN_FD_COPY = @compileError("unable to translate C expr: unexpected token Id{ .Keyword_sizeof = void }");
+pub const StrLength = @compileError("unable to translate C expr: unexpected token Id{ .Keyword_const = void }");
+pub const CF_EXPORT = @compileError("unable to translate C expr: unexpected token Id{ .Keyword_extern = void }");
+pub const CF_INLINE = @compileError("unable to translate C expr: unexpected token Id{ .Keyword_static = void }");
+pub const CF_SWIFT_NAME = @compileError("unable to translate C expr: unexpected token Id{ .Nl = void }");
+pub const TestAudioFormatNativeEndian = @compileError("unable to translate C expr: unexpected token Id{ .EqualEqual = void }");
+pub const __assert = @compileError("unable to translate C expr: unexpected token Id{ .Keyword_const = void }");
+pub const assert = @compileError("unable to translate C expr: expected ':'");
+pub const static_assert = @compileError("unable to translate C expr: unexpected token Id{ .Keyword_static_assert = void }");
+pub const errno = @compileError("unable to translate C expr: unexpected token Id{ .RParen = void }");
+pub const FLT_ROUNDS = @compileError("unable to translate C expr: unexpected token Id{ .RParen = void }");
+pub const HUGE_VAL = @compileError("unable to translate C expr: unexpected token Id{ .RParen = void }");
+pub const HUGE_VALF = @compileError("unable to translate C expr: unexpected token Id{ .RParen = void }");
+pub const HUGE_VALL = @compileError("unable to translate C expr: unexpected token Id{ .RParen = void }");
+pub const math_errhandling = @compileError("unable to translate C expr: unexpected token Id{ .RParen = void }");
+pub const fpclassify = @compileError("unable to translate C expr: unexpected token Id{ .Keyword_sizeof = void }");
+pub const isnormal = @compileError("unable to translate C expr: unexpected token Id{ .Keyword_sizeof = void }");
+pub const isfinite = @compileError("unable to translate C expr: unexpected token Id{ .Keyword_sizeof = void }");
+pub const isinf = @compileError("unable to translate C expr: unexpected token Id{ .Keyword_sizeof = void }");
+pub const isnan = @compileError("unable to translate C expr: unexpected token Id{ .Keyword_sizeof = void }");
+pub const signbit = @compileError("unable to translate C expr: unexpected token Id{ .Keyword_sizeof = void }");
+pub const SIG_DFL = @compileError("unable to translate C expr: unexpected token Id{ .RParen = void }");
+pub const SIG_IGN = @compileError("unable to translate C expr: unexpected token Id{ .RParen = void }");
+pub const SIG_HOLD = @compileError("unable to translate C expr: unexpected token Id{ .RParen = void }");
+pub const SIG_ERR = @compileError("unable to translate C expr: unexpected token Id{ .RParen = void }");
+pub const _STRUCT_X86_THREAD_STATE32 = @compileError("unable to translate C expr: unexpected token Id{ .Keyword_struct = void }");
+pub const _STRUCT_FP_CONTROL = @compileError("unable to translate C expr: unexpected token Id{ .Keyword_struct = void }");
+pub const _STRUCT_FP_STATUS = @compileError("unable to translate C expr: unexpected token Id{ .Keyword_struct = void }");
+pub const _STRUCT_MMST_REG = @compileError("unable to translate C expr: unexpected token Id{ .Keyword_struct = void }");
+pub const _STRUCT_XMM_REG = @compileError("unable to translate C expr: unexpected token Id{ .Keyword_struct = void }");
+pub const _STRUCT_YMM_REG = @compileError("unable to translate C expr: unexpected token Id{ .Keyword_struct = void }");
+pub const _STRUCT_ZMM_REG = @compileError("unable to translate C expr: unexpected token Id{ .Keyword_struct = void }");
+pub const _STRUCT_OPMASK_REG = @compileError("unable to translate C expr: unexpected token Id{ .Keyword_struct = void }");
+pub const _STRUCT_X86_FLOAT_STATE32 = @compileError("unable to translate C expr: unexpected token Id{ .Keyword_struct = void }");
+pub const _STRUCT_X86_AVX_STATE32 = @compileError("unable to translate C expr: unexpected token Id{ .Keyword_struct = void }");
+pub const _STRUCT_X86_AVX512_STATE32 = @compileError("unable to translate C expr: unexpected token Id{ .Keyword_struct = void }");
+pub const _STRUCT_X86_EXCEPTION_STATE32 = @compileError("unable to translate C expr: unexpected token Id{ .Keyword_struct = void }");
+pub const _STRUCT_X86_DEBUG_STATE32 = @compileError("unable to translate C expr: unexpected token Id{ .Keyword_struct = void }");
+pub const _STRUCT_X86_PAGEIN_STATE = @compileError("unable to translate C expr: unexpected token Id{ .Keyword_struct = void }");
+pub const _STRUCT_X86_THREAD_STATE64 = @compileError("unable to translate C expr: unexpected token Id{ .Keyword_struct = void }");
+pub const _STRUCT_X86_THREAD_FULL_STATE64 = @compileError("unable to translate C expr: unexpected token Id{ .Keyword_struct = void }");
+pub const _STRUCT_X86_FLOAT_STATE64 = @compileError("unable to translate C expr: unexpected token Id{ .Keyword_struct = void }");
+pub const _STRUCT_X86_AVX_STATE64 = @compileError("unable to translate C expr: unexpected token Id{ .Keyword_struct = void }");
+pub const _STRUCT_X86_AVX512_STATE64 = @compileError("unable to translate C expr: unexpected token Id{ .Keyword_struct = void }");
+pub const _STRUCT_X86_EXCEPTION_STATE64 = @compileError("unable to translate C expr: unexpected token Id{ .Keyword_struct = void }");
+pub const _STRUCT_X86_DEBUG_STATE64 = @compileError("unable to translate C expr: unexpected token Id{ .Keyword_struct = void }");
+pub const _STRUCT_X86_CPMU_STATE64 = @compileError("unable to translate C expr: unexpected token Id{ .Keyword_struct = void }");
+pub const _STRUCT_MCONTEXT32 = @compileError("unable to translate C expr: unexpected token Id{ .Keyword_struct = void }");
+pub const _STRUCT_MCONTEXT_AVX32 = @compileError("unable to translate C expr: unexpected token Id{ .Keyword_struct = void }");
+pub const _STRUCT_MCONTEXT_AVX512_32 = @compileError("unable to translate C expr: unexpected token Id{ .Keyword_struct = void }");
+pub const _STRUCT_MCONTEXT64 = @compileError("unable to translate C expr: unexpected token Id{ .Keyword_struct = void }");
+pub const _STRUCT_MCONTEXT64_FULL = @compileError("unable to translate C expr: unexpected token Id{ .Keyword_struct = void }");
+pub const _STRUCT_MCONTEXT_AVX64 = @compileError("unable to translate C expr: unexpected token Id{ .Keyword_struct = void }");
+pub const _STRUCT_MCONTEXT_AVX64_FULL = @compileError("unable to translate C expr: unexpected token Id{ .Keyword_struct = void }");
+pub const _STRUCT_MCONTEXT_AVX512_64 = @compileError("unable to translate C expr: unexpected token Id{ .Keyword_struct = void }");
+pub const _STRUCT_MCONTEXT_AVX512_64_FULL = @compileError("unable to translate C expr: unexpected token Id{ .Keyword_struct = void }");
+pub const _STRUCT_SIGALTSTACK = @compileError("unable to translate C expr: unexpected token Id{ .Keyword_struct = void }");
+pub const _STRUCT_UCONTEXT = @compileError("unable to translate C expr: unexpected token Id{ .Keyword_struct = void }");
+pub const __sgetc = @compileError("unable to translate C expr: unexpected token Id{ .MinusMinus = void }");
+pub const __sfeof = @compileError("unable to translate C expr: unexpected token Id{ .BangEqual = void }");
+pub const __sferror = @compileError("unable to translate C expr: unexpected token Id{ .BangEqual = void }");
+pub const __sclearerr = @compileError("unable to translate C expr: expected ')''");
 pub const __darwin_obsz = @compileError("unable to translate C expr: expected ',' or ')'");
-pub const _STRUCT_TIMEVAL = @compileError("unable to translate C expr: unexpected token Id.Identifier");
-pub const WIFCONTINUED = @compileError("unable to translate C expr: unexpected token Id.Eq");
-pub const WIFSTOPPED = @compileError("unable to translate C expr: unexpected token Id.Eq");
-pub const WIFEXITED = @compileError("unable to translate C expr: unexpected token Id.Eq");
-pub const WIFSIGNALED = @compileError("unable to translate C expr: unexpected token Id.Ne");
-pub const _STRUCT_TIMESPEC = @compileError("unable to translate C expr: unexpected token Id.Identifier");
-pub const __CLOCK_AVAILABILITY = @compileError("unable to translate C expr: unexpected token Id.Identifier");
-pub const PRId8 = @compileError("unable to translate C expr: unexpected token Id.StrLit");
-pub const PRIi8 = @compileError("unable to translate C expr: unexpected token Id.StrLit");
-pub const PRIo8 = @compileError("unable to translate C expr: unexpected token Id.StrLit");
-pub const PRIu8 = @compileError("unable to translate C expr: unexpected token Id.StrLit");
-pub const PRIx8 = @compileError("unable to translate C expr: unexpected token Id.StrLit");
-pub const PRIX8 = @compileError("unable to translate C expr: unexpected token Id.StrLit");
-pub const PRId64 = @compileError("unable to translate C expr: unexpected token Id.StrLit");
-pub const PRIi64 = @compileError("unable to translate C expr: unexpected token Id.StrLit");
-pub const PRIo64 = @compileError("unable to translate C expr: unexpected token Id.StrLit");
-pub const PRIu64 = @compileError("unable to translate C expr: unexpected token Id.StrLit");
-pub const PRIx64 = @compileError("unable to translate C expr: unexpected token Id.StrLit");
-pub const PRIX64 = @compileError("unable to translate C expr: unexpected token Id.StrLit");
-pub const PRIdMAX = @compileError("unable to translate C expr: unexpected token Id.StrLit");
-pub const PRIiMAX = @compileError("unable to translate C expr: unexpected token Id.StrLit");
-pub const PRIoMAX = @compileError("unable to translate C expr: unexpected token Id.StrLit");
-pub const PRIuMAX = @compileError("unable to translate C expr: unexpected token Id.StrLit");
-pub const PRIxMAX = @compileError("unable to translate C expr: unexpected token Id.StrLit");
-pub const PRIXMAX = @compileError("unable to translate C expr: unexpected token Id.StrLit");
-pub const SCNd8 = @compileError("unable to translate C expr: unexpected token Id.StrLit");
-pub const SCNi8 = @compileError("unable to translate C expr: unexpected token Id.StrLit");
-pub const SCNo8 = @compileError("unable to translate C expr: unexpected token Id.StrLit");
-pub const SCNu8 = @compileError("unable to translate C expr: unexpected token Id.StrLit");
-pub const SCNx8 = @compileError("unable to translate C expr: unexpected token Id.StrLit");
-pub const SCNd64 = @compileError("unable to translate C expr: unexpected token Id.StrLit");
-pub const SCNi64 = @compileError("unable to translate C expr: unexpected token Id.StrLit");
-pub const SCNo64 = @compileError("unable to translate C expr: unexpected token Id.StrLit");
-pub const SCNu64 = @compileError("unable to translate C expr: unexpected token Id.StrLit");
-pub const SCNx64 = @compileError("unable to translate C expr: unexpected token Id.StrLit");
-pub const SCNdMAX = @compileError("unable to translate C expr: unexpected token Id.StrLit");
-pub const SCNiMAX = @compileError("unable to translate C expr: unexpected token Id.StrLit");
-pub const SCNoMAX = @compileError("unable to translate C expr: unexpected token Id.StrLit");
-pub const SCNuMAX = @compileError("unable to translate C expr: unexpected token Id.StrLit");
-pub const SCNxMAX = @compileError("unable to translate C expr: unexpected token Id.StrLit");
-pub const OS_INLINE = @compileError("unable to translate C expr: unexpected token Id.Identifier");
+pub const _STRUCT_TIMEVAL = @compileError("unable to translate C expr: unexpected token Id{ .Keyword_struct = void }");
+pub const WIFCONTINUED = @compileError("unable to translate C expr: unexpected token Id{ .EqualEqual = void }");
+pub const WIFSTOPPED = @compileError("unable to translate C expr: unexpected token Id{ .EqualEqual = void }");
+pub const WIFEXITED = @compileError("unable to translate C expr: unexpected token Id{ .EqualEqual = void }");
+pub const WIFSIGNALED = @compileError("unable to translate C expr: unexpected token Id{ .BangEqual = void }");
+pub const _STRUCT_TIMESPEC = @compileError("unable to translate C expr: unexpected token Id{ .Keyword_struct = void }");
+pub const __CLOCK_AVAILABILITY = @compileError("unable to translate C expr: unexpected token Id{ .Identifier = void }");
+pub const PRId8 = @compileError("unable to translate C expr: unexpected token Id{ .StringLiteral = StrKind.None }");
+pub const PRIi8 = @compileError("unable to translate C expr: unexpected token Id{ .StringLiteral = StrKind.None }");
+pub const PRIo8 = @compileError("unable to translate C expr: unexpected token Id{ .StringLiteral = StrKind.None }");
+pub const PRIu8 = @compileError("unable to translate C expr: unexpected token Id{ .StringLiteral = StrKind.None }");
+pub const PRIx8 = @compileError("unable to translate C expr: unexpected token Id{ .StringLiteral = StrKind.None }");
+pub const PRIX8 = @compileError("unable to translate C expr: unexpected token Id{ .StringLiteral = StrKind.None }");
+pub const PRId64 = @compileError("unable to translate C expr: unexpected token Id{ .StringLiteral = StrKind.None }");
+pub const PRIi64 = @compileError("unable to translate C expr: unexpected token Id{ .StringLiteral = StrKind.None }");
+pub const PRIo64 = @compileError("unable to translate C expr: unexpected token Id{ .StringLiteral = StrKind.None }");
+pub const PRIu64 = @compileError("unable to translate C expr: unexpected token Id{ .StringLiteral = StrKind.None }");
+pub const PRIx64 = @compileError("unable to translate C expr: unexpected token Id{ .StringLiteral = StrKind.None }");
+pub const PRIX64 = @compileError("unable to translate C expr: unexpected token Id{ .StringLiteral = StrKind.None }");
+pub const PRIdMAX = @compileError("unable to translate C expr: unexpected token Id{ .StringLiteral = StrKind.None }");
+pub const PRIiMAX = @compileError("unable to translate C expr: unexpected token Id{ .StringLiteral = StrKind.None }");
+pub const PRIoMAX = @compileError("unable to translate C expr: unexpected token Id{ .StringLiteral = StrKind.None }");
+pub const PRIuMAX = @compileError("unable to translate C expr: unexpected token Id{ .StringLiteral = StrKind.None }");
+pub const PRIxMAX = @compileError("unable to translate C expr: unexpected token Id{ .StringLiteral = StrKind.None }");
+pub const PRIXMAX = @compileError("unable to translate C expr: unexpected token Id{ .StringLiteral = StrKind.None }");
+pub const SCNd8 = @compileError("unable to translate C expr: unexpected token Id{ .StringLiteral = StrKind.None }");
+pub const SCNi8 = @compileError("unable to translate C expr: unexpected token Id{ .StringLiteral = StrKind.None }");
+pub const SCNo8 = @compileError("unable to translate C expr: unexpected token Id{ .StringLiteral = StrKind.None }");
+pub const SCNu8 = @compileError("unable to translate C expr: unexpected token Id{ .StringLiteral = StrKind.None }");
+pub const SCNx8 = @compileError("unable to translate C expr: unexpected token Id{ .StringLiteral = StrKind.None }");
+pub const SCNd64 = @compileError("unable to translate C expr: unexpected token Id{ .StringLiteral = StrKind.None }");
+pub const SCNi64 = @compileError("unable to translate C expr: unexpected token Id{ .StringLiteral = StrKind.None }");
+pub const SCNo64 = @compileError("unable to translate C expr: unexpected token Id{ .StringLiteral = StrKind.None }");
+pub const SCNu64 = @compileError("unable to translate C expr: unexpected token Id{ .StringLiteral = StrKind.None }");
+pub const SCNx64 = @compileError("unable to translate C expr: unexpected token Id{ .StringLiteral = StrKind.None }");
+pub const SCNdMAX = @compileError("unable to translate C expr: unexpected token Id{ .StringLiteral = StrKind.None }");
+pub const SCNiMAX = @compileError("unable to translate C expr: unexpected token Id{ .StringLiteral = StrKind.None }");
+pub const SCNoMAX = @compileError("unable to translate C expr: unexpected token Id{ .StringLiteral = StrKind.None }");
+pub const SCNuMAX = @compileError("unable to translate C expr: unexpected token Id{ .StringLiteral = StrKind.None }");
+pub const SCNxMAX = @compileError("unable to translate C expr: unexpected token Id{ .StringLiteral = StrKind.None }");
+pub const OS_INLINE = @compileError("unable to translate C expr: unexpected token Id{ .Keyword_static = void }");
 pub const CF_CALENDAR_ENUM_DEPRECATED = @compileError("unable to translate C expr: expected identifier");
 pub const CF_CALENDAR_DEPRECATED = @compileError("unable to translate C expr: expected identifier");
 pub const CFSTR = @compileError("unable to translate C expr: expected ',' or ')'");
-pub const MACH_PORT_VALID = @compileError("unable to translate C expr: unexpected token Id.Ne");
-pub const MACH_PORT_LIMITS_INFO_COUNT = @compileError("unable to translate C expr: expected ')''");
-pub const MACH_PORT_RECEIVE_STATUS_COUNT = @compileError("unable to translate C expr: expected ')''");
-pub const MACH_PORT_INFO_EXT_COUNT = @compileError("unable to translate C expr: expected ')''");
-pub const OS_EXPORT = @compileError("unable to translate C expr: unexpected token Id.Identifier");
-pub const OS_ENUM = @compileError("macro tokenizing failed: unexpected character '{'");
-pub const OS_CLOSED_ENUM = @compileError("macro tokenizing failed: unexpected character '{'");
-pub const OS_OPTIONS = @compileError("macro tokenizing failed: unexpected character '{'");
-pub const OS_CLOSED_OPTIONS = @compileError("macro tokenizing failed: unexpected character '{'");
+pub const MACH_PORT_VALID = @compileError("unable to translate C expr: unexpected token Id{ .BangEqual = void }");
+pub const MACH_PORT_LIMITS_INFO_COUNT = @compileError("unable to translate C expr: unexpected token Id{ .Keyword_sizeof = void }");
+pub const MACH_PORT_RECEIVE_STATUS_COUNT = @compileError("unable to translate C expr: unexpected token Id{ .Keyword_sizeof = void }");
+pub const MACH_PORT_INFO_EXT_COUNT = @compileError("unable to translate C expr: unexpected token Id{ .Keyword_sizeof = void }");
+pub const OS_EXPORT = @compileError("unable to translate C expr: unexpected token Id{ .Keyword_extern = void }");
+pub const OS_ENUM = @compileError("unable to translate C expr: expected identifier");
+pub const OS_CLOSED_ENUM = @compileError("unable to translate C expr: expected identifier");
+pub const OS_OPTIONS = @compileError("unable to translate C expr: expected identifier");
+pub const OS_CLOSED_OPTIONS = @compileError("unable to translate C expr: expected identifier");
 pub const OS_SWIFT_UNAVAILABLE = @compileError("unable to translate C expr: expected ',' or ')'");
-pub const OS_SWIFT_NAME = @compileError("unable to translate C expr: unexpected token Id.Eof");
-pub const __OS_STRINGIFY = @compileError("macro tokenizing failed: unexpected character '#'");
-pub const __OS_CONCAT = @compileError("macro tokenizing failed: unexpected character '#'");
+pub const OS_SWIFT_NAME = @compileError("unable to translate C expr: unexpected token Id{ .Nl = void }");
+pub const __OS_STRINGIFY = @compileError("unable to translate C expr: unexpected token Id{ .Hash = void }");
+pub const __OS_CONCAT = @compileError("unable to translate C expr: unexpected token Id{ .HashHash = void }");
 pub const os_prevent_tail_call_optimization = @compileError("unable to translate C expr: expected identifier");
 pub const os_compiler_barrier = @compileError("unable to translate C expr: expected identifier");
-pub const OS_OBJECT_DECL_CLASS = @compileError("macro tokenizing failed: unexpected character '#'");
+pub const OS_OBJECT_DECL_CLASS = @compileError("unable to translate C expr: unexpected token Id{ .Keyword_typedef = void }");
 pub const DISPATCH_LINUX_UNAVAILABLE = @compileError("unable to translate C expr: expected identifier");
 pub const DISPATCH_FREEBSD_UNAVAILABLE = @compileError("unable to translate C expr: expected identifier");
-pub const DISPATCH_ALIAS_V2 = @compileError("macro tokenizing failed: unexpected character '#'");
-pub const DISPATCH_EXPORT = @compileError("unable to translate C expr: unexpected token Id.Identifier");
-pub const DISPATCH_INLINE = @compileError("unable to translate C expr: unexpected token Id.Identifier");
+pub const DISPATCH_ALIAS_V2 = @compileError("unable to translate C expr: expected ',' or ')'");
+pub const DISPATCH_EXPORT = @compileError("unable to translate C expr: unexpected token Id{ .Keyword_extern = void }");
+pub const DISPATCH_INLINE = @compileError("unable to translate C expr: unexpected token Id{ .Keyword_static = void }");
 pub const dispatch_compiler_barrier = @compileError("unable to translate C expr: expected identifier");
-pub const DISPATCH_ENUM = @compileError("macro tokenizing failed: unexpected character '{'");
-pub const DISPATCH_OPTIONS = @compileError("macro tokenizing failed: unexpected character '{'");
+pub const DISPATCH_ENUM = @compileError("unable to translate C expr: expected identifier");
+pub const DISPATCH_OPTIONS = @compileError("unable to translate C expr: expected identifier");
 pub const DISPATCH_ENUM_API_AVAILABLE = @compileError("unable to translate C expr: expected identifier");
 pub const DISPATCH_ENUM_API_DEPRECATED = @compileError("unable to translate C expr: expected identifier");
 pub const DISPATCH_ENUM_API_DEPRECATED_WITH_REPLACEMENT = @compileError("unable to translate C expr: expected identifier");
 pub const DISPATCH_SWIFT_UNAVAILABLE = @compileError("unable to translate C expr: expected ',' or ')'");
-pub const DISPATCH_SWIFT3_UNAVAILABLE = @compileError("unable to translate C expr: unexpected token Id.Eof");
-pub const DISPATCH_SWIFT_NAME = @compileError("unable to translate C expr: unexpected token Id.Eof");
-pub const time_value_add_usec = @compileError("macro tokenizing failed: unexpected character '{'");
-pub const time_value_add = @compileError("macro tokenizing failed: unexpected character '{'");
+pub const DISPATCH_SWIFT3_UNAVAILABLE = @compileError("unable to translate C expr: unexpected token Id{ .Nl = void }");
+pub const DISPATCH_SWIFT_NAME = @compileError("unable to translate C expr: unexpected token Id{ .Nl = void }");
+pub const time_value_add_usec = @compileError("unable to translate C expr: unexpected token Id{ .LBrace = void }");
+pub const time_value_add = @compileError("unable to translate C expr: unexpected token Id{ .LBrace = void }");
 pub const CMP_MACH_TIMESPEC = @compileError("unable to translate C expr: expected ':'");
-pub const ADD_MACH_TIMESPEC = @compileError("macro tokenizing failed: unexpected character '{'");
-pub const SUB_MACH_TIMESPEC = @compileError("macro tokenizing failed: unexpected character '{'");
-pub const BAD_ALRMTYPE = @compileError("unable to translate C expr: unexpected token Id.Ne");
-pub const __QOS_ENUM = @compileError("macro tokenizing failed: unexpected character '{'");
+pub const ADD_MACH_TIMESPEC = @compileError("unable to translate C expr: unexpected token Id{ .Keyword_do = void }");
+pub const SUB_MACH_TIMESPEC = @compileError("unable to translate C expr: unexpected token Id{ .Keyword_do = void }");
+pub const BAD_ALRMTYPE = @compileError("unable to translate C expr: unexpected token Id{ .BangEqual = void }");
+pub const __QOS_ENUM = @compileError("unable to translate C expr: expected identifier");
 pub const __QOS_CLASS_AVAILABLE = @compileError("unable to translate C expr: expected identifier");
-pub const DISPATCH_DECL = @compileError("macro tokenizing failed: unexpected character '#'");
-pub const DISPATCH_DECL_SUBCLASS = @compileError("macro tokenizing failed: unexpected character '#'");
-pub const DISPATCH_SOURCE_DECL = @compileError("macro tokenizing failed: unexpected character ';'");
-pub const DISPATCH_SOURCE_TYPE_DECL = @compileError("macro tokenizing failed: unexpected character '#'");
-pub const MACH_MSGH_BITS_HAS_REMOTE = @compileError("unable to translate C expr: unexpected token Id.Ne");
-pub const MACH_MSGH_BITS_HAS_LOCAL = @compileError("unable to translate C expr: unexpected token Id.Ne");
-pub const MACH_MSGH_BITS_HAS_VOUCHER = @compileError("unable to translate C expr: unexpected token Id.Ne");
-pub const MACH_MSGH_BITS_IS_COMPLEX = @compileError("unable to translate C expr: unexpected token Id.Ne");
-pub const MACH_MSGH_BITS_RAISED_IMPORTANCE = @compileError("unable to translate C expr: unexpected token Id.Ne");
-pub const MACH_MSGH_BITS_HOLDS_IMPORTANCE_ASSERTION = @compileError("unable to translate C expr: unexpected token Id.Ne");
-pub const MACH_MSG_SIZE_NULL = @compileError("unable to translate C expr: unexpected token Id.NumLitInt");
-pub const MACH_MSG_PRIORITY_UNSPECIFIED = @compileError("unable to translate C expr: unexpected token Id.NumLitInt");
-pub const MACH_MSG_BODY_NULL = @compileError("unable to translate C expr: unexpected token Id.NumLitInt");
-pub const MACH_MSG_DESCRIPTOR_NULL = @compileError("unable to translate C expr: unexpected token Id.NumLitInt");
-pub const MACH_MSG_NULL = @compileError("unable to translate C expr: unexpected token Id.NumLitInt");
-pub const KERNEL_SECURITY_TOKEN_VALUE = @compileError("macro tokenizing failed: unexpected character '{'");
-pub const KERNEL_AUDIT_TOKEN_VALUE = @compileError("macro tokenizing failed: unexpected character '{'");
-pub const REQUESTED_TRAILER_SIZE_NATIVE = @compileError("unable to translate C expr: unexpected token Id.Eq");
-pub const DISPATCH_SOURCE_TYPE_DATA_ADD = @compileError("unable to translate C expr: unexpected token Id.Ampersand");
-pub const DISPATCH_SOURCE_TYPE_DATA_OR = @compileError("unable to translate C expr: unexpected token Id.Ampersand");
-pub const DISPATCH_SOURCE_TYPE_DATA_REPLACE = @compileError("unable to translate C expr: unexpected token Id.Ampersand");
-pub const DISPATCH_SOURCE_TYPE_MACH_SEND = @compileError("unable to translate C expr: unexpected token Id.Ampersand");
-pub const DISPATCH_SOURCE_TYPE_MACH_RECV = @compileError("unable to translate C expr: unexpected token Id.Ampersand");
-pub const DISPATCH_SOURCE_TYPE_MEMORYPRESSURE = @compileError("unable to translate C expr: unexpected token Id.Ampersand");
-pub const DISPATCH_SOURCE_TYPE_PROC = @compileError("unable to translate C expr: unexpected token Id.Ampersand");
-pub const DISPATCH_SOURCE_TYPE_READ = @compileError("unable to translate C expr: unexpected token Id.Ampersand");
-pub const DISPATCH_SOURCE_TYPE_SIGNAL = @compileError("unable to translate C expr: unexpected token Id.Ampersand");
-pub const DISPATCH_SOURCE_TYPE_TIMER = @compileError("unable to translate C expr: unexpected token Id.Ampersand");
-pub const DISPATCH_SOURCE_TYPE_VNODE = @compileError("unable to translate C expr: unexpected token Id.Ampersand");
-pub const DISPATCH_SOURCE_TYPE_WRITE = @compileError("unable to translate C expr: unexpected token Id.Ampersand");
-pub const DISPATCH_DATA_DESTRUCTOR_TYPE_DECL = @compileError("macro tokenizing failed: unexpected character '#'");
-pub const CFCopyLocalizedString = @compileError("unable to translate C expr: unexpected token Id.RParen");
-pub const CFCopyLocalizedStringFromTable = @compileError("unable to translate C expr: unexpected token Id.RParen");
-pub const KAUTH_ACL_SIZE = @compileError("unable to translate C expr: expected ',' or ')'");
-pub const KAUTH_FILESEC_SIZE = @compileError("unable to translate C expr: expected ',' or ')'");
-pub const KAUTH_FILESEC_COPYSIZE = @compileError("unable to translate C expr: unexpected token Id.Eq");
-pub const KAUTH_FILESEC_COUNT = @compileError("unable to translate C expr: unexpected token Id.Slash");
-pub const KAUTH_FILESEC_VALID = @compileError("macro tokenizing failed: unexpected character '%'");
-pub const kCFFileSecurityRemoveACL = @compileError("unable to translate C expr: unexpected token Id.Identifier");
-pub const AudioUnitDisplayTypeIsLogarithmic = @compileError("unable to translate C expr: unexpected token Id.Eq");
-pub const AudioUnitDisplayTypeIsSquareRoot = @compileError("unable to translate C expr: unexpected token Id.Eq");
-pub const AudioUnitDisplayTypeIsSquared = @compileError("unable to translate C expr: unexpected token Id.Eq");
-pub const AudioUnitDisplayTypeIsCubed = @compileError("unable to translate C expr: unexpected token Id.Eq");
-pub const AudioUnitDisplayTypeIsCubeRoot = @compileError("unable to translate C expr: unexpected token Id.Eq");
-pub const AudioUnitDisplayTypeIsExponential = @compileError("unable to translate C expr: unexpected token Id.Eq");
+pub const DISPATCH_DECL = @compileError("unable to translate C expr: unexpected token Id{ .Keyword_typedef = void }");
+pub const DISPATCH_DECL_SUBCLASS = @compileError("unable to translate C expr: unexpected token Id{ .Keyword_typedef = void }");
+pub const DISPATCH_SOURCE_DECL = @compileError("unable to translate C expr: unexpected token Id{ .Semicolon = void }");
+pub const DISPATCH_SOURCE_TYPE_DECL = @compileError("unable to translate C expr: unexpected token Id{ .Keyword_const = void }");
+pub const MACH_MSGH_BITS_HAS_REMOTE = @compileError("unable to translate C expr: unexpected token Id{ .BangEqual = void }");
+pub const MACH_MSGH_BITS_HAS_LOCAL = @compileError("unable to translate C expr: unexpected token Id{ .BangEqual = void }");
+pub const MACH_MSGH_BITS_HAS_VOUCHER = @compileError("unable to translate C expr: unexpected token Id{ .BangEqual = void }");
+pub const MACH_MSGH_BITS_IS_COMPLEX = @compileError("unable to translate C expr: unexpected token Id{ .BangEqual = void }");
+pub const MACH_MSGH_BITS_RAISED_IMPORTANCE = @compileError("unable to translate C expr: unexpected token Id{ .BangEqual = void }");
+pub const MACH_MSGH_BITS_HOLDS_IMPORTANCE_ASSERTION = @compileError("unable to translate C expr: unexpected token Id{ .BangEqual = void }");
+pub const MACH_MSG_SIZE_NULL = @compileError("unable to translate C expr: unexpected token Id{ .IntegerLiteral = NumSuffix.None }");
+pub const MACH_MSG_PRIORITY_UNSPECIFIED = @compileError("unable to translate C expr: unexpected token Id{ .IntegerLiteral = NumSuffix.None }");
+pub const MACH_MSG_BODY_NULL = @compileError("unable to translate C expr: unexpected token Id{ .IntegerLiteral = NumSuffix.None }");
+pub const MACH_MSG_DESCRIPTOR_NULL = @compileError("unable to translate C expr: unexpected token Id{ .IntegerLiteral = NumSuffix.None }");
+pub const MACH_MSG_NULL = @compileError("unable to translate C expr: unexpected token Id{ .IntegerLiteral = NumSuffix.None }");
+pub const MACH_MSG_TRAILER_MINIMUM_SIZE = @compileError("unable to translate C expr: unexpected token Id{ .Keyword_sizeof = void }");
+pub const MAX_TRAILER_SIZE = @compileError("unable to translate C expr: unexpected token Id{ .Keyword_sizeof = void }");
+pub const MACH_MSG_TRAILER_FORMAT_0_SIZE = @compileError("unable to translate C expr: unexpected token Id{ .Keyword_sizeof = void }");
+pub const KERNEL_SECURITY_TOKEN_VALUE = @compileError("unable to translate C expr: unexpected token Id{ .LBrace = void }");
+pub const KERNEL_AUDIT_TOKEN_VALUE = @compileError("unable to translate C expr: unexpected token Id{ .LBrace = void }");
+pub const round_msg = @compileError("unable to translate C expr: unexpected token Id{ .Keyword_sizeof = void }");
+pub const REQUESTED_TRAILER_SIZE_NATIVE = @compileError("unable to translate C expr: unexpected token Id{ .EqualEqual = void }");
+pub const DISPATCH_SOURCE_TYPE_DATA_ADD = @compileError("unable to translate C expr: unexpected token Id{ .Ampersand = void }");
+pub const DISPATCH_SOURCE_TYPE_DATA_OR = @compileError("unable to translate C expr: unexpected token Id{ .Ampersand = void }");
+pub const DISPATCH_SOURCE_TYPE_DATA_REPLACE = @compileError("unable to translate C expr: unexpected token Id{ .Ampersand = void }");
+pub const DISPATCH_SOURCE_TYPE_MACH_SEND = @compileError("unable to translate C expr: unexpected token Id{ .Ampersand = void }");
+pub const DISPATCH_SOURCE_TYPE_MACH_RECV = @compileError("unable to translate C expr: unexpected token Id{ .Ampersand = void }");
+pub const DISPATCH_SOURCE_TYPE_MEMORYPRESSURE = @compileError("unable to translate C expr: unexpected token Id{ .Ampersand = void }");
+pub const DISPATCH_SOURCE_TYPE_PROC = @compileError("unable to translate C expr: unexpected token Id{ .Ampersand = void }");
+pub const DISPATCH_SOURCE_TYPE_READ = @compileError("unable to translate C expr: unexpected token Id{ .Ampersand = void }");
+pub const DISPATCH_SOURCE_TYPE_SIGNAL = @compileError("unable to translate C expr: unexpected token Id{ .Ampersand = void }");
+pub const DISPATCH_SOURCE_TYPE_TIMER = @compileError("unable to translate C expr: unexpected token Id{ .Ampersand = void }");
+pub const DISPATCH_SOURCE_TYPE_VNODE = @compileError("unable to translate C expr: unexpected token Id{ .Ampersand = void }");
+pub const DISPATCH_SOURCE_TYPE_WRITE = @compileError("unable to translate C expr: unexpected token Id{ .Ampersand = void }");
+pub const DISPATCH_DATA_DESTRUCTOR_TYPE_DECL = @compileError("unable to translate C expr: unexpected token Id{ .Keyword_const = void }");
+pub const CFCopyLocalizedString = @compileError("unable to translate C expr: unexpected token Id{ .RParen = void }");
+pub const CFCopyLocalizedStringFromTable = @compileError("unable to translate C expr: unexpected token Id{ .RParen = void }");
+pub const KAUTH_NTSID_SIZE = @compileError("unable to translate C expr: unexpected token Id{ .Keyword_sizeof = void }");
+pub const KAUTH_ACL_SIZE = @compileError("unable to translate C expr: unexpected token Id{ .Keyword_struct = void }");
+pub const KAUTH_FILESEC_SIZE = @compileError("unable to translate C expr: unexpected token Id{ .Keyword_struct = void }");
+pub const KAUTH_FILESEC_COPYSIZE = @compileError("unable to translate C expr: unexpected token Id{ .EqualEqual = void }");
+pub const KAUTH_FILESEC_COUNT = @compileError("unable to translate C expr: unexpected token Id{ .Slash = void }");
+pub const KAUTH_FILESEC_VALID = @compileError("unable to translate C expr: unexpected token Id{ .Percent = void }");
+pub const kCFFileSecurityRemoveACL = @compileError("unable to translate C expr: unexpected token Id{ .Identifier = void }");
+pub const AudioUnitDisplayTypeIsLogarithmic = @compileError("unable to translate C expr: unexpected token Id{ .EqualEqual = void }");
+pub const AudioUnitDisplayTypeIsSquareRoot = @compileError("unable to translate C expr: unexpected token Id{ .EqualEqual = void }");
+pub const AudioUnitDisplayTypeIsSquared = @compileError("unable to translate C expr: unexpected token Id{ .EqualEqual = void }");
+pub const AudioUnitDisplayTypeIsCubed = @compileError("unable to translate C expr: unexpected token Id{ .EqualEqual = void }");
+pub const AudioUnitDisplayTypeIsCubeRoot = @compileError("unable to translate C expr: unexpected token Id{ .EqualEqual = void }");
+pub const AudioUnitDisplayTypeIsExponential = @compileError("unable to translate C expr: unexpected token Id{ .EqualEqual = void }");
+pub const NextCAFRegion = @compileError("unable to translate C expr: unexpected token Id{ .Keyword_sizeof = void }");
+pub const IS_ERROR = @compileError("unable to translate C expr: unexpected token Id{ .EqualEqual = void }");
+pub const __PRAGMA_PUSH_NO_NULLABILITY_COMPLETENESS_WARNINGS = @compileError("unable to translate C expr: unexpected token Id{ .Identifier = void }");
+pub const IUNKNOWN_C_GUTS = @compileError("unable to translate C expr: unexpected token Id{ .Keyword_void = void }");
 pub const __SIZEOF_WCHAR_T__ = 4;
 pub const _SC_SEM_NSEMS_MAX = 49;
 pub const VM_LIB64_SHR_TEXT = if (@typeId(@TypeOf(@as(c_ulonglong, 0x00007FFF80000000))) == .Pointer) @ptrCast(user_addr_t, @as(c_ulonglong, 0x00007FFF80000000)) else if (@typeId(@TypeOf(@as(c_ulonglong, 0x00007FFF80000000))) == .Int) @intToPtr(user_addr_t, @as(c_ulonglong, 0x00007FFF80000000)) else @as(user_addr_t, @as(c_ulonglong, 0x00007FFF80000000));
@@ -14067,7 +14257,6 @@ pub const _SC_V6_ILP32_OFFBIG = 104;
 pub const SCNxLEAST32 = SCNx32;
 pub const AVAILABLE_MAC_OS_X_VERSION_10_7_AND_LATER_BUT_DEPRECATED_IN_MAC_OS_X_VERSION_10_12_2 = __OSX_AVAILABLE_BUT_DEPRECATED(__MAC_10_7, __MAC_10_12_2, __IPHONE_COMPAT_VERSION, __IPHONE_COMPAT_VERSION);
 pub const KERN_SEMAPHORE_DESTROYED = 42;
-pub const MACH_MSG_TRAILER_FORMAT_0_SIZE = sizeof(mach_msg_format_0_trailer_t);
 pub const AVAILABLE_MAC_OS_X_VERSION_10_12_4_AND_LATER = __OSX_AVAILABLE_STARTING(__MAC_10_12_4, __IPHONE_COMPAT_VERSION);
 pub const TARGET_OS_UIKITFORMAC = 0;
 pub const __STDC_UTF_16__ = 1;
@@ -14130,9 +14319,6 @@ pub const MACH_SEND_NOTIFY = 0x00000080;
 pub const _CS_DARWIN_USER_TEMP_DIR = 65537;
 pub const MACH_RCV_GUARDED_DESC = 0x00001000;
 pub const F_FINDSIGS = 78;
-pub inline fn round_msg(x: var) @TypeOf(if (@typeId(@TypeOf(x)) == .Pointer) @ptrCast(mach_msg_size_t, x) else if (@typeId(@TypeOf(x)) == .Int) @intToPtr(mach_msg_size_t, x) else @as(mach_msg_size_t, x) + sizeof(natural_t) - 1 & ~sizeof(natural_t) - 1) {
-    return if (@typeId(@TypeOf(x)) == .Pointer) @ptrCast(mach_msg_size_t, x) else if (@typeId(@TypeOf(x)) == .Int) @intToPtr(mach_msg_size_t, x) else @as(mach_msg_size_t, x) + sizeof(natural_t) - 1 & ~sizeof(natural_t) - 1;
-}
 pub const _SC_TIMEOUTS = 95;
 pub const KAUTH_VNODE_LINKTARGET = @as(c_uint, 1) << 25;
 pub const __OPENCL_MEMORY_SCOPE_DEVICE = 2;
@@ -14198,7 +14384,7 @@ pub const _POSIX_TRACE_EVENT_FILTER = -1;
 pub const SCNxFAST8 = SCNx8;
 pub const MAC_OS_X_VERSION_10_11_2 = 101102;
 pub const LDBL_HAS_SUBNORM = 1;
-pub const __LDBL_MAX__ = @as(f64, 1.18973149535723176502e+4932);
+pub const __LDBL_MAX__ = @as(c_longdouble, 1.18973149535723176502e+4932);
 pub const TARGET_API_MAC_CARBON = 1;
 pub const LC_MESSAGES = 6;
 pub const O_EXLOCK = 0x0020;
@@ -14269,7 +14455,7 @@ pub const __DBL_HAS_QUIET_NAN__ = 1;
 pub const __WATCHOS_4_1 = 40100;
 pub const __clang_minor__ = 0;
 pub const __LDBL_DECIMAL_DIG__ = 21;
-pub const __WCHAR_TYPE__ = int;
+pub const __WCHAR_TYPE__ = c_int;
 pub const _SC_AIO_LISTIO_MAX = 42;
 pub const _STRUCT_MCONTEXT = _STRUCT_MCONTEXT64;
 pub const _CS_XBS5_LPBIG_OFFBIG_CFLAGS = 32;
@@ -14365,7 +14551,7 @@ pub const __USER_LABEL_PREFIX__ = _;
 pub const __UINT_FAST64_MAX__ = @as(c_ulonglong, 18446744073709551615);
 pub const __DARWIN_ACL_LIST_DIRECTORY = __DARWIN_ACL_READ_DATA;
 pub const INT_LEAST64_MAX = INT64_MAX;
-pub const __INT32_TYPE__ = int;
+pub const __INT32_TYPE__ = c_int;
 pub const EACCES = 13;
 pub const _WEXT_OK = 1 << 18;
 pub const KAUTH_EXTLOOKUP_INPROG = 100;
@@ -14407,13 +14593,14 @@ pub const _POSIX_THREAD_SAFE_FUNCTIONS = @as(c_long, 200112);
 pub const SIGCHLD = 20;
 pub const __IPHONE_3_0 = 30000;
 pub const RLIMIT_RSS = RLIMIT_AS;
-pub const __INT16_TYPE__ = short;
+pub const __INT16_TYPE__ = c_short;
 pub const __PCLMUL__ = 1;
 pub const RUSAGE_SELF = 0;
 pub const AVAILABLE_MAC_OS_X_VERSION_10_6_AND_LATER = __OSX_AVAILABLE_STARTING(__MAC_10_6, __IPHONE_COMPAT_VERSION);
 pub const F_FULLFSYNC = 51;
 pub const DBL_MAX = __DBL_MAX__;
 pub const _POSIX_MEMLOCK_RANGE = -1;
+pub const E_POINTER = if (@typeId(@TypeOf(@as(c_long, 0x80000005))) == .Pointer) @ptrCast(HRESULT, @as(c_long, 0x80000005)) else if (@typeId(@TypeOf(@as(c_long, 0x80000005))) == .Int) @intToPtr(HRESULT, @as(c_long, 0x80000005)) else @as(HRESULT, @as(c_long, 0x80000005));
 pub inline fn __AVAILABILITY_INTERNAL_DEPRECATED_MSG(_msg: var) @TypeOf(__attribute__(deprecated(_msg))) {
     return __attribute__(deprecated(_msg));
 }
@@ -14432,6 +14619,9 @@ pub const SIGUSR2 = 31;
 pub const _POSIX_SYMLINK_MAX = 255;
 pub const MACH_VM_MAX_ADDRESS = if (@typeId(@TypeOf(VM_MAX_PAGE_ADDRESS)) == .Pointer) @ptrCast(mach_vm_offset_t, VM_MAX_PAGE_ADDRESS) else if (@typeId(@TypeOf(VM_MAX_PAGE_ADDRESS)) == .Int) @intToPtr(mach_vm_offset_t, VM_MAX_PAGE_ADDRESS) else @as(mach_vm_offset_t, VM_MAX_PAGE_ADDRESS);
 pub const MACH_MSG_TYPE_MAKE_SEND_ONCE = 21;
+pub inline fn HRESULT_SEVERITY(hr: var) @TypeOf(hr >> 31 & 0x1) {
+    return hr >> 31 & 0x1;
+}
 pub const DISPATCH_NONNULL5 = __attribute__(__nonnull__(5));
 pub const AVAILABLE_MAC_OS_X_VERSION_10_10_3_AND_LATER_BUT_DEPRECATED_IN_MAC_OS_X_VERSION_10_11_2 = __OSX_AVAILABLE_BUT_DEPRECATED(__MAC_10_10_3, __MAC_10_11_2, __IPHONE_COMPAT_VERSION, __IPHONE_COMPAT_VERSION);
 pub const _POSIX_V7_ILP32_OFF32 = __ILP32_OFF32;
@@ -14442,8 +14632,8 @@ pub const KERN_MEMORY_DATA_MOVED = 24;
 pub const F_PEOFPOSMODE = 3;
 pub const CF_NO_TAIL_CALL = __attribute__(not_tail_called);
 pub const __INT_FAST64_MAX__ = @as(c_longlong, 9223372036854775807);
-pub const __UINTPTR_MAX__ = @as(c_ulong, 18446744073709551615);
 pub const __UINT_FAST32_FMTx__ = "x";
+pub const __UINTPTR_MAX__ = @as(c_ulong, 18446744073709551615);
 pub const __PTRDIFF_FMTd__ = "ld";
 pub const PRIO_PGRP = 1;
 pub const IOV_MAX = 1024;
@@ -14456,7 +14646,6 @@ pub const ENOPOLICY = 103;
 pub const MACH_PORT_STATUS_FLAG_TEMPOWNER = 0x01;
 pub const IOPOL_MATERIALIZE_DATALESS_FILES_DEFAULT = 0;
 pub const RLIMIT_CPU_USAGE_MONITOR = 0x2;
-pub const CF_EXPORT = @"extern";
 pub const AVAILABLE_MAC_OS_X_VERSION_10_6_AND_LATER_BUT_DEPRECATED_IN_MAC_OS_X_VERSION_10_11_2 = __OSX_AVAILABLE_BUT_DEPRECATED(__MAC_10_6, __MAC_10_11_2, __IPHONE_COMPAT_VERSION, __IPHONE_COMPAT_VERSION);
 pub inline fn ntohs(x: var) @TypeOf(__DARWIN_OSSwapInt16(x)) {
     return __DARWIN_OSSwapInt16(x);
@@ -14528,9 +14717,6 @@ pub const _POSIX_TRACE_NAME_MAX = 8;
 pub const _CS_POSIX_V6_ILP32_OFF32_CFLAGS = 2;
 pub const __SIZEOF_LONG__ = 8;
 pub const KERN_INSUFFICIENT_BUFFER_SIZE = 52;
-pub inline fn __DECONST(type_1: var, @"var": var) @TypeOf(__CAST_AWAY_QUALIFIER(@"var", @"const", type_1)) {
-    return __CAST_AWAY_QUALIFIER(@"var", @"const", type_1);
-}
 pub const FLT_EPSILON = __FLT_EPSILON__;
 pub const ENOTEMPTY = 66;
 pub const RLIMIT_NOFILE = 8;
@@ -14542,6 +14728,9 @@ pub const __ILP32_OFFBIG = -1;
 pub const SEEK_DATA = 4;
 pub const PRIX16 = "hX";
 pub const AVAILABLE_MAC_OS_X_VERSION_10_2_AND_LATER_BUT_DEPRECATED_IN_MAC_OS_X_VERSION_10_11_3 = __OSX_AVAILABLE_BUT_DEPRECATED(__MAC_10_2, __MAC_10_11_3, __IPHONE_COMPAT_VERSION, __IPHONE_COMPAT_VERSION);
+pub inline fn MAKE_HRESULT(sev: var, fac: var, code: var) @TypeOf(if (@typeId(@TypeOf(if (@typeId(@TypeOf(c_long)) == .Pointer) @ptrCast(c_uint, c_long) else if (@typeId(@TypeOf(c_long)) == .Int) @intToPtr(c_uint, c_long) else @as(c_uint, c_long)(sev) << 31 | if (@typeId(@TypeOf(c_long)) == .Pointer) @ptrCast(c_uint, c_long) else if (@typeId(@TypeOf(c_long)) == .Int) @intToPtr(c_uint, c_long) else @as(c_uint, c_long)(fac) << 16 | if (@typeId(@TypeOf(c_long)) == .Pointer) @ptrCast(c_uint, c_long) else if (@typeId(@TypeOf(c_long)) == .Int) @intToPtr(c_uint, c_long) else @as(c_uint, c_long)(code))) == .Pointer) @ptrCast(HRESULT, if (@typeId(@TypeOf(c_long)) == .Pointer) @ptrCast(c_uint, c_long) else if (@typeId(@TypeOf(c_long)) == .Int) @intToPtr(c_uint, c_long) else @as(c_uint, c_long)(sev) << 31 | if (@typeId(@TypeOf(c_long)) == .Pointer) @ptrCast(c_uint, c_long) else if (@typeId(@TypeOf(c_long)) == .Int) @intToPtr(c_uint, c_long) else @as(c_uint, c_long)(fac) << 16 | if (@typeId(@TypeOf(c_long)) == .Pointer) @ptrCast(c_uint, c_long) else if (@typeId(@TypeOf(c_long)) == .Int) @intToPtr(c_uint, c_long) else @as(c_uint, c_long)(code)) else if (@typeId(@TypeOf(if (@typeId(@TypeOf(c_long)) == .Pointer) @ptrCast(c_uint, c_long) else if (@typeId(@TypeOf(c_long)) == .Int) @intToPtr(c_uint, c_long) else @as(c_uint, c_long)(sev) << 31 | if (@typeId(@TypeOf(c_long)) == .Pointer) @ptrCast(c_uint, c_long) else if (@typeId(@TypeOf(c_long)) == .Int) @intToPtr(c_uint, c_long) else @as(c_uint, c_long)(fac) << 16 | if (@typeId(@TypeOf(c_long)) == .Pointer) @ptrCast(c_uint, c_long) else if (@typeId(@TypeOf(c_long)) == .Int) @intToPtr(c_uint, c_long) else @as(c_uint, c_long)(code))) == .Int) @intToPtr(HRESULT, if (@typeId(@TypeOf(c_long)) == .Pointer) @ptrCast(c_uint, c_long) else if (@typeId(@TypeOf(c_long)) == .Int) @intToPtr(c_uint, c_long) else @as(c_uint, c_long)(sev) << 31 | if (@typeId(@TypeOf(c_long)) == .Pointer) @ptrCast(c_uint, c_long) else if (@typeId(@TypeOf(c_long)) == .Int) @intToPtr(c_uint, c_long) else @as(c_uint, c_long)(fac) << 16 | if (@typeId(@TypeOf(c_long)) == .Pointer) @ptrCast(c_uint, c_long) else if (@typeId(@TypeOf(c_long)) == .Int) @intToPtr(c_uint, c_long) else @as(c_uint, c_long)(code)) else @as(HRESULT, if (@typeId(@TypeOf(c_long)) == .Pointer) @ptrCast(c_uint, c_long) else if (@typeId(@TypeOf(c_long)) == .Int) @intToPtr(c_uint, c_long) else @as(c_uint, c_long)(sev) << 31 | if (@typeId(@TypeOf(c_long)) == .Pointer) @ptrCast(c_uint, c_long) else if (@typeId(@TypeOf(c_long)) == .Int) @intToPtr(c_uint, c_long) else @as(c_uint, c_long)(fac) << 16 | if (@typeId(@TypeOf(c_long)) == .Pointer) @ptrCast(c_uint, c_long) else if (@typeId(@TypeOf(c_long)) == .Int) @intToPtr(c_uint, c_long) else @as(c_uint, c_long)(code))) {
+    return if (@typeId(@TypeOf(if (@typeId(@TypeOf(c_long)) == .Pointer) @ptrCast(c_uint, c_long) else if (@typeId(@TypeOf(c_long)) == .Int) @intToPtr(c_uint, c_long) else @as(c_uint, c_long)(sev) << 31 | if (@typeId(@TypeOf(c_long)) == .Pointer) @ptrCast(c_uint, c_long) else if (@typeId(@TypeOf(c_long)) == .Int) @intToPtr(c_uint, c_long) else @as(c_uint, c_long)(fac) << 16 | if (@typeId(@TypeOf(c_long)) == .Pointer) @ptrCast(c_uint, c_long) else if (@typeId(@TypeOf(c_long)) == .Int) @intToPtr(c_uint, c_long) else @as(c_uint, c_long)(code))) == .Pointer) @ptrCast(HRESULT, if (@typeId(@TypeOf(c_long)) == .Pointer) @ptrCast(c_uint, c_long) else if (@typeId(@TypeOf(c_long)) == .Int) @intToPtr(c_uint, c_long) else @as(c_uint, c_long)(sev) << 31 | if (@typeId(@TypeOf(c_long)) == .Pointer) @ptrCast(c_uint, c_long) else if (@typeId(@TypeOf(c_long)) == .Int) @intToPtr(c_uint, c_long) else @as(c_uint, c_long)(fac) << 16 | if (@typeId(@TypeOf(c_long)) == .Pointer) @ptrCast(c_uint, c_long) else if (@typeId(@TypeOf(c_long)) == .Int) @intToPtr(c_uint, c_long) else @as(c_uint, c_long)(code)) else if (@typeId(@TypeOf(if (@typeId(@TypeOf(c_long)) == .Pointer) @ptrCast(c_uint, c_long) else if (@typeId(@TypeOf(c_long)) == .Int) @intToPtr(c_uint, c_long) else @as(c_uint, c_long)(sev) << 31 | if (@typeId(@TypeOf(c_long)) == .Pointer) @ptrCast(c_uint, c_long) else if (@typeId(@TypeOf(c_long)) == .Int) @intToPtr(c_uint, c_long) else @as(c_uint, c_long)(fac) << 16 | if (@typeId(@TypeOf(c_long)) == .Pointer) @ptrCast(c_uint, c_long) else if (@typeId(@TypeOf(c_long)) == .Int) @intToPtr(c_uint, c_long) else @as(c_uint, c_long)(code))) == .Int) @intToPtr(HRESULT, if (@typeId(@TypeOf(c_long)) == .Pointer) @ptrCast(c_uint, c_long) else if (@typeId(@TypeOf(c_long)) == .Int) @intToPtr(c_uint, c_long) else @as(c_uint, c_long)(sev) << 31 | if (@typeId(@TypeOf(c_long)) == .Pointer) @ptrCast(c_uint, c_long) else if (@typeId(@TypeOf(c_long)) == .Int) @intToPtr(c_uint, c_long) else @as(c_uint, c_long)(fac) << 16 | if (@typeId(@TypeOf(c_long)) == .Pointer) @ptrCast(c_uint, c_long) else if (@typeId(@TypeOf(c_long)) == .Int) @intToPtr(c_uint, c_long) else @as(c_uint, c_long)(code)) else @as(HRESULT, if (@typeId(@TypeOf(c_long)) == .Pointer) @ptrCast(c_uint, c_long) else if (@typeId(@TypeOf(c_long)) == .Int) @intToPtr(c_uint, c_long) else @as(c_uint, c_long)(sev) << 31 | if (@typeId(@TypeOf(c_long)) == .Pointer) @ptrCast(c_uint, c_long) else if (@typeId(@TypeOf(c_long)) == .Int) @intToPtr(c_uint, c_long) else @as(c_uint, c_long)(fac) << 16 | if (@typeId(@TypeOf(c_long)) == .Pointer) @ptrCast(c_uint, c_long) else if (@typeId(@TypeOf(c_long)) == .Int) @intToPtr(c_uint, c_long) else @as(c_uint, c_long)(code));
+}
 pub const _SC_SEM_VALUE_MAX = 50;
 pub const MACH_SEND_INTERRUPTED = 0x10000007;
 pub const FP_FAST_FMA = 1;
@@ -14572,7 +14761,6 @@ pub inline fn MACH_RCV_TRAILER_TYPE(x: var) @TypeOf(x & 0xf << 28) {
     return x & 0xf << 28;
 }
 pub const __DARWIN_ACL_ENTRY_INHERITED = 1 << 4;
-pub const __INTMAX_C_SUFFIX__ = L;
 pub const OS_TRANSPARENT_UNION = __attribute__(__transparent_union__);
 pub const DISPATCH_DATA_DESTRUCTOR_DEFAULT = NULL;
 pub const _PC_PRIO_IO = 19;
@@ -14679,7 +14867,7 @@ pub const __DBL_MAX__ = 1.7976931348623157e+308;
 pub const UID_MAX = @as(c_uint, 2147483647);
 pub const __COREFOUNDATION_CFUUID__ = 1;
 pub const KERN_INVALID_VALUE = 18;
-pub const _FILESEC_REMOVE_ACL = if (@typeId(@TypeOf(1)) == .Pointer) @ptrCast([*c]void, 1) else if (@typeId(@TypeOf(1)) == .Int) @intToPtr([*c]void, 1) else @as([*c]void, 1);
+pub const _FILESEC_REMOVE_ACL = if (@typeId(@TypeOf(1)) == .Pointer) @ptrCast(*c_void, 1) else if (@typeId(@TypeOf(1)) == .Int) @intToPtr(*c_void, 1) else @as(*c_void, 1);
 pub const __DBL_DECIMAL_DIG__ = 17;
 pub const __COREFOUNDATION_CFSET__ = 1;
 pub const CLOCK_UPTIME_RAW = _CLOCK_UPTIME_RAW;
@@ -14747,14 +14935,14 @@ pub const MACH_PORT_TYPE_SEND_RIGHTS = MACH_PORT_TYPE_SEND | MACH_PORT_TYPE_SEND
 pub const SIGEV_THREAD = 3;
 pub const PRIuLEAST64 = PRIu64;
 pub const _XOPEN_ENH_I18N = 1;
-pub const AVAILABLE_MAC_OS_X_VERSION_10_2_AND_LATER_BUT_DEPRECATED_IN_MAC_OS_X_VERSION_10_12_2 = __OSX_AVAILABLE_BUT_DEPRECATED(__MAC_10_2, __MAC_10_12_2, __IPHONE_COMPAT_VERSION, __IPHONE_COMPAT_VERSION);
 pub const AVAILABLE_MAC_OS_X_VERSION_10_5_AND_LATER_BUT_DEPRECATED_IN_MAC_OS_X_VERSION_10_11 = __OSX_AVAILABLE_BUT_DEPRECATED(__MAC_10_5, __MAC_10_11, __IPHONE_COMPAT_VERSION, __IPHONE_COMPAT_VERSION);
-pub const __ATOMIC_ACQ_REL = 4;
+pub const AVAILABLE_MAC_OS_X_VERSION_10_2_AND_LATER_BUT_DEPRECATED_IN_MAC_OS_X_VERSION_10_12_2 = __OSX_AVAILABLE_BUT_DEPRECATED(__MAC_10_2, __MAC_10_12_2, __IPHONE_COMPAT_VERSION, __IPHONE_COMPAT_VERSION);
 pub const __DARWIN_ONLY_UNIX_CONFORMANCE = 1;
-pub const FP_PREC_53B = 2;
+pub const __ATOMIC_ACQ_REL = 4;
 pub inline fn CF_EXTENSION_UNAVAILABLE(_msg: var) @TypeOf(__OS_EXTENSION_UNAVAILABLE(_msg)) {
     return __OS_EXTENSION_UNAVAILABLE(_msg);
 }
+pub const FP_PREC_53B = 2;
 pub const F_FLUSH_DATA = 40;
 pub const SA_ONSTACK = 0x0001;
 pub const MACH_RCV_SYNC_PEEK = 0x00008000;
@@ -14781,7 +14969,7 @@ pub const PRIoFAST32 = PRIo32;
 pub const RLIM_SAVED_MAX = RLIM_INFINITY;
 pub const __ENABLE_LEGACY_MAC_AVAILABILITY = 1;
 pub const KERN_UREFS_OVERFLOW = 19;
-pub const __LDBL_MIN__ = @as(f64, 3.36210314311209350626e-4932);
+pub const __LDBL_MIN__ = @as(c_longdouble, 3.36210314311209350626e-4932);
 pub const __UINTMAX_MAX__ = @as(c_ulong, 18446744073709551615);
 pub const AVAILABLE_MAC_OS_X_VERSION_10_6_AND_LATER_BUT_DEPRECATED_IN_MAC_OS_X_VERSION_10_10 = __OSX_AVAILABLE_BUT_DEPRECATED(__MAC_10_6, __MAC_10_10, __IPHONE_COMPAT_VERSION, __IPHONE_COMPAT_VERSION);
 pub const _SC_PRIORITY_SCHEDULING = 35;
@@ -14832,13 +15020,14 @@ pub inline fn __DARWIN_ALIAS_STARTING_MAC___MAC_10_12_1(x: var) @TypeOf(x) {
     return x;
 }
 pub const kAFInfoDictionary_SubTitle = "subtitle";
+pub const E_NOTIMPL = if (@typeId(@TypeOf(@as(c_long, 0x80000001))) == .Pointer) @ptrCast(HRESULT, @as(c_long, 0x80000001)) else if (@typeId(@TypeOf(@as(c_long, 0x80000001))) == .Int) @intToPtr(HRESULT, @as(c_long, 0x80000001)) else @as(HRESULT, @as(c_long, 0x80000001));
 pub const __IPHONE_3_2 = 30200;
 pub const MACH_SEND_INVALID_TRAILER = 0x10000011;
 pub const OS_OVERLOADABLE = __attribute__(__overloadable__);
 pub const __UINT_FAST64_FMTx__ = "llx";
 pub const kCFCoreFoundationVersionNumber10_7_2 = 635.15;
-pub const ENOTBLK = 15;
 pub const ILL_NOOP = 0;
+pub const ENOTBLK = 15;
 pub const INTPTR_MAX = @as(c_long, 9223372036854775807);
 pub const _POSIX2_FORT_DEV = -1;
 pub const __UINT_LEAST8_MAX__ = 255;
@@ -14914,8 +15103,8 @@ pub inline fn __DARWIN_ALIAS_STARTING_MAC___MAC_10_14_1(x: var) @TypeOf(x) {
 pub const kCFCoreFoundationVersionNumber10_3 = 299.00;
 pub const __PTHREAD_ATTR_SIZE__ = 56;
 pub const __IPHONE_10_0 = 100000;
-pub const KAUTH_ENDIAN_DISK = 0x00000002;
 pub const kAudioSettings_CurrentValue = "current value";
+pub const KAUTH_ENDIAN_DISK = 0x00000002;
 pub const MPG_FLAGS_STRICT_REPLY_INVALID_REPLY_PORT = @as(c_ulonglong, 0x02) << 56;
 pub const MACH_SEND_KERNEL = 0x00400000;
 pub const NBBY = __DARWIN_NBBY;
@@ -14999,12 +15188,12 @@ pub inline fn va_start(ap: var, param: var) @TypeOf(__builtin_va_start(ap, param
 }
 pub const VM_MAX_PAGE_ADDRESS = if (@typeId(@TypeOf(@as(c_ulonglong, 0x00007FFFFFE00000))) == .Pointer) @ptrCast(user_addr_t, @as(c_ulonglong, 0x00007FFFFFE00000)) else if (@typeId(@TypeOf(@as(c_ulonglong, 0x00007FFFFFE00000))) == .Int) @intToPtr(user_addr_t, @as(c_ulonglong, 0x00007FFFFFE00000)) else @as(user_addr_t, @as(c_ulonglong, 0x00007FFFFFE00000));
 pub const EAFNOSUPPORT = 47;
+pub const __COREFOUNDATION_CFPLUGINCOM__ = 1;
 pub const LDBL_DIG = __LDBL_DIG__;
 pub const _SC_2_SW_DEV = 24;
 pub const EBADARCH = 86;
 pub const kAFInfoDictionary_Composer = "composer";
 pub const LOCK_NB = 0x04;
-pub const __DARWIN_NFDBITS = sizeof(__int32_t) * __DARWIN_NBBY;
 pub const __INT_FAST32_FMTd__ = "d";
 pub const __INTMAX_FMTi__ = "li";
 pub const OS_UNUSED = __attribute__(__unused__);
@@ -15017,8 +15206,8 @@ pub const __bool_true_false_are_defined = 1;
 pub const __INT_LEAST64_MAX__ = @as(c_longlong, 9223372036854775807);
 pub const TARGET_OS_SIMULATOR = 0;
 pub const kAudioSettings_SettingKey = "key";
-pub const AVAILABLE_MAC_OS_X_VERSION_10_3_AND_LATER = __OSX_AVAILABLE_STARTING(__MAC_10_3, __IPHONE_COMPAT_VERSION);
 pub const __IPHONE_8_2 = 80200;
+pub const AVAILABLE_MAC_OS_X_VERSION_10_3_AND_LATER = __OSX_AVAILABLE_STARTING(__MAC_10_3, __IPHONE_COMPAT_VERSION);
 pub const INT_MIN = -2147483647 - 1;
 pub const ECHILD = 10;
 pub const KERN_INVALID_POLICY = 28;
@@ -15054,8 +15243,8 @@ pub const RLIMIT_AS = 5;
 pub const _POSIX_SYNCHRONIZED_IO = -1;
 pub const __SSP_STRONG__ = 2;
 pub const SIGTERM = 15;
-pub const TARGET_CPU_PPC = 0;
 pub const __API_DEPRECATED_END = _Pragma("clang attribute pop");
+pub const TARGET_CPU_PPC = 0;
 pub const F_TRANSCODEKEY = 75;
 pub const IOPOL_TYPE_VFS_MATERIALIZE_DATALESS_FILES = 3;
 pub const OS_COLD = __attribute__(__cold__);
@@ -15091,10 +15280,11 @@ pub inline fn DISPATCH_UNAVAILABLE_MSG(msg: var) @TypeOf(__attribute__(__unavail
     return __attribute__(__unavailable__(msg));
 }
 pub const msgh_reserved = msgh_voucher_port;
-pub const _POSIX_VDISABLE = if (@typeId(@TypeOf('\xff')) == .Pointer) @ptrCast(if (@typeId(@TypeOf(char)) == .Pointer) @ptrCast(unsigned, char) else if (@typeId(@TypeOf(char)) == .Int) @intToPtr(unsigned, char) else @as(unsigned, char), '\xff') else if (@typeId(@TypeOf('\xff')) == .Int) @intToPtr(if (@typeId(@TypeOf(char)) == .Pointer) @ptrCast(unsigned, char) else if (@typeId(@TypeOf(char)) == .Int) @intToPtr(unsigned, char) else @as(unsigned, char), '\xff') else @as(if (@typeId(@TypeOf(char)) == .Pointer) @ptrCast(unsigned, char) else if (@typeId(@TypeOf(char)) == .Int) @intToPtr(unsigned, char) else @as(unsigned, char), '\xff');
+pub const _POSIX_VDISABLE = if (@typeId(@TypeOf('\xff')) == .Pointer) @ptrCast(if (@typeId(@TypeOf(c_char)) == .Pointer) @ptrCast(c_uint, c_char) else if (@typeId(@TypeOf(c_char)) == .Int) @intToPtr(c_uint, c_char) else @as(c_uint, c_char), '\xff') else if (@typeId(@TypeOf('\xff')) == .Int) @intToPtr(if (@typeId(@TypeOf(c_char)) == .Pointer) @ptrCast(c_uint, c_char) else if (@typeId(@TypeOf(c_char)) == .Int) @intToPtr(c_uint, c_char) else @as(c_uint, c_char), '\xff') else @as(if (@typeId(@TypeOf(c_char)) == .Pointer) @ptrCast(c_uint, c_char) else if (@typeId(@TypeOf(c_char)) == .Int) @intToPtr(c_uint, c_char) else @as(c_uint, c_char), '\xff');
 pub inline fn __DARWIN_ALIAS_STARTING_MAC___MAC_10_8(x: var) @TypeOf(x) {
     return x;
 }
+pub const E_OUTOFMEMORY = if (@typeId(@TypeOf(@as(c_long, 0x80000002))) == .Pointer) @ptrCast(HRESULT, @as(c_long, 0x80000002)) else if (@typeId(@TypeOf(@as(c_long, 0x80000002))) == .Int) @intToPtr(HRESULT, @as(c_long, 0x80000002)) else @as(HRESULT, @as(c_long, 0x80000002));
 pub const _SC_BC_STRING_MAX = 12;
 pub const GUARD_TYPE_MACH_PORT = 0x1;
 pub const __PTHREAD_MUTEX_SIZE__ = 56;
@@ -15109,7 +15299,6 @@ pub const _DARWIN_FEATURE_64_BIT_INODE = 1;
 pub const __UINT_LEAST32_FMTo__ = "o";
 pub const __MAC_10_12 = 101200;
 pub const _POSIX_NO_TRUNC = @as(c_long, 200112);
-pub const __volatile = @"volatile";
 pub const _SC_2_C_BIND = 18;
 pub const _POSIX_CHOWN_RESTRICTED = @as(c_long, 200112);
 pub const MACH_SEND_MSG_TOO_SMALL = 0x10000008;
@@ -15132,19 +15321,16 @@ pub const OPAQUE_TOOLBOX_STRUCTS = 1;
 pub const AVAILABLE_MAC_OS_X_VERSION_10_3_AND_LATER_BUT_DEPRECATED_IN_MAC_OS_X_VERSION_10_8 = __OSX_AVAILABLE_BUT_DEPRECATED(__MAC_10_3, __MAC_10_8, __IPHONE_COMPAT_VERSION, __IPHONE_COMPAT_VERSION);
 pub const __UINT_FAST8_FMTo__ = "hho";
 pub const STDERR_FILENO = 2;
-pub inline fn NextCAFRegion(inCAFRegionPtr: var) @TypeOf(if (@typeId(@TypeOf(if (@typeId(@TypeOf(inCAFRegionPtr)) == .Pointer) @ptrCast([*c]char, inCAFRegionPtr) else if (@typeId(@TypeOf(inCAFRegionPtr)) == .Int) @intToPtr([*c]char, inCAFRegionPtr) else @as([*c]char, inCAFRegionPtr) + offsetof(CAFRegion, mMarkers) + inCAFRegionPtr.*.mNumberMarkers * sizeof(CAFMarker))) == .Pointer) @ptrCast([*c]CAFRegion, if (@typeId(@TypeOf(inCAFRegionPtr)) == .Pointer) @ptrCast([*c]char, inCAFRegionPtr) else if (@typeId(@TypeOf(inCAFRegionPtr)) == .Int) @intToPtr([*c]char, inCAFRegionPtr) else @as([*c]char, inCAFRegionPtr) + offsetof(CAFRegion, mMarkers) + inCAFRegionPtr.*.mNumberMarkers * sizeof(CAFMarker)) else if (@typeId(@TypeOf(if (@typeId(@TypeOf(inCAFRegionPtr)) == .Pointer) @ptrCast([*c]char, inCAFRegionPtr) else if (@typeId(@TypeOf(inCAFRegionPtr)) == .Int) @intToPtr([*c]char, inCAFRegionPtr) else @as([*c]char, inCAFRegionPtr) + offsetof(CAFRegion, mMarkers) + inCAFRegionPtr.*.mNumberMarkers * sizeof(CAFMarker))) == .Int) @intToPtr([*c]CAFRegion, if (@typeId(@TypeOf(inCAFRegionPtr)) == .Pointer) @ptrCast([*c]char, inCAFRegionPtr) else if (@typeId(@TypeOf(inCAFRegionPtr)) == .Int) @intToPtr([*c]char, inCAFRegionPtr) else @as([*c]char, inCAFRegionPtr) + offsetof(CAFRegion, mMarkers) + inCAFRegionPtr.*.mNumberMarkers * sizeof(CAFMarker)) else @as([*c]CAFRegion, if (@typeId(@TypeOf(inCAFRegionPtr)) == .Pointer) @ptrCast([*c]char, inCAFRegionPtr) else if (@typeId(@TypeOf(inCAFRegionPtr)) == .Int) @intToPtr([*c]char, inCAFRegionPtr) else @as([*c]char, inCAFRegionPtr) + offsetof(CAFRegion, mMarkers) + inCAFRegionPtr.*.mNumberMarkers * sizeof(CAFMarker))) {
-    return if (@typeId(@TypeOf(if (@typeId(@TypeOf(inCAFRegionPtr)) == .Pointer) @ptrCast([*c]char, inCAFRegionPtr) else if (@typeId(@TypeOf(inCAFRegionPtr)) == .Int) @intToPtr([*c]char, inCAFRegionPtr) else @as([*c]char, inCAFRegionPtr) + offsetof(CAFRegion, mMarkers) + inCAFRegionPtr.*.mNumberMarkers * sizeof(CAFMarker))) == .Pointer) @ptrCast([*c]CAFRegion, if (@typeId(@TypeOf(inCAFRegionPtr)) == .Pointer) @ptrCast([*c]char, inCAFRegionPtr) else if (@typeId(@TypeOf(inCAFRegionPtr)) == .Int) @intToPtr([*c]char, inCAFRegionPtr) else @as([*c]char, inCAFRegionPtr) + offsetof(CAFRegion, mMarkers) + inCAFRegionPtr.*.mNumberMarkers * sizeof(CAFMarker)) else if (@typeId(@TypeOf(if (@typeId(@TypeOf(inCAFRegionPtr)) == .Pointer) @ptrCast([*c]char, inCAFRegionPtr) else if (@typeId(@TypeOf(inCAFRegionPtr)) == .Int) @intToPtr([*c]char, inCAFRegionPtr) else @as([*c]char, inCAFRegionPtr) + offsetof(CAFRegion, mMarkers) + inCAFRegionPtr.*.mNumberMarkers * sizeof(CAFMarker))) == .Int) @intToPtr([*c]CAFRegion, if (@typeId(@TypeOf(inCAFRegionPtr)) == .Pointer) @ptrCast([*c]char, inCAFRegionPtr) else if (@typeId(@TypeOf(inCAFRegionPtr)) == .Int) @intToPtr([*c]char, inCAFRegionPtr) else @as([*c]char, inCAFRegionPtr) + offsetof(CAFRegion, mMarkers) + inCAFRegionPtr.*.mNumberMarkers * sizeof(CAFMarker)) else @as([*c]CAFRegion, if (@typeId(@TypeOf(inCAFRegionPtr)) == .Pointer) @ptrCast([*c]char, inCAFRegionPtr) else if (@typeId(@TypeOf(inCAFRegionPtr)) == .Int) @intToPtr([*c]char, inCAFRegionPtr) else @as([*c]char, inCAFRegionPtr) + offsetof(CAFRegion, mMarkers) + inCAFRegionPtr.*.mNumberMarkers * sizeof(CAFMarker));
-}
 pub const _POSIX_SPIN_LOCKS = -1;
 pub const _LC_LAST = 7;
 pub const _CS_XBS5_ILP32_OFF32_LIBS = 22;
 pub const __OSX_UNAVAILABLE = __OS_AVAILABILITY(macosx, unavailable);
 pub const SCNd32 = "d";
 pub const KAUTH_EXTLOOKUP_WANT_GID = 1 << 9;
-pub const __signed = signed;
 pub const SIG_BLOCK = 1;
 pub const AVAILABLE_MAC_OS_X_VERSION_10_10_2_AND_LATER_BUT_DEPRECATED_IN_MAC_OS_X_VERSION_10_12_4 = __OSX_AVAILABLE_BUT_DEPRECATED(__MAC_10_10_2, __MAC_10_12_4, __IPHONE_COMPAT_VERSION, __IPHONE_COMPAT_VERSION);
 pub const _POSIX_V7_LPBIG_OFFBIG = __LPBIG_OFFBIG;
+pub const E_ACCESSDENIED = if (@typeId(@TypeOf(@as(c_long, 0x80000009))) == .Pointer) @ptrCast(HRESULT, @as(c_long, 0x80000009)) else if (@typeId(@TypeOf(@as(c_long, 0x80000009))) == .Int) @intToPtr(HRESULT, @as(c_long, 0x80000009)) else @as(HRESULT, @as(c_long, 0x80000009));
 pub const AVAILABLE_MAC_OS_X_VERSION_10_5_AND_LATER_BUT_DEPRECATED = __OSX_AVAILABLE_BUT_DEPRECATED(__MAC_10_5, __MAC_10_5, __IPHONE_COMPAT_VERSION, __IPHONE_COMPAT_VERSION);
 pub const MAC_OS_X_VERSION_10_11 = 101100;
 pub const OS_NOESCAPE = __attribute__(__noescape__);
@@ -15314,6 +15500,9 @@ pub const kAFInfoDictionary_Tempo = "tempo";
 pub const kAUPresetDataKey = "data";
 pub const __IPHONE_5_0 = 50000;
 pub const __DARWIN_PDP_ENDIAN = 3412;
+pub inline fn HRESULT_FACILITY(hr: var) @TypeOf(hr >> 16 & 0x1fff) {
+    return hr >> 16 & 0x1fff;
+}
 pub const F_GETPATH_MTMINFO = 71;
 pub const __TVOS_10_2 = 100200;
 pub const ERANGE = 34;
@@ -15379,8 +15568,8 @@ pub const FPE_FLTUND = 3;
 pub const FUNCTION_WIN32CC = 0;
 pub const _SC_TRACE_EVENT_NAME_MAX = 127;
 pub const __AES__ = 1;
-pub const __FLT_RADIX__ = 2;
 pub const PRIuFAST16 = PRIu16;
+pub const __FLT_RADIX__ = 2;
 pub const __amd64 = 1;
 pub const kInstrumentInfoKey_LSB = "LSB";
 pub const AVAILABLE_MAC_OS_X_VERSION_10_10_2_AND_LATER_BUT_DEPRECATED_IN_MAC_OS_X_VERSION_10_10_3 = __OSX_AVAILABLE_BUT_DEPRECATED(__MAC_10_10_2, __MAC_10_10_3, __IPHONE_COMPAT_VERSION, __IPHONE_COMPAT_VERSION);
@@ -15421,6 +15610,7 @@ pub const MACH_RCV_VOUCHER = 0x00000800;
 pub const MACH_MSG_TYPE_PORT_NAME = 15;
 pub const IOPOL_IMPORTANT = 1;
 pub const PRIdFAST32 = PRId32;
+pub const E_INVALIDARG = if (@typeId(@TypeOf(@as(c_long, 0x80000003))) == .Pointer) @ptrCast(HRESULT, @as(c_long, 0x80000003)) else if (@typeId(@TypeOf(@as(c_long, 0x80000003))) == .Int) @intToPtr(HRESULT, @as(c_long, 0x80000003)) else @as(HRESULT, @as(c_long, 0x80000003));
 pub const MACH_SEND_IMPORTANCE = 0x00080000;
 pub const __BMI__ = 1;
 pub const __FLT_MANT_DIG__ = 24;
@@ -15464,6 +15654,7 @@ pub const SV_ONSTACK = SA_ONSTACK;
 pub const _RATTR_OK = 1 << 15;
 pub const kCFCoreFoundationVersionNumber10_1_2 = 227.20;
 pub const PRIiLEAST8 = PRIi8;
+pub const SEVERITY_SUCCESS = 0;
 pub const MACH_MSG_IPC_KERNEL = 0x00000800;
 pub const SIZE_T_MAX = ULONG_MAX;
 pub const _POSIX_SHARED_MEMORY_OBJECTS = -1;
@@ -15562,7 +15753,6 @@ pub inline fn dispatch_assert_queue_debug(q: var) @TypeOf(dispatch_assert_queue(
 }
 pub const OS_OBJECT_USE_OBJC_RETAIN_RELEASE = 0;
 pub const SCNiFAST16 = SCNi16;
-pub const __restrict = restrict;
 pub const ILL_COPROC = 7;
 pub const MB_LEN_MAX = 6;
 pub const ETXTBSY = 26;
@@ -15612,8 +15802,8 @@ pub const FLT_MIN_EXP = __FLT_MIN_EXP__;
 pub const kAudioAggregateDeviceClockDeviceKey = "clock";
 pub const F_CHKCLEAN = 41;
 pub const __DARWIN_ACL_WRITE_DATA = 1 << 2;
-pub inline fn BAD_MACH_TIMESPEC(t: var) @TypeOf(if (@typeId(@TypeOf(NSEC_PER_SEC)) == .Pointer) @ptrCast(t.*.tv_nsec < 0 or t.*.tv_nsec >= long, NSEC_PER_SEC) else if (@typeId(@TypeOf(NSEC_PER_SEC)) == .Int) @intToPtr(t.*.tv_nsec < 0 or t.*.tv_nsec >= long, NSEC_PER_SEC) else @as(t.*.tv_nsec < 0 or t.*.tv_nsec >= long, NSEC_PER_SEC)) {
-    return if (@typeId(@TypeOf(NSEC_PER_SEC)) == .Pointer) @ptrCast(t.*.tv_nsec < 0 or t.*.tv_nsec >= long, NSEC_PER_SEC) else if (@typeId(@TypeOf(NSEC_PER_SEC)) == .Int) @intToPtr(t.*.tv_nsec < 0 or t.*.tv_nsec >= long, NSEC_PER_SEC) else @as(t.*.tv_nsec < 0 or t.*.tv_nsec >= long, NSEC_PER_SEC);
+pub inline fn BAD_MACH_TIMESPEC(t: var) @TypeOf(if (@typeId(@TypeOf(NSEC_PER_SEC)) == .Pointer) @ptrCast(t.*.tv_nsec < 0 or t.*.tv_nsec >= c_long, NSEC_PER_SEC) else if (@typeId(@TypeOf(NSEC_PER_SEC)) == .Int) @intToPtr(t.*.tv_nsec < 0 or t.*.tv_nsec >= c_long, NSEC_PER_SEC) else @as(t.*.tv_nsec < 0 or t.*.tv_nsec >= c_long, NSEC_PER_SEC)) {
+    return if (@typeId(@TypeOf(NSEC_PER_SEC)) == .Pointer) @ptrCast(t.*.tv_nsec < 0 or t.*.tv_nsec >= c_long, NSEC_PER_SEC) else if (@typeId(@TypeOf(NSEC_PER_SEC)) == .Int) @intToPtr(t.*.tv_nsec < 0 or t.*.tv_nsec >= c_long, NSEC_PER_SEC) else @as(t.*.tv_nsec < 0 or t.*.tv_nsec >= c_long, NSEC_PER_SEC);
 }
 pub const AVAILABLE_MAC_OS_X_VERSION_10_7_AND_LATER_BUT_DEPRECATED_IN_MAC_OS_X_VERSION_10_9 = __OSX_AVAILABLE_BUT_DEPRECATED(__MAC_10_7, __MAC_10_9, __IPHONE_COMPAT_VERSION, __IPHONE_COMPAT_VERSION);
 pub const IOPOL_THROTTLE = 3;
@@ -15635,6 +15825,9 @@ pub const MACH_PORT_SRIGHTS_NONE = 0;
 pub const __DARWIN_NO_LONG_LONG = 0;
 pub const S_ISTXT = S_ISVTX;
 pub const FLT_MAX_10_EXP = __FLT_MAX_10_EXP__;
+pub inline fn FAILED(Status: var) @TypeOf(if (@typeId(@TypeOf(Status)) == .Pointer) @ptrCast(HRESULT, Status) else if (@typeId(@TypeOf(Status)) == .Int) @intToPtr(HRESULT, Status) else @as(HRESULT, Status) < 0) {
+    return if (@typeId(@TypeOf(Status)) == .Pointer) @ptrCast(HRESULT, Status) else if (@typeId(@TypeOf(Status)) == .Int) @intToPtr(HRESULT, Status) else @as(HRESULT, Status) < 0;
+}
 pub const O_FSYNC = O_SYNC;
 pub const POLL_OUT = 2;
 pub const SCNdFAST8 = SCNd8;
@@ -15646,7 +15839,7 @@ pub const LONG_MIN = -@as(c_long, 0x7fffffffffffffff) - 1;
 pub const __MAC_10_0 = 1000;
 pub const KERN_EXCEPTION_PROTECTED = 32;
 pub const NL_MSGMAX = 32767;
-pub const __INT_FAST16_TYPE__ = short;
+pub const __INT_FAST16_TYPE__ = c_short;
 pub inline fn OS_EXPECT(x: var, v: var) @TypeOf(__builtin_expect(x, v)) {
     return __builtin_expect(x, v);
 }
@@ -15679,6 +15872,7 @@ pub const CF_RETURNS_NOT_RETAINED = __attribute__(cf_returns_not_retained);
 pub const __DARWIN_ACL_SEARCH = __DARWIN_ACL_EXECUTE;
 pub const DBL_HAS_SUBNORM = 1;
 pub const KAUTH_ACE_GENERIC_EXECUTE = 1 << 22;
+pub const __PRAGMA_POP_NO_NULLABILITY_COMPLETENESS_WARNINGS = _Pragma("clang diagnostic pop");
 pub const AVAILABLE_MAC_OS_X_VERSION_10_5_AND_LATER_BUT_DEPRECATED_IN_MAC_OS_X_VERSION_10_10 = __OSX_AVAILABLE_BUT_DEPRECATED(__MAC_10_5, __MAC_10_10, __IPHONE_COMPAT_VERSION, __IPHONE_COMPAT_VERSION);
 pub const _SC_TRACE_LOG = 100;
 pub const _SC_TTY_NAME_MAX = 101;
@@ -15739,8 +15933,8 @@ pub const KAUTH_VNODE_EXECUTE = @as(c_uint, 1) << 3;
 pub const __POINTER_WIDTH__ = 64;
 pub const _POSIX2_BC_SCALE_MAX = 99;
 pub const _SC_2_PBS_CHECKPOINT = 61;
-pub const kAudioEndPointDeviceNameKey = "name";
 pub const MACH_RCV_TRAILER_NULL = 0;
+pub const kAudioEndPointDeviceNameKey = "name";
 pub const AVAILABLE_MAC_OS_X_VERSION_10_2_AND_LATER = __OSX_AVAILABLE_STARTING(__MAC_10_2, __IPHONE_COMPAT_VERSION);
 pub const kCFCoreFoundationVersionNumber10_4_8 = 368.27;
 pub const __FXSR__ = 1;
@@ -15759,6 +15953,7 @@ pub const kCFStringEncodingInvalidId = @as(c_uint, 0xffffffff);
 pub const F_PATHPKG_CHECK = 52;
 pub const __DARWIN_ACL_WRITE_EXTATTRIBUTES = 1 << 10;
 pub const _SC_PHYS_PAGES = 200;
+pub const kMIDIDriverInterfaceID = CFUUIDGetConstantUUIDWithBytes(NULL, 0x49, 0xDF, 0xCA, 0x9E, 0x0F, 0xE5, 0x11, 0xD4, 0x95, 0x0D, 0x00, 0x50, 0xE4, 0xCE, 0xA5, 0x26);
 pub const AVAILABLE_MAC_OS_X_VERSION_10_12_AND_LATER_BUT_DEPRECATED_IN_MAC_OS_X_VERSION_10_12_1 = __OSX_AVAILABLE_BUT_DEPRECATED(__MAC_10_12, __MAC_10_12_1, __IPHONE_COMPAT_VERSION, __IPHONE_COMPAT_VERSION);
 pub const API_AVAILABLE_END = _Pragma("clang attribute pop");
 pub const ENETUNREACH = 51;
@@ -15774,8 +15969,9 @@ pub const OS_OBJECT_USE_OBJC = 0;
 pub const TARGET_RT_64_BIT = 1;
 pub const MACH_MSG_SUCCESS = 0x00000000;
 pub const MAC_OS_X_VERSION_10_12 = 101200;
-pub const MACH_PORT_TYPE_NONE = if (@typeId(@TypeOf(@as(c_long, 0))) == .Pointer) @ptrCast(mach_port_type_t, @as(c_long, 0)) else if (@typeId(@TypeOf(@as(c_long, 0))) == .Int) @intToPtr(mach_port_type_t, @as(c_long, 0)) else @as(mach_port_type_t, @as(c_long, 0));
+pub const E_ABORT = if (@typeId(@TypeOf(@as(c_long, 0x80000007))) == .Pointer) @ptrCast(HRESULT, @as(c_long, 0x80000007)) else if (@typeId(@TypeOf(@as(c_long, 0x80000007))) == .Int) @intToPtr(HRESULT, @as(c_long, 0x80000007)) else @as(HRESULT, @as(c_long, 0x80000007));
 pub const kAudioUnitConfigurationInfo_IconURL = "IconURL";
+pub const MACH_PORT_TYPE_NONE = if (@typeId(@TypeOf(@as(c_long, 0))) == .Pointer) @ptrCast(mach_port_type_t, @as(c_long, 0)) else if (@typeId(@TypeOf(@as(c_long, 0))) == .Int) @intToPtr(mach_port_type_t, @as(c_long, 0)) else @as(mach_port_type_t, @as(c_long, 0));
 pub const __weak = __attribute__(objc_gc(weak));
 pub inline fn FOUR_CHAR_CODE(x: var) @TypeOf(x) {
     return x;
@@ -15788,9 +15984,6 @@ pub const ATTRIBUTE_PACKED = __attribute__(__packed__);
 pub const __INT8_MAX__ = 127;
 pub const kAFInfoDictionary_RecordedDate = "recorded date";
 pub const _POSIX_V6_LP64_OFF64 = __LP64_OFF64;
-pub inline fn KAUTH_NTSID_SIZE(_s: var) @TypeOf(KAUTH_NTSID_HDRSIZE + _s.*.sid_authcount * sizeof(u_int32_t)) {
-    return KAUTH_NTSID_HDRSIZE + _s.*.sid_authcount * sizeof(u_int32_t);
-}
 pub const CF_ASSUME_NONNULL_END = _Pragma("clang assume_nonnull end");
 pub const AVAILABLE_MAC_OS_X_VERSION_10_7_AND_LATER = __OSX_AVAILABLE_STARTING(__MAC_10_7, __IPHONE_COMPAT_VERSION);
 pub inline fn FD_COPY(f: var, t: var) @TypeOf(__DARWIN_FD_COPY(f, t)) {
@@ -15847,6 +16040,9 @@ pub const __llvm__ = 1;
 pub const TARGET_IPHONE_SIMULATOR = TARGET_OS_SIMULATOR;
 pub const TARGET_API_MAC_OS8 = 0;
 pub const F_UNLCK = 2;
+pub inline fn HRESULT_CODE(hr: var) @TypeOf(hr & 0xFFFF) {
+    return hr & 0xFFFF;
+}
 pub const DISPATCH_VNODE_LINK = 0x10;
 pub const kAUPresetPartKey = "part";
 pub const _CS_POSIX_V6_LP64_OFF64_LDFLAGS = 9;
@@ -15885,11 +16081,11 @@ pub const MACH_SEND_INVALID_REPLY = 0x10000009;
 pub const __FLT_HAS_QUIET_NAN__ = 1;
 pub const __corei7__ = 1;
 pub const RLIMIT_CPU = 0;
-pub const _bool = _Bool;
+pub const _bool = bool;
 pub const NAN = __builtin_nanf("0x7fc00000");
 pub const _SC_MESSAGE_PASSING = 33;
-pub const kAudioEndPointOutputChannelsKey = "channels-out";
 pub const __COREFOUNDATION_CFARRAY__ = 1;
+pub const kAudioEndPointOutputChannelsKey = "channels-out";
 pub const AVAILABLE_MAC_OS_X_VERSION_10_1_AND_LATER_BUT_DEPRECATED_IN_MAC_OS_X_VERSION_10_2 = __OSX_AVAILABLE_BUT_DEPRECATED(__MAC_10_1, __MAC_10_2, __IPHONE_COMPAT_VERSION, __IPHONE_COMPAT_VERSION);
 pub const AVAILABLE_MAC_OS_X_VERSION_10_11_AND_LATER_BUT_DEPRECATED_IN_MAC_OS_X_VERSION_10_11_4 = __OSX_AVAILABLE_BUT_DEPRECATED(__MAC_10_11, __MAC_10_11_4, __IPHONE_COMPAT_VERSION, __IPHONE_COMPAT_VERSION);
 pub const AVAILABLE_MAC_OS_X_VERSION_10_10_AND_LATER_BUT_DEPRECATED_IN_MAC_OS_X_VERSION_10_11_4 = __OSX_AVAILABLE_BUT_DEPRECATED(__MAC_10_10, __MAC_10_11_4, __IPHONE_COMPAT_VERSION, __IPHONE_COMPAT_VERSION);
@@ -16085,9 +16281,10 @@ pub const OS_NONNULL1 = __attribute__(__nonnull__(1));
 pub const AVAILABLE_MAC_OS_X_VERSION_10_4_AND_LATER_BUT_DEPRECATED_IN_MAC_OS_X_VERSION_10_12_1 = __OSX_AVAILABLE_BUT_DEPRECATED(__MAC_10_4, __MAC_10_12_1, __IPHONE_COMPAT_VERSION, __IPHONE_COMPAT_VERSION);
 pub const __DARWIN_FD_SETSIZE = 1024;
 pub const EBADEXEC = 85;
-pub const __API_APPLY_TO = any(record, @"enum", enum_constant, function, objc_method, objc_category, objc_protocol, objc_interface, objc_property, type_alias, variable, field);
+pub inline fn SUCCEEDED(Status: var) @TypeOf(if (@typeId(@TypeOf(Status)) == .Pointer) @ptrCast(HRESULT, Status) else if (@typeId(@TypeOf(Status)) == .Int) @intToPtr(HRESULT, Status) else @as(HRESULT, Status) >= 0) {
+    return if (@typeId(@TypeOf(Status)) == .Pointer) @ptrCast(HRESULT, Status) else if (@typeId(@TypeOf(Status)) == .Int) @intToPtr(HRESULT, Status) else @as(HRESULT, Status) >= 0;
+}
 pub const KERN_RPC_CONTINUE_ORPHAN = 45;
-pub const __header_inline = @"inline";
 pub const __INT_LEAST32_FMTi__ = "i";
 pub const kCFCoreFoundationVersionNumber10_9_2 = 855.14;
 pub const S_IRWXG = 0o0000070;
@@ -16099,11 +16296,11 @@ pub const POLL_MSG = 3;
 pub const SCNu32 = "u";
 pub const AUDIO_TOOLBOX_VERSION = 1060;
 pub const ULLONG_MAX = @as(c_ulonglong, 0xffffffffffffffff);
-pub const kAudioEndPointInputChannelsKey = "channels-in";
 pub const EBADF = 9;
 pub const EOPNOTSUPP = 102;
-pub const LOCK_EX = 0x02;
+pub const kAudioEndPointInputChannelsKey = "channels-in";
 pub const __CFXMLParser_DEPRECATION_MSG = "CFXMLParser is deprecated, use NSXMLParser, NSXMLDocument or libxml2 library instead";
+pub const LOCK_EX = 0x02;
 pub const TARGET_CPU_MIPS = 0;
 pub const FOPEN_MAX = 20;
 pub const ACCESSX_MAX_TABLESIZE = 16 * 1024;
@@ -16183,6 +16380,7 @@ pub const kCFCoreFoundationVersionNumber10_5_3 = 476.13;
 pub const SIGBUS = 10;
 pub const __SMOD = 0x2000;
 pub const _POSIX_NGROUPS_MAX = 8;
+pub const E_HANDLE = if (@typeId(@TypeOf(@as(c_long, 0x80000006))) == .Pointer) @ptrCast(HRESULT, @as(c_long, 0x80000006)) else if (@typeId(@TypeOf(@as(c_long, 0x80000006))) == .Int) @intToPtr(HRESULT, @as(c_long, 0x80000006)) else @as(HRESULT, @as(c_long, 0x80000006));
 pub const _IOLBF = 1;
 pub const KAUTH_GUID_SIZE = 16;
 pub const SEEK_HOLE = 3;
@@ -16214,9 +16412,6 @@ pub const KAUTH_VNODE_GENERIC_EXECUTE_BITS = KAUTH_VNODE_EXECUTE;
 pub const SYNC_VOLUME_WAIT = 0x02;
 pub const kAudioAggregateDeviceIsPrivateKey = "private";
 pub const MACH_VM_MIN_ADDRESS = if (@typeId(@TypeOf(0)) == .Pointer) @ptrCast(mach_vm_offset_t, 0) else if (@typeId(@TypeOf(0)) == .Int) @intToPtr(mach_vm_offset_t, 0) else @as(mach_vm_offset_t, 0);
-pub inline fn __DEVOLATILE(type_1: var, @"var": var) @TypeOf(__CAST_AWAY_QUALIFIER(@"var", @"volatile", type_1)) {
-    return __CAST_AWAY_QUALIFIER(@"var", @"volatile", type_1);
-}
 pub const ENOLINK = 97;
 pub const __GNUC_STDC_INLINE__ = 1;
 pub const DISPATCH_IO_STRICT_INTERVAL = 0x1;
@@ -16231,9 +16426,6 @@ pub const GID_MAX = @as(c_uint, 2147483647);
 pub const __COREFOUNDATION_CFSOCKET__ = 1;
 pub const __MAC_OS_X_VERSION_MAX_ALLOWED = __MAC_10_15;
 pub const OPEN_MAX = 10240;
-pub inline fn __CF_ANON_ENUM(_type: var) @TypeOf(@"enum") {
-    return @"enum";
-}
 pub const kAudioAggregateDeviceUIDKey = "uid";
 pub const RENAME_SECLUDE = 0x00000001;
 pub const kAudioSubDeviceDriftCompensationQualityKey = "drift quality";
@@ -16250,37 +16442,6 @@ pub const __SIZEOF_LONG_LONG__ = 8;
 pub const _V6_ILP32_OFF32 = __ILP32_OFF32;
 pub const AVAILABLE_MAC_OS_X_VERSION_10_3_AND_LATER_BUT_DEPRECATED_IN_MAC_OS_X_VERSION_10_5 = __OSX_AVAILABLE_BUT_DEPRECATED(__MAC_10_3, __MAC_10_5, __IPHONE_COMPAT_VERSION, __IPHONE_COMPAT_VERSION);
 pub const KAUTH_ACE_AUDIT = 3;
-pub inline fn __assert(e: var, file: var, line: var) @TypeOf(__assert_rtn(if (@typeId(@TypeOf([*c]char)) == .Pointer)
-    @ptrCast(
-        @"const",
-        [*c]char,
-    )
-else if (@typeId(@TypeOf([*c]char)) == .Int)
-    @intToPtr(
-        @"const",
-        [*c]char,
-    )
-else
-    @as(
-        @"const",
-        [*c]char,
-    ) - @as(c_long, 1), file, line, e)) {
-    return __assert_rtn(if (@typeId(@TypeOf([*c]char)) == .Pointer)
-        @ptrCast(
-            @"const",
-            [*c]char,
-        )
-    else if (@typeId(@TypeOf([*c]char)) == .Int)
-        @intToPtr(
-            @"const",
-            [*c]char,
-        )
-    else
-        @as(
-            @"const",
-            [*c]char,
-        ) - @as(c_long, 1), file, line, e);
-}
 pub const __DBL_MIN_EXP__ = -1021;
 pub const TARGET_OS_NANO = TARGET_OS_WATCH;
 pub const ACL_MAX_ENTRIES = 128;
@@ -16376,7 +16537,6 @@ pub const __MOVBE__ = 1;
 pub const KAUTH_EXTLOOKUP_VALID_GGUID = 1 << 4;
 pub const AVAILABLE_MAC_OS_X_VERSION_10_9_AND_LATER_BUT_DEPRECATED_IN_MAC_OS_X_VERSION_10_12_4 = __OSX_AVAILABLE_BUT_DEPRECATED(__MAC_10_9, __MAC_10_12_4, __IPHONE_COMPAT_VERSION, __IPHONE_COMPAT_VERSION);
 pub const AVAILABLE_MAC_OS_X_VERSION_10_11_4_AND_LATER = __OSX_AVAILABLE_STARTING(__MAC_10_11_4, __IPHONE_COMPAT_VERSION);
-pub const __const = @"const";
 pub const KERN_INVALID_MEMORY_CONTROL = 34;
 pub const EXPR_NEST_MAX = 32;
 pub const __CF_CLOSED_ENUM_ATTRIBUTES = __attribute__(enum_extensibility(closed));
@@ -16392,7 +16552,6 @@ pub const __MAC_10_9 = 1090;
 pub const TARGET_OS_TV = 0;
 pub const SEGV_NOOP = 0;
 pub const MACH_MSGH_BITS_PORTS_MASK = MACH_MSGH_BITS_REMOTE_MASK | MACH_MSGH_BITS_LOCAL_MASK | MACH_MSGH_BITS_VOUCHER_MASK;
-pub const MACH_MSG_TRAILER_MINIMUM_SIZE = sizeof(mach_msg_trailer_t);
 pub const MACH_SEND_TRAILER = 0x00020000;
 pub inline fn OSSwapHostToLittleConstInt16(x: var) @TypeOf(if (@typeId(@TypeOf(x)) == .Pointer) @ptrCast(uint16_t, x) else if (@typeId(@TypeOf(x)) == .Int) @intToPtr(uint16_t, x) else @as(uint16_t, x)) {
     return if (@typeId(@TypeOf(x)) == .Pointer) @ptrCast(uint16_t, x) else if (@typeId(@TypeOf(x)) == .Int) @intToPtr(uint16_t, x) else @as(uint16_t, x);
@@ -16467,7 +16626,6 @@ pub inline fn __API_AVAILABLE1(x: var) @TypeOf(__API_A(x)) {
 pub const LOCK_UN = 0x08;
 pub const PRIdLEAST16 = PRId16;
 pub const ILL_PRVREG = 6;
-pub const MAX_TRAILER_SIZE = if (@typeId(@TypeOf(sizeof(mach_msg_max_trailer_t))) == .Pointer) @ptrCast(mach_msg_size_t, sizeof(mach_msg_max_trailer_t)) else if (@typeId(@TypeOf(sizeof(mach_msg_max_trailer_t))) == .Int) @intToPtr(mach_msg_size_t, sizeof(mach_msg_max_trailer_t)) else @as(mach_msg_size_t, sizeof(mach_msg_max_trailer_t));
 pub const LONG_LONG_MAX = __LONG_LONG_MAX__;
 pub const RLIMIT_FSIZE = 1;
 pub const AVAILABLE_MAC_OS_X_VERSION_10_3_AND_LATER_BUT_DEPRECATED_IN_MAC_OS_X_VERSION_10_9 = __OSX_AVAILABLE_BUT_DEPRECATED(__MAC_10_3, __MAC_10_9, __IPHONE_COMPAT_VERSION, __IPHONE_COMPAT_VERSION);
@@ -16542,14 +16700,14 @@ pub const AVAILABLE_MAC_OS_X_VERSION_10_14_AND_LATER = __OSX_AVAILABLE_STARTING(
 pub const AVAILABLE_MAC_OS_X_VERSION_10_9_AND_LATER_BUT_DEPRECATED_IN_MAC_OS_X_VERSION_10_12_1 = __OSX_AVAILABLE_BUT_DEPRECATED(__MAC_10_9, __MAC_10_12_1, __IPHONE_COMPAT_VERSION, __IPHONE_COMPAT_VERSION);
 pub const __UINT_LEAST64_MAX__ = @as(c_ulonglong, 18446744073709551615);
 pub const AVAILABLE_MAC_OS_X_VERSION_10_5_AND_LATER_BUT_DEPRECATED_IN_MAC_OS_X_VERSION_10_12 = __OSX_AVAILABLE_BUT_DEPRECATED(__MAC_10_5, __MAC_10_12, __IPHONE_COMPAT_VERSION, __IPHONE_COMPAT_VERSION);
-pub const __DARWIN_NULL = if (@typeId(@TypeOf(0)) == .Pointer) @ptrCast([*c]void, 0) else if (@typeId(@TypeOf(0)) == .Int) @intToPtr([*c]void, 0) else @as([*c]void, 0);
+pub const __DARWIN_NULL = if (@typeId(@TypeOf(0)) == .Pointer) @ptrCast(*c_void, 0) else if (@typeId(@TypeOf(0)) == .Int) @intToPtr(*c_void, 0) else @as(*c_void, 0);
 pub const kCFCoreFoundationVersionNumber10_4_6_PowerPC = 368.25;
 pub const AVAILABLE_MAC_OS_X_VERSION_10_6_AND_LATER_BUT_DEPRECATED_IN_MAC_OS_X_VERSION_10_12_2 = __OSX_AVAILABLE_BUT_DEPRECATED(__MAC_10_6, __MAC_10_12_2, __IPHONE_COMPAT_VERSION, __IPHONE_COMPAT_VERSION);
 pub const AVAILABLE_MAC_OS_X_VERSION_10_11_2_AND_LATER_BUT_DEPRECATED_IN_MAC_OS_X_VERSION_10_12_4 = __OSX_AVAILABLE_BUT_DEPRECATED(__MAC_10_11_2, __MAC_10_12_4, __IPHONE_COMPAT_VERSION, __IPHONE_COMPAT_VERSION);
 pub const FLT_DIG = __FLT_DIG__;
 pub const EEXIST = 17;
 pub const _APPEND_OK = 1 << 13;
-pub const __INT_FAST32_TYPE__ = int;
+pub const __INT_FAST32_TYPE__ = c_int;
 pub const kCFCoreFoundationVersionNumber10_9 = 855.11;
 pub const S_ISUID = 0o0004000;
 pub const BUS_OBJERR = 3;
@@ -16653,7 +16811,6 @@ pub const DISPATCH_NONNULL6 = __attribute__(__nonnull__(6));
 pub const DBL_MAX_10_EXP = __DBL_MAX_10_EXP__;
 pub const _SC_PASS_MAX = 131;
 pub const MACH_MSG_TRAILER_FORMAT_0 = 0;
-pub const BLOCK_EXPORT = @"extern";
 pub const F_NODIRECT = 62;
 pub const _SC_TRACE = 97;
 pub const AVAILABLE_MAC_OS_X_VERSION_10_1_AND_LATER_BUT_DEPRECATED_IN_MAC_OS_X_VERSION_10_11_3 = __OSX_AVAILABLE_BUT_DEPRECATED(__MAC_10_1, __MAC_10_11_3, __IPHONE_COMPAT_VERSION, __IPHONE_COMPAT_VERSION);
@@ -16689,14 +16846,13 @@ pub inline fn htons(x: var) @TypeOf(__DARWIN_OSSwapInt16(x)) {
     return __DARWIN_OSSwapInt16(x);
 }
 pub const ENODEV = 19;
-pub const __LDBL_EPSILON__ = @as(f64, 1.08420217248550443401e-19);
+pub const __LDBL_EPSILON__ = @as(c_longdouble, 1.08420217248550443401e-19);
 pub const DISPATCH_TARGET_QUEUE_DEFAULT = NULL;
-pub const static_assert = _Static_assert;
 pub const __SAPP = 0x0100;
-pub inline fn _W_INT(w: var) @TypeOf([*c]int & w.*) {
-    return [*c]int & w.*;
-}
 pub const IOPOL_VFS_STATFS_FORCE_NO_DATA_VOLUME = 1;
+pub inline fn _W_INT(w: var) @TypeOf([*c]c_int & w.*) {
+    return [*c]c_int & w.*;
+}
 pub const DISPATCH_MEMORYPRESSURE_CRITICAL = 0x04;
 pub const DBL_MANT_DIG = __DBL_MANT_DIG__;
 pub inline fn __strftimelike(fmtarg: var) @TypeOf(__attribute__(__format__(__strftime__, fmtarg, 0))) {
@@ -16742,9 +16898,6 @@ pub const sv_onstack = sv_flags;
 pub const AVAILABLE_MAC_OS_X_VERSION_10_12_AND_LATER_BUT_DEPRECATED_IN_MAC_OS_X_VERSION_10_12_2 = __OSX_AVAILABLE_BUT_DEPRECATED(__MAC_10_12, __MAC_10_12_2, __IPHONE_COMPAT_VERSION, __IPHONE_COMPAT_VERSION);
 pub const CLOCKS_PER_SEC = 1000000;
 pub const __WATCHOS_3_0 = 30000;
-pub inline fn __DARWIN_FD_COPY(f: var, t: var) @TypeOf(bcopy(f, t, sizeof(f.*))) {
-    return bcopy(f, t, sizeof(f.*));
-}
 pub const __DBL_MANT_DIG__ = 53;
 pub const AVAILABLE_MAC_OS_X_VERSION_10_11_AND_LATER = __OSX_AVAILABLE_STARTING(__MAC_10_11, __IPHONE_COMPAT_VERSION);
 pub const __CLANG_ATOMIC_WCHAR_T_LOCK_FREE = 2;
@@ -16774,10 +16927,10 @@ pub const _SC_XOPEN_REALTIME = 111;
 pub const SIGWINCH = 28;
 pub const RAND_MAX = 0x7fffffff;
 pub const AVAILABLE_MAC_OS_X_VERSION_10_11_AND_LATER_BUT_DEPRECATED_IN_MAC_OS_X_VERSION_10_12 = __OSX_AVAILABLE_BUT_DEPRECATED(__MAC_10_11, __MAC_10_12, __IPHONE_COMPAT_VERSION, __IPHONE_COMPAT_VERSION);
-pub const AVAILABLE_MAC_OS_X_VERSION_10_12_AND_LATER_BUT_DEPRECATED = __OSX_AVAILABLE_BUT_DEPRECATED(__MAC_10_12, __MAC_10_12, __IPHONE_COMPAT_VERSION, __IPHONE_COMPAT_VERSION);
 pub inline fn htonl(x: var) @TypeOf(__DARWIN_OSSwapInt32(x)) {
     return __DARWIN_OSSwapInt32(x);
 }
+pub const AVAILABLE_MAC_OS_X_VERSION_10_12_AND_LATER_BUT_DEPRECATED = __OSX_AVAILABLE_BUT_DEPRECATED(__MAC_10_12, __MAC_10_12, __IPHONE_COMPAT_VERSION, __IPHONE_COMPAT_VERSION);
 pub const kAFInfoDictionary_Genre = "genre";
 pub const AVAILABLE_MAC_OS_X_VERSION_10_8_AND_LATER_BUT_DEPRECATED_IN_MAC_OS_X_VERSION_10_11_2 = __OSX_AVAILABLE_BUT_DEPRECATED(__MAC_10_8, __MAC_10_11_2, __IPHONE_COMPAT_VERSION, __IPHONE_COMPAT_VERSION);
 pub const OLDROUTINENAMES = 0;
@@ -16894,7 +17047,6 @@ pub const kCFCoreFoundationVersionNumber10_2 = 263.00;
 pub const PRIiFAST64 = PRIi64;
 pub const OBJC_NEW_PROPERTIES = 1;
 pub const NULL = __DARWIN_NULL;
-pub const __UINT32_C_SUFFIX__ = U;
 pub inline fn va_end(ap: var) @TypeOf(__builtin_va_end(ap)) {
     return __builtin_va_end(ap);
 }
@@ -16946,8 +17098,8 @@ pub const AVAILABLE_MAC_OS_X_VERSION_10_10_AND_LATER_BUT_DEPRECATED = __OSX_AVAI
 pub const _SC_TIMER_MAX = 52;
 pub const kCFCoreFoundationVersionNumber10_8 = 744.00;
 pub const EAGAIN = 35;
-pub const __INT64_MAX__ = @as(c_longlong, 9223372036854775807);
 pub const __SIZEOF_INT128__ = 16;
+pub const __INT64_MAX__ = @as(c_longlong, 9223372036854775807);
 pub const _POSIX_SPORADIC_SERVER = -1;
 pub const TIME_UTC = 1;
 pub const CF_ASSUME_NONNULL_BEGIN = _Pragma("clang assume_nonnull begin");
@@ -16959,6 +17111,7 @@ pub const WNOWAIT = 0x00000020;
 pub const _PC_LINK_MAX = 1;
 pub const __SIZE_FMTx__ = "lx";
 pub const _XOPEN_PATH_MAX = 1024;
+pub const SEVERITY_ERROR = 1;
 pub const _CS_XBS5_LP64_OFF64_LINTFLAGS = 31;
 pub const MPO_IMMOVABLE_RECEIVE = 0x80;
 pub const __CLFLUSHOPT__ = 1;
@@ -17022,8 +17175,8 @@ pub const MACH_MSG_GUARD_FLAGS_NONE = 0x0000;
 pub const PTHREAD_KEYS_MAX = 512;
 pub const __RTM__ = 1;
 pub const __FLT_HAS_INFINITY__ = 1;
-pub inline fn __CAST_AWAY_QUALIFIER(variable: var, qualifier: var, type_1: var) @TypeOf(if (@typeId(@TypeOf(long)) == .Pointer) @ptrCast(type_1, long) else if (@typeId(@TypeOf(long)) == .Int) @intToPtr(type_1, long) else @as(type_1, long)(variable)) {
-    return if (@typeId(@TypeOf(long)) == .Pointer) @ptrCast(type_1, long) else if (@typeId(@TypeOf(long)) == .Int) @intToPtr(type_1, long) else @as(type_1, long)(variable);
+pub inline fn __CAST_AWAY_QUALIFIER(variable: var, qualifier: var, type_1: var) @TypeOf(if (@typeId(@TypeOf(c_long)) == .Pointer) @ptrCast(type_1, c_long) else if (@typeId(@TypeOf(c_long)) == .Int) @intToPtr(type_1, c_long) else @as(type_1, c_long)(variable)) {
+    return if (@typeId(@TypeOf(c_long)) == .Pointer) @ptrCast(type_1, c_long) else if (@typeId(@TypeOf(c_long)) == .Int) @intToPtr(type_1, c_long) else @as(type_1, c_long)(variable);
 }
 pub const MACH_PORT_QLIMIT_KERNEL = 65534;
 pub const SCNdLEAST64 = SCNd64;
@@ -17067,8 +17220,8 @@ pub const _POSIX_IPV6 = @as(c_long, 200112);
 pub const COREAUDIOTYPES_VERSION = 20150414;
 pub const MACH_PORT_TYPE_SPREQUEST = 0x40000000;
 pub const MACH_SEND_TIMED_OUT = 0x10000004;
-pub const __DARWIN_NON_CANCELABLE = 0;
 pub const TARGET_RT_MAC_CFM = 0;
+pub const __DARWIN_NON_CANCELABLE = 0;
 pub const SV_INTERRUPT = SA_RESTART;
 pub const S_IFCHR = 0o0020000;
 pub const MACH_RCV_TRAILER_AUDIT = 3;
@@ -17080,7 +17233,7 @@ pub inline fn OSReadLittleInt32(base: var, byteOffset: var) @TypeOf(_OSReadInt32
 }
 pub const KAUTH_EXTLOOKUP_WANT_GGUID = 1 << 10;
 pub const __APPLE_CC__ = 6000;
-pub const __INT_LEAST16_TYPE__ = short;
+pub const __INT_LEAST16_TYPE__ = c_short;
 pub const fsec_ace = fsec_acl.acl_ace;
 pub const __IPHONE_10_1 = 100100;
 pub const __SSE3__ = 1;
@@ -17121,8 +17274,8 @@ pub inline fn OSSwapBigToHostConstInt64(x: var) @TypeOf(OSSwapConstInt64(x)) {
 }
 pub const AVAILABLE_MAC_OS_X_VERSION_10_0_AND_LATER_BUT_DEPRECATED_IN_MAC_OS_X_VERSION_10_11_3 = __OSX_AVAILABLE_BUT_DEPRECATED(__MAC_10_0, __MAC_10_11_3, __IPHONE_COMPAT_VERSION, __IPHONE_COMPAT_VERSION);
 pub const PRIxLEAST32 = PRIx32;
-pub const TARGET_OS_DRIVERKIT = 0;
 pub const AVAILABLE_MAC_OS_X_VERSION_10_0_AND_LATER_BUT_DEPRECATED_IN_MAC_OS_X_VERSION_10_2 = __OSX_AVAILABLE_BUT_DEPRECATED(__MAC_10_0, __MAC_10_2, __IPHONE_COMPAT_VERSION, __IPHONE_COMPAT_VERSION);
+pub const TARGET_OS_DRIVERKIT = 0;
 pub const PRAGMA_STRUCT_PACK = 1;
 pub inline fn __DARWIN_ALIAS_STARTING_MAC___MAC_10_14_6(x: var) @TypeOf(x) {
     return x;
@@ -17133,7 +17286,7 @@ pub const AVAILABLE_MAC_OS_X_VERSION_10_3_AND_LATER_BUT_DEPRECATED_IN_MAC_OS_X_V
 pub const __IPHONE_4_3 = 40300;
 pub const _CS_XBS5_LP64_OFF64_LIBS = 30;
 pub const MACH_SEND_INVALID_HEADER = 0x10000010;
-pub const __LDBL_DENORM_MIN__ = @as(f64, 3.64519953188247460253e-4951);
+pub const __LDBL_DENORM_MIN__ = @as(c_longdouble, 3.64519953188247460253e-4951);
 pub const OS_NOINLINE = __attribute__(__noinline__);
 pub const _POSIX_REALTIME_SIGNALS = -1;
 pub const __DARWIN_BIG_ENDIAN = 4321;
@@ -17213,9 +17366,6 @@ pub const IOPOL_TYPE_DISK = 0;
 pub const __UINT16_FMTu__ = "hu";
 pub const COLL_WEIGHTS_MAX = 2;
 pub const __TVOS_10_0_1 = 100001;
-pub inline fn __DARWIN_FD_ZERO(p: var) @TypeOf(__builtin_bzero(p, sizeof(p.*))) {
-    return __builtin_bzero(p, sizeof(p.*));
-}
 pub const AVAILABLE_MAC_OS_X_VERSION_10_11_3_AND_LATER_BUT_DEPRECATED_IN_MAC_OS_X_VERSION_10_12_2 = __OSX_AVAILABLE_BUT_DEPRECATED(__MAC_10_11_3, __MAC_10_12_2, __IPHONE_COMPAT_VERSION, __IPHONE_COMPAT_VERSION);
 pub const EUSERS = 68;
 pub const S_IFWHT = 0o0160000;
@@ -17224,6 +17374,7 @@ pub inline fn OSWriteLittleInt32(base: var, byteOffset: var, data: var) @TypeOf(
 }
 pub const __INT_LEAST32_FMTd__ = "d";
 pub const __DARWIN_ACL_READ_ATTRIBUTES = 1 << 7;
+pub const S_OK = if (@typeId(@TypeOf(@as(c_long, 0x00000000))) == .Pointer) @ptrCast(HRESULT, @as(c_long, 0x00000000)) else if (@typeId(@TypeOf(@as(c_long, 0x00000000))) == .Int) @intToPtr(HRESULT, @as(c_long, 0x00000000)) else @as(HRESULT, @as(c_long, 0x00000000));
 pub inline fn MACH_MSGH_BITS_PORTS(bits: var) @TypeOf(bits & MACH_MSGH_BITS_PORTS_MASK) {
     return bits & MACH_MSGH_BITS_PORTS_MASK;
 }
@@ -17235,7 +17386,7 @@ pub const USHRT_MAX = 65535;
 pub const kCFCoreFoundationVersionNumber10_6_8 = 550.43;
 pub const INFINITY = HUGE_VALF;
 pub const MACH_SEND_NODENAP = MACH_SEND_NOIMPORTANCE;
-pub const __WINT_TYPE__ = int;
+pub const __WINT_TYPE__ = c_int;
 pub const DISPATCH_VNODE_DELETE = 0x1;
 pub const __UINTPTR_FMTX__ = "lX";
 pub const __INT_FAST64_FMTi__ = "lli";
@@ -17256,7 +17407,7 @@ pub const KAUTH_VNODE_GENERIC_READ_BITS = KAUTH_VNODE_READ_DATA | KAUTH_VNODE_RE
 pub const BUFSIZ = 1024;
 pub const KAUTH_VNODE_READ_ATTRIBUTES = @as(c_uint, 1) << 7;
 pub const NL_NMAX = 1;
-pub const _FILESEC_UNSET_PROPERTY = if (@typeId(@TypeOf(0)) == .Pointer) @ptrCast([*c]void, 0) else if (@typeId(@TypeOf(0)) == .Int) @intToPtr([*c]void, 0) else @as([*c]void, 0);
+pub const _FILESEC_UNSET_PROPERTY = if (@typeId(@TypeOf(0)) == .Pointer) @ptrCast(*c_void, 0) else if (@typeId(@TypeOf(0)) == .Int) @intToPtr(*c_void, 0) else @as(*c_void, 0);
 pub const __WATCHOS_6_0_1 = 60001;
 pub const KERN_NO_ACCESS = 8;
 pub const DISPATCH_QUEUE_SERIAL_WITH_AUTORELEASE_POOL = dispatch_queue_attr_make_with_autorelease_frequency(DISPATCH_QUEUE_SERIAL, DISPATCH_AUTORELEASE_FREQUENCY_WORK_ITEM);
@@ -17283,9 +17434,10 @@ pub const L_SET = SEEK_SET;
 pub const AVAILABLE_MAC_OS_X_VERSION_10_7_AND_LATER_BUT_DEPRECATED_IN_MAC_OS_X_VERSION_10_11_4 = __OSX_AVAILABLE_BUT_DEPRECATED(__MAC_10_7, __MAC_10_11_4, __IPHONE_COMPAT_VERSION, __IPHONE_COMPAT_VERSION);
 pub const kAFInfoDictionary_NominalBitRate = "nominal bit rate";
 pub const kCFCoreFoundationVersionNumber10_11_3 = 1256.14;
+pub const E_NOINTERFACE = if (@typeId(@TypeOf(@as(c_long, 0x80000004))) == .Pointer) @ptrCast(HRESULT, @as(c_long, 0x80000004)) else if (@typeId(@TypeOf(@as(c_long, 0x80000004))) == .Int) @intToPtr(HRESULT, @as(c_long, 0x80000004)) else @as(HRESULT, @as(c_long, 0x80000004));
 pub const _POSIX_BARRIERS = -1;
-pub const IOPOL_SCOPE_DARWIN_BG = 2;
 pub const OS_CONST = __attribute__(__const__);
+pub const IOPOL_SCOPE_DARWIN_BG = 2;
 pub const DISPATCH_VNODE_WRITE = 0x2;
 pub inline fn ferror_unlocked(p: var) @TypeOf(__sferror(p)) {
     return __sferror(p);
@@ -17300,6 +17452,7 @@ pub const DEPRECATED_IN_MAC_OS_X_VERSION_10_12_AND_LATER = __OSX_AVAILABLE_BUT_D
 pub const SCNo16 = "ho";
 pub const KERN_INVALID_ADDRESS = 1;
 pub const __INT_FAST32_MAX__ = 2147483647;
+pub const kMIDIDriverTypeID = CFUUIDGetConstantUUIDWithBytes(NULL, 0xEC, 0xDE, 0x95, 0x74, 0x0F, 0xE4, 0x11, 0xD4, 0xBB, 0x1A, 0x00, 0x50, 0xE4, 0xCE, 0xA5, 0x26);
 pub const SCNoLEAST32 = SCNo32;
 pub const AVAILABLE_MAC_OS_X_VERSION_10_2_AND_LATER_BUT_DEPRECATED_IN_MAC_OS_X_VERSION_10_11_4 = __OSX_AVAILABLE_BUT_DEPRECATED(__MAC_10_2, __MAC_10_11_4, __IPHONE_COMPAT_VERSION, __IPHONE_COMPAT_VERSION);
 pub const PRIXPTR = "lX";
@@ -17309,15 +17462,16 @@ pub inline fn DEPRECATED_MSG_ATTRIBUTE(s: var) @TypeOf(__attribute__(deprecated(
     return __attribute__(deprecated(s));
 }
 pub const MACH_SEND_NOIMPORTANCE = 0x00040000;
-pub const __INT_LEAST32_TYPE__ = int;
+pub const __INT_LEAST32_TYPE__ = c_int;
+pub const E_UNEXPECTED = if (@typeId(@TypeOf(@as(c_long, 0x8000FFFF))) == .Pointer) @ptrCast(HRESULT, @as(c_long, 0x8000FFFF)) else if (@typeId(@TypeOf(@as(c_long, 0x8000FFFF))) == .Int) @intToPtr(HRESULT, @as(c_long, 0x8000FFFF)) else @as(HRESULT, @as(c_long, 0x8000FFFF));
 pub const AVAILABLE_MAC_OS_X_VERSION_10_12_AND_LATER_BUT_DEPRECATED_IN_MAC_OS_X_VERSION_10_12_4 = __OSX_AVAILABLE_BUT_DEPRECATED(__MAC_10_12, __MAC_10_12_4, __IPHONE_COMPAT_VERSION, __IPHONE_COMPAT_VERSION);
 pub const FLT_MAX_EXP = __FLT_MAX_EXP__;
 pub const __SIZE_MAX__ = @as(c_ulong, 18446744073709551615);
 pub const _SC_XBS5_LPBIG_OFFBIG = 125;
 pub const ENODATA = 96;
-pub const AVAILABLE_MAC_OS_X_VERSION_10_7_AND_LATER_BUT_DEPRECATED_IN_MAC_OS_X_VERSION_10_12 = __OSX_AVAILABLE_BUT_DEPRECATED(__MAC_10_7, __MAC_10_12, __IPHONE_COMPAT_VERSION, __IPHONE_COMPAT_VERSION);
 pub const AVAILABLE_MAC_OS_X_VERSION_10_2_AND_LATER_BUT_DEPRECATED_IN_MAC_OS_X_VERSION_10_11_2 = __OSX_AVAILABLE_BUT_DEPRECATED(__MAC_10_2, __MAC_10_11_2, __IPHONE_COMPAT_VERSION, __IPHONE_COMPAT_VERSION);
 pub const SIGIO = 23;
+pub const AVAILABLE_MAC_OS_X_VERSION_10_7_AND_LATER_BUT_DEPRECATED_IN_MAC_OS_X_VERSION_10_12 = __OSX_AVAILABLE_BUT_DEPRECATED(__MAC_10_7, __MAC_10_12, __IPHONE_COMPAT_VERSION, __IPHONE_COMPAT_VERSION);
 pub const __CLANG_ATOMIC_BOOL_LOCK_FREE = 2;
 pub const kCAFMarkerChunkHdrSize = offsetof(CAFMarkerChunk, mMarkers);
 pub const _SC_AIO_MAX = 43;
@@ -17335,6 +17489,7 @@ pub const AVAILABLE_MAC_OS_X_VERSION_10_0_AND_LATER_BUT_DEPRECATED_IN_MAC_OS_X_V
 pub const MACH_SEND_INVALID_VOUCHER = 0x10000005;
 pub const ACL_UNDEFINED_ID = NULL;
 pub const _SC_NPROCESSORS_ONLN = 58;
+pub const kMIDIDriverInterface2ID = CFUUIDGetConstantUUIDWithBytes(NULL, 0x43, 0xC9, 0x8C, 0x3C, 0x30, 0x6C, 0x11, 0xD5, 0xAF, 0x73, 0x00, 0x30, 0x65, 0xA8, 0x30, 0x1E);
 pub const IOPOL_PASSIVE = 2;
 pub const __COREFOUNDATION_CFURL__ = 1;
 pub const _CS_DARWIN_USER_CACHE_DIR = 65538;
@@ -17605,6 +17760,7 @@ pub const __DARWIN_ACL_DELETE = 1 << 4;
 pub const _PC_ALLOC_SIZE_MIN = 16;
 pub const __PIC__ = 2;
 pub const DISPATCH_QUEUE_SERIAL = NULL;
+pub const S_FALSE = if (@typeId(@TypeOf(@as(c_long, 0x00000001))) == .Pointer) @ptrCast(HRESULT, @as(c_long, 0x00000001)) else if (@typeId(@TypeOf(@as(c_long, 0x00000001))) == .Int) @intToPtr(HRESULT, @as(c_long, 0x00000001)) else @as(HRESULT, @as(c_long, 0x00000001));
 pub const F_SETLKWTIMEOUT = 10;
 pub const __SNBF = 0x0002;
 pub const _SC_THREAD_DESTRUCTOR_ITERATIONS = 85;
@@ -17627,6 +17783,7 @@ pub const __SIZEOF_PTRDIFF_T__ = 8;
 pub const __UINT_LEAST16_FMTu__ = "hu";
 pub const MACH_RCV_INVALID_TRAILER = 0x1000400f;
 pub const ECANCELED = 89;
+pub const MAXFLOAT = @as(f32, 0x1.fffffep+127);
 pub const SCNiPTR = "li";
 pub const __INT_LEAST64_FMTi__ = "lli";
 pub const KAUTH_GET_CACHE_SIZES = 1 << 3;
@@ -17690,6 +17847,7 @@ pub const _SC_THREAD_CPUTIME = 84;
 pub const AVAILABLE_MAC_OS_X_VERSION_10_15_AND_LATER = __OSX_AVAILABLE_STARTING(__MAC_10_15, __IPHONE_COMPAT_VERSION);
 pub const F_ADDFILESIGS_RETURN = 97;
 pub const _POSIX_TTY_NAME_MAX = 9;
+pub const IUnknownUUID = CFUUIDGetConstantUUIDWithBytes(kCFAllocatorSystemDefault, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0xC0, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x46);
 pub inline fn __DARWIN_ALIAS_STARTING_MAC___MAC_10_15(x: var) @TypeOf(x) {
     return x;
 }
@@ -17707,6 +17865,7 @@ pub const kAudioUnitConfigurationInfo_InitialOutputs = "InitialOutputs";
 pub const PRIXLEAST32 = PRIX32;
 pub const CF_WARN_UNUSED_RESULT = __attribute__(warn_unused_result);
 pub const ENOTCONN = 57;
+pub const E_FAIL = if (@typeId(@TypeOf(@as(c_long, 0x80000008))) == .Pointer) @ptrCast(HRESULT, @as(c_long, 0x80000008)) else if (@typeId(@TypeOf(@as(c_long, 0x80000008))) == .Int) @intToPtr(HRESULT, @as(c_long, 0x80000008)) else @as(HRESULT, @as(c_long, 0x80000008));
 pub const __GCC_ASM_FLAG_OUTPUTS__ = 1;
 pub const MACH_RCV_TIMEOUT = 0x00000100;
 pub const AVAILABLE_MAC_OS_X_VERSION_10_2_AND_LATER_BUT_DEPRECATED_IN_MAC_OS_X_VERSION_10_12 = __OSX_AVAILABLE_BUT_DEPRECATED(__MAC_10_2, __MAC_10_12, __IPHONE_COMPAT_VERSION, __IPHONE_COMPAT_VERSION);
