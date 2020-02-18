@@ -117,6 +117,7 @@ pub fn findAudioDevice(allocator: *std.mem.Allocator, hint: []const u8) !?AudioD
         defer allocator.free(zig_name);
 
         if (std.mem.indexOf(u8, zig_name, hint) != null) {
+            std.debug.warn("Selected Audio Device: {}\n", .{zig_name});
             return device_id;
         }
     }
@@ -143,6 +144,7 @@ pub fn findAudioComponent(
         defer allocator.free(zig_name);
 
         if (std.mem.indexOf(u8, zig_name, hint) != null) {
+            std.debug.warn("Selected Audio Component: {}\n", .{zig_name});
             return found;
         }
 

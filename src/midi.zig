@@ -185,6 +185,7 @@ pub fn findMIDISource(allocator: *std.mem.Allocator, hint: []const u8) !?MIDIEnd
         defer allocator.free(zig_name);
 
         if (std.mem.indexOf(u8, zig_name, hint) != null) {
+            std.debug.warn("Selected MIDI Source: {}\n", .{zig_name});
             return source;
         }
     }
