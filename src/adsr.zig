@@ -40,9 +40,20 @@ pub const ADSR = struct {
 
     pub fn gate(self: *Self, state: bool) void {
         if (state) {
-            self.stage = .Attack;
-            self.frames_passed = 0;
-        } else if (self.stage != .Idle) {
+            switch (self.stage) {
+                .Attack => {},
+                .Decay => {},
+                .Sustain => {},
+                .Idle => {
+                    self.stage = .Attack;
+                    self.frames_passed = 0;
+                },
+                .Release => {
+                    self.frames_passed = @floatToInt(u32, self.getMultiplier(0) * self.attack);
+                    self.stage = .Attack;
+                },
+            }
+        } else if (self.stage != .Idle and self.stage != .Release) {
             self.stage = .Release;
             self.frames_passed = 0;
         }
@@ -67,8 +78,9 @@ pub const ADSR = struct {
                 }
             },
             .Decay => {
-                const range = 1 - self.sustain;
-                const value = @intToFloat(f32, self.frames_passed) / self.decay * range;
+                const progress = @intToFloat(f32, self.frames_passed) / self.decay;
+                const value_range = 1 - self.sustain;
+                const value = 1 - value_range * progress;
 
                 self.frames_passed += forFrames;
 
@@ -79,8 +91,8 @@ pub const ADSR = struct {
 
                     return self.sustain;
                 } else {
-                    self.release_from = 1 - range;
-                    return self.release_from;
+                    self.release_from = value;
+                    return value;
                 }
             },
             .Sustain => {
