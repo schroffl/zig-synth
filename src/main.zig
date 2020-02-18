@@ -67,12 +67,13 @@ pub fn main() !void {
         exit(1);
     };
 
-    const midi_source = (try midi.findMIDISource(allocator, "KeyStep")) orelse {
-        std.debug.warn("Could not find specified midi source\n", .{});
-        exit(1);
-    };
+    const maybe_midi_source = try midi.findMIDISource(allocator, "KeyStep");
 
-    midi.setup(midiCallback, &state);
+    if (maybe_midi_source) |source| {
+        midi.setup(midiCallback, source, &state);
+    } else {
+        std.debug.warn("Could not find specified midi source\n", .{});
+    }
 
     var audio_unit: AudioUnit = undefined;
     helper.checkStatus(

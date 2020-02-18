@@ -118,6 +118,7 @@ fn MIDIListener(comptime S: type) type {
 
 pub fn setup(
     proc: MIDIReadProc,
+    source: MIDIEndpointRef,
     input_ref: var,
 ) void {
     var client_ref: MIDIClientRef = undefined;
@@ -147,21 +148,14 @@ pub fn setup(
         ),
     );
 
-    const sources = MIDIGetNumberOfSources();
-    var source_i: @TypeOf(sources) = 0;
-
-    while (source_i < sources) : (source_i += 1) {
-        const source = MIDIGetSource(source_i);
-
-        helper.checkStatus(
-            "MIDIPortConnectSource",
-            MIDIPortConnectSource(
-                port_ref,
-                source,
-                null,
-            ),
-        );
-    }
+    helper.checkStatus(
+        "MIDIPortConnectSource",
+        MIDIPortConnectSource(
+            port_ref,
+            source,
+            null,
+        ),
+    );
 }
 
 pub fn findMIDISource(allocator: *std.mem.Allocator, hint: []const u8) !?MIDIEndpointRef {
