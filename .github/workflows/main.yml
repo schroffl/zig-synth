@@ -24,6 +24,6 @@ jobs:
         with:
           version: master
       - name: Build
-        run: zig build
+        run: zig build -Drelease-fast
       - name: Copy HTML
         run: "mkdir public && cp zig-cache/bin/zig-synth.html public/index.html && cat public/index.html"
