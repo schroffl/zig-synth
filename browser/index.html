@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Zig Synthesizer in WebAssembly</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            margin: 0px;
+            overflow: hidden;
+        }
+
+        #play-button {
+            font-size: 42px;
+            background-color: mediumpurple;
+            color: white;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            box-shadow: #000 0px 5px 10px;
+            margin-bottom: 20px;
+            padding: 8px 16px;
+        }
+
+        #play-button:hover, #play-button:focus {
+            outline: none;
+            background-color: #5b32af;
+        }
+
+        #play-button:active {
+            margin-top: 2px;
+            margin-bottom: 18px;
+            box-shadow: #000 0px 2px 6px;
+        }
+
+        .note {
+            font-family: "Comic Sans MS";
+            max-width: 50%;
+            text-align: center;
+        }
+
+        .hash {
+            position: absolute;
+            cursor: help;
+            top: 8px;
+            left: 8px;
+            color: rgba(0, 0, 0, 0.3);
+        }
+
+        .hash:hover {
+            color: black;
+        }
+
+        @media (prefers-color-scheme: light) {
+        }
+
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: #444;
+                color: #eee;
+            }
+
+            .hash {
+                color: rgba(238, 238, 238, 0.3);
+            }
+
+            .hash:hover {
+                color: #eee;
+            }
+        }
+
+        .button-wrapper {
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="button-wrapper">
+        <button id="play-button">Start</button>
+        <div class="note">
+            This button is required, because your browser prevents audio from playing automatically.
+            Connect a MIDI input device and start playing.
+        </div>
+        <div class="hash" title="This mainly exists to check weird browser cache behaviour">Build: VERSION_HASH</div>
+    </div>
+
+    <script>
+        window.workletSource = "data:text/javascript;base64,WORKLET_SOURCE";
+        window.wasmSource = "data:application/octet-stream;base64,WASM_BINARY";
+    </script>
+    <script>MAIN_SOURCE</script>
+</body>
+</html>

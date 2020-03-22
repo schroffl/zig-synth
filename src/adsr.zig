@@ -1,4 +1,4 @@
-const AudioStreamBasicDescription = @import("includes.zig").AudioStreamBasicDescription;
+const util = @import("util.zig");
 
 pub const ADSR = struct {
     pub const Stage = enum {
@@ -9,33 +9,59 @@ pub const ADSR = struct {
         Release,
     };
 
-    attack: f32,
-    decay: f32,
-    sustain: f32,
-    release: f32,
+    pub const Params = util.Parameters(struct {
+        format: util.Format,
+
+        /// The multiplier for when a tone is held after its decay,
+        /// but before being released.
+        sustain: f32,
+
+        /// Time to attack in seconds
+        attack: f64,
+
+        /// Time to decay in seconds
+        decay: f64,
+
+        /// Time to release in seconds
+        release: f64,
+    });
+
+    params: Params,
+
+    samples_attack: f32,
+    samples_decay: f32,
+    samples_release: f32,
 
     stage: Stage,
-    frames_passed: u32,
+    frames_passed: f32,
     release_from: f32,
 
     const Self = @This();
 
-    pub fn init(
-        a: f32,
-        d: f32,
-        s: f32,
-        r: f32,
-        format: AudioStreamBasicDescription,
-    ) Self {
-        return Self{
-            .attack = a * @floatCast(f32, format.mSampleRate),
-            .decay = d * @floatCast(f32, format.mSampleRate),
-            .sustain = s,
-            .release = r * @floatCast(f32, format.mSampleRate),
+    pub fn init(initial_params: Params.Child) Self {
+        var self = Self{
+            .params = Params.init(initial_params),
+            .samples_attack = 0,
+            .samples_decay = 0,
+            .samples_release = 0,
             .stage = .Idle,
             .frames_passed = 0,
             .release_from = 0,
         };
+
+        self.updateParams(initial_params);
+
+        return self;
+    }
+
+    pub fn updateParams(self: *Self, params: Params.Child) void {
+        const rate = params.format.sample_rate;
+
+        self.params.write(params);
+
+        self.samples_attack = @floatCast(f32, params.attack * rate);
+        self.samples_decay = @floatCast(f32, params.decay * rate);
+        self.samples_release = @floatCast(f32, params.release * rate);
     }
 
     pub fn gate(self: *Self, state: bool) void {
@@ -49,7 +75,9 @@ pub const ADSR = struct {
                     self.frames_passed = 0;
                 },
                 .Release => {
-                    self.frames_passed = @floatToInt(u32, self.getMultiplier(0) * self.attack);
+                    // TODO Is this the correct thing to do? How do other implementations
+                    //      handle the case "Release -> Attack".
+                    self.frames_passed = self.getMultiplier(0) * self.samples_attack;
                     self.stage = .Attack;
                 },
             }
@@ -62,11 +90,11 @@ pub const ADSR = struct {
     pub fn getMultiplier(self: *Self, forFrames: u32) f32 {
         return switch (self.stage) {
             .Attack => {
-                const value = @intToFloat(f32, self.frames_passed) / self.attack;
+                const value = self.frames_passed / self.samples_attack;
 
-                self.frames_passed += forFrames;
+                self.frames_passed += @intToFloat(f32, forFrames);
 
-                if (@intToFloat(f32, self.frames_passed) > self.attack) {
+                if (self.frames_passed > self.samples_attack) {
                     self.frames_passed = 0;
                     self.release_from = 1;
                     self.stage = .Decay;
@@ -78,32 +106,34 @@ pub const ADSR = struct {
                 }
             },
             .Decay => {
-                const progress = @intToFloat(f32, self.frames_passed) / self.decay;
-                const value_range = 1 - self.sustain;
+                const params = self.params.read();
+                const progress = self.frames_passed / self.samples_decay;
+                const value_range = 1 - params.sustain;
                 const value = 1 - value_range * progress;
 
-                self.frames_passed += forFrames;
+                self.frames_passed += @intToFloat(f32, forFrames);
 
-                if (@intToFloat(f32, self.frames_passed) > self.decay) {
+                if (self.frames_passed > self.samples_decay) {
                     self.frames_passed = 0;
-                    self.release_from = self.sustain;
+                    self.release_from = params.sustain;
                     self.stage = .Sustain;
 
-                    return self.sustain;
+                    return params.sustain;
                 } else {
                     self.release_from = value;
                     return value;
                 }
             },
             .Sustain => {
-                return self.sustain;
+                const params = self.params.read();
+                return params.sustain;
             },
             .Release => {
-                const value = @intToFloat(f32, self.frames_passed) / self.release * self.release_from;
+                const value = self.frames_passed / self.samples_release * self.release_from;
 
-                self.frames_passed += forFrames;
+                self.frames_passed += @intToFloat(f32, forFrames);
 
-                if (@intToFloat(f32, self.frames_passed) > self.release) {
+                if (self.frames_passed > self.samples_release) {
                     self.frames_passed = 0;
                     self.release_from = 0;
                     self.stage = .Idle;

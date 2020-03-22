@@ -1,6 +1,4 @@
 const std = @import("std");
-const helper = @import("helper.zig");
-usingnamespace @import("includes.zig");
 
 pub const Message = union(enum) {
     NoteOff: struct {
@@ -18,6 +16,7 @@ pub const Message = union(enum) {
         pressure: u7,
     },
     ControlChange: struct {
+        channel: u4,
         controller: u7,
         value: u7,
     },
@@ -64,6 +63,7 @@ pub const Message = union(enum) {
             },
             3 => .{
                 .ControlChange = .{
+                    .channel = @intCast(u4, data[0] & 0xf),
                     .controller = @intCast(u7, data[1] & 0x7f),
                     .value = @intCast(u7, data[2] & 0x7f),
                 },
@@ -100,89 +100,31 @@ pub const Message = union(enum) {
     }
 };
 
-pub fn noteToFrequency(note: u7) f32 {
-    const note_float = @intToFloat(f32, note);
+pub fn noteToFrequency(note: u7) f64 {
+    const note_float = @intToFloat(f64, note);
 
-    return 440 * std.math.pow(f32, 2, (@intToFloat(f32, note) - 69) / 12);
+    return 440 * std.math.pow(f64, 2, (@intToFloat(f32, note) - 69) / 12);
 }
 
-fn MIDIListener(comptime S: type) type {
-    const H = struct {
-        fn listener(msg: Message, state: *S) void {}
-    };
+pub fn frequencyToNote(frequency: f64) ?f64 {
+    const result = 12 * std.math.log2(frequency / 440) + 69;
 
-    const decl = std.meta.declarationInfo(H, "listener");
+    const upper_bound = @intToFloat(f64, std.math.maxInt(u7));
+    const lower_bound = @intToFloat(f64, std.math.minInt(u7));
 
-    return decl.data.Fn.fn_type;
-}
-
-pub fn setup(
-    proc: MIDIReadProc,
-    source: MIDIEndpointRef,
-    input_ref: var,
-) void {
-    var client_ref: MIDIClientRef = undefined;
-    const client_name = helper.createCFString("test");
-
-    helper.checkStatus(
-        "MIDIClientCreate",
-        MIDIClientCreate(
-            client_name,
-            null,
-            null,
-            &client_ref,
-        ),
-    );
-
-    var port_ref: MIDIPortRef = undefined;
-    const port_name = helper.createCFString("test-port");
-
-    helper.checkStatus(
-        "MIDIInputPortCreate",
-        MIDIInputPortCreate(
-            client_ref,
-            port_name,
-            proc,
-            input_ref,
-            &port_ref,
-        ),
-    );
-
-    helper.checkStatus(
-        "MIDIPortConnectSource",
-        MIDIPortConnectSource(
-            port_ref,
-            source,
-            null,
-        ),
-    );
-}
-
-pub fn findMIDISource(allocator: *std.mem.Allocator, hint: []const u8) !?MIDIEndpointRef {
-    const sources = MIDIGetNumberOfSources();
-    var source_i: @TypeOf(sources) = 0;
-
-    while (source_i < sources) : (source_i += 1) {
-        const source = MIDIGetSource(source_i);
-        var source_name: CFStringRef = undefined;
-
-        helper.checkStatus(
-            "MIDIObjectGetStringProperty name",
-            MIDIObjectGetStringProperty(
-                source,
-                kMIDIPropertyName,
-                &source_name,
-            ),
-        );
-
-        const zig_name = try helper.convertCFString(allocator, source_name);
-        defer allocator.free(zig_name);
-
-        if (std.mem.indexOf(u8, zig_name, hint) != null) {
-            std.debug.warn("Selected MIDI Source: {}\n", .{zig_name});
-            return source;
-        }
+    if (result >= lower_bound and result <= upper_bound) {
+        return result;
+    } else {
+        return null;
     }
-
-    return null;
 }
+
+test "noteToFrequency" {
+    std.testing.expectEqual(@as(f64, 440), noteToFrequency(69));
+}
+
+test "frequencyToNote" {
+    std.testing.expectEqual(@as(?f64, 69), frequencyToNote(440));
+}
+
+test "Message.parse" {}
