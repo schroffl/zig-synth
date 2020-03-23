@@ -214,7 +214,3 @@ pub const Synth = struct {
         }
     }
 };
-
-test "synth" {
-    _ = @import("wavetable.zig");
-}

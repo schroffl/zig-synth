@@ -14,5 +14,6 @@ test "main" {
     _ = @import("midi.zig");
     _ = @import("util.zig");
     _ = @import("synth.zig");
+    _ = @import("wavetable.zig");
     _ = @import("adsr.zig");
 }
