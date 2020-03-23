@@ -149,6 +149,11 @@ pub const Synth = struct {
                         .Free => {
                             if (wrapper.setup(info)) {
                                 break;
+                            } else {
+                                // This should only be possible when handleMIDIMessage is called from
+                                // two different threads (spoiler: it shouldn't ever, or should it?).
+                                // For my sanities sake I want to know when that is the case.
+                                unreachable;
                             }
                         },
                     }
