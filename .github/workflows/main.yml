@@ -15,8 +15,31 @@ jobs:
       - name: Run tests
         run: zig build test
         
+  build:
+    runs-on: macos-latest
+    needs: test
+    steps:
+      - uses: actions/checkout@v2
+      - name: Setup Zig
+        uses: goto-bus-stop/setup-zig@v1.2.2
+        with:
+          version: master
+      - name: Build in Debug mode
+        run: zig build
+      - name: Upload macOS build
+        uses: actions/upload-artifact@v1.0.0
+        with:
+          name: zig-synth-macos
+          path: zig-cache/bin/zig-synth
+      - name: Upload browser build
+        uses: actions/upload-artifact@v1.0.0
+        with:
+          name: zig-synth-browser.html
+          path: zig-cache/bin/zig-synth.html
+        
   publish-html:
     runs-on: macos-latest
+    needs: test
     steps:
       - uses: actions/checkout@v2
       - name: Setup Zig
