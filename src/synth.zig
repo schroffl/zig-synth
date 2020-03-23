@@ -153,7 +153,26 @@ pub const Synth = struct {
                         },
                     }
                 } else {
-                    Host.warn("TODO Implement Voice Stealing (Note {} got ignored)\n", .{info.note});
+                    var quiet_voice: ?*VoiceWrapper = null;
+                    var quiet_volume: ?f32 = null;
+
+                    for (self.voices) |*wrapper| {
+                        const volume = wrapper.voice.volume * wrapper.voice.envelope.getMultiplier(0);
+
+                        if (quiet_volume == null or volume < quiet_volume.?) {
+                            quiet_volume = volume;
+                            quiet_voice = wrapper;
+                        }
+                    }
+
+                    if (quiet_voice) |wrapper| {
+                        // TODO Maybe we should give the stolen voice a few milliseconds to fade out
+                        wrapper.free();
+
+                        if (!wrapper.setup(info)) {
+                            unreachable;
+                        }
+                    } else unreachable;
                 }
             },
             .NoteOff => |info| {

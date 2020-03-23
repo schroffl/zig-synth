@@ -5,7 +5,7 @@ An audio synthesizer in Zig
 - Sound
     - [ ] Polyphony
         - [x] Basic polyphony
-        - [ ] Voice stealing
+        - [x] Voice stealing
         - [ ] Apply parameter updates across all voices
     - [ ] Unison
         - An efficient way to implement Unison could be to have multiple scanners per oscillator,
