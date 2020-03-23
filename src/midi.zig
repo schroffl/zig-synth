@@ -119,12 +119,23 @@ pub fn frequencyToNote(frequency: f64) ?f64 {
     }
 }
 
+// TODO Figure out if a logarithmic relation makes sense here
+pub fn velocityToFloat(comptime T: type, velocity: u7) T {
+    const max = std.math.log(T, 10, std.math.maxInt(u7) + 1);
+    return std.math.log(T, 10, @intToFloat(T, velocity) + 1) / max;
+}
+
 test "noteToFrequency" {
     std.testing.expectEqual(@as(f64, 440), noteToFrequency(69));
 }
 
 test "frequencyToNote" {
     std.testing.expectEqual(@as(?f64, 69), frequencyToNote(440));
+}
+
+test "velocityToFloat" {
+    std.testing.expectEqual(@as(f64, 0), velocityToFloat(f64, 0));
+    std.testing.expectEqual(@as(f64, 1), velocityToFloat(f64, 127));
 }
 
 test "Message.parse" {}

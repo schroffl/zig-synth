@@ -4,6 +4,9 @@ An audio synthesizer in Zig
 ### Roadmap
 - Sound
     - [ ] Polyphony
+        - [x] Basic polyphony
+        - [ ] Voice stealing
+        - [ ] Apply parameter updates across all voices
     - [ ] Unison
         - An efficient way to implement Unison could be to have multiple scanners per oscillator,
           where each one has a slightly offset step size. However, I need to look into that first.
