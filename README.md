@@ -5,8 +5,8 @@ An audio synthesizer in Zig
 - Sound
     - [ ] Polyphony
         - [x] Basic polyphony
-        - [x] Voice stealing
-        - [ ] Apply parameter updates across all voices
+        - [x] Voice stealing
+        - [ ] Apply parameter updates across all voices
     - [ ] Unison
         - An efficient way to implement Unison could be to have multiple scanners per oscillator,
           where each one has a slightly offset step size. However, I need to look into that first.
@@ -25,9 +25,9 @@ An audio synthesizer in Zig
           with a set of defined exports.
     - [ ] User Interface
         - I plan on having multiple render backends, like:
-            - [ ] Metal on macOS. When this is finished I don't see a problem with getting the whole thing to run on iOS either.
-            - [ ] DirectX / OpenGL on Windows
-            - [ ] WebGL in the browser. This is what I will target first, because it's the most approachable one for me..
+            - [ ] Metal on macOS. When this is finished I don't see a problem with getting the whole thing to run on iOS either.
+            - [ ] DirectX / OpenGL on Windows
+            - [ ] WebGL in the browser. This is what I will target first, because it's the most approachable one for me..
                   I will need to workout a proper API anyways. Maybe even a DOM-backed UI will work for that.
 
 ### Building
