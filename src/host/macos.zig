@@ -284,6 +284,7 @@ fn checkStatus(hint: []const u8, status: OSStatus) void {
         exit(1);
     }
 }
+
 fn findAudioDevice(
     allocator: *std.mem.Allocator,
     hint: []const u8,
