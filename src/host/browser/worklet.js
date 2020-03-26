@@ -85,6 +85,20 @@ class ZigSynthProcessor extends AudioWorkletProcessor {
         }
 
         const channel = outputs[0][0];
+
+        // TODO Ideally we want to allocate this buffer only once.
+        //      However, I need to figure how to prevent the Zig allocator
+        //      from growing the WebAssembly.Memory. When that happens
+        //      the underlying ArrayBuffer gets detached and the workmem is
+        //      invalidated. Maybe we need to detect this and reallocate?
+        //      Although I think it makes more sense to allocate a single slice
+        //      at startup and use std.heap.FixedBufferAllocator.
+        //
+        //      Sadly, we cannot make use of the Performance API in an
+        //      Audio Worklet. So I'm unable to measure the performance impact that way.
+        //      So far, though, it seems like the dev tools in chrome handle
+        //      WebAssembly profiling as well as JavaScript. The accuracy
+        //      should be better than that of the Performance API, too.
         const buffer = allocBuffer(Float32Array, this.wasm, channel.length);
 
         this.wasm.exports.generate(buffer.ptr, buffer.data.length);
