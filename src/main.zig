@@ -3,7 +3,7 @@ const target = std.Target.current;
 
 pub usingnamespace switch (target.os.tag) {
     .freestanding => switch (target.cpu.arch) {
-        .wasm32, .wasm64 => @import("host/wasm.zig"),
+        .wasm32, .wasm64 => @import("host/browser.zig"),
         else => @compileError("CPU architecture not supported"),
     },
     .macosx => @import("host/macos.zig"),
