@@ -12,7 +12,7 @@ pub fn main() !void {
     if (args.len < 3) return error.MissingArguments;
 
     const cwd = fs.cwd();
-    const browser_dir = try cwd.openDir("browser", .{});
+    const browser_dir = try cwd.openDir("src/host/browser", .{});
 
     const wasm_path = args[1];
     const wasm_file = try cwd.openFile(wasm_path, .{});

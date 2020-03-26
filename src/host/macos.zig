@@ -3,8 +3,8 @@ const Synth = @import("../synth.zig").Synth;
 const util = @import("../util.zig");
 const midi = @import("../midi.zig");
 
-const objc = @import("macos_objc.zig");
-usingnamespace @import("macos_core_audio.zig");
+const objc = @import("macos/objc.zig");
+usingnamespace @import("macos/core_audio.zig");
 
 pub const Host = struct {
     pub const warn = std.debug.warn;
